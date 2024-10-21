@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Fashion Color Matcher</title>
+    <link rel="icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+    AAAFCAYAAACNbyblAAAAHElEQVQIW2P8//8/AxU1ACxhBmQGAYUABmAAxwA1LwXqYAAAAAElFTkSuQmCC" type="image/x-icon">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input[type="text"] { padding: 10px; width: 300px; }
+        button { padding: 10px; }
+        .results { margin-top: 20px; }
+        .item { margin-bottom: 10px; }
+        .color-box { width: 20px; height: 20px; display: inline-block; vertical-align: middle; }
+        img { height: 50px; margin-left: 10px; }
+    </style>
+</head>
+
+<body>
+    <h1>Elden Ring Fashion Color Matcher</h1>
+    <label for="color-input">Enter Hex Color Code:</label>
+    <input type="text" id="color-input" placeholder="#RRGGBB">
+    <button id="search-color-button">Find Similar Items by Color</button>
+    
+    <label for="name-input">Search by Item Name:</label>
+    <input type="text" id="name-input" placeholder="Enter item name...">
+    <button id="search-name-button">Find Item by Name</button>
+
+    <div class="results" id="results"></div>
+
+    <script>
+        // Load JSON data containing armor colors
+        async function loadArmorColors() {
+            const response = await fetch('armor_colors.json');
+            if (!response.ok) {
+                throw new Error('Failed to load armor colors');
+            }
+            const data = await response.json();
+            return data;
+        }
+
+        function hexToRgb(hex) {
+            const bigint = parseInt(hex.slice(1), 16);
+            const r = (bigint >> 16) & 255;
+            const g = (bigint >> 8) & 255;
+            const b = bigint & 255;
+            return [r, g, b];
+        }
+
+        function colorDistance(color1, color2) {
+            return Math.sqrt(
+                Math.pow(color1[0] - color2[0], 2) +
+                Math.pow(color1[1] - color2[1], 2) +
+                Math.pow(color1[2] - color2[2], 2)
+            );
+        }
+
+        function snakeToTitle(snake) {
+            return snake.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        }
+
+        async function searchSimilarItems() {
+            const armorColors = await loadArmorColors();
+            const hexInput = document.getElementById('color-input').value;
+            const rgbInput = hexToRgb(hexInput);
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            for (const [item, colors] of Object.entries(armorColors)) {
+                for (const color of colors) {
+                    const distance = colorDistance(rgbInput, color);
+                    if (distance < 100) { // Threshold for color similarity
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'item';
+                        const imagePath = `images/${item}.png`; // Assuming PNG format, adjust if necessary
+                        itemDiv.innerHTML = `
+                            <span class="color-box" style="background-color: rgb(${color[0]}, ${color[1]}, ${color[2]})"></span>
+                            ${snakeToTitle(item)}
+                            <img src="${imagePath}" alt="${item}">
+                        `;
+                        resultsDiv.appendChild(itemDiv);
+                        break; // Stop checking this item if one color matches
+                    }
+                }
+            }
+        }
+
+        async function searchItemByName() {
+            const armorColors = await loadArmorColors();
+            const nameInput = document.getElementById('name-input').value.toLowerCase();
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            for (const [item, colors] of Object.entries(armorColors)) {
+                if (item.toLowerCase().includes(nameInput)) {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'item';
+                    const imagePath = `images/${item}.png`; // Assuming PNG format, adjust if necessary
+                    itemDiv.innerHTML = `
+                        <span class="color-box" style="background-color: rgb(${colors[0][0]}, ${colors[0][1]}, ${colors[0][2]})"></span>
+                        ${snakeToTitle(item)}
+                        <img src="${imagePath}" alt="${item}">
+                    `;
+                    resultsDiv.appendChild(itemDiv);
+                }
+            }
+        }
+
+        // Event listeners for search buttons
+        document.getElementById('search-color-button').addEventListener('click', async () => {
+            try {
+                await searchSimilarItems();
+            } catch (error) {
+                console.error(error);
+                alert('Error searching by color. Please check the console for details.');
+            }
+        });
+
+        document.getElementById('search-name-button').addEventListener('click', async () => {
+            try {
+                await searchItemByName();
+            } catch (error) {
+                console.error(error);
+                alert('Error searching by name. Please check the console for details.');
+            }
+        });
+    </script>
+</body>
+</html>
