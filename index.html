@@ -3,47 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elden Ring Fashion Color Matcher</title>
+    <title>Elden Ring Fashion Search</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
         }
-        #results {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
+        .search-container {
+            margin: 20px;
         }
         .item {
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 10px;
-            background-color: white;
-            border-radius: 5px;
-            width: 150px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
         }
         .color-box {
-            display: inline-block;
             width: 20px;
             height: 20px;
-            margin-right: 5px;
-            vertical-align: middle;
+            margin-right: 10px;
         }
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 50px;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-
-    <h1>Elden Ring Fashion Color Matcher</h1>
-    <input type="text" id="search" placeholder="Search for items..." />
-    <button id="searchButton">Search</button>
-    
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for items...">
+        <button id="searchButton">Search</button>
+    </div>
     <div id="results"></div>
 
     <script>
@@ -62,15 +50,11 @@
             return snake.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
         }
 
-        // Function to get the subfolder based on the item name
+        // Function to get the item type based on the image folder
         function getItemType(item) {
-            if (item.startsWith("head_")) return "Head";   // Item type based on name structure
-            else if (item.startsWith("body_")) return "Chest"; // Modify according to your naming
-            else if (item.startsWith("legs_")) return "Legs";   // Modify according to your naming
-            else if (item.startsWith("arms_")) return "Arms";   // Modify according to your naming
-            else if (item.startsWith("shield_")) return "Shields"; // Modify according to your naming
-            else if (item.startsWith("weapon_")) return "Weapons"; // Modify according to your naming
-            return "unknown"; // Default case if no match is found
+            // This assumes the subfolder names are "Arms", "Chest", "Head", etc.
+            const subfolder = item.split("/")[3]; // Extract the subfolder from the item path
+            return subfolder.charAt(0).toUpperCase() + subfolder.slice(1); // Capitalize the first letter
         }
 
         // Search function
@@ -83,9 +67,9 @@
             for (const [item, colors] of Object.entries(armorColors)) {
                 const itemName = snakeToTitle(item);
                 if (itemName.toLowerCase().includes(query.toLowerCase())) {
-                    // Determine item type based on the item naming convention
+                    // Determine the subfolder type based on the item name
                     const itemType = getItemType(item);
-                    const imagePath = `images/Elden Ring/${itemType}/${item}.png`; // Correctly set the image path based on item type
+                    const imagePath = `images/Elden Ring/${itemType}/${item}.png`; // Correct path for images
 
                     results.push({ item, colors, imagePath });
                 }
