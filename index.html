@@ -7,12 +7,19 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: white;
         }
         .search-container {
             margin: 20px;
         }
         .item-card {
-            border: 1px solid #ddd;
+            border: 1px solid #444;
             padding: 10px;
             margin: 10px;
             display: inline-block;
@@ -35,9 +42,46 @@
         .filters {
             margin: 20px;
         }
+        .dark-mode .item-card {
+            border: 1px solid #444;
+        }
+        .mode-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .mode-switch input {
+            display: none;
+        }
+        .mode-switch label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            padding: 5px;
+            width: 50px;
+            justify-content: space-between;
+        }
+        .mode-switch .icon {
+            width: 20px;
+            height: 20px;
+        }
+        .dark-mode .mode-switch label {
+            background-color: #333;
+        }
     </style>
 </head>
-<body>
+<body class="dark-mode">
+    <div class="mode-switch">
+        <input type="checkbox" id="modeToggle" checked>
+        <label for="modeToggle">
+            <img src="moon-icon.png" alt="Moon" class="icon" id="moonIcon">
+            <img src="sun-icon.png" alt="Sun" class="icon" id="sunIcon">
+        </label>
+    </div>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search for items...">
         <button id="searchButton">Search</button>
@@ -61,5 +105,13 @@
     </div>
 
     <script src="search_items.js"></script>
+    <script>
+        const modeToggle = document.getElementById('modeToggle');
+        const body = document.body;
+
+        modeToggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
