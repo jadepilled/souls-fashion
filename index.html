@@ -3,60 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Item Search</title>
+    <title>Elden Ring Fashion Search</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
         }
-        .search-bar {
-            margin-bottom: 20px;
-        }
-        .search-bar input {
-            width: 300px;
-            padding: 10px;
-            font-size: 16px;
-        }
-        .item-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .search-container {
+            margin: 20px;
         }
         .item-card {
-            background-color: white;
             border: 1px solid #ddd;
             padding: 10px;
-            width: 150px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
             text-align: center;
-        }
-        .item-card img {
-            max-width: 100%;
-            height: auto;
         }
         .color-bar {
             display: flex;
-            margin-top: 5px;
+            margin-top: 10px;
         }
         .color-bar div {
-            flex: 1;
+            width: 20px;
             height: 20px;
+            margin-right: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .filters {
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-
-    <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for items...">
+        <button id="searchButton">Search</button>
     </div>
 
-    <div class="item-grid" id="itemGrid">
-        <!-- Items will be dynamically loaded here -->
+    <div class="filters">
+        <h4>Filter by Item Type:</h4>
+        <label><input type="checkbox" value="Head" checked> Head</label>
+        <label><input type="checkbox" value="Chest" checked> Chest</label>
+        <label><input type="checkbox" value="Arms" checked> Arms</label>
+        <label><input type="checkbox" value="Legs" checked> Legs</label>
+        <label><input type="checkbox" value="Shields" checked> Shields</label>
+        <label><input type="checkbox" value="Weapons" checked> Weapons</label>
     </div>
 
-    <!-- Link to the JavaScript file -->
+    <div id="itemGrid"></div>
+
+    <div id="similarItems" style="display:none;">
+        <h3>Similar Items:</h3>
+        <div id="similarItemGrid"></div>
+    </div>
+
     <script src="search_items.js"></script>
-
 </body>
 </html>
