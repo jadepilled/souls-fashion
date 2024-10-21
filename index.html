@@ -3,98 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elden Ring Fashion Search</title>
+    <title>Item Search</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
         }
-        .search-container {
-            margin: 20px;
+        .search-bar {
+            margin-bottom: 20px;
         }
-        .item {
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .item-grid {
             display: flex;
-            align-items: center;
-            margin: 10px 0;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .color-box {
-            width: 20px;
+        .item-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+        }
+        .item-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .color-bar {
+            display: flex;
+            margin-top: 5px;
+        }
+        .color-bar div {
+            flex: 1;
             height: 20px;
-            margin-right: 10px;
-        }
-        img {
-            max-width: 50px;
-            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search for items...">
-        <button id="searchButton">Search</button>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
     </div>
-    <div id="results"></div>
 
-    <script>
-        let armorColors = {};
+    <div class="item-grid" id="itemGrid">
+        <!-- Items will be dynamically loaded here -->
+    </div>
 
-        // Fetch armor colors from JSON
-        fetch('armor_colors.json')
-            .then(response => response.json())
-            .then(data => {
-                armorColors = data;
-            })
-            .catch(error => console.error('Error fetching armor colors:', error));
+    <!-- Link to the JavaScript file -->
+    <script src="search_items.js"></script>
 
-        // Function to convert snake_case to Title Case
-        function snakeToTitle(snake) {
-            return snake.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
-        }
-
-        // Function to get the item type based on the image folder
-        function getItemType(item) {
-            // This assumes the subfolder names are "Arms", "Chest", "Head", etc.
-            const subfolder = item.split("/")[3]; // Extract the subfolder from the item path
-            return subfolder.charAt(0).toUpperCase() + subfolder.slice(1); // Capitalize the first letter
-        }
-
-        // Search function
-        function searchItems(query) {
-            const resultsContainer = document.getElementById("results");
-            resultsContainer.innerHTML = ""; // Clear previous results
-            const results = []; // Array to store results
-
-            // Iterate through your armorColors JSON
-            for (const [item, colors] of Object.entries(armorColors)) {
-                const itemName = snakeToTitle(item);
-                if (itemName.toLowerCase().includes(query.toLowerCase())) {
-                    // Determine the subfolder type based on the item name
-                    const itemType = getItemType(item);
-                    const imagePath = `images/Elden Ring/${itemType}/${item}.png`; // Correct path for images
-
-                    results.push({ item, colors, imagePath });
-                }
-            }
-
-            // Display results
-            results.forEach(({ item, colors, imagePath }) => {
-                const itemDiv = document.createElement("div");
-                itemDiv.classList.add("item");
-
-                itemDiv.innerHTML = `
-                    <span class="color-box" style="background-color: rgb(${colors[0]}, ${colors[1]}, ${colors[2]})"></span>
-                    ${snakeToTitle(item)}
-                    <img src="${imagePath}" alt="${item}" onerror="this.style.display='none'">
-                `;
-
-                resultsContainer.appendChild(itemDiv);
-            });
-        }
-
-        // Search button event listener
-        document.getElementById("searchButton").addEventListener("click", () => {
-            const query = document.getElementById("search").value;
-            searchItems(query);
-        });
-    </script>
 </body>
 </html>
