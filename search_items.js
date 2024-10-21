@@ -19,7 +19,7 @@ function createItemCard(item) {
     card.classList.add('item-card');
 
     const img = document.createElement('img');
-    img.src = `images/Elden Ring/${item.type}/${item.image}`;
+    img.src = `images/Elden Ring/${item.type}/${item.image}`;  // Adjusted to match item.type and image
     img.alt = item.name;
 
     const title = document.createElement('p');
@@ -53,6 +53,11 @@ function displayItems(filteredItems) {
     const itemGrid = document.getElementById('itemGrid');
     itemGrid.innerHTML = ''; // Clear the current grid
 
+    if (filteredItems.length === 0) {
+        itemGrid.innerHTML = '<p>No items found matching the criteria.</p>';
+        return;
+    }
+
     filteredItems.forEach(item => {
         const itemCard = createItemCard(item);
         itemGrid.appendChild(itemCard);
@@ -77,11 +82,10 @@ function displaySimilarItems(selectedItem) {
     const similarItemGrid = document.getElementById('similarItemGrid');
     similarItemGrid.innerHTML = ''; // Clear previous similar items
 
-    // Find items with similar colors (simple example: matching primaryColor)
     const similarItems = items.filter(item => {
-        return item.type !== selectedItem.type &&
+        return item !== selectedItem &&  // Avoid selecting itself
                (item.primaryColor === selectedItem.primaryColor ||
-               item.secondaryColors.some(color => selectedItem.secondaryColors.includes(color)));
+                item.secondaryColors.some(color => selectedItem.secondaryColors.includes(color)));
     });
 
     if (similarItems.length > 0) {
@@ -95,10 +99,18 @@ function displaySimilarItems(selectedItem) {
     }
 }
 
-document.getElementById('searchInput').addEventListener('input', (e) => {
-    const query = e.target.value;
+document.getElementById('searchInput').addEventListener('input', () => {
+    const query = document.getElementById('searchInput').value;
     const filteredItems = searchItems(query);
     displayItems(filteredItems);
+});
+
+document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+        const query = document.getElementById('searchInput').value;
+        const filteredItems = searchItems(query);
+        displayItems(filteredItems);
+    });
 });
 
 // Fetch items on page load
