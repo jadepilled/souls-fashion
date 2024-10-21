@@ -18,8 +18,9 @@ function createItemCard(item) {
     const card = document.createElement('div');
     card.classList.add('item-card');
 
+    // Correct image path based on icons folder and item type
     const img = document.createElement('img');
-    img.src = `images/Elden Ring/${item.type}/${item.image}`;  // Adjusted to match item.type and image
+    img.src = `icons/${item.type}/${item.image}`; // Updated to include subfolder based on item type
     img.alt = item.name;
 
     const title = document.createElement('p');
@@ -70,7 +71,7 @@ function searchItems(query) {
 
     return items.filter(item => {
         const nameMatch = item.name.toLowerCase().includes(lowerQuery);
-        const primaryColorMatch = item.primaryColor.toLowerCase().includes(lowerQuery);
+        const primaryColorMatch = item.primaryColor && item.primaryColor.toLowerCase().includes(lowerQuery);
         const secondaryColorMatch = item.secondaryColors.some(color => color.toLowerCase().includes(lowerQuery));
         const typeMatch = selectedFilters.includes(item.type);
         return (nameMatch || primaryColorMatch || secondaryColorMatch) && typeMatch;
@@ -83,7 +84,7 @@ function displaySimilarItems(selectedItem) {
     similarItemGrid.innerHTML = ''; // Clear previous similar items
 
     const similarItems = items.filter(item => {
-        return item !== selectedItem &&  // Avoid selecting itself
+        return item !== selectedItem && // Avoid selecting itself
                (item.primaryColor === selectedItem.primaryColor ||
                 item.secondaryColors.some(color => selectedItem.secondaryColors.includes(color)));
     });
