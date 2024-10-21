@@ -4,126 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elden Ring Fashion Color Matcher</title>
-    <link rel="icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
-    AAAFCAYAAACNbyblAAAAHElEQVQIW2P8//8/AxU1ACxhBmQGAYUABmAAxwA1LwXqYAAAAAElFTkSuQmCC" type="image/x-icon">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        input[type="text"] { padding: 10px; width: 300px; }
-        button { padding: 10px; }
-        .results { margin-top: 20px; }
-        .item { margin-bottom: 10px; }
-        .color-box { width: 20px; height: 20px; display: inline-block; vertical-align: middle; }
-        img { height: 50px; margin-left: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        #results {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+        }
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
-
 <body>
-    <h1>Elden Ring Fashion Color Matcher</h1>
-    <label for="color-input">Enter Hex Color Code:</label>
-    <input type="text" id="color-input" placeholder="#RRGGBB">
-    <button id="search-color-button">Find Similar Items by Color</button>
-    
-    <label for="name-input">Search by Item Name:</label>
-    <input type="text" id="name-input" placeholder="Enter item name...">
-    <button id="search-name-button">Find Item by Name</button>
 
-    <div class="results" id="results"></div>
+    <h1>Elden Ring Fashion Color Matcher</h1>
+    <input type="text" id="search" placeholder="Search for items..." />
+    <button id="searchButton">Search</button>
+    
+    <div id="results"></div>
 
     <script>
-        // Load JSON data containing armor colors
-        async function loadArmorColors() {
-            const response = await fetch('armor_colors.json');
-            if (!response.ok) {
-                throw new Error('Failed to load armor colors');
-            }
-            const data = await response.json();
-            return data;
-        }
+        let armorColors = {};
 
-        function hexToRgb(hex) {
-            const bigint = parseInt(hex.slice(1), 16);
-            const r = (bigint >> 16) & 255;
-            const g = (bigint >> 8) & 255;
-            const b = bigint & 255;
-            return [r, g, b];
-        }
+        // Fetch armor colors from JSON
+        fetch('armor_colors.json')
+            .then(response => response.json())
+            .then(data => {
+                armorColors = data;
+            })
+            .catch(error => console.error('Error fetching armor colors:', error));
 
-        function colorDistance(color1, color2) {
-            return Math.sqrt(
-                Math.pow(color1[0] - color2[0], 2) +
-                Math.pow(color1[1] - color2[1], 2) +
-                Math.pow(color1[2] - color2[2], 2)
-            );
-        }
-
+        // Function to convert snake_case to Title Case
         function snakeToTitle(snake) {
-            return snake.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+            return snake.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
         }
 
-        async function searchSimilarItems() {
-            const armorColors = await loadArmorColors();
-            const hexInput = document.getElementById('color-input').value;
-            const rgbInput = hexToRgb(hexInput);
-            const resultsDiv = document.getElementById('results');
-            resultsDiv.innerHTML = ''; // Clear previous results
+        // Function to get the subfolder based on the item name
+        function getItemType(item) {
+            if (item.startsWith("head_")) return "Head";   // Item type based on name structure
+            else if (item.startsWith("body_")) return "Chest"; // Modify according to your naming
+            else if (item.startsWith("legs_")) return "Legs";   // Modify according to your naming
+            else if (item.startsWith("arms_")) return "Arms";   // Modify according to your naming
+            else if (item.startsWith("shield_")) return "Shields"; // Modify according to your naming
+            else if (item.startsWith("weapon_")) return "Weapons"; // Modify according to your naming
+            return "unknown"; // Default case if no match is found
+        }
 
+        // Search function
+        function searchItems(query) {
+            const resultsContainer = document.getElementById("results");
+            resultsContainer.innerHTML = ""; // Clear previous results
+            const results = []; // Array to store results
+
+            // Iterate through your armorColors JSON
             for (const [item, colors] of Object.entries(armorColors)) {
-                for (const color of colors) {
-                    const distance = colorDistance(rgbInput, color);
-                    if (distance < 100) { // Threshold for color similarity
-                        const itemDiv = document.createElement('div');
-                        itemDiv.className = 'item';
-                        const imagePath = `images/${item}.png`; // Assuming PNG format, adjust if necessary
-                        itemDiv.innerHTML = `
-                            <span class="color-box" style="background-color: rgb(${color[0]}, ${color[1]}, ${color[2]})"></span>
-                            ${snakeToTitle(item)}
-                            <img src="${imagePath}" alt="${item}">
-                        `;
-                        resultsDiv.appendChild(itemDiv);
-                        break; // Stop checking this item if one color matches
-                    }
+                const itemName = snakeToTitle(item);
+                if (itemName.toLowerCase().includes(query.toLowerCase())) {
+                    // Determine item type based on the item naming convention
+                    const itemType = getItemType(item);
+                    const imagePath = `images/Elden Ring/${itemType}/${item}.png`; // Correctly set the image path based on item type
+
+                    results.push({ item, colors, imagePath });
                 }
             }
+
+            // Display results
+            results.forEach(({ item, colors, imagePath }) => {
+                const itemDiv = document.createElement("div");
+                itemDiv.classList.add("item");
+
+                itemDiv.innerHTML = `
+                    <span class="color-box" style="background-color: rgb(${colors[0]}, ${colors[1]}, ${colors[2]})"></span>
+                    ${snakeToTitle(item)}
+                    <img src="${imagePath}" alt="${item}" onerror="this.style.display='none'">
+                `;
+
+                resultsContainer.appendChild(itemDiv);
+            });
         }
 
-        async function searchItemByName() {
-            const armorColors = await loadArmorColors();
-            const nameInput = document.getElementById('name-input').value.toLowerCase();
-            const resultsDiv = document.getElementById('results');
-            resultsDiv.innerHTML = ''; // Clear previous results
-
-            for (const [item, colors] of Object.entries(armorColors)) {
-                if (item.toLowerCase().includes(nameInput)) {
-                    const itemDiv = document.createElement('div');
-                    itemDiv.className = 'item';
-                    const imagePath = `images/${item}.png`; // Assuming PNG format, adjust if necessary
-                    itemDiv.innerHTML = `
-                        <span class="color-box" style="background-color: rgb(${colors[0][0]}, ${colors[0][1]}, ${colors[0][2]})"></span>
-                        ${snakeToTitle(item)}
-                        <img src="${imagePath}" alt="${item}">
-                    `;
-                    resultsDiv.appendChild(itemDiv);
-                }
-            }
-        }
-
-        // Event listeners for search buttons
-        document.getElementById('search-color-button').addEventListener('click', async () => {
-            try {
-                await searchSimilarItems();
-            } catch (error) {
-                console.error(error);
-                alert('Error searching by color. Please check the console for details.');
-            }
-        });
-
-        document.getElementById('search-name-button').addEventListener('click', async () => {
-            try {
-                await searchItemByName();
-            } catch (error) {
-                console.error(error);
-                alert('Error searching by name. Please check the console for details.');
-            }
+        // Search button event listener
+        document.getElementById("searchButton").addEventListener("click", () => {
+            const query = document.getElementById("search").value;
+            searchItems(query);
         });
     </script>
 </body>
