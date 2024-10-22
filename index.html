@@ -9,7 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #121212; /* Dark mode background by default */
+            color: #ffffff; /* Dark mode text color by default */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        body.light-mode {
+            background-color: #f5f5f5; /* Light mode background */
+            color: #000000; /* Light mode text color */
         }
         .search-bar {
             margin-bottom: 20px;
@@ -18,6 +24,14 @@
             width: 300px;
             padding: 10px;
             font-size: 16px;
+            background-color: #333; /* Dark mode input background */
+            color: #fff; /* Dark mode input text */
+            border: 1px solid #555; /* Dark mode border */
+        }
+        body.light-mode .search-bar input {
+            background-color: #fff; /* Light mode input background */
+            color: #000; /* Light mode input text */
+            border: 1px solid #ddd; /* Light mode border */
         }
         .item-grid {
             display: flex;
@@ -25,11 +39,17 @@
             gap: 20px;
         }
         .item-card {
-            background-color: white;
-            border: 1px solid #ddd;
+            background-color: #333; /* Dark mode card background */
+            border: 1px solid #555; /* Dark mode card border */
             padding: 10px;
             width: 150px;
             text-align: center;
+            color: #fff; /* Dark mode card text color */
+        }
+        body.light-mode .item-card {
+            background-color: white; /* Light mode card background */
+            border: 1px solid #ddd; /* Light mode card border */
+            color: #000; /* Light mode card text color */
         }
         .item-card img {
             max-width: 100%;
@@ -43,9 +63,22 @@
             flex: 1;
             height: 20px;
         }
+        .mode-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .mode-switch input {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+
+    <div class="mode-switch">
+        <label for="modeToggle">Light Mode</label>
+        <input type="checkbox" id="modeToggle">
+    </div>
 
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
@@ -57,6 +90,26 @@
 
     <!-- Link to the JavaScript file -->
     <script src="search_items.js"></script>
+    <script>
+        const modeToggle = document.getElementById('modeToggle');
+        const body = document.body;
+
+        // Check local storage to persist theme choice
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            modeToggle.checked = true;
+        }
+
+        modeToggle.addEventListener('change', () => {
+            if (modeToggle.checked) {
+                body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 
 </body>
 </html>
