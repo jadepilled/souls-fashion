@@ -72,7 +72,7 @@ function displayItems(filteredItems) {
     });
 }
 
-// Function to create item cards
+// Function to create item cards with click event for search
 function createItemCard(item) {
     const card = document.createElement('div');
     card.classList.add('item-card');
@@ -99,6 +99,12 @@ function createItemCard(item) {
     card.appendChild(img);
     card.appendChild(title);
     card.appendChild(colorBar);
+
+    // Add click event to set the item's primary color for the search
+    card.addEventListener('click', () => {
+        document.getElementById('favcolor').value = item.primaryColor;
+        updateMatchingItems();  // Trigger the search with the selected item's primary color
+    });
 
     return card;
 }
