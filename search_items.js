@@ -18,10 +18,13 @@ function createItemCard(item) {
     const card = document.createElement('div');
     card.classList.add('item-card');
 
-    // Adjust image path to match the icons folder with item type
+    // Adjust image path to match the icons folder with item type, ensuring proper casing
     const img = document.createElement('img');
     img.src = `icons/${item.type}/${item.image}`; // Use type to access the correct folder
     img.alt = item.name;
+    img.onerror = () => {
+        img.src = 'icons/placeholder.png'; // Fallback to placeholder image if not found
+    };
 
     const title = document.createElement('p');
     title.textContent = item.name;
