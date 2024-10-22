@@ -14,6 +14,46 @@ async function fetchItems() {
     }
 }
 
+// Function to convert hex to RGB
+function hexToRgb(hex) {
+    let bigint = parseInt(hex.slice(1), 16);
+    let r = (bigint >> 16) & 255;
+    let g = (bigint >> 8) & 255;
+    let b = bigint & 255;
+    return [r, g, b];
+}
+
+// Function to calculate Euclidean distance between two RGB colors
+function calculateDistance(color1, color2) {
+    let rDiff = color1[0] - color2[0];
+    let gDiff = color1[1] - color2[1];
+    let bDiff = color1[2] - color2[2];
+    return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff);
+}
+
+// Function to find the closest items based on input color
+function findMatchingItems(inputColor) {
+    let inputRgb = hexToRgb(inputColor);
+
+    return items.map(item => {
+        let itemRgb = hexToRgb(item.primaryColor);
+        let distance = calculateDistance(inputRgb, itemRgb);
+        return { ...item, distance: distance };
+    }).sort((a, b) => a.distance - b.distance);
+}
+
+// Display items in the grid
+function displayItems(filteredItems) {
+    const itemGrid = document.getElementById('itemGrid');
+    itemGrid.innerHTML = ''; // Clear the current grid
+
+    filteredItems.forEach(item => {
+        const itemCard = createItemCard(item);
+        itemGrid.appendChild(itemCard);
+    });
+}
+
+// Function to create item cards
 function createItemCard(item) {
     const card = document.createElement('div');
     card.classList.add('item-card');
@@ -44,31 +84,11 @@ function createItemCard(item) {
     return card;
 }
 
-function displayItems(filteredItems) {
-    const itemGrid = document.getElementById('itemGrid');
-    itemGrid.innerHTML = ''; // Clear the current grid
-
-    filteredItems.forEach(item => {
-        const itemCard = createItemCard(item);
-        itemGrid.appendChild(itemCard);
-    });
-}
-
-function searchItems(query) {
-    const lowerQuery = query.toLowerCase();
-
-    return items.filter(item => {
-        const nameMatch = item.name.toLowerCase().includes(lowerQuery);
-        const primaryColorMatch = item.primaryColor.toLowerCase().includes(lowerQuery);
-        const secondaryColorMatch = item.secondaryColors.some(color => color.toLowerCase().includes(lowerQuery));
-        return nameMatch || primaryColorMatch || secondaryColorMatch;
-    });
-}
-
-document.getElementById('searchInput').addEventListener('input', (e) => {
-    const query = e.target.value;
-    const filteredItems = searchItems(query);
-    displayItems(filteredItems);
+// Add event listener for color picker
+document.getElementById('favcolor').addEventListener('change', function(e) {
+    const selectedColor = e.target.value;
+    const matchingItems = findMatchingItems(selectedColor);
+    displayItems(matchingItems);
 });
 
 // Fetch items on page load
