@@ -60,7 +60,7 @@ function findMatchingItems(inputColor, secondaryWeight, query, selectedType) {
 
     return items.map(item => {
         // Extract the item type from the image path (e.g., "Chest/Ancient King's Breastplate.png" -> "Chest")
-        const itemType = item.image.split('/')[0];
+        const itemType = item.image.split('/')[0].toLowerCase();  // Extract and lowercase for comparison
 
         // Calculate color distance
         let distance = calculateWeightedDistance(inputColor, item.primaryColor, item.secondaryColors, secondaryWeight);
@@ -68,10 +68,13 @@ function findMatchingItems(inputColor, secondaryWeight, query, selectedType) {
         // Check if the item name matches the search query
         const nameMatch = item.name.toLowerCase().includes(lowerQuery);
 
+        // Debugging: Log the item type and selected type
+        console.log(`Item Type: ${itemType}, Selected Type: ${selectedType}`);
+
         // Filter items by type and name, and only show those with color distance below the threshold
         return { ...item, distance: distance, nameMatch: nameMatch, itemType: itemType };
     }).filter(item => item.nameMatch && item.distance <= colorDistanceThreshold &&
-                      (selectedType === "all" || item.itemType === selectedType))
+                      (selectedType === "all" || item.itemType === selectedType.toLowerCase()))
       .sort((a, b) => a.distance - b.distance);
 }
 
