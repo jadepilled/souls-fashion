@@ -3,214 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
     <title>Fashion Souls v0.0.1</title>
     <style>
-	h2 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 70px;margin-top:-10px;}
-	h3 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 20px;margin-top:-70px;}
+        h2 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 70px;margin-top:-10px;}
+        h3 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 20px;margin-top:-70px;}
         body {
-            font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;
+            font-family: "Spectral", 'fallback', Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #121212; /* Dark mode background by default */
-            color: #ffffff; /* Dark mode text color by default */
-            transition: background-color 0.3s ease, color 0.3s ease;
+            background-color: #121212;
+            color: #ffffff;
+            transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease; /* Combined transitions */
+            opacity: 1;
+            visibility: visible; /* Initial visibility */
+            padding-bottom: 40px; /* Add padding at the bottom to prevent content overlap */
         }
-        body.light-mode {
-            background-color: #f5f5f5; /* Light mode background */
-            color: #000000; /* Light mode text color */
-        }
-        .search-bar {
-            margin-bottom: 20px;
-        }
-        .search-bar input {
-            width: 300px;
-            padding: 10px;
-            font-size: 16px;
-            background-color: #333; /* Dark mode input background */
-            color: #fff; /* Dark mode input text */
-            border: 1px solid #555; /* Dark mode border */
-        }
-        body.light-mode .search-bar input {
-            background-color: #fff; /* Light mode input background */
-            color: #000; /* Light mode input text */
-            border: 1px solid #ddd; /* Light mode border */
+        .fade-out {
+            opacity: 0; /* Fade-out effect */
+            visibility: hidden; /* Hide the body */
         }
         .item-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center; /* Center the grid */
         }
         .item-card {
-            background-color: #333; /* Dark mode card background */
-            border: 1px solid #555; /* Dark mode card border */
-            padding: 10px;
-            width: 300px;
+            background-color: #333;
+            border: 1px solid #555;
+            padding: 20px; /* Increased padding for a larger tile */
+            width: 300px; /* Adjust width for larger tiles */
             text-align: center;
-            color: #fff; /* Dark mode card text color */
-        }
-        body.light-mode .item-card {
-            background-color: white; /* Light mode card background */
-            border: 1px solid #ddd; /* Light mode card border */
-            color: #000; /* Light mode card text color */
+            color: #fff;
         }
         .item-card img {
             max-width: 100%;
             height: auto;
         }
-        .color-bar {
-            display: flex;
-            margin-top: 5px;
+        .copyright {
+            position: fixed; /* Fix to the bottom */
+            bottom: 0; /* Position at the bottom of the viewport */
+            left: 0; /* Align to the left */
+            right: 0; /* Align to the right */
+            text-align: center; /* Center the copyright text */
+            margin: 0; /* Remove margin */
+            padding: 10px 0; /* Padding for spacing */
+            font-size: 14px; /* Font size for the copyright */
+            color: #333333; /* Color for the copyright text */
+            background-color: rgba(18, 18, 18, 0.8); /* Background color with some transparency */
         }
-        .color-bar div {
-            flex: 1;
-            height: 20px;
-        }
-        .mode-switch {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
-        .mode-switch input {
-            cursor: pointer;
-        }
-		
-		/*Navigation bar stylesheet
-				/* Add a black background color to the top navigation */
-				.topnav {
-				  background-color: #333;
-				  overflow: hidden;
-				}
-
-				/* Style the links inside the navigation bar */
-				.topnav a {
-				  float: left;
-				  color: #f2f2f2;
-				  text-align: center;
-				  padding: 14px 16px;
-				  text-decoration: none;
-				  font-size: 17px;
-				}
-
-				/* Change the color of links on hover */
-				.topnav a:hover {
-				  background-color: #ddd;
-				  color: black;
-				}
-
-				/* Add a color to the active/current link */
-				.topnav a.active {
-				  background-color: #2e2e2e;
-				  color: white;
-				}
-						/* The dropdown container */
-						.dropdown {
-						  float: left;
-						  overflow: hidden;
-						}
-
-						/* Dropdown button */
-						.dropdown .dropbtn {
-						 padding: 14px 16px;
-				  text-decoration: none;
-				  font-size: 17px;
-						  border: none;
-						  outline: none;
-						  color: white;
-						  background-color: inherit;
-						  font-family: inherit; /* Important for vertical align on mobile phones */
-						  margin: 0; /* Important for vertical align on mobile phones */
-						}
-
-						/* Dropdown content (hidden by default) */
-						.dropdown-content {
-						  display: none;
-						  position: absolute;
-						  background-color: #f9f9f9;
-						  min-width: 160px;
-						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-						  z-index: 1;
-						}
-
-						/* Links inside the dropdown */
-						.dropdown-content a {
-						  float: none;
-						  color: black;
-						  padding: 12px 16px;
-						  text-decoration: none;
-						  display: block;
-						  text-align: left;
-						}
-
-						/* Add a grey background color to dropdown links on hover */
-						.dropdown-content a:hover {
-						  background-color: #ddd;
-						}
-
-						/* Show the dropdown menu on hover */
-						.dropdown:hover .dropdown-content {
-						  display: block;
-						}	
     </style>
 </head>
 <body>
- <div class="topnav">
-  <a href="#home">Home</a>
-  <a class="active" href="#eldenring">Elden Ring</a>
-  <a href="#bloodborne">Bloodborne</a>
-  <a href="#demonssouls">Demon's Souls</a>
-		  <div class="dropdown">
-			<button class="dropbtn">Dark Souls
-			  <i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-			  <a href="#ds1">Dark Souls Remastered</a>
-			  <a href="#ds2">Dark Souls II: SotFS</a>
-			  <a href="ds3/index.html">Dark Souls III</a>
-			</div>
-		  </div>
-					  <div class="mode-switch"style="position: fixed">
-							<label for="modeToggle">Light Mode</label>
-							<input type="checkbox" id="modeToggle">
-						</div>
-</div> 
-	<div class="FashionSouls">
-		<h2>Fashion Souls</h2>
-			<h3>SoulsBorne fashion tool by Psyopgirl</h3>
-	</div>
-    
+<div class="FashionSouls">
+    <h2>Fashion Souls</h2>
+    <h3>SoulsBorne fashion tool by Psyopgirl</h3>
+</div>
+<div class="item-grid" id="itemGrid">
+    <!-- Images will be dynamically loaded here -->
+</div>
 
-    <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
-    </div>
+<div class="copyright">
+    Copyright © Psyopgirl 2024.
+	Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
+</div>
 
-    <div class="item-grid" id="itemGrid">
-        <!-- Items will be dynamically loaded here -->
-    </div>
+<script>
+    // Function to load images dynamically from the grid-images folder
+    function loadImages() {
+        const itemGrid = document.getElementById('itemGrid');
+        const items = [
+            { img: 'elden-ring-grid.webp', link: 'pages/eldenring/index.html' },
+            { img: 'bloodborne-grid.webp', link: 'bloodborne.html' },
+            { img: 'dark-souls-grid.png', link: 'dark-souls.html' },
+            { img: 'dark-souls-2-grid.webp', link: 'dark-souls-2.html' },
+            { img: 'dark-souls-3-grid.webp', link: 'dark-souls-3.html' },
+            { img: 'demons-souls-grid.webp', link: 'demons-souls.html' }
+        ];
 
-    <!-- Link to the JavaScript file -->
-    <script src="search_items.js"></script>
-    <script>
-        const modeToggle = document.getElementById('modeToggle');
-        const body = document.body;
+        // Clear existing content before loading new images
+        itemGrid.innerHTML = '';
 
-        // Check local storage to persist theme choice
-        if (localStorage.getItem('theme') === 'light') {
-            body.classList.add('light-mode');
-            modeToggle.checked = true;
-        }
+        items.forEach(item => {
+            const itemCard = document.createElement('div');
+            itemCard.className = 'item-card';
+            const linkElement = document.createElement('a'); // Create a link element
 
-        modeToggle.addEventListener('change', () => {
-            if (modeToggle.checked) {
-                body.classList.add('light-mode');
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.classList.remove('light-mode');
-                localStorage.setItem('theme', 'dark');
-            }
+            // Add click event listener to the link
+            linkElement.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default link behavior
+                document.body.classList.add('fade-out'); // Add fade-out class
+
+                // Delay the navigation to the new page to allow the fade-out effect to play
+                setTimeout(() => {
+                    window.location.href = item.link; // Navigate to the new page
+                }, 500); // Match this duration with the CSS transition duration
+            });
+
+            const imgElement = document.createElement('img');
+            imgElement.src = `grid-images/${item.img}`; // Path to grid-images folder
+            imgElement.alt = item.img;
+
+            linkElement.appendChild(imgElement); // Add the image to the link
+            itemCard.appendChild(linkElement); // Add the link to the item card
+            itemGrid.appendChild(itemCard); // Add the item card to the grid
         });
-    </script>
+    }
+
+    // Call the function to load images on page load
+    window.onload = function() {
+        loadImages();
+        document.body.classList.remove('fade-out'); // Ensure fade-out is removed on load
+    };
+
+    // Listen for visibility change to manage the fade-in effect
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible') {
+            document.body.classList.remove('fade-out'); // Remove fade-out when coming back
+        } else {
+            document.body.classList.add('fade-out'); // Add fade-out when leaving
+        }
+    });
+</script>
 
 </body>
 </html>

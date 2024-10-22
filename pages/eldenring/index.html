@@ -156,8 +156,8 @@
 </head>
 <body>
  <div class="topnav">
-  <a class="active" href="#">Home</a>
-  <a href="#eldenring">Elden Ring</a>
+  <a href="../../index.html">Home</a>
+  <a class="active" href="#eldenring">Elden Ring</a>
   <a href="#bloodborne">Bloodborne</a>
   <a href="#demonssouls">Demon's Souls</a>
 		  <div class="dropdown">
@@ -180,6 +180,11 @@
 			<h3>SoulsBorne fashion tool by Psyopgirl</h3>
 	</div>
     
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
+    </div>
+
     <div class="item-grid" id="itemGrid">
         <!-- Items will be dynamically loaded here -->
     </div>
@@ -204,6 +209,19 @@
                 body.classList.remove('light-mode');
                 localStorage.setItem('theme', 'dark');
             }
+        });
+    
+        // Add click event listener to all anchor links for fade effect
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default link behavior
+                document.body.classList.add('fade-out'); // Add fade-out class
+
+                // Delay the navigation to the new page to allow the fade-out effect to play
+                setTimeout(() => {
+                    window.location.href = this.href; // Navigate to the new page
+                }, 500); // Match this duration with the CSS transition duration
+            });
         });
     </script>
 
