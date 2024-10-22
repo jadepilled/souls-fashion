@@ -1,0 +1,3899 @@
+{
+    ".": [],
+    "Chest": [
+        {
+            "image": "Ancient King's Breastplate.png",
+            "primary_color": {
+                "rgb": [
+                    216,
+                    239,
+                    229
+                ],
+                "hex": "#d8efe5"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        149,
+                        165,
+                        154
+                    ],
+                    "hex": "#95a59a"
+                },
+                {
+                    "rgb": [
+                        119,
+                        147,
+                        138
+                    ],
+                    "hex": "#77938a"
+                }
+            ]
+        },
+        {
+            "image": "Binded Cross.png",
+            "primary_color": {
+                "rgb": [
+                    236,
+                    228,
+                    221
+                ],
+                "hex": "#ece4dd"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        168,
+                        139,
+                        111
+                    ],
+                    "hex": "#a88b6f"
+                },
+                {
+                    "rgb": [
+                        141,
+                        114,
+                        90
+                    ],
+                    "hex": "#8d725a"
+                }
+            ]
+        },
+        {
+            "image": "Black Leather.png",
+            "primary_color": {
+                "rgb": [
+                    164,
+                    155,
+                    142
+                ],
+                "hex": "#a49b8e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        143,
+                        135,
+                        120
+                    ],
+                    "hex": "#8f8778"
+                },
+                {
+                    "rgb": [
+                        132,
+                        122,
+                        109
+                    ],
+                    "hex": "#847a6d"
+                }
+            ]
+        },
+        {
+            "image": "Brushwood Armor.png",
+            "primary_color": {
+                "rgb": [
+                    173,
+                    158,
+                    140
+                ],
+                "hex": "#ad9e8c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        156,
+                        137,
+                        115
+                    ],
+                    "hex": "#9c8973"
+                },
+                {
+                    "rgb": [
+                        135,
+                        117,
+                        98
+                    ],
+                    "hex": "#877562"
+                }
+            ]
+        },
+        {
+            "image": "Chain Mail.png",
+            "primary_color": {
+                "rgb": [
+                    169,
+                    154,
+                    144
+                ],
+                "hex": "#a99a90"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        135,
+                        115,
+                        103
+                    ],
+                    "hex": "#877367"
+                },
+                {
+                    "rgb": [
+                        103,
+                        88,
+                        79
+                    ],
+                    "hex": "#67584f"
+                }
+            ]
+        },
+        {
+            "image": "Coat of Plate.png",
+            "primary_color": {
+                "rgb": [
+                    231,
+                    228,
+                    224
+                ],
+                "hex": "#e7e4e0"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        163,
+                        157,
+                        150
+                    ],
+                    "hex": "#a39d96"
+                },
+                {
+                    "rgb": [
+                        132,
+                        120,
+                        111
+                    ],
+                    "hex": "#84786f"
+                }
+            ]
+        },
+        {
+            "image": "Dark Silver Armor.png",
+            "primary_color": {
+                "rgb": [
+                    161,
+                    158,
+                    155
+                ],
+                "hex": "#a19e9b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        93,
+                        91,
+                        88
+                    ],
+                    "hex": "#5d5b58"
+                },
+                {
+                    "rgb": [
+                        68,
+                        66,
+                        61
+                    ],
+                    "hex": "#44423d"
+                }
+            ]
+        },
+        {
+            "image": "Dull Gold Armor.png",
+            "primary_color": {
+                "rgb": [
+                    236,
+                    217,
+                    163
+                ],
+                "hex": "#ecd9a3"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        166,
+                        140,
+                        98
+                    ],
+                    "hex": "#a68c62"
+                },
+                {
+                    "rgb": [
+                        139,
+                        116,
+                        81
+                    ],
+                    "hex": "#8b7451"
+                }
+            ]
+        },
+        {
+            "image": "Fluted Armor.png",
+            "primary_color": {
+                "rgb": [
+                    229,
+                    225,
+                    220
+                ],
+                "hex": "#e5e1dc"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        162,
+                        156,
+                        150
+                    ],
+                    "hex": "#a29c96"
+                },
+                {
+                    "rgb": [
+                        131,
+                        122,
+                        116
+                    ],
+                    "hex": "#837a74"
+                }
+            ]
+        },
+        {
+            "image": "Gloom Armor.png",
+            "primary_color": {
+                "rgb": [
+                    245,
+                    239,
+                    223
+                ],
+                "hex": "#f5efdf"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        159,
+                        138,
+                        111
+                    ],
+                    "hex": "#9f8a6f"
+                },
+                {
+                    "rgb": [
+                        137,
+                        116,
+                        90
+                    ],
+                    "hex": "#89745a"
+                }
+            ]
+        },
+        {
+            "image": "Leather Armor.png",
+            "primary_color": {
+                "rgb": [
+                    176,
+                    159,
+                    138
+                ],
+                "hex": "#b09f8a"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        159,
+                        137,
+                        117
+                    ],
+                    "hex": "#9f8975"
+                },
+                {
+                    "rgb": [
+                        138,
+                        115,
+                        97
+                    ],
+                    "hex": "#8a7361"
+                }
+            ]
+        },
+        {
+            "image": "Mirdan Scale Mail.png",
+            "primary_color": {
+                "rgb": [
+                    241,
+                    235,
+                    224
+                ],
+                "hex": "#f1ebe0"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        169,
+                        160,
+                        147
+                    ],
+                    "hex": "#a9a093"
+                },
+                {
+                    "rgb": [
+                        143,
+                        134,
+                        122
+                    ],
+                    "hex": "#8f867a"
+                }
+            ]
+        },
+        {
+            "image": "Old Raggedy Robes.png",
+            "primary_color": {
+                "rgb": [
+                    157,
+                    153,
+                    146
+                ],
+                "hex": "#9d9992"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        134,
+                        131,
+                        123
+                    ],
+                    "hex": "#86837b"
+                },
+                {
+                    "rgb": [
+                        99,
+                        94,
+                        89
+                    ],
+                    "hex": "#635e59"
+                }
+            ]
+        },
+        {
+            "image": "Rogue's Clothes.png",
+            "primary_color": {
+                "rgb": [
+                    231,
+                    214,
+                    161
+                ],
+                "hex": "#e7d6a1"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        164,
+                        144,
+                        106
+                    ],
+                    "hex": "#a4906a"
+                },
+                {
+                    "rgb": [
+                        138,
+                        118,
+                        85
+                    ],
+                    "hex": "#8a7655"
+                }
+            ]
+        },
+        {
+            "image": "Saint's Robes.png",
+            "primary_color": {
+                "rgb": [
+                    221,
+                    217,
+                    209
+                ],
+                "hex": "#ddd9d1"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        199,
+                        196,
+                        186
+                    ],
+                    "hex": "#c7c4ba"
+                },
+                {
+                    "rgb": [
+                        163,
+                        161,
+                        153
+                    ],
+                    "hex": "#a3a199"
+                }
+            ]
+        },
+        {
+            "image": "Shaman's Clothes.png",
+            "primary_color": {
+                "rgb": [
+                    168,
+                    159,
+                    146
+                ],
+                "hex": "#a89f92"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        146,
+                        135,
+                        120
+                    ],
+                    "hex": "#928778"
+                },
+                {
+                    "rgb": [
+                        134,
+                        120,
+                        108
+                    ],
+                    "hex": "#86786c"
+                }
+            ]
+        },
+        {
+            "image": "Venerable Sage's Robe.png",
+            "primary_color": {
+                "rgb": [
+                    174,
+                    157,
+                    140
+                ],
+                "hex": "#ae9d8c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        157,
+                        136,
+                        117
+                    ],
+                    "hex": "#9d8875"
+                },
+                {
+                    "rgb": [
+                        137,
+                        116,
+                        99
+                    ],
+                    "hex": "#897463"
+                }
+            ]
+        },
+        {
+            "image": "Wizard's Clothes.png",
+            "primary_color": {
+                "rgb": [
+                    231,
+                    227,
+                    217
+                ],
+                "hex": "#e7e3d9"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        162,
+                        160,
+                        147
+                    ],
+                    "hex": "#a2a093"
+                },
+                {
+                    "rgb": [
+                        137,
+                        134,
+                        120
+                    ],
+                    "hex": "#898678"
+                }
+            ]
+        }
+    ],
+    "Hands": [
+        {
+            "image": "Ancient King's Gauntlet.png",
+            "primary_color": {
+                "rgb": [
+                    173,
+                    222,
+                    206
+                ],
+                "hex": "#addece"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        138,
+                        177,
+                        162
+                    ],
+                    "hex": "#8ab1a2"
+                },
+                {
+                    "rgb": [
+                        111,
+                        156,
+                        143
+                    ],
+                    "hex": "#6f9c8f"
+                }
+            ]
+        },
+        {
+            "image": "Binded Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    172,
+                    137,
+                    102
+                ],
+                "hex": "#ac8966"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        144,
+                        113,
+                        84
+                    ],
+                    "hex": "#907154"
+                },
+                {
+                    "rgb": [
+                        141,
+                        98,
+                        53
+                    ],
+                    "hex": "#8d6235"
+                }
+            ]
+        },
+        {
+            "image": "Black Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    167,
+                    154,
+                    140
+                ],
+                "hex": "#a79a8c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        148,
+                        134,
+                        119
+                    ],
+                    "hex": "#948677"
+                },
+                {
+                    "rgb": [
+                        133,
+                        120,
+                        108
+                    ],
+                    "hex": "#85786c"
+                }
+            ]
+        },
+        {
+            "image": "Brushwood Gauntlets.png",
+            "primary_color": {
+                "rgb": [
+                    178,
+                    159,
+                    138
+                ],
+                "hex": "#b29f8a"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        162,
+                        138,
+                        114
+                    ],
+                    "hex": "#a28a72"
+                },
+                {
+                    "rgb": [
+                        138,
+                        116,
+                        96
+                    ],
+                    "hex": "#8a7460"
+                }
+            ]
+        },
+        {
+            "image": "Chain Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    197,
+                    183,
+                    176
+                ],
+                "hex": "#c5b7b0"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        164,
+                        151,
+                        145
+                    ],
+                    "hex": "#a49791"
+                },
+                {
+                    "rgb": [
+                        133,
+                        121,
+                        115
+                    ],
+                    "hex": "#857973"
+                }
+            ]
+        },
+        {
+            "image": "Dark Silver Manifer.png",
+            "primary_color": {
+                "rgb": [
+                    226,
+                    223,
+                    220
+                ],
+                "hex": "#e2dfdc"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        161,
+                        158,
+                        154
+                    ],
+                    "hex": "#a19e9a"
+                },
+                {
+                    "rgb": [
+                        132,
+                        129,
+                        125
+                    ],
+                    "hex": "#84817d"
+                }
+            ]
+        },
+        {
+            "image": "Dull Gold Manifer.png",
+            "primary_color": {
+                "rgb": [
+                    243,
+                    217,
+                    94
+                ],
+                "hex": "#f3d95e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        172,
+                        166,
+                        147
+                    ],
+                    "hex": "#aca693"
+                },
+                {
+                    "rgb": [
+                        99,
+                        94,
+                        82
+                    ],
+                    "hex": "#635e52"
+                }
+            ]
+        },
+        {
+            "image": "Fluted Gauntlet.png",
+            "primary_color": {
+                "rgb": [
+                    228,
+                    224,
+                    218
+                ],
+                "hex": "#e4e0da"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        163,
+                        157,
+                        152
+                    ],
+                    "hex": "#a39d98"
+                },
+                {
+                    "rgb": [
+                        131,
+                        123,
+                        115
+                    ],
+                    "hex": "#837b73"
+                }
+            ]
+        },
+        {
+            "image": "Gloom Gauntlet.png",
+            "primary_color": {
+                "rgb": [
+                    246,
+                    242,
+                    224
+                ],
+                "hex": "#f6f2e0"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        171,
+                        142,
+                        103
+                    ],
+                    "hex": "#ab8e67"
+                },
+                {
+                    "rgb": [
+                        141,
+                        115,
+                        83
+                    ],
+                    "hex": "#8d7353"
+                }
+            ]
+        },
+        {
+            "image": "Leather Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    207,
+                    172,
+                    142
+                ],
+                "hex": "#cfac8e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        170,
+                        140,
+                        113
+                    ],
+                    "hex": "#aa8c71"
+                },
+                {
+                    "rgb": [
+                        141,
+                        116,
+                        94
+                    ],
+                    "hex": "#8d745e"
+                }
+            ]
+        },
+        {
+            "image": "Mirdan Manifer.png",
+            "primary_color": {
+                "rgb": [
+                    239,
+                    233,
+                    221
+                ],
+                "hex": "#efe9dd"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        207,
+                        198,
+                        184
+                    ],
+                    "hex": "#cfc6b8"
+                },
+                {
+                    "rgb": [
+                        167,
+                        156,
+                        144
+                    ],
+                    "hex": "#a79c90"
+                }
+            ]
+        },
+        {
+            "image": "Old Raggedy Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    170,
+                    153,
+                    137
+                ],
+                "hex": "#aa9989"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        160,
+                        136,
+                        117
+                    ],
+                    "hex": "#a08875"
+                },
+                {
+                    "rgb": [
+                        140,
+                        118,
+                        102
+                    ],
+                    "hex": "#8c7666"
+                }
+            ]
+        },
+        {
+            "image": "Plate Gauntlet.png",
+            "primary_color": {
+                "rgb": [
+                    240,
+                    231,
+                    222
+                ],
+                "hex": "#f0e7de"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        222,
+                        200,
+                        179
+                    ],
+                    "hex": "#dec8b3"
+                },
+                {
+                    "rgb": [
+                        204,
+                        179,
+                        158
+                    ],
+                    "hex": "#ccb39e"
+                }
+            ]
+        },
+        {
+            "image": "Rogue's Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    237,
+                    234,
+                    211
+                ],
+                "hex": "#edead3"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        159,
+                        155,
+                        148
+                    ],
+                    "hex": "#9f9b94"
+                },
+                {
+                    "rgb": [
+                        87,
+                        84,
+                        82
+                    ],
+                    "hex": "#575452"
+                }
+            ]
+        },
+        {
+            "image": "Saint's Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    234,
+                    229,
+                    223
+                ],
+                "hex": "#eae5df"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        168,
+                        156,
+                        146
+                    ],
+                    "hex": "#a89c92"
+                },
+                {
+                    "rgb": [
+                        149,
+                        133,
+                        120
+                    ],
+                    "hex": "#958578"
+                }
+            ]
+        },
+        {
+            "image": "Shaman's Armband.png",
+            "primary_color": {
+                "rgb": [
+                    167,
+                    159,
+                    149
+                ],
+                "hex": "#a79f95"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        139,
+                        132,
+                        122
+                    ],
+                    "hex": "#8b847a"
+                },
+                {
+                    "rgb": [
+                        131,
+                        122,
+                        112
+                    ],
+                    "hex": "#837a70"
+                }
+            ]
+        },
+        {
+            "image": "Silver Bracelet.png",
+            "primary_color": {
+                "rgb": [
+                    224,
+                    219,
+                    216
+                ],
+                "hex": "#e0dbd8"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        199,
+                        194,
+                        188
+                    ],
+                    "hex": "#c7c2bc"
+                },
+                {
+                    "rgb": [
+                        194,
+                        188,
+                        183
+                    ],
+                    "hex": "#c2bcb7"
+                }
+            ]
+        },
+        {
+            "image": "Venerable Sage's Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    174,
+                    153,
+                    139
+                ],
+                "hex": "#ae998b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        158,
+                        135,
+                        118
+                    ],
+                    "hex": "#9e8776"
+                },
+                {
+                    "rgb": [
+                        137,
+                        116,
+                        102
+                    ],
+                    "hex": "#897466"
+                }
+            ]
+        },
+        {
+            "image": "Wizard's Gloves.png",
+            "primary_color": {
+                "rgb": [
+                    212,
+                    198,
+                    184
+                ],
+                "hex": "#d4c6b8"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        197,
+                        184,
+                        170
+                    ],
+                    "hex": "#c5b8aa"
+                },
+                {
+                    "rgb": [
+                        168,
+                        157,
+                        146
+                    ],
+                    "hex": "#a89d92"
+                }
+            ]
+        }
+    ],
+    "Legs": [
+        {
+            "image": "Ancient King's Leggings.png",
+            "primary_color": {
+                "rgb": [
+                    153,
+                    164,
+                    155
+                ],
+                "hex": "#99a49b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        88,
+                        98,
+                        90
+                    ],
+                    "hex": "#58625a"
+                },
+                {
+                    "rgb": [
+                        56,
+                        66,
+                        58
+                    ],
+                    "hex": "#38423a"
+                }
+            ]
+        },
+        {
+            "image": "Binded Boots.png",
+            "primary_color": {
+                "rgb": [
+                    140,
+                    115,
+                    92
+                ],
+                "hex": "#8c735c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        109,
+                        92,
+                        76
+                    ],
+                    "hex": "#6d5c4c"
+                },
+                {
+                    "rgb": [
+                        91,
+                        72,
+                        54
+                    ],
+                    "hex": "#5b4836"
+                }
+            ]
+        },
+        {
+            "image": "Black Boots.png",
+            "primary_color": {
+                "rgb": [
+                    162,
+                    152,
+                    143
+                ],
+                "hex": "#a2988f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        141,
+                        133,
+                        122
+                    ],
+                    "hex": "#8d857a"
+                },
+                {
+                    "rgb": [
+                        99,
+                        92,
+                        85
+                    ],
+                    "hex": "#635c55"
+                }
+            ]
+        },
+        {
+            "image": "Brushwood Leggings.png",
+            "primary_color": {
+                "rgb": [
+                    176,
+                    158,
+                    140
+                ],
+                "hex": "#b09e8c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        136,
+                        117,
+                        99
+                    ],
+                    "hex": "#887563"
+                },
+                {
+                    "rgb": [
+                        107,
+                        92,
+                        77
+                    ],
+                    "hex": "#6b5c4d"
+                }
+            ]
+        },
+        {
+            "image": "Dark Silver Leggings.png",
+            "primary_color": {
+                "rgb": [
+                    163,
+                    160,
+                    154
+                ],
+                "hex": "#a3a09a"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        91,
+                        90,
+                        88
+                    ],
+                    "hex": "#5b5a58"
+                },
+                {
+                    "rgb": [
+                        90,
+                        88,
+                        84
+                    ],
+                    "hex": "#5a5854"
+                }
+            ]
+        },
+        {
+            "image": "Dull Gold Leggings.png",
+            "primary_color": {
+                "rgb": [
+                    164,
+                    142,
+                    111
+                ],
+                "hex": "#a48e6f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        139,
+                        117,
+                        88
+                    ],
+                    "hex": "#8b7558"
+                },
+                {
+                    "rgb": [
+                        110,
+                        96,
+                        74
+                    ],
+                    "hex": "#6e604a"
+                }
+            ]
+        },
+        {
+            "image": "Fluted Leggings.png",
+            "primary_color": {
+                "rgb": [
+                    201,
+                    182,
+                    169
+                ],
+                "hex": "#c9b6a9"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        166,
+                        157,
+                        150
+                    ],
+                    "hex": "#a69d96"
+                },
+                {
+                    "rgb": [
+                        133,
+                        118,
+                        108
+                    ],
+                    "hex": "#85766c"
+                }
+            ]
+        },
+        {
+            "image": "Gloom Leggings.png",
+            "primary_color": {
+                "rgb": [
+                    242,
+                    237,
+                    224
+                ],
+                "hex": "#f2ede0"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        154,
+                        137,
+                        115
+                    ],
+                    "hex": "#9a8973"
+                },
+                {
+                    "rgb": [
+                        106,
+                        92,
+                        76
+                    ],
+                    "hex": "#6a5c4c"
+                }
+            ]
+        },
+        {
+            "image": "Hard Leather Boots.png",
+            "primary_color": {
+                "rgb": [
+                    206,
+                    182,
+                    172
+                ],
+                "hex": "#ceb6ac"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        168,
+                        151,
+                        142
+                    ],
+                    "hex": "#a8978e"
+                },
+                {
+                    "rgb": [
+                        134,
+                        120,
+                        112
+                    ],
+                    "hex": "#867870"
+                }
+            ]
+        },
+        {
+            "image": "Leather Boots.png",
+            "primary_color": {
+                "rgb": [
+                    202,
+                    179,
+                    163
+                ],
+                "hex": "#cab3a3"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        175,
+                        155,
+                        142
+                    ],
+                    "hex": "#af9b8e"
+                },
+                {
+                    "rgb": [
+                        153,
+                        135,
+                        120
+                    ],
+                    "hex": "#998778"
+                }
+            ]
+        },
+        {
+            "image": "Old Raggedy Boots.png",
+            "primary_color": {
+                "rgb": [
+                    155,
+                    149,
+                    140
+                ],
+                "hex": "#9b958c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        94,
+                        91,
+                        82
+                    ],
+                    "hex": "#5e5b52"
+                },
+                {
+                    "rgb": [
+                        71,
+                        67,
+                        59
+                    ],
+                    "hex": "#47433b"
+                }
+            ]
+        },
+        {
+            "image": "Plate Leggings.png",
+            "primary_color": {
+                "rgb": [
+                    235,
+                    230,
+                    223
+                ],
+                "hex": "#ebe6df"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        208,
+                        200,
+                        180
+                    ],
+                    "hex": "#d0c8b4"
+                },
+                {
+                    "rgb": [
+                        168,
+                        161,
+                        149
+                    ],
+                    "hex": "#a8a195"
+                }
+            ]
+        },
+        {
+            "image": "Rogue's Boots.png",
+            "primary_color": {
+                "rgb": [
+                    84,
+                    80,
+                    75
+                ],
+                "hex": "#54504b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        79,
+                        75,
+                        71
+                    ],
+                    "hex": "#4f4b47"
+                },
+                {
+                    "rgb": [
+                        71,
+                        67,
+                        60
+                    ],
+                    "hex": "#47433c"
+                }
+            ]
+        },
+        {
+            "image": "Saint's Boots.png",
+            "primary_color": {
+                "rgb": [
+                    166,
+                    161,
+                    153
+                ],
+                "hex": "#a6a199"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        148,
+                        134,
+                        121
+                    ],
+                    "hex": "#948679"
+                },
+                {
+                    "rgb": [
+                        96,
+                        90,
+                        84
+                    ],
+                    "hex": "#605a54"
+                }
+            ]
+        },
+        {
+            "image": "Shaman's Tabi Socks.png",
+            "primary_color": {
+                "rgb": [
+                    169,
+                    154,
+                    142
+                ],
+                "hex": "#a99a8e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        133,
+                        121,
+                        111
+                    ],
+                    "hex": "#85796f"
+                },
+                {
+                    "rgb": [
+                        99,
+                        92,
+                        85
+                    ],
+                    "hex": "#635c55"
+                }
+            ]
+        },
+        {
+            "image": "Venerable Sage's Boots.png",
+            "primary_color": {
+                "rgb": [
+                    171,
+                    153,
+                    139
+                ],
+                "hex": "#ab998b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        159,
+                        138,
+                        118
+                    ],
+                    "hex": "#9f8a76"
+                },
+                {
+                    "rgb": [
+                        136,
+                        119,
+                        106
+                    ],
+                    "hex": "#88776a"
+                }
+            ]
+        },
+        {
+            "image": "Wizard's Shoes.png",
+            "primary_color": {
+                "rgb": [
+                    229,
+                    223,
+                    219
+                ],
+                "hex": "#e5dfdb"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        157,
+                        150,
+                        144
+                    ],
+                    "hex": "#9d9690"
+                },
+                {
+                    "rgb": [
+                        97,
+                        94,
+                        91
+                    ],
+                    "hex": "#615e5b"
+                }
+            ]
+        }
+    ],
+    "Shields": [
+        {
+            "image": "Adjudicators Shield .png",
+            "primary_color": {
+                "rgb": [
+                    160,
+                    140,
+                    94
+                ],
+                "hex": "#a08c5e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        141,
+                        114,
+                        80
+                    ],
+                    "hex": "#8d7250"
+                },
+                {
+                    "rgb": [
+                        143,
+                        102,
+                        50
+                    ],
+                    "hex": "#8f6632"
+                }
+            ]
+        },
+        {
+            "image": "Buckler.png",
+            "primary_color": {
+                "rgb": [
+                    169,
+                    156,
+                    146
+                ],
+                "hex": "#a99c92"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        146,
+                        132,
+                        122
+                    ],
+                    "hex": "#92847a"
+                },
+                {
+                    "rgb": [
+                        134,
+                        121,
+                        112
+                    ],
+                    "hex": "#867970"
+                }
+            ]
+        },
+        {
+            "image": "Dark Silver Shield.png",
+            "primary_color": {
+                "rgb": [
+                    159,
+                    153,
+                    145
+                ],
+                "hex": "#9f9991"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        90,
+                        86,
+                        82
+                    ],
+                    "hex": "#5a5652"
+                },
+                {
+                    "rgb": [
+                        68,
+                        64,
+                        62
+                    ],
+                    "hex": "#44403e"
+                }
+            ]
+        },
+        {
+            "image": "Dregling Shield Small.png",
+            "primary_color": {
+                "rgb": [
+                    94,
+                    81,
+                    71
+                ],
+                "hex": "#5e5147"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        88,
+                        68,
+                        52
+                    ],
+                    "hex": "#584434"
+                },
+                {
+                    "rgb": [
+                        73,
+                        54,
+                        37
+                    ],
+                    "hex": "#493625"
+                }
+            ]
+        },
+        {
+            "image": "Heater Shield.png",
+            "primary_color": {
+                "rgb": [
+                    143,
+                    132,
+                    133
+                ],
+                "hex": "#8f8485"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        132,
+                        120,
+                        121
+                    ],
+                    "hex": "#847879"
+                },
+                {
+                    "rgb": [
+                        96,
+                        87,
+                        87
+                    ],
+                    "hex": "#605757"
+                }
+            ]
+        },
+        {
+            "image": "Hoplite Shield.png",
+            "primary_color": {
+                "rgb": [
+                    168,
+                    139,
+                    99
+                ],
+                "hex": "#a88b63"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        141,
+                        114,
+                        79
+                    ],
+                    "hex": "#8d724f"
+                },
+                {
+                    "rgb": [
+                        107,
+                        94,
+                        73
+                    ],
+                    "hex": "#6b5e49"
+                }
+            ]
+        },
+        {
+            "image": "Kite Shield.png",
+            "primary_color": {
+                "rgb": [
+                    132,
+                    102,
+                    49
+                ],
+                "hex": "#846631"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        106,
+                        78,
+                        29
+                    ],
+                    "hex": "#6a4e1d"
+                },
+                {
+                    "rgb": [
+                        84,
+                        79,
+                        76
+                    ],
+                    "hex": "#544f4c"
+                }
+            ]
+        },
+        {
+            "image": "Knights Shield Standar Shield .png",
+            "primary_color": {
+                "rgb": [
+                    168,
+                    138,
+                    97
+                ],
+                "hex": "#a88a61"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        142,
+                        113,
+                        77
+                    ],
+                    "hex": "#8e714d"
+                },
+                {
+                    "rgb": [
+                        90,
+                        83,
+                        77
+                    ],
+                    "hex": "#5a534d"
+                }
+            ]
+        },
+        {
+            "image": "Large Brushwood Shield.png",
+            "primary_color": {
+                "rgb": [
+                    144,
+                    111,
+                    79
+                ],
+                "hex": "#906f4f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        97,
+                        88,
+                        79
+                    ],
+                    "hex": "#61584f"
+                },
+                {
+                    "rgb": [
+                        95,
+                        73,
+                        53
+                    ],
+                    "hex": "#5f4935"
+                }
+            ]
+        },
+        {
+            "image": "Leather Shield .png",
+            "primary_color": {
+                "rgb": [
+                    137,
+                    113,
+                    82
+                ],
+                "hex": "#897152"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        108,
+                        95,
+                        88
+                    ],
+                    "hex": "#6c5f58"
+                },
+                {
+                    "rgb": [
+                        108,
+                        93,
+                        84
+                    ],
+                    "hex": "#6c5d54"
+                }
+            ]
+        },
+        {
+            "image": "Purple Flame Shield.png",
+            "primary_color": {
+                "rgb": [
+                    205,
+                    172,
+                    147
+                ],
+                "hex": "#cdac93"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        177,
+                        141,
+                        137
+                    ],
+                    "hex": "#b18d89"
+                },
+                {
+                    "rgb": [
+                        176,
+                        138,
+                        113
+                    ],
+                    "hex": "#b08a71"
+                }
+            ]
+        },
+        {
+            "image": "Rune Shield .png",
+            "primary_color": {
+                "rgb": [
+                    140,
+                    101,
+                    48
+                ],
+                "hex": "#8c6530"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        107,
+                        78,
+                        37
+                    ],
+                    "hex": "#6b4e25"
+                },
+                {
+                    "rgb": [
+                        104,
+                        78,
+                        39
+                    ],
+                    "hex": "#684e27"
+                }
+            ]
+        },
+        {
+            "image": "Soldier's Shield.png",
+            "primary_color": {
+                "rgb": [
+                    158,
+                    152,
+                    143
+                ],
+                "hex": "#9e988f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        92,
+                        87,
+                        81
+                    ],
+                    "hex": "#5c5751"
+                },
+                {
+                    "rgb": [
+                        71,
+                        66,
+                        59
+                    ],
+                    "hex": "#47423b"
+                }
+            ]
+        },
+        {
+            "image": "Spiked Shield.png",
+            "primary_color": {
+                "rgb": [
+                    168,
+                    163,
+                    151
+                ],
+                "hex": "#a8a397"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        88,
+                        86,
+                        80
+                    ],
+                    "hex": "#585650"
+                },
+                {
+                    "rgb": [
+                        71,
+                        66,
+                        58
+                    ],
+                    "hex": "#47423a"
+                }
+            ]
+        },
+        {
+            "image": "Steel Shield.png",
+            "primary_color": {
+                "rgb": [
+                    163,
+                    154,
+                    144
+                ],
+                "hex": "#a39a90"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        95,
+                        87,
+                        79
+                    ],
+                    "hex": "#5f574f"
+                },
+                {
+                    "rgb": [
+                        76,
+                        66,
+                        59
+                    ],
+                    "hex": "#4c423b"
+                }
+            ]
+        },
+        {
+            "image": "Tower Shield.png",
+            "primary_color": {
+                "rgb": [
+                    162,
+                    154,
+                    145
+                ],
+                "hex": "#a29a91"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        135,
+                        118,
+                        88
+                    ],
+                    "hex": "#877658"
+                },
+                {
+                    "rgb": [
+                        90,
+                        85,
+                        78
+                    ],
+                    "hex": "#5a554e"
+                }
+            ]
+        },
+        {
+            "image": "Wooden Shield Small.png",
+            "primary_color": {
+                "rgb": [
+                    134,
+                    113,
+                    100
+                ],
+                "hex": "#867164"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        97,
+                        87,
+                        80
+                    ],
+                    "hex": "#615750"
+                },
+                {
+                    "rgb": [
+                        83,
+                        67,
+                        56
+                    ],
+                    "hex": "#534338"
+                }
+            ]
+        }
+    ],
+    "Weapons": [
+        {
+            "image": "Babys Nail.png",
+            "primary_color": {
+                "rgb": [
+                    101,
+                    80,
+                    65
+                ],
+                "hex": "#655041"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        98,
+                        70,
+                        52
+                    ],
+                    "hex": "#624634"
+                },
+                {
+                    "rgb": [
+                        76,
+                        50,
+                        34
+                    ],
+                    "hex": "#4c3222"
+                }
+            ]
+        },
+        {
+            "image": "Bastard Sword.png",
+            "primary_color": {
+                "rgb": [
+                    145,
+                    136,
+                    140
+                ],
+                "hex": "#91888c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        86,
+                        79,
+                        81
+                    ],
+                    "hex": "#564f51"
+                },
+                {
+                    "rgb": [
+                        67,
+                        62,
+                        64
+                    ],
+                    "hex": "#433e40"
+                }
+            ]
+        },
+        {
+            "image": "Battle Axe.png",
+            "primary_color": {
+                "rgb": [
+                    100,
+                    94,
+                    92
+                ],
+                "hex": "#645e5c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        97,
+                        90,
+                        87
+                    ],
+                    "hex": "#615a57"
+                },
+                {
+                    "rgb": [
+                        103,
+                        70,
+                        51
+                    ],
+                    "hex": "#674633"
+                }
+            ]
+        },
+        {
+            "image": "Blind.png",
+            "primary_color": {
+                "rgb": [
+                    78,
+                    82,
+                    79
+                ],
+                "hex": "#4e524f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        66,
+                        66,
+                        61
+                    ],
+                    "hex": "#42423d"
+                },
+                {
+                    "rgb": [
+                        62,
+                        66,
+                        65
+                    ],
+                    "hex": "#3e4241"
+                }
+            ]
+        },
+        {
+            "image": "Blueblood Sword.png",
+            "primary_color": {
+                "rgb": [
+                    80,
+                    75,
+                    70
+                ],
+                "hex": "#504b46"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        76,
+                        74,
+                        71
+                    ],
+                    "hex": "#4c4a47"
+                },
+                {
+                    "rgb": [
+                        71,
+                        66,
+                        61
+                    ],
+                    "hex": "#47423d"
+                }
+            ]
+        },
+        {
+            "image": "Bramd.png",
+            "primary_color": {
+                "rgb": [
+                    98,
+                    93,
+                    82
+                ],
+                "hex": "#625d52"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        97,
+                        87,
+                        71
+                    ],
+                    "hex": "#615747"
+                },
+                {
+                    "rgb": [
+                        90,
+                        75,
+                        53
+                    ],
+                    "hex": "#5a4b35"
+                }
+            ]
+        },
+        {
+            "image": "Broadsword.png",
+            "primary_color": {
+                "rgb": [
+                    87,
+                    84,
+                    85
+                ],
+                "hex": "#575455"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        80,
+                        78,
+                        76
+                    ],
+                    "hex": "#504e4c"
+                },
+                {
+                    "rgb": [
+                        60,
+                        60,
+                        65
+                    ],
+                    "hex": "#3c3c41"
+                }
+            ]
+        },
+        {
+            "image": "Broken Sword.png",
+            "primary_color": {
+                "rgb": [
+                    92,
+                    80,
+                    72
+                ],
+                "hex": "#5c5048"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        82,
+                        68,
+                        59
+                    ],
+                    "hex": "#52443b"
+                },
+                {
+                    "rgb": [
+                        70,
+                        55,
+                        48
+                    ],
+                    "hex": "#463730"
+                }
+            ]
+        },
+        {
+            "image": "Claws.png",
+            "primary_color": {
+                "rgb": [
+                    163,
+                    155,
+                    143
+                ],
+                "hex": "#a39b8f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        95,
+                        88,
+                        80
+                    ],
+                    "hex": "#5f5850"
+                },
+                {
+                    "rgb": [
+                        73,
+                        67,
+                        59
+                    ],
+                    "hex": "#49433b"
+                }
+            ]
+        },
+        {
+            "image": "Claymore.png",
+            "primary_color": {
+                "rgb": [
+                    163,
+                    158,
+                    155
+                ],
+                "hex": "#a39e9b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        86,
+                        84,
+                        84
+                    ],
+                    "hex": "#565454"
+                },
+                {
+                    "rgb": [
+                        95,
+                        75,
+                        47
+                    ],
+                    "hex": "#5f4b2f"
+                }
+            ]
+        },
+        {
+            "image": "Club.png",
+            "primary_color": {
+                "rgb": [
+                    94,
+                    72,
+                    45
+                ],
+                "hex": "#5e482d"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        72,
+                        54,
+                        33
+                    ],
+                    "hex": "#483621"
+                },
+                {
+                    "rgb": [
+                        49,
+                        38,
+                        22
+                    ],
+                    "hex": "#312616"
+                }
+            ]
+        },
+        {
+            "image": "Compound Long Bow.png",
+            "primary_color": {
+                "rgb": [
+                    105,
+                    67,
+                    36
+                ],
+                "hex": "#694324"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        80,
+                        48,
+                        24
+                    ],
+                    "hex": "#503018"
+                },
+                {
+                    "rgb": [
+                        77,
+                        48,
+                        25
+                    ],
+                    "hex": "#4d3019"
+                }
+            ]
+        },
+        {
+            "image": "Compound Short Bow.png",
+            "primary_color": {
+                "rgb": [
+                    99,
+                    71,
+                    46
+                ],
+                "hex": "#63472e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        74,
+                        50,
+                        29
+                    ],
+                    "hex": "#4a321d"
+                },
+                {
+                    "rgb": [
+                        67,
+                        48,
+                        36
+                    ],
+                    "hex": "#433024"
+                }
+            ]
+        },
+        {
+            "image": "Crescent Axe.png",
+            "primary_color": {
+                "rgb": [
+                    152,
+                    146,
+                    138
+                ],
+                "hex": "#98928a"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        101,
+                        98,
+                        93
+                    ],
+                    "hex": "#65625d"
+                },
+                {
+                    "rgb": [
+                        99,
+                        91,
+                        84
+                    ],
+                    "hex": "#635b54"
+                }
+            ]
+        },
+        {
+            "image": "Dagger.png",
+            "primary_color": {
+                "rgb": [
+                    155,
+                    150,
+                    147
+                ],
+                "hex": "#9b9693"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        89,
+                        83,
+                        81
+                    ],
+                    "hex": "#595351"
+                },
+                {
+                    "rgb": [
+                        104,
+                        70,
+                        50
+                    ],
+                    "hex": "#684632"
+                }
+            ]
+        },
+        {
+            "image": "Demonbrandt.png",
+            "primary_color": {
+                "rgb": [
+                    196,
+                    183,
+                    167
+                ],
+                "hex": "#c4b7a7"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        177,
+                        162,
+                        143
+                    ],
+                    "hex": "#b1a28f"
+                },
+                {
+                    "rgb": [
+                        152,
+                        135,
+                        113
+                    ],
+                    "hex": "#988771"
+                }
+            ]
+        },
+        {
+            "image": "Dozer Axe.png",
+            "primary_color": {
+                "rgb": [
+                    79,
+                    73,
+                    72
+                ],
+                "hex": "#4f4948"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        73,
+                        64,
+                        62
+                    ],
+                    "hex": "#49403e"
+                },
+                {
+                    "rgb": [
+                        65,
+                        63,
+                        64
+                    ],
+                    "hex": "#413f40"
+                }
+            ]
+        },
+        {
+            "image": "Epee Rapier.png",
+            "primary_color": {
+                "rgb": [
+                    146,
+                    119,
+                    73
+                ],
+                "hex": "#927749"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        99,
+                        75,
+                        42
+                    ],
+                    "hex": "#634b2a"
+                },
+                {
+                    "rgb": [
+                        73,
+                        51,
+                        28
+                    ],
+                    "hex": "#49331c"
+                }
+            ]
+        },
+        {
+            "image": "Estoc.png",
+            "primary_color": {
+                "rgb": [
+                    96,
+                    96,
+                    92
+                ],
+                "hex": "#60605c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        94,
+                        94,
+                        90
+                    ],
+                    "hex": "#5e5e5a"
+                },
+                {
+                    "rgb": [
+                        92,
+                        92,
+                        88
+                    ],
+                    "hex": "#5c5c58"
+                }
+            ]
+        },
+        {
+            "image": "Flamberge.png",
+            "primary_color": {
+                "rgb": [
+                    85,
+                    83,
+                    81
+                ],
+                "hex": "#555351"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        80,
+                        78,
+                        76
+                    ],
+                    "hex": "#504e4c"
+                },
+                {
+                    "rgb": [
+                        77,
+                        65,
+                        55
+                    ],
+                    "hex": "#4d4137"
+                }
+            ]
+        },
+        {
+            "image": "Gargoyle Crossbow.png",
+            "primary_color": {
+                "rgb": [
+                    89,
+                    82,
+                    76
+                ],
+                "hex": "#59524c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        87,
+                        82,
+                        78
+                    ],
+                    "hex": "#57524e"
+                },
+                {
+                    "rgb": [
+                        88,
+                        67,
+                        54
+                    ],
+                    "hex": "#584336"
+                }
+            ]
+        },
+        {
+            "image": "Great Axe.png",
+            "primary_color": {
+                "rgb": [
+                    98,
+                    94,
+                    89
+                ],
+                "hex": "#625e59"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        93,
+                        88,
+                        80
+                    ],
+                    "hex": "#5d5850"
+                },
+                {
+                    "rgb": [
+                        77,
+                        67,
+                        56
+                    ],
+                    "hex": "#4d4338"
+                }
+            ]
+        },
+        {
+            "image": "Great Club.png",
+            "primary_color": {
+                "rgb": [
+                    143,
+                    100,
+                    73
+                ],
+                "hex": "#8f6449"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        99,
+                        80,
+                        67
+                    ],
+                    "hex": "#635043"
+                },
+                {
+                    "rgb": [
+                        104,
+                        73,
+                        53
+                    ],
+                    "hex": "#684935"
+                }
+            ]
+        },
+        {
+            "image": "Guillotine Axe.png",
+            "primary_color": {
+                "rgb": [
+                    91,
+                    86,
+                    80
+                ],
+                "hex": "#5b5650"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        88,
+                        86,
+                        82
+                    ],
+                    "hex": "#585652"
+                },
+                {
+                    "rgb": [
+                        73,
+                        66,
+                        59
+                    ],
+                    "hex": "#49423b"
+                }
+            ]
+        },
+        {
+            "image": "Heavy Crossbow.png",
+            "primary_color": {
+                "rgb": [
+                    98,
+                    90,
+                    79
+                ],
+                "hex": "#625a4f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        85,
+                        71,
+                        53
+                    ],
+                    "hex": "#554735"
+                },
+                {
+                    "rgb": [
+                        70,
+                        55,
+                        41
+                    ],
+                    "hex": "#463729"
+                }
+            ]
+        },
+        {
+            "image": "Hiltless.png",
+            "primary_color": {
+                "rgb": [
+                    101,
+                    94,
+                    92
+                ],
+                "hex": "#655e5c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        92,
+                        89,
+                        86
+                    ],
+                    "hex": "#5c5956"
+                },
+                {
+                    "rgb": [
+                        100,
+                        74,
+                        55
+                    ],
+                    "hex": "#644a37"
+                }
+            ]
+        },
+        {
+            "image": "Insanity Catalyst.png",
+            "primary_color": {
+                "rgb": [
+                    148,
+                    100,
+                    43
+                ],
+                "hex": "#94642b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        108,
+                        97,
+                        78
+                    ],
+                    "hex": "#6c614e"
+                },
+                {
+                    "rgb": [
+                        100,
+                        74,
+                        41
+                    ],
+                    "hex": "#644a29"
+                }
+            ]
+        },
+        {
+            "image": "Iron Knuckles.png",
+            "primary_color": {
+                "rgb": [
+                    88,
+                    82,
+                    79
+                ],
+                "hex": "#58524f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        85,
+                        67,
+                        55
+                    ],
+                    "hex": "#554337"
+                },
+                {
+                    "rgb": [
+                        72,
+                        53,
+                        42
+                    ],
+                    "hex": "#48352a"
+                }
+            ]
+        },
+        {
+            "image": "Istarelle.png",
+            "primary_color": {
+                "rgb": [
+                    232,
+                    229,
+                    221
+                ],
+                "hex": "#e8e5dd"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        95,
+                        91,
+                        85
+                    ],
+                    "hex": "#5f5b55"
+                },
+                {
+                    "rgb": [
+                        80,
+                        66,
+                        49
+                    ],
+                    "hex": "#504231"
+                }
+            ]
+        },
+        {
+            "image": "Kilij.png",
+            "primary_color": {
+                "rgb": [
+                    115,
+                    99,
+                    76
+                ],
+                "hex": "#73634c"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        106,
+                        91,
+                        70
+                    ],
+                    "hex": "#6a5b46"
+                },
+                {
+                    "rgb": [
+                        86,
+                        71,
+                        56
+                    ],
+                    "hex": "#564738"
+                }
+            ]
+        },
+        {
+            "image": "Kris Blade.png",
+            "primary_color": {
+                "rgb": [
+                    88,
+                    89,
+                    87
+                ],
+                "hex": "#585957"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        73,
+                        74,
+                        73
+                    ],
+                    "hex": "#494a49"
+                },
+                {
+                    "rgb": [
+                        83,
+                        65,
+                        55
+                    ],
+                    "hex": "#534137"
+                }
+            ]
+        },
+        {
+            "image": "Lava Bow.png",
+            "primary_color": {
+                "rgb": [
+                    88,
+                    80,
+                    73
+                ],
+                "hex": "#585049"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        65,
+                        56,
+                        49
+                    ],
+                    "hex": "#413831"
+                },
+                {
+                    "rgb": [
+                        0,
+                        0,
+                        255
+                    ],
+                    "hex": "#0000ff"
+                }
+            ]
+        },
+        {
+            "image": "Light Crossbow.png",
+            "primary_color": {
+                "rgb": [
+                    136,
+                    109,
+                    79
+                ],
+                "hex": "#886d4f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        108,
+                        92,
+                        74
+                    ],
+                    "hex": "#6c5c4a"
+                },
+                {
+                    "rgb": [
+                        93,
+                        73,
+                        51
+                    ],
+                    "hex": "#5d4933"
+                }
+            ]
+        },
+        {
+            "image": "Long Bow.png",
+            "primary_color": {
+                "rgb": [
+                    134,
+                    83,
+                    47
+                ],
+                "hex": "#86532f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        116,
+                        76,
+                        47
+                    ],
+                    "hex": "#744c2f"
+                },
+                {
+                    "rgb": [
+                        116,
+                        72,
+                        41
+                    ],
+                    "hex": "#744829"
+                }
+            ]
+        },
+        {
+            "image": "Long Sword.png",
+            "primary_color": {
+                "rgb": [
+                    151,
+                    150,
+                    149
+                ],
+                "hex": "#979695"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        91,
+                        87,
+                        83
+                    ],
+                    "hex": "#5b5753"
+                },
+                {
+                    "rgb": [
+                        76,
+                        67,
+                        57
+                    ],
+                    "hex": "#4c4339"
+                }
+            ]
+        },
+        {
+            "image": "Mace.png",
+            "primary_color": {
+                "rgb": [
+                    91,
+                    80,
+                    75
+                ],
+                "hex": "#5b504b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        77,
+                        65,
+                        60
+                    ],
+                    "hex": "#4d413c"
+                },
+                {
+                    "rgb": [
+                        73,
+                        65,
+                        61
+                    ],
+                    "hex": "#49413d"
+                }
+            ]
+        },
+        {
+            "image": "Magic Sword Makoto.png",
+            "primary_color": {
+                "rgb": [
+                    138,
+                    120,
+                    101
+                ],
+                "hex": "#8a7865"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        97,
+                        87,
+                        77
+                    ],
+                    "hex": "#61574d"
+                },
+                {
+                    "rgb": [
+                        93,
+                        84,
+                        75
+                    ],
+                    "hex": "#5d544b"
+                }
+            ]
+        },
+        {
+            "image": "Mail Breaker.png",
+            "primary_color": {
+                "rgb": [
+                    155,
+                    148,
+                    148
+                ],
+                "hex": "#9b9494"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        93,
+                        86,
+                        87
+                    ],
+                    "hex": "#5d5657"
+                },
+                {
+                    "rgb": [
+                        90,
+                        85,
+                        86
+                    ],
+                    "hex": "#5a5556"
+                }
+            ]
+        },
+        {
+            "image": "Meat Cleaver.png",
+            "primary_color": {
+                "rgb": [
+                    81,
+                    75,
+                    71
+                ],
+                "hex": "#514b47"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        73,
+                        65,
+                        61
+                    ],
+                    "hex": "#49413d"
+                },
+                {
+                    "rgb": [
+                        67,
+                        55,
+                        50
+                    ],
+                    "hex": "#433732"
+                }
+            ]
+        },
+        {
+            "image": "Mirdan Hammer3.png",
+            "primary_color": {
+                "rgb": [
+                    85,
+                    82,
+                    78
+                ],
+                "hex": "#55524e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        82,
+                        80,
+                        76
+                    ],
+                    "hex": "#52504c"
+                },
+                {
+                    "rgb": [
+                        66,
+                        65,
+                        59
+                    ],
+                    "hex": "#42413b"
+                }
+            ]
+        },
+        {
+            "image": "Morning Star.png",
+            "primary_color": {
+                "rgb": [
+                    85,
+                    82,
+                    78
+                ],
+                "hex": "#55524e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        85,
+                        81,
+                        76
+                    ],
+                    "hex": "#55514c"
+                },
+                {
+                    "rgb": [
+                        77,
+                        66,
+                        59
+                    ],
+                    "hex": "#4d423b"
+                }
+            ]
+        },
+        {
+            "image": "Northern Regalia.png",
+            "primary_color": {
+                "rgb": [
+                    200,
+                    178,
+                    153
+                ],
+                "hex": "#c8b299"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        176,
+                        157,
+                        136
+                    ],
+                    "hex": "#b09d88"
+                },
+                {
+                    "rgb": [
+                        156,
+                        139,
+                        119
+                    ],
+                    "hex": "#9c8b77"
+                }
+            ]
+        },
+        {
+            "image": "Penetrating Word.png",
+            "primary_color": {
+                "rgb": [
+                    152,
+                    150,
+                    150
+                ],
+                "hex": "#989696"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        83,
+                        80,
+                        80
+                    ],
+                    "hex": "#535050"
+                },
+                {
+                    "rgb": [
+                        81,
+                        80,
+                        80
+                    ],
+                    "hex": "#515050"
+                }
+            ]
+        },
+        {
+            "image": "Phosporescent Pole.png",
+            "primary_color": {
+                "rgb": [
+                    90,
+                    91,
+                    79
+                ],
+                "hex": "#5a5b4f"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        88,
+                        74,
+                        51
+                    ],
+                    "hex": "#584a33"
+                },
+                {
+                    "rgb": [
+                        69,
+                        57,
+                        42
+                    ],
+                    "hex": "#45392a"
+                }
+            ]
+        },
+        {
+            "image": "Pickaxe.png",
+            "primary_color": {
+                "rgb": [
+                    0,
+                    106,
+                    106
+                ],
+                "hex": "#006a6a"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        76,
+                        70,
+                        67
+                    ],
+                    "hex": "#4c4643"
+                },
+                {
+                    "rgb": [
+                        78,
+                        66,
+                        57
+                    ],
+                    "hex": "#4e4239"
+                }
+            ]
+        },
+        {
+            "image": "Rapier.png",
+            "primary_color": {
+                "rgb": [
+                    98,
+                    90,
+                    84
+                ],
+                "hex": "#625a54"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        97,
+                        90,
+                        85
+                    ],
+                    "hex": "#615a55"
+                },
+                {
+                    "rgb": [
+                        81,
+                        68,
+                        57
+                    ],
+                    "hex": "#514439"
+                }
+            ]
+        },
+        {
+            "image": "Reaper's Scythe.png",
+            "primary_color": {
+                "rgb": [
+                    163,
+                    137,
+                    94
+                ],
+                "hex": "#a3895e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        141,
+                        116,
+                        77
+                    ],
+                    "hex": "#8d744d"
+                },
+                {
+                    "rgb": [
+                        107,
+                        78,
+                        49
+                    ],
+                    "hex": "#6b4e31"
+                }
+            ]
+        },
+        {
+            "image": "Ritual Blade.png",
+            "primary_color": {
+                "rgb": [
+                    95,
+                    91,
+                    82
+                ],
+                "hex": "#5f5b52"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        88,
+                        85,
+                        76
+                    ],
+                    "hex": "#58554c"
+                },
+                {
+                    "rgb": [
+                        89,
+                        72,
+                        47
+                    ],
+                    "hex": "#59482f"
+                }
+            ]
+        },
+        {
+            "image": "Rune Sword.png",
+            "primary_color": {
+                "rgb": [
+                    104,
+                    74,
+                    30
+                ],
+                "hex": "#684a1e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        74,
+                        51,
+                        20
+                    ],
+                    "hex": "#4a3314"
+                },
+                {
+                    "rgb": [
+                        77,
+                        50,
+                        17
+                    ],
+                    "hex": "#4d3211"
+                }
+            ]
+        },
+        {
+            "image": "Scimitar 1.png",
+            "primary_color": {
+                "rgb": [
+                    147,
+                    141,
+                    142
+                ],
+                "hex": "#938d8e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        99,
+                        95,
+                        97
+                    ],
+                    "hex": "#635f61"
+                },
+                {
+                    "rgb": [
+                        100,
+                        93,
+                        95
+                    ],
+                    "hex": "#645d5f"
+                }
+            ]
+        },
+        {
+            "image": "Scrapping Spear.png",
+            "primary_color": {
+                "rgb": [
+                    86,
+                    86,
+                    85
+                ],
+                "hex": "#565655"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        92,
+                        84,
+                        78
+                    ],
+                    "hex": "#5c544e"
+                },
+                {
+                    "rgb": [
+                        81,
+                        68,
+                        56
+                    ],
+                    "hex": "#514438"
+                }
+            ]
+        },
+        {
+            "image": "Short Bow.png",
+            "primary_color": {
+                "rgb": [
+                    104,
+                    75,
+                    48
+                ],
+                "hex": "#684b30"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        73,
+                        55,
+                        35
+                    ],
+                    "hex": "#493723"
+                },
+                {
+                    "rgb": [
+                        78,
+                        52,
+                        30
+                    ],
+                    "hex": "#4e341e"
+                }
+            ]
+        },
+        {
+            "image": "Short Spear.png",
+            "primary_color": {
+                "rgb": [
+                    88,
+                    87,
+                    78
+                ],
+                "hex": "#58574e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        83,
+                        82,
+                        75
+                    ],
+                    "hex": "#53524b"
+                },
+                {
+                    "rgb": [
+                        68,
+                        67,
+                        60
+                    ],
+                    "hex": "#44433c"
+                }
+            ]
+        },
+        {
+            "image": "Short Sword.png",
+            "primary_color": {
+                "rgb": [
+                    86,
+                    85,
+                    84
+                ],
+                "hex": "#565554"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        82,
+                        78,
+                        77
+                    ],
+                    "hex": "#524e4d"
+                },
+                {
+                    "rgb": [
+                        94,
+                        68,
+                        59
+                    ],
+                    "hex": "#5e443b"
+                }
+            ]
+        },
+        {
+            "image": "Shotel.png",
+            "primary_color": {
+                "rgb": [
+                    97,
+                    89,
+                    85
+                ],
+                "hex": "#615955"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        93,
+                        89,
+                        86
+                    ],
+                    "hex": "#5d5956"
+                },
+                {
+                    "rgb": [
+                        86,
+                        68,
+                        54
+                    ],
+                    "hex": "#564436"
+                }
+            ]
+        },
+        {
+            "image": "Silver Catalyst.png",
+            "primary_color": {
+                "rgb": [
+                    134,
+                    120,
+                    109
+                ],
+                "hex": "#86786d"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        98,
+                        86,
+                        79
+                    ],
+                    "hex": "#62564f"
+                },
+                {
+                    "rgb": [
+                        78,
+                        67,
+                        61
+                    ],
+                    "hex": "#4e433d"
+                }
+            ]
+        },
+        {
+            "image": "Spiral Rapier.png",
+            "primary_color": {
+                "rgb": [
+                    80,
+                    79,
+                    77
+                ],
+                "hex": "#504f4d"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        76,
+                        75,
+                        75
+                    ],
+                    "hex": "#4c4b4b"
+                },
+                {
+                    "rgb": [
+                        69,
+                        65,
+                        59
+                    ],
+                    "hex": "#45413b"
+                }
+            ]
+        },
+        {
+            "image": "Storm Ruler.png",
+            "primary_color": {
+                "rgb": [
+                    134,
+                    114,
+                    97
+                ],
+                "hex": "#867261"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        89,
+                        83,
+                        75
+                    ],
+                    "hex": "#59534b"
+                },
+                {
+                    "rgb": [
+                        77,
+                        68,
+                        58
+                    ],
+                    "hex": "#4d443a"
+                }
+            ]
+        },
+        {
+            "image": "Uchigatana.png",
+            "primary_color": {
+                "rgb": [
+                    209,
+                    207,
+                    207
+                ],
+                "hex": "#d1cfcf"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        155,
+                        153,
+                        152
+                    ],
+                    "hex": "#9b9998"
+                },
+                {
+                    "rgb": [
+                        90,
+                        87,
+                        84
+                    ],
+                    "hex": "#5a5754"
+                }
+            ]
+        },
+        {
+            "image": "War Pick.png",
+            "primary_color": {
+                "rgb": [
+                    90,
+                    87,
+                    83
+                ],
+                "hex": "#5a5753"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        80,
+                        76,
+                        73
+                    ],
+                    "hex": "#504c49"
+                },
+                {
+                    "rgb": [
+                        70,
+                        65,
+                        62
+                    ],
+                    "hex": "#46413e"
+                }
+            ]
+        },
+        {
+            "image": "War Scythe.png",
+            "primary_color": {
+                "rgb": [
+                    73,
+                    70,
+                    70
+                ],
+                "hex": "#494646"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        71,
+                        71,
+                        68
+                    ],
+                    "hex": "#474744"
+                },
+                {
+                    "rgb": [
+                        70,
+                        69,
+                        68
+                    ],
+                    "hex": "#464544"
+                }
+            ]
+        },
+        {
+            "image": "Winged Spear.png",
+            "primary_color": {
+                "rgb": [
+                    91,
+                    86,
+                    82
+                ],
+                "hex": "#5b5652"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        86,
+                        68,
+                        44
+                    ],
+                    "hex": "#56442c"
+                },
+                {
+                    "rgb": [
+                        70,
+                        50,
+                        27
+                    ],
+                    "hex": "#46321b"
+                }
+            ]
+        },
+        {
+            "image": "Wooden Catalyst.png",
+            "primary_color": {
+                "rgb": [
+                    105,
+                    68,
+                    43
+                ],
+                "hex": "#69442b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        81,
+                        49,
+                        27
+                    ],
+                    "hex": "#51311b"
+                },
+                {
+                    "rgb": [
+                        79,
+                        48,
+                        27
+                    ],
+                    "hex": "#4f301b"
+                }
+            ]
+        }
+    ]
+}
