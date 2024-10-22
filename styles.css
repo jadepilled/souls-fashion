@@ -119,6 +119,7 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
             border: 1px solid #ddd; /* Light mode border */
         }
         .item-grid {
+			text-align: center; 
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
