@@ -180,3 +180,20 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
 					  margin: 4px 2px;
 					  cursor: pointer;
 					}
+					
+		/*styling for inline sliders */
+
+.parent {
+  border: none;
+  text-align: center;
+	margin-top:-10px;
+}
+.child {
+  display: inline-block;
+  border: none;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+
+			
