@@ -788,7 +788,7 @@
         "primaryColor": "#a79f8e",
         "secondaryColors": [
             "#9b4217",
-            "#86795e"
+            "#546c54"
         ]
     },
     {
@@ -832,7 +832,7 @@
         "image": "Chest/Guardian Garb (Full Bloom).png",
         "primaryColor": "#948b70",
         "secondaryColors": [
-            "#916551",
+            "#b65c59",
             "#6f644b"
         ]
     },
@@ -902,18 +902,18 @@
     {
         "name": "Hoslow's Armor (Altered)",
         "image": "Chest/Hoslow's Armor (Altered).png",
-        "primaryColor": "#959492",
+        "primaryColor": "#4f5051",
         "secondaryColors": [
-            "#5a5855",
+            "#4f2c26",
             "#48433b"
         ]
     },
     {
         "name": "Hoslow's Armor",
         "image": "Chest/Hoslow's Armor.png",
-        "primaryColor": "#959392",
+        "primaryColor": "#4f5051",
         "secondaryColors": [
-            "#5a5855",
+            "#4f2c26",
             "#48433c"
         ]
     },
@@ -947,16 +947,16 @@
     {
         "name": "Knight Armor",
         "image": "Chest/Knight Armor.png",
-        "primaryColor": "#dedbdb",
+        "primaryColor": "#7c7777",
         "secondaryColors": [
-            "#a29d9d",
+            "#146074",
             "#5d5d5c"
         ]
     },
     {
         "name": "Land of Reeds Armor (Altered)",
         "image": "Chest/Land of Reeds Armor (Altered).png",
-        "primaryColor": "#8c6559",
+        "primaryColor": "#804b30",
         "secondaryColors": [
             "#605652",
             "#624537"
@@ -965,7 +965,7 @@
     {
         "name": "Land of Reeds Armor",
         "image": "Chest/Land of Reeds Armor.png",
-        "primaryColor": "#8b6758",
+        "primaryColor": "#804b30",
         "secondaryColors": [
             "#615953",
             "#624636"
@@ -1064,10 +1064,10 @@
     {
         "name": "Lusat's Robe",
         "image": "Chest/Lusat's Robe.png",
-        "primaryColor": "#4d5359",
+        "primaryColor": "#744e2b",
         "secondaryColors": [
-            "#604632",
-            "#4b3528"
+            "#2b467a",
+            "#26282b"
         ]
     },
     {
@@ -1352,18 +1352,18 @@
     {
         "name": "Preceptor's Long Gown (Altered)",
         "image": "Chest/Preceptor's Long Gown (Altered).png",
-        "primaryColor": "#867161",
+        "primaryColor": "#201b18",
         "secondaryColors": [
-            "#5b5049",
+            "#6c534a",
             "#4e433b"
         ]
     },
     {
         "name": "Preceptor's Long Gown",
         "image": "Chest/Preceptor's Long Gown.png",
-        "primaryColor": "#53504f",
+        "primaryColor": "#04284d",
         "secondaryColors": [
-            "#35455c",
+            "#1e1e1d",
             "#443b35"
         ]
     },
@@ -1397,10 +1397,10 @@
     {
         "name": "Queen's Robe",
         "image": "Chest/Queen's Robe.png",
-        "primaryColor": "#4c545c",
+        "primaryColor": "#182028",
         "secondaryColors": [
-            "#3b434b",
-            "#343b42"
+            "#4d1611",
+            "#51422d"
         ]
     },
     {
@@ -1426,7 +1426,7 @@
         "image": "Chest/Raging Wolf Armor (Altered).png",
         "primaryColor": "#9e9797",
         "secondaryColors": [
-            "#615755",
+            "#804138",
             "#59433c"
         ]
     },
@@ -1435,7 +1435,7 @@
         "image": "Chest/Raging Wolf Armor.png",
         "primaryColor": "#9e9797",
         "secondaryColors": [
-            "#5f5755",
+            "#804138",
             "#55423b"
         ]
     },
@@ -1451,36 +1451,36 @@
     {
         "name": "Raya Lucarian Robe",
         "image": "Chest/Raya Lucarian Robe.png",
-        "primaryColor": "#644f49",
+        "primaryColor": "#2c2c3c",
         "secondaryColors": [
-            "#6a453a",
-            "#693a36"
+            "#843a39",
+            "#584830"
         ]
     },
     {
         "name": "Redmane Knight Armor (Altered)",
         "image": "Chest/Redmane Knight Armor (Altered).png",
-        "primaryColor": "#98625b",
+        "primaryColor": "#a44c46",
         "secondaryColors": [
-            "#5e544f",
+            "#574470",
             "#4e433b"
         ]
     },
     {
         "name": "Redmane Knight Armor",
         "image": "Chest/Redmane Knight Armor.png",
-        "primaryColor": "#9a625c",
+        "primaryColor": "#a44c46",
         "secondaryColors": [
-            "#5f5550",
+            "#574470",
             "#4d443b"
         ]
     },
     {
         "name": "Redmane Surcoat",
         "image": "Chest/Redmane Surcoat.png",
-        "primaryColor": "#8c635f",
+        "primaryColor": "#9b343b",
         "secondaryColors": [
-            "#645655",
+            "#543c52",
             "#554638"
         ]
     },
@@ -1505,19 +1505,19 @@
     {
         "name": "Rotten Gravekeeper Cloak (Altered)",
         "image": "Chest/Rotten Gravekeeper Cloak (Altered).png",
-        "primaryColor": "#8e6351",
+        "primaryColor": "#701812",
         "secondaryColors": [
-            "#6e5b4e",
-            "#62473a"
+            "#2e0703",
+            "#4c2b1e"
         ]
     },
     {
         "name": "Rotten Gravekeeper Cloak",
         "image": "Chest/Rotten Gravekeeper Cloak.png",
-        "primaryColor": "#8c332b",
+        "primaryColor": "#701812",
         "secondaryColors": [
-            "#562926",
-            "#592823"
+            "#2e0703",
+            "#4c2b1e"
         ]
     },
     {
@@ -1526,7 +1526,7 @@
         "primaryColor": "#dad9d9",
         "secondaryColors": [
             "#999998",
-            "#61605b"
+            "#5e81a1"
         ]
     },
     {
@@ -1534,7 +1534,7 @@
         "image": "Chest/Royal Knight Armor.png",
         "primaryColor": "#dadad9",
         "secondaryColors": [
-            "#999998",
+            "#5e81a1",
             "#60605b"
         ]
     },
@@ -1559,19 +1559,19 @@
     {
         "name": "Sage Robe",
         "image": "Chest/Sage Robe.png",
-        "primaryColor": "#8a5753",
+        "primaryColor": "#713230",
         "secondaryColors": [
-            "#6d4945",
+            "#3b2f2a",
             "#5d423a"
         ]
     },
     {
         "name": "Sanguine Noble Robe",
         "image": "Chest/Sanguine Noble Robe.png",
-        "primaryColor": "#89725f",
+        "primaryColor": "#2d2826",
         "secondaryColors": [
-            "#65574b",
-            "#514638"
+            "#74100e",
+            "#8b7467"
         ]
     },
     {
@@ -1642,8 +1642,8 @@
         "image": "Chest/Spellblade's Traveling Attire (Altered).png",
         "primaryColor": "#a0915f",
         "secondaryColors": [
-            "#5c6656",
-            "#554a32"
+            "#3e7266",
+            "#443e36"
         ]
     },
     {
@@ -1651,8 +1651,8 @@
         "image": "Chest/Spellblade's Traveling Attire.png",
         "primaryColor": "#a09161",
         "secondaryColors": [
-            "#616554",
-            "#554b33"
+            "#3e7266",
+            "#443e36"
         ]
     },
     {
@@ -1703,10 +1703,10 @@
     {
         "name": "Tree Surcoat",
         "image": "Chest/Tree Surcoat.png",
-        "primaryColor": "#54535b",
+        "primaryColor": "#353b51",
         "secondaryColors": [
-            "#4c443b",
-            "#3d4154"
+            "#585753",
+            "#3f2a28"
         ]
     },
     {
@@ -1714,8 +1714,8 @@
         "image": "Chest/Tree-and-Beast Surcoat.png",
         "primaryColor": "#87715a",
         "secondaryColors": [
-            "#665e53",
-            "#864c2b"
+            "#082c18",
+            "#803617"
         ]
     },
     {
@@ -1739,9 +1739,9 @@
     {
         "name": "Upper-Class Robe",
         "image": "Chest/Upper-Class Robe.png",
-        "primaryColor": "#909168",
+        "primaryColor": "#7f845e",
         "secondaryColors": [
-            "#6b694e",
+            "#9d9d69",
             "#504d36"
         ]
     },
@@ -1751,7 +1751,7 @@
         "primaryColor": "#a19a92",
         "secondaryColors": [
             "#5e5952",
-            "#4c443a"
+            "#223940"
         ]
     },
     {
@@ -1769,7 +1769,7 @@
         "primaryColor": "#a39b91",
         "secondaryColors": [
             "#86756a",
-            "#665c53"
+            "#563631"
         ]
     },
     {
@@ -1778,7 +1778,7 @@
         "primaryColor": "#9f9a94",
         "secondaryColors": [
             "#625b54",
-            "#4d443b"
+            "#563631"
         ]
     },
     {
@@ -1910,10 +1910,10 @@
     {
         "name": "Dancer's Dress",
         "image": "Chest\\SOTE/Dancer's Dress.png",
-        "primaryColor": "#6a6554",
+        "primaryColor": "#791813",
         "secondaryColors": [
-            "#564930",
-            "#85241c"
+            "#a29f8d",
+            "#3e2f27"
         ]
     },
     {
@@ -2018,10 +2018,10 @@
     {
         "name": "Gloried Attire",
         "image": "Chest\\SOTE/Gloried Attire.png",
-        "primaryColor": "#8f5c51",
+        "primaryColor": "#804947",
         "secondaryColors": [
-            "#6f544a",
-            "#624538"
+            "#263e50",
+            "#c2b49a"
         ]
     },
     {
@@ -2054,9 +2054,9 @@
     {
         "name": "Highland Attire",
         "image": "Chest\\SOTE/Highland Attire.png",
-        "primaryColor": "#88745d",
+        "primaryColor": "#9e907a",
         "secondaryColors": [
-            "#655d50",
+            "#365b6a",
             "#544737"
         ]
     },
@@ -2101,7 +2101,7 @@
         "image": "Chest\\SOTE/Leda's Armor.png",
         "primaryColor": "#cbc5b8",
         "secondaryColors": [
-            "#a9a196",
+            "#3f3737",
             "#948976"
         ]
     },
@@ -2126,10 +2126,10 @@
     {
         "name": "Messmer's Armor",
         "image": "Chest\\SOTE/Messmer's Armor.png",
-        "primaryColor": "#62554d",
+        "primaryColor": "#721f1e",
         "secondaryColors": [
             "#554438",
-            "#8e2923"
+            "#62554d"
         ]
     },
     {
@@ -2155,7 +2155,7 @@
         "image": "Chest\\SOTE/Rellana's Armor.png",
         "primaryColor": "#969896",
         "secondaryColors": [
-            "#5c5b59",
+            "#1c203f",
             "#4b433b"
         ]
     },
@@ -2198,18 +2198,18 @@
     {
         "name": "Young Lion's Armor (Altered)",
         "image": "Chest\\SOTE/Young Lion's Armor (Altered).png",
-        "primaryColor": "#916948",
+        "primaryColor": "#a9905b",
         "secondaryColors": [
-            "#8c6537",
+            "#a32933",
             "#635647"
         ]
     },
     {
         "name": "Young Lion's Armor",
         "image": "Chest\\SOTE/Young Lion's Armor.png",
-        "primaryColor": "#916948",
+        "primaryColor": "#a9905b",
         "secondaryColors": [
-            "#8c6537",
+            "#a32933",
             "#635647"
         ]
     },
@@ -3694,7 +3694,7 @@
         "image": "Head/Cuckoo Knight Helm.png",
         "primaryColor": "#9a9a9c",
         "secondaryColors": [
-            "#6c6d8b",
+            "#3f3f68",
             "#5e5e60"
         ]
     },
@@ -4259,9 +4259,9 @@
     {
         "name": "Lusat's Glintstone Crown",
         "image": "Head/Lusat's Glintstone Crown.png",
-        "primaryColor": "#ab9994",
+        "primaryColor": "#00416f",
         "secondaryColors": [
-            "#546c94",
+            "#c2a29a",
             "#615758"
         ]
     },
@@ -4270,7 +4270,7 @@
         "image": "Head/Malenia's Winged Helm.png",
         "primaryColor": "#afa78d",
         "secondaryColors": [
-            "#968d72",
+            "#a16152",
             "#6d624d"
         ]
     },
@@ -4349,7 +4349,7 @@
     {
         "name": "Navy Hood",
         "image": "Head/Navy Hood.png",
-        "primaryColor": "#51708f",
+        "primaryColor": "#001b41",
         "secondaryColors": [
             "#5d5d5d",
             "#344b6a"
@@ -4475,7 +4475,7 @@
     {
         "name": "Omen Helm",
         "image": "Head/Omen Helm.png",
-        "primaryColor": "#8f6556",
+        "primaryColor": "#923d37",
         "secondaryColors": [
             "#725047",
             "#684439"
@@ -4565,10 +4565,10 @@
     {
         "name": "Radahn's Redmane Helm",
         "image": "Head/Radahn's Redmane Helm.png",
-        "primaryColor": "#5e5548",
+        "primaryColor": "#e2c096",
         "secondaryColors": [
-            "#594b34",
-            "#55211d"
+            "#5c1715",
+            "#9e8e74"
         ]
     },
     {
@@ -4610,7 +4610,7 @@
     {
         "name": "Rotten Duelist Helm",
         "image": "Head/Rotten Duelist Helm.png",
-        "primaryColor": "#9d6757",
+        "primaryColor": "#942c1c",
         "secondaryColors": [
             "#9f4935",
             "#695951"
@@ -4765,8 +4765,8 @@
         "image": "Head/Twinsage Glintstone Crown.png",
         "primaryColor": "#979694",
         "secondaryColors": [
-            "#699595",
-            "#5f5e5b"
+            "#4d8d81",
+            "#0f323d"
         ]
     },
     {
@@ -4811,7 +4811,7 @@
         "primaryColor": "#a2a095",
         "secondaryColors": [
             "#888878",
-            "#718a61"
+            "#56824c"
         ]
     },
     {
@@ -4880,10 +4880,10 @@
     {
         "name": "Dancer's Hood",
         "image": "Head\\SOTE/Dancer's Hood.png",
-        "primaryColor": "#675a4a",
+        "primaryColor": "#902720",
         "secondaryColors": [
             "#5e4935",
-            "#902720"
+            "#675a4a"
         ]
     },
     {
@@ -4952,10 +4952,10 @@
     {
         "name": "Fire Knight Helm",
         "image": "Head\\SOTE/Fire Knight Helm.png",
-        "primaryColor": "#8d6f57",
+        "primaryColor": "#7c2c2b",
         "secondaryColors": [
             "#6b5d48",
-            "#8c3231"
+            "#8d6f57"
         ]
     },
     {
@@ -5476,8 +5476,8 @@
         "image": "Legs/Eccentric's Breeches.png",
         "primaryColor": "#a48f61",
         "secondaryColors": [
-            "#645a52",
-            "#5a4b37"
+            "#711a18",
+            "#2a2e62"
         ]
     },
     {
@@ -5744,7 +5744,7 @@
     {
         "name": "Maliketh's Greaves",
         "image": "Legs/Maliketh's Greaves.png",
-        "primaryColor": "#5e564d",
+        "primaryColor": "#080604",
         "secondaryColors": [
             "#594922",
             "#4f4637"
