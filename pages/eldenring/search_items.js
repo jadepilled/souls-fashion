@@ -1,4 +1,5 @@
 let items = [];  // To store items loaded from JSON
+let colorDistanceThreshold = 100;  // Default threshold value
 
 // Fetch the items_for_web.json file and store its data
 async function fetchItems() {
@@ -64,9 +65,10 @@ function findMatchingItems(inputColor, secondaryWeight, query) {
         // Check if the item name matches the search query
         const nameMatch = item.name.toLowerCase().includes(lowerQuery);
 
-        // Include items that match by name or color
+        // Include items that match by name and have a color distance below the threshold
         return { ...item, distance: distance, nameMatch: nameMatch };
-    }).filter(item => item.nameMatch).sort((a, b) => a.distance - b.distance);
+    }).filter(item => item.nameMatch && item.distance <= colorDistanceThreshold)
+      .sort((a, b) => a.distance - b.distance);
 }
 
 // Display items in the grid
@@ -117,7 +119,7 @@ function createItemCard(item) {
     return card;
 }
 
-// Add event listener for color picker, name input, and slider
+// Add event listener for color picker, name input, slider, and color distance threshold slider
 document.getElementById('favcolor').addEventListener('change', function() {
     updateMatchingItems();
 });
@@ -131,13 +133,19 @@ document.getElementById('secondaryWeightSlider').addEventListener('input', funct
     updateMatchingItems();
 });
 
+document.getElementById('colorThresholdSlider').addEventListener('input', function() {
+    colorDistanceThreshold = parseFloat(this.value);
+    document.getElementById('colorThresholdValue').textContent = this.value;
+    updateMatchingItems();
+});
+
 // Function to update matching items based on the current color, slider value, and query
 function updateMatchingItems() {
     const selectedColor = document.getElementById('favcolor').value;
     const secondaryWeight = parseFloat(document.getElementById('secondaryWeightSlider').value);
     const query = document.getElementById('searchInput').value;  // Get the search query
 
-    // Find items that match both color and name
+    // Find items that match both color and name and have color distance below the threshold
     const matchingItems = findMatchingItems(selectedColor, secondaryWeight, query);
     displayItems(matchingItems);
 }
