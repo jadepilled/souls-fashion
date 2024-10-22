@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+	<link rel="stylesheet" href="../../styles.css">
+    <title>Elden Ring - Fashion Souls v0.0.1</title>
+    
+</head>
+<body>
+<div class="topnav">
+    <a href="../../index.html">Home</a>
+    <a class="active" href="#eldenring">Elden Ring</a>
+    <a href="#bloodborne">Bloodborne</a>
+    <a href="#demonssouls">Demon's Souls</a>
+    <div class="dropdown">
+        <button class="dropbtn">Dark Souls
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#ds1">Dark Souls Remastered</a>
+            <a href="#ds2">Dark Souls II: SotFS</a>
+            <a href="ds3/index.html">Dark Souls III</a>
+        </div>
+    </div>
+    <div class="mode-switch">
+        <button id="modeToggle">Light/Dark Mode</button>
+    </div>
+</div>
+<div class="FashionSouls">
+    <h2>Fashion Souls</h2>
+    <h3 style="color: #bfbfbf;">SoulsBorne fashion tool by Psyopgirl</h3>
+</div>
+
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
+</div>
+
+<div class="item-grid" id="itemGrid">
+    <!-- Items will be dynamically loaded here -->
+</div>
+
+<script src="search_items.js"></script>
+<script>
+    const modeToggle = document.getElementById('modeToggle');
+    const body = document.body;
+
+    // Check local storage to persist theme choice
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light-mode');
+    }
+
+    modeToggle.addEventListener('click', () => {
+        if (body.classList.contains('light-mode')) {
+            body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
+    // Add click event listener to all anchor links for fade effect
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default link behavior
+            document.body.classList.add('fade-out'); // Add fade-out class
+
+            // Delay the navigation to the new page to allow the fade-out effect to play
+            setTimeout(() => {
+                window.location.href = this.href; // Navigate to the new page
+            }, 500); // Match this duration with the CSS transition duration
+        });
+    });
+</script>
+<div class="copyright">
+    Copyright © Psyopgirl 2024.	<br></br>Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
+</div>
+</body>
+</html>
