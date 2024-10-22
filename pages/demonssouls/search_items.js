@@ -31,13 +31,32 @@ function calculateDistance(color1, color2) {
     return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff);
 }
 
-// Function to find the closest items based on input color
-function findMatchingItems(inputColor) {
+// Function to calculate weighted color distance
+function calculateWeightedDistance(inputColor, primaryColor, secondaryColors, secondaryWeight) {
+    let primaryRgb = hexToRgb(primaryColor);
     let inputRgb = hexToRgb(inputColor);
+    
+    // Calculate Euclidean distance for primary color
+    let primaryDistance = calculateDistance(inputRgb, primaryRgb);
+    
+    // Calculate average distance for secondary colors
+    let secondaryDistances = secondaryColors.map(secondaryColor => {
+        let secondaryRgb = hexToRgb(secondaryColor);
+        return calculateDistance(inputRgb, secondaryRgb);
+    });
 
+    let avgSecondaryDistance = secondaryDistances.reduce((a, b) => a + b, 0) / secondaryDistances.length;
+
+    // Combine primary and secondary distances with weighting
+    let combinedDistance = (1 - secondaryWeight) * primaryDistance + secondaryWeight * avgSecondaryDistance;
+
+    return combinedDistance;
+}
+
+// Function to find the closest items based on input color and secondary weight
+function findMatchingItems(inputColor, secondaryWeight) {
     return items.map(item => {
-        let itemRgb = hexToRgb(item.primaryColor);
-        let distance = calculateDistance(inputRgb, itemRgb);
+        let distance = calculateWeightedDistance(inputColor, item.primaryColor, item.secondaryColors, secondaryWeight);
         return { ...item, distance: distance };
     }).sort((a, b) => a.distance - b.distance);
 }
@@ -84,12 +103,22 @@ function createItemCard(item) {
     return card;
 }
 
-// Add event listener for color picker
-document.getElementById('favcolor').addEventListener('change', function(e) {
-    const selectedColor = e.target.value;
-    const matchingItems = findMatchingItems(selectedColor);
-    displayItems(matchingItems);
+// Add event listener for color picker and slider
+document.getElementById('favcolor').addEventListener('change', function() {
+    updateMatchingItems();
 });
+
+document.getElementById('secondaryWeightSlider').addEventListener('input', function() {
+    document.getElementById('sliderValue').textContent = this.value;
+    updateMatchingItems();
+});
+
+function updateMatchingItems() {
+    const selectedColor = document.getElementById('favcolor').value;
+    const secondaryWeight = parseFloat(document.getElementById('secondaryWeightSlider').value);
+    const matchingItems = findMatchingItems(selectedColor, secondaryWeight);
+    displayItems(matchingItems);
+}
 
 // Fetch items on page load
 window.onload = fetchItems;
