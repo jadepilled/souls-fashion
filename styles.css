@@ -167,7 +167,9 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
 		.color-picker {
 		text-align: center;	
 		}
-		
+		.slider-container {
+			text-align: center;
+		}
 		/*styling for buttons */
 					input[type=button], input[type=submit], input[type=reset] {
 					  background-color: #333;
