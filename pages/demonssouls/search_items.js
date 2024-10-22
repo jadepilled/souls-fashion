@@ -1,4 +1,5 @@
 let items = [];  // To store items loaded from JSON
+let colorDistanceThreshold = 100;  // Default threshold value
 
 // Fetch the items_for_web.json file and store its data
 async function fetchItems() {
@@ -53,12 +54,21 @@ function calculateWeightedDistance(inputColor, primaryColor, secondaryColors, se
     return combinedDistance;
 }
 
-// Function to find the closest items based on input color and secondary weight
-function findMatchingItems(inputColor, secondaryWeight) {
+// Function to find the closest items based on input color, secondary weight, and search query
+function findMatchingItems(inputColor, secondaryWeight, query) {
+    const lowerQuery = query.toLowerCase();
+
     return items.map(item => {
+        // Calculate color distance
         let distance = calculateWeightedDistance(inputColor, item.primaryColor, item.secondaryColors, secondaryWeight);
-        return { ...item, distance: distance };
-    }).sort((a, b) => a.distance - b.distance);
+
+        // Check if the item name matches the search query
+        const nameMatch = item.name.toLowerCase().includes(lowerQuery);
+
+        // Include items that match by name and have a color distance below the threshold
+        return { ...item, distance: distance, nameMatch: nameMatch };
+    }).filter(item => item.nameMatch && item.distance <= colorDistanceThreshold)
+      .sort((a, b) => a.distance - b.distance);
 }
 
 // Display items in the grid
@@ -72,7 +82,7 @@ function displayItems(filteredItems) {
     });
 }
 
-// Function to create item cards
+// Function to create item cards with click event for search
 function createItemCard(item) {
     const card = document.createElement('div');
     card.classList.add('item-card');
@@ -100,11 +110,21 @@ function createItemCard(item) {
     card.appendChild(title);
     card.appendChild(colorBar);
 
+    // Add click event to set the item's primary color for the search
+    card.addEventListener('click', () => {
+        document.getElementById('favcolor').value = item.primaryColor;
+        updateMatchingItems();  // Trigger the search with the selected item's primary color
+    });
+
     return card;
 }
 
-// Add event listener for color picker and slider
+// Add event listener for color picker, name input, slider, and color distance threshold slider
 document.getElementById('favcolor').addEventListener('change', function() {
+    updateMatchingItems();
+});
+
+document.getElementById('searchInput').addEventListener('input', function() {
     updateMatchingItems();
 });
 
@@ -113,10 +133,20 @@ document.getElementById('secondaryWeightSlider').addEventListener('input', funct
     updateMatchingItems();
 });
 
+document.getElementById('colorThresholdSlider').addEventListener('input', function() {
+    colorDistanceThreshold = parseFloat(this.value);
+    document.getElementById('colorThresholdValue').textContent = this.value;
+    updateMatchingItems();
+});
+
+// Function to update matching items based on the current color, slider value, and query
 function updateMatchingItems() {
     const selectedColor = document.getElementById('favcolor').value;
     const secondaryWeight = parseFloat(document.getElementById('secondaryWeightSlider').value);
-    const matchingItems = findMatchingItems(selectedColor, secondaryWeight);
+    const query = document.getElementById('searchInput').value;  // Get the search query
+
+    // Find items that match both color and name and have color distance below the threshold
+    const matchingItems = findMatchingItems(selectedColor, secondaryWeight, query);
     displayItems(matchingItems);
 }
 
