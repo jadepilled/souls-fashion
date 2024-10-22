@@ -123,6 +123,8 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+			justify-content: center; /* centers items horizontally */
+			align-items: center; /* centers items vertically */
         }
         .item-card {
             background-color: #333; /* Dark mode card background */
