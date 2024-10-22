@@ -18,9 +18,9 @@ function createItemCard(item) {
     const card = document.createElement('div');
     card.classList.add('item-card');
 
-    // Correct image path based on icons folder and item type
+    // Adjust image path to match the icons folder with item type
     const img = document.createElement('img');
-    img.src = `icons/${item.type}/${item.image}`; // Updated to include subfolder based on item type
+    img.src = `icons/${item.type}/${item.image}`; // Use type to access the correct folder
     img.alt = item.name;
 
     const title = document.createElement('p');
