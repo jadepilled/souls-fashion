@@ -101,26 +101,84 @@
 
 				/* Add a color to the active/current link */
 				.topnav a.active {
-				  background-color: #04AA6D;
+				  background-color: #2e2e2e;
 				  color: white;
 				}
+						/* The dropdown container */
+						.dropdown {
+						  float: left;
+						  overflow: hidden;
+						}
+
+						/* Dropdown button */
+						.dropdown .dropbtn {
+						  font-size: 16px;
+						  border: none;
+						  outline: none;
+						  color: white;
+						  padding: 14px 16px;
+						  background-color: inherit;
+						  font-family: inherit; /* Important for vertical align on mobile phones */
+						  margin: 0; /* Important for vertical align on mobile phones */
+						}
+
+						/* Dropdown content (hidden by default) */
+						.dropdown-content {
+						  display: none;
+						  position: absolute;
+						  background-color: #f9f9f9;
+						  min-width: 160px;
+						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+						  z-index: 1;
+						}
+
+						/* Links inside the dropdown */
+						.dropdown-content a {
+						  float: none;
+						  color: black;
+						  padding: 12px 16px;
+						  text-decoration: none;
+						  display: block;
+						  text-align: left;
+						}
+
+						/* Add a grey background color to dropdown links on hover */
+						.dropdown-content a:hover {
+						  background-color: #ddd;
+						}
+
+						/* Show the dropdown menu on hover */
+						.dropdown:hover .dropdown-content {
+						  display: block;
+						}	
     </style>
 </head>
 <body>
  <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <a class="active" href="#home">Elden Ring</a>
+  <a href="#news">Dark Souls</a>
+  <a href="#contact">Bloodborne</a>
   <a href="#about">About</a>
+		  <div class="dropdown">
+			<button class="dropbtn">Dropdown
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		  </div>
+					  <div class="mode-switch"style="position: fixed">
+							<label for="modeToggle">Light Mode</label>
+							<input type="checkbox" id="modeToggle">
+						</div>
 </div> 
 	<div class="FashionSouls">
 		<h2>Fashion Souls</h2>
 			<h3>SoulsBorne fashion tool by Psyopgirl</h3>
 	</div>
-    <div class="mode-switch"style="position: fixed">
-        <label for="modeToggle">Light Mode</label>
-        <input type="checkbox" id="modeToggle">
-    </div>
+    
 
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
