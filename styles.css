@@ -160,3 +160,18 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
             color: #333333; /* Color for the copyright text */
             background-color: rgba(18, 18, 18, 0.2); /* Background color with some transparency */
         }
+		
+		.color-picker {
+		text-align: center;	
+		}
+		
+		/*styling for buttons */
+					input[type=button], input[type=submit], input[type=reset] {
+					  background-color: #333;
+					  border: none;
+					  color: white;
+					  padding: 8px 16px;
+					  text-decoration: none;
+					  margin: 4px 2px;
+					  cursor: pointer;
+					}
