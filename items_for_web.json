@@ -218,10 +218,10 @@
     {
         "name": "Blue Cloth Vest",
         "image": "Chest/Blue Cloth Vest.png",
-        "primaryColor": "#585a5d",
+        "primaryColor": "#3b444c",
         "secondaryColors": [
             "#4b433b",
-            "#3b444c"
+            "#585a5d"
         ]
     },
     {
@@ -472,8 +472,8 @@
         "image": "Chest/Cuckoo Knight Armor (Altered).png",
         "primaryColor": "#5e5958",
         "secondaryColors": [
-            "#564439",
-            "#56332c"
+            "#495f94",
+            "#924139"
         ]
     },
     {
@@ -481,8 +481,8 @@
         "image": "Chest/Cuckoo Knight Armor.png",
         "primaryColor": "#99999a",
         "secondaryColors": [
-            "#866558",
-            "#5d5859"
+            "#495f94",
+            "#924139"
         ]
     },
     {
@@ -490,8 +490,8 @@
         "image": "Chest/Cuckoo Surcoat.png",
         "primaryColor": "#635c55",
         "secondaryColors": [
-            "#53443a",
-            "#4e2d28"
+            "#495f94",
+            "#924139"
         ]
     },
     {
@@ -770,7 +770,7 @@
         "primaryColor": "#a39d97",
         "secondaryColors": [
             "#877364",
-            "#5f5850"
+            "#546c54"
         ]
     },
     {
@@ -778,8 +778,8 @@
         "image": "Chest/Godrick Knight Armor (Altered).png",
         "primaryColor": "#a59d8d",
         "secondaryColors": [
-            "#92896a",
-            "#605f4c"
+            "#9b4217",
+            "#546c54"
         ]
     },
     {
@@ -787,7 +787,7 @@
         "image": "Chest/Godrick Knight Armor.png",
         "primaryColor": "#a79f8e",
         "secondaryColors": [
-            "#938a6a",
+            "#9b4217",
             "#86795e"
         ]
     },
