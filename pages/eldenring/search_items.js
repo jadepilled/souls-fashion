@@ -54,20 +54,24 @@ function calculateWeightedDistance(inputColor, primaryColor, secondaryColors, se
     return combinedDistance;
 }
 
-// Function to find the closest items based on input color, secondary weight, and search query
-function findMatchingItems(inputColor, secondaryWeight, query) {
+// Function to find the closest items based on input color, secondary weight, search query, and item type
+function findMatchingItems(inputColor, secondaryWeight, query, selectedType) {
     const lowerQuery = query.toLowerCase();
 
     return items.map(item => {
+        // Extract the item type from the image path (e.g., "Chest/Ancient King's Breastplate.png" -> "Chest")
+        const itemType = item.image.split('/')[0];
+
         // Calculate color distance
         let distance = calculateWeightedDistance(inputColor, item.primaryColor, item.secondaryColors, secondaryWeight);
 
         // Check if the item name matches the search query
         const nameMatch = item.name.toLowerCase().includes(lowerQuery);
 
-        // Include items that match by name and have a color distance below the threshold
-        return { ...item, distance: distance, nameMatch: nameMatch };
-    }).filter(item => item.nameMatch && item.distance <= colorDistanceThreshold)
+        // Filter items by type and name, and only show those with color distance below the threshold
+        return { ...item, distance: distance, nameMatch: nameMatch, itemType: itemType };
+    }).filter(item => item.nameMatch && item.distance <= colorDistanceThreshold &&
+                      (selectedType === "all" || item.itemType === selectedType))
       .sort((a, b) => a.distance - b.distance);
 }
 
@@ -119,7 +123,7 @@ function createItemCard(item) {
     return card;
 }
 
-// Add event listener for color picker, name input, slider, and color distance threshold slider
+// Add event listener for color picker, name input, item type filter, and sliders
 document.getElementById('favcolor').addEventListener('change', function() {
     updateMatchingItems();
 });
@@ -139,14 +143,19 @@ document.getElementById('colorThresholdSlider').addEventListener('input', functi
     updateMatchingItems();
 });
 
-// Function to update matching items based on the current color, slider value, and query
+document.getElementById('itemTypeFilter').addEventListener('change', function() {
+    updateMatchingItems();
+});
+
+// Function to update matching items based on the current filters
 function updateMatchingItems() {
     const selectedColor = document.getElementById('favcolor').value;
     const secondaryWeight = parseFloat(document.getElementById('secondaryWeightSlider').value);
     const query = document.getElementById('searchInput').value;  // Get the search query
+    const selectedType = document.getElementById('itemTypeFilter').value;  // Get the selected item type
 
-    // Find items that match both color and name and have color distance below the threshold
-    const matchingItems = findMatchingItems(selectedColor, secondaryWeight, query);
+    // Find items that match both color, name, and type, and have color distance below the threshold
+    const matchingItems = findMatchingItems(selectedColor, secondaryWeight, query, selectedType);
     displayItems(matchingItems);
 }
 
