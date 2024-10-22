@@ -20,7 +20,7 @@ function createItemCard(item) {
 
     // Adjust image path to match the icons folder with item type
     const img = document.createElement('img');
-    img.src = `icons/${item.type}/${item.image}`; // Ensure item type and image are used properly to locate the icons
+    img.src = `icons/${item.image}`; // Ensure item type and image are used properly to locate the icons
     img.alt = item.name;
 
     const title = document.createElement('p');
