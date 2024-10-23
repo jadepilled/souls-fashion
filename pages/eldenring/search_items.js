@@ -1,6 +1,33 @@
 let items = [];  // To store items loaded from JSON
 let colorDistanceThreshold = 100;  // Default threshold value
 
+// Fisher-Yates Shuffle algorithm to randomize the order of items
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];  // Swap elements
+    }
+    return array;
+}
+
+// Fetch the items_for_web.json file and store its data
+async function fetchItems() {
+    try {
+        const response = await fetch('items_for_web.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        items = await response.json();
+        
+        // Shuffle items before displaying
+        items = shuffle(items);
+        
+        displayItems(items);  // Display all items initially
+    } catch (error) {
+        console.error('Error loading items:', error);
+    }
+}
+
 // Fetch the items_for_web.json file and store its data
 async function fetchItems() {
     try {
