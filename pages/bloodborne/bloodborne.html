@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="color-picker">
-				<label for="favcolor">Or select a color:</label><p></p>
+				<label for="favcolor">Click an item to compare, or select a color:</label><p></p>
 				<input type="color" id="favcolor" name="favcolor" value="#ff0000">
 			</div><p></p>
 <div class='parent'>
@@ -98,5 +98,15 @@
 <div class="copyright">
     Copyright © Psyopgirl 2024.	<br></br>Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
 </div>
+<script>
+    // Listen for visibility change to manage the fade-in effect
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible') {
+            document.body.classList.remove('fade-out'); // Remove fade-out when coming back
+        } else {
+            document.body.classList.add('fade-out'); // Add fade-out when leaving
+        }
+    });
+</script>
 </body>
 </html>
