@@ -1,5 +1,7 @@
 Welcome to souls.fashion, a passion project I created to make designing outfits (specifically for Elden Ring, but adapted to other Souls games) easier. 
 
+The tool itself primarily utilises JavaScript, particularly most of the functions can be found in search_items.js. It is, however, dependent on several python scripts in order to build JSON files and serve data to the web pages:
+
 In each sub-directory of /pages/ you will find several scripts that can be used to generate item colors. Their uses are as follows:
 getcolor3.py - 3rd iteration of my color generation script. Pulls dominant and secondary colors from images located in the /images/ folder and returns their primary and secondary colors to colors_extracted.json
 generate_items.py - generates the items used by the web interface, using a combination of data from colors_extracted.json and image names + subtypes as defined within the /images/ folder. 

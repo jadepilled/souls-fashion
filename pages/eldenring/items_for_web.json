@@ -533,18 +533,18 @@
     {
         "name": "Drake Knight Armor (Altered)",
         "image": "Chest/Drake Knight Armor (Altered).png",
-        "primaryColor": "#989b9c",
+        "primaryColor": "#0e1615",
         "secondaryColors": [
             "#5f5b57",
-            "#564837"
+            "#a84f3b"
         ]
     },
     {
         "name": "Drake Knight Armor",
         "image": "Chest/Drake Knight Armor.png",
-        "primaryColor": "#936152",
+        "primaryColor": "#0e1615",
         "secondaryColors": [
-            "#5e5654",
+            "#a84f3b",
             "#5f4539"
         ]
     },
@@ -1181,7 +1181,7 @@
     {
         "name": "Nights Cavalry Armor (Altered)",
         "image": "Chest/Nights Cavalry Armor (Altered).png",
-        "primaryColor": "#9e9b96",
+        "primaryColor": "#212021",
         "secondaryColors": [
             "#56534f",
             "#44413d"
@@ -1190,7 +1190,7 @@
     {
         "name": "Nights Cavalry Armor",
         "image": "Chest/Nights Cavalry Armor.png",
-        "primaryColor": "#565554",
+        "primaryColor": "#212021",
         "secondaryColors": [
             "#535150",
             "#43413d"
@@ -2441,7 +2441,7 @@
     {
         "name": "Drake Knight Gauntlets",
         "image": "Hands/Drake Knight Gauntlets.png",
-        "primaryColor": "#363f42",
+        "primaryColor": "#0e1615",
         "secondaryColors": [
             "#803b2d",
             "#644339"
@@ -2774,7 +2774,7 @@
     {
         "name": "Nights Cavalry Gauntlets",
         "image": "Hands/Nights Cavalry Gauntlets.png",
-        "primaryColor": "#9b9794",
+        "primaryColor": "#212021",
         "secondaryColors": [
             "#585553",
             "#44413d"
@@ -3719,27 +3719,27 @@
     {
         "name": "Drake Knight Helm (Altered)",
         "image": "Head/Drake Knight Helm (Altered).png",
-        "primaryColor": "#425a61",
+        "primaryColor": "#0e1615",
         "secondaryColors": [
-            "#a47671",
+            "#a84f3b",
             "#565557"
         ]
     },
     {
         "name": "Drake Knight Helm (Altered)_()",
         "image": "Head/Drake Knight Helm (Altered)_().png",
-        "primaryColor": "#425a61",
+        "primaryColor": "#0e1615",
         "secondaryColors": [
-            "#a47671",
+            "#a84f3b",
             "#565557"
         ]
     },
     {
         "name": "Drake Knight Helm",
         "image": "Head/Drake Knight Helm.png",
-        "primaryColor": "#425a61",
+        "primaryColor": "#0e1615",
         "secondaryColors": [
-            "#605752",
+            "#a84f3b",
             "#54443a"
         ]
     },
@@ -4367,7 +4367,7 @@
     {
         "name": "Nights Cavalry Helm (Altered)",
         "image": "Head/Nights Cavalry Helm (Altered).png",
-        "primaryColor": "#9b9791",
+        "primaryColor": "#212021",
         "secondaryColors": [
             "#87837b",
             "#5a5752"
@@ -4376,7 +4376,7 @@
     {
         "name": "Nights Cavalry Helm",
         "image": "Head/Nights Cavalry Helm.png",
-        "primaryColor": "#575656",
+        "primaryColor": "#212021",
         "secondaryColors": [
             "#53514e",
             "#43413d"
@@ -4664,9 +4664,9 @@
     {
         "name": "Sanguine Noble Hood",
         "image": "Head/Sanguine Noble Hood.png",
-        "primaryColor": "#867665",
+        "primaryColor": "#2d2826",
         "secondaryColors": [
-            "#60584d",
+            "#ac9379",
             "#4a433a"
         ]
     },
@@ -5456,9 +5456,9 @@
     {
         "name": "Drake Knight Greaves",
         "image": "Legs/Drake Knight Greaves.png",
-        "primaryColor": "#867769",
+        "primaryColor": "#0e1615",
         "secondaryColors": [
-            "#665b52",
+            "#a84f3b",
             "#56443a"
         ]
     },
@@ -5780,7 +5780,7 @@
     {
         "name": "Nights Cavalry Greaves",
         "image": "Legs/Nights Cavalry Greaves.png",
-        "primaryColor": "#37332f",
+        "primaryColor": "#212021",
         "secondaryColors": [
             "#585350",
             "#45413d"
@@ -5996,9 +5996,9 @@
     {
         "name": "Sanguine Noble Waistcloth",
         "image": "Legs/Sanguine Noble Waistcloth.png",
-        "primaryColor": "#837b70",
+        "primaryColor": "#2d2826",
         "secondaryColors": [
-            "#5b564f",
+            "#ac9379",
             "#46423c"
         ]
     },
