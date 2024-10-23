@@ -110,61 +110,7 @@ function displayItems(filteredItems) {
 }
 
 // Function to create item cards with click event for search
-
 function createItemCard(item) {
-    const card = document.createElement('div');
-    card.classList.add('item-card');
-
-    const img = document.createElement('img');
-    img.src = `pages/eldenring/icons/${item.image}`;
-    img.alt = item.name;
-
-    const title = document.createElement('p');
-    title.textContent = item.name;
-
-    const colorBar = document.createElement('div');
-    colorBar.classList.add('color-bar');
-
-    // Create and add primary color div
-    const primaryColorDiv = document.createElement('div');
-    primaryColorDiv.style.backgroundColor = item.primaryColor;
-    colorBar.appendChild(primaryColorDiv);
-
-    // Add click event to search based on the primary color
-    primaryColorDiv.addEventListener('click', () => {
-        document.getElementById('favcolor').value = item.primaryColor;
-        updateMatchingItems();  // Trigger the search with the primary color
-    });
-
-    // Create and add the first secondary color div
-    const secondaryColorDiv1 = document.createElement('div');
-    secondaryColorDiv1.style.backgroundColor = item.secondaryColors[0];
-    colorBar.appendChild(secondaryColorDiv1);
-
-    // Add click event to search based on the first secondary color
-    secondaryColorDiv1.addEventListener('click', () => {
-        document.getElementById('favcolor').value = item.secondaryColors[0];
-        updateMatchingItems();  // Trigger the search with the first secondary color
-    });
-
-    // Create and add the second secondary color div
-    const secondaryColorDiv2 = document.createElement('div');
-    secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
-    colorBar.appendChild(secondaryColorDiv2);
-
-    // Add click event to search based on the second secondary color
-    secondaryColorDiv2.addEventListener('click', () => {
-        document.getElementById('favcolor').value = item.secondaryColors[1];
-        updateMatchingItems();  // Trigger the search with the second secondary color
-    });
-
-    card.appendChild(img);
-    card.appendChild(title);
-    card.appendChild(colorBar);
-
-    return card;
-}
-
     const card = document.createElement('div');
     card.classList.add('item-card');
 
