@@ -1,4 +1,11 @@
-h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 70px;margin-top:30px;}
+		@font-face {
+			font-family: 'garamond-premier-pro';
+			src: url('GaraMondPremier.otf');
+		}
+		
+		h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 70px;margin-top:30px;
+	
+		}
         h3 {letter-spacing: -1.8px;line-height: 0.5;text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 20px;margin-top:-30px;}
         body {
             font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;
@@ -14,22 +21,23 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
         }
         .topnav {
             background-color: #242424; /* Dark mode navbar background */
-			display: flex;
             overflow: hidden;
+			display: flex;
 			justify-content: center;
-			align-items: center;
+			position: relative;
+			top: -50px;
         }
         body.light-mode .topnav {
             background-color: #fff; /* Light mode navbar background */
         }
         .topnav a {
-			display: inline-block; /* Ensure that all links and dropdowns behave inline */
             float: left;
             color: #f2f2f2; /* Dark mode link color */
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
+			display: inline-block;
         }
         body.light-mode .topnav a {
             color: #000; /* Light mode link color */
@@ -47,10 +55,9 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
             color: black; /* Light mode active text color */
         }
         .dropdown {
-			display: inline-block; /* Ensure that all links and dropdowns behave inline */
             float: left;
             overflow: hidden;
-			margin-top: 0px;
+			margin-top: 14px;
         }
         .dropdown .dropbtn {
 			 padding: 0px 16px;
@@ -61,7 +68,7 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
             color: white;
             background-color: inherit;
             font-family: inherit; 
-            margin: 0; 
+            margin: 0px; 
         }
 		body.light-mode .dropdown .dropbtn {
 		color: #000; /* Change to black in light mode for visibility */
@@ -75,8 +82,9 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    padding: 0px 0; /* Add padding to dropdown content */
+    padding: 10px 10px; /* Add padding to dropdown content */
     margin: 0; /* Remove margin to prevent excess height */
+	margin-top: 0px;
         }
         .dropdown-content a {
     float: none;
@@ -95,8 +103,9 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
         .mode-switch {
             float: right; /* Align to the right in the navbar */
             margin: 14px 16px; /* Adjust margins for spacing */
-			position: absolute;
-			right: 25px;
+		    position: absolute;
+			top: 50px;
+			right: 30px;
         }
         .mode-switch button {
             cursor: pointer;
