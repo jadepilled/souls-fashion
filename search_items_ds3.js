@@ -4,7 +4,7 @@ let colorDistanceThreshold = 100;  // Default threshold value
 // Fetch the items_for_web.json file and store its data
 async function fetchItems() {
     try {
-        const response = await fetch('items_for_web.json');
+        const response = await fetch('pages/ds3/items_for_web.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
