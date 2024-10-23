@@ -88,7 +88,7 @@ function createItemCard(item) {
     card.classList.add('item-card');
 
     const img = document.createElement('img');
-    img.src = `icons/${item.image}`;
+    img.src = `pages/ds3/icons/${item.image}`;
     img.alt = item.name;
 
     const title = document.createElement('p');

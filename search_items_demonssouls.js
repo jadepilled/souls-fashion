@@ -88,7 +88,7 @@ function createItemCard(item) {
     card.classList.add('item-card');
 
     const img = document.createElement('img');
-    img.src = `icons/${item.image}`;
+    img.src = `pages/demonssouls/icons/${item.image}`;
     img.alt = item.name;
 
     const title = document.createElement('p');
