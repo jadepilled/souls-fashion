@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
 	<link rel="stylesheet" href="../../resources/styles.css">
-    <title>Bloodborne - Fashion Souls v1.0.1</title>
+    <title>Elden Ring - Fashion Souls v1.0.1</title>
     
 </head>
 <body>
+
 <div class="topnav">
     <a href="../../index.html">Home</a>
     <a href="../eldenring/eldenring.html">Elden Ring</a>
-    <a class="active" href="#">Bloodborne</a>
+    <a href="../bloodborne/bloodborne.html">Bloodborne</a>
     <a href="../demonssouls/demonssouls.html">Demon's Souls</a>
-    <div class="dropdown">
+	 <div class="dropdown">
         <button class="dropbtn">Dark Souls
             <i class="fa fa-caret-down"></i>
         </button>
@@ -24,51 +25,50 @@
             <a href="../ds3/ds3.html">Dark Souls III</a>
         </div>
     </div>
-	<a href="https://ko-fi.com/psyopgirl">Donate</a>
+    <a href="https://ko-fi.com/psyopgirl">Donate</a>
 	<a href="https://ko-fi.com/psyopgirl">Discord</a>
 	<a href="https://github.com/jadepilled/souls-fashion">Source Code</a>
-	<a href="../feedback/feedback.html">Feedback</a>
+	<a class="active" href="https://ko-fi.com/psyopgirl">Feedback</a>
+
     <div class="mode-switch">
         <button id="modeToggle">Light/Dark Mode</button>
     </div>
+   
 </div>
+
 <div class="FashionSouls">
     <h2>Fashion Souls</h2>
     <h3 style="color: #bfbfbf;">SoulsBorne fashion tool by Psyopgirl</h3>
 </div>
+<br></br>
+<div class='feedback'>
+				<h3>Feedback</h3>
+				<div class="mb-4 small">
+				Please provide your feedback & suggestions in the form below
+				</div>
+				<form name="feedback_form" id="feedback_form" method="post">
+				
+				<div class="mb-4">
+				  <label class="form-label"  for="feedback_comments"></label>
+				  <textarea class="form-control" required rows="6" name="comments" id="feedback_comments" ></textarea>
+				</div>
+				<div class="row">
+				  <div class="col">
+					<label class="form-label" for="feedback_name">Your Name:</label>
+					<input type="text" required name="name" class="form-control" id="feedback_name"/>
+				  </div>
+				  
+				  <div class="col mb-4">
+					<label class="form-label" for="feedback_email">Email:</label>
+					<input type="email" name="email" required class="form-control" id="feedback_email"/>
+				  </div>
+				</div>
+				<button type="submit" class="btn btn-success btn-lg" >Post</button>
+				</form>
 
-<div class="search-bar">
-				<input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
-			</div>
-
-			<div class="color-picker">
-				<label for="favcolor">Click an item to compare, or select a color:</label><p></p>
-				<input type="color" id="favcolor" name="favcolor" value="#ff0000">
-			</div><p></p>
-<div class='parent'>
-	<div class='child'>	
-			<div class="slider-container">
-				<label for="secondaryWeightSlider">Weight for secondary colors:</label><br></br>
-				<input type="range" id="secondaryWeightSlider" name="secondaryWeight" min="0" max="1" step="0.1" value="0.5">
-				<span id="sliderValue">0.5</span>
-			</div></div>
-	<div class='child'>
-			<div class="slider-container">
-				<label for="colorThresholdSlider">Set Color Similarity Threshold:</label><br></br>
-				<input type="range" id="colorThresholdSlider" name="colorThreshold" min="0" max="500" step="10" value="100">
-				<span id="colorThresholdValue">100</span>
-			</div></div>
 </div>
-
-<div class="item-grid" id="itemGrid">
-    <!-- Items will be dynamically loaded here -->
-</div>
-
-<script src="search_items.js"></script>
+		
 <script>
-    const modeToggle = document.getElementById('modeToggle');
-    const body = document.body;
-
     // Check local storage to persist theme choice
     if (localStorage.getItem('theme') === 'light') {
         body.classList.add('light-mode');
@@ -101,6 +101,11 @@
     Copyright © Psyopgirl 2024.	<br></br>Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
 </div>
 <script>
+                // Delay the navigation to the new page to allow the fade-out effect to play
+                setTimeout(() => {
+                    window.location.href = item.link; // Navigate to the new page
+                }, 500); // Match this duration with the CSS transition duration
+            });
     // Listen for visibility change to manage the fade-in effect
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
@@ -110,5 +115,6 @@
         }
     });
 </script>
+<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=xd3iaoph&n=n1.ratufa.io"></script>
 </body>
 </html>

@@ -1100,18 +1100,18 @@
     {
         "name": "Maliketh's Armor (Altered)",
         "image": "Chest/Maliketh's Armor (Altered).png",
-        "primaryColor": "#84765b",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#5d5649",
+            "#87765a",
             "#4f4638"
         ]
     },
     {
         "name": "Maliketh's Armor",
         "image": "Chest/Maliketh's Armor.png",
-        "primaryColor": "#87765a",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#5e574b",
+            "#87765a",
             "#4f4638"
         ]
     },
@@ -4286,10 +4286,10 @@
     {
         "name": "Maliketh's Helm",
         "image": "Head/Maliketh's Helm.png",
-        "primaryColor": "#606161",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#5b5c5c",
-            "#5b5c5b"
+            "#8a8a8d",
+            "#84765b"
         ]
     },
     {
@@ -4997,7 +4997,7 @@
     {
         "name": "Helm of Night",
         "image": "Head\\SOTE/Helm of Night.png",
-        "primaryColor": "#9f9c9b",
+        "primaryColor": "#1f1e1f",
         "secondaryColors": [
             "#5c5a58",
             "#565453"
@@ -10658,7 +10658,7 @@
     {
         "name": "Sword of Night",
         "image": "Weapons\\SOTE/Sword of Night.png",
-        "primaryColor": "#3f556a",
+        "primaryColor": "#010102",
         "secondaryColors": [
             "#434343",
             "#353940"

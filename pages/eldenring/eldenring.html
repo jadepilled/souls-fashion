@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
-	<link rel="stylesheet" href="../../styles.css">
+	<link rel="stylesheet" href="../../resources/styles.css">
     <title>Elden Ring - Fashion Souls v1.0.1</title>
     
 </head>
@@ -27,7 +27,9 @@
     </div>
     <a href="https://ko-fi.com/psyopgirl">Donate</a>
 	<a href="https://ko-fi.com/psyopgirl">Discord</a>
-    
+	<a href="https://github.com/jadepilled/souls-fashion">Source Code</a>
+	<a href="../feedback/feedback.html">Feedback</a>
+
     <div class="mode-switch">
         <button id="modeToggle">Light/Dark Mode</button>
     </div>
@@ -102,6 +104,11 @@
     Copyright © Psyopgirl 2024.	<br></br>Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
 </div>
 <script>
+                // Delay the navigation to the new page to allow the fade-out effect to play
+                setTimeout(() => {
+                    window.location.href = item.link; // Navigate to the new page
+                }, 500); // Match this duration with the CSS transition duration
+            });
     // Listen for visibility change to manage the fade-in effect
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
