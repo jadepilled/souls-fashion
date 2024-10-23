@@ -115,7 +115,7 @@ function createItemCard(item) {
     card.classList.add('item-card');
 
     const img = document.createElement('img');
-    img.src = `pages/eldenring/images/${item.image}`;
+    img.src = `pages/eldenring/icons/${item.image}`;
     img.alt = item.name;
 
     const title = document.createElement('p');
