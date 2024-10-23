@@ -2144,7 +2144,7 @@
     {
         "name": "Rakshasa Armor",
         "image": "Chest\\SOTE/Rakshasa Armor.png",
-        "primaryColor": "#8e685f",
+        "primaryColor": "#601e15",
         "secondaryColors": [
             "#6b514a",
             "#5d423c"
@@ -5123,7 +5123,7 @@
     {
         "name": "Rakshasa Helm",
         "image": "Head\\SOTE/Rakshasa Helm.png",
-        "primaryColor": "#91645c",
+        "primaryColor": "#601e15",
         "secondaryColors": [
             "#6e4f49",
             "#63433c"
@@ -6363,9 +6363,9 @@
         ]
     },
     {
-        "name": "Rahshasa Greaves",
+        "name": "Rakshasa Greaves",
         "image": "Legs\\SOTE/Rahshasa Greaves.png",
-        "primaryColor": "#63514b",
+        "primaryColor": "#601e15",
         "secondaryColors": [
             "#5c433b",
             "#522d28"
