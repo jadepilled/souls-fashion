@@ -13,7 +13,7 @@ function shuffle(array) {
 // Fetch the items_for_web.json file and store its data
 async function fetchItems() {
     try {
-        const response = await fetch('items_for_web.json');
+        const response = await fetch('pages/eldenring/items_for_web.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -31,7 +31,7 @@ async function fetchItems() {
 // Fetch the items_for_web.json file and store its data
 async function fetchItems() {
     try {
-        const response = await fetch('items_for_web.json');
+        const response = await fetch('pages/eldenring/items_for_web.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
