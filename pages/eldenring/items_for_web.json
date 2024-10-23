@@ -83,10 +83,10 @@
     {
         "name": "Azur's Glintstone Robe",
         "image": "Chest/Azur's Glintstone Robe.png",
-        "primaryColor": "#555951",
+        "primaryColor": "#222527",
         "secondaryColors": [
-            "#584737",
-            "#1b6151"
+            "#009a7d",
+            "#8a6248"
         ]
     },
     {
@@ -119,10 +119,10 @@
     {
         "name": "Battlemage Robe",
         "image": "Chest/Battlemage Robe.png",
-        "primaryColor": "#8e675a",
+        "primaryColor": "#2d2b35",
         "secondaryColors": [
-            "#5d544e",
-            "#55443b"
+            "#89332b",
+            "#97695c"
         ]
     },
     {
@@ -140,7 +140,7 @@
         "primaryColor": "#979693",
         "secondaryColors": [
             "#5d5b58",
-            "#48443a"
+            "#0d1f30"
         ]
     },
     {
@@ -236,19 +236,19 @@
     {
         "name": "Blue Silver Mail Armor (Altered)",
         "image": "Chest/Blue Silver Mail Armor (Altered).png",
-        "primaryColor": "#595d5d",
+        "primaryColor": "#475664",
         "secondaryColors": [
-            "#555a5b",
+            "#717d7a",
             "#3c4245"
         ]
     },
     {
         "name": "Blue Silver Mail Armor",
         "image": "Chest/Blue Silver Mail Armor.png",
-        "primaryColor": "#585d5b",
+        "primaryColor": "#475664",
         "secondaryColors": [
-            "#505559",
-            "#3c4247"
+            "#717d7a",
+            "#41474f"
         ]
     },
     {
@@ -256,7 +256,7 @@
         "image": "Chest/Briar Armor (Altered).png",
         "primaryColor": "#877063",
         "secondaryColors": [
-            "#65564d",
+            "#6d392c",
             "#53433a"
         ]
     },
@@ -265,8 +265,8 @@
         "image": "Chest/Briar Armor.png",
         "primaryColor": "#876d5e",
         "secondaryColors": [
-            "#60544c",
-            "#53443a"
+            "#6d392c",
+            "#030303"
         ]
     },
     {
@@ -281,19 +281,19 @@
     {
         "name": "Carian Knight Armor (Altered)",
         "image": "Chest/Carian Knight Armor (Altered).png",
-        "primaryColor": "#57534f",
+        "primaryColor": "#696d6f",
         "secondaryColors": [
             "#4a433b",
-            "#3d414f"
+            "#384052"
         ]
     },
     {
         "name": "Carian Knight Armor",
         "image": "Chest/Carian Knight Armor.png",
-        "primaryColor": "#5a5552",
+        "primaryColor": "#696d6f",
         "secondaryColors": [
             "#4b443b",
-            "#433b35"
+            "#384052"
         ]
     },
     {
@@ -328,7 +328,7 @@
         "image": "Chest/Champion Pauldron.png",
         "primaryColor": "#5e5a53",
         "secondaryColors": [
-            "#5f564f",
+            "#812c2c",
             "#4f433b"
         ]
     },
@@ -347,7 +347,7 @@
         "primaryColor": "#aba196",
         "secondaryColors": [
             "#9d8871",
-            "#8a745b"
+            "#2a0502"
         ]
     },
     {
@@ -572,7 +572,7 @@
         "primaryColor": "#a89f92",
         "secondaryColors": [
             "#918576",
-            "#857362"
+            "#050d11"
         ]
     },
     {
@@ -608,7 +608,7 @@
         "primaryColor": "#87746c",
         "secondaryColors": [
             "#604c49",
-            "#54423c"
+            "#412523"
         ]
     },
     {
@@ -650,27 +650,27 @@
     {
         "name": "Fia's Robe (Altered)",
         "image": "Chest/Fia's Robe (Altered).png",
-        "primaryColor": "#9e9f9d",
+        "primaryColor": "#383830",
         "secondaryColors": [
-            "#5a5d54",
+            "#9e9f9d",
             "#585b54"
         ]
     },
     {
         "name": "Fia's Robe (Altered)_()",
         "image": "Chest/Fia's Robe (Altered)_().png",
-        "primaryColor": "#9e9f9d",
+        "primaryColor": "#383830",
         "secondaryColors": [
-            "#5a5d54",
+            "#9e9f9d",
             "#585b54"
         ]
     },
     {
         "name": "Fia's Robe",
         "image": "Chest/Fia's Robe.png",
-        "primaryColor": "#9c9f98",
+        "primaryColor": "#383830",
         "secondaryColors": [
-            "#565951",
+            "#9e9f9d",
             "#565853"
         ]
     },
@@ -713,10 +713,10 @@
     {
         "name": "Fire Monk Armor",
         "image": "Chest/Fire Monk Armor.png",
-        "primaryColor": "#964c33",
+        "primaryColor": "#8e3c2f",
         "secondaryColors": [
             "#605a59",
-            "#893b2d"
+            "#c76625"
         ]
     },
     {
@@ -760,7 +760,7 @@
         "image": "Chest/Gelmir Knight Armor (Altered).png",
         "primaryColor": "#9c9996",
         "secondaryColors": [
-            "#5e574f",
+            "#2a2929",
             "#4d443a"
         ]
     },
@@ -769,7 +769,7 @@
         "image": "Chest/Gelmir Knight Armor.png",
         "primaryColor": "#a39d97",
         "secondaryColors": [
-            "#877364",
+            "#2a2929",
             "#546c54"
         ]
     },
@@ -1118,10 +1118,10 @@
     {
         "name": "Marai's Robe",
         "image": "Chest/Marai's Robe.png",
-        "primaryColor": "#8b745b",
+        "primaryColor": "#646569",
         "secondaryColors": [
-            "#5c5b58",
-            "#554837"
+            "#312e2a",
+            "#ab7d51"
         ]
     },
     {
@@ -1138,8 +1138,8 @@
         "image": "Chest/Mausoleum Knight Armor (Altered).png",
         "primaryColor": "#979896",
         "secondaryColors": [
-            "#90886f",
-            "#5f5e59"
+            "#7b7639",
+            "#524f5c"
         ]
     },
     {
@@ -1147,8 +1147,8 @@
         "image": "Chest/Mausoleum Knight Armor.png",
         "primaryColor": "#989897",
         "secondaryColors": [
-            "#90886d",
-            "#5f5e59"
+            "#7b7639",
+            "#524f5c"
         ]
     },
     {
@@ -1157,7 +1157,7 @@
         "primaryColor": "#97948d",
         "secondaryColors": [
             "#625d53",
-            "#504738"
+            "#56575a"
         ]
     },
     {
@@ -1280,9 +1280,9 @@
     {
         "name": "Omen Armor",
         "image": "Chest/Omen Armor.png",
-        "primaryColor": "#d0ae93",
+        "primaryColor": "#a46058",
         "secondaryColors": [
-            "#926759",
+            "#e0b390",
             "#6b534c"
         ]
     },
@@ -1292,7 +1292,7 @@
         "primaryColor": "#a38968",
         "secondaryColors": [
             "#8b7056",
-            "#6d5b4d"
+            "#6e615b"
         ]
     },
     {
@@ -1418,7 +1418,7 @@
         "primaryColor": "#86755c",
         "secondaryColors": [
             "#6a5e4a",
-            "#544836"
+            "#3e2721"
         ]
     },
     {
@@ -1813,8 +1813,8 @@
         "image": "Chest/White Reed Armor.png",
         "primaryColor": "#a1968e",
         "secondaryColors": [
-            "#978772",
-            "#897261"
+            "#683625",
+            "#8e7f45"
         ]
     },
     {
@@ -1829,7 +1829,7 @@
     {
         "name": "Ansbach's Attire (Altered)",
         "image": "Chest\\SOTE/Ansbach's Attire (Altered).png",
-        "primaryColor": "#535553",
+        "primaryColor": "#232422",
         "secondaryColors": [
             "#494745",
             "#46413d"
@@ -1838,7 +1838,7 @@
     {
         "name": "Ansbach's Attire",
         "image": "Chest\\SOTE/Ansbach's Attire.png",
-        "primaryColor": "#515150",
+        "primaryColor": "#232422",
         "secondaryColors": [
             "#4f4c47",
             "#49423b"
@@ -1847,7 +1847,7 @@
     {
         "name": "Armor of Night",
         "image": "Chest\\SOTE/Armor of Night.png",
-        "primaryColor": "#989693",
+        "primaryColor": "#1f1e1f",
         "secondaryColors": [
             "#585554",
             "#49433b"
@@ -1874,7 +1874,7 @@
     {
         "name": "Black Knight Armor",
         "image": "Chest\\SOTE/Black Knight Armor.png",
-        "primaryColor": "#9c9691",
+        "primaryColor": "#191719",
         "secondaryColors": [
             "#5a544e",
             "#47423b"
@@ -1985,7 +1985,7 @@
         "primaryColor": "#575350",
         "secondaryColors": [
             "#4d433a",
-            "#572726"
+            "#682727"
         ]
     },
     {
@@ -2423,7 +2423,7 @@
     {
         "name": "Cuckoo Knight Gauntlets",
         "image": "Hands/Cuckoo Knight Gauntlets.png",
-        "primaryColor": "#d6d9dc",
+        "primaryColor": "#7d8790",
         "secondaryColors": [
             "#969a9f",
             "#7c8187"
@@ -2441,9 +2441,9 @@
     {
         "name": "Drake Knight Gauntlets",
         "image": "Hands/Drake Knight Gauntlets.png",
-        "primaryColor": "#93665a",
+        "primaryColor": "#363f42",
         "secondaryColors": [
-            "#5e5452",
+            "#803b2d",
             "#644339"
         ]
     },
@@ -2702,7 +2702,7 @@
     {
         "name": "Lionel's Gauntlets",
         "image": "Hands/Lionel's Gauntlets.png",
-        "primaryColor": "#91989c",
+        "primaryColor": "#1c2227",
         "secondaryColors": [
             "#565859",
             "#3b4347"
@@ -2720,7 +2720,7 @@
     {
         "name": "Malenia's Gauntlet",
         "image": "Hands/Malenia's Gauntlet.png",
-        "primaryColor": "#ece9df",
+        "primaryColor": "#b8ab8a",
         "secondaryColors": [
             "#aea68e",
             "#978d71"
@@ -2729,7 +2729,7 @@
     {
         "name": "Malformed Dragon Gauntlets",
         "image": "Hands/Malformed Dragon Gauntlets.png",
-        "primaryColor": "#979992",
+        "primaryColor": "#302b24",
         "secondaryColors": [
             "#5c5c53",
             "#474539"
@@ -2738,7 +2738,7 @@
     {
         "name": "Maliketh's Gauntlets",
         "image": "Hands/Maliketh's Gauntlets.png",
-        "primaryColor": "#877a62",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
             "#615a4d",
             "#514837"
@@ -2756,7 +2756,7 @@
     {
         "name": "Mausoleum Knight Gauntlets",
         "image": "Hands/Mausoleum Knight Gauntlets.png",
-        "primaryColor": "#dadbdc",
+        "primaryColor": "#767877",
         "secondaryColors": [
             "#9b9d9e",
             "#5a5b5a"
@@ -2858,7 +2858,7 @@
         "primaryColor": "#988974",
         "secondaryColors": [
             "#897462",
-            "#655c52"
+            "#34302d"
         ]
     },
     {
@@ -2909,7 +2909,7 @@
     {
         "name": "Royal Remains Gauntlets",
         "image": "Hands/Royal Remains Gauntlets.png",
-        "primaryColor": "#a18b6f",
+        "primaryColor": "#151e21",
         "secondaryColors": [
             "#8b735c",
             "#5e5953"
@@ -2963,9 +2963,9 @@
     {
         "name": "Traveling Maiden Gloves",
         "image": "Hands/Traveling Maiden Gloves.png",
-        "primaryColor": "#a6988b",
+        "primaryColor": "#4e5254",
         "secondaryColors": [
-            "#565658",
+            "#a88777",
             "#3d4148"
         ]
     },
@@ -3038,7 +3038,7 @@
         "primaryColor": "#ddd8d6",
         "secondaryColors": [
             "#a69a97",
-            "#867872"
+            "#4e85af"
         ]
     },
     {
@@ -3071,7 +3071,7 @@
     {
         "name": "Black Knight Gauntlets",
         "image": "Hands\\SOTE/Black Knight Gauntlets.png",
-        "primaryColor": "#9a9592",
+        "primaryColor": "#222221",
         "secondaryColors": [
             "#605a53",
             "#4d4639"
@@ -3152,7 +3152,7 @@
     {
         "name": "Gaius's Gauntlets",
         "image": "Hands\\SOTE/Gaius's Gauntlets.png",
-        "primaryColor": "#9e9796",
+        "primaryColor": "#393434",
         "secondaryColors": [
             "#5c5553",
             "#47413d"
@@ -3161,7 +3161,7 @@
     {
         "name": "Gauntlets of Night",
         "image": "Hands\\SOTE/Gauntlets of Night.png",
-        "primaryColor": "#555250",
+        "primaryColor": "#0c0c0d",
         "secondaryColors": [
             "#43413d",
             "#423c37"
@@ -3227,7 +3227,7 @@
         "primaryColor": "#b29f8b",
         "secondaryColors": [
             "#a08872",
-            "#8d6557"
+            "#864949"
         ]
     },
     {
@@ -3251,16 +3251,16 @@
     {
         "name": "Oathseeker Knight Gauntlets",
         "image": "Hands\\SOTE/Oathseeker Knight Gauntlets.png",
-        "primaryColor": "#847667",
+        "primaryColor": "#171415",
         "secondaryColors": [
-            "#62584d",
+            "#5f5242",
             "#4d4439"
         ]
     },
     {
         "name": "Rakshasa Gauntlets",
         "image": "Hands\\SOTE/Rakshasa Gauntlets.png",
-        "primaryColor": "#8e645c",
+        "primaryColor": "#601e15",
         "secondaryColors": [
             "#6b504a",
             "#60433c"
@@ -3317,7 +3317,7 @@
         "primaryColor": "#966556",
         "secondaryColors": [
             "#555853",
-            "#4b4838"
+            "#d85c37"
         ]
     },
     {
@@ -3326,7 +3326,7 @@
         "primaryColor": "#54514d",
         "secondaryColors": [
             "#504d4b",
-            "#4a423a"
+            "#d85c37"
         ]
     },
     {
@@ -3485,7 +3485,7 @@
     {
         "name": "Bloodhound Knight Helm",
         "image": "Head/Bloodhound Knight Helm.png",
-        "primaryColor": "#dfdbd5",
+        "primaryColor": "#9c9286",
         "secondaryColors": [
             "#a59d91",
             "#8e8578"
@@ -3605,7 +3605,7 @@
         "primaryColor": "#a09c91",
         "secondaryColors": [
             "#9d8973",
-            "#8a735e"
+            "#ab3924"
         ]
     },
     {
@@ -3656,7 +3656,7 @@
     {
         "name": "Crimson Hood",
         "image": "Head/Crimson Hood.png",
-        "primaryColor": "#996361",
+        "primaryColor": "#78111e",
         "secondaryColors": [
             "#6e564d",
             "#57443b"
@@ -3712,32 +3712,32 @@
         "image": "Head/Diallos's Mask.png",
         "primaryColor": "#999897",
         "secondaryColors": [
-            "#5e5b59",
+            "#993532",
             "#47413d"
         ]
     },
     {
         "name": "Drake Knight Helm (Altered)",
         "image": "Head/Drake Knight Helm (Altered).png",
-        "primaryColor": "#d8dce0",
+        "primaryColor": "#425a61",
         "secondaryColors": [
-            "#999da2",
+            "#a47671",
             "#565557"
         ]
     },
     {
         "name": "Drake Knight Helm (Altered)_()",
         "image": "Head/Drake Knight Helm (Altered)_().png",
-        "primaryColor": "#d8dce0",
+        "primaryColor": "#425a61",
         "secondaryColors": [
-            "#999da2",
+            "#a47671",
             "#565557"
         ]
     },
     {
         "name": "Drake Knight Helm",
         "image": "Head/Drake Knight Helm.png",
-        "primaryColor": "#877064",
+        "primaryColor": "#425a61",
         "secondaryColors": [
             "#605752",
             "#54443a"
@@ -3755,7 +3755,7 @@
     {
         "name": "Eccentric's Hood (Altered)",
         "image": "Head/Eccentric's Hood (Altered).png",
-        "primaryColor": "#dddbda",
+        "primaryColor": "#454341",
         "secondaryColors": [
             "#9e9895",
             "#857973"
@@ -3764,7 +3764,7 @@
     {
         "name": "Eccentric's Hood (Altered)_()",
         "image": "Head/Eccentric's Hood (Altered)_().png",
-        "primaryColor": "#dddbda",
+        "primaryColor": "#454341",
         "secondaryColors": [
             "#9e9895",
             "#857973"
@@ -3908,10 +3908,10 @@
     {
         "name": "Gelmir Knight Helm",
         "image": "Head/Gelmir Knight Helm.png",
-        "primaryColor": "#a59c93",
+        "primaryColor": "#a7aaaf",
         "secondaryColors": [
-            "#675c55",
-            "#554838"
+            "#a2957a",
+            "#7d4544"
         ]
     },
     {
@@ -3956,7 +3956,7 @@
         "primaryColor": "#c2bbaf",
         "secondaryColors": [
             "#aea79a",
-            "#928874"
+            "#3a2c44"
         ]
     },
     {
@@ -4133,7 +4133,7 @@
     {
         "name": "Imp Head (Wolf)",
         "image": "Head/Imp Head (Wolf).png",
-        "primaryColor": "#d4d2cc",
+        "primaryColor": "#a5a891",
         "secondaryColors": [
             "#a4a696",
             "#898e75"
@@ -4151,7 +4151,7 @@
     {
         "name": "Iron Helmet",
         "image": "Head/Iron Helmet.png",
-        "primaryColor": "#e2e1dd",
+        "primaryColor": "#969e9d",
         "secondaryColors": [
             "#9f9e9b",
             "#5a5755"
@@ -4225,7 +4225,7 @@
         "image": "Head/Lazuli Glintstone Crown.png",
         "primaryColor": "#949897",
         "secondaryColors": [
-            "#7b8384",
+            "#6e83bf",
             "#5e5f5e"
         ]
     },
@@ -4909,7 +4909,7 @@
         "image": "Head\\SOTE/Death Mask Helm.png",
         "primaryColor": "#88725f",
         "secondaryColors": [
-            "#6d5b4b",
+            "#742c2f",
             "#594738"
         ]
     },
@@ -5780,7 +5780,7 @@
     {
         "name": "Nights Cavalry Greaves",
         "image": "Legs/Nights Cavalry Greaves.png",
-        "primaryColor": "#939494",
+        "primaryColor": "#37332f",
         "secondaryColors": [
             "#585350",
             "#45413d"
@@ -6185,7 +6185,7 @@
     {
         "name": "Black Knight Greaves",
         "image": "Legs\\SOTE/Black Knight Greaves.png",
-        "primaryColor": "#9e9a9a",
+        "primaryColor": "#0f0d0c",
         "secondaryColors": [
             "#595553",
             "#5a5550"
@@ -6275,7 +6275,7 @@
     {
         "name": "Greaves of Night",
         "image": "Legs\\SOTE/Greaves of Night.png",
-        "primaryColor": "#504d4e",
+        "primaryColor": "#0d0b0a",
         "secondaryColors": [
             "#43403e",
             "#433e41"
@@ -6428,7 +6428,7 @@
     {
         "name": "Albinauric Shield",
         "image": "Shields/Albinauric Shield.png",
-        "primaryColor": "#d5d5d3",
+        "primaryColor": "#938d7e",
         "secondaryColors": [
             "#9d9c98",
             "#8c8578"
@@ -6473,10 +6473,10 @@
     {
         "name": "Black Leather Shield",
         "image": "Shields/Black Leather Shield.png",
-        "primaryColor": "#8c8e94",
+        "primaryColor": "#2f3440",
         "secondaryColors": [
             "#51525a",
-            "#3c4250"
+            "#76695b"
         ]
     },
     {
@@ -6950,7 +6950,7 @@
     {
         "name": "Scorpion Kite Shield",
         "image": "Shields/Scorpion Kite Shield.png",
-        "primaryColor": "#989190",
+        "primaryColor": "#171616",
         "secondaryColors": [
             "#b28931",
             "#96702a"
@@ -7049,7 +7049,7 @@
     {
         "name": "Black Steel Greatshield",
         "image": "Shields\\SOTE/Black Steel Greatshield.png",
-        "primaryColor": "#4d5055",
+        "primaryColor": "#0f0f0f",
         "secondaryColors": [
             "#4b4436",
             "#3d4147"
@@ -7067,7 +7067,7 @@
     {
         "name": "Messmer Soldier Shield",
         "image": "Shields\\SOTE/Messmer Soldier Shield.png",
-        "primaryColor": "#979da6",
+        "primaryColor": "#272828",
         "secondaryColors": [
             "#4d535c",
             "#3c434b"
@@ -7085,7 +7085,7 @@
     {
         "name": "Shield of Night",
         "image": "Shields\\SOTE/Shield of Night.png",
-        "primaryColor": "#908f93",
+        "primaryColor": "#030302",
         "secondaryColors": [
             "#5d5e63",
             "#585658"
@@ -7094,7 +7094,7 @@
     {
         "name": "Smithscript Shield",
         "image": "Shields\\SOTE/Smithscript Shield.png",
-        "primaryColor": "#a69492",
+        "primaryColor": "#301f1d",
         "secondaryColors": [
             "#8b7168",
             "#5f5256"
@@ -7160,7 +7160,7 @@
         "primaryColor": "#87755f",
         "secondaryColors": [
             "#6f604e",
-            "#604a33"
+            "#930601"
         ]
     },
     {
@@ -8138,9 +8138,9 @@
     {
         "name": "Ghostflame Torch",
         "image": "Weapons/Ghostflame Torch.png",
-        "primaryColor": "#d1dfe1",
+        "primaryColor": "#1e1410",
         "secondaryColors": [
-            "#93a6aa",
+            "#739ba1",
             "#758a8e"
         ]
     },
@@ -8507,7 +8507,7 @@
     {
         "name": "Helphen's Steeple",
         "image": "Weapons/Helphen's Steeple.png",
-        "primaryColor": "#5a5e60",
+        "primaryColor": "#0e0b0d",
         "secondaryColors": [
             "#535257",
             "#4d515d"
@@ -8525,10 +8525,10 @@
     {
         "name": "Hookclaws",
         "image": "Weapons/Hookclaws.png",
-        "primaryColor": "#d0d5db",
+        "primaryColor": "#bfd0dc",
         "secondaryColors": [
             "#a2b4ca",
-            "#969aa2"
+            "#7d6050"
         ]
     },
     {
@@ -8579,7 +8579,7 @@
     {
         "name": "Iron Ball",
         "image": "Weapons/Iron Ball.png",
-        "primaryColor": "#d4d2d6",
+        "primaryColor": "#737c96",
         "secondaryColors": [
             "#9d979c",
             "#5d565a"
@@ -8813,7 +8813,7 @@
     {
         "name": "Maliketh's Black Blade",
         "image": "Weapons/Maliketh's Black Blade.png",
-        "primaryColor": "#5b5650",
+        "primaryColor": "#150e07",
         "secondaryColors": [
             "#575754",
             "#4b4539"
@@ -8822,7 +8822,7 @@
     {
         "name": "Mantis Blade",
         "image": "Weapons/Mantis Blade.png",
-        "primaryColor": "#505051",
+        "primaryColor": "#090604",
         "secondaryColors": [
             "#4d4d4e",
             "#4a4b4e"
@@ -8833,7 +8833,7 @@
         "image": "Weapons/Marais Executioner's Sword.png",
         "primaryColor": "#605857",
         "secondaryColors": [
-            "#5c5355",
+            "#4c2924",
             "#50433c"
         ]
     },
@@ -9200,7 +9200,7 @@
     {
         "name": "Rivers of Blood",
         "image": "Weapons/Rivers of Blood.png",
-        "primaryColor": "#645e5c",
+        "primaryColor": "#590608",
         "secondaryColors": [
             "#5a514e",
             "#9a2526"
@@ -10010,7 +10010,7 @@
     {
         "name": "Chilling Perfume Bottle",
         "image": "Weapons\\SOTE/Chilling Perfume Bottle.png",
-        "primaryColor": "#d6e0e3",
+        "primaryColor": "#335f98",
         "secondaryColors": [
             "#94a3a8",
             "#728a9f"
