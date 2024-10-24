@@ -18,7 +18,7 @@ In each sub-directory of /pages/ you will find several scripts that can be used 
 * *generate_items.py*  - generates the items used by the web interface, using a combination of data from colors_extracted.json and image names + subtypes as defined within the /images/ folder. 
 * *200px-icon-generator.py*  - generates the preview icons for the site so it loads faster and uses fewer resources while open. pulls images from /images/ and returns them in a 200px format to /icons/ 
 * *generate_previews2.py*  - creates a new subfolder called 'processed-images' that will pull images from /images/ as well as colors from colors_extracted.json to create 500x500px images with a 120px bar showing the 3 most prominent colors from the given images, as defined in colors_extracted.json (requires running getcolor3.py beforehand) 
-
+* *categorise.py*  - pulls item details from items_for_web.json as well as their type from the subfolder of /images/, returning colors and item types as a JSON array.
 <p align="center">
 <img src="https://i.imgur.com/vT5b21S.png" width="680" height="100" border="10"/>
 </p>
