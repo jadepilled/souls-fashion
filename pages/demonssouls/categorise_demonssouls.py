@@ -1,4 +1,7 @@
-[
+import json
+
+# Your JSON data as a list of dictionaries
+data = [
     {
         "name": "Ancient King'S Breastplate",
         "image": "Chest/Ancient King's Breastplate.png",
@@ -6,8 +9,7 @@
         "secondaryColors": [
             "#95a59a",
             "#77938a"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Binded Cross",
@@ -16,8 +18,7 @@
         "secondaryColors": [
             "#a88b6f",
             "#8d725a"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Black Leather",
@@ -26,8 +27,7 @@
         "secondaryColors": [
             "#8f8778",
             "#847a6d"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Brushwood Armor",
@@ -36,8 +36,7 @@
         "secondaryColors": [
             "#9c8973",
             "#877562"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Chain Mail",
@@ -46,8 +45,7 @@
         "secondaryColors": [
             "#877367",
             "#67584f"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Coat Of Plate",
@@ -56,8 +54,7 @@
         "secondaryColors": [
             "#a39d96",
             "#84786f"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Dark Silver Armor",
@@ -66,8 +63,7 @@
         "secondaryColors": [
             "#5d5b58",
             "#44423d"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Dull Gold Armor",
@@ -76,8 +72,7 @@
         "secondaryColors": [
             "#a68c62",
             "#8b7451"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Fluted Armor",
@@ -86,8 +81,7 @@
         "secondaryColors": [
             "#a29c96",
             "#837a74"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Gloom Armor",
@@ -96,8 +90,7 @@
         "secondaryColors": [
             "#9f8a6f",
             "#89745a"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Leather Armor",
@@ -106,8 +99,7 @@
         "secondaryColors": [
             "#9f8975",
             "#8a7361"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Mirdan Scale Mail",
@@ -116,8 +108,7 @@
         "secondaryColors": [
             "#a9a093",
             "#8f867a"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Old Raggedy Robes",
@@ -126,8 +117,7 @@
         "secondaryColors": [
             "#86837b",
             "#635e59"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Rogue'S Clothes",
@@ -136,8 +126,7 @@
         "secondaryColors": [
             "#a4906a",
             "#8a7655"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Saint'S Robes",
@@ -146,8 +135,7 @@
         "secondaryColors": [
             "#c7c4ba",
             "#a3a199"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Shaman'S Clothes",
@@ -156,8 +144,7 @@
         "secondaryColors": [
             "#928778",
             "#86786c"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Venerable Sage'S Robe",
@@ -166,8 +153,7 @@
         "secondaryColors": [
             "#9d8875",
             "#897463"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Wizard'S Clothes",
@@ -176,8 +162,7 @@
         "secondaryColors": [
             "#a2a093",
             "#898678"
-        ],
-        "type": "chest"
+        ]
     },
     {
         "name": "Ancient King'S Gauntlet",
@@ -186,8 +171,7 @@
         "secondaryColors": [
             "#8ab1a2",
             "#6f9c8f"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Binded Gloves",
@@ -196,8 +180,7 @@
         "secondaryColors": [
             "#907154",
             "#8d6235"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Black Gloves",
@@ -206,8 +189,7 @@
         "secondaryColors": [
             "#948677",
             "#85786c"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Brushwood Gauntlets",
@@ -216,8 +198,7 @@
         "secondaryColors": [
             "#a28a72",
             "#8a7460"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Chain Gloves",
@@ -226,8 +207,7 @@
         "secondaryColors": [
             "#a49791",
             "#857973"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Dark Silver Manifer",
@@ -236,8 +216,7 @@
         "secondaryColors": [
             "#a19e9a",
             "#84817d"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Dull Gold Manifer",
@@ -246,8 +225,7 @@
         "secondaryColors": [
             "#aca693",
             "#635e52"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Fluted Gauntlet",
@@ -256,8 +234,7 @@
         "secondaryColors": [
             "#a39d98",
             "#837b73"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Gloom Gauntlet",
@@ -266,8 +243,7 @@
         "secondaryColors": [
             "#ab8e67",
             "#8d7353"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Leather Gloves",
@@ -276,8 +252,7 @@
         "secondaryColors": [
             "#aa8c71",
             "#8d745e"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Mirdan Manifer",
@@ -286,8 +261,7 @@
         "secondaryColors": [
             "#cfc6b8",
             "#a79c90"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Old Raggedy Gloves",
@@ -296,8 +270,7 @@
         "secondaryColors": [
             "#a08875",
             "#8c7666"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Plate Gauntlet",
@@ -306,8 +279,7 @@
         "secondaryColors": [
             "#dec8b3",
             "#ccb39e"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Rogue'S Gloves",
@@ -316,8 +288,7 @@
         "secondaryColors": [
             "#9f9b94",
             "#575452"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Saint'S Gloves",
@@ -326,8 +297,7 @@
         "secondaryColors": [
             "#a89c92",
             "#958578"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Shaman'S Armband",
@@ -336,8 +306,7 @@
         "secondaryColors": [
             "#8b847a",
             "#837a70"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Silver Bracelet",
@@ -346,8 +315,7 @@
         "secondaryColors": [
             "#c7c2bc",
             "#c2bcb7"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Venerable Sage'S Gloves",
@@ -356,8 +324,7 @@
         "secondaryColors": [
             "#9e8776",
             "#897466"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Wizard'S Gloves",
@@ -366,8 +333,7 @@
         "secondaryColors": [
             "#c5b8aa",
             "#a89d92"
-        ],
-        "type": "hands"
+        ]
     },
     {
         "name": "Ancient King'S Mask",
@@ -376,8 +342,7 @@
         "secondaryColors": [
             "#92a99e",
             "#789187"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Assassin'S Mask",
@@ -386,8 +351,7 @@
         "secondaryColors": [
             "#a39c90",
             "#8b8479"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Binded Hood",
@@ -396,8 +360,7 @@
         "secondaryColors": [
             "#ab8b6b",
             "#8f7052"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Brushwood Helmet",
@@ -406,8 +369,7 @@
         "secondaryColors": [
             "#c9b59f",
             "#b2a18d"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Chain Helmet",
@@ -416,8 +378,7 @@
         "secondaryColors": [
             "#8f837b",
             "#857a73"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Dark Silver Helmet",
@@ -426,8 +387,7 @@
         "secondaryColors": [
             "#a4a19e",
             "#a3a09c"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Dull Gold Helmet",
@@ -436,8 +396,7 @@
         "secondaryColors": [
             "#cfa95a",
             "#ab8f51"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Fluted Helmet",
@@ -446,8 +405,7 @@
         "secondaryColors": [
             "#837d7a",
             "#5d5955"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Gloom Helmet",
@@ -456,8 +414,7 @@
         "secondaryColors": [
             "#aba295",
             "#87755f"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Gold Mask",
@@ -466,8 +423,7 @@
         "secondaryColors": [
             "#d0ab64",
             "#ad8f58"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Leather Cap",
@@ -476,8 +432,7 @@
         "secondaryColors": [
             "#9a8578",
             "#89756a"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Mirdan Helmet",
@@ -486,8 +441,7 @@
         "secondaryColors": [
             "#a49d93",
             "#8a837a"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Monk'S Head Collar",
@@ -496,8 +450,7 @@
         "secondaryColors": [
             "#e4ac48",
             "#e19b2c"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Official'S Cap",
@@ -506,8 +459,7 @@
         "secondaryColors": [
             "#655249",
             "#57433a"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Plate Helmet",
@@ -516,8 +468,7 @@
         "secondaryColors": [
             "#a39e9a",
             "#8b827c"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Silver Coronet",
@@ -526,8 +477,7 @@
         "secondaryColors": [
             "#a09b99",
             "#656160"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Three-Cornered Hat",
@@ -536,8 +486,7 @@
         "secondaryColors": [
             "#5c5952",
             "#45433b"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Venerable Sage'S Hood",
@@ -546,8 +495,7 @@
         "secondaryColors": [
             "#948775",
             "#867868"
-        ],
-        "type": "head"
+        ]
     },
     {
         "name": "Ancient King'S Leggings",
@@ -556,8 +504,7 @@
         "secondaryColors": [
             "#58625a",
             "#38423a"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Binded Boots",
@@ -566,8 +513,7 @@
         "secondaryColors": [
             "#6d5c4c",
             "#5b4836"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Black Boots",
@@ -576,8 +522,7 @@
         "secondaryColors": [
             "#8d857a",
             "#635c55"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Brushwood Leggings",
@@ -586,8 +531,7 @@
         "secondaryColors": [
             "#887563",
             "#6b5c4d"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Dark Silver Leggings",
@@ -596,8 +540,7 @@
         "secondaryColors": [
             "#5b5a58",
             "#5a5854"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Dull Gold Leggings",
@@ -606,8 +549,7 @@
         "secondaryColors": [
             "#8b7558",
             "#6e604a"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Fluted Leggings",
@@ -616,8 +558,7 @@
         "secondaryColors": [
             "#a69d96",
             "#85766c"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Gloom Leggings",
@@ -626,8 +567,7 @@
         "secondaryColors": [
             "#9a8973",
             "#6a5c4c"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Hard Leather Boots",
@@ -636,8 +576,7 @@
         "secondaryColors": [
             "#a8978e",
             "#867870"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Leather Boots",
@@ -646,8 +585,7 @@
         "secondaryColors": [
             "#af9b8e",
             "#998778"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Old Raggedy Boots",
@@ -656,8 +594,7 @@
         "secondaryColors": [
             "#5e5b52",
             "#47433b"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Plate Leggings",
@@ -666,8 +603,7 @@
         "secondaryColors": [
             "#d0c8b4",
             "#a8a195"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Rogue'S Boots",
@@ -676,8 +612,7 @@
         "secondaryColors": [
             "#4f4b47",
             "#47433c"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Saint'S Boots",
@@ -686,8 +621,7 @@
         "secondaryColors": [
             "#948679",
             "#605a54"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Shaman'S Tabi Socks",
@@ -696,8 +630,7 @@
         "secondaryColors": [
             "#85796f",
             "#635c55"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Venerable Sage'S Boots",
@@ -706,8 +639,7 @@
         "secondaryColors": [
             "#9f8a76",
             "#88776a"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Wizard'S Shoes",
@@ -716,8 +648,7 @@
         "secondaryColors": [
             "#9d9690",
             "#615e5b"
-        ],
-        "type": "legs"
+        ]
     },
     {
         "name": "Adjudicators Shield ",
@@ -726,8 +657,7 @@
         "secondaryColors": [
             "#8d7250",
             "#8f6632"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Buckler",
@@ -736,8 +666,7 @@
         "secondaryColors": [
             "#92847a",
             "#867970"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Dark Silver Shield",
@@ -746,8 +675,7 @@
         "secondaryColors": [
             "#5a5652",
             "#44403e"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Dregling Shield Small",
@@ -756,8 +684,7 @@
         "secondaryColors": [
             "#584434",
             "#493625"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Heater Shield",
@@ -766,8 +693,7 @@
         "secondaryColors": [
             "#847879",
             "#605757"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Hoplite Shield",
@@ -776,8 +702,7 @@
         "secondaryColors": [
             "#8d724f",
             "#6b5e49"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Kite Shield",
@@ -786,8 +711,7 @@
         "secondaryColors": [
             "#6a4e1d",
             "#544f4c"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Knights Shield Standar Shield ",
@@ -796,8 +720,7 @@
         "secondaryColors": [
             "#8e714d",
             "#5a534d"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Large Brushwood Shield",
@@ -806,8 +729,7 @@
         "secondaryColors": [
             "#61584f",
             "#5f4935"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Leather Shield ",
@@ -816,8 +738,7 @@
         "secondaryColors": [
             "#6c5f58",
             "#6c5d54"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Purple Flame Shield",
@@ -826,8 +747,7 @@
         "secondaryColors": [
             "#b18d89",
             "#b08a71"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Rune Shield ",
@@ -836,8 +756,7 @@
         "secondaryColors": [
             "#6b4e25",
             "#684e27"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Soldier'S Shield",
@@ -846,8 +765,7 @@
         "secondaryColors": [
             "#5c5751",
             "#47423b"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Spiked Shield",
@@ -856,8 +774,7 @@
         "secondaryColors": [
             "#585650",
             "#47423a"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Steel Shield",
@@ -866,8 +783,7 @@
         "secondaryColors": [
             "#5f574f",
             "#4c423b"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Tower Shield",
@@ -876,8 +792,7 @@
         "secondaryColors": [
             "#877658",
             "#5a554e"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Wooden Shield Small",
@@ -886,8 +801,7 @@
         "secondaryColors": [
             "#615750",
             "#534338"
-        ],
-        "type": "shields"
+        ]
     },
     {
         "name": "Babys Nail",
@@ -896,8 +810,7 @@
         "secondaryColors": [
             "#624634",
             "#4c3222"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Bastard Sword",
@@ -906,8 +819,7 @@
         "secondaryColors": [
             "#564f51",
             "#433e40"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Battle Axe",
@@ -916,8 +828,7 @@
         "secondaryColors": [
             "#615a57",
             "#674633"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Blind",
@@ -926,8 +837,7 @@
         "secondaryColors": [
             "#42423d",
             "#3e4241"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Blueblood Sword",
@@ -936,8 +846,7 @@
         "secondaryColors": [
             "#4c4a47",
             "#47423d"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Bramd",
@@ -946,8 +855,7 @@
         "secondaryColors": [
             "#615747",
             "#5a4b35"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Broadsword",
@@ -956,8 +864,7 @@
         "secondaryColors": [
             "#504e4c",
             "#3c3c41"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Broken Sword",
@@ -966,8 +873,7 @@
         "secondaryColors": [
             "#52443b",
             "#463730"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Claws",
@@ -976,8 +882,7 @@
         "secondaryColors": [
             "#5f5850",
             "#49433b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Claymore",
@@ -986,8 +891,7 @@
         "secondaryColors": [
             "#565454",
             "#5f4b2f"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Club",
@@ -996,8 +900,7 @@
         "secondaryColors": [
             "#483621",
             "#312616"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Compound Long Bow",
@@ -1006,8 +909,7 @@
         "secondaryColors": [
             "#503018",
             "#4d3019"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Compound Short Bow",
@@ -1016,8 +918,7 @@
         "secondaryColors": [
             "#4a321d",
             "#433024"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Crescent Axe",
@@ -1026,8 +927,7 @@
         "secondaryColors": [
             "#65625d",
             "#635b54"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Dagger",
@@ -1036,8 +936,7 @@
         "secondaryColors": [
             "#595351",
             "#684632"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Demonbrandt",
@@ -1046,8 +945,7 @@
         "secondaryColors": [
             "#b1a28f",
             "#988771"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Dozer Axe",
@@ -1056,8 +954,7 @@
         "secondaryColors": [
             "#49403e",
             "#413f40"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Epee Rapier",
@@ -1066,8 +963,7 @@
         "secondaryColors": [
             "#634b2a",
             "#49331c"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Estoc",
@@ -1076,8 +972,7 @@
         "secondaryColors": [
             "#5e5e5a",
             "#5c5c58"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Flamberge",
@@ -1086,8 +981,7 @@
         "secondaryColors": [
             "#504e4c",
             "#4d4137"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Gargoyle Crossbow",
@@ -1096,8 +990,7 @@
         "secondaryColors": [
             "#57524e",
             "#584336"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Great Axe",
@@ -1106,8 +999,7 @@
         "secondaryColors": [
             "#5d5850",
             "#4d4338"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Great Club",
@@ -1116,8 +1008,7 @@
         "secondaryColors": [
             "#635043",
             "#684935"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Guillotine Axe",
@@ -1126,8 +1017,7 @@
         "secondaryColors": [
             "#585652",
             "#49423b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Heavy Crossbow",
@@ -1136,8 +1026,7 @@
         "secondaryColors": [
             "#554735",
             "#463729"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Hiltless",
@@ -1146,8 +1035,7 @@
         "secondaryColors": [
             "#5c5956",
             "#644a37"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Insanity Catalyst",
@@ -1156,8 +1044,7 @@
         "secondaryColors": [
             "#6c614e",
             "#644a29"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Iron Knuckles",
@@ -1166,8 +1053,7 @@
         "secondaryColors": [
             "#554337",
             "#48352a"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Istarelle",
@@ -1176,8 +1062,7 @@
         "secondaryColors": [
             "#5f5b55",
             "#504231"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Kilij",
@@ -1186,8 +1071,7 @@
         "secondaryColors": [
             "#6a5b46",
             "#564738"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Kris Blade",
@@ -1196,8 +1080,7 @@
         "secondaryColors": [
             "#494a49",
             "#534137"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Lava Bow",
@@ -1206,8 +1089,7 @@
         "secondaryColors": [
             "#413831",
             "#0000ff"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Light Crossbow",
@@ -1216,8 +1098,7 @@
         "secondaryColors": [
             "#6c5c4a",
             "#5d4933"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Long Bow",
@@ -1226,8 +1107,7 @@
         "secondaryColors": [
             "#744c2f",
             "#744829"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Long Sword",
@@ -1236,8 +1116,7 @@
         "secondaryColors": [
             "#5b5753",
             "#4c4339"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Mace",
@@ -1246,8 +1125,7 @@
         "secondaryColors": [
             "#4d413c",
             "#49413d"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Magic Sword Makoto",
@@ -1256,8 +1134,7 @@
         "secondaryColors": [
             "#61574d",
             "#5d544b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Mail Breaker",
@@ -1266,8 +1143,7 @@
         "secondaryColors": [
             "#5d5657",
             "#5a5556"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Meat Cleaver",
@@ -1276,8 +1152,7 @@
         "secondaryColors": [
             "#49413d",
             "#433732"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Mirdan Hammer3",
@@ -1286,8 +1161,7 @@
         "secondaryColors": [
             "#52504c",
             "#42413b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Morning Star",
@@ -1296,8 +1170,7 @@
         "secondaryColors": [
             "#55514c",
             "#4d423b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Northern Regalia",
@@ -1306,8 +1179,7 @@
         "secondaryColors": [
             "#b09d88",
             "#9c8b77"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Penetrating Word",
@@ -1316,8 +1188,7 @@
         "secondaryColors": [
             "#535050",
             "#515050"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Phosporescent Pole",
@@ -1326,8 +1197,7 @@
         "secondaryColors": [
             "#584a33",
             "#45392a"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Pickaxe",
@@ -1336,8 +1206,7 @@
         "secondaryColors": [
             "#4c4643",
             "#4e4239"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Rapier",
@@ -1346,8 +1215,7 @@
         "secondaryColors": [
             "#615a55",
             "#514439"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Reaper'S Scythe",
@@ -1356,8 +1224,7 @@
         "secondaryColors": [
             "#8d744d",
             "#6b4e31"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Ritual Blade",
@@ -1366,8 +1233,7 @@
         "secondaryColors": [
             "#58554c",
             "#59482f"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Rune Sword",
@@ -1376,8 +1242,7 @@
         "secondaryColors": [
             "#4a3314",
             "#4d3211"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Scimitar 1",
@@ -1386,8 +1251,7 @@
         "secondaryColors": [
             "#635f61",
             "#645d5f"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Scrapping Spear",
@@ -1396,8 +1260,7 @@
         "secondaryColors": [
             "#5c544e",
             "#514438"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Short Bow",
@@ -1406,8 +1269,7 @@
         "secondaryColors": [
             "#493723",
             "#4e341e"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Short Spear",
@@ -1416,8 +1278,7 @@
         "secondaryColors": [
             "#53524b",
             "#44433c"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Short Sword",
@@ -1426,8 +1287,7 @@
         "secondaryColors": [
             "#524e4d",
             "#5e443b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Shotel",
@@ -1436,8 +1296,7 @@
         "secondaryColors": [
             "#5d5956",
             "#564436"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Silver Catalyst",
@@ -1446,8 +1305,7 @@
         "secondaryColors": [
             "#62564f",
             "#4e433d"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Spiral Rapier",
@@ -1456,8 +1314,7 @@
         "secondaryColors": [
             "#4c4b4b",
             "#45413b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Storm Ruler",
@@ -1466,8 +1323,7 @@
         "secondaryColors": [
             "#59534b",
             "#4d443a"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Uchigatana",
@@ -1476,8 +1332,7 @@
         "secondaryColors": [
             "#9b9998",
             "#5a5754"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "War Pick",
@@ -1486,8 +1341,7 @@
         "secondaryColors": [
             "#504c49",
             "#46413e"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "War Scythe",
@@ -1496,8 +1350,7 @@
         "secondaryColors": [
             "#474744",
             "#464544"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Winged Spear",
@@ -1506,8 +1359,7 @@
         "secondaryColors": [
             "#56442c",
             "#46321b"
-        ],
-        "type": "weapons"
+        ]
     },
     {
         "name": "Wooden Catalyst",
@@ -1516,7 +1368,32 @@
         "secondaryColors": [
             "#51311b",
             "#4f301b"
-        ],
-        "type": "weapons"
+        ]
     }
 ]
+
+def determine_type(image_path):
+    image_path = image_path.lower()
+    if "head" in image_path:
+        return "head"
+    elif "chest" in image_path:
+        return "chest"
+    elif "hands" in image_path:
+        return "hands"
+    elif "legs" in image_path:
+        return "legs"
+    elif "weapons" in image_path:
+        return "weapons"
+    elif "shields" in image_path:
+        return "shields"
+    return "unknown"  # Return 'unknown' if no match is found
+
+# Add 'type' attribute to each item in the list based on the image path
+for item in data:
+    item['type'] = determine_type(item['image'])
+
+# Save to a JSON file
+with open('typed_items_for_web.json', 'w') as outfile:
+    json.dump(data, outfile, indent=4)
+
+print("JSON data has been written to typed_items_for_web.json")
