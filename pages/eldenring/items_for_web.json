@@ -1100,19 +1100,19 @@
     {
         "name": "Maliketh's Armor (Altered)",
         "image": "Chest/Maliketh's Armor (Altered).png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#4f4637"
+            "#87765a",
+            "#4f4638"
         ]
     },
     {
         "name": "Maliketh's Armor",
         "image": "Chest/Maliketh's Armor.png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#4f4637"
+            "#87765a",
+            "#4f4638"
         ]
     },
     {
@@ -2738,10 +2738,10 @@
     {
         "name": "Maliketh's Gauntlets",
         "image": "Hands/Maliketh's Gauntlets.png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#4f4637"
+            "#615a4d",
+            "#514837"
         ]
     },
     {
@@ -4286,10 +4286,10 @@
     {
         "name": "Maliketh's Helm",
         "image": "Head/Maliketh's Helm.png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#8a8a8d"
+            "#8a8a8d",
+            "#84765b"
         ]
     },
     {
