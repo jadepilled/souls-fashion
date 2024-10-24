@@ -137,12 +137,21 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
 			align-items: center; /* centers items vertically */
         }
         .item-card {
-            background-color: #333; /* Dark mode card background */
-            border: 1px solid #555; /* Dark mode card border */
-            padding: 10px;
-            width: 200px;
-            text-align: center;
-            color: #fff; /* Dark mode card text color */
+          background-color: #333; /* Dark mode card background */
+          border: 1px solid #555; /* Dark mode card border */
+          padding: 10px;
+          width: 200px;
+          text-align: center;
+          color: #fff; /* Dark mode card text color */
+          cursor: pointer;
+          transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+        }
+        .item-card:hover {
+          background-color: #585858; 
+          color: white;
+          border-color: white;
+          border: 2px solid white;
+          transform: scale(1.1);
         }
         body.light-mode .item-card {
             background-color: white; /* Light mode card background */
