@@ -52,7 +52,17 @@
 				  <label class="form-label"  for="feedback_comments"></label>
 				  <textarea class="form-control" required rows="6" name="comments" id="feedback_comments" ></textarea>
 				</div>
-			
+				<div class="row">
+				  <div class="col">
+					<label class="form-label" for="feedback_name">Your Name (optional):</label>
+					<input type="text" required name="name" class="form-control" id="feedback_name"/>
+				  </div>
+				  
+				  <div class="col mb-4">
+					<label class="form-label" for="feedback_email">Email (optional):</label>
+					<input type="email" name="email" required class="form-control" id="feedback_email"/>
+				  </div>
+				</div>
 				<button type="submit" class="btn btn-success btn-lg" >Post</button>
 				</form>
 
