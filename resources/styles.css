@@ -1,212 +1,232 @@
-h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 70px;margin-top:30px;}
-        h3 {letter-spacing: -1.8px;line-height: 0.5;text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 20px;margin-top:-30px;}
-        body {
-            font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #121212; /* Dark mode background by default */
-            color: #ffffff; /* Dark mode text color by default */
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        body.light-mode {
-            background-color: #f5f5f5; /* Light mode background */
-            color: #000000; /* Light mode text color */
-        }
-        .topnav {
-            background-color: #242424; /* Dark mode navbar background */
-			display: flex;
-            overflow: hidden;
-			justify-content: center;
-			align-items: center;
-        }
-        body.light-mode .topnav {
-            background-color: #fff; /* Light mode navbar background */
-        }
-        .topnav a {
-			display: inline-block; /* Ensure that all links and dropdowns behave inline */
-            float: left;
-            color: #f2f2f2; /* Dark mode link color */
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        body.light-mode .topnav a {
-            color: #000; /* Light mode link color */
-        }
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .topnav a.active {
-            background-color: #2e2e2e; /* Dark mode active link color */
-            color: white;
-        }
-        body.light-mode .topnav a.active {
-            background-color: #d3d3d3; /* Light mode active link color */
-            color: black; /* Light mode active text color */
-        }
-        .dropdown {
-			display: inline-block; /* Ensure that all links and dropdowns behave inline */
-            float: left;
-            overflow: hidden;
-			margin-top: 0px;
-        }
-        .dropdown .dropbtn {
-			 padding: 0px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            border: none;
-            outline: none;
-            color: white;
-            background-color: inherit;
-            font-family: inherit; 
-            margin: 0; 
-        }
-		body.light-mode .dropdown .dropbtn {
-		color: #000; /* Change to black in light mode for visibility */
+h2 {
+  letter-spacing: -4px;
+  line-height: 0.5;
+  text-align: center;
+  font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  margin-top: 30px;
+}
+h3 {
+  letter-spacing: -1.8px;
+  line-height: 0.5;
+  text-align: center;
+  font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin-top: -30px;
+}
+body {
+  font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #121212; /* Dark mode background by default */
+  color: #ffffff; /* Dark mode text color by default */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.light-mode {
+  background-color: #f5f5f5; /* Light mode background */
+  color: #000000; /* Light mode text color */
+}
+.topnav {
+  background-color: #242424; /* Dark mode navbar background */
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+body.light-mode .topnav {
+  background-color: #fff; /* Light mode navbar background */
+}
+.topnav a {
+  display: inline-block; /* Ensure that all links and dropdowns behave inline */
+  float: left;
+  color: #f2f2f2; /* Dark mode link color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+body.light-mode .topnav a {
+  color: #000; /* Light mode link color */
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #2e2e2e; /* Dark mode active link color */
+  color: white;
+}
+body.light-mode .topnav a.active {
+  background-color: #d3d3d3; /* Light mode active link color */
+  color: black; /* Light mode active text color */
+}
+.dropdown {
+  display: inline-block; /* Ensure that all links and dropdowns behave inline */
+  float: left;
+  overflow: hidden;
+  margin-top: 0px;
+}
+.dropdown .dropbtn {
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+body.light-mode .dropdown .dropbtn {
+  color: #000; /* Change to black in light mode for visibility */
 }
 
-				
-        .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #bfbfbf;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding: 0px 0; /* Add padding to dropdown content */
-    margin: 0; /* Remove margin to prevent excess height */
-        }
-        .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 10px 12px; /* Adjust padding for dropdown items */
-    text-decoration: none;
-    display: block;
-    text-align: left;
-        }
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .mode-switch {
-            float: right; /* Align to the right in the navbar */
-            margin: 14px 16px; /* Adjust margins for spacing */
-			position: absolute;
-			right: 25px;
-        }
-        .mode-switch button {
-            cursor: pointer;
-            padding: 6px 11px;
-            background-color: #444; /* Default button background */
-            color: #fff; /* Default button text color */
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        body.light-mode .mode-switch button {
-            background-color: #ccc; /* Light mode button background */
-            color: #000; /* Light mode button text color */
-        }
-        .search-bar {
-			 text-align: center;
-            margin-bottom: 20px;
-        }
-        .search-bar input {
-            width: 300px;
-            padding: 10px;
-            font-size: 16px;
-            background-color: #333; /* Dark mode input background */
-            color: #fff; /* Dark mode input text */
-            border: 1px solid #555; /* Dark mode border */
-        }
-        body.light-mode .search-bar input {
-            background-color: #fff; /* Light mode input background */
-            color: #000; /* Light mode input text */
-            border: 1px solid #ddd; /* Light mode border */
-        }
-        .item-grid {
-			text-align: center; 
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-			justify-content: center; /* centers items horizontally */
-			align-items: center; /* centers items vertically */
-        }
-        .item-card {
-          background-color: #333; /* Dark mode card background */
-          border: 1px solid #555; /* Dark mode card border */
-          padding: 10px;
-          width: 200px;
-          height: 300px;
-          text-align: center;
-          color: #fff; /* Dark mode card text color */
-          cursor: pointer;
-          transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-        }
-        .item-card:hover {
-          background-color: #585858; 
-          color: white;
-          border-color: white;
-          border: 2px solid white;
-          transform: scale(1.1);
-        }
-        body.light-mode .item-card {
-            background-color: white; /* Light mode card background */
-            border: 1px solid #ddd; /* Light mode card border */
-            color: #000; /* Light mode card text color */
-        }
-        .item-card img {
-            max-width: 100%;
-            height: auto;
-        }
-        .color-bar {
-            display: flex;
-            margin-top: 5px;
-        }
-        .color-bar div {
-            flex: 1;
-            height: 20px;
-        }
-		.copyright {
-            position: fixed; /* Fix to the bottom */
-            bottom: 0; /* Position at the bottom of the viewport */
-            left: 0; /* Align to the left */
-            right: 0; /* Align to the right */
-            text-align: center; /* Center the copyright text */
-            margin: 0; /* Remove margin */
-            padding: 10px 0; /* Padding for spacing */
-            font-size: 14px; /* Font size for the copyright */
-            color: #333333; /* Color for the copyright text */
-            background-color: rgba(18, 18, 18, 0.2); /* Background color with some transparency */
-        }
-		
-		.color-picker {
-		text-align: center;	
-		}
-		.slider-container {
-			text-align: center;
-		}
-		/*styling for buttons */
-					input[type=button], input[type=submit], input[type=reset] {
-					  background-color: #333;
-					  border: none;
-					  color: white;
-					  padding: 8px 16px;
-					  text-decoration: none;
-					  margin: 4px 2px;
-					  cursor: pointer;
-					}
-					
-		/*styling for inline sliders */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bfbfbf;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0px 0; /* Add padding to dropdown content */
+  margin: 0; /* Remove margin to prevent excess height */
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 12px; /* Adjust padding for dropdown items */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.mode-switch {
+  float: right; /* Align to the right in the navbar */
+  margin: 14px 16px; /* Adjust margins for spacing */
+  position: absolute;
+  right: 25px;
+}
+.mode-switch button {
+  cursor: pointer;
+  padding: 6px 11px;
+  background-color: #444; /* Default button background */
+  color: #fff; /* Default button text color */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+body.light-mode .mode-switch button {
+  background-color: #ccc; /* Light mode button background */
+  color: #000; /* Light mode button text color */
+}
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333; /* Dark mode input background */
+  color: #fff; /* Dark mode input text */
+  border: 1px solid #555; /* Dark mode border */
+}
+body.light-mode .search-bar input {
+  background-color: #fff; /* Light mode input background */
+  color: #000; /* Light mode input text */
+  border: 1px solid #ddd; /* Light mode border */
+}
+.item-grid {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* centers items horizontally */
+  align-items: center; /* centers items vertically */
+}
+.item-card {
+  background-color: #333; /* Dark mode card background */
+  border: 1px solid #555; /* Dark mode card border */
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  color: #fff; /* Dark mode card text color */
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+.item-card:hover {
+  background-color: #585858;
+  color: white;
+  border-color: white;
+  border: 2px solid white;
+  transform: scale(1.1);
+}
+body.light-mode .item-card {
+  background-color: white; /* Light mode card background */
+  border: 1px solid #ddd; /* Light mode card border */
+  color: #000; /* Light mode card text color */
+}
+.item-card img {
+  max-width: 100%;
+  height: auto;
+}
+.color-bar {
+  display: flex;
+  margin-top: 5px;
+}
+.color-bar div {
+  flex: 1;
+  height: 20px;
+}
+.copyright {
+  position: fixed; /* Fix to the bottom */
+  bottom: 0; /* Position at the bottom of the viewport */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  text-align: center; /* Center the copyright text */
+  margin: 0; /* Remove margin */
+  padding: 10px 0; /* Padding for spacing */
+  font-size: 14px; /* Font size for the copyright */
+  color: #333333; /* Color for the copyright text */
+  background-color: rgba(
+    18,
+    18,
+    18,
+    0.2
+  ); /* Background color with some transparency */
+}
+
+.color-picker {
+  text-align: center;
+}
+.slider-container {
+  text-align: center;
+}
+/*styling for buttons */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*styling for inline sliders */
 
 .parent {
   border: none;
   text-align: center;
-	margin-top:-10px;
+  margin-top: -10px;
 }
 .child {
   display: inline-block;
@@ -215,64 +235,63 @@ h2 {letter-spacing: -4px;line-height: 0.5;text-align: center;font-family: "Spect
   vertical-align: middle;
 }
 
-		/*styling for feedback form*/
+/*styling for feedback form*/
 .feedback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px auto;
-    max-width: 600px; /* Optional: set a max width for better layout */
-	
-	.feedback .form-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px; /* Optional: set a max width for better layout */
+
+  .feedback .form-check {
     display: inline-block;
     margin-right: 10px; /* Add some space between the buttons */
-}
+  }
 
-.feedback .form-check label {
+  .feedback .form-check label {
     margin-left: 5px;
-}
-
+  }
 }
 .feedback .form-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold; /* Make labels bold for clarity */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Make labels bold for clarity */
 }
 
 .feedback textarea {
-    width: 100%; /* Ensure the textarea takes full width */
-    max-width: 100%;
-    resize: vertical; /* Allow only vertical resizing */
+  width: 100%; /* Ensure the textarea takes full width */
+  max-width: 100%;
+  resize: vertical; /* Allow only vertical resizing */
 }
 
 /* Style for dark mode */
 .feedback button {
-	margin-top:10px;
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  margin-top: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 /* Hover effect */
 .feedback button:hover {
-    background-color: #666;
+  background-color: #666;
 }
 
 /* Style for light mode */
 body.light-mode .feedback button {
-    background-color: #ccc;
-    color: black;
+  background-color: #ccc;
+  color: black;
 }
 
 body.light-mode .feedback button:hover {
-    background-color: #bbb;
-} 
+  background-color: #bbb;
+}
 
 .filter-buttons {
   text-align: center;
@@ -280,25 +299,133 @@ body.light-mode .feedback button:hover {
 }
 
 .filter-buttons button:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
   color: white;
-  border-color: #0056b3; 
+  border-color: #0056b3;
 }
 
 .filter-buttons button {
-    display: inline-block; 
-    padding: 5px 10px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
 }
 
 .filter-buttons button.active {
-  background-color: #007bff; 
+  background-color: #007bff;
   color: white;
   border-color: #0056b3;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  transform: scale(1.05); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones */
+  h2 {
+    font-size: 50px; /* Further decrease heading size */
+  }
+
+  h3 {
+    font-size: 16px; /* Further decrease heading size */
+  }
+
+  body {
+    padding: 0; /* Further reduce padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove default margin */
+  }
+
+  .parent {
+    margin-bottom: 30px;
+  }
+
+  .topnav {
+    margin: 0; /* Ensure no margin on the navbar */
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    box-sizing: border-box; /* Include padding/border in width/height */
+  }
+
+  .topnav a {
+    font-size: 8px; /* Smaller font size for navigation links */
+    padding: 5px;
+    align-items: center;
+    margin: 0; /* Remove any margin */
+  }
+
+  .topnav button.dropbtn {
+    font-size: 8px; /* Smaller font size for navigation links */
+    padding: 5px;
+    margin: 0; /* Remove any margin */
+  }
+
+  .mode-switch {
+    opacity: 50%;
+    position: fixed; /* Fixed positioning */
+    bottom: 50px; /* Adjust as needed for spacing from the top */
+    left: 0px; /* Adjust as needed for spacing from the right */
+    z-index: 1000; /* Ensure it appears above other elements */
+    margin-left: 2%;
+  }
+
+  .mode-switch button {
+    font-size: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .color-picker input {
+    width: 100px;
+    height: 100px;
+  }
+
+  .slider-container input {
+    width: 100%;
+    height: auto;
+  }
+
+  .filter-buttons button {
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .item-card {
+    width: 90px; /* Even smaller cards */
+    height: 150px; /* Adjust height */
+    font-size: 8px;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    box-sizing: border-box; /* Include padding/border in width/height */
+  }
+
+  .color-bar div {
+    display: flex;
+    width: 100%; /* Ensure it fits within the parent */
+    height: 8px; /* Adjust height */
+  }
+
+  .search-bar input {
+    width: calc(100% - 20px); /* Full width search input, account for padding */
+  }
+
+  .copyright {
+    font-size: 8px;
+    color: white;
+    height: 50px;
+  }
 }
