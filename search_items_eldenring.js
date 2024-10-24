@@ -11,10 +11,10 @@ function shuffle(array) {
   return array;
 }
 
-// Fetch the items_for_web.json file and store its data
+// Fetch the typed_items_for_web.json file and store its data
 async function fetchItems() {
   try {
-      const response = await fetch('pages/eldenring/items_for_web.json');
+      const response = await fetch('pages/eldenring/typed_items_for_web.json');
       if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
       }
