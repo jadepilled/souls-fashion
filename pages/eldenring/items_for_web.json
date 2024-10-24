@@ -2135,19 +2135,19 @@
     {
         "name": "Oathseeker Knight Armor",
         "image": "Chest\\SOTE/Oathseeker Knight Armor.png",
-        "primaryColor": "#a79994",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#615751",
-            "#4b433b"
+            "#7c7063",
+            "#baaa99"
         ]
     },
     {
         "name": "Rakshasa Armor",
         "image": "Chest\\SOTE/Rakshasa Armor.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#6b514a",
-            "#5d423c"
+            "#1b1815",
+            "#5b443e"
         ]
     },
     {
@@ -3251,19 +3251,19 @@
     {
         "name": "Oathseeker Knight Gauntlets",
         "image": "Hands\\SOTE/Oathseeker Knight Gauntlets.png",
-        "primaryColor": "#171415",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#5f5242",
-            "#4d4439"
+            "#7c7063",
+            "#baaa99"
         ]
     },
     {
         "name": "Rakshasa Gauntlets",
         "image": "Hands\\SOTE/Rakshasa Gauntlets.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#6b504a",
-            "#60433c"
+            "#1b1815",
+            "#5b443e"
         ]
     },
     {
@@ -5105,10 +5105,10 @@
     {
         "name": "Oathseeker Helm",
         "image": "Head\\SOTE/Oathseeker Helm.png",
-        "primaryColor": "#867665",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#6a5c4f",
-            "#504539"
+            "#7c7063",
+            "#baaa99"
         ]
     },
     {
@@ -5123,10 +5123,10 @@
     {
         "name": "Rakshasa Helm",
         "image": "Head\\SOTE/Rakshasa Helm.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#6e4f49",
-            "#63433c"
+            "#1b1815",
+            "#5b443e"
         ]
     },
     {
@@ -6356,19 +6356,19 @@
     {
         "name": "Oathseeker Knight Greaves",
         "image": "Legs\\SOTE/Oathseeker Knight Greaves.png",
-        "primaryColor": "#5a5a5a",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#59544e",
-            "#4a433b"
+            "#7c7063",
+            "#baaa99"
         ]
     },
     {
         "name": "Rakshasa Greaves",
         "image": "Legs\\SOTE/Rahshasa Greaves.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#5c433b",
-            "#522d28"
+            "#1b1815",
+            "#5b443e"
         ]
     },
     {
@@ -10390,8 +10390,8 @@
         "image": "Weapons\\SOTE/Obsidian Lamina.png",
         "primaryColor": "#4b4e4f",
         "secondaryColors": [
-            "#494e50",
-            "#4d4c48"
+            "#1e1c1b",
+            "#050404"
         ]
     },
     {
