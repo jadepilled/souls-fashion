@@ -1,4 +1,5 @@
-<p align ="center"> ![souls.fashion header](https://i.imgur.com/Uwno78D.png)
+<p align ="center">
+![souls.fashion header](https://i.imgur.com/Uwno78D.png)
 
 Welcome to souls.fashion, a passion project created to make designing outfits in FromSoft's SoulsBorne game series easier.
 
@@ -22,9 +23,11 @@ You may alter, adapt, or build upon the source material, as long as attribution 
 
 ![changelog](https://imgur.com/fAYVJlW)
 
-> [ver 1.0.1] * * - added functionality for searching items by name and color, currently only Elden Ring is supported.* 
-> [ver 1.0.2] * * - Elden Ring, Demon's Souls, and Dark Souls 1-3 supported. Working on renaming images to enable Bloodborne support.* 
-> [ver 1.0.3] * * - search by type function added for all games. mobile device support improved. * 
+> [ver 1.0.1] _ - added functionality for searching items by name and color, currently only Elden Ring is supported._ 
+
+> [ver 1.0.2] _ - Elden Ring, Demon's Souls, and Dark Souls 1-3 supported. Working on renaming images to enable Bloodborne support._
+
+> [ver 1.0.3] _ - search by type function added for all games. mobile device support improved._
 
 ![special thanks](https://i.imgur.com/606munG.png)
 
