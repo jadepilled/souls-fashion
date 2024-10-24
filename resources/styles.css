@@ -425,7 +425,7 @@ body.light-mode .feedback button:hover {
 
   .copyright {
     font-size: 8px;
-    color: white;
+    color: #333333; /* Color for the copyright text */
     height: 50px;
   }
 }
