@@ -72,10 +72,10 @@
     {
         "name": "Astrologer Robe (Altered)",
         "image": "Chest/Astrologer Robe (Altered).png",
-        "primaryColor": "#a7a091",
+        "primaryColor": "#381d18",
         "secondaryColors": [
-            "#65534a",
-            "#594437"
+            "#a7a091",
+            "#724f25"
         ],
         "type": "chest"
     },
@@ -124,7 +124,7 @@
         "image": "Chest/Banished Knight Armor.png",
         "primaryColor": "#a29b91",
         "secondaryColors": [
-            "#615e58",
+            "#261a18",
             "#4b4439"
         ],
         "type": "chest"
@@ -514,7 +514,7 @@
         "image": "Chest/Crucible Tree Armor.png",
         "primaryColor": "#8c6a56",
         "secondaryColors": [
-            "#60564c",
+            "#2c2a25",
             "#544539"
         ],
         "type": "chest"
@@ -662,9 +662,9 @@
     {
         "name": "Errant Sorcerer Robe",
         "image": "Chest/Errant Sorcerer Robe.png",
-        "primaryColor": "#695247",
+        "primaryColor": "#43291f",
         "secondaryColors": [
-            "#5b4f48",
+            "#1e1b19",
             "#58443a"
         ],
         "type": "chest"
@@ -1454,7 +1454,7 @@
         "image": "Chest/Page Garb.png",
         "primaryColor": "#877764",
         "secondaryColors": [
-            "#5e5550",
+            "#1a1a1a",
             "#4f473a"
         ],
         "type": "chest"
@@ -1712,10 +1712,10 @@
     {
         "name": "Royal Remains Armor",
         "image": "Chest/Royal Remains Armor.png",
-        "primaryColor": "#a18c6f",
+        "primaryColor": "#4b4c4d",
         "secondaryColors": [
-            "#5f5950",
-            "#574739"
+            "#6c543f",
+            "#0f0c0b"
         ],
         "type": "chest"
     },
@@ -2062,20 +2062,20 @@
     {
         "name": "Armor of Solitude (Altered)",
         "image": "Chest\\SOTE/Armor of Solitude (Altered).png",
-        "primaryColor": "#999998",
+        "primaryColor": "#434343",
         "secondaryColors": [
-            "#5c5c5b",
-            "#595958"
+            "#9a9b9b",
+            "#11100c"
         ],
         "type": "chest"
     },
     {
         "name": "Armor of Solitude",
         "image": "Chest\\SOTE/Armor of Solitude.png",
-        "primaryColor": "#9b9a99",
+        "primaryColor": "#434343",
         "secondaryColors": [
-            "#616160",
-            "#585857"
+            "#9a9b9b",
+            "#11100c"
         ],
         "type": "chest"
     },
@@ -2372,20 +2372,20 @@
     {
         "name": "Oathseeker Knight Armor",
         "image": "Chest\\SOTE/Oathseeker Knight Armor.png",
-        "primaryColor": "#a79994",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#615751",
-            "#4b433b"
+            "#7c7063",
+            "#baaa99"
         ],
         "type": "chest"
     },
     {
         "name": "Rakshasa Armor",
         "image": "Chest\\SOTE/Rakshasa Armor.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#6b514a",
-            "#5d423c"
+            "#1b1815",
+            "#5b443e"
         ],
         "type": "chest"
     },
@@ -3232,10 +3232,10 @@
     {
         "name": "Royal Remains Gauntlets",
         "image": "Hands/Royal Remains Gauntlets.png",
-        "primaryColor": "#151e21",
+        "primaryColor": "#4b4c4d",
         "secondaryColors": [
-            "#8b735c",
-            "#5e5953"
+            "#6c543f",
+            "#0f0c0b"
         ],
         "type": "hands"
     },
@@ -3522,10 +3522,10 @@
     {
         "name": "Gauntlets of Solitude",
         "image": "Hands\\SOTE/Gauntlets of Solitude.png",
-        "primaryColor": "#939291",
+        "primaryColor": "#434343",
         "secondaryColors": [
-            "#575655",
-            "#41403e"
+            "#9a9b9b",
+            "#11100c"
         ],
         "type": "hands"
     },
@@ -3612,20 +3612,20 @@
     {
         "name": "Oathseeker Knight Gauntlets",
         "image": "Hands\\SOTE/Oathseeker Knight Gauntlets.png",
-        "primaryColor": "#171415",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#5f5242",
-            "#4d4439"
+            "#7c7063",
+            "#baaa99"
         ],
         "type": "hands"
     },
     {
         "name": "Rakshasa Gauntlets",
         "image": "Hands\\SOTE/Rakshasa Gauntlets.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#6b504a",
-            "#60433c"
+            "#1b1815",
+            "#5b443e"
         ],
         "type": "hands"
     },
@@ -4642,10 +4642,10 @@
     {
         "name": "Juvenile Scholar Cap",
         "image": "Head/Juvenile Scholar Cap.png",
-        "primaryColor": "#585a5d",
+        "primaryColor": "#3d3d3d",
         "secondaryColors": [
             "#575a5f",
-            "#5f582b"
+            "#9a7e21"
         ],
         "type": "head"
     },
@@ -5114,7 +5114,7 @@
         "image": "Head/Redmane Knight Helm.png",
         "primaryColor": "#9f9992",
         "secondaryColors": [
-            "#635b54",
+            "#c33d2d",
             "#4d443b"
         ],
         "type": "head"
@@ -5562,10 +5562,10 @@
     {
         "name": "Helm of Solitude",
         "image": "Head\\SOTE/Helm of Solitude.png",
-        "primaryColor": "#939292",
+        "primaryColor": "#434343",
         "secondaryColors": [
-            "#555453",
-            "#41403e"
+            "#9a9b9b",
+            "#11100c"
         ],
         "type": "head"
     },
@@ -5672,10 +5672,10 @@
     {
         "name": "Oathseeker Helm",
         "image": "Head\\SOTE/Oathseeker Helm.png",
-        "primaryColor": "#867665",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#6a5c4f",
-            "#504539"
+            "#7c7063",
+            "#baaa99"
         ],
         "type": "head"
     },
@@ -5692,10 +5692,10 @@
     {
         "name": "Rakshasa Helm",
         "image": "Head\\SOTE/Rakshasa Helm.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#6e4f49",
-            "#63433c"
+            "#1b1815",
+            "#5b443e"
         ],
         "type": "head"
     },
@@ -6574,7 +6574,7 @@
         "image": "Legs/Radahn's Greaves.png",
         "primaryColor": "#847563",
         "secondaryColors": [
-            "#685d4f",
+            "#282725",
             "#534738"
         ],
         "type": "legs"
@@ -6642,10 +6642,10 @@
     {
         "name": "Royal Remains Greaves",
         "image": "Legs/Royal Remains Greaves.png",
-        "primaryColor": "#89745e",
+        "primaryColor": "#4b4c4d",
         "secondaryColors": [
-            "#5c564f",
-            "#544638"
+            "#6c543f",
+            "#0f0c0b"
         ],
         "type": "legs"
     },
@@ -6982,10 +6982,10 @@
     {
         "name": "Greaves of Solitude",
         "image": "Legs\\SOTE/Greaves of Solitude.png",
-        "primaryColor": "#a09e9c",
+        "primaryColor": "#434343",
         "secondaryColors": [
-            "#555350",
-            "#42403e"
+            "#9a9b9b",
+            "#11100c"
         ],
         "type": "legs"
     },
@@ -7062,20 +7062,20 @@
     {
         "name": "Oathseeker Knight Greaves",
         "image": "Legs\\SOTE/Oathseeker Knight Greaves.png",
-        "primaryColor": "#5a5a5a",
+        "primaryColor": "#1e1d1a",
         "secondaryColors": [
-            "#59544e",
-            "#4a433b"
+            "#7c7063",
+            "#baaa99"
         ],
         "type": "legs"
     },
     {
         "name": "Rakshasa Greaves",
         "image": "Legs\\SOTE/Rahshasa Greaves.png",
-        "primaryColor": "#601e15",
+        "primaryColor": "#432925",
         "secondaryColors": [
-            "#5c433b",
-            "#522d28"
+            "#1b1815",
+            "#5b443e"
         ],
         "type": "legs"
     },
@@ -7482,9 +7482,9 @@
     {
         "name": "Horse Crest Wooden Shield",
         "image": "Shields/Horse Crest Wooden Shield.png",
-        "primaryColor": "#9a8875",
+        "primaryColor": "#311619",
         "secondaryColors": [
-            "#887566",
+            "#b59c83",
             "#6d5b51"
         ],
         "type": "shields"
@@ -8102,9 +8102,9 @@
     {
         "name": "Beastman's Cleaver",
         "image": "Weapons/Beastman's Cleaver.png",
-        "primaryColor": "#999a9d",
+        "primaryColor": "#322d31",
         "secondaryColors": [
-            "#5a595a",
+            "#999a9d",
             "#4d4539"
         ],
         "type": "weapons"
@@ -10362,9 +10362,9 @@
     {
         "name": "Scavenger's Curved Sword",
         "image": "Weapons/Scavenger's Curved Sword.png",
-        "primaryColor": "#9d9794",
+        "primaryColor": "#625b5e",
         "secondaryColors": [
-            "#625b5e",
+            "#3c1b14",
             "#5b5759"
         ],
         "type": "weapons"
@@ -11062,7 +11062,7 @@
     {
         "name": "Black Steel Twinblade",
         "image": "Weapons\\SOTE/Black Steel Twinblade.png",
-        "primaryColor": "#5e5e4f",
+        "primaryColor": "#0d1016",
         "secondaryColors": [
             "#555329",
             "#514d37"
@@ -11382,7 +11382,7 @@
     {
         "name": "Greatsword of Radahn",
         "image": "Weapons\\SOTE/Greatsword of Radahn.png",
-        "primaryColor": "#645c4d",
+        "primaryColor": "#161511",
         "secondaryColors": [
             "#5e5d56",
             "#534835"
@@ -11392,10 +11392,10 @@
     {
         "name": "Greatsword of Solitude",
         "image": "Weapons\\SOTE/Greatsword of Solitude.png",
-        "primaryColor": "#545353",
+        "primaryColor": "#201f20",
         "secondaryColors": [
-            "#525050",
-            "#48423b"
+            "#9a9b9b",
+            "#434343"
         ],
         "type": "weapons"
     },
@@ -11544,8 +11544,8 @@
         "image": "Weapons\\SOTE/Obsidian Lamina.png",
         "primaryColor": "#4b4e4f",
         "secondaryColors": [
-            "#494e50",
-            "#4d4c48"
+            "#1e1c1b",
+            "#050404"
         ],
         "type": "weapons"
     },
@@ -11614,7 +11614,7 @@
         "image": "Weapons\\SOTE/Rakshasa's Great Katana.png",
         "primaryColor": "#641e16",
         "secondaryColors": [
-            "#611e16",
+            "#140b0c",
             "#5a1e17"
         ],
         "type": "weapons"
