@@ -1,6 +1,5 @@
 <p align ="center">
-
-![souls.fashion header](https://i.imgur.com/Uwno78D.png)
+<img src="https://i.imgur.com/Uwno78D.png" width="680" height="150" border="10"/>
 </p>
 
 Welcome to souls.fashion, a passion project created to make designing outfits in FromSoft's SoulsBorne game series easier.
@@ -8,8 +7,7 @@ Welcome to souls.fashion, a passion project created to make designing outfits in
 The tool itself primarily utilises JavaScript, particularly most of the functions can be found in search_items.js. It is, however, dependent on several python scripts in order to build JSON files and serve data to the web pages.
 
 <p align ="center">
-
-![installation](https://i.imgur.com/Jjvy4s3.png)
+<img src="https://i.imgur.com/Jjvy4s3.png" width="680" height="100" border="10"/>
 </p>
 
 souls.fashion is hosted as a web-app at https://souls.fashion and therefore does not require customisation or installation to use by default. If you would like to create your own build using other files, the steps are as follows:
@@ -22,16 +20,14 @@ In each sub-directory of /pages/ you will find several scripts that can be used 
 * *generate_previews2.py*  - creates a new subfolder called 'processed-images' that will pull images from /images/ as well as colors from colors_extracted.json to create 500x500px images with a 120px bar showing the 3 most prominent colors from the given images, as defined in colors_extracted.json (requires running getcolor3.py beforehand) 
 
 <p align="center">
-
-![license](https://i.imgur.com/vT5b21S.png)
+<img src="https://i.imgur.com/vT5b21S.png" width="680" height="100" border="10"/>
 </p>
 
 souls.fashion is leased under a Creative Commons Attribution-noncommercial license (CC BY-NC). 
 You may alter, adapt, or build upon the source material, as long as attribution is given to the author (Psyopgirl) and the work is not used for profit or commercial purposes.
 
 <p align="center">
-
-![changelog](https://imgur.com/fAYVJlW)
+<img src="https://i.imgur.com/fAYVJlW.png" width="680" height="100" border="10"/>
 </p>
 
 > [ver 1.0.1] - *added functionality for searching items by name and color, currently only Elden Ring is supported.* 
@@ -49,11 +45,11 @@ Upcoming changes:
 - [ ] Add a reset button for color, similarity threshold and secondary color weight
 
 <p align="center">
-
-![special thanks](https://i.imgur.com/606munG.png)
+<img src="https://i.imgur.com/606munG.png" width="680" height="100" border="10"/>
 </p>
 
 [@hoycid](https://github.com/hoycid), for providing search by type functionality, UI improvements and mobile device support as well as ongoing bugfixes for my terrible code.
+
 FromSoftware, for developing the amazing games these tools are used for.
 
 </p>
