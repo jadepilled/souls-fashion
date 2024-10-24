@@ -1,4 +1,7 @@
-[
+import json
+
+# Your JSON data as a list of dictionaries
+data = [
     {
         "name": "Alberich's Robe (Altered)",
         "image": "Chest/Alberich's Robe (Altered).png",
@@ -65,10 +68,10 @@
     {
         "name": "Astrologer Robe (Altered)",
         "image": "Chest/Astrologer Robe (Altered).png",
-        "primaryColor": "#381d18",
+        "primaryColor": "#a7a091",
         "secondaryColors": [
-            "#a7a091",
-            "#724f25"
+            "#65534a",
+            "#594437"
         ]
     },
     {
@@ -112,7 +115,7 @@
         "image": "Chest/Banished Knight Armor.png",
         "primaryColor": "#a29b91",
         "secondaryColors": [
-            "#261a18",
+            "#615e58",
             "#4b4439"
         ]
     },
@@ -463,7 +466,7 @@
         "image": "Chest/Crucible Tree Armor.png",
         "primaryColor": "#8c6a56",
         "secondaryColors": [
-            "#2c2a25",
+            "#60564c",
             "#544539"
         ]
     },
@@ -596,9 +599,9 @@
     {
         "name": "Errant Sorcerer Robe",
         "image": "Chest/Errant Sorcerer Robe.png",
-        "primaryColor": "#43291f",
+        "primaryColor": "#695247",
         "secondaryColors": [
-            "#1e1b19",
+            "#5b4f48",
             "#58443a"
         ]
     },
@@ -1100,19 +1103,19 @@
     {
         "name": "Maliketh's Armor (Altered)",
         "image": "Chest/Maliketh's Armor (Altered).png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#4f4637"
+            "#87765a",
+            "#4f4638"
         ]
     },
     {
         "name": "Maliketh's Armor",
         "image": "Chest/Maliketh's Armor.png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#4f4637"
+            "#87765a",
+            "#4f4638"
         ]
     },
     {
@@ -1309,7 +1312,7 @@
         "image": "Chest/Page Garb.png",
         "primaryColor": "#877764",
         "secondaryColors": [
-            "#1a1a1a",
+            "#5e5550",
             "#4f473a"
         ]
     },
@@ -1541,10 +1544,10 @@
     {
         "name": "Royal Remains Armor",
         "image": "Chest/Royal Remains Armor.png",
-        "primaryColor": "#4b4c4d",
+        "primaryColor": "#a18c6f",
         "secondaryColors": [
-            "#6c543f",
-            "#0f0c0b"
+            "#5f5950",
+            "#574739"
         ]
     },
     {
@@ -1856,19 +1859,19 @@
     {
         "name": "Armor of Solitude (Altered)",
         "image": "Chest\\SOTE/Armor of Solitude (Altered).png",
-        "primaryColor": "#434343",
+        "primaryColor": "#999998",
         "secondaryColors": [
-            "#9a9b9b",
-            "#11100c"
+            "#5c5c5b",
+            "#595958"
         ]
     },
     {
         "name": "Armor of Solitude",
         "image": "Chest\\SOTE/Armor of Solitude.png",
-        "primaryColor": "#434343",
+        "primaryColor": "#9b9a99",
         "secondaryColors": [
-            "#9a9b9b",
-            "#11100c"
+            "#616160",
+            "#585857"
         ]
     },
     {
@@ -2135,19 +2138,19 @@
     {
         "name": "Oathseeker Knight Armor",
         "image": "Chest\\SOTE/Oathseeker Knight Armor.png",
-        "primaryColor": "#1e1d1a",
+        "primaryColor": "#a79994",
         "secondaryColors": [
-            "#7c7063",
-            "#baaa99"
+            "#615751",
+            "#4b433b"
         ]
     },
     {
         "name": "Rakshasa Armor",
         "image": "Chest\\SOTE/Rakshasa Armor.png",
-        "primaryColor": "#432925",
+        "primaryColor": "#601e15",
         "secondaryColors": [
-            "#1b1815",
-            "#5b443e"
+            "#6b514a",
+            "#5d423c"
         ]
     },
     {
@@ -2738,10 +2741,10 @@
     {
         "name": "Maliketh's Gauntlets",
         "image": "Hands/Maliketh's Gauntlets.png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#4f4637"
+            "#615a4d",
+            "#514837"
         ]
     },
     {
@@ -2909,10 +2912,10 @@
     {
         "name": "Royal Remains Gauntlets",
         "image": "Hands/Royal Remains Gauntlets.png",
-       "primaryColor": "#4b4c4d",
+        "primaryColor": "#151e21",
         "secondaryColors": [
-            "#6c543f",
-            "#0f0c0b"
+            "#8b735c",
+            "#5e5953"
         ]
     },
     {
@@ -3170,10 +3173,10 @@
     {
         "name": "Gauntlets of Solitude",
         "image": "Hands\\SOTE/Gauntlets of Solitude.png",
-        "primaryColor": "#434343",
+        "primaryColor": "#939291",
         "secondaryColors": [
-            "#9a9b9b",
-            "#11100c"
+            "#575655",
+            "#41403e"
         ]
     },
     {
@@ -3251,19 +3254,19 @@
     {
         "name": "Oathseeker Knight Gauntlets",
         "image": "Hands\\SOTE/Oathseeker Knight Gauntlets.png",
-        "primaryColor": "#1e1d1a",
+        "primaryColor": "#171415",
         "secondaryColors": [
-            "#7c7063",
-            "#baaa99"
+            "#5f5242",
+            "#4d4439"
         ]
     },
     {
         "name": "Rakshasa Gauntlets",
         "image": "Hands\\SOTE/Rakshasa Gauntlets.png",
-        "primaryColor": "#432925",
+        "primaryColor": "#601e15",
         "secondaryColors": [
-            "#1b1815",
-            "#5b443e"
+            "#6b504a",
+            "#60433c"
         ]
     },
     {
@@ -4178,10 +4181,10 @@
     {
         "name": "Juvenile Scholar Cap",
         "image": "Head/Juvenile Scholar Cap.png",
-        "primaryColor": "#3d3d3d",
+        "primaryColor": "#585a5d",
         "secondaryColors": [
             "#575a5f",
-            "#9a7e21"
+            "#5f582b"
         ]
     },
     {
@@ -4286,10 +4289,10 @@
     {
         "name": "Maliketh's Helm",
         "image": "Head/Maliketh's Helm.png",
-        "primaryColor": "#080604",
+        "primaryColor": "#1c1c1c",
         "secondaryColors": [
-            "#594922",
-            "#8a8a8d"
+            "#8a8a8d",
+            "#84765b"
         ]
     },
     {
@@ -4603,7 +4606,7 @@
         "image": "Head/Redmane Knight Helm.png",
         "primaryColor": "#9f9992",
         "secondaryColors": [
-            "#c33d2d",
+            "#635b54",
             "#4d443b"
         ]
     },
@@ -5006,10 +5009,10 @@
     {
         "name": "Helm of Solitude",
         "image": "Head\\SOTE/Helm of Solitude.png",
-        "primaryColor": "#434343",
+        "primaryColor": "#939292",
         "secondaryColors": [
-            "#9a9b9b",
-            "#11100c"
+            "#555453",
+            "#41403e"
         ]
     },
     {
@@ -5105,10 +5108,10 @@
     {
         "name": "Oathseeker Helm",
         "image": "Head\\SOTE/Oathseeker Helm.png",
-        "primaryColor": "#1e1d1a",
+        "primaryColor": "#867665",
         "secondaryColors": [
-            "#7c7063",
-            "#baaa99"
+            "#6a5c4f",
+            "#504539"
         ]
     },
     {
@@ -5123,10 +5126,10 @@
     {
         "name": "Rakshasa Helm",
         "image": "Head\\SOTE/Rakshasa Helm.png",
-        "primaryColor": "#432925",
+        "primaryColor": "#601e15",
         "secondaryColors": [
-            "#1b1815",
-            "#5b443e"
+            "#6e4f49",
+            "#63433c"
         ]
     },
     {
@@ -5917,7 +5920,7 @@
         "image": "Legs/Radahn's Greaves.png",
         "primaryColor": "#847563",
         "secondaryColors": [
-            "#282725",
+            "#685d4f",
             "#534738"
         ]
     },
@@ -5978,10 +5981,10 @@
     {
         "name": "Royal Remains Greaves",
         "image": "Legs/Royal Remains Greaves.png",
-        "primaryColor": "#4b4c4d",
+        "primaryColor": "#89745e",
         "secondaryColors": [
-            "#6c543f",
-            "#0f0c0b"
+            "#5c564f",
+            "#544638"
         ]
     },
     {
@@ -6284,10 +6287,10 @@
     {
         "name": "Greaves of Solitude",
         "image": "Legs\\SOTE/Greaves of Solitude.png",
-        "primaryColor": "#434343",
+        "primaryColor": "#a09e9c",
         "secondaryColors": [
-            "#9a9b9b",
-            "#11100c"
+            "#555350",
+            "#42403e"
         ]
     },
     {
@@ -6356,19 +6359,19 @@
     {
         "name": "Oathseeker Knight Greaves",
         "image": "Legs\\SOTE/Oathseeker Knight Greaves.png",
-        "primaryColor": "#1e1d1a",
+        "primaryColor": "#5a5a5a",
         "secondaryColors": [
-            "#7c7063",
-            "#baaa99"
+            "#59544e",
+            "#4a433b"
         ]
     },
     {
         "name": "Rakshasa Greaves",
         "image": "Legs\\SOTE/Rahshasa Greaves.png",
-        "primaryColor": "#432925",
+        "primaryColor": "#601e15",
         "secondaryColors": [
-            "#1b1815",
-            "#5b443e"
+            "#5c433b",
+            "#522d28"
         ]
     },
     {
@@ -6734,9 +6737,9 @@
     {
         "name": "Horse Crest Wooden Shield",
         "image": "Shields/Horse Crest Wooden Shield.png",
-        "primaryColor": "#311619",
+        "primaryColor": "#9a8875",
         "secondaryColors": [
-            "#b59c83",
+            "#887566",
             "#6d5b51"
         ]
     },
@@ -7292,9 +7295,9 @@
     {
         "name": "Beastman's Cleaver",
         "image": "Weapons/Beastman's Cleaver.png",
-        "primaryColor": "#322d31",
+        "primaryColor": "#999a9d",
         "secondaryColors": [
-            "#999a9d",
+            "#5a595a",
             "#4d4539"
         ]
     },
@@ -9326,9 +9329,9 @@
     {
         "name": "Scavenger's Curved Sword",
         "image": "Weapons/Scavenger's Curved Sword.png",
-        "primaryColor": "#625b5e",
+        "primaryColor": "#9d9794",
         "secondaryColors": [
-            "#3c1b14",
+            "#625b5e",
             "#5b5759"
         ]
     },
@@ -9956,7 +9959,7 @@
     {
         "name": "Black Steel Twinblade",
         "image": "Weapons\\SOTE/Black Steel Twinblade.png",
-        "primaryColor": "#0d1016",
+        "primaryColor": "#5e5e4f",
         "secondaryColors": [
             "#555329",
             "#514d37"
@@ -10244,7 +10247,7 @@
     {
         "name": "Greatsword of Radahn",
         "image": "Weapons\\SOTE/Greatsword of Radahn.png",
-        "primaryColor": "#161511",
+        "primaryColor": "#645c4d",
         "secondaryColors": [
             "#5e5d56",
             "#534835"
@@ -10253,10 +10256,10 @@
     {
         "name": "Greatsword of Solitude",
         "image": "Weapons\\SOTE/Greatsword of Solitude.png",
-        "primaryColor": "#201f20",
+        "primaryColor": "#545353",
         "secondaryColors": [
-            "#9a9b9b",
-            "#434343"
+            "#525050",
+            "#48423b"
         ]
     },
     {
@@ -10390,8 +10393,8 @@
         "image": "Weapons\\SOTE/Obsidian Lamina.png",
         "primaryColor": "#4b4e4f",
         "secondaryColors": [
-            "#1e1c1b",
-            "#050404"
+            "#494e50",
+            "#4d4c48"
         ]
     },
     {
@@ -10453,7 +10456,7 @@
         "image": "Weapons\\SOTE/Rakshasa's Great Katana.png",
         "primaryColor": "#641e16",
         "secondaryColors": [
-            "#140b0c",
+            "#611e16",
             "#5a1e17"
         ]
     },
@@ -10692,3 +10695,29 @@
         ]
     }
 ]
+
+def determine_type(image_path):
+    image_path = image_path.lower()
+    if "head" in image_path:
+        return "head"
+    elif "chest" in image_path:
+        return "chest"
+    elif "hands" in image_path:
+        return "hands"
+    elif "legs" in image_path:
+        return "legs"
+    elif "weapons" in image_path:
+        return "weapons"
+    elif "shields" in image_path:
+        return "shields"
+    return "unknown"  # Return 'unknown' if no match is found
+
+# Add 'type' attribute to each item in the list based on the image path
+for item in data:
+    item['type'] = determine_type(item['image'])
+
+# Save to a JSON file
+with open('typed_items_for_web.json', 'w') as outfile:
+    json.dump(data, outfile, indent=4)
+
+print("JSON data has been written to typed_items_for_web.json")
