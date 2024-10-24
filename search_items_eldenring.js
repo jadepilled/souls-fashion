@@ -28,20 +28,6 @@ async function fetchItems() {
     }
 }
 
-// Fetch the items_for_web.json file and store its data
-async function fetchItems() {
-    try {
-        const response = await fetch('pages/eldenring/items_for_web.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        items = await response.json();
-        displayItems(items);  // Display all items initially
-    } catch (error) {
-        console.error('Error loading items:', error);
-    }
-}
-
 // Function to convert hex to RGB
 function hexToRgb(hex) {
     let bigint = parseInt(hex.slice(1), 16);
