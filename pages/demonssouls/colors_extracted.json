@@ -1077,6 +1077,530 @@
             ]
         }
     ],
+    "Head": [
+        {
+            "image": "Ancient King's Mask.png",
+            "primary_color": {
+                "rgb": [
+                    219,
+                    234,
+                    227
+                ],
+                "hex": "#dbeae3"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        146,
+                        169,
+                        158
+                    ],
+                    "hex": "#92a99e"
+                },
+                {
+                    "rgb": [
+                        120,
+                        145,
+                        135
+                    ],
+                    "hex": "#789187"
+                }
+            ]
+        },
+        {
+            "image": "Assassin's Mask.png",
+            "primary_color": {
+                "rgb": [
+                    208,
+                    200,
+                    182
+                ],
+                "hex": "#d0c8b6"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        163,
+                        156,
+                        144
+                    ],
+                    "hex": "#a39c90"
+                },
+                {
+                    "rgb": [
+                        139,
+                        132,
+                        121
+                    ],
+                    "hex": "#8b8479"
+                }
+            ]
+        },
+        {
+            "image": "Binded Hood.png",
+            "primary_color": {
+                "rgb": [
+                    208,
+                    174,
+                    141
+                ],
+                "hex": "#d0ae8d"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        171,
+                        139,
+                        107
+                    ],
+                    "hex": "#ab8b6b"
+                },
+                {
+                    "rgb": [
+                        143,
+                        112,
+                        82
+                    ],
+                    "hex": "#8f7052"
+                }
+            ]
+        },
+        {
+            "image": "Brushwood Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    245,
+                    237,
+                    221
+                ],
+                "hex": "#f5eddd"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        201,
+                        181,
+                        159
+                    ],
+                    "hex": "#c9b59f"
+                },
+                {
+                    "rgb": [
+                        178,
+                        161,
+                        141
+                    ],
+                    "hex": "#b2a18d"
+                }
+            ]
+        },
+        {
+            "image": "Chain Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    164,
+                    152,
+                    145
+                ],
+                "hex": "#a49891"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        143,
+                        131,
+                        123
+                    ],
+                    "hex": "#8f837b"
+                },
+                {
+                    "rgb": [
+                        133,
+                        122,
+                        115
+                    ],
+                    "hex": "#857a73"
+                }
+            ]
+        },
+        {
+            "image": "Dark Silver Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    217,
+                    215,
+                    213
+                ],
+                "hex": "#d9d7d5"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        164,
+                        161,
+                        158
+                    ],
+                    "hex": "#a4a19e"
+                },
+                {
+                    "rgb": [
+                        163,
+                        160,
+                        156
+                    ],
+                    "hex": "#a3a09c"
+                }
+            ]
+        },
+        {
+            "image": "Dull Gold Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    243,
+                    232,
+                    155
+                ],
+                "hex": "#f3e89b"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        207,
+                        169,
+                        90
+                    ],
+                    "hex": "#cfa95a"
+                },
+                {
+                    "rgb": [
+                        171,
+                        143,
+                        81
+                    ],
+                    "hex": "#ab8f51"
+                }
+            ]
+        },
+        {
+            "image": "Fluted Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    163,
+                    158,
+                    154
+                ],
+                "hex": "#a39e9a"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        131,
+                        125,
+                        122
+                    ],
+                    "hex": "#837d7a"
+                },
+                {
+                    "rgb": [
+                        93,
+                        89,
+                        85
+                    ],
+                    "hex": "#5d5955"
+                }
+            ]
+        },
+        {
+            "image": "Gloom Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    234,
+                    229,
+                    219
+                ],
+                "hex": "#eae5db"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        171,
+                        162,
+                        149
+                    ],
+                    "hex": "#aba295"
+                },
+                {
+                    "rgb": [
+                        135,
+                        117,
+                        95
+                    ],
+                    "hex": "#87755f"
+                }
+            ]
+        },
+        {
+            "image": "Gold Mask.png",
+            "primary_color": {
+                "rgb": [
+                    243,
+                    226,
+                    157
+                ],
+                "hex": "#f3e29d"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        208,
+                        171,
+                        100
+                    ],
+                    "hex": "#d0ab64"
+                },
+                {
+                    "rgb": [
+                        173,
+                        143,
+                        88
+                    ],
+                    "hex": "#ad8f58"
+                }
+            ]
+        },
+        {
+            "image": "Leather Cap.png",
+            "primary_color": {
+                "rgb": [
+                    170,
+                    148,
+                    136
+                ],
+                "hex": "#aa9488"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        154,
+                        133,
+                        120
+                    ],
+                    "hex": "#9a8578"
+                },
+                {
+                    "rgb": [
+                        137,
+                        117,
+                        106
+                    ],
+                    "hex": "#89756a"
+                }
+            ]
+        },
+        {
+            "image": "Mirdan Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    236,
+                    232,
+                    224
+                ],
+                "hex": "#ece8e0"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        164,
+                        157,
+                        147
+                    ],
+                    "hex": "#a49d93"
+                },
+                {
+                    "rgb": [
+                        138,
+                        131,
+                        122
+                    ],
+                    "hex": "#8a837a"
+                }
+            ]
+        },
+        {
+            "image": "Monk's Head Collar.png",
+            "primary_color": {
+                "rgb": [
+                    249,
+                    213,
+                    80
+                ],
+                "hex": "#f9d550"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        228,
+                        172,
+                        72
+                    ],
+                    "hex": "#e4ac48"
+                },
+                {
+                    "rgb": [
+                        225,
+                        155,
+                        44
+                    ],
+                    "hex": "#e19b2c"
+                }
+            ]
+        },
+        {
+            "image": "Official's Cap.png",
+            "primary_color": {
+                "rgb": [
+                    137,
+                    114,
+                    102
+                ],
+                "hex": "#897266"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        101,
+                        82,
+                        73
+                    ],
+                    "hex": "#655249"
+                },
+                {
+                    "rgb": [
+                        87,
+                        67,
+                        58
+                    ],
+                    "hex": "#57433a"
+                }
+            ]
+        },
+        {
+            "image": "Plate Helmet.png",
+            "primary_color": {
+                "rgb": [
+                    231,
+                    227,
+                    223
+                ],
+                "hex": "#e7e3df"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        163,
+                        158,
+                        154
+                    ],
+                    "hex": "#a39e9a"
+                },
+                {
+                    "rgb": [
+                        139,
+                        130,
+                        124
+                    ],
+                    "hex": "#8b827c"
+                }
+            ]
+        },
+        {
+            "image": "Silver Coronet.png",
+            "primary_color": {
+                "rgb": [
+                    163,
+                    160,
+                    158
+                ],
+                "hex": "#a3a09e"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        160,
+                        155,
+                        153
+                    ],
+                    "hex": "#a09b99"
+                },
+                {
+                    "rgb": [
+                        101,
+                        97,
+                        96
+                    ],
+                    "hex": "#656160"
+                }
+            ]
+        },
+        {
+            "image": "Three-cornered Hat.png",
+            "primary_color": {
+                "rgb": [
+                    160,
+                    152,
+                    141
+                ],
+                "hex": "#a0988d"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        92,
+                        89,
+                        82
+                    ],
+                    "hex": "#5c5952"
+                },
+                {
+                    "rgb": [
+                        69,
+                        67,
+                        59
+                    ],
+                    "hex": "#45433b"
+                }
+            ]
+        },
+        {
+            "image": "Venerable Sage's Hood.png",
+            "primary_color": {
+                "rgb": [
+                    173,
+                    159,
+                    141
+                ],
+                "hex": "#ad9f8d"
+            },
+            "secondary_colors": [
+                {
+                    "rgb": [
+                        148,
+                        135,
+                        117
+                    ],
+                    "hex": "#948775"
+                },
+                {
+                    "rgb": [
+                        134,
+                        120,
+                        104
+                    ],
+                    "hex": "#867868"
+                }
+            ]
+        }
+    ],
     "Legs": [
         {
             "image": "Ancient King's Leggings.png",
