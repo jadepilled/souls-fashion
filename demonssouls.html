@@ -40,20 +40,22 @@
 </div>
 
 <div class="search-bar">
-				<input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
-			</div>
+			<input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
+		</div>
+        <div class="filter-buttons">
+			<button id="headFilter">Head</button>
+            <button id="chestFilter">Chest</button>
+            <button id="handsFilter">Hands</button>
+            <button id="legsFilter">Legs</button>
+            <button id="weaponsFilter">Weapons</button>
+            <button id="shieldsFilter">Shields</button>
+            <button id="clearFilter">Clear Filters</button>
+		</div>
 
-			<div class="color-picker">
-				<label for="favcolor">Click an item to compare, or select a color:</label><p></p>
-				<input type="color" id="favcolor" name="favcolor" value="#ff0000">
-			</div><p></p>
-<div class='parent'>
-	<div class='child'>	
-			<div class="slider-container">
-				<label for="secondaryWeightSlider">Weight for secondary colors:</label><br></br>
-				<input type="range" id="secondaryWeightSlider" name="secondaryWeight" min="0" max="1" step="0.1" value="0.5">
-				<span id="sliderValue">0.5</span>
-			</div></div>
+		<div class="color-picker">
+			<label for="favcolor">Click an item to compare, or select a color:</label><p></p>
+			<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+		</div><p></p>
 	<div class='child'>
 			<div class="slider-container">
 				<label for="colorThresholdSlider">Set Color Similarity Threshold:</label><br></br>
