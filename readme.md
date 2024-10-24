@@ -8,6 +8,7 @@ Welcome to souls.fashion, a passion project created to make designing outfits in
 The tool itself primarily utilises JavaScript, particularly most of the functions can be found in search_items.js. It is, however, dependent on several python scripts in order to build JSON files and serve data to the web pages.
 
 <p align ="center">
+
 ![installation](https://i.imgur.com/Jjvy4s3.png)
 </p>
 
@@ -21,6 +22,7 @@ In each sub-directory of /pages/ you will find several scripts that can be used 
 * *generate_previews2.py*  - creates a new subfolder called 'processed-images' that will pull images from /images/ as well as colors from colors_extracted.json to create 500x500px images with a 120px bar showing the 3 most prominent colors from the given images, as defined in colors_extracted.json (requires running getcolor3.py beforehand) 
 
 <p align="center">
+
 ![license](https://i.imgur.com/vT5b21S.png)
 </p>
 
@@ -28,6 +30,7 @@ souls.fashion is leased under a Creative Commons Attribution-noncommercial licen
 You may alter, adapt, or build upon the source material, as long as attribution is given to the author (Psyopgirl) and the work is not used for profit or commercial purposes.
 
 <p align="center">
+
 ![changelog](https://imgur.com/fAYVJlW)
 </p>
 
@@ -46,6 +49,7 @@ Upcoming changes:
 - [ ] Add a reset button for color, similarity threshold and secondary color weight
 
 <p align="center">
+
 ![special thanks](https://i.imgur.com/606munG.png)
 </p>
 
