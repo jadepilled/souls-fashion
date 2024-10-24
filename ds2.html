@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
 	<link rel="stylesheet" href="resources/styles.css">
-    <title>Dark Souls II - Fashion Souls v1.0.2</title>
+    <title>Dark Souls II - Fashion Souls v1.0.3</title>
     
 </head>
 <body>
@@ -40,13 +40,22 @@
 </div>
 
 <div class="search-bar">
-				<input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
-			</div>
+			<input type="text" id="searchInput" placeholder="Search for items by name or hex color...">
+		</div>
+        <div class="filter-buttons">
+			<button id="headFilter">Head</button>
+            <button id="chestFilter">Chest</button>
+            <button id="handsFilter">Hands</button>
+            <button id="legsFilter">Legs</button>
+            <button id="weaponsFilter">Weapons</button>
+            <button id="shieldsFilter">Shields</button>
+            <button id="clearFilter">Clear Filters</button>
+		</div>
 
-			<div class="color-picker">
-				<label for="favcolor">Click an item to compare, or select a color:</label><p></p>
-				<input type="color" id="favcolor" name="favcolor" value="#ff0000">
-			</div><p></p>
+		<div class="color-picker">
+			<label for="favcolor">Click an item to compare, or select a color:</label><p></p>
+			<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+		</div><p></p>
 <div class='parent'>
 	<div class='child'>	
 			<div class="slider-container">
@@ -61,7 +70,6 @@
 				<span id="colorThresholdValue">100</span>
 			</div></div>
 </div>
-
 <div class="item-grid" id="itemGrid">
     <!-- Items will be dynamically loaded here -->
 </div>
@@ -103,6 +111,10 @@
     Copyright © Psyopgirl 2024.	<br></br>Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
 </div>
 <script>
+                // Delay the navigation to the new page to allow the fade-out effect to play
+                setTimeout(() => {
+                    window.location.href = item.link; // Navigate to the new page
+                }, 500); // Match this duration with the CSS transition duration
     // Listen for visibility change to manage the fade-in effect
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
