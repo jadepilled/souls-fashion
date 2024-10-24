@@ -262,5 +262,33 @@ body.light-mode .feedback button {
 
 body.light-mode .feedback button:hover {
     background-color: #bbb;
+} 
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
 }
-			
+
+.filter-buttons button:hover {
+  background-color: #0056b3; 
+  color: white;
+  border-color: #0056b3; 
+}
+
+.filter-buttons button {
+    display: inline-block; 
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.filter-buttons button.active {
+  background-color: #007bff; 
+  color: white;
+  border-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05); 
+}
