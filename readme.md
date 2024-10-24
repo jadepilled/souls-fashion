@@ -38,8 +38,8 @@ You may alter, adapt, or build upon the source material, as long as attribution 
 
 Upcoming changes:
 - [x] Add mobile device support
+- [x] Create a community discord server
 - [ ] Pull textures from games to get better color values
-- [ ] Create a community discord server
 - [ ] Implement an outfit simulator
 - [ ] Highlight an item above the grid when an item is selected
 - [ ] Add a reset button for color, similarity threshold and secondary color weight
