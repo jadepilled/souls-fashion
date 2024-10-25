@@ -254,8 +254,8 @@
         "image": "Chest/Blue Festive Garb.png",
         "primaryColor": "#afa393",
         "secondaryColors": [
-            "#9a8975",
-            "#887663"
+            "#4b4c5d",
+            "#8d7e6a"
         ],
         "type": "chest"
     },
@@ -454,7 +454,7 @@
         "image": "Chest/Confessor Armor.png",
         "primaryColor": "#877768",
         "secondaryColors": [
-            "#58534c",
+            "#0f0d0c",
             "#48423c"
         ],
         "type": "chest"
@@ -2392,7 +2392,7 @@
     {
         "name": "Rellana's Armor",
         "image": "Chest\\SOTE/Rellana's Armor.png",
-        "primaryColor": "#969896",
+        "primaryColor": "#6a6f6f",
         "secondaryColors": [
             "#1c203f",
             "#4b433b"
@@ -2402,9 +2402,9 @@
     {
         "name": "Shadow Militiaman Armor",
         "image": "Chest\\SOTE/Shadow Militiaman Armor.png",
-        "primaryColor": "#5a504d",
+        "primaryColor": "#0a1d29",
         "secondaryColors": [
-            "#564b47",
+            "#413f3f",
             "#4e413c"
         ],
         "type": "chest"
@@ -3412,10 +3412,10 @@
     {
         "name": "Black Knight Gauntlets",
         "image": "Hands\\SOTE/Black Knight Gauntlets.png",
-        "primaryColor": "#222221",
+        "primaryColor": "#191719",
         "secondaryColors": [
-            "#605a53",
-            "#4d4639"
+            "#5a544e",
+            "#47423b"
         ],
         "type": "hands"
     },
@@ -3632,7 +3632,7 @@
     {
         "name": "Rellana's Gloves",
         "image": "Hands\\SOTE/Rellana's Gloves.png",
-        "primaryColor": "#846f62",
+        "primaryColor": "#6a6f6f",
         "secondaryColors": [
             "#67554d",
             "#54433c"
@@ -5362,10 +5362,10 @@
     {
         "name": "Black Knight Helm",
         "image": "Head\\SOTE/Black Knight Helm.png",
-        "primaryColor": "#999892",
+        "primaryColor": "#191719",
         "secondaryColors": [
-            "#5f5c56",
-            "#4c4639"
+            "#999892",
+            "#47423b"
         ],
         "type": "head"
     },
@@ -5702,7 +5702,7 @@
     {
         "name": "Rellana's Helm",
         "image": "Head\\SOTE/Rellana's Helm.png",
-        "primaryColor": "#d8d9da",
+        "primaryColor": "#6a6f6f",
         "secondaryColors": [
             "#9ea1a2",
             "#5b5d5c"
@@ -5722,10 +5722,10 @@
     {
         "name": "Shadow Militia Helm",
         "image": "Head\\SOTE/Shadow Militia Helm.png",
-        "primaryColor": "#484748",
+        "primaryColor": "#0a1d29",
         "secondaryColors": [
-            "#48443a",
-            "#403e41"
+            "#413f3f",
+            "#d8d2bd"
         ],
         "type": "head"
     },
@@ -6842,10 +6842,10 @@
     {
         "name": "Ansbach's Boots",
         "image": "Legs\\SOTE/Ansbach's Boots.png",
-        "primaryColor": "#454442",
+        "primaryColor": "#232422",
         "secondaryColors": [
-            "#45413d",
-            "#423c37"
+            "#494745",
+            "#46413d"
         ],
         "type": "legs"
     },
@@ -6872,10 +6872,10 @@
     {
         "name": "Black Knight Greaves",
         "image": "Legs\\SOTE/Black Knight Greaves.png",
-        "primaryColor": "#0f0d0c",
+        "primaryColor": "#191719",
         "secondaryColors": [
-            "#595553",
-            "#5a5550"
+            "#5a544e",
+            "#47423b"
         ],
         "type": "legs"
     },
@@ -6935,7 +6935,7 @@
         "primaryColor": "#575552",
         "secondaryColors": [
             "#4e4338",
-            "#473329"
+            "#682727"
         ],
         "type": "legs"
     },
@@ -7082,7 +7082,7 @@
     {
         "name": "Rellana's Greaves",
         "image": "Legs\\SOTE/Rellana's Greaves.png",
-        "primaryColor": "#dbdcdb",
+        "primaryColor": "#6a6f6f",
         "secondaryColors": [
             "#9c9e9d",
             "#535552"
@@ -7092,10 +7092,10 @@
     {
         "name": "Shadow Militiaman Greaves",
         "image": "Legs\\SOTE/Shadow Militiaman Greaves.png",
-        "primaryColor": "#514b4a",
+        "primaryColor": "#0a1d29",
         "secondaryColors": [
-            "#4c4745",
-            "#48423c"
+            "#413f3f",
+            "#4e413c"
         ],
         "type": "legs"
     },
@@ -8815,7 +8815,7 @@
         "primaryColor": "#595153",
         "secondaryColors": [
             "#5d4d49",
-            "#5d4439"
+            "#461f14"
         ],
         "type": "weapons"
     },
@@ -10854,7 +10854,7 @@
         "image": "Weapons/Vyke's War Spear.png",
         "primaryColor": "#54555c",
         "secondaryColors": [
-            "#544f5c",
+            "#59170c",
             "#574c4f"
         ],
         "type": "weapons"
@@ -11634,7 +11634,7 @@
         "image": "Weapons\\SOTE/Rellana's Twin Blades.png",
         "primaryColor": "#5f5e5d",
         "secondaryColors": [
-            "#524f50",
+            "#3f83d1",
             "#4a433a"
         ],
         "type": "weapons"
