@@ -50,6 +50,8 @@ Upcoming changes:
 
 [@hoycid](https://github.com/hoycid), for providing search by type functionality, UI improvements and mobile device support as well as ongoing bugfixes for my terrible code.
 
-FromSoftware, for developing the amazing games these tools are used for.
+[@florabtw](https://github.com/florabtw), creator of [scape.fashion](https://scape.fashion), a tool which greatly inspired this one. 
+
+[FromSoftware](https://www.fromsoftware.jp/ww/), developers of the amazing games these tools are used for.
 
 </p>
