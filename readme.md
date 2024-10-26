@@ -41,7 +41,8 @@ You may alter, adapt, or build upon the source material, as long as attribution 
 
 > [ver 1.0.2] - *Elden Ring, Demon's Souls, and Dark Souls 1-3 supported. Working on renaming images to enable Bloodborne support.*
 
-> [ver 1.0.3] - *search by type function added for all games. mobile device support improved. Improved color database for the following items:* <details>
+> [ver 1.0.3] - *search by type function added for all games. mobile device support improved. Improved color database for the following items:* 
+<details>
   <summary>Item List</summary>
 + Scaled Set  
 + Ronin's Set  

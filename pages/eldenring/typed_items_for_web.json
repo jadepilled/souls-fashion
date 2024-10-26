@@ -730,16 +730,6 @@
         "type": "chest"
     },
     {
-        "name": "Fia's Robe (Altered)_()",
-        "image": "Chest/Fia's Robe (Altered)_().png",
-        "primaryColor": "#383830",
-        "secondaryColors": [
-            "#9e9f9d",
-            "#585b54"
-        ],
-        "type": "chest"
-    },
-    {
         "name": "Fia's Robe",
         "image": "Chest/Fia's Robe.png",
         "primaryColor": "#383830",
