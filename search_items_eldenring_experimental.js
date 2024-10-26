@@ -70,6 +70,26 @@ function calculateWeightedDistance(inputColor, primaryColor, secondaryColors, se
 
 // Function to find the closest items based on input color, secondary weight, and search query
 function findMatchingItems(inputColor, secondaryWeight, query) {
+    const lowerQuery = query.toLowerCase();
+
+    return items.map(item => {
+        let distance = Infinity; // Set high default distance if no color is selected
+        let nameMatch = item.name.toLowerCase().includes(lowerQuery); // Check name match
+
+        if (inputColor) {
+            distance = calculateWeightedDistance(inputColor, item.primaryColor, item.secondaryColors, secondaryWeight);
+        }
+
+        const typeMatch = activeFilters.size === 0 || activeFilters.has(item.type);
+
+        return {
+            ...item,
+            distance: distance,
+            nameMatch: nameMatch,
+            typeMatch: typeMatch,
+        };
+    }).filter(item => item.nameMatch && item.typeMatch && (inputColor ? item.distance <= colorDistanceThreshold : true))
+    .sort((a, b) => a.distance - b.distance);
   const lowerQuery = query.toLowerCase();
 
   return items.map(item => {
@@ -170,7 +190,7 @@ document.getElementById('colorThresholdSlider').addEventListener('input', functi
 
 // Function to update matching items based on the current color, slider value, and query
 function updateMatchingItems() {
-  const selectedColor = document.getElementById('favcolor').value;
+    const selectedColor = document.getElementById('favcolor').value || null; // Set to null if no color is selected
   const secondaryWeight = parseFloat(document.getElementById('secondaryWeightSlider').value);
   const query = document.getElementById('searchInput').value;  // Get the search query
 
