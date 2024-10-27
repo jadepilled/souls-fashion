@@ -120,33 +120,69 @@ function createItemCard(item) {
   img.src = `pages/eldenring/icons/${item.image}`;
   img.alt = item.name;
 
-  const title = document.createElement('p');
-  title.textContent = item.name;
+  // Create an <a> tag for the item name with the link from JSON
+  const titleLink = document.createElement('a');
+  titleLink.href = item.link;
+  titleLink.textContent = item.name;
+  titleLink.target = '_blank'; // Open link in a new tab
+  titleLink.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents triggering the tile's click event
+  });
 
+  const title = document.createElement('p');
+  title.appendChild(titleLink);
+
+  // Create the color bar with clickable color divs
   const colorBar = document.createElement('div');
   colorBar.classList.add('color-bar');
+
+  // Primary color div with click event
   const primaryColorDiv = document.createElement('div');
   primaryColorDiv.style.backgroundColor = item.primaryColor;
+  primaryColorDiv.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents triggering the tile's click event
+    document.getElementById('favcolor').value = item.primaryColor;
+    updateMatchingItems(); // Trigger search with primary color
+  });
+
+  // First secondary color div with click event
   const secondaryColorDiv1 = document.createElement('div');
   secondaryColorDiv1.style.backgroundColor = item.secondaryColors[0];
+  secondaryColorDiv1.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents triggering the tile's click event
+    document.getElementById('favcolor').value = item.secondaryColors[0];
+    updateMatchingItems(); // Trigger search with first secondary color
+  });
+
+  // Second secondary color div with click event
   const secondaryColorDiv2 = document.createElement('div');
   secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
+  secondaryColorDiv2.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents triggering the tile's click event
+    document.getElementById('favcolor').value = item.secondaryColors[1];
+    updateMatchingItems(); // Trigger search with second secondary color
+  });
+
+  // Append the color divs to the color bar
   colorBar.appendChild(primaryColorDiv);
   colorBar.appendChild(secondaryColorDiv1);
   colorBar.appendChild(secondaryColorDiv2);
 
+  // Append elements to the card
   card.appendChild(img);
   card.appendChild(title);
   card.appendChild(colorBar);
 
-  // Add click event to set the item's primary color for the search
+  // Add click event for the whole card to use the primary color as default
   card.addEventListener('click', () => {
     document.getElementById('favcolor').value = item.primaryColor;
-    updateMatchingItems();  // Trigger the search with the selected item's primary color
-});
+    updateMatchingItems(); // Trigger search with the selected item's primary color
+  });
 
   return card;
 }
+
+
 
 // Add event listener for color picker, name input, slider, and color distance threshold slider
 document.getElementById('favcolor').addEventListener('change', function() {
