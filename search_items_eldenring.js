@@ -151,9 +151,16 @@ function createItemCard(item) {
 
   const titleContainer = document.createElement("div");
   titleContainer.classList.add("title-container");
-  const title = document.createElement("p");
+  const title = document.createElement("a");
   title.textContent = item.name;
+  title.href = item.link;
+  title.target = '_blank';
   titleContainer.appendChild(title);
+
+  title.addEventListener('click', (event) => {
+    event.stopPropagation(); 
+  });
+
 
   const colorBar = document.createElement("div");
   colorBar.classList.add("color-bar");
