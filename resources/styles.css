@@ -55,7 +55,7 @@ body.light-mode .navigation {
   display: flex; /* Use flex for layout */
   justify-content: space-between; /* Distribute space between items */
   align-items: center;
-  background-color: #121212; /* Dark mode background by default */
+  background-color: none; /* Dark mode background by default */
   margin: 0;
   height: 65px;
   width: 100%;
@@ -127,6 +127,10 @@ body.light-mode .mode-switch {
 
 .search-bar:hover {
   border: 1px solid #999;
+}
+
+body.light-mode .search-bar:hover {
+  border: 1px solid black;
 }
 
 .search-bar-buttons {
@@ -230,7 +234,7 @@ body.light-mode .color-picker:hover {
   justify-content: center; /* Distribute space between items */
   gap: 3px;
   align-items: center;
-  background-color: #121212; /* Dark mode background by default */
+  background-color: none; /* Dark mode background by default */
   height: 60px;
   width: 100%;
 }
@@ -772,19 +776,25 @@ body.light-mode .feedback button:hover {
 		padding: 8px;
 		border-radius: 5px;
 		position: absolute;
-		z-index: 1;
-		bottom: 125%; /* Position the tooltip above the text */
+		z-index: 1001;
+		top: 125%; /* Position the tooltip above the text */
 		left: 50%;
 		transform: translateX(-50%);
 		opacity: 0;
 		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add fade transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 	}
+
+  body.light-mode .tooltip-text {
+    background-color: white;
+    color: black;
+  }
 
 	/* Tooltip arrow */
 	.tooltip-text::after {
 		content: "";
 		position: absolute;
-		top: 100%; /* Position the arrow at the bottom of the tooltip */
+		bottom: 100%; /* Position the arrow at the bottom of the tooltip */
 		left: 50%;
 		margin-left: -5px;
 		border-width: 5px;
