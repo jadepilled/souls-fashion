@@ -79,6 +79,10 @@ body.light-mode .topnav {
   font-size: 14px;
 }
 
+.FashionSouls {
+  margin-top: 120px;
+}
+
 body.light-mode .links-group a {
   color: #000; /* Light mode link color */
 }
