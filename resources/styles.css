@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  user-select: none;
+}
+
 h2 {
   letter-spacing: -4px;
   line-height: 0.5;
@@ -17,7 +22,7 @@ h3 {
 body {
   font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding-top: 100px;
   background-color: #121212; /* Dark mode background by default */
   color: #ffffff; /* Dark mode text color by default */
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -26,43 +31,259 @@ body.light-mode {
   background-color: #f5f5f5; /* Light mode background */
   color: #000000; /* Light mode text color */
 }
-.topnav {
-  background-color: #242424; /* Dark mode navbar background */
+
+.navigation {
   display: flex;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  top: 0;
+  z-index: 1000;
+  position: fixed; /* Fixes the position at the top */
+  background-color: #121212;
+  width: 100%;
+  padding-right: 7%;
+  padding-left: 7%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
+
+body.light-mode .navigation {
+  background-color: #ffffff;
+}
+
+.topnav {
+  display: flex; /* Use flex for layout */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;
+  background-color: #121212; /* Dark mode background by default */
+  margin: 0;
+  height: 65px;
+  width: 100%;
+  padding: 0;
+}
+
 body.light-mode .topnav {
   background-color: #fff; /* Light mode navbar background */
 }
-.topnav a {
-  display: inline-block; /* Ensure that all links and dropdowns behave inline */
-  float: left;
-  color: #f2f2f2; /* Dark mode link color */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+
+.links-group {
+  display: flex; /* Keep as flex */
+  flex-grow: 1; /* Allow links-group to grow and fill available space */
+  margin-left: 50px; /* Keep margin */
+  gap: 4%;
 }
-body.light-mode .topnav a {
+
+.links-group a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+body.light-mode .links-group a {
   color: #000; /* Light mode link color */
 }
-.topnav a:hover {
-  background-color: #ddd;
+
+body.light-mode .links-group a:hover {
+  text-decoration: underline;
+}
+
+.mode-switch {
+  all: unset; /* Resets most default styles */
+  cursor: pointer;
+  text-align: center;
+  color: #f2f2f2; /* Dark mode link color */
+  width: 100px;
+  margin-left: auto; /* Pushes the element to the far right */
+  font-size: 14px;
+}
+
+.mode-switch:hover {
+  text-decoration: underline;
+}
+
+body.light-mode .mode-switch {
+  color: #000; /* Light mode link color */
+}
+
+.links-group a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px; /* Space between items */
+  padding: 5px; /* Optional: add padding around the content */
+  border-radius: 5px;
+  background-color: none;
+  color: #fff; /* Dark mode input text */
+  border: 1px solid #555; /* Dark mode border */
+  height: 50px;
+  width: 600px;
+}
+
+.search-bar:hover {
+  border: 1px solid #999;
+}
+
+.search-bar-buttons {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.search-bar-buttons button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 1);
+  height: 40px;
+  color: white;
+  border: 1px solid #555; /* Dark mode border */
+  border-radius: 20px; /* Adjust this value for roundness */
+  width: 60px;
+}
+
+body.light-mode .search-bar-buttons button {
+  background-color: white;
   color: black;
 }
-.topnav a.active {
-  background-color: #2e2e2e; /* Dark mode active link color */
+
+body.light-mode .search-bar-buttons button:hover {
+  border: 2px solid #1358A9;
+  background-color: #005CC8;
   color: white;
 }
-body.light-mode .topnav a.active {
-  background-color: #d3d3d3; /* Light mode active link color */
-  color: black; /* Light mode active text color */
+
+.search-bar-buttons button:hover {
+  border: 1px solid #555; /* Dark mode border */
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: #333; /* Dark mode input background */
+  height: 40px;
+  color: white;
+  border-radius: 20px; /* Adjust this value for roundness */
+  width: 60px;
 }
+
+.search-input {
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  font-size: 14px;
+}
+
+body.light-mode .search-bar {
+  background-color: #fff; /* Light mode input background */
+  color: #000; /* Light mode input text */
+  border: 1px solid #ddd; /* Light mode border */
+}
+
+.color-picker-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-picker-group label {
+  margin-bottom: 0px;
+  font-size: 10px;
+  position: absolute;
+  top: 3px;
+}
+
+.color-picker {
+  all: unset;
+  width: 37px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #121212;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+body.light-mode .color-picker {
+  border: 2px solid white;
+}
+
+.color-picker:hover {
+  border: 2px solid #555;
+}
+
+body.light-mode .color-picker:hover {
+  border: 2px solid #999;
+}
+
+.filters-group {
+  display: flex; /* Use flex for layout */
+  justify-content: center; /* Distribute space between items */
+  gap: 3px;
+  align-items: center;
+  background-color: #121212; /* Dark mode background by default */
+  height: 60px;
+  width: 100%;
+}
+
+.filters-group button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 1);
+  color: white;
+  border: 1px solid #555; /* Dark mode border */
+  border-radius: 20px; /* Adjust this value for roundness */
+  height: 30px;
+  width: 70px;
+  font-size: 12px;
+}
+
+.filters-group #clearFilter {
+  width: 90px;
+}
+
+.filters-group button:hover {
+  background-color: #333; /* Dark mode input background */
+}
+
+.filters-group button.active {
+  background-color: #007bff;
+}
+
+body.light-mode .filters-group button {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .filters-group button:hover {
+  border: 2px solid #1358A9;
+  background-color: #005CC8; 
+  color: white;
+}
+
+body.light-mode .filters-group {
+  background-color: white;
+}
+
+body.light-mode .filters-group button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
 .dropdown {
   display: inline-block; /* Ensure that all links and dropdowns behave inline */
-  float: left;
   overflow: hidden;
   margin-top: 0px;
 }
@@ -105,44 +326,11 @@ body.light-mode .dropdown .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.mode-switch {
-  float: right; /* Align to the right in the navbar */
-  margin: 14px 16px; /* Adjust margins for spacing */
-  position: absolute;
-  right: 25px;
-}
-.mode-switch button {
-  cursor: pointer;
-  padding: 6px 11px;
-  background-color: #444; /* Default button background */
-  color: #fff; /* Default button text color */
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-body.light-mode .mode-switch button {
-  background-color: #ccc; /* Light mode button background */
-  color: #000; /* Light mode button text color */
-}
-.search-bar {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.search-bar input {
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #333; /* Dark mode input background */
-  color: #fff; /* Dark mode input text */
-  border: 1px solid #555; /* Dark mode border */
-}
-body.light-mode .search-bar input {
-  background-color: #fff; /* Light mode input background */
-  color: #000; /* Light mode input text */
-  border: 1px solid #ddd; /* Light mode border */
-}
+
 .item-grid {
   text-align: center;
+  margin-top: 80px;
+  /* margin-left: 80px; */
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -150,23 +338,31 @@ body.light-mode .search-bar input {
   align-items: center; /* centers items vertically */
 }
 .item-card {
-  background-color: #333; /* Dark mode card background */
+  display: flex;
+  flex-direction: column;
+  background-color: none;
   border: 1px solid #555; /* Dark mode card border */
   padding: 10px;
   width: 200px;
   height: 300px;
   text-align: center;
   color: #fff; /* Dark mode card text color */
-  cursor: pointer;
-  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border-radius: 10px;
 }
 .item-card:hover {
-  background-color: #585858;
+  background-color: #4b4b4b;
   color: white;
   border-color: white;
   border: 2px solid white;
   transform: scale(1.1);
 }
+
+.item-card.active {
+  border: 2px solid blue; /* or any other visual indicator */
+  background-color: lightgray;
+}
+
 body.light-mode .item-card {
   background-color: white; /* Light mode card background */
   border: 1px solid #ddd; /* Light mode card border */
@@ -176,38 +372,193 @@ body.light-mode .item-card {
   max-width: 100%;
   height: auto;
 }
-.color-bar {
+
+.image-container,
+.title-container,
+.color-bar-container {
   display: flex;
-  margin-top: 5px;
-}
-.color-bar div {
-  flex: 1;
-  height: 20px;
-}
-.copyright {
-  position: fixed; /* Fix to the bottom */
-  bottom: 0; /* Position at the bottom of the viewport */
-  left: 0; /* Align to the left */
-  right: 0; /* Align to the right */
-  text-align: center; /* Center the copyright text */
-  margin: 0; /* Remove margin */
-  padding: 10px 0; /* Padding for spacing */
-  font-size: 14px; /* Font size for the copyright */
-  color: #333333; /* Color for the copyright text */
-  background-color: rgba(
-    18,
-    18,
-    18,
-    0.2
-  ); /* Background color with some transparency */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.color-picker {
-  text-align: center;
+.title-container {
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.slider-container {
-  text-align: center;
+
+.color-bar {
+  display: inline-flex;
+  margin-top: 5px;
+  width: 100%; /* Ensure it stays full width */
+  justify-content: space-around;
 }
+
+.color-bar div {
+  flex: 1;
+  height: 30px;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+
+.color-bar div:hover {
+  border: 3px solid #ffffff;
+  transform: scale(1.1);
+}
+
+body.light-mode .color-bar div:hover {
+  border: 3px solid #0075FF;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 10px; /* Adds space between image, title, and color bar */
+  cursor: pointer;
+}
+
+.sidebar {
+  display: flex;
+  text-align: center;
+  position: fixed; /* Fix to the bottom */
+  top: 25%;
+  right: auto; /* Not necessary, but can be set for clarity */
+  padding: 10px; /* Padding for spacing */
+  justify-content: center; /* Align items to the left */
+  color: white;
+  background-color: #121212; /* Dark mode background by default */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  z-index: 1000;
+  transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
+  transform: translateX(0); /* Default position */
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+body.light-mode .sidebar {
+  color: black;
+  background-color: white;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%); /* Move out of view */
+}
+
+#toggleSidebar {
+  position: fixed; /* Keep the toggle button in view */
+  top: 170px;
+  right: auto; /* Not necessary, but can be set for clarity */
+  z-index: 1001; /* Above sidebar */
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 1);
+  height: 40px;
+  color: white;
+  border: 1px solid #555; /* Dark mode border */
+  border-radius: 20px; /* Adjust this value for roundness */
+  width: 60px;
+  font-size: 12px;
+}
+
+
+
+.pinned {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.pinned p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.slot {
+  background-color: transparent; /* Corrected to use 'transparent' instead of 'none' */
+  width: 60px;
+  height: 60px;
+  border: 1px solid #555; /* Light mode card border */
+  border-radius: 10px;
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative; /* Ensure positioning context for the label */
+}
+
+.slot p {
+  text-align: center;
+  position: absolute; /* Position label absolutely */
+  vertical-align: middle;
+  color: #777;
+}
+
+.slot img {
+  width: 100%; /* Make the image cover the full width */
+  height: auto; /* Maintain aspect ratio of the image */
+  background-color: #000;
+  z-index: 1000;
+}
+
+.slot:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+.back-to-top-button {
+  all: unset;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top-button:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.copywrite {
+  font-size: 8px;
+  position: fixed;
+  bottom: 0;
+  padding: 2px;
+  opacity: 50%;
+}
+
+body.light-mode .footer {
+  color: black;
+  background-color: white; /* Dark mode background by default */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}
+
 /*styling for buttons */
 input[type="button"],
 input[type="submit"],
@@ -222,17 +573,30 @@ input[type="reset"] {
 }
 
 /*styling for inline sliders */
-
-.parent {
-  border: none;
-  text-align: center;
-  margin-top: -10px;
+.sliders {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  gap: 40px;
 }
-.child {
-  display: inline-block;
-  border: none;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+
+.slider-container {
+  display: inline-flex;
+  gap: 2%;
+  align-items: center;
+}
+
+.sliders label {
+  font-size: 12px;
+}
+
+.sliders input {
+  cursor: pointer;
+  height: 10px;
+}
+
+.sliders p {
+  width: 30px;
 }
 
 /*styling for feedback form*/
@@ -293,40 +657,6 @@ body.light-mode .feedback button:hover {
   background-color: #bbb;
 }
 
-.filter-buttons {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.filter-buttons button:hover {
-  background-color: #0056b3;
-  color: white;
-  border-color: #0056b3;
-}
-
-.filter-buttons button {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-}
-
-.filter-buttons button.active {
-  background-color: #007bff;
-  color: white;
-  border-color: #0056b3;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
-}
-
-* {
-  box-sizing: border-box; /* Ensure padding and border are included in width/height */
-}
-
 @media (max-width: 768px) {
   /* For mobile phones */
   h2 {
@@ -341,10 +671,6 @@ body.light-mode .feedback button:hover {
     padding: 0; /* Further reduce padding */
     overflow-x: hidden; /* Prevent horizontal scrolling */
     margin: 0; /* Remove default margin */
-  }
-
-  .parent {
-    margin-bottom: 30px;
   }
 
   .topnav {
@@ -387,9 +713,10 @@ body.light-mode .feedback button:hover {
     padding-right: 3%;
   }
 
-  .color-picker input {
+  .color-picker {
     width: 100px;
     height: 100px;
+    text-align: center;
   }
 
   .slider-container input {
