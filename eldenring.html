@@ -51,7 +51,7 @@
               type="color"
               id="favcolor"
               name="favcolor"
-              value="#DEDEDE"
+              value="ff0000"
             />
           </div>
           <input
@@ -83,7 +83,17 @@
         <button id="clearFilter">Clear Filters</button>
         <div class="sliders">
           <div class="slider-container">
-            <label for="secondaryWeightSlider">Secondary Color Weight:</label>
+            <label for="secondaryWeightSlider">
+              Secondary Color Weight:
+              <div class="tooltip">
+                Weight for Secondary Colors:
+                <span class="tooltip-text"
+                  >Determines to what extent secondary colors are included in
+                  your color match results. Higher weight = more consideration
+                  given to secondary colors.</span
+                >
+              </div>
+            </label>
             <input
               type="range"
               id="secondaryWeightSlider"
@@ -97,8 +107,17 @@
           </div>
           <div class="slider-container">
             <label for="colorThresholdSlider"
-              >Color Similarity Threshold:</label
-            >
+              >Color Similarity Threshold:
+              <div class="tooltip">
+                Set Color Similarity Threshold:
+                <span class="tooltip-text"
+                  >Allows you to specify how similar search results should be to
+                  your chosen color. Setting the threshold higher will include
+                  items that are less similar in color to your chosen color, and
+                  vice versa.</span
+                >
+              </div>
+            </label>
             <input
               type="range"
               id="colorThresholdSlider"

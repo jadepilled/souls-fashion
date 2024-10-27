@@ -756,3 +756,44 @@ body.light-mode .feedback button:hover {
     height: 50px;
   }
 }
+/*tooltips for mouse hover  */
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.tooltip-text {
+		visibility: hidden;
+		width: 180px; /* Adjust as needed */
+		background-color: #242424;
+		color: #fff;
+		text-align: center;
+		padding: 8px;
+		border-radius: 5px;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%; /* Position the tooltip above the text */
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add fade transition */
+	}
+
+	/* Tooltip arrow */
+	.tooltip-text::after {
+		content: "";
+		position: absolute;
+		top: 100%; /* Position the arrow at the bottom of the tooltip */
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #242424 transparent transparent transparent;
+	}
+
+	/* Show tooltip text on hover with fade-in */
+	.tooltip:hover .tooltip-text {
+		visibility: visible;
+		opacity: 1;
+	}

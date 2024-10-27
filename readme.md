@@ -41,7 +41,166 @@ You may alter, adapt, or build upon the source material, as long as attribution 
 
 > [ver 1.0.2] - *Elden Ring, Demon's Souls, and Dark Souls 1-3 supported. Working on renaming images to enable Bloodborne support.*
 
-> [ver 1.0.3] - *search by type function added for all games. mobile device support improved.*
+> [ver 1.0.3] - *search by type function added for all games. mobile device support improved. Improved color database for the following items:* 
+<details>
+  <summary>Item List</summary>
++ Scaled Set  
++ Ronin's Set  
++ All Knowing Set  
++ Banished Knight Set  
++ Carian Knight Set  
++ Knight Helm / Knight Set  
++ Vagabond Knight Helm / Set  
++ Prisoner Iron Mask  
++ Exile Gauntlets  
++ Fire Prelate Armor (Altered)  
++ Gelmir Knight Set  
++ Uchigatana  
++ Veteran's Prosthesis  
++ Black Knife Set  
++ Godrick Knight Greaves  
++ Haligtree Knight Set  
++ Eleonora's Poleblade  
++ Verdigris Set  
++ Lionel's Armor (Altered)  
++ Serpent Crest Shield  
++ Ants Skull Plate  
++ Gargoyles Black Blade  
++ Death Knight Set  
++ Dancer's Dress (Altered)  
++ Whip  
++ Black Steel Greathammer  
++ Lord of Blood's Robe (Altered)  
++ Meteoric Ore Blade  
++ Gaius's Set  
++ Maternal Staff  
++ Omen Set  
++ Cerulean Scarab  
++ Ascetic Set  
++ Preceptors Big Hat  
++ Consorts Mask  
++ Aristocrat Hat  
++ Euporia  
++ Deaths Poker  
++ Commoners Simple Garb  
++ Large Leather Shield  
++ Travelers Gloves  
++ Riveted Wooden Shield  
++ Glintstone Scarab  
++ Crucible Tree Set  
++ Great Katana  
++ Royal Knight Helm/Set  
++ Ash of War Scarab  
++ Meteorite Staff  
++ Astrologer Set  
++ Great Stars  
++ Banished Knight Shield  
++ Depraved Perfumer Robe  
++ Iji’s Mirror Helm  
++ Shining Horn Headband  
++ Beast Crest Heater Shield  
++ Mushroom Set  
++ Blackflame Monk Set  
++ Bloodhound Knight Set  
++ Great Horned Headband  
++ Travelling Maiden Set  
++ Sun Realm Shield  
++ Spiked Palisade Shield  
++ Red Branch Shortbow  
++ Eye Surcoat  
++ Dirty Chainmail  
++ Lusat Staff  
++ Pike  
++ Death Ritual Spear  
++ Nightrider Glaive  
++ Nightrider Flail  
++ Velvet Sword of St Trina  
++ Bloody Helice  
++ Claws of Night  
++ Iron Greatsword  
++ Dancing Blade of Ranah  
++ Messmer Soldier Spear  
++ Zweihander  
++ Ancient Meteoric Ore Great Sword  
++ Rotten Crystal Staff  
++ Chain Leggings  
++ Finger Robe  
++ Spirit Sword  
++ Glintstone Staff  
++ Prince of Death’s Staff  
++ Spellblade’s Pointed Hat  
++ Spellblade's Gloves  
++ Beast Champion Set  
++ Black Wolf Mask  
++ Fire Knight Armour Altered  
++ Blaidd Set  
++ Warhawk’s Talon  
++ Magma Wyrm Scalesword  
++ Igon Set  
++ Fingerprint Set  
++ Leather Armour  
++ Sword of Night and Flame  
++ Fire Prelate Set  
++ Blue Festive Hood  
++ Mausoleum Surcoat  
++ Ronin Set  
++ Hoslow Petal Whip  
++ Ruler’s Robe and Mask  
++ Bandit Boots/Garb  
++ Fire Monk Set  
++ White Reed Set  
++ Longsword  
++ Winged Greathorn  
++ Scarlet Tabard  
++ Bloodhound Knight Set  
++ Perfumer Robe  
++ Marionette Soldier Armor  
++ Braided Cord Set  
++ Albinauric Bow  
++ Briar Helm  
++ Black Dumpling  
++ Lazuli Glintstone Sword  
++ Great Stars  
++ Eclipse Crest Great/Heater Shield  
++ Fallingstar Beast Jaw  
++ Pickaxe  
++ Carian Sorcery Sword  
++ Gravebird Set  
++ Troll Knight Sword  
++ Lionel Set  
++ Gravekeeper Cloak  
++ Ringed Finger  
++ Pata  
++ Errant Sorcerer Robe Altered  
++ Thiollier's Set  
++ Raptor’s Black Feathers  
++ Confessor Set  
++ Eccentric Set  
++ Inverted Hawk Heater Shield  
++ Horned Warrior Sword  
++ Greatbow  
++ Lion Greatbow  
++ Monk’s Flamemace  
++ Skeletal Mask  
++ Queens Bracelets  
++ Twinned Set  
++ Serpent Hunter  
++ Dragon Hunter Great Katana  
++ Octopus Head  
++ Lordsword’s Shield  
++ Bull Goat Set  
++ Crimson Tear Scarab  
++ Azur Glintstone Staff  
++ Rotten Battle Hammer  
++ Varre Bouquet  
++ Consort Mask  
++ Reduvia  
++ All Glintstone Crowns  
++ Raging Wolf Set  
++ Royal Remains Set  
++ Moonveil  
++ Malenia Set  
+</details>
 
 Upcoming changes:
 - [x] Add mobile device support
