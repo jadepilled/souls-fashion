@@ -163,6 +163,13 @@ function createItemCard(item) {
   secondaryColorDiv1.style.backgroundColor = item.secondaryColors[0];
   const secondaryColorDiv2 = document.createElement("div");
   secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
+  secondaryColorDiv2.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents triggering the tile's click event
+    document.getElementById('favcolor').value = item.secondaryColors[1];
+    updateMatchingItems(); // Trigger search with second secondary color
+  });
+
+  // Append the color divs to the color bar
   colorBar.appendChild(primaryColorDiv);
   colorBar.appendChild(secondaryColorDiv1);
   colorBar.appendChild(secondaryColorDiv2);
@@ -227,6 +234,8 @@ function createItemCard(item) {
 
   return card;
 }
+
+
 
 // Add event listener for color picker, name input, slider, and color distance threshold slider
 document.getElementById('favcolor').addEventListener('change', function() {

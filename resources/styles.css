@@ -769,7 +769,7 @@ body.light-mode .feedback button:hover {
 
 	.tooltip-text {
 		visibility: hidden;
-		width: 180px; /* Adjust as needed */
+		width: 400px; /* Adjust as needed */
 		background-color: #242424;
 		color: #fff;
 		text-align: center;
@@ -807,3 +807,9 @@ body.light-mode .feedback button:hover {
 		visibility: visible;
 		opacity: 1;
 	}
+	
+			/* link styling for clickable item names */
+			a:link { text-decoration: none; color: inherit; }
+			a:visited { text-decoration: none; color: inherit; }
+			a:hover { text-decoration: underline; color: inherit; }
+			a:active { text-decoration: underline; color: inherit; }
