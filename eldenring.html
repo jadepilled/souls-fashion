@@ -157,7 +157,6 @@
       const colorPicker = document.getElementById("favcolor");
       const searchInput = document.getElementById("searchInput");
 
-      let isDarkMode = localStorage.getItem("theme") === "dark"; // Retrieve mode from localStorage
 
       toggleSearch.addEventListener("click", () => {
         const isColorPickerVisible = colorPicker.style.display !== "none";
@@ -181,15 +180,19 @@
         searchInput.placeholder = colorPicker.value;
       });
 
-      // Apply the initial theme from localStorage
-      body.classList.toggle("light-mode", !isDarkMode);
-      modeToggle.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+      // Check local storage to persist theme choice
+      if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light-mode');
+      }
 
-      modeToggle.addEventListener("click", () => {
-        isDarkMode = !isDarkMode;
-        body.classList.toggle("light-mode", !isDarkMode);
-        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-        modeToggle.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+      modeToggle.addEventListener('click', () => {
+        if (body.classList.contains('light-mode')) {
+            body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        }
       });
 
       document
