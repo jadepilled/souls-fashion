@@ -546,6 +546,7 @@ body.light-mode .sidebar {
   right: 0;
   margin: 20px;
   transition: transform 0.3s ease;
+  display: none; /* Initially hidden */
 }
 
 .back-to-top-button:hover {

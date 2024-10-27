@@ -195,6 +195,14 @@
         }
       });
 
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) { // Adjust this value based on when you want it to appear
+          document.querySelector(".back-to-top-button").style.display = "block";
+        } else {
+          document.querySelector(".back-to-top-button").style.display = "none";
+        }
+      });
+
       document
         .querySelector(".back-to-top-button")
         .addEventListener("click", () => {
