@@ -22,7 +22,6 @@ h3 {
 body {
   font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding-top: 100px;
   background-color: #121212; /* Dark mode background by default */
   color: #ffffff; /* Dark mode text color by default */
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -52,10 +51,19 @@ body.light-mode .navigation {
 }
 
 .topnav {
-  display: flex; /* Use flex for layout */
-  justify-content: space-between; /* Distribute space between items */
+  display: flex;
   align-items: center;
-  background-color: none; /* Dark mode background by default */
+  background-color: none;
+  margin: 0;
+  height: 65px;
+  width: 100%;
+  padding: 0;
+}
+
+.topnav-simple {
+  display: flex;
+  align-items: center;
+  background-color: none;
   margin: 0;
   height: 65px;
   width: 100%;
@@ -67,10 +75,11 @@ body.light-mode .topnav {
 }
 
 .links-group {
-  display: flex; /* Keep as flex */
-  flex-grow: 1; /* Allow links-group to grow and fill available space */
-  margin-left: 50px; /* Keep margin */
+  display: flex;
+  flex-grow: 1;
+  margin-left: 50px;
   gap: 4%;
+  align-items: center;
 }
 
 .links-group a {
@@ -80,7 +89,41 @@ body.light-mode .topnav {
 }
 
 .FashionSouls {
-  margin-top: 120px;
+  display: none;
+}
+
+.FashionSouls-simple {
+  margin-bottom: 50px;
+}
+
+.FashionSouls-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+  width: 12rem;
+}
+
+.FashionSouls-nav h2 {
+  letter-spacing: -1px;
+  line-height: 1px;
+  text-align: center;
+  font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.FashionSouls-nav h3 {
+  letter-spacing: -1.0px;
+  line-height: 1;
+  text-align: center;
+  font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.FashionSouls-nav:hover {
+  text-decoration: none;
 }
 
 body.light-mode .links-group a {
@@ -113,6 +156,90 @@ body.light-mode .mode-switch {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-decoration-color: white;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.round-button {
+  background-color: rgba(18, 18, 18, 1);
+  color: white;
+  border: 1px solid #555;
+  border-radius: 40px;
+  padding: 10px;
+  margin: 10px;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.round-button:hover {
+  border: 1px solid white;
+  background-color: #555;
+}
+
+body.light-mode .round-button {
+  background-color: white;
+  border: 1px solid #555;
+  color: black;
+}
+
+body.light-mode .round-button:hover {
+  background-color: #555;
+  border: 1px solid black;
+  color: white;
+}
+
+.round-text-area {
+  resize: none !important;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 30rem;
+  height: 10rem;
+}
+
+.round-text-area:hover {
+  border: 1px solid white;
+}
+
+body.light-mode .round-text-area {
+  background-color: white;
+  border: 1px solid #555;
+  color: black;
+}
+
+.round-input {
+  background-color: white;
+  color: black;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+}
+
+.round-input:hover {
+  border: 1px solid white;
+}
+
+body.light-mode .round-input {
+  background-color: white;
+  border: 1px solid #555;
+  color: black;
 }
 
 .search-bar {
@@ -161,8 +288,8 @@ body.light-mode .search-bar-buttons button {
 }
 
 body.light-mode .search-bar-buttons button:hover {
-  border: 2px solid #1358A9;
-  background-color: #005CC8;
+  border: 2px solid #1358a9;
+  background-color: #005cc8;
   color: white;
 }
 
@@ -195,6 +322,10 @@ body.light-mode .search-bar {
   background-color: #fff; /* Light mode input background */
   color: #000; /* Light mode input text */
   border: 1px solid #ddd; /* Light mode border */
+}
+
+body.light-mode .search-bar input {
+  color: #000;
 }
 
 .color-picker-group {
@@ -275,8 +406,8 @@ body.light-mode .filters-group button {
 }
 
 body.light-mode .filters-group button:hover {
-  border: 2px solid #1358A9;
-  background-color: #005CC8; 
+  border: 2px solid #1358a9;
+  background-color: #005cc8;
   color: white;
 }
 
@@ -290,21 +421,18 @@ body.light-mode .filters-group button.active {
   border-color: #007bff;
 }
 
-.dropdown {
-  display: inline-block; /* Ensure that all links and dropdowns behave inline */
-  overflow: hidden;
-  margin-top: 0px;
-}
 .dropdown .dropbtn {
-  padding: 0px 16px;
+  all: unset;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
   border: none;
   outline: none;
-  color: white;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #f2f2f2; /* Dark mode link color */
 }
 body.light-mode .dropdown .dropbtn {
   color: #000; /* Change to black in light mode for visibility */
@@ -320,6 +448,7 @@ body.light-mode .dropdown .dropbtn {
   padding: 0px 0; /* Add padding to dropdown content */
   margin: 0; /* Remove margin to prevent excess height */
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -339,6 +468,7 @@ body.light-mode .dropdown .dropbtn {
   text-align: center;
   margin-top: 80px;
   /* margin-left: 80px; */
+  margin-top: 180px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -423,7 +553,7 @@ body.light-mode .item-card {
 }
 
 body.light-mode .color-bar div:hover {
-  border: 3px solid #0075FF;
+  border: 3px solid #0075ff;
 }
 
 .item-card {
@@ -485,8 +615,6 @@ body.light-mode .sidebar {
   font-size: 12px;
 }
 
-
-
 .pinned {
   display: flex;
   flex-direction: column;
@@ -547,6 +675,11 @@ body.light-mode .sidebar {
   margin: 20px;
   transition: transform 0.3s ease;
   display: none; /* Initially hidden */
+  color: white;
+}
+
+body.light-mode .back-to-top-button {
+  color: black;
 }
 
 .back-to-top-button:hover {
@@ -554,18 +687,19 @@ body.light-mode .sidebar {
   transform: scale(1.1);
 }
 
-.copywrite {
+.footer {
+  display: none;
   font-size: 8px;
   position: fixed;
   bottom: 0;
   padding: 2px;
-  opacity: 50%;
+  background-color: none;
+  width: 100%;
+  border: none;
 }
 
 body.light-mode .footer {
   color: black;
-  background-color: white; /* Dark mode background by default */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
 
 /*styling for buttons */
@@ -608,213 +742,278 @@ input[type="reset"] {
   width: 30px;
 }
 
-/*styling for feedback form*/
-.feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 20px auto;
-  max-width: 600px; /* Optional: set a max width for better layout */
-
-  .feedback .form-check {
-    display: inline-block;
-    margin-right: 10px; /* Add some space between the buttons */
-  }
-
-  .feedback .form-check label {
-    margin-left: 5px;
-  }
-}
-.feedback .form-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold; /* Make labels bold for clarity */
-}
-
-.feedback textarea {
-  width: 100%; /* Ensure the textarea takes full width */
-  max-width: 100%;
-  resize: vertical; /* Allow only vertical resizing */
-}
-
-/* Style for dark mode */
-.feedback button {
-  margin-top: 10px;
-  background-color: #444;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+/*tooltips for mouse hover  */
+.tooltip {
+  position: relative;
+  display: inline-block;
   cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 400px; /* Adjust as needed */
+  background-color: #242424;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  position: absolute;
+  z-index: 1001;
+  top: 125%; /* Position the tooltip above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add fade transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
 
-/* Hover effect */
-.feedback button:hover {
-  background-color: #666;
-}
-
-/* Style for light mode */
-body.light-mode .feedback button {
-  background-color: #ccc;
+body.light-mode .tooltip-text {
+  background-color: white;
   color: black;
 }
 
-body.light-mode .feedback button:hover {
-  background-color: #bbb;
+/* Tooltip arrow */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Position the arrow at the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #242424 transparent transparent transparent;
 }
 
+/* Show tooltip text on hover with fade-in */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* link styling for clickable item names */
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+a:active {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.hidden-on-scroll {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.show-menu {
+  display: none; /* Initially hidden */
+}
+
+/* Mobile-friendly adjustments */
 @media (max-width: 768px) {
-  /* For mobile phones */
   h2 {
-    font-size: 50px; /* Further decrease heading size */
+    font-size: 40px; /* Reduce font size for smaller screens */
+    margin: 0;
+    padding: 0;
   }
 
   h3 {
-    font-size: 16px; /* Further decrease heading size */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
   }
 
-  body {
-    padding: 0; /* Further reduce padding */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    margin: 0; /* Remove default margin */
-  }
-
-  .topnav {
-    margin: 0; /* Ensure no margin on the navbar */
-    display: flex; /* Use flexbox layout */
-    flex-direction: row; /* Align items vertically */
-    justify-content: center; /* Center content vertically */
-    box-sizing: border-box; /* Include padding/border in width/height */
-  }
-
-  .topnav a {
-    font-size: 8px; /* Smaller font size for navigation links */
-    padding: 5px;
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center;
-    margin: 0; /* Remove any margin */
+  }
+  
+  .FashionSouls {
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 100px;
   }
 
-  .topnav button.dropbtn {
-    font-size: 8px; /* Smaller font size for navigation links */
+  .FashionSouls-simple {
+    margin: 20px;
+  }
+
+  .FashionSouls-nav {
+    display: none;
+  }
+
+  .navigation {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .topnav-simple {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .links-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 0;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen */
+    height: 100%;
+    width: 200px;
+    background-color: #121212;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000; /* Above other content */
+    color: white;
+    padding: 20px;
+    padding-top: 100px;
+    font-size: 28px;
+    border: 1px solid #444;
+  }
+
+  .links-group button {
+    all: unset;
+    font-size: 14px;
+  }
+
+  body.light-mode .links-group {
+    background-color: white; /* Sidebar color */
+    border: 1px solid #444;
+  }
+  
+  .links-group.show {
+    right: 0; /* Slide into view */
+  }
+
+  .show-menu {
+    display: block;
+    margin: 15px;
     padding: 5px;
-    margin: 0; /* Remove any margin */
+    border: 1px solid #555;
+    border-radius: 10px;
+    font-size: 10px;
+    height: 40px;
+    text-align: center;
+    color: #555;
+    z-index: 1001; 
+    background-color: #121212;
+  }
+
+  .show-menu:hover {
+    border: 1px solid white;
+  }
+
+  body.light-mode .show-menu {
+    background-color:white;
+    border: 1px solid #444;
+  }
+
+  body.light-mode .show-menu:hover {
+    border: 1px solid black;
   }
 
   .mode-switch {
-    opacity: 50%;
-    position: fixed; /* Fixed positioning */
-    bottom: 50px; /* Adjust as needed for spacing from the top */
-    left: 0px; /* Adjust as needed for spacing from the right */
-    z-index: 1000; /* Ensure it appears above other elements */
-    margin-left: 2%;
+    width: auto;
+    font-size: 12px;
   }
 
-  .mode-switch button {
-    font-size: 10px;
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .round-button {
+    margin-left: 0;
+    margin-right: 0;
+    width: 4rem;
+  }
+
+  .round-text-area {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 8rem;
+  }
+
+  .round-input {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%; /* Full width on smaller screens */
   }
 
   .search-bar {
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
+    width: 100%; /* Full width on mobile */
   }
 
-  .color-picker {
-    width: 100px;
-    height: 100px;
-    text-align: center;
-  }
-
-  .slider-container input {
-    width: 100%;
-    height: auto;
-  }
-
-  .filter-buttons button {
-    padding: 10px;
-    font-size: 20px;
-    margin-bottom: 5px;
+  .item-grid {
+    display: inline-flex;
+    margin-top: 0;
   }
 
   .item-card {
-    width: 90px; /* Even smaller cards */
-    height: 150px; /* Adjust height */
-    font-size: 8px;
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center content vertically */
-    box-sizing: border-box; /* Include padding/border in width/height */
+    width: 40%;
+    height: auto;
   }
 
-  .color-bar div {
-    display: flex;
-    width: 100%; /* Ensure it fits within the parent */
-    height: 8px; /* Adjust height */
+  .color-picker-group {
+    flex-direction: row;
   }
 
-  .search-bar input {
-    width: calc(100% - 20px); /* Full width search input, account for padding */
+  .filters-group {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: auto;
   }
 
-  .copyright {
-    font-size: 8px;
-    color: #333333; /* Color for the copyright text */
+  .slot {
+    width: 50px;
     height: 50px;
   }
-}
-/*tooltips for mouse hover  */
-	.tooltip {
-		position: relative;
-		display: inline-block;
-		cursor: pointer;
-	}
 
-	.tooltip-text {
-		visibility: hidden;
-		width: 400px; /* Adjust as needed */
-		background-color: #242424;
-		color: #fff;
-		text-align: center;
-		padding: 8px;
-		border-radius: 5px;
-		position: absolute;
-		z-index: 1001;
-		top: 125%; /* Position the tooltip above the text */
-		left: 50%;
-		transform: translateX(-50%);
-		opacity: 0;
-		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add fade transition */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
-	}
+  .back-to-top-button {
+    font-size: 10px;
+    margin: 10px;
+  }
 
-  body.light-mode .tooltip-text {
-    background-color: white;
+  body.light-mode .back-to-top-button {
     color: black;
   }
 
-	/* Tooltip arrow */
-	.tooltip-text::after {
-		content: "";
-		position: absolute;
-		bottom: 100%; /* Position the arrow at the bottom of the tooltip */
-		left: 50%;
-		margin-left: -5px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: #242424 transparent transparent transparent;
-	}
+  .footer {
+    font-size: 6px;
+    padding: 1px;
+  }
 
-	/* Show tooltip text on hover with fade-in */
-	.tooltip:hover .tooltip-text {
-		visibility: visible;
-		opacity: 1;
-	}
-	
-			/* link styling for clickable item names */
-			a:link { text-decoration: none; color: inherit; }
-			a:visited { text-decoration: none; color: inherit; }
-			a:hover { text-decoration: underline; color: inherit; }
-			a:active { text-decoration: underline; color: inherit; }
+  .sliders {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 20px;
+  }
+
+  .slider-container {
+    gap: 5%;
+  }
+
+  .tooltip-text {
+    width: 150px; /* Adjust as needed */
+  }
+}

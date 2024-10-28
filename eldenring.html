@@ -44,6 +44,10 @@
   <body>
     <nav class="navigation">
       <div class="topnav">
+        <a class="FashionSouls-nav" href="index">
+          <h2>Fashion Souls</h2>
+          <h3 style="color: #bfbfbf">SoulsBorne fashion tool by Psyopgirl</h3>
+        </a>
         <div class="search-bar">
           <div class="color-picker-group">
             <input
@@ -51,7 +55,7 @@
               type="color"
               id="favcolor"
               name="favcolor"
-              value="ff0000"
+              value="#ff0000"
             />
           </div>
           <input
@@ -66,12 +70,22 @@
         </div>
         <div class="links-group">
           <a href="index">Home</a>
+          <div class="dropdown">
+            <!-- <button class="dropbtn">Games -->
+            </button>
+            <div class="dropdown-content">
+                <a href="ds1">Dark Souls Remastered</a>
+                <a href="ds2">Dark Souls II: SotFS</a>
+                <a href="ds3">Dark Souls III</a>
+            </div>
+          </div>
           <a href="https://discord.gg/j8HHh8ffEn">Discord</a>
           <a href="https://github.com/jadepilled/souls-fashion">Github</a>
           <a href="https://ko-fi.com/psyopgirl">Donate</a>
           <a href="feedback.html">Feedback</a>
           <button class="mode-switch" id="modeToggle">Light Mode</button>
         </div>
+        <button class="show-menu">Menu</button>
       </div>
       <div class="filters-group">
         <button id="headFilter">Head</button>
@@ -89,7 +103,8 @@
                 <span class="tooltip-text">
                   Determines to what extent secondary colors are included in
                   your color match results. Higher weight = more consideration
-                  given to secondary colors.</span>
+                  given to secondary colors.</span
+                >
               </div>
             </label>
             <input
@@ -131,8 +146,8 @@
     </nav>
 
     <div class="FashionSouls">
-      <h2>Fashion Souls</h2>
-      <h3 style="color: #bfbfbf;">SoulsBorne fashion tool by Psyopgirl</h3>
+      <h2 >Fashion Souls</h2>
+      <h3 style="color: #bfbfbf">SoulsBorne fashion tool by Psyopgirl</h3>
     </div>
 
     <main class="item-grid" id="itemGrid">
@@ -141,11 +156,10 @@
     </main>
 
     <footer class="footer">
-      <div class="copywrite">
-        Copyright © Psyopgirl 2024.<br />
-        Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony
-        & FromSoftware respectively.
-      </div>
+      Copyright © Psyopgirl 2024.<br />
+      Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony &
+      FromSoftware respectively.
+
       <button class="back-to-top-button">Back to Top</button>
     </footer>
 
@@ -157,6 +171,25 @@
       const colorPicker = document.getElementById("favcolor");
       const searchInput = document.getElementById("searchInput");
 
+      // Check local storage to persist theme choice
+      if (localStorage.getItem("theme") === "light") {
+          body.classList.add("light-mode");
+          modeToggle.textContent = "Dark Mode"; 
+      } else {
+        modeToggle.textContent = "Light Mode";
+      }
+
+      modeToggle.addEventListener("click", () => {
+        if (body.classList.contains("light-mode")) {
+            body.classList.remove("light-mode");
+            localStorage.setItem("theme", "dark");
+            modeToggle.textContent = "Light Mode"; 
+        } else {
+            body.classList.add("light-mode");
+            localStorage.setItem("theme", "light");
+            modeToggle.textContent = "Dark Mode";
+        }
+      });
 
       toggleSearch.addEventListener("click", () => {
         const isColorPickerVisible = colorPicker.style.display !== "none";
@@ -167,7 +200,7 @@
         searchInput.placeholder = isColorPickerVisible
           ? "Search by item"
           : "Search by hex";
-        searchInput.disabled = isColorPickerVisible;
+        searchInput.disabled = !isColorPickerVisible;
         searchInput.value = "";
         colorPicker.value = "";
       });
@@ -180,27 +213,41 @@
         searchInput.placeholder = colorPicker.value;
       });
 
-      // Check local storage to persist theme choice
-      if (localStorage.getItem('theme') === 'light') {
-        body.classList.add('light-mode');
-      }
+      const toggleButton = document.querySelector('.show-menu');
+      const sidebar = document.querySelector('.links-group');
+      const itemGrid = document.querySelector('.item-grid');
+      const topNav = document.querySelector('.topNav');
+      const fashionSouls= document.querySelector('.FashionSouls');
 
-      modeToggle.addEventListener('click', () => {
-        if (body.classList.contains('light-mode')) {
-            body.classList.remove('light-mode');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light');
-        }
+      toggleButton.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
       });
 
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) { // Adjust this value based on when you want it to appear
+        if (window.scrollY > 300) {
+          // Adjust this value based on when you want it to appear
           document.querySelector(".back-to-top-button").style.display = "block";
+          document.querySelector(".footer").style.display = "block";
         } else {
           document.querySelector(".back-to-top-button").style.display = "none";
+          document.querySelector(".footer").style.display = "none";
         }
+      });
+
+      // JavaScript to toggle the class on scroll
+      let lastScrollTop = 0;
+      const nav = document.querySelector('.navigation');
+
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          // User is scrolling down
+          nav.classList.add('hidden-on-scroll');
+        } else {
+          // User is scrolling up
+          nav.classList.remove('hidden-on-scroll');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure scrollTop doesn't go negative
       });
 
       document

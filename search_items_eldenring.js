@@ -141,6 +141,7 @@ function createItemCard(item) {
 
   const toggleSearch = document.getElementById("toggleSearch");
   const searchInput = document.getElementById("searchInput");
+  const nav = document.querySelector('.navigation');
 
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("image-container");
@@ -197,6 +198,9 @@ function createItemCard(item) {
     colorPicker.style.display = "none"; // Hide the color picker
     toggleSearch.textContent = "Item"; // Set button text to "Item"
     searchInput.placeholder = "Search by item"; // Update placeholder
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
     updateMatchingItems();
   });
 
@@ -210,6 +214,8 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
     updateMatchingItems();
   });
 
@@ -223,6 +229,8 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
     updateMatchingItems();
   });
 
@@ -236,6 +244,8 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
     updateMatchingItems();
   });
 
