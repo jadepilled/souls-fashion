@@ -5,8 +5,8 @@ let activeFilters = new Set(); // To track active filters
 // Fisher-Yates Shuffle algorithm to randomize the order of items
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];  // Swap elements
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];  // Swap elements
   }
   return array;
 }
@@ -72,9 +72,15 @@ function calculateWeightedDistance(inputColor, primaryColor, secondaryColors, se
 function findMatchingItems(inputColor, secondaryWeight, query) {
   const lowerQuery = query.toLowerCase();
 
-  return items.map(item => {
+  let withinThresholdItems = items
+    .map(item => {
       // Calculate color distance
-      let distance = calculateWeightedDistance(inputColor, item.primaryColor, item.secondaryColors, secondaryWeight);
+      let distance = calculateWeightedDistance(
+        inputColor,
+        item.primaryColor,
+        item.secondaryColors,
+        secondaryWeight
+      );
 
       // Check if the item name matches the search query
       const nameMatch = item.name.toLowerCase().includes(lowerQuery);
@@ -83,21 +89,38 @@ function findMatchingItems(inputColor, secondaryWeight, query) {
       const typeMatch =
         activeFilters.size === 0 || activeFilters.has(item.type);
 
-      // Include items that match by name, type, and have a color distance below the threshold
+      // Include items that match by type, name, and have a color distance below the threshold
       return {
         ...item,
         distance: distance,
-        nameMatch: nameMatch,
+        nameMatch: nameMatch, // Include nameMatch here
         typeMatch: typeMatch,
       };
     })
-    .filter(
-      item =>
-        item.nameMatch &&
-        item.typeMatch &&
-        item.distance <= colorDistanceThreshold
-    )
+    .filter(item => item.typeMatch && item.distance <= colorDistanceThreshold)
     .sort((a, b) => a.distance - b.distance);
+
+  if (query.length > 0) {
+    withinThresholdItems = withinThresholdItems.filter(item => !item.nameMatch);
+
+    const itemMatch = items
+      .map(item => {
+        const nameMatch = item.name.toLowerCase().includes(lowerQuery);
+        const typeMatch =
+          activeFilters.size === 0 || activeFilters.has(item.type);
+
+        return {
+          ...item,
+          nameMatch: nameMatch,
+          typeMatch: typeMatch,
+        };
+      })
+      .filter(item => item.nameMatch && item.typeMatch);
+
+    return [...itemMatch, ...withinThresholdItems];
+  }
+
+  return withinThresholdItems;
 }
 
 // Display items in the grid
@@ -113,40 +136,123 @@ function displayItems(filteredItems) {
 
 // Function to create item cards with click event for search
 function createItemCard(item) {
-  const card = document.createElement('div');
-  card.classList.add('item-card');
+  const card = document.createElement("div");
+  card.classList.add("item-card");
 
-  const img = document.createElement('img');
+  const toggleSearch = document.getElementById("toggleSearch");
+  const searchInput = document.getElementById("searchInput");
+  const nav = document.querySelector('.navigation');
+
+  const imageContainer = document.createElement("div");
+  imageContainer.classList.add("image-container");
+  const img = document.createElement("img");
   img.src = `pages/ds3/icons/${item.image}`;
   img.alt = item.name;
+  imageContainer.appendChild(img);
 
-  const title = document.createElement('p');
+  const titleContainer = document.createElement("div");
+  titleContainer.classList.add("title-container");
+  const title = document.createElement("a");
   title.textContent = item.name;
+  title.href = item.link;
+  title.target = '_blank';
+  titleContainer.appendChild(title);
 
-  const colorBar = document.createElement('div');
-  colorBar.classList.add('color-bar');
-  const primaryColorDiv = document.createElement('div');
+  title.addEventListener('click', (event) => {
+    event.stopPropagation(); 
+  });
+
+
+  const colorBar = document.createElement("div");
+  colorBar.classList.add("color-bar");
+  const primaryColorDiv = document.createElement("div");
   primaryColorDiv.style.backgroundColor = item.primaryColor;
-  const secondaryColorDiv1 = document.createElement('div');
+  const secondaryColorDiv1 = document.createElement("div");
   secondaryColorDiv1.style.backgroundColor = item.secondaryColors[0];
-  const secondaryColorDiv2 = document.createElement('div');
+  const secondaryColorDiv2 = document.createElement("div");
   secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
+  secondaryColorDiv2.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents triggering the tile's click event
+    document.getElementById('favcolor').value = item.secondaryColors[1];
+    updateMatchingItems(); // Trigger search with second secondary color
+  });
+
+  // Append the color divs to the color bar
   colorBar.appendChild(primaryColorDiv);
   colorBar.appendChild(secondaryColorDiv1);
   colorBar.appendChild(secondaryColorDiv2);
 
-  card.appendChild(img);
-  card.appendChild(title);
+  const itemInfo = document.createElement("div");
+  itemInfo.classList.add("item-info");
+  itemInfo.appendChild(imageContainer);
+  itemInfo.appendChild(titleContainer);
+
+  card.appendChild(itemInfo);
   card.appendChild(colorBar);
 
   // Add click event to set the item's primary color for the search
-  card.addEventListener('click', () => {
-    document.getElementById('favcolor').value = item.primaryColor;
-    updateMatchingItems();  // Trigger the search with the selected item's primary color
-});
+  itemInfo.addEventListener("click", () => {
+    searchInput.value = item.name;
+    document.getElementById("favcolor").value = item.primaryColor;
+    searchInput.disabled = false;
+    colorPicker.style.display = "none"; // Hide the color picker
+    toggleSearch.textContent = "Item"; // Set button text to "Item"
+    searchInput.placeholder = "Search by item"; // Update placeholder
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
+  });
+
+  primaryColorDiv.addEventListener("click", () => {
+    colorPicker.style.display = "inline-block";
+    toggleSearch.textContent = "Hex";
+    colorPicker.value = item.primaryColor;
+
+    document.getElementById("favcolor").value = item.primaryColor;
+    searchInput.placeholder = item.primaryColor;
+    searchInput.value = "";
+    searchInput.disabled = true;
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
+  });
+
+  secondaryColorDiv1.addEventListener("click", () => {
+    colorPicker.style.display = "inline-block";
+    toggleSearch.textContent = "Hex";
+    colorPicker.value = item.secondaryColors[0];
+
+    document.getElementById("favcolor").value = item.secondaryColors[0];
+    searchInput.placeholder = item.secondaryColors[0];
+    searchInput.value = "";
+    searchInput.disabled = true;
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
+  });
+
+  secondaryColorDiv2.addEventListener("click", () => {
+    colorPicker.style.display = "inline-block";
+    toggleSearch.textContent = "Hex";
+    colorPicker.value = item.secondaryColors[1];
+
+    document.getElementById("favcolor").value = item.secondaryColors[1];
+    searchInput.placeholder = item.secondaryColors[1];
+    searchInput.value = "";
+    searchInput.disabled = true;
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
+  });
 
   return card;
 }
+
+
 
 // Add event listener for color picker, name input, slider, and color distance threshold slider
 document.getElementById('favcolor').addEventListener('change', function() {
@@ -218,7 +324,7 @@ document.getElementById("clearFilter").addEventListener("click", () => {
 
   // Select all buttons within 'filter-button' class to remove the active state
   document
-    .querySelectorAll(".filter-buttons button")
+    .querySelectorAll(".filters-group button")
     .forEach(button => button.classList.remove("active"));
 
   updateMatchingItems();
