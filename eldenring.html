@@ -282,6 +282,7 @@
       triggerElement.addEventListener('mouseover', () => {
         pinned.style.opacity = "1";
         pinned.style.display = "block";
+        itemGrid.style.marginTop = "20px";
         itemGrid.style.marginLeft = "70px"; // Change to desired value
         nav.classList.add('hidden-on-scroll');
       });
@@ -290,6 +291,7 @@
       triggerElement.addEventListener('mouseout', () => {
         pinned.style.opacity = "0";
         pinned.style.display = "none";
+        itemGrid.style.marginTop = "180px";
         itemGrid.style.marginLeft = "0px"; 
         nav.classList.remove('hidden-on-scroll');
       });
