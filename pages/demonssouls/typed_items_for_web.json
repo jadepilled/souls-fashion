@@ -1,13 +1,14 @@
 [
     {
-        "name": "Ancient King'S Breastplate",
+        "name": "Ancient King's Breastplate",
         "image": "Chest/Ancient King's Breastplate.png",
         "primaryColor": "#d8efe5",
         "secondaryColors": [
             "#95a59a",
             "#77938a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Breastplate"
     },
     {
         "name": "Binded Cross",
@@ -17,7 +18,8 @@
             "#a88b6f",
             "#8d725a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Binded_Cross"
     },
     {
         "name": "Black Leather",
@@ -27,7 +29,8 @@
             "#8f8778",
             "#847a6d"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Black_Leather"
     },
     {
         "name": "Brushwood Armor",
@@ -37,7 +40,8 @@
             "#9c8973",
             "#877562"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Armor"
     },
     {
         "name": "Chain Mail",
@@ -47,7 +51,8 @@
             "#877367",
             "#67584f"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Chain_Mail"
     },
     {
         "name": "Coat Of Plate",
@@ -57,7 +62,8 @@
             "#a39d96",
             "#84786f"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Coat_Of_Plate"
     },
     {
         "name": "Dark Silver Armor",
@@ -67,7 +73,8 @@
             "#5d5b58",
             "#44423d"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Armor"
     },
     {
         "name": "Dull Gold Armor",
@@ -77,7 +84,8 @@
             "#a68c62",
             "#8b7451"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Armor"
     },
     {
         "name": "Fluted Armor",
@@ -87,7 +95,8 @@
             "#a29c96",
             "#837a74"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Fluted_Armor"
     },
     {
         "name": "Gloom Armor",
@@ -97,7 +106,8 @@
             "#9f8a6f",
             "#89745a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Gloom_Armor"
     },
     {
         "name": "Leather Armor",
@@ -107,7 +117,8 @@
             "#9f8975",
             "#8a7361"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Leather_Armor"
     },
     {
         "name": "Mirdan Scale Mail",
@@ -117,7 +128,8 @@
             "#a9a093",
             "#8f867a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Scale_Mail"
     },
     {
         "name": "Old Raggedy Robes",
@@ -127,67 +139,74 @@
             "#86837b",
             "#635e59"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Old_Raggedy_Robes"
     },
     {
-        "name": "Rogue'S Clothes",
+        "name": "Rogue's Clothes",
         "image": "Chest/Rogue's Clothes.png",
         "primaryColor": "#e7d6a1",
         "secondaryColors": [
             "#a4906a",
             "#8a7655"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Rogue%27s_Clothes"
     },
     {
-        "name": "Saint'S Robes",
+        "name": "Saint's Robes",
         "image": "Chest/Saint's Robes.png",
         "primaryColor": "#ddd9d1",
         "secondaryColors": [
             "#c7c4ba",
             "#a3a199"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Saint%27s_Robes"
     },
     {
-        "name": "Shaman'S Clothes",
+        "name": "Shaman's Clothes",
         "image": "Chest/Shaman's Clothes.png",
         "primaryColor": "#a89f92",
         "secondaryColors": [
             "#928778",
             "#86786c"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Shaman%27s_Clothes"
     },
     {
-        "name": "Venerable Sage'S Robe",
+        "name": "Venerable Sage's Robe",
         "image": "Chest/Venerable Sage's Robe.png",
         "primaryColor": "#ae9d8c",
         "secondaryColors": [
             "#9d8875",
             "#897463"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Robe"
     },
     {
-        "name": "Wizard'S Clothes",
+        "name": "Wizard's Clothes",
         "image": "Chest/Wizard's Clothes.png",
         "primaryColor": "#e7e3d9",
         "secondaryColors": [
             "#a2a093",
             "#898678"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://demonssouls.fandom.com/wiki/Wizard%27s_Clothes"
     },
     {
-        "name": "Ancient King'S Gauntlet",
+        "name": "Ancient King's Gauntlet",
         "image": "Hands/Ancient King's Gauntlet.png",
         "primaryColor": "#addece",
         "secondaryColors": [
             "#8ab1a2",
             "#6f9c8f"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Gauntlet"
     },
     {
         "name": "Binded Gloves",
@@ -197,7 +216,8 @@
             "#907154",
             "#8d6235"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Binded_Gloves"
     },
     {
         "name": "Black Gloves",
@@ -207,7 +227,8 @@
             "#948677",
             "#85786c"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Black_Gloves"
     },
     {
         "name": "Brushwood Gauntlets",
@@ -217,7 +238,8 @@
             "#a28a72",
             "#8a7460"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Gauntlets"
     },
     {
         "name": "Chain Gloves",
@@ -227,7 +249,8 @@
             "#a49791",
             "#857973"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Chain_Gloves"
     },
     {
         "name": "Dark Silver Manifer",
@@ -237,7 +260,8 @@
             "#a19e9a",
             "#84817d"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Manifer"
     },
     {
         "name": "Dull Gold Manifer",
@@ -247,7 +271,8 @@
             "#aca693",
             "#635e52"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Manifer"
     },
     {
         "name": "Fluted Gauntlet",
@@ -257,7 +282,8 @@
             "#a39d98",
             "#837b73"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Fluted_Gauntlet"
     },
     {
         "name": "Gloom Gauntlet",
@@ -267,7 +293,8 @@
             "#ab8e67",
             "#8d7353"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Gloom_Gauntlet"
     },
     {
         "name": "Leather Gloves",
@@ -277,7 +304,8 @@
             "#aa8c71",
             "#8d745e"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Leather_Gloves"
     },
     {
         "name": "Mirdan Manifer",
@@ -287,7 +315,8 @@
             "#cfc6b8",
             "#a79c90"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Manifer"
     },
     {
         "name": "Old Raggedy Gloves",
@@ -297,7 +326,8 @@
             "#a08875",
             "#8c7666"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Old_Raggedy_Gloves"
     },
     {
         "name": "Plate Gauntlet",
@@ -307,37 +337,41 @@
             "#dec8b3",
             "#ccb39e"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Plate_Gauntlet"
     },
     {
-        "name": "Rogue'S Gloves",
+        "name": "Rogue's Gloves",
         "image": "Hands/Rogue's Gloves.png",
         "primaryColor": "#edead3",
         "secondaryColors": [
             "#9f9b94",
             "#575452"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Rogue%27s_Gloves"
     },
     {
-        "name": "Saint'S Gloves",
+        "name": "Saint's Gloves",
         "image": "Hands/Saint's Gloves.png",
         "primaryColor": "#eae5df",
         "secondaryColors": [
             "#a89c92",
             "#958578"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Saint%27s_Gloves"
     },
     {
-        "name": "Shaman'S Armband",
+        "name": "Shaman's Armband",
         "image": "Hands/Shaman's Armband.png",
         "primaryColor": "#a79f95",
         "secondaryColors": [
             "#8b847a",
             "#837a70"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Shaman%27s_Armband"
     },
     {
         "name": "Silver Bracelet",
@@ -347,47 +381,52 @@
             "#c7c2bc",
             "#c2bcb7"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Silver_Bracelet"
     },
     {
-        "name": "Venerable Sage'S Gloves",
+        "name": "Venerable Sage's Gloves",
         "image": "Hands/Venerable Sage's Gloves.png",
         "primaryColor": "#ae998b",
         "secondaryColors": [
             "#9e8776",
             "#897466"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Gloves"
     },
     {
-        "name": "Wizard'S Gloves",
+        "name": "Wizard's Gloves",
         "image": "Hands/Wizard's Gloves.png",
         "primaryColor": "#d4c6b8",
         "secondaryColors": [
             "#c5b8aa",
             "#a89d92"
         ],
-        "type": "hands"
+        "type": "hands",
+        "link": "https://demonssouls.fandom.com/wiki/Wizard%27s_Gloves"
     },
     {
-        "name": "Ancient King'S Mask",
+        "name": "Ancient King's Mask",
         "image": "Head/Ancient King's Mask.png",
         "primaryColor": "#dbeae3",
         "secondaryColors": [
             "#92a99e",
             "#789187"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Mask"
     },
     {
-        "name": "Assassin'S Mask",
+        "name": "Assassin's Mask",
         "image": "Head/Assassin's Mask.png",
         "primaryColor": "#d0c8b6",
         "secondaryColors": [
             "#a39c90",
             "#8b8479"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Assassin%27s_Mask"
     },
     {
         "name": "Binded Hood",
@@ -397,7 +436,8 @@
             "#ab8b6b",
             "#8f7052"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Binded_Hood"
     },
     {
         "name": "Brushwood Helmet",
@@ -407,7 +447,8 @@
             "#c9b59f",
             "#b2a18d"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Helmet"
     },
     {
         "name": "Chain Helmet",
@@ -417,7 +458,8 @@
             "#8f837b",
             "#857a73"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Chain_Helmet"
     },
     {
         "name": "Dark Silver Helmet",
@@ -427,7 +469,8 @@
             "#a4a19e",
             "#a3a09c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Helmet"
     },
     {
         "name": "Dull Gold Helmet",
@@ -437,7 +480,8 @@
             "#cfa95a",
             "#ab8f51"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Helmet"
     },
     {
         "name": "Fluted Helmet",
@@ -447,7 +491,8 @@
             "#837d7a",
             "#5d5955"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Fluted_Helmet"
     },
     {
         "name": "Gloom Helmet",
@@ -457,7 +502,8 @@
             "#aba295",
             "#87755f"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Gloom_Helmet"
     },
     {
         "name": "Gold Mask",
@@ -467,7 +513,8 @@
             "#d0ab64",
             "#ad8f58"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Gold_Mask"
     },
     {
         "name": "Leather Cap",
@@ -477,7 +524,8 @@
             "#9a8578",
             "#89756a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Leather_Cap"
     },
     {
         "name": "Mirdan Helmet",
@@ -487,27 +535,30 @@
             "#a49d93",
             "#8a837a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Helmet"
     },
     {
-        "name": "Monk'S Head Collar",
+        "name": "Monk's Head Collar",
         "image": "Head/Monk's Head Collar.png",
         "primaryColor": "#f9d550",
         "secondaryColors": [
             "#e4ac48",
             "#e19b2c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Monk%27s_Head_Collar"
     },
     {
-        "name": "Official'S Cap",
+        "name": "Official's Cap",
         "image": "Head/Official's Cap.png",
         "primaryColor": "#897266",
         "secondaryColors": [
             "#655249",
             "#57433a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Official%27s_Cap"
     },
     {
         "name": "Plate Helmet",
@@ -517,7 +568,8 @@
             "#a39e9a",
             "#8b827c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Plate_Helmet"
     },
     {
         "name": "Silver Coronet",
@@ -527,7 +579,8 @@
             "#a09b99",
             "#656160"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Silver_Coronet"
     },
     {
         "name": "Three-Cornered Hat",
@@ -537,27 +590,30 @@
             "#5c5952",
             "#45433b"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Three-Cornered_Hat"
     },
     {
-        "name": "Venerable Sage'S Hood",
+        "name": "Venerable Sage's Hood",
         "image": "Head/Venerable Sage's Hood.png",
         "primaryColor": "#ad9f8d",
         "secondaryColors": [
             "#948775",
             "#867868"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Hood"
     },
     {
-        "name": "Ancient King'S Leggings",
+        "name": "Ancient King's Leggings",
         "image": "Legs/Ancient King's Leggings.png",
         "primaryColor": "#99a49b",
         "secondaryColors": [
             "#58625a",
             "#38423a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Leggings"
     },
     {
         "name": "Binded Boots",
@@ -567,7 +623,8 @@
             "#6d5c4c",
             "#5b4836"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Binded_Boots"
     },
     {
         "name": "Black Boots",
@@ -577,7 +634,8 @@
             "#8d857a",
             "#635c55"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Black_Boots"
     },
     {
         "name": "Brushwood Leggings",
@@ -587,7 +645,8 @@
             "#887563",
             "#6b5c4d"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Leggings"
     },
     {
         "name": "Dark Silver Leggings",
@@ -597,7 +656,8 @@
             "#5b5a58",
             "#5a5854"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Leggings"
     },
     {
         "name": "Dull Gold Leggings",
@@ -607,7 +667,8 @@
             "#8b7558",
             "#6e604a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Leggings"
     },
     {
         "name": "Fluted Leggings",
@@ -617,7 +678,8 @@
             "#a69d96",
             "#85766c"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Fluted_Leggings"
     },
     {
         "name": "Gloom Leggings",
@@ -627,7 +689,8 @@
             "#9a8973",
             "#6a5c4c"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Gloom_Leggings"
     },
     {
         "name": "Hard Leather Boots",
@@ -637,7 +700,8 @@
             "#a8978e",
             "#867870"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Hard_Leather_Boots"
     },
     {
         "name": "Leather Boots",
@@ -647,7 +711,8 @@
             "#af9b8e",
             "#998778"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Leather_Boots"
     },
     {
         "name": "Old Raggedy Boots",
@@ -657,7 +722,8 @@
             "#5e5b52",
             "#47433b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Old_Raggedy_Boots"
     },
     {
         "name": "Plate Leggings",
@@ -667,57 +733,63 @@
             "#d0c8b4",
             "#a8a195"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Plate_Leggings"
     },
     {
-        "name": "Rogue'S Boots",
+        "name": "Rogue's Boots",
         "image": "Legs/Rogue's Boots.png",
         "primaryColor": "#54504b",
         "secondaryColors": [
             "#4f4b47",
             "#47433c"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Rogue%27s_Boots"
     },
     {
-        "name": "Saint'S Boots",
+        "name": "Saint's Boots",
         "image": "Legs/Saint's Boots.png",
         "primaryColor": "#a6a199",
         "secondaryColors": [
             "#948679",
             "#605a54"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Saint%27s_Boots"
     },
     {
-        "name": "Shaman'S Tabi Socks",
+        "name": "Shaman's Tabi Socks",
         "image": "Legs/Shaman's Tabi Socks.png",
         "primaryColor": "#a99a8e",
         "secondaryColors": [
             "#85796f",
             "#635c55"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Shaman%27s_Tabi_Socks"
     },
     {
-        "name": "Venerable Sage'S Boots",
+        "name": "Venerable Sage's Boots",
         "image": "Legs/Venerable Sage's Boots.png",
         "primaryColor": "#ab998b",
         "secondaryColors": [
             "#9f8a76",
             "#88776a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Boots"
     },
     {
-        "name": "Wizard'S Shoes",
+        "name": "Wizard's Shoes",
         "image": "Legs/Wizard's Shoes.png",
         "primaryColor": "#e5dfdb",
         "secondaryColors": [
             "#9d9690",
             "#615e5b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://demonssouls.fandom.com/wiki/Wizard%27s_Shoes"
     },
     {
         "name": "Adjudicators Shield ",
@@ -727,7 +799,8 @@
             "#8d7250",
             "#8f6632"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Adjudicators_Shield_"
     },
     {
         "name": "Buckler",
@@ -737,7 +810,8 @@
             "#92847a",
             "#867970"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Buckler"
     },
     {
         "name": "Dark Silver Shield",
@@ -747,7 +821,8 @@
             "#5a5652",
             "#44403e"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Shield"
     },
     {
         "name": "Dregling Shield Small",
@@ -757,7 +832,8 @@
             "#584434",
             "#493625"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Dregling_Shield_Small"
     },
     {
         "name": "Heater Shield",
@@ -767,7 +843,8 @@
             "#847879",
             "#605757"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Heater_Shield"
     },
     {
         "name": "Hoplite Shield",
@@ -777,7 +854,8 @@
             "#8d724f",
             "#6b5e49"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Hoplite_Shield"
     },
     {
         "name": "Kite Shield",
@@ -787,7 +865,8 @@
             "#6a4e1d",
             "#544f4c"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Kite_Shield"
     },
     {
         "name": "Knights Shield Standar Shield ",
@@ -797,7 +876,8 @@
             "#8e714d",
             "#5a534d"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Knights_Shield_Standar_Shield_"
     },
     {
         "name": "Large Brushwood Shield",
@@ -807,7 +887,8 @@
             "#61584f",
             "#5f4935"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Large_Brushwood_Shield"
     },
     {
         "name": "Leather Shield ",
@@ -817,7 +898,8 @@
             "#6c5f58",
             "#6c5d54"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Leather_Shield_"
     },
     {
         "name": "Purple Flame Shield",
@@ -827,7 +909,8 @@
             "#b18d89",
             "#b08a71"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Purple_Flame_Shield"
     },
     {
         "name": "Rune Shield ",
@@ -837,17 +920,19 @@
             "#6b4e25",
             "#684e27"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Rune_Shield_"
     },
     {
-        "name": "Soldier'S Shield",
+        "name": "Soldier's Shield",
         "image": "Shields/Soldier's Shield.png",
         "primaryColor": "#9e988f",
         "secondaryColors": [
             "#5c5751",
             "#47423b"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Soldier%27s_Shield"
     },
     {
         "name": "Spiked Shield",
@@ -857,7 +942,8 @@
             "#585650",
             "#47423a"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Spiked_Shield"
     },
     {
         "name": "Steel Shield",
@@ -867,7 +953,8 @@
             "#5f574f",
             "#4c423b"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Steel_Shield"
     },
     {
         "name": "Tower Shield",
@@ -877,7 +964,8 @@
             "#877658",
             "#5a554e"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Tower_Shield"
     },
     {
         "name": "Wooden Shield Small",
@@ -887,7 +975,8 @@
             "#615750",
             "#534338"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://demonssouls.fandom.com/wiki/Wooden_Shield_Small"
     },
     {
         "name": "Babys Nail",
@@ -897,7 +986,8 @@
             "#624634",
             "#4c3222"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Babys_Nail"
     },
     {
         "name": "Bastard Sword",
@@ -907,7 +997,8 @@
             "#564f51",
             "#433e40"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Bastard_Sword"
     },
     {
         "name": "Battle Axe",
@@ -917,7 +1008,8 @@
             "#615a57",
             "#674633"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Battle_Axe"
     },
     {
         "name": "Blind",
@@ -927,7 +1019,8 @@
             "#42423d",
             "#3e4241"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Blind"
     },
     {
         "name": "Blueblood Sword",
@@ -937,7 +1030,8 @@
             "#4c4a47",
             "#47423d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Blueblood_Sword"
     },
     {
         "name": "Bramd",
@@ -947,7 +1041,8 @@
             "#615747",
             "#5a4b35"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Bramd"
     },
     {
         "name": "Broadsword",
@@ -957,7 +1052,8 @@
             "#504e4c",
             "#3c3c41"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Broadsword"
     },
     {
         "name": "Broken Sword",
@@ -967,7 +1063,8 @@
             "#52443b",
             "#463730"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Broken_Sword"
     },
     {
         "name": "Claws",
@@ -977,7 +1074,8 @@
             "#5f5850",
             "#49433b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Claws"
     },
     {
         "name": "Claymore",
@@ -987,7 +1085,8 @@
             "#565454",
             "#5f4b2f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Claymore"
     },
     {
         "name": "Club",
@@ -997,7 +1096,8 @@
             "#483621",
             "#312616"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Club"
     },
     {
         "name": "Compound Long Bow",
@@ -1007,7 +1107,8 @@
             "#503018",
             "#4d3019"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Compound_Long_Bow"
     },
     {
         "name": "Compound Short Bow",
@@ -1017,7 +1118,8 @@
             "#4a321d",
             "#433024"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Compound_Short_Bow"
     },
     {
         "name": "Crescent Axe",
@@ -1027,7 +1129,8 @@
             "#65625d",
             "#635b54"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Crescent_Axe"
     },
     {
         "name": "Dagger",
@@ -1037,7 +1140,8 @@
             "#595351",
             "#684632"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Dagger"
     },
     {
         "name": "Demonbrandt",
@@ -1047,7 +1151,8 @@
             "#b1a28f",
             "#988771"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Demonbrandt"
     },
     {
         "name": "Dozer Axe",
@@ -1057,7 +1162,8 @@
             "#49403e",
             "#413f40"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Dozer_Axe"
     },
     {
         "name": "Epee Rapier",
@@ -1067,7 +1173,8 @@
             "#634b2a",
             "#49331c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Epee_Rapier"
     },
     {
         "name": "Estoc",
@@ -1077,7 +1184,8 @@
             "#5e5e5a",
             "#5c5c58"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Estoc"
     },
     {
         "name": "Flamberge",
@@ -1087,7 +1195,8 @@
             "#504e4c",
             "#4d4137"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Flamberge"
     },
     {
         "name": "Gargoyle Crossbow",
@@ -1097,7 +1206,8 @@
             "#57524e",
             "#584336"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Gargoyle_Crossbow"
     },
     {
         "name": "Great Axe",
@@ -1107,7 +1217,8 @@
             "#5d5850",
             "#4d4338"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Great_Axe"
     },
     {
         "name": "Great Club",
@@ -1117,7 +1228,8 @@
             "#635043",
             "#684935"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Great_Club"
     },
     {
         "name": "Guillotine Axe",
@@ -1127,7 +1239,8 @@
             "#585652",
             "#49423b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Guillotine_Axe"
     },
     {
         "name": "Heavy Crossbow",
@@ -1137,7 +1250,8 @@
             "#554735",
             "#463729"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Heavy_Crossbow"
     },
     {
         "name": "Hiltless",
@@ -1147,7 +1261,8 @@
             "#5c5956",
             "#644a37"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Hiltless"
     },
     {
         "name": "Insanity Catalyst",
@@ -1157,7 +1272,8 @@
             "#6c614e",
             "#644a29"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Insanity_Catalyst"
     },
     {
         "name": "Iron Knuckles",
@@ -1167,7 +1283,8 @@
             "#554337",
             "#48352a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Iron_Knuckles"
     },
     {
         "name": "Istarelle",
@@ -1177,7 +1294,8 @@
             "#5f5b55",
             "#504231"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Istarelle"
     },
     {
         "name": "Kilij",
@@ -1187,7 +1305,8 @@
             "#6a5b46",
             "#564738"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Kilij"
     },
     {
         "name": "Kris Blade",
@@ -1197,7 +1316,8 @@
             "#494a49",
             "#534137"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Kris_Blade"
     },
     {
         "name": "Lava Bow",
@@ -1207,7 +1327,8 @@
             "#413831",
             "#0000ff"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Lava_Bow"
     },
     {
         "name": "Light Crossbow",
@@ -1217,7 +1338,8 @@
             "#6c5c4a",
             "#5d4933"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Light_Crossbow"
     },
     {
         "name": "Long Bow",
@@ -1227,7 +1349,8 @@
             "#744c2f",
             "#744829"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Long_Bow"
     },
     {
         "name": "Long Sword",
@@ -1237,7 +1360,8 @@
             "#5b5753",
             "#4c4339"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Long_Sword"
     },
     {
         "name": "Mace",
@@ -1247,7 +1371,8 @@
             "#4d413c",
             "#49413d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Mace"
     },
     {
         "name": "Magic Sword Makoto",
@@ -1257,7 +1382,8 @@
             "#61574d",
             "#5d544b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Magic_Sword_Makoto"
     },
     {
         "name": "Mail Breaker",
@@ -1267,7 +1393,8 @@
             "#5d5657",
             "#5a5556"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Mail_Breaker"
     },
     {
         "name": "Meat Cleaver",
@@ -1277,7 +1404,8 @@
             "#49413d",
             "#433732"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Meat_Cleaver"
     },
     {
         "name": "Mirdan Hammer3",
@@ -1287,7 +1415,8 @@
             "#52504c",
             "#42413b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Hammer3"
     },
     {
         "name": "Morning Star",
@@ -1297,7 +1426,8 @@
             "#55514c",
             "#4d423b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Morning_Star"
     },
     {
         "name": "Northern Regalia",
@@ -1307,7 +1437,8 @@
             "#b09d88",
             "#9c8b77"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Northern_Regalia"
     },
     {
         "name": "Penetrating Word",
@@ -1317,7 +1448,8 @@
             "#535050",
             "#515050"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Penetrating_Word"
     },
     {
         "name": "Phosporescent Pole",
@@ -1327,7 +1459,8 @@
             "#584a33",
             "#45392a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Phosporescent_Pole"
     },
     {
         "name": "Pickaxe",
@@ -1337,7 +1470,8 @@
             "#4c4643",
             "#4e4239"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Pickaxe"
     },
     {
         "name": "Rapier",
@@ -1347,17 +1481,19 @@
             "#615a55",
             "#514439"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Rapier"
     },
     {
-        "name": "Reaper'S Scythe",
+        "name": "Reaper's Scythe",
         "image": "Weapons/Reaper's Scythe.png",
         "primaryColor": "#a3895e",
         "secondaryColors": [
             "#8d744d",
             "#6b4e31"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Reaper%27s_Scythe"
     },
     {
         "name": "Ritual Blade",
@@ -1367,7 +1503,8 @@
             "#58554c",
             "#59482f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Ritual_Blade"
     },
     {
         "name": "Rune Sword",
@@ -1377,7 +1514,8 @@
             "#4a3314",
             "#4d3211"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Rune_Sword"
     },
     {
         "name": "Scimitar 1",
@@ -1387,7 +1525,8 @@
             "#635f61",
             "#645d5f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Scimitar_1"
     },
     {
         "name": "Scrapping Spear",
@@ -1397,7 +1536,8 @@
             "#5c544e",
             "#514438"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Scrapping_Spear"
     },
     {
         "name": "Short Bow",
@@ -1407,7 +1547,8 @@
             "#493723",
             "#4e341e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Short_Bow"
     },
     {
         "name": "Short Spear",
@@ -1417,7 +1558,8 @@
             "#53524b",
             "#44433c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Short_Spear"
     },
     {
         "name": "Short Sword",
@@ -1427,7 +1569,8 @@
             "#524e4d",
             "#5e443b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Short_Sword"
     },
     {
         "name": "Shotel",
@@ -1437,7 +1580,8 @@
             "#5d5956",
             "#564436"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Shotel"
     },
     {
         "name": "Silver Catalyst",
@@ -1447,7 +1591,8 @@
             "#62564f",
             "#4e433d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Silver_Catalyst"
     },
     {
         "name": "Spiral Rapier",
@@ -1457,7 +1602,8 @@
             "#4c4b4b",
             "#45413b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Spiral_Rapier"
     },
     {
         "name": "Storm Ruler",
@@ -1467,7 +1613,8 @@
             "#59534b",
             "#4d443a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Storm_Ruler"
     },
     {
         "name": "Uchigatana",
@@ -1477,7 +1624,8 @@
             "#9b9998",
             "#5a5754"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Uchigatana"
     },
     {
         "name": "War Pick",
@@ -1487,7 +1635,8 @@
             "#504c49",
             "#46413e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/War_Pick"
     },
     {
         "name": "War Scythe",
@@ -1497,7 +1646,8 @@
             "#474744",
             "#464544"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/War_Scythe"
     },
     {
         "name": "Winged Spear",
@@ -1507,7 +1657,8 @@
             "#56442c",
             "#46321b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Winged_Spear"
     },
     {
         "name": "Wooden Catalyst",
@@ -1517,6 +1668,7 @@
             "#51311b",
             "#4f301b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://demonssouls.fandom.com/wiki/Wooden_Catalyst"
     }
 ]
