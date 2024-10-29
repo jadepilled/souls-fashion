@@ -283,6 +283,7 @@ function updateMatchingItems() {
     // Find items that match both color and name and have color distance below the threshold
     const matchingItems = findMatchingItems(selectedColor, secondaryWeight, query);
     displayItems(matchingItems);
+    initializeItemGrid();
 }
 
 // Function to toggle filters
@@ -330,5 +331,120 @@ document.getElementById("clearFilter").addEventListener("click", () => {
   updateMatchingItems();
 });
 
+// Function to load outfit slots with placeholders and selected items
+function loadOutfitFromStorage() {
+  const types = ["head", "chest", "hands", "legs", "weapons", "shields"];
+  const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {
+      headSlot: null, chestSlot: null, handsSlot: null, legsSlot: null, weaponsSlot: null, shieldsSlot: null
+  };
+
+  const outfitContainer = document.getElementById("outfitSlots");
+  outfitContainer.innerHTML = ''; // Clear existing items
+
+  types.forEach(type => {
+      const slotId = `${type}Slot`;
+      const item = outfitSlots[slotId];
+
+      const slot = document.createElement("div");
+      card.classList.add("slot");
+
+      if (item) {
+          const img = document.createElement("img");
+          img.src = `pages/eldenring/icons/${item.image}`;
+          img.alt = item.name;
+
+          const name = document.createElement("p");
+          name.textContent = item.name;
+
+          slot.appendChild(img);
+          slot.appendChild(name);
+      } else {
+          const placeholder = document.createElement("p");
+          placeholder.classList.add("placeholder-tile");
+          placeholder.textContent = `No ${type} item selected`;
+          slot.appendChild(placeholder);
+      }
+
+      outfitContainer.appendChild(card);
+  });
+}
+
 // Fetch items on page load
 window.onload = fetchItems;
+
+// Function to load outfit slots with placeholders and selected items
+function loadOutfitFromStorage() {
+  const types = ["head", "chest", "hands", "legs", "weapons", "shields"];
+  const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {
+      headSlot: null, chestSlot: null, handsSlot: null, legsSlot: null, weaponsSlot: null, shieldsSlot: null
+  };
+
+  const outfitContainer = document.getElementById("outfit-slots");
+  outfitContainer.innerHTML = ''; 
+
+  types.forEach(type => {
+      const slotId = `${type}Slot`;
+      const item = outfitSlots[slotId];
+
+      const caslotrd = document.createElement("div");
+      slot.classList.add("slot");
+
+      if (item) {
+          const img = document.createElement("img");
+          img.src = `pages/eldenring/icons/${item.image}`;
+          img.alt = item.name;
+
+          const name = document.createElement("p");
+          name.textContent = item.name;
+
+          slot.appendChild(img);
+          slot.appendChild(name);
+      } else {
+          const placeholder = document.createElement("p");
+          placeholder.classList.add("placeholder-tile");
+          placeholder.textContent = `No ${type} item selected`;
+          slot.appendChild(placeholder);
+      }
+
+      outfitContainer.appendChild(card);
+  });
+}
+
+// Function to add item to simulator and replace placeholder with selected item
+function addItemToSimulator(item) {
+  const slotId = `${item.type}Slot`;
+
+  const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {
+      headSlot: null, chestSlot: null, handsSlot: null, legsSlot: null, weaponsSlot: null, shieldsSlot: null
+  };
+
+  outfitSlots[slotId] = { name: item.name, image: item.image };
+  localStorage.setItem('outfitSlots', JSON.stringify(outfitSlots));
+
+  loadOutfitFromStorage(); // Refresh simulator view
+}
+
+      // Add event listeners to item cards in itemGrid for sending items to the outfit simulator
+      function initializeItemGrid() {
+        const itemGrid = document.getElementById('itemGrid');
+
+        itemGrid.querySelectorAll('.item-card').forEach(card => {
+            card.addEventListener('contextmenu', (event) => {
+                event.preventDefault();
+
+                // Find the item in the `items` array
+                const itemInfo = card.querySelector('.item-info');
+                const titleContainer  = itemInfo.querySelector('.title-container');
+                const title = titleContainer.querySelector('a').textContent;
+                const item = items.find(i => i.name === title);
+                if (item) {
+                    showContextMenu(event, 'send', item);
+                }
+            });
+        });
+    }
+
+// Initialize outfit display on load
+document.addEventListener("DOMContentLoaded", () => {
+  loadOutfitFromStorage();
+});
