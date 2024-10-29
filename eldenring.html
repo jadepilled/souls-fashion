@@ -164,10 +164,10 @@
             To commit an item to the outfit simulator, right click and select 'send to outfit simulator'.
           </span> -->
           <div class="pinned-buttons">
-            <a href="simulator_eldenring.html" class="link">
+            <!-- <a href="simulator_eldenring.html" class="link">
               View Presets
-            </a>
-            <button onclick="window.location.href='simulator_eldenring.html'">Save</button>
+            </a> -->
+            <button onclick="window.location.href='simulator_eldenring.html'">Export</button>
           </div>
         </div>
         <div class="slots" id="outfitSlots">
@@ -283,6 +283,7 @@
         pinned.style.opacity = "1";
         pinned.style.display = "block";
         itemGrid.style.marginLeft = "70px"; // Change to desired value
+        nav.classList.add('hidden-on-scroll');
       });
 
       // Hide the pinned element and reset margin when not hovering
@@ -290,6 +291,7 @@
         pinned.style.opacity = "0";
         pinned.style.display = "none";
         itemGrid.style.marginLeft = "0px"; 
+        nav.classList.remove('hidden-on-scroll');
       });
 
       // window.addEventListener("scroll", () => {
@@ -328,8 +330,8 @@
         else {
           // User is scrolling up
           nav.classList.remove('hidden-on-scroll');
-          // document.querySelector(".pinned").style.opacity = "0";
-          // document.querySelector(".item-grid").style.marginLeft = "0px"; // Reset margin-left if needed
+          document.querySelector(".pinned").style.opacity = "0";
+          document.querySelector(".item-grid").style.marginLeft = "0px"; // Reset margin-left if needed
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure scrollTop doesn't go negative
       });

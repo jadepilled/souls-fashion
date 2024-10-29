@@ -488,7 +488,7 @@ body.light-mode .dropdown .dropbtn {
   border: 1px solid #555; /* Dark mode card border */
   padding: 10px;
   width: 200px;
-  height: 300px;
+  height: auto;
   text-align: center;
   color: #fff; /* Dark mode card text color */
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -631,8 +631,9 @@ body.light-mode .sidebar {
 }
 
 .hover-trigger {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 6rem;
   height: 100rem;
 }
@@ -669,38 +670,30 @@ body.light-mode .sidebar {
 }
 
 .pinned-buttons {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   gap: 5px;
-  margin-bottom: 5px;
-  width: 100%; /* Ensure it stays within the container */
-  max-width: 100%; /* Prevents overflow beyond its container */
-  overflow: hidden; /* Hides any overflow */
-  flex-wrap: wrap; /* Allows buttons to wrap if they don’t fit in one row */
-  box-sizing: border-box; /* Includes padding and border in the width */
 }
 
 .pinned-buttons button {
   all: unset;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid #444;
-  border-radius: 10px;
-  padding: 5px;
-  font-size: 12px;
-  box-sizing: border-box; /* Keeps padding within the button's width */
-  width: 100%;
+  background-color: transparent;
+  width: 80px;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
 }
 
 .pinned-buttons button:hover {
   background-color: #444;
   border-color: 1px solid white;
-}
-
-.pinned p {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 .slots {
@@ -714,8 +707,8 @@ body.light-mode .sidebar {
   background-color: transparent;
   width: 85px;
   height: 85px;
-  border: 1px solid #555;
-  border-radius: 10px;
+  /* border: 1px solid #555; */
+  /* border-radius: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -735,12 +728,14 @@ body.light-mode .sidebar {
   height: auto; /* Maintain aspect ratio of the image */
   background-color: #000;
   z-index: 1000;
+  border: 1px solid #555;
+  border-radius: 10px;
 }
 
-.slot:hover {
+/* .slot:hover {
   background-color: #666;
   cursor: pointer;
-}
+} */
 
 .back-to-top-button {
   all: unset;
@@ -962,21 +957,12 @@ body.light-mode .custom-context-menu ul li:hover {
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Add shadow to make it more distinct */
 }
 
-.centered-link {
-  text-align: center;
-  margin: 20px 0;
-}
-
 .simulator-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin: 20px auto;
-  max-width: 600px; /* Adjust as needed */
-  margin-bottom: 10rem;
+  margin: 2rem;
 }
 
 /* Specific positioning for each item */
@@ -1117,27 +1103,6 @@ caret-color: transparent;
   color: #0056b3;
 }
 
-
-#backToMain {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  font-size: 16px;
-  color: inherit;
-  text-decoration: underline;
-  z-index: 1100; /* Ensure it is above other elements */
-  cursor: pointer;
-  background-color: rgba(34, 34, 34, 0.9);
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: color 0.3s ease;
-}
-
-.centered-link {
-  text-align: center;
-  margin: 20px 0;
-}
-
 #downloadImageLink {
   color: inherit;
   cursor: pointer;
@@ -1148,6 +1113,21 @@ caret-color: transparent;
 
 #downloadImageLink:hover {
   color: #0056b3;
+}
+
+.outfit-sim-header {
+  margin-top: 3rem
+}
+
+.download-image {
+  margin: 1rem;
+}
+
+.outfit-sim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
 }
 
 @media (min-width: 1200px) {
@@ -1324,7 +1304,10 @@ caret-color: transparent;
   }
 
   .pinned-buttons button {
+    width: 3rem;
     height: 3rem;
+    font-size: 0.75rem;
+
   }
 
   .slot {
