@@ -474,6 +474,22 @@
   
           // Hide the context menu after sending the item
           document.getElementById('contextMenu').style.display = 'none';
+
+          // Show the elements and apply the styles
+          pinned.style.opacity = "1";
+          pinned.style.display = "block";
+          itemGrid.style.marginTop = "20px";
+          itemGrid.style.marginLeft = "70px"; // Change to desired value
+          nav.classList.add('hidden-on-scroll');
+
+          // Set a timer to hide the elements and revert styles after 5 seconds
+          setTimeout(() => {
+              pinned.style.opacity = "0";
+              pinned.style.display = "none";
+              itemGrid.style.marginTop = ""; // Reset to original or desired default
+              itemGrid.style.marginLeft = ""; // Reset to original or desired default
+              nav.classList.remove('hidden-on-scroll');
+          }, 700);
       }
   
       // Add event listeners to item cards in itemGrid for sending items to the outfit simulator
