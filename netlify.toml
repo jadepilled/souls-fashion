@@ -1,0 +1,5 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+    Expires = "Wed, 21 Oct 2030 07:28:00 GMT"
