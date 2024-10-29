@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  user-select: none;
+}
+
 h2 {
   letter-spacing: -4px;
   line-height: 0.5;
@@ -17,7 +22,6 @@ h3 {
 body {
   font-family: "Spectral", "fallback", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding: 20px;
   background-color: #121212; /* Dark mode background by default */
   color: #ffffff; /* Dark mode text color by default */
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -26,56 +30,401 @@ body.light-mode {
   background-color: #f5f5f5; /* Light mode background */
   color: #000000; /* Light mode text color */
 }
-.topnav {
-  background-color: #242424; /* Dark mode navbar background */
+
+.navigation {
   display: flex;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  top: 0;
+  z-index: 1000;
+  position: fixed; /* Fixes the position at the top */
+  background-color: #121212;
+  width: 100%;
+  padding-right: 7%;
+  padding-left: 7%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
+
+body.light-mode .navigation {
+  background-color: #ffffff;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: none;
+  margin: 0;
+  height: 65px;
+  width: 100%;
+  padding: 0;
+}
+
+.topnav-simple {
+  display: flex;
+  align-items: center;
+  background-color: none;
+  margin: 0;
+  height: 65px;
+  width: 100%;
+  padding: 0;
+}
+
 body.light-mode .topnav {
   background-color: #fff; /* Light mode navbar background */
 }
-.topnav a {
-  display: inline-block; /* Ensure that all links and dropdowns behave inline */
-  float: left;
-  color: #f2f2f2; /* Dark mode link color */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+
+.links-group {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 50px;
+  gap: 4%;
+  align-items: center;
 }
-body.light-mode .topnav a {
+
+.links-group a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.FashionSouls {
+  display: none;
+}
+
+.FashionSouls-simple {
+  margin-bottom: 50px;
+}
+
+.FashionSouls-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 12rem;
+}
+
+.FashionSouls-nav h2 {
+  letter-spacing: -1.5px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.FashionSouls-nav h3 {
+  letter-spacing: -0.5px;
+  font-size: 10px;
+}
+
+.FashionSouls-nav:hover {
+  text-decoration: none;
+}
+
+body.light-mode .links-group a {
   color: #000; /* Light mode link color */
 }
-.topnav a:hover {
-  background-color: #ddd;
+
+body.light-mode .links-group a:hover {
+  text-decoration: underline;
+}
+
+.mode-switch {
+  all: unset; /* Resets most default styles */
+  cursor: pointer;
+  text-align: center;
+  color: #f2f2f2; /* Dark mode link color */
+  width: 100px;
+  margin-left: auto; /* Pushes the element to the far right */
+  font-size: 14px;
+}
+
+.mode-switch:hover {
+  text-decoration: underline;
+}
+
+body.light-mode .mode-switch {
+  color: #000; /* Light mode link color */
+}
+
+.links-group a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: white;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.round-button {
+  background-color: rgba(18, 18, 18, 1);
+  color: white;
+  border: 1px solid #555;
+  border-radius: 40px;
+  padding: 10px;
+  margin: 10px;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.round-button:hover {
+  border: 1px solid white;
+  background-color: #555;
+}
+
+body.light-mode .round-button {
+  background-color: white;
+  border: 1px solid #555;
   color: black;
 }
-.topnav a.active {
-  background-color: #2e2e2e; /* Dark mode active link color */
+
+body.light-mode .round-button:hover {
+  background-color: #555;
+  border: 1px solid black;
   color: white;
 }
-body.light-mode .topnav a.active {
-  background-color: #d3d3d3; /* Light mode active link color */
-  color: black; /* Light mode active text color */
-}
-.dropdown {
-  display: inline-block; /* Ensure that all links and dropdowns behave inline */
-  float: left;
+
+.round-text-area {
+  resize: none !important;
   overflow: hidden;
-  margin-top: 0px;
+  background-color: white;
+  color: black;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 30rem;
+  height: 10rem;
 }
-.dropdown .dropbtn {
-  padding: 0px 16px;
-  text-decoration: none;
-  font-size: 17px;
+
+.round-text-area:hover {
+  border: 1px solid white;
+}
+
+body.light-mode .round-text-area {
+  background-color: white;
+  border: 1px solid #555;
+  color: black;
+}
+
+.round-input {
+  background-color: white;
+  color: black;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+}
+
+.round-input:hover {
+  border: 1px solid white;
+}
+
+body.light-mode .round-input {
+  background-color: white;
+  border: 1px solid #555;
+  color: black;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px; /* Space between items */
+  padding: 5px; /* Optional: add padding around the content */
+  border-radius: 5px;
+  background-color: none;
+  color: #fff; /* Dark mode input text */
+  border: 1px solid #555; /* Dark mode border */
+  height: 50px;
+  width: 600px;
+}
+
+.search-bar:hover {
+  border: 1px solid #999;
+}
+
+body.light-mode .search-bar:hover {
+  border: 1px solid black;
+}
+
+.search-bar-buttons {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.search-bar-buttons button {
   border: none;
   outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 1);
+  height: 40px;
   color: white;
+  border: 1px solid #555; /* Dark mode border */
+  border-radius: 20px; /* Adjust this value for roundness */
+  width: 60px;
+}
+
+body.light-mode .search-bar-buttons button {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .search-bar-buttons button:hover {
+  border: 2px solid #1358a9;
+  background-color: #005cc8;
+  color: white;
+}
+
+.search-bar-buttons button:hover {
+  border: 1px solid #555; /* Dark mode border */
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: #333; /* Dark mode input background */
+  height: 40px;
+  color: white;
+  border-radius: 20px; /* Adjust this value for roundness */
+  width: 60px;
+}
+
+.search-input {
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  font-size: 14px;
+}
+
+body.light-mode .search-bar {
+  background-color: #fff; /* Light mode input background */
+  color: #000; /* Light mode input text */
+  border: 1px solid #ddd; /* Light mode border */
+}
+
+body.light-mode .search-bar input {
+  color: #000;
+}
+
+.color-picker-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-picker-group label {
+  margin-bottom: 0px;
+  font-size: 10px;
+  position: absolute;
+  top: 3px;
+}
+
+.color-picker {
+  all: unset;
+  width: 37px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #121212;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+body.light-mode .color-picker {
+  border: 2px solid white;
+}
+
+.color-picker:hover {
+  border: 2px solid #555;
+}
+
+body.light-mode .color-picker:hover {
+  border: 2px solid #999;
+}
+
+.filters-group {
+  display: inline-flex; /* Use flex for layout */
+  justify-content: center; /* Distribute space between items */
+  gap: 3px;
+  align-items: center;
+  background-color: none; /* Dark mode background by default */
+  height: 60px;
+  width: 100%;
+}
+
+.filters-group button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 1);
+  color: white;
+  border: 1px solid #555; /* Dark mode border */
+  border-radius: 20px; /* Adjust this value for roundness */
+  height: 30px;
+  width: 70px;
+  font-size: 12px;
+}
+
+.filters-group #clearFilter {
+  width: 90px;
+}
+
+.filters-group button:hover {
+  background-color: #333; /* Dark mode input background */
+}
+
+.filters-group button.active {
+  background-color: #007bff;
+}
+
+body.light-mode .filters-group button {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .filters-group button:hover {
+  border: 2px solid #1358a9;
+  background-color: #005cc8;
+  color: white;
+}
+
+body.light-mode .filters-group {
+  background-color: white;
+}
+
+body.light-mode .filters-group button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.dropdown .dropbtn {
+  all: unset;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+  outline: none;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #f2f2f2; /* Dark mode link color */
 }
 body.light-mode .dropdown .dropbtn {
   color: #000; /* Change to black in light mode for visibility */
@@ -87,10 +436,11 @@ body.light-mode .dropdown .dropbtn {
   background-color: #bfbfbf;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1000;
   padding: 0px 0; /* Add padding to dropdown content */
   margin: 0; /* Remove margin to prevent excess height */
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -105,44 +455,12 @@ body.light-mode .dropdown .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.mode-switch {
-  float: right; /* Align to the right in the navbar */
-  margin: 14px 16px; /* Adjust margins for spacing */
-  position: absolute;
-  right: 25px;
-}
-.mode-switch button {
-  cursor: pointer;
-  padding: 6px 11px;
-  background-color: #444; /* Default button background */
-  color: #fff; /* Default button text color */
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-body.light-mode .mode-switch button {
-  background-color: #ccc; /* Light mode button background */
-  color: #000; /* Light mode button text color */
-}
-.search-bar {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.search-bar input {
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #333; /* Dark mode input background */
-  color: #fff; /* Dark mode input text */
-  border: 1px solid #555; /* Dark mode border */
-}
-body.light-mode .search-bar input {
-  background-color: #fff; /* Light mode input background */
-  color: #000; /* Light mode input text */
-  border: 1px solid #ddd; /* Light mode border */
-}
+
 .item-grid {
   text-align: center;
+  margin-top: 80px;
+  /* margin-left: 80px; */
+  margin-top: 180px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -150,64 +468,316 @@ body.light-mode .search-bar input {
   align-items: center; /* centers items vertically */
 }
 .item-card {
-  background-color: #333; /* Dark mode card background */
+  display: flex;
+  flex-direction: column;
+  background-color: none;
   border: 1px solid #555; /* Dark mode card border */
   padding: 10px;
   width: 200px;
   height: 300px;
   text-align: center;
   color: #fff; /* Dark mode card text color */
-  cursor: pointer;
-  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border-radius: 10px;
 }
+
+.item-card-simple {
+  display: flex;
+  flex-direction: column;
+  background-color: none;
+  border: 1px solid #555; /* Dark mode card border */
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  color: #fff; /* Dark mode card text color */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  background-color: #333; /* Dark mode card background */
+  border: 1px solid #555; /* Dark mode card border */
+}
+
 .item-card:hover {
-  background-color: #585858;
+  background-color: #4b4b4b;
   color: white;
   border-color: white;
   border: 2px solid white;
   transform: scale(1.1);
 }
+
+.item-card.active {
+  border: 2px solid blue; /* or any other visual indicator */
+  background-color: lightgray;
+}
+
 body.light-mode .item-card {
   background-color: white; /* Light mode card background */
   border: 1px solid #ddd; /* Light mode card border */
   color: #000; /* Light mode card text color */
 }
+
+body.light-mode .item-card-simple {
+  background-color: white; /* Light mode card background */
+  border: 1px solid #ddd; /* Light mode card border */
+  color: #000; /* Light mode card text color */
+}
+
 .item-card img {
   max-width: 100%;
   height: auto;
 }
-.color-bar {
+
+.image-container,
+.title-container,
+.color-bar-container {
   display: flex;
-  margin-top: 5px;
-}
-.color-bar div {
-  flex: 1;
-  height: 20px;
-}
-.copyright {
-  position: fixed; /* Fix to the bottom */
-  bottom: 0; /* Position at the bottom of the viewport */
-  left: 0; /* Align to the left */
-  right: 0; /* Align to the right */
-  text-align: center; /* Center the copyright text */
-  margin: 0; /* Remove margin */
-  padding: 10px 0; /* Padding for spacing */
-  font-size: 14px; /* Font size for the copyright */
-  color: #333333; /* Color for the copyright text */
-  background-color: rgba(
-    18,
-    18,
-    18,
-    0.2
-  ); /* Background color with some transparency */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.color-picker {
+.title-container {
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.color-bar {
+  display: inline-flex;
+  margin-top: 5px;
+  width: 100%; /* Ensure it stays full width */
+  justify-content: space-around;
+}
+
+.color-bar div {
+  flex: 1;
+  height: 30px;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+
+.color-bar div:hover {
+  border: 3px solid #ffffff;
+  transform: scale(1.1);
+}
+
+body.light-mode .color-bar div:hover {
+  border: 3px solid #0075ff;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 10px; /* Adds space between image, title, and color bar */
+  cursor: pointer;
+}
+
+.sidebar {
+  display: flex;
+  text-align: center;
+  position: fixed; /* Fix to the bottom */
+  top: 25%;
+  right: auto; /* Not necessary, but can be set for clarity */
+  padding: 10px; /* Padding for spacing */
+  justify-content: center; /* Align items to the left */
+  color: white;
+  background-color: #121212; /* Dark mode background by default */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  z-index: 1000;
+  transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
+  transform: translateX(0); /* Default position */
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+body.light-mode .sidebar {
+  color: black;
+  background-color: white;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%); /* Move out of view */
+}
+
+#toggleSidebar {
+  position: fixed; /* Keep the toggle button in view */
+  top: 170px;
+  right: auto; /* Not necessary, but can be set for clarity */
+  z-index: 1001; /* Above sidebar */
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 1);
+  height: 40px;
+  color: white;
+  border: 1px solid #555; /* Dark mode border */
+  border-radius: 20px; /* Adjust this value for roundness */
+  width: 60px;
+  font-size: 12px;
+}
+
+.hover-trigger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 100rem;
+}
+
+.link {
+  all: unset;
+  font-size: 0.65rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
   text-align: center;
 }
-.slider-container {
-  text-align: center;
+
+.link:hover {
+  text-decoration: underline;
 }
+
+.pinned {
+  top: 2%;
+  position: fixed;
+  display: block;
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  z-index: 1002;
+  padding: 5px;
+  margin: 10px;
+  background-color: #121212;
+  transition: opacity 0.2s ease;
+  width: 6rem;
+}
+
+.pinned-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pinned-buttons button {
+  all: unset;
+  background-color: transparent;
+  width: 80px;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.pinned-buttons button:hover {
+  background-color: #444;
+  border-color: 1px solid white;
+}
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.slot {
+  background-color: transparent;
+  width: 85px;
+  height: 85px;
+  /* border: 1px solid #555; */
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slot p {
+  text-align: center;
+  position: absolute;
+  vertical-align: middle;
+  color: #777;
+}
+
+.slot img {
+  width: 100%; /* Make the image cover the full width */
+  height: auto; /* Maintain aspect ratio of the image */
+  background-color: #000;
+  z-index: 1000;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+
+/* .slot:hover {
+  background-color: #666;
+  cursor: pointer;
+} */
+
+.back-to-top-button {
+  all: unset;
+  font-size: 12px;
+  position: fixed;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  transition: transform 0.3s ease;
+  display: block;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+body.light-mode .back-to-top-button {
+  color: black;
+}
+
+.back-to-top-button:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.footer {
+  display: block;
+  opacity: 0;
+  font-size: 8px;
+  position: fixed;
+  bottom: 0;
+  padding: 2px;
+  background-color: none;
+  width: 100%;
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+body.light-mode .footer {
+  color: black;
+}
+
 /*styling for buttons */
 input[type="button"],
 input[type="submit"],
@@ -222,257 +792,559 @@ input[type="reset"] {
 }
 
 /*styling for inline sliders */
-
-.parent {
-  border: none;
-  text-align: center;
-  margin-top: -10px;
+.sliders {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  gap: 40px;
 }
-.child {
+
+.slider-container {
+  display: inline-flex;
+  gap: 2%;
+  align-items: center;
+}
+
+.sliders label {
+  font-size: 12px;
+}
+
+.sliders input {
+  cursor: pointer;
+  height: 10px;
+}
+
+.sliders p {
+  width: 30px;
+}
+
+/*tooltips for mouse hover  */
+.tooltip {
+  position: relative;
   display: inline-block;
-  border: none;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+  cursor: pointer;
 }
 
-/*styling for feedback form*/
-.feedback {
+.tooltip-text {
+  visibility: hidden;
+  width: 400px; /* Adjust as needed */
+  background-color: #242424;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1001;
+  top: 125%; /* Position the tooltip above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add fade transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}
+
+body.light-mode .tooltip-text {
+  background-color: white;
+  color: black;
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Position the arrow at the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #242424 transparent transparent transparent;
+}
+
+/* Show tooltip text on hover with fade-in */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* link styling for clickable item names */
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+a:active {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.hidden-on-scroll {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.show-menu {
+  display: none; /* Initially hidden */
+}
+
+.custom-context-menu {
+  all: unset;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  z-index: 9999; /* Increased to ensure it's on top */
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.75rem;
+  list-style-type: none;
+}
+
+body.light-mode .custom-context-menu {
+  background-color: white;
+  color: black;
+}
+
+.custom-context-menu ul {
+  all: unset;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.custom-context-menu ul li {
+  cursor: pointer !important;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.custom-context-menu ul li:hover {
+  background-color: #444;
+}
+
+body.light-mode .custom-context-menu ul li:hover {
+  background-color: #005cc8;
+  color: white;
+  border: 1px solid #1358a9;
+}
+
+.preset-container {
+  position: fixed;
+  bottom: 0; /* Position at the bottom of the viewport */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  background-color: rgba(34, 34, 34, 1); /* Dark background*/
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the presets horizontally */
+  gap: 20px;
+  z-index: 1000; /* Ensure it appears above other elements */
+  color: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Add shadow to make it more distinct */
+}
+
+.simulator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  margin: 2rem;
+}
+
+/* Specific positioning for each item */
+#headCard {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#weaponsCard {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#chestCard {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#shieldsCard {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#handsCard {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#legsCard {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* Larger styles for simulator items */
+#outfitSlotsSimulator .item-card {
+  font-size: 14px; /* Larger text */
+  width: 180px; /* Increase card width */
+  height: 220px; /* Increase card height */
+  padding: 10px; /* More padding */
+}
+
+#outfitSlotsSimulator .item-card img {
+  max-width: 100%; 
+  height: 150px; /* Larger icon size */
+}
+
+.preset-container {
+  position: fixed;
+  bottom: 0; /* Position at the bottom of the viewport */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  background-color: rgba(34, 34, 34, 1); /* Dark background*/
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the presets horizontally */
+  gap: 20px;
+  z-index: 1000; /* Ensure it appears above other elements */
+  color: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Add shadow to make it more distinct */
+}
+
+.preset {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin: 20px auto;
-  max-width: 600px; /* Optional: set a max width for better layout */
-
-  .feedback .form-check {
-    display: inline-block;
-    margin-right: 10px; /* Add some space between the buttons */
-  }
-
-  .feedback .form-check label {
-    margin-left: 5px;
-  }
 }
-.feedback .form-label {
-  display: block;
+
+.preset input[type="text"] {
+  width: 90%;
   margin-bottom: 5px;
-  font-weight: bold; /* Make labels bold for clarity */
-}
-
-.feedback textarea {
-  width: 100%; /* Ensure the textarea takes full width */
-  max-width: 100%;
-  resize: vertical; /* Allow only vertical resizing */
-}
-
-/* Style for dark mode */
-.feedback button {
-  margin-top: 10px;
-  background-color: #444;
-  color: white;
+  padding: 5px;
   border: none;
-  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.preset-actions {
+  margin-top: 5px;
+}
+
+.preset-actions span {
+  color: #007bff;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+color: inherit;
+  font-weight: bold;
+  padding: 5px;
+  transition: color 0.3s ease;
 }
 
-/* Hover effect */
-.feedback button:hover {
-  background-color: #666;
+.preset-actions span:hover {
+  color: #0056b3;
 }
 
-/* Style for light mode */
-body.light-mode .feedback button {
-  background-color: #ccc;
-  color: black;
-}
-
-body.light-mode .feedback button:hover {
-  background-color: #bbb;
-}
-
-.filter-buttons {
+.preset h3 {
+  cursor: text;
+margin-right:9px;
+  padding-bottom: 0px;
+margin-top:5px;
+padding-top: 10px;
   text-align: center;
-  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px; /* Set a minimum height to ensure enough space for centered editing */
 }
 
-.filter-buttons button:hover {
-  background-color: #0056b3;
-  color: white;
-  border-color: #0056b3;
+.preset h3:focus {
+  outline: none;
+  background-color: rgba(34, 34, 34, 1); /* Match the background color of presetContainer */
+  color: #fff;
+caret-color: transparent;
 }
 
-.filter-buttons button {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+#backToMain {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: inherit;
+  text-decoration: underline;
+  z-index: 1100; /* Ensure it is above other elements */
   cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  background-color: rgba(34, 34, 34, 0.9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
 }
 
-.filter-buttons button.active {
-  background-color: #007bff;
-  color: white;
-  border-color: #0056b3;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
+#backToMain:hover {
+  color: #0056b3;
 }
 
-* {
-  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+#downloadImageLink {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  /* For mobile phones */
+#downloadImageLink:hover {
+  color: #0056b3;
+}
+
+.outfit-sim-header {
+  margin-top: 3rem
+}
+
+.download-image {
+  margin: 1rem;
+}
+
+.outfit-sim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+}
+
+/* Mobile-friendly adjustments */
+@media (min-width: 0px) and (max-width: 1199px) {
   h2 {
-    font-size: 50px; /* Further decrease heading size */
+    font-size: 40px; /* Reduce font size for smaller screens */
+    margin: 0;
+    padding: 0;
   }
 
   h3 {
-    font-size: 16px; /* Further decrease heading size */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
   }
 
-  body {
-    padding: 0; /* Further reduce padding */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    margin: 0; /* Remove default margin */
-  }
-
-  .parent {
-    margin-bottom: 30px;
-  }
-
-  .topnav {
-    margin: 0; /* Ensure no margin on the navbar */
-    display: flex; /* Use flexbox layout */
-    flex-direction: row; /* Align items vertically */
-    justify-content: center; /* Center content vertically */
-    box-sizing: border-box; /* Include padding/border in width/height */
-  }
-
-  .topnav a {
-    font-size: 8px; /* Smaller font size for navigation links */
-    padding: 5px;
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center;
-    margin: 0; /* Remove any margin */
   }
 
-  .topnav button.dropbtn {
-    font-size: 8px; /* Smaller font size for navigation links */
+  .FashionSouls {
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  .FashionSouls-simple {
+    margin: 20px;
+  }
+
+  .FashionSouls-nav {
+    display: none;
+  }
+
+  .navigation {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .topnav-simple {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .links-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 0;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen */
+    height: 100%;
+    width: 200px;
+    background-color: #121212;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000; /* Above other content */
+    color: white;
+    padding: 20px;
+    padding-top: 100px;
+    font-size: 28px;
+    border: 1px solid #444;
+  }
+
+  .links-group button {
+    all: unset;
+    font-size: 14px;
+  }
+
+  body.light-mode .links-group {
+    background-color: white; /* Sidebar color */
+    border: 1px solid #444;
+  }
+
+  .links-group.show {
+    right: 0; /* Slide into view */
+  }
+
+  .show-menu {
+    display: block;
+    margin: 15px;
     padding: 5px;
-    margin: 0; /* Remove any margin */
+    border: 1px solid #555;
+    border-radius: 10px;
+    font-size: 10px;
+    height: 40px;
+    text-align: center;
+    color: #555;
+    z-index: 1001;
+    background-color: #121212;
+  }
+
+  .show-menu:hover {
+    border: 1px solid white;
+  }
+
+  body.light-mode .show-menu {
+    background-color: white;
+    border: 1px solid #444;
+  }
+
+  body.light-mode .show-menu:hover {
+    border: 1px solid black;
   }
 
   .mode-switch {
-    opacity: 50%;
-    position: fixed; /* Fixed positioning */
-    bottom: 50px; /* Adjust as needed for spacing from the top */
-    left: 0px; /* Adjust as needed for spacing from the right */
-    z-index: 1000; /* Ensure it appears above other elements */
-    margin-left: 2%;
+    width: auto;
+    font-size: 12px;
   }
 
-  .mode-switch button {
-    font-size: 10px;
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .round-button {
+    margin-left: 0;
+    margin-right: 0;
+    width: 4rem;
+  }
+
+  .round-text-area {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 8rem;
+  }
+
+  .round-input {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%; /* Full width on smaller screens */
   }
 
   .search-bar {
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
+    width: 100%; /* Full width on mobile */
   }
 
-  .color-picker input {
-    width: 100px;
-    height: 100px;
-  }
-
-  .slider-container input {
-    width: 100%;
-    height: auto;
-  }
-
-  .filter-buttons button {
-    padding: 10px;
-    font-size: 20px;
-    margin-bottom: 5px;
+  .item-grid {
+    display: inline-flex;
+    margin-top: 0;
   }
 
   .item-card {
-    width: 90px; /* Even smaller cards */
-    height: 150px; /* Adjust height */
-    font-size: 8px;
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center content vertically */
-    box-sizing: border-box; /* Include padding/border in width/height */
+    width: 40%;
+    height: auto;
   }
 
-  .color-bar div {
-    display: flex;
-    width: 100%; /* Ensure it fits within the parent */
-    height: 8px; /* Adjust height */
+  .color-picker-group {
+    flex-direction: row;
   }
 
-  .search-bar input {
-    width: calc(100% - 20px); /* Full width search input, account for padding */
+  .filters-group {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: auto;
   }
 
-  .copyright {
-    font-size: 8px;
-    color: #333333; /* Color for the copyright text */
+  .pinned {
+    top: 15%;
+    width: 60px;
+  }
+
+  .pinned-buttons button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.75rem;
+
+  }
+
+  .slot {
+    width: 50px;
     height: 50px;
   }
+
+  .back-to-top-button {
+    font-size: 10px;
+    margin: 10px;
+  }
+
+  body.light-mode .back-to-top-button {
+    color: black;
+  }
+
+  .footer {
+    font-size: 6px;
+    padding: 1px;
+  }
+
+  .sliders {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 20px;
+  }
+
+  .slider-container {
+    gap: 5%;
+  }
+
+  .tooltip-text {
+    width: 150px; /* Adjust as needed */
+  }
+
+  .hover-trigger {
+    width: 2rem;
+  }
 }
-/*tooltips for mouse hover  */
-	.tooltip {
-		position: relative;
-		display: inline-block;
-		cursor: pointer;
-	}
-
-	.tooltip-text {
-		visibility: hidden;
-		width: 400px; /* Adjust as needed */
-		background-color: #242424;
-		color: #fff;
-		text-align: center;
-		padding: 8px;
-		border-radius: 5px;
-		position: absolute;
-		z-index: 1;
-		bottom: 125%; /* Position the tooltip above the text */
-		left: 50%;
-		transform: translateX(-50%);
-		opacity: 0;
-		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add fade transition */
-	}
-
-	/* Tooltip arrow */
-	.tooltip-text::after {
-		content: "";
-		position: absolute;
-		top: 100%; /* Position the arrow at the bottom of the tooltip */
-		left: 50%;
-		margin-left: -5px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: #242424 transparent transparent transparent;
-	}
-
-	/* Show tooltip text on hover with fade-in */
-	.tooltip:hover .tooltip-text {
-		visibility: visible;
-		opacity: 1;
-	}
-	
-			/* link styling for clickable item names */
-			a:link { text-decoration: none; color: inherit; }
-			a:visited { text-decoration: none; color: inherit; }
-			a:hover { text-decoration: underline; color: inherit; }
-			a:active { text-decoration: underline; color: inherit; }

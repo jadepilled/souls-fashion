@@ -5,8 +5,8 @@ let activeFilters = new Set(); // To track active filters
 // Fisher-Yates Shuffle algorithm to randomize the order of items
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];  // Swap elements
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];  // Swap elements
   }
   return array;
 }
@@ -72,9 +72,15 @@ function calculateWeightedDistance(inputColor, primaryColor, secondaryColors, se
 function findMatchingItems(inputColor, secondaryWeight, query) {
   const lowerQuery = query.toLowerCase();
 
-  return items.map(item => {
+  let withinThresholdItems = items
+    .map(item => {
       // Calculate color distance
-      let distance = calculateWeightedDistance(inputColor, item.primaryColor, item.secondaryColors, secondaryWeight);
+      let distance = calculateWeightedDistance(
+        inputColor,
+        item.primaryColor,
+        item.secondaryColors,
+        secondaryWeight
+      );
 
       // Check if the item name matches the search query
       const nameMatch = item.name.toLowerCase().includes(lowerQuery);
@@ -83,21 +89,38 @@ function findMatchingItems(inputColor, secondaryWeight, query) {
       const typeMatch =
         activeFilters.size === 0 || activeFilters.has(item.type);
 
-      // Include items that match by name, type, and have a color distance below the threshold
+      // Include items that match by type, name, and have a color distance below the threshold
       return {
         ...item,
         distance: distance,
-        nameMatch: nameMatch,
+        nameMatch: nameMatch, // Include nameMatch here
         typeMatch: typeMatch,
       };
     })
-    .filter(
-      item =>
-        item.nameMatch &&
-        item.typeMatch &&
-        item.distance <= colorDistanceThreshold
-    )
+    .filter(item => item.typeMatch && item.distance <= colorDistanceThreshold)
     .sort((a, b) => a.distance - b.distance);
+
+  if (query.length > 0) {
+    withinThresholdItems = withinThresholdItems.filter(item => !item.nameMatch);
+
+    const itemMatch = items
+      .map(item => {
+        const nameMatch = item.name.toLowerCase().includes(lowerQuery);
+        const typeMatch =
+          activeFilters.size === 0 || activeFilters.has(item.type);
+
+        return {
+          ...item,
+          nameMatch: nameMatch,
+          typeMatch: typeMatch,
+        };
+      })
+      .filter(item => item.nameMatch && item.typeMatch);
+
+    return [...itemMatch, ...withinThresholdItems];
+  }
+
+  return withinThresholdItems;
 }
 
 // Display items in the grid
@@ -113,49 +136,40 @@ function displayItems(filteredItems) {
 
 // Function to create item cards with click event for search
 function createItemCard(item) {
-  const card = document.createElement('div');
-  card.classList.add('item-card');
+  const card = document.createElement("div");
+  card.classList.add("item-card");
 
-  const img = document.createElement('img');
+  const toggleSearch = document.getElementById("toggleSearch");
+  const searchInput = document.getElementById("searchInput");
+  const nav = document.querySelector('.navigation');
+
+  const imageContainer = document.createElement("div");
+  imageContainer.classList.add("image-container");
+  const img = document.createElement("img");
   img.src = `pages/eldenring/icons/${item.image}`;
   img.alt = item.name;
+  imageContainer.appendChild(img);
 
-  // Create an <a> tag for the item name with the link from JSON
-  const titleLink = document.createElement('a');
-  titleLink.href = item.link;
-  titleLink.textContent = item.name;
-  titleLink.target = '_blank'; // Open link in a new tab
-  titleLink.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevents triggering the tile's click event
+  const titleContainer = document.createElement("div");
+  titleContainer.classList.add("title-container");
+  const title = document.createElement("a");
+  title.textContent = item.name;
+  title.href = item.link;
+  title.target = '_blank';
+  titleContainer.appendChild(title);
+
+  title.addEventListener('click', (event) => {
+    event.stopPropagation(); 
   });
 
-  const title = document.createElement('p');
-  title.appendChild(titleLink);
 
-  // Create the color bar with clickable color divs
-  const colorBar = document.createElement('div');
-  colorBar.classList.add('color-bar');
-
-  // Primary color div with click event
-  const primaryColorDiv = document.createElement('div');
+  const colorBar = document.createElement("div");
+  colorBar.classList.add("color-bar");
+  const primaryColorDiv = document.createElement("div");
   primaryColorDiv.style.backgroundColor = item.primaryColor;
-  primaryColorDiv.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevents triggering the tile's click event
-    document.getElementById('favcolor').value = item.primaryColor;
-    updateMatchingItems(); // Trigger search with primary color
-  });
-
-  // First secondary color div with click event
-  const secondaryColorDiv1 = document.createElement('div');
+  const secondaryColorDiv1 = document.createElement("div");
   secondaryColorDiv1.style.backgroundColor = item.secondaryColors[0];
-  secondaryColorDiv1.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevents triggering the tile's click event
-    document.getElementById('favcolor').value = item.secondaryColors[0];
-    updateMatchingItems(); // Trigger search with first secondary color
-  });
-
-  // Second secondary color div with click event
-  const secondaryColorDiv2 = document.createElement('div');
+  const secondaryColorDiv2 = document.createElement("div");
   secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
   secondaryColorDiv2.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevents triggering the tile's click event
@@ -168,15 +182,71 @@ function createItemCard(item) {
   colorBar.appendChild(secondaryColorDiv1);
   colorBar.appendChild(secondaryColorDiv2);
 
-  // Append elements to the card
-  card.appendChild(img);
-  card.appendChild(title);
+  const itemInfo = document.createElement("div");
+  itemInfo.classList.add("item-info");
+  itemInfo.appendChild(imageContainer);
+  itemInfo.appendChild(titleContainer);
+
+  card.appendChild(itemInfo);
   card.appendChild(colorBar);
 
-  // Add click event for the whole card to use the primary color as default
-  card.addEventListener('click', () => {
-    document.getElementById('favcolor').value = item.primaryColor;
-    updateMatchingItems(); // Trigger search with the selected item's primary color
+  // Add click event to set the item's primary color for the search
+  itemInfo.addEventListener("click", () => {
+    searchInput.value = item.name;
+    document.getElementById("favcolor").value = item.primaryColor;
+    searchInput.disabled = false;
+    colorPicker.style.display = "none"; // Hide the color picker
+    toggleSearch.textContent = "Item"; // Set button text to "Item"
+    searchInput.placeholder = "Search by item"; // Update placeholder
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
+  });
+
+  primaryColorDiv.addEventListener("click", () => {
+    colorPicker.style.display = "inline-block";
+    toggleSearch.textContent = "Hex";
+    colorPicker.value = item.primaryColor;
+
+    document.getElementById("favcolor").value = item.primaryColor;
+    searchInput.placeholder = item.primaryColor;
+    searchInput.value = "";
+    searchInput.disabled = true;
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
+  });
+
+  secondaryColorDiv1.addEventListener("click", () => {
+    colorPicker.style.display = "inline-block";
+    toggleSearch.textContent = "Hex";
+    colorPicker.value = item.secondaryColors[0];
+
+    document.getElementById("favcolor").value = item.secondaryColors[0];
+    searchInput.placeholder = item.secondaryColors[0];
+    searchInput.value = "";
+    searchInput.disabled = true;
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
+  });
+
+  secondaryColorDiv2.addEventListener("click", () => {
+    colorPicker.style.display = "inline-block";
+    toggleSearch.textContent = "Hex";
+    colorPicker.value = item.secondaryColors[1];
+
+    document.getElementById("favcolor").value = item.secondaryColors[1];
+    searchInput.placeholder = item.secondaryColors[1];
+    searchInput.value = "";
+    searchInput.disabled = true;
+
+    nav.classList.remove('hidden-on-scroll');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
   });
 
   return card;
@@ -213,6 +283,7 @@ function updateMatchingItems() {
     // Find items that match both color and name and have color distance below the threshold
     const matchingItems = findMatchingItems(selectedColor, secondaryWeight, query);
     displayItems(matchingItems);
+    initializeItemGrid();
 }
 
 // Function to toggle filters
@@ -254,11 +325,126 @@ document.getElementById("clearFilter").addEventListener("click", () => {
 
   // Select all buttons within 'filter-button' class to remove the active state
   document
-    .querySelectorAll(".filter-buttons button")
+    .querySelectorAll(".filters-group button")
     .forEach(button => button.classList.remove("active"));
 
   updateMatchingItems();
 });
 
+// Function to load outfit slots with placeholders and selected items
+function loadOutfitFromStorage() {
+  const types = ["head", "chest", "hands", "legs", "weapons", "shields"];
+  const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {
+      headSlot: null, chestSlot: null, handsSlot: null, legsSlot: null, weaponsSlot: null, shieldsSlot: null
+  };
+
+  const outfitContainer = document.getElementById("outfitSlots");
+  outfitContainer.innerHTML = ''; // Clear existing items
+
+  types.forEach(type => {
+      const slotId = `${type}Slot`;
+      const item = outfitSlots[slotId];
+
+      const slot = document.createElement("div");
+      card.classList.add("slot");
+
+      if (item) {
+          const img = document.createElement("img");
+          img.src = `pages/eldenring/icons/${item.image}`;
+          img.alt = item.name;
+
+          const name = document.createElement("p");
+          name.textContent = item.name;
+
+          slot.appendChild(img);
+          slot.appendChild(name);
+      } else {
+          const placeholder = document.createElement("p");
+          placeholder.classList.add("placeholder-tile");
+          placeholder.textContent = `No ${type} item selected`;
+          slot.appendChild(placeholder);
+      }
+
+      outfitContainer.appendChild(card);
+  });
+}
+
 // Fetch items on page load
 window.onload = fetchItems;
+
+// Function to load outfit slots with placeholders and selected items
+function loadOutfitFromStorage() {
+  const types = ["head", "chest", "hands", "legs", "weapons", "shields"];
+  const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {
+      headSlot: null, chestSlot: null, handsSlot: null, legsSlot: null, weaponsSlot: null, shieldsSlot: null
+  };
+
+  const outfitContainer = document.getElementById("outfit-slots");
+  outfitContainer.innerHTML = ''; 
+
+  types.forEach(type => {
+      const slotId = `${type}Slot`;
+      const item = outfitSlots[slotId];
+
+      const caslotrd = document.createElement("div");
+      slot.classList.add("slot");
+
+      if (item) {
+          const img = document.createElement("img");
+          img.src = `pages/eldenring/icons/${item.image}`;
+          img.alt = item.name;
+
+          const name = document.createElement("p");
+          name.textContent = item.name;
+
+          slot.appendChild(img);
+          slot.appendChild(name);
+      } else {
+          const placeholder = document.createElement("p");
+          placeholder.classList.add("placeholder-tile");
+          placeholder.textContent = `No ${type} item selected`;
+          slot.appendChild(placeholder);
+      }
+
+      outfitContainer.appendChild(card);
+  });
+}
+
+// Function to add item to simulator and replace placeholder with selected item
+function addItemToSimulator(item) {
+  const slotId = `${item.type}Slot`;
+
+  const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {
+      headSlot: null, chestSlot: null, handsSlot: null, legsSlot: null, weaponsSlot: null, shieldsSlot: null
+  };
+
+  outfitSlots[slotId] = { name: item.name, image: item.image };
+  localStorage.setItem('outfitSlots', JSON.stringify(outfitSlots));
+
+  loadOutfitFromStorage(); // Refresh simulator view
+}
+
+      // Add event listeners to item cards in itemGrid for sending items to the outfit simulator
+      function initializeItemGrid() {
+        const itemGrid = document.getElementById('itemGrid');
+
+        itemGrid.querySelectorAll('.item-card').forEach(card => {
+            card.addEventListener('contextmenu', (event) => {
+                event.preventDefault();
+
+                // Find the item in the `items` array
+                const itemInfo = card.querySelector('.item-info');
+                const titleContainer  = itemInfo.querySelector('.title-container');
+                const title = titleContainer.querySelector('a').textContent;
+                const item = items.find(i => i.name === title);
+                if (item) {
+                    showContextMenu(event, 'send', item);
+                }
+            });
+        });
+    }
+
+// Initialize outfit display on load
+document.addEventListener("DOMContentLoaded", () => {
+  loadOutfitFromStorage();
+});

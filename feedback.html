@@ -17,78 +17,82 @@
 </head>
 <body>
 
-<div class="topnav">
-    <a href="index">Home</a>
-    <a href="eldenring">Elden Ring</a>
-    <a href="bloodborne">Bloodborne</a>
-    <a href="demonssouls">Demon's Souls</a>
-	 <div class="dropdown">
-        <button class="dropbtn">Dark Souls
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="ds1">Dark Souls Remastered</a>
-            <a href="ds2">Dark Souls II: SotFS</a>
-            <a href="ds3">Dark Souls III</a>
-        </div>
+<div class="topnav-simple">
+    <div class="links-group">
+        <a href="index">Home</a>
+        <!-- <a href="eldenring">Elden Ring</a>
+        <a href="bloodborne">Bloodborne</a>
+        <a href="demonssouls">Demon's Souls</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dark Souls
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ds1">Dark Souls Remastered</a>
+                <a href="ds2">Dark Souls II: SotFS</a>
+                <a href="ds3">Dark Souls III</a>
+            </div>
+        </div> -->
+        <a href="https://ko-fi.com/psyopgirl">Donate</a>
+        <a href="https://discord.gg/j8HHh8ffEn">Discord</a>
+        <a href="https://github.com/jadepilled/souls-fashion">Source Code</a>
+        <a class="active" href="feedback.html">Feedback</a>
+    
+        <button class="mode-switch" id="modeToggle">Light Mode</button>
     </div>
-    <a href="https://ko-fi.com/psyopgirl">Donate</a>
-	<a href="https://discord.gg/j8HHh8ffEn">Discord</a>
-	<a href="https://github.com/jadepilled/souls-fashion">Source Code</a>
-	<a class="active" href="feedback.html">Feedback</a>
-
-    <div class="mode-switch">
-        <button id="modeToggle">Light/Dark Mode</button>
-    </div>
-   
+    <button class="show-menu">Menu</button>
 </div>
 
-<div class="FashionSouls">
-    <h2>Fashion Souls</h2>
-    <h3 style="color: #bfbfbf;">SoulsBorne fashion tool by Psyopgirl</h3>
-</div>
-<br></br>
 <div class='feedback'>
-				<h3>Feedback</h3>
-				<div class="mb-4 small">
-				Please provide your feedback & suggestions in the form below
-				</div>
-				<form name="feedback_form" id="feedback_form" method="post">
-				
-				<div class="mb-4">
-				  <label class="form-label"  for="feedback_comments"></label>
-				  <textarea class="form-control" required rows="6" name="comments" id="feedback_comments" ></textarea>
-				</div>
-				<div class="row">
-				  <div class="col">
-					<label class="form-label" for="feedback_name">Your Name (optional):</label>
-					<input type="text" required name="name" class="form-control" id="feedback_name"/>
-				  </div>
-				  
-				  <div class="col mb-4">
-					<label class="form-label" for="feedback_email">Email (optional):</label>
-					<input type="email" name="email" required class="form-control" id="feedback_email"/>
-				  </div>
-				</div>
-				<button type="submit" class="btn btn-success btn-lg" >Post</button>
-				</form>
+	<form class="form-container" name="feedback_form" id="feedback_form" method="post">
+        <div class="FashionSouls-simple">
+            <h2 >Fashion Souls</h2>
+            <h3 style="color: #bfbfbf">SoulsBorne fashion tool by Psyopgirl</h3>
+          </div>
+        <h3>Feedback</h3>
+        <p>
+            Please provide your feedback & suggestions in the form below
+        </p>
+        <label class="form-label"  for="feedback_comments"></label>
+        <textarea class="round-text-area" required rows="6" name="comments" id="feedback_comments" ></textarea>
+            <label class="form-label" for="feedback_name">Your Name (optional):</label>
+            <input type="text" required name="name" class="round-input" id="feedback_name"/>
+            <label class="form-label" for="feedback_email">Email (optional):</label>
+            <input type="email" name="email" required class="round-input" id="feedback_email"/>
+        <button type="submit" class="round-button" >Post</button>
+	</form>
 
 </div>
 		
 <script>
+    const modeToggle = document.getElementById("modeToggle");
+    const body = document.body;
+
     // Check local storage to persist theme choice
-    if (localStorage.getItem('theme') === 'light') {
-        body.classList.add('light-mode');
+    if (localStorage.getItem("theme") === "light") {
+        body.classList.add("light-mode");
+        modeToggle.textContent = "Dark Mode"; 
+    } else {
+      modeToggle.textContent = "Light Mode";
     }
 
-    modeToggle.addEventListener('click', () => {
-        if (body.classList.contains('light-mode')) {
-            body.classList.remove('light-mode');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light');
-        }
+    modeToggle.addEventListener("click", () => {
+      if (body.classList.contains("light-mode")) {
+          body.classList.remove("light-mode");
+          localStorage.setItem("theme", "dark");
+          modeToggle.textContent = "Light Mode"; 
+      } else {
+          body.classList.add("light-mode");
+          localStorage.setItem("theme", "light");
+          modeToggle.textContent = "Dark Mode";
+      }
+    });
+
+    const toggleButton = document.querySelector('.show-menu');
+    const sidebar = document.querySelector('.links-group');
+
+    toggleButton.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
     });
 
     // Add click event listener to all anchor links for fade effect
@@ -104,7 +108,7 @@
         });
     });
 </script>
-<div class="copyright">
+<div class="footer">
     Copyright © Psyopgirl 2024.	<br></br>Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
 </div>
 <script>
@@ -112,7 +116,7 @@
                 setTimeout(() => {
                     window.location.href = item.link; // Navigate to the new page
                 }, 500); // Match this duration with the CSS transition duration
-            });
+            
     // Listen for visibility change to manage the fade-in effect
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
