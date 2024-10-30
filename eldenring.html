@@ -159,17 +159,17 @@
 
     <div class="hover-trigger">
       <div class="pinned">
-        <div class="tooltip">
-          <!-- <span class="tooltip-text">
-            To commit an item to the outfit simulator, right click and select 'send to outfit simulator'.
-          </span> -->
+        <!-- <div class="tooltip">
+          <span class="tooltip-text">
+            To commit an item to the outfit simulator, right click an item card and select 'send to outfit simulator'.
+          </span>
+        </div> -->
           <div class="pinned-buttons">
             <!-- <a href="simulator_eldenring.html" class="link">
               View Presets
             </a> -->
             <button onclick="window.location.href='simulator_eldenring.html'">Export</button>
           </div>
-        </div>
         <div class="slots" id="outfitSlots">
           <div class="slot">
             <p>Head</p>
@@ -297,28 +297,55 @@
       // });
 
       let scrollActive = false;
+      let navActive = true;
       let lastTouchY = 0; // Variable to track the last Y position on touch devices
 
-      function activateScrollEffect() {
+      function showOutfitSidebar() {
         document.querySelector(".pinned").style.opacity = "1";
-        document.querySelector(".item-grid").style.marginLeft = "70px"; // Change margin-left to 40px
+        document.querySelector(".pinned").style.display = "block";
+        document.querySelector(".item-grid").style.marginTop = "20px";
+        document.querySelector(".item-grid").style.marginLeft = "70px";
         scrollActive = true;
+        navActive = false
       }
 
-      function deactivateScrollEffect() {
+      function hideOutfitSidebar() {
         document.querySelector(".pinned").style.opacity = "0";
+        document.querySelector(".pinned").style.display = "none";
+        document.querySelector(".item-grid").style.marginTop = "180px";
         document.querySelector(".item-grid").style.marginLeft = "0px";
         scrollActive = false;
+        navActive = true;
+      }
+
+      function showNav() {
+        if (scrollActive === false) {
+          nav.classList.remove('hidden-on-scroll');
+          document.querySelector(".item-grid").style.marginTop = "180px";
+          document.querySelector(".item-grid").style.marginLeft = "0px";
+          scrollActive = false;
+          navActive = true;
+        }
+      }
+
+      function hideNav() {
+        if (scrollActive === true) {
+          nav.classList.add('hidden-on-scroll');
+          document.querySelector(".item-grid").style.marginTop = "20px";
+          document.querySelector(".item-grid").style.marginLeft = "70px";
+          scrollActive = true;
+          navActive = false;
+        }
       }
 
       // Activate effect on scroll attempt (downward or upward for wheel)
       window.addEventListener("wheel", (event) => {
         if (event.deltaY > 0 && !scrollActive) {
-          activateScrollEffect(); // Scrolling down
-          nav.classList.add('hidden-on-scroll');
+          showOutfitSidebar(); // Scrolling down
+          hideNav();
         } else if (event.deltaY < 0 && scrollActive) {
-          deactivateScrollEffect(); // Scrolling up
-          nav.classList.remove('hidden-on-scroll');
+          hideOutfitSidebar(); // Scrolling up
+          showNav();
         }
       });
 
@@ -330,9 +357,9 @@
       window.addEventListener("touchmove", (event) => {
         const currentTouchY = event.touches[0].clientY;
         if (currentTouchY < lastTouchY && !scrollActive) {
-          activateScrollEffect(); // Scrolling down
+          showOutfitSidebar(); // Scrolling down
         } else if (currentTouchY > lastTouchY && scrollActive) {
-          deactivateScrollEffect(); // Scrolling up
+          hideOutfitSidebar(); // Scrolling up
         }
         lastTouchY = currentTouchY; // Update last touch position
       });
@@ -356,14 +383,13 @@
 
       window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
+        if (scrollTop > lastScrollTop && !navActive) {
           // User is scrolling down
-          nav.classList.add('hidden-on-scroll');
+          hideNav();
         }
         else {
           // User is scrolling up
-          nav.classList.remove('hidden-on-scroll');
-          document.querySelector(".item-grid").style.marginLeft = "0px"; // Reset margin-left if needed
+          showNav();
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure scrollTop doesn't go negative
       });
@@ -505,21 +531,11 @@
           // Hide the context menu after sending the item
           document.getElementById('contextMenu').style.display = 'none';
 
-          // Show the elements and apply the styles
-          pinned.style.opacity = "1";
-          pinned.style.display = "block";
-          itemGrid.style.marginTop = "20px";
-          itemGrid.style.marginLeft = "70px"; // Change to desired value
-          nav.classList.add('hidden-on-scroll');
+          const pinned = document.querySelector('.pinned');
 
-          // Set a timer to hide the elements and revert styles after 5 seconds
-          setTimeout(() => {
-              pinned.style.opacity = "0";
-              pinned.style.display = "none";
-              itemGrid.style.marginTop = ""; // Reset to original or desired default
-              itemGrid.style.marginLeft = ""; // Reset to original or desired default
-              nav.classList.remove('hidden-on-scroll');
-          }, 700);
+          // Show the elements and apply the styles
+          showOutfitSidebar();
+          hideNav();
       }
   
       // Add event listeners to item cards in itemGrid for sending items to the outfit simulator

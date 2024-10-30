@@ -654,7 +654,7 @@ body.light-mode .sidebar {
 .pinned {
   top: 2%;
   position: fixed;
-  display: block;
+  display: none;
   opacity: 0;
   flex-direction: column;
   align-items: center;
@@ -689,6 +689,7 @@ body.light-mode .sidebar {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 
 .pinned-buttons button:hover {
