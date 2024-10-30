@@ -371,7 +371,7 @@
             "#47443a"
         ],
         "type": "chest",
-        "link": "https://eldenring.wiki.fextralife.com/Chain+Armor+(Female)"
+        "link": "https://eldenring.wiki.fextralife.com/Chain+Armor"
     },
     {
         "name": "Chain Armor (Male)",
@@ -382,7 +382,7 @@
             "#47433b"
         ],
         "type": "chest",
-        "link": "https://eldenring.wiki.fextralife.com/Chain+Armor+(Male)"
+        "link": "https://eldenring.wiki.fextralife.com/Chain+Armor"
     },
     {
         "name": "Chain-Draped Tabard",
@@ -1342,7 +1342,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Maliketh%27s+Armor"
     },
     {
-        "name": "Marai's Robe",
+        "name": "Marais Robe",
         "image": "Chest/Marai's Robe.png",
         "primaryColor": "#646569",
         "secondaryColors": [
@@ -1350,7 +1350,7 @@
             "#ab7d51"
         ],
         "type": "chest",
-        "link": "https://eldenring.wiki.fextralife.com/Marai%27s+Robe"
+        "link": "https://eldenring.wiki.fextralife.com/Marais+Robe"
     },
     {
         "name": "Marionette Soldier Armor",
@@ -1419,7 +1419,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Night+Maiden+Armor"
     },
     {
-        "name": "Nights Cavalry Armor (Altered)",
+        "name": "Night's Cavalry Armor (Altered)",
         "image": "Chest/Nights Cavalry Armor (Altered).png",
         "primaryColor": "#212021",
         "secondaryColors": [
@@ -1427,10 +1427,10 @@
             "#44413d"
         ],
         "type": "chest",
-        "link": "https://eldenring.wiki.fextralife.com/Nights+Cavalry+Armor"
+        "link": "https://eldenring.wiki.fextralife.com/Night%27s+Cavalry+Armor"
     },
     {
-        "name": "Nights Cavalry Armor",
+        "name": "Night's Cavalry Armor",
         "image": "Chest/Nights Cavalry Armor.png",
         "primaryColor": "#212021",
         "secondaryColors": [
@@ -1438,7 +1438,7 @@
             "#43413d"
         ],
         "type": "chest",
-        "link": "https://eldenring.wiki.fextralife.com/Nights+Cavalry+Armor"
+        "link": "https://eldenring.wiki.fextralife.com/Night%27s+Cavalry+Armor"
     },
     {
         "name": "Noble's Traveling Garb",
@@ -1496,7 +1496,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Nox+Monk+Armor"
     },
     {
-        "name": "Nox Swordstres's Armor (Altered)",
+        "name": "Nox Swordstress Armor (Altered)",
         "image": "Chest/Nox Swordstres's Armor (Altered).png",
         "primaryColor": "#85796e",
         "secondaryColors": [
@@ -1504,10 +1504,10 @@
             "#50443a"
         ],
         "type": "chest",
-        "link": "https://eldenring.wiki.fextralife.com/Nox+Swordstres%27s+Armor"
+        "link": "https://eldenring.wiki.fextralife.com/Nox+Swordstress+Armor"
     },
     {
-        "name": "Nox Swordstres's Armor",
+        "name": "Nox Swordstress Armor",
         "image": "Chest/Nox Swordstres's Armor.png",
         "primaryColor": "#d5d3cd",
         "secondaryColors": [
@@ -1515,7 +1515,7 @@
             "#5a584d"
         ],
         "type": "chest",
-        "link": "https://eldenring.wiki.fextralife.com/Nox+Swordstres%27s+Armor"
+        "link": "https://eldenring.wiki.fextralife.com/Nox+Swordstress+Armor"
     },
     {
         "name": "Official's Attire",
@@ -2879,20 +2879,9 @@
             "#837b71"
         ],
         "type": "hands",
-        "link": "https://eldenring.wiki.fextralife.com/Chain+Gauntlets"
+        "link": "https://eldenring.wiki.fextralife.com/Gauntlets"
     },
-    {
-        "name": "Chain Gauntlets_ (2)",
-        "image": "Hands/Chain Gauntlets_ (2).png",
-        "primaryColor": "#88746a",
-        "secondaryColors": [
-            "#645752",
-            "#52433c"
-        ],
-        "type": "hands",
-        "link": "https://eldenring.wiki.fextralife.com/Chain+Gauntlets_+(2)"
-    },
-    {
+        {
         "name": "Champion Bracers",
         "image": "Hands/Champion Bracers.png",
         "primaryColor": "#8c8f93",
@@ -3355,7 +3344,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Mushroom+Arms"
     },
     {
-        "name": "Nights Cavalry Gauntlets",
+        "name": "Night's Cavalry Gauntlets",
         "image": "Hands/Nights Cavalry Gauntlets.png",
         "primaryColor": "#212021",
         "secondaryColors": [
@@ -3363,7 +3352,7 @@
             "#44413d"
         ],
         "type": "hands",
-        "link": "https://eldenring.wiki.fextralife.com/Nights+Cavalry+Gauntlets"
+        "link": "https://eldenring.wiki.fextralife.com/Night%27s+Cavalry+Gauntlets"
     },
     {
         "name": "Noble's Gloves",
@@ -4521,17 +4510,6 @@
         "link": "https://eldenring.wiki.fextralife.com/Drake+Knight+Helm"
     },
     {
-        "name": "Drake Knight Helm (Altered)_()",
-        "image": "Head/Drake Knight Helm (Altered)_().png",
-        "primaryColor": "#0e1615",
-        "secondaryColors": [
-            "#a84f3b",
-            "#565557"
-        ],
-        "type": "head",
-        "link": "https://eldenring.wiki.fextralife.com/Drake+Knight+Helm_()"
-    },
-    {
         "name": "Drake Knight Helm",
         "image": "Head/Drake Knight Helm.png",
         "primaryColor": "#0e1615",
@@ -4618,17 +4596,6 @@
         ],
         "type": "head",
         "link": "https://eldenring.wiki.fextralife.com/Festive+Hood"
-    },
-    {
-        "name": "Festive Hood (Altered)_()",
-        "image": "Head/Festive Hood (Altered)_().png",
-        "primaryColor": "#604d5e",
-        "secondaryColors": [
-            "#4a3a4a",
-            "#493531"
-        ],
-        "type": "head",
-        "link": "https://eldenring.wiki.fextralife.com/Festive+Hood_()"
     },
     {
         "name": "Festive Hood",
@@ -5203,7 +5170,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Maliketh%27s+Helm"
     },
     {
-        "name": "Marai's Mask",
+        "name": "Marais Mask",
         "image": "Head/Marai's Mask.png",
         "primaryColor": "#a59e98",
         "secondaryColors": [
@@ -5211,7 +5178,7 @@
             "#877967"
         ],
         "type": "head",
-        "link": "https://eldenring.wiki.fextralife.com/Marai%27s+Mask"
+        "link": "https://eldenring.wiki.fextralife.com/Marais+Mask"
     },
     {
         "name": "Marionette Soldier Birdhelm",
@@ -5291,7 +5258,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Night+Maiden+Twin+Crown"
     },
     {
-        "name": "Nights Cavalry Helm (Altered)",
+        "name": "Night's Cavalry Helm (Altered)",
         "image": "Head/Nights Cavalry Helm (Altered).png",
         "primaryColor": "#212021",
         "secondaryColors": [
@@ -5299,10 +5266,10 @@
             "#5a5752"
         ],
         "type": "head",
-        "link": "https://eldenring.wiki.fextralife.com/Nights+Cavalry+Helm"
+        "link": "https://eldenring.wiki.fextralife.com/Night%27s+Cavalry+Helm"
     },
     {
-        "name": "Nights Cavalry Helm",
+        "name": "Night's Cavalry Helm",
         "image": "Head/Nights Cavalry Helm.png",
         "primaryColor": "#212021",
         "secondaryColors": [
@@ -5310,7 +5277,7 @@
             "#43413d"
         ],
         "type": "head",
-        "link": "https://eldenring.wiki.fextralife.com/Nights+Cavalry+Helm"
+        "link": "https://eldenring.wiki.fextralife.com/Night%27s+Cavalry+Helm"
     },
     {
         "name": "Nomadic Merchant's Chapeau",
@@ -7018,7 +6985,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Mushroom+Legs"
     },
     {
-        "name": "Nights Cavalry Greaves",
+        "name": "Night's Cavalry Greaves",
         "image": "Legs/Nights Cavalry Greaves.png",
         "primaryColor": "#212021",
         "secondaryColors": [
@@ -7026,7 +6993,7 @@
             "#45413d"
         ],
         "type": "legs",
-        "link": "https://eldenring.wiki.fextralife.com/Nights+Cavalry+Greaves"
+        "link": "https://eldenring.wiki.fextralife.com/Night%27s+Cavalry+Greaves"
     },
     {
         "name": "Noble's Trousers",
@@ -9933,7 +9900,7 @@
         "link": "https://eldenring.wiki.fextralife.com/Giant%27s+Seal"
     },
     {
-        "name": "Giant-Crusher - MENU_Knowledge_10891",
+        "name": "Giant-Crusher",
         "image": "Weapons/Giant-Crusher - MENU_Knowledge_10891.png",
         "primaryColor": "#97918e",
         "secondaryColors": [
@@ -9941,7 +9908,7 @@
             "#4f433c"
         ],
         "type": "weapons",
-        "link": "https://eldenring.wiki.fextralife.com/Giant-Crusher+-+MENU_Knowledge_10891"
+        "link": "https://eldenring.wiki.fextralife.com/Giant-Crusher"
     },
     {
         "name": "Glaive",
