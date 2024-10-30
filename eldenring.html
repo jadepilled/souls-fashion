@@ -275,36 +275,67 @@
         window.location.href = "simulator_eldenring.html";
       });
 
-      const triggerElement = document.querySelector('.hover-trigger'); // Replace with your actual trigger element
-      const pinned = document.querySelector('.pinned');
+      // const triggerElement = document.querySelector('.hover-trigger'); // Replace with your actual trigger element
+      // const pinned = document.querySelector('.pinned');
 
-      // Show pinned and adjust margin on hover
-      triggerElement.addEventListener('mouseover', () => {
-        pinned.style.opacity = "1";
-        pinned.style.display = "block";
-        itemGrid.style.marginTop = "20px";
-        itemGrid.style.marginLeft = "70px"; // Change to desired value
-        nav.classList.add('hidden-on-scroll');
-      });
-
-      // Hide the pinned element and reset margin when not hovering
-      triggerElement.addEventListener('mouseout', () => {
-        pinned.style.opacity = "0";
-        pinned.style.display = "none";
-        itemGrid.style.marginTop = "180px";
-        itemGrid.style.marginLeft = "0px"; 
-        nav.classList.remove('hidden-on-scroll');
-      });
-
-      // window.addEventListener("scroll", () => {
-      //   if (window.scrollY > 100) {
-      //     document.querySelector(".pinned").style.opacity = "1";
-      //     document.querySelector(".item-grid").style.marginLeft = "70px"; // Change margin-left to 40px
-      //   } else {
-      //     document.querySelector(".pinned").style.opacity = "0";
-      //     document.querySelector(".item-grid").style.marginLeft = "0px"; // Reset margin-left if needed
-      //   }
+      // // Show pinned and adjust margin on hover
+      // triggerElement.addEventListener('mouseover', () => {
+      //   pinned.style.opacity = "1";
+      //   pinned.style.display = "block";
+      //   itemGrid.style.marginTop = "20px";
+      //   itemGrid.style.marginLeft = "70px"; // Change to desired value
+      //   nav.classList.add('hidden-on-scroll');
       // });
+
+      // // Hide the pinned element and reset margin when not hovering
+      // triggerElement.addEventListener('mouseout', () => {
+      //   pinned.style.opacity = "0";
+      //   pinned.style.display = "none";
+      //   itemGrid.style.marginTop = "180px";
+      //   itemGrid.style.marginLeft = "0px"; 
+      //   nav.classList.remove('hidden-on-scroll');
+      // });
+
+      let scrollActive = false;
+      let lastTouchY = 0; // Variable to track the last Y position on touch devices
+
+      function activateScrollEffect() {
+        document.querySelector(".pinned").style.opacity = "1";
+        document.querySelector(".item-grid").style.marginLeft = "70px"; // Change margin-left to 40px
+        scrollActive = true;
+      }
+
+      function deactivateScrollEffect() {
+        document.querySelector(".pinned").style.opacity = "0";
+        document.querySelector(".item-grid").style.marginLeft = "0px";
+        scrollActive = false;
+      }
+
+      // Activate effect on scroll attempt (downward or upward for wheel)
+      window.addEventListener("wheel", (event) => {
+        if (event.deltaY > 0 && !scrollActive) {
+          activateScrollEffect(); // Scrolling down
+          nav.classList.add('hidden-on-scroll');
+        } else if (event.deltaY < 0 && scrollActive) {
+          deactivateScrollEffect(); // Scrolling up
+          nav.classList.remove('hidden-on-scroll');
+        }
+      });
+
+      // Activate effect on touch devices
+      window.addEventListener("touchstart", (event) => {
+        lastTouchY = event.touches[0].clientY; // Track initial touch position
+      });
+
+      window.addEventListener("touchmove", (event) => {
+        const currentTouchY = event.touches[0].clientY;
+        if (currentTouchY < lastTouchY && !scrollActive) {
+          activateScrollEffect(); // Scrolling down
+        } else if (currentTouchY > lastTouchY && scrollActive) {
+          deactivateScrollEffect(); // Scrolling up
+        }
+        lastTouchY = currentTouchY; // Update last touch position
+      });
 
       window.addEventListener("scroll", () => {
         if (window.scrollY > 400) {
@@ -332,7 +363,6 @@
         else {
           // User is scrolling up
           nav.classList.remove('hidden-on-scroll');
-          document.querySelector(".pinned").style.opacity = "0";
           document.querySelector(".item-grid").style.marginLeft = "0px"; // Reset margin-left if needed
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure scrollTop doesn't go negative
