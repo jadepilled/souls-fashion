@@ -1,903 +1,993 @@
 [
     {
         "name": "Agdayne's Cuffs",
-        "image": "Arms/Agdayne's Cuffs.png",
+        "image": "Hands/Agdayne's Cuffs.png",
         "primaryColor": "#9c989a",
         "secondaryColors": [
             "#645d5b",
             "#5a4436"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Agdayne%27s+Cuffs"
     },
     {
         "name": "Alonne Knight Gauntlets",
-        "image": "Arms/Alonne Knight Gauntlets.png",
+        "image": "Hands/Alonne Knight Gauntlets.png",
         "primaryColor": "#d0cfd3",
         "secondaryColors": [
             "#9d9aa2",
             "#707286"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Alonne+Knight+Gauntlets"
     },
     {
         "name": "Alva Gauntlets",
-        "image": "Arms/Alva Gauntlets.png",
+        "image": "Hands/Alva Gauntlets.png",
         "primaryColor": "#979695",
         "secondaryColors": [
             "#605c5a",
             "#4f423b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Alva+Gauntlets"
     },
     {
         "name": "Archdrake Gloves",
-        "image": "Arms/Archdrake Gloves.png",
+        "image": "Hands/Archdrake Gloves.png",
         "primaryColor": "#959a98",
         "secondaryColors": [
             "#575a52",
             "#565a54"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Gloves"
     },
     {
         "name": "Astrologist's Gauntlets",
-        "image": "Arms/Astrologist's Gauntlets.png",
+        "image": "Hands/Astrologist's Gauntlets.png",
         "primaryColor": "#a28d69",
         "secondaryColors": [
             "#544f4a",
             "#4f4737"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Astrologist%27s+Gauntlets"
     },
     {
         "name": "Bandit Gauntlets",
-        "image": "Arms/Bandit Gauntlets.png",
+        "image": "Hands/Bandit Gauntlets.png",
         "primaryColor": "#9c9b99",
         "secondaryColors": [
             "#666256",
             "#514936"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Bandit+Gauntlets"
     },
     {
         "name": "Bell Keeper Cuffs",
-        "image": "Arms/Bell Keeper Cuffs.png",
+        "image": "Hands/Bell Keeper Cuffs.png",
         "primaryColor": "#635b4e",
         "secondaryColors": [
             "#5f5850",
             "#4c443a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Bell+Keeper+Cuffs"
     },
     {
         "name": "Benhart's Gauntlets",
-        "image": "Arms/Benhart's Gauntlets.png",
+        "image": "Hands/Benhart's Gauntlets.png",
         "primaryColor": "#5a5149",
         "secondaryColors": [
             "#535034",
             "#4d443a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Benhart%27s+Gauntlets"
     },
     {
         "name": "Black Dragon Gauntlets",
-        "image": "Arms/Black Dragon Gauntlets.png",
+        "image": "Hands/Black Dragon Gauntlets.png",
         "primaryColor": "#9d9b99",
         "secondaryColors": [
             "#5e6153",
             "#615e54"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Gauntlets"
     },
     {
         "name": "Black Gloves",
-        "image": "Arms/Black Gloves.png",
+        "image": "Hands/Black Gloves.png",
         "primaryColor": "#8e9696",
         "secondaryColors": [
             "#5c6362",
             "#5b645c"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Gloves"
     },
     {
         "name": "Black Leather Gloves",
-        "image": "Arms/Black Leather Gloves.png",
+        "image": "Hands/Black Leather Gloves.png",
         "primaryColor": "#8e8c8c",
         "secondaryColors": [
             "#656a65",
             "#636565"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Leather+Gloves"
     },
     {
         "name": "Black Witch Gloves",
-        "image": "Arms/Black Witch Gloves.png",
+        "image": "Hands/Black Witch Gloves.png",
         "primaryColor": "#918e92",
         "secondaryColors": [
             "#5d5663",
             "#5e5468"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Witch+Gloves"
     },
     {
         "name": "Bone King Cuffs",
-        "image": "Arms/Bone King Cuffs.png",
+        "image": "Hands/Bone King Cuffs.png",
         "primaryColor": "#6c685b",
         "secondaryColors": [
             "#565249",
             "#484539"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Bone+King+Cuffs"
     },
     {
         "name": "Brigand Gauntlets",
-        "image": "Arms/Brigand Gauntlets.png",
+        "image": "Hands/Brigand Gauntlets.png",
         "primaryColor": "#c7b190",
         "secondaryColors": [
             "#b5a48a",
             "#a6906f"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Brigand+Gauntlets"
     },
     {
         "name": "Catarina Gauntlets",
-        "image": "Arms/Catarina Gauntlets.png",
+        "image": "Hands/Catarina Gauntlets.png",
         "primaryColor": "#d0c6b2",
         "secondaryColors": [
             "#c4b9a2",
             "#b1a48d"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Catarina+Gauntlets"
     },
     {
         "name": "Chaos Gloves",
-        "image": "Arms/Chaos Gloves.png",
+        "image": "Hands/Chaos Gloves.png",
         "primaryColor": "#585550",
         "secondaryColors": [
             "#4e552e",
             "#494538"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Chaos+Gloves"
     },
     {
         "name": "Creighton's Chain Gloves",
-        "image": "Arms/Creighton's Chain Gloves.png",
+        "image": "Hands/Creighton's Chain Gloves.png",
         "primaryColor": "#5f6359",
         "secondaryColors": [
             "#605f56",
             "#605e58"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Creighton%27s+Chain+Gloves"
     },
     {
         "name": "Dark Gauntlets",
-        "image": "Arms/Dark Gauntlets.png",
+        "image": "Hands/Dark Gauntlets.png",
         "primaryColor": "#cfd0d2",
         "secondaryColors": [
             "#959799",
             "#6a706b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Dark+Gauntlets"
     },
     {
         "name": "Desert Sorceress Gloves",
-        "image": "Arms/Desert Sorceress Gloves.png",
+        "image": "Hands/Desert Sorceress Gloves.png",
         "primaryColor": "#525132",
         "secondaryColors": [
             "#514744",
             "#4a413d"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Desert+Sorceress+Gloves"
     },
     {
         "name": "Dingy Cuffs",
-        "image": "Arms/Dingy Cuffs.png",
+        "image": "Hands/Dingy Cuffs.png",
         "primaryColor": "#9c938c",
         "secondaryColors": [
             "#867466",
             "#695c53"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Dingy+Cuffs"
     },
     {
         "name": "Dragon Acolyte Gloves",
-        "image": "Arms/Dragon Acolyte Gloves.png",
+        "image": "Hands/Dragon Acolyte Gloves.png",
         "primaryColor": "#949394",
         "secondaryColors": [
             "#67676b",
             "#656868"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragon+Acolyte+Gloves"
     },
     {
         "name": "Dragonrider Gauntlets",
-        "image": "Arms/Dragonrider Gauntlets.png",
+        "image": "Hands/Dragonrider Gauntlets.png",
         "primaryColor": "#d6d7d8",
         "secondaryColors": [
             "#97989a",
             "#56585b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider+Gauntlets"
     },
     {
         "name": "Drakekeeper Gauntlets",
-        "image": "Arms/Drakekeeper Gauntlets.png",
+        "image": "Hands/Drakekeeper Gauntlets.png",
         "primaryColor": "#5b5b5b",
         "secondaryColors": [
             "#535355",
             "#4d4f4e"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper+Gauntlets"
     },
     {
         "name": "Drangleic Gauntlets",
-        "image": "Arms/Drangleic Gauntlets.png",
+        "image": "Hands/Drangleic Gauntlets.png",
         "primaryColor": "#8a6f61",
         "secondaryColors": [
             "#585450",
             "#5e463a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Drangleic+Gauntlets"
     },
     {
         "name": "Elite Knight Gloves",
-        "image": "Arms/Elite Knight Gloves.png",
+        "image": "Hands/Elite Knight Gloves.png",
         "primaryColor": "#ad8a6d",
         "secondaryColors": [
             "#916d52",
             "#795b43"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Elite+Knight+Gloves"
     },
     {
         "name": "Engraved Gauntlets",
-        "image": "Arms/Engraved Gauntlets.png",
+        "image": "Hands/Engraved Gauntlets.png",
         "primaryColor": "#a2a090",
         "secondaryColors": [
             "#8a8876",
             "#636052"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Engraved+Gauntlets"
     },
     {
         "name": "Executioner Gauntlets",
-        "image": "Arms/Executioner Gauntlets.png",
+        "image": "Hands/Executioner Gauntlets.png",
         "primaryColor": "#8c8f90",
         "secondaryColors": [
             "#5a5d56",
             "#585a5b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Executioner+Gauntlets"
     },
     {
         "name": "Falconer Gloves",
-        "image": "Arms/Falconer Gloves.png",
+        "image": "Hands/Falconer Gloves.png",
         "primaryColor": "#87735b",
         "secondaryColors": [
             "#6f5d49",
             "#5b4835"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Falconer+Gloves"
     },
     {
         "name": "Faraam Gauntlets",
-        "image": "Arms/Faraam Gauntlets.png",
+        "image": "Hands/Faraam Gauntlets.png",
         "primaryColor": "#dbdbdc",
         "secondaryColors": [
             "#919294",
             "#7a7b82"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Faraam+Gauntlets"
     },
     {
         "name": "Gauntlets of Aurous (Invisible)",
-        "image": "Arms/Gauntlets of Aurous (Invisible).png",
+        "image": "Hands/Gauntlets of Aurous (Invisible).png",
         "primaryColor": "#9097a9",
         "secondaryColors": [
             "#8690a9",
             "#7684a0"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Gauntlets+of+Aurous+(Invisible)"
     },
     {
         "name": "Gauntlets of Aurous",
-        "image": "Arms/Gauntlets of Aurous.png",
+        "image": "Hands/Gauntlets of Aurous.png",
         "primaryColor": "#696655",
         "secondaryColors": [
             "#5d514e",
             "#4f4638"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Gauntlets+of+Aurous"
     },
     {
         "name": "Grave Warden Cuffs",
-        "image": "Arms/Grave Warden Cuffs.png",
+        "image": "Hands/Grave Warden Cuffs.png",
         "primaryColor": "#616457",
         "secondaryColors": [
             "#5e5f50",
             "#585826"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Grave+Warden+Cuffs"
     },
     {
         "name": "Gyrm Gloves",
-        "image": "Arms/Gyrm Gloves.png",
+        "image": "Hands/Gyrm Gloves.png",
         "primaryColor": "#867353",
         "secondaryColors": [
             "#766748",
             "#655635"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Gloves"
     },
     {
         "name": "Gyrm Warrior Gloves",
-        "image": "Arms/Gyrm Warrior Gloves.png",
+        "image": "Hands/Gyrm Warrior Gloves.png",
         "primaryColor": "#87694f",
         "secondaryColors": [
             "#775d46",
             "#6a5832"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Warrior+Gloves"
     },
     {
         "name": "Hard Leather Gauntlets",
-        "image": "Arms/Hard Leather Gauntlets.png",
+        "image": "Hands/Hard Leather Gauntlets.png",
         "primaryColor": "#67564b",
         "secondaryColors": [
             "#5c5733",
             "#564538"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Hard+Leather+Gauntlets"
     },
     {
         "name": "Havel's Gauntlets",
-        "image": "Arms/Havel's Gauntlets.png",
+        "image": "Hands/Havel's Gauntlets.png",
         "primaryColor": "#999a9b",
         "secondaryColors": [
             "#5c5e5c",
             "#3a4449"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Havel%27s+Gauntlets"
     },
     {
         "name": "Heide Knight Gauntlets",
-        "image": "Arms/Heide Knight Gauntlets.png",
+        "image": "Hands/Heide Knight Gauntlets.png",
         "primaryColor": "#d8d8d9",
         "secondaryColors": [
             "#9d9c9d",
             "#616660"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Knight+Gauntlets"
     },
     {
         "name": "Hexer's Gloves",
-        "image": "Arms/Hexer's Gloves.png",
+        "image": "Hands/Hexer's Gloves.png",
         "primaryColor": "#a99e8e",
         "secondaryColors": [
             "#948676",
             "#87786b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Hexer%27s+Gloves"
     },
     {
         "name": "Hollow Infantry Gloves",
-        "image": "Arms/Hollow Infantry Gloves.png",
+        "image": "Hands/Hollow Infantry Gloves.png",
         "primaryColor": "#6a6a6a",
         "secondaryColors": [
             "#524e1b",
             "#0c5e0c"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Infantry+Gloves"
     },
     {
         "name": "Hollow Soldier Gauntlets",
-        "image": "Arms/Hollow Soldier Gauntlets.png",
+        "image": "Hands/Hollow Soldier Gauntlets.png",
         "primaryColor": "#867563",
         "secondaryColors": [
             "#6d5f4f",
             "#625e53"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Soldier+Gauntlets"
     },
     {
         "name": "Imperious Gloves",
-        "image": "Arms/Imperious Gloves.png",
+        "image": "Hands/Imperious Gloves.png",
         "primaryColor": "#a09997",
         "secondaryColors": [
             "#8a7268",
             "#6b5952"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Imperious+Gloves"
     },
     {
         "name": "Imported Manchettes",
-        "image": "Arms/Imported Manchettes.png",
+        "image": "Hands/Imported Manchettes.png",
         "primaryColor": "#646255",
         "secondaryColors": [
             "#5e6130",
             "#5a4f49"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Imported+Manchettes"
     },
     {
         "name": "Infantry Gloves",
-        "image": "Arms/Infantry Gloves.png",
+        "image": "Hands/Infantry Gloves.png",
         "primaryColor": "#524f13",
         "secondaryColors": [
             "#484848",
             "#50342f"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Infantry+Gloves"
     },
     {
         "name": "Insolent Gloves",
-        "image": "Arms/Insolent Gloves.png",
+        "image": "Hands/Insolent Gloves.png",
         "primaryColor": "#9f928d",
         "secondaryColors": [
             "#887269",
             "#70594f"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Insolent+Gloves"
     },
     {
         "name": "Ironclad Gauntlets",
-        "image": "Arms/Ironclad Gauntlets.png",
+        "image": "Hands/Ironclad Gauntlets.png",
         "primaryColor": "#cdcdcd",
         "secondaryColors": [
             "#9c9d9c",
             "#6d7068"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Ironclad+Gauntlets"
     },
     {
         "name": "Jester's Gloves",
-        "image": "Arms/Jester's Gloves.png",
+        "image": "Hands/Jester's Gloves.png",
         "primaryColor": "#6f5743",
         "secondaryColors": [
             "#5b5029",
             "#634833"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Jester%27s+Gloves"
     },
     {
         "name": "King's Gauntlets",
-        "image": "Arms/King's Gauntlets.png",
+        "image": "Hands/King's Gauntlets.png",
         "primaryColor": "#9a9999",
         "secondaryColors": [
             "#595755",
             "#47413c"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/King%27s+Gauntlets"
     },
     {
         "name": "Knight Gauntlets",
-        "image": "Arms/Knight Gauntlets.png",
+        "image": "Hands/Knight Gauntlets.png",
         "primaryColor": "#ab9b92",
         "secondaryColors": [
             "#a18974",
             "#897364"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Knight+Gauntlets"
     },
     {
         "name": "Leather Gloves",
-        "image": "Arms/Leather Gloves.png",
+        "image": "Hands/Leather Gloves.png",
         "primaryColor": "#857063",
         "secondaryColors": [
             "#6e5c50",
             "#5e4637"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Leather+Gloves"
     },
     {
         "name": "Leydia Gauntlets",
-        "image": "Arms/Leydia Gauntlets.png",
+        "image": "Hands/Leydia Gauntlets.png",
         "primaryColor": "#a99d90",
         "secondaryColors": [
             "#998a74",
             "#85796b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Leydia+Gauntlets"
     },
     {
         "name": "Lion Mage Cuffs",
-        "image": "Arms/Lion Mage Cuffs.png",
+        "image": "Hands/Lion Mage Cuffs.png",
         "primaryColor": "#aa915e",
         "secondaryColors": [
             "#937647",
             "#8a6b36"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Mage+Cuffs"
     },
     {
         "name": "Lion Warrior Cuffs",
-        "image": "Arms/Lion Warrior Cuffs.png",
+        "image": "Hands/Lion Warrior Cuffs.png",
         "primaryColor": "#897351",
         "secondaryColors": [
             "#615032",
             "#5e5329"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Warrior+Cuffs"
     },
     {
         "name": "Llewellyn Gloves",
-        "image": "Arms/Llewellyn Gloves.png",
+        "image": "Hands/Llewellyn Gloves.png",
         "primaryColor": "#646752",
         "secondaryColors": [
             "#4b4a49",
             "#43413c"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Llewellyn+Gloves"
     },
     {
         "name": "Looking Glass Gauntlets",
-        "image": "Arms/Looking Glass Gauntlets.png",
+        "image": "Hands/Looking Glass Gauntlets.png",
         "primaryColor": "#9ea0a0",
         "secondaryColors": [
             "#9da19a",
             "#636864"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Looking+Glass+Gauntlets"
     },
     {
         "name": "Lucatiel's Gloves",
-        "image": "Arms/Lucatiel's Gloves.png",
+        "image": "Hands/Lucatiel's Gloves.png",
         "primaryColor": "#5c5125",
         "secondaryColors": [
             "#5f4734",
             "#4b3424"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Lucatiel%27s+Gloves"
     },
     {
         "name": "Mad Warrior Gauntlets",
-        "image": "Arms/Mad Warrior Gauntlets.png",
+        "image": "Hands/Mad Warrior Gauntlets.png",
         "primaryColor": "#98999a",
         "secondaryColors": [
             "#5c6657",
             "#555e31"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Mad+Warrior+Gauntlets"
     },
     {
         "name": "Manchettes of Judgment",
-        "image": "Arms/Manchettes of Judgment.png",
+        "image": "Hands/Manchettes of Judgment.png",
         "primaryColor": "#898d8e",
         "secondaryColors": [
             "#646a65",
             "#55595a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Manchettes+of+Judgment"
     },
     {
         "name": "Manikin Gloves",
-        "image": "Arms/Manikin Gloves.png",
+        "image": "Hands/Manikin Gloves.png",
         "primaryColor": "#6c5d58",
         "secondaryColors": [
             "#5a4339",
             "#4b372e"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Gloves"
     },
     {
         "name": "Mastodon Gauntlets",
-        "image": "Arms/Mastodon Gauntlets.png",
+        "image": "Hands/Mastodon Gauntlets.png",
         "primaryColor": "#aca08d",
         "secondaryColors": [
             "#998969",
             "#887554"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Mastodon+Gauntlets"
     },
     {
         "name": "Monastery Long Gloves",
-        "image": "Arms/Monastery Long Gloves.png",
+        "image": "Hands/Monastery Long Gloves.png",
         "primaryColor": "#c3b6a6",
         "secondaryColors": [
             "#b2a28f",
             "#9c8a76"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Monastery+Long+Gloves"
     },
     {
         "name": "Moon Butterfly Cuffs",
-        "image": "Arms/Moon Butterfly Cuffs.png",
+        "image": "Hands/Moon Butterfly Cuffs.png",
         "primaryColor": "#dad4ce",
         "secondaryColors": [
             "#c3bab1",
             "#aba297"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Moon+Butterfly+Cuffs"
     },
     {
         "name": "Old Ironclad Gauntlets",
-        "image": "Arms/Old Ironclad Gauntlets.png",
+        "image": "Hands/Old Ironclad Gauntlets.png",
         "primaryColor": "#686760",
         "secondaryColors": [
             "#635f56",
             "#4f4832"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Ironclad+Gauntlets"
     },
     {
         "name": "Old Knight Gauntlets",
-        "image": "Arms/Old Knight Gauntlets.png",
+        "image": "Hands/Old Knight Gauntlets.png",
         "primaryColor": "#4e5653",
         "secondaryColors": [
             "#3a4544",
             "#37423c"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Gauntlets"
     },
     {
         "name": "Pate's Gloves",
-        "image": "Arms/Pate's Gloves.png",
+        "image": "Hands/Pate's Gloves.png",
         "primaryColor": "#cbad91",
         "secondaryColors": [
             "#b99d89",
             "#b18a6e"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Pate%27s+Gloves"
     },
     {
         "name": "Peasant Long Gloves",
-        "image": "Arms/Peasant Long Gloves.png",
+        "image": "Hands/Peasant Long Gloves.png",
         "primaryColor": "#555555",
         "secondaryColors": [
             "#494139",
             "#483d3c"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Peasant+Long+Gloves"
     },
     {
         "name": "Penal Handcuffs",
-        "image": "Arms/Penal Handcuffs.png",
+        "image": "Hands/Penal Handcuffs.png",
         "primaryColor": "#5f5c53",
         "secondaryColors": [
             "#4f4943",
             "#48423b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Penal+Handcuffs"
     },
     {
         "name": "Priestess Gloves",
-        "image": "Arms/Priestess Gloves.png",
+        "image": "Hands/Priestess Gloves.png",
         "primaryColor": "#968d96",
         "secondaryColors": [
             "#847b84",
             "#665f66"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Priestess+Gloves"
     },
     {
         "name": "Prisoner's Gloves",
-        "image": "Arms/Prisoner's Gloves.png",
+        "image": "Hands/Prisoner's Gloves.png",
         "primaryColor": "#876b58",
         "secondaryColors": [
             "#6b5749",
             "#59473a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Prisoner%27s+Gloves"
     },
     {
         "name": "Rogue Gauntlets",
-        "image": "Arms/Rogue Gauntlets.png",
+        "image": "Hands/Rogue Gauntlets.png",
         "primaryColor": "#dddddc",
         "secondaryColors": [
             "#999895",
             "#625f56"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Rogue+Gauntlets"
     },
     {
         "name": "Royal Soldier Gauntlets",
-        "image": "Arms/Royal Soldier Gauntlets.png",
+        "image": "Hands/Royal Soldier Gauntlets.png",
         "primaryColor": "#99978f",
         "secondaryColors": [
             "#898478",
             "#82796d"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Soldier+Gauntlets"
     },
     {
         "name": "Royal Swordsman Gloves",
-        "image": "Arms/Royal Swordsman Gloves.png",
+        "image": "Hands/Royal Swordsman Gloves.png",
         "primaryColor": "#959695",
         "secondaryColors": [
             "#575a57",
             "#545453"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Swordsman+Gloves"
     },
     {
         "name": "Ruin Gauntlets",
-        "image": "Arms/Ruin Gauntlets.png",
+        "image": "Hands/Ruin Gauntlets.png",
         "primaryColor": "#9a9995",
         "secondaryColors": [
             "#626756",
             "#625f56"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Ruin+Gauntlets"
     },
     {
         "name": "Rusted Mastodon Gauntlets",
-        "image": "Arms/Rusted Mastodon Gauntlets.png",
+        "image": "Hands/Rusted Mastodon Gauntlets.png",
         "primaryColor": "#a79e8e",
         "secondaryColors": [
             "#948874",
             "#877662"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Rusted+Mastodon+Gauntlets"
     },
     {
         "name": "Saint's Long Gloves",
-        "image": "Arms/Saint's Long Gloves.png",
+        "image": "Hands/Saint's Long Gloves.png",
         "primaryColor": "#968987",
         "secondaryColors": [
             "#86736d",
             "#6b6051"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Saint%27s+Long+Gloves"
     },
     {
         "name": "Shadow Gauntlets",
-        "image": "Arms/Shadow Gauntlets.png",
+        "image": "Hands/Shadow Gauntlets.png",
         "primaryColor": "#959799",
         "secondaryColors": [
             "#55595a",
             "#3c4244"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Shadow+Gauntlets"
     },
     {
         "name": "Smelter Demon Gauntlets",
-        "image": "Arms/Smelter Demon Gauntlets.png",
+        "image": "Hands/Smelter Demon Gauntlets.png",
         "primaryColor": "#909296",
         "secondaryColors": [
             "#666a63",
             "#5a5b5a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Smelter+Demon+Gauntlets"
     },
     {
         "name": "Steel Gauntlets",
-        "image": "Arms/Steel Gauntlets.png",
+        "image": "Hands/Steel Gauntlets.png",
         "primaryColor": "#939896",
         "secondaryColors": [
             "#5c6460",
             "#576060"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Steel+Gauntlets"
     },
     {
         "name": "Syan's Gauntlets",
-        "image": "Arms/Syan's Gauntlets.png",
+        "image": "Hands/Syan's Gauntlets.png",
         "primaryColor": "#a7a096",
         "secondaryColors": [
             "#928771",
             "#857864"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Syan%27s+Gauntlets"
     },
     {
         "name": "Targray's Manifers",
-        "image": "Arms/Targray's Manifers.png",
+        "image": "Hands/Targray's Manifers.png",
         "primaryColor": "#9da19b",
         "secondaryColors": [
             "#8c8874",
             "#83785f"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Targray%27s+Manifers"
     },
     {
         "name": "Tattered Cloth Manchettes",
-        "image": "Arms/Tattered Cloth Manchettes.png",
+        "image": "Hands/Tattered Cloth Manchettes.png",
         "primaryColor": "#9c896d",
         "secondaryColors": [
             "#8b765d",
             "#97582a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Tattered+Cloth+Manchettes"
     },
     {
         "name": "Throne Defender Gauntlets",
-        "image": "Arms/Throne Defender Gauntlets.png",
+        "image": "Hands/Throne Defender Gauntlets.png",
         "primaryColor": "#959493",
         "secondaryColors": [
             "#5b5f56",
             "#5c5c5a"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Defender+Gauntlets"
     },
     {
         "name": "Throne Watcher Gauntlets",
-        "image": "Arms/Throne Watcher Gauntlets.png",
+        "image": "Hands/Throne Watcher Gauntlets.png",
         "primaryColor": "#949793",
         "secondaryColors": [
             "#8f938d",
             "#7c817c"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Watcher+Gauntlets"
     },
     {
         "name": "Traveling Merchant Gloves",
-        "image": "Arms/Traveling Merchant Gloves.png",
+        "image": "Hands/Traveling Merchant Gloves.png",
         "primaryColor": "#85766e",
         "secondaryColors": [
             "#675852",
             "#605a4d"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Traveling+Merchant+Gloves"
     },
     {
         "name": "Tseldora Manchettes",
-        "image": "Arms/Tseldora Manchettes.png",
+        "image": "Hands/Tseldora Manchettes.png",
         "primaryColor": "#9f8b68",
         "secondaryColors": [
             "#887451",
             "#736448"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Tseldora+Manchettes"
     },
     {
         "name": "Varangian Cuffs",
-        "image": "Arms/Varangian Cuffs.png",
+        "image": "Hands/Varangian Cuffs.png",
         "primaryColor": "#e0dfe0",
         "secondaryColors": [
             "#9f9d9f",
             "#585557"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Varangian+Cuffs"
     },
     {
         "name": "Velstadt's Gauntlets",
-        "image": "Arms/Velstadt's Gauntlets.png",
+        "image": "Hands/Velstadt's Gauntlets.png",
         "primaryColor": "#dfdddb",
         "secondaryColors": [
             "#a9a196",
             "#928776"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Velstadt%27s+Gauntlets"
     },
     {
         "name": "Vengarl's Gloves",
-        "image": "Arms/Vengarl's Gloves.png",
+        "image": "Hands/Vengarl's Gloves.png",
         "primaryColor": "#897672",
         "secondaryColors": [
             "#695e59",
             "#615655"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Vengarl%27s+Gloves"
     },
     {
         "name": "Wanderer Manchettes",
-        "image": "Arms/Wanderer Manchettes.png",
+        "image": "Hands/Wanderer Manchettes.png",
         "primaryColor": "#a1a38d",
         "secondaryColors": [
             "#64584f",
             "#5c4639"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Wanderer+Manchettes"
     },
     {
         "name": "White Priest Gloves",
-        "image": "Arms/White Priest Gloves.png",
+        "image": "Hands/White Priest Gloves.png",
         "primaryColor": "#a7a090",
         "secondaryColors": [
             "#938976",
             "#857a65"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/White+Priest+Gloves"
     },
     {
         "name": "Xanthous Gloves",
-        "image": "Arms/Xanthous Gloves.png",
+        "image": "Hands/Xanthous Gloves.png",
         "primaryColor": "#dfce99",
         "secondaryColors": [
             "#e0ca5f",
             "#cfb35b"
         ],
-        "type": "unknown"
+        "type": "hands",
+        "link": "https://darksouls2.wiki.fextralife.com/Xanthous+Gloves"
     },
     {
         "name": "Agdayne's Black Robe",
@@ -907,7 +997,8 @@
             "#797c82",
             "#5d5f60"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Agdayne%27s+Black+Robe"
     },
     {
         "name": "Alonne Captain Armor",
@@ -917,7 +1008,8 @@
             "#5b5a62",
             "#575864"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Alonne+Captain+Armor"
     },
     {
         "name": "Alonne Knight Armor",
@@ -927,7 +1019,8 @@
             "#5a5b5f",
             "#59585e"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Alonne+Knight+Armor"
     },
     {
         "name": "Alva Armor",
@@ -937,7 +1030,8 @@
             "#5d5651",
             "#4c433b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Alva+Armor"
     },
     {
         "name": "Archdrake Robes",
@@ -947,7 +1041,8 @@
             "#bcc4c4",
             "#9ca3a2"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Robes"
     },
     {
         "name": "Armor of Aurous (Invisible)",
@@ -957,7 +1052,8 @@
             "#708ea6",
             "#7187a6"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Armor+of+Aurous+(Invisible)"
     },
     {
         "name": "Armor of Aurous",
@@ -967,7 +1063,8 @@
             "#605753",
             "#4e453a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Armor+of+Aurous"
     },
     {
         "name": "Astrologist's Robe",
@@ -977,7 +1074,8 @@
             "#a09464",
             "#85794e"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Astrologist%27s+Robe"
     },
     {
         "name": "Bandit Armor",
@@ -987,7 +1085,8 @@
             "#5f5952",
             "#504438"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Bandit+Armor"
     },
     {
         "name": "Bell Keeper Bellyband",
@@ -997,7 +1096,8 @@
             "#9c8773",
             "#8d6d59"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Bell+Keeper+Bellyband"
     },
     {
         "name": "Benhart's Armor",
@@ -1007,7 +1107,8 @@
             "#494339",
             "#423c34"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Benhart%27s+Armor"
     },
     {
         "name": "Black Dragon Armor",
@@ -1017,7 +1118,8 @@
             "#655e4e",
             "#554b33"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Armor"
     },
     {
         "name": "Black Hollow Mage Robe",
@@ -1027,7 +1129,8 @@
             "#424339",
             "#353d41"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Hollow+Mage+Robe"
     },
     {
         "name": "Black Leather Armor",
@@ -1037,7 +1140,8 @@
             "#8d7354",
             "#635b52"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Leather+Armor"
     },
     {
         "name": "Black Robes",
@@ -1047,7 +1151,8 @@
             "#4d5251",
             "#4d4e4e"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Robes"
     },
     {
         "name": "Black Witch Robe",
@@ -1057,7 +1162,8 @@
             "#717489",
             "#595062"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Witch+Robe"
     },
     {
         "name": "Bone King Robe",
@@ -1067,7 +1173,8 @@
             "#656058",
             "#615c53"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Bone+King+Robe"
     },
     {
         "name": "Brigand Armor",
@@ -1077,7 +1184,8 @@
             "#a2916e",
             "#87755b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Brigand+Armor"
     },
     {
         "name": "Cale's Leather Armor",
@@ -1087,7 +1195,8 @@
             "#5e625a",
             "#5e6256"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Cale%27s+Leather+Armor"
     },
     {
         "name": "Catarina Armor",
@@ -1097,7 +1206,8 @@
             "#c4b9a2",
             "#afa48f"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Catarina+Armor"
     },
     {
         "name": "Chaos Robe",
@@ -1107,7 +1217,8 @@
             "#928772",
             "#857762"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Chaos+Robe"
     },
     {
         "name": "Creighton's Chainmail",
@@ -1117,7 +1228,8 @@
             "#58564f",
             "#474338"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Creighton%27s+Chainmail"
     },
     {
         "name": "Dark Armor",
@@ -1127,7 +1239,8 @@
             "#7a7c82",
             "#5e6268"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Dark+Armor"
     },
     {
         "name": "Desert Sorceress Top",
@@ -1137,7 +1250,8 @@
             "#a79691",
             "#8c7168"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Desert+Sorceress+Top"
     },
     {
         "name": "Dingy Robe",
@@ -1147,7 +1261,8 @@
             "#8f8a71",
             "#636156"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Dingy+Robe"
     },
     {
         "name": "Dragon Acolyte Robe",
@@ -1157,7 +1272,8 @@
             "#a2a1a0",
             "#676662"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragon+Acolyte+Robe"
     },
     {
         "name": "Dragonrider Armor",
@@ -1167,7 +1283,8 @@
             "#565452",
             "#4c453a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider+Armor"
     },
     {
         "name": "Drakekeeper Armor",
@@ -1177,7 +1294,8 @@
             "#4c4f4f",
             "#3d4244"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper+Armor"
     },
     {
         "name": "Drangleic Mail",
@@ -1187,7 +1305,8 @@
             "#5a5855",
             "#48423b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Drangleic+Mail"
     },
     {
         "name": "Elite Knight Armor",
@@ -1197,7 +1316,8 @@
             "#9e8d74",
             "#8a7662"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Elite+Knight+Armor"
     },
     {
         "name": "Executioner Armor",
@@ -1207,7 +1327,8 @@
             "#4d5052",
             "#3b434b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Executioner+Armor"
     },
     {
         "name": "Falconer Armor",
@@ -1217,7 +1338,8 @@
             "#6c5c50",
             "#5c4738"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Falconer+Armor"
     },
     {
         "name": "Faraam Armor",
@@ -1227,7 +1349,8 @@
             "#616666",
             "#565859"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Faraam+Armor"
     },
     {
         "name": "Grave Warden Top",
@@ -1237,7 +1360,8 @@
             "#85837c",
             "#73888b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Grave+Warden+Top"
     },
     {
         "name": "Gyrm Armor",
@@ -1247,7 +1371,8 @@
             "#605e5a",
             "#584933"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Armor"
     },
     {
         "name": "Gyrm Warrior Armor",
@@ -1257,7 +1382,8 @@
             "#655c50",
             "#5f584f"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Warrior+Armor"
     },
     {
         "name": "Hard Leather Armor",
@@ -1267,7 +1393,8 @@
             "#998577",
             "#887366"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Hard+Leather+Armor"
     },
     {
         "name": "Havel's Armor",
@@ -1277,7 +1404,8 @@
             "#a2a1a0",
             "#9a9b9b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Havel%27s+Armor"
     },
     {
         "name": "Heide Knight Chainmail",
@@ -1287,7 +1415,8 @@
             "#a6a096",
             "#a49e97"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Knight+Chainmail"
     },
     {
         "name": "Hexer's Robes",
@@ -1297,7 +1426,8 @@
             "#5b5851",
             "#585951"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Hexer%27s+Robes"
     },
     {
         "name": "Hollow Infantry Armor",
@@ -1307,7 +1437,8 @@
             "#4b4a47",
             "#574433"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Infantry+Armor"
     },
     {
         "name": "Hollow Soldier Armor",
@@ -1317,7 +1448,8 @@
             "#675b57",
             "#534539"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Soldier+Armor"
     },
     {
         "name": "Imperious Armor",
@@ -1327,7 +1459,8 @@
             "#45423c",
             "#3b4346"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Imperious+Armor"
     },
     {
         "name": "Imported Tunic",
@@ -1337,7 +1470,8 @@
             "#896f5e",
             "#66574c"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Imported+Tunic"
     },
     {
         "name": "Infantry Armor",
@@ -1347,7 +1481,8 @@
             "#4e4c4a",
             "#564534"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Infantry+Armor"
     },
     {
         "name": "Insolent Armor",
@@ -1357,7 +1492,8 @@
             "#8b847a",
             "#837a70"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Insolent+Armor"
     },
     {
         "name": "Ironclad Armor",
@@ -1367,7 +1503,8 @@
             "#9a9b9a",
             "#636865"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Ironclad+Armor"
     },
     {
         "name": "Jester's Robes",
@@ -1377,7 +1514,8 @@
             "#85663a",
             "#6d604d"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Jester%27s+Robes"
     },
     {
         "name": "King's Armor",
@@ -1387,7 +1525,8 @@
             "#595b58",
             "#5b5953"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/King%27s+Armor"
     },
     {
         "name": "Knight Armor",
@@ -1397,7 +1536,8 @@
             "#9a9999",
             "#887261"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Knight+Armor"
     },
     {
         "name": "Leather Armor",
@@ -1407,7 +1547,8 @@
             "#a8926c",
             "#897456"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Leather+Armor"
     },
     {
         "name": "Leydia Black Robe",
@@ -1417,7 +1558,8 @@
             "#626665",
             "#5a5a5f"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Leydia+Black+Robe"
     },
     {
         "name": "Leydia White Robe",
@@ -1427,7 +1569,8 @@
             "#9399aa",
             "#7b8395"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Leydia+White+Robe"
     },
     {
         "name": "Lion Mage Robe",
@@ -1437,7 +1580,8 @@
             "#5a5751",
             "#524833"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Mage+Robe"
     },
     {
         "name": "Lion Warrior Cape",
@@ -1447,7 +1591,8 @@
             "#564b31",
             "#453a29"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Warrior+Cape"
     },
     {
         "name": "Llwellyn Armor",
@@ -1457,7 +1602,8 @@
             "#5a5651",
             "#45413d"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Llwellyn+Armor"
     },
     {
         "name": "Looking Glass Armor",
@@ -1467,7 +1613,8 @@
             "#969999",
             "#949899"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Looking+Glass+Armor"
     },
     {
         "name": "Lucatiel's Vest",
@@ -1477,7 +1624,8 @@
             "#5a5b5b",
             "#575b5f"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Lucatiel%27s+Vest"
     },
     {
         "name": "Mad Warrior Armor",
@@ -1487,7 +1635,8 @@
             "#54575b",
             "#3c4248"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Mad+Warrior+Armor"
     },
     {
         "name": "Manikin Top",
@@ -1497,7 +1646,8 @@
             "#585454",
             "#52453a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Top"
     },
     {
         "name": "Mastodon Armor",
@@ -1507,7 +1657,8 @@
             "#897050",
             "#746148"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Mastodon+Armor"
     },
     {
         "name": "Monastery Longshirt",
@@ -1517,7 +1668,8 @@
             "#ccc5ba",
             "#c3bbb0"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Monastery+Longshirt"
     },
     {
         "name": "Moon Butterfly Wings",
@@ -1527,7 +1679,8 @@
             "#f2cf24",
             "#e09d58"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Moon+Butterfly+Wings"
     },
     {
         "name": "Nahr Alma Robes",
@@ -1537,7 +1690,8 @@
             "#5e5951",
             "#49443a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Nahr+Alma+Robes"
     },
     {
         "name": "Old Ironclad Armor",
@@ -1547,7 +1701,8 @@
             "#898478",
             "#83796c"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Ironclad+Armor"
     },
     {
         "name": "Old Knight Armor",
@@ -1557,7 +1712,8 @@
             "#384746",
             "#35413c"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Armor"
     },
     {
         "name": "Pate's Armor",
@@ -1567,7 +1723,8 @@
             "#ad8c6b",
             "#977253"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Pate%27s+Armor"
     },
     {
         "name": "Peasant Attire",
@@ -1577,7 +1734,8 @@
             "#5e4b2e",
             "#584d33"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Peasant+Attire"
     },
     {
         "name": "Penal Straightjacket",
@@ -1587,7 +1745,8 @@
             "#8b8379",
             "#827a72"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Penal+Straightjacket"
     },
     {
         "name": "Priestess Robe",
@@ -1597,7 +1756,8 @@
             "#c3c3ba",
             "#a3a39c"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Priestess+Robe"
     },
     {
         "name": "Prisoner's Tatters 2",
@@ -1607,7 +1767,8 @@
             "#584d34",
             "#584c32"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Prisoner%27s+Tatters+2"
     },
     {
         "name": "Prisoner's Tatters",
@@ -1617,7 +1778,8 @@
             "#574d35",
             "#52482f"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Prisoner%27s+Tatters"
     },
     {
         "name": "Red Lion Warrior Cape",
@@ -1627,7 +1789,8 @@
             "#564b33",
             "#47251b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Red+Lion+Warrior+Cape"
     },
     {
         "name": "Robe of Judgment",
@@ -1637,7 +1800,8 @@
             "#4a4b4d",
             "#284c4e"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Robe+of+Judgment"
     },
     {
         "name": "Rogue Armor",
@@ -1647,7 +1811,8 @@
             "#5d5547",
             "#4f4638"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Rogue+Armor"
     },
     {
         "name": "Royal Soldier Armor",
@@ -1657,7 +1822,8 @@
             "#5d5855",
             "#544837"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Soldier+Armor"
     },
     {
         "name": "Royal Swordsman Armor",
@@ -1667,7 +1833,8 @@
             "#555454",
             "#4a423c"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Swordsman+Armor"
     },
     {
         "name": "Ruin Armor",
@@ -1677,7 +1844,8 @@
             "#62645f",
             "#615d54"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Ruin+Armor"
     },
     {
         "name": "Rusted Mastodon Armor",
@@ -1687,7 +1855,8 @@
             "#685c4d",
             "#554838"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Rusted+Mastodon+Armor"
     },
     {
         "name": "Saint's Dress",
@@ -1697,7 +1866,8 @@
             "#6c5b4c",
             "#5a4837"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Saint%27s+Dress"
     },
     {
         "name": "Shadow Top",
@@ -1707,7 +1877,8 @@
             "#525450",
             "#42433a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Shadow+Top"
     },
     {
         "name": "Singer's Dress",
@@ -1717,7 +1888,8 @@
             "#798578",
             "#5f6559"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Singer%27s+Dress"
     },
     {
         "name": "Smelter Demon Armor",
@@ -1727,7 +1899,8 @@
             "#51565a",
             "#515255"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Smelter+Demon+Armor"
     },
     {
         "name": "Steel Armor",
@@ -1737,7 +1910,8 @@
             "#51605e",
             "#545b5a"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Steel+Armor"
     },
     {
         "name": "Syan's Armor",
@@ -1747,7 +1921,8 @@
             "#918575",
             "#847869"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Syan%27s+Armor"
     },
     {
         "name": "Targray's Armor",
@@ -1757,7 +1932,8 @@
             "#63615c",
             "#524b39"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Targray%27s+Armor"
     },
     {
         "name": "Tattered Cloth Robe",
@@ -1767,7 +1943,8 @@
             "#8e7651",
             "#8f6630"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Tattered+Cloth+Robe"
     },
     {
         "name": "Throne Defender Armor",
@@ -1777,7 +1954,8 @@
             "#5b5a59",
             "#49433b"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Defender+Armor"
     },
     {
         "name": "Throne Watcher Armor",
@@ -1787,7 +1965,8 @@
             "#a4a5a4",
             "#9c9e9d"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Watcher+Armor"
     },
     {
         "name": "Traveling Merchant Coat",
@@ -1797,7 +1976,8 @@
             "#908776",
             "#867361"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Traveling+Merchant+Coat"
     },
     {
         "name": "Tseldora Robe",
@@ -1807,7 +1987,8 @@
             "#8a7459",
             "#665b4d"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Tseldora+Robe"
     },
     {
         "name": "Varangian Armor",
@@ -1817,7 +1998,8 @@
             "#4f5355",
             "#614833"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Varangian+Armor"
     },
     {
         "name": "Velstadt's Armor",
@@ -1827,7 +2009,8 @@
             "#605950",
             "#4d4539"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Velstadt%27s+Armor"
     },
     {
         "name": "Vengarl's Armor",
@@ -1837,7 +2020,8 @@
             "#595b60",
             "#5a4f51"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Vengarl%27s+Armor"
     },
     {
         "name": "Wanderer Coat",
@@ -1847,7 +2031,8 @@
             "#87735e",
             "#675e50"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Wanderer+Coat"
     },
     {
         "name": "White Hollow Mage Robe",
@@ -1857,7 +2042,8 @@
             "#9ba19d",
             "#7a8485"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/White+Hollow+Mage+Robe"
     },
     {
         "name": "White Priest Robe",
@@ -1867,7 +2053,8 @@
             "#8a8474",
             "#857661"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/White+Priest+Robe"
     },
     {
         "name": "Xanthous Overcoat",
@@ -1877,7 +2064,8 @@
             "#d4ac0c",
             "#946d0d"
         ],
-        "type": "chest"
+        "type": "chest",
+        "link": "https://darksouls2.wiki.fextralife.com/Xanthous+Overcoat"
     },
     {
         "name": "Alonne Captain Helm",
@@ -1887,7 +2075,8 @@
             "#5a5e6a",
             "#555360"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Alonne+Captain+Helm"
     },
     {
         "name": "Alonne Knight Helm",
@@ -1897,7 +2086,8 @@
             "#7c829b",
             "#70728c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Alonne+Knight+Helm"
     },
     {
         "name": "Alva Helm",
@@ -1907,7 +2097,8 @@
             "#5b5958",
             "#4e5051"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Alva+Helm"
     },
     {
         "name": "Archdrake Helm",
@@ -1917,7 +2108,8 @@
             "#586160",
             "#555d5d"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Helm"
     },
     {
         "name": "Bell Keeper Helmet",
@@ -1927,7 +2119,8 @@
             "#6a5e50",
             "#5d4b33"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Bell+Keeper+Helmet"
     },
     {
         "name": "Benhart's Knight Helm",
@@ -1937,7 +2130,8 @@
             "#666158",
             "#5c5955"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Benhart%27s+Knight+Helm"
     },
     {
         "name": "Black Dragon Helm",
@@ -1947,7 +2141,8 @@
             "#686453",
             "#5d5f57"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Helm"
     },
     {
         "name": "Black Hollow Mage Hood",
@@ -1957,7 +2152,8 @@
             "#5b605f",
             "#5d5d57"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Hollow+Mage+Hood"
     },
     {
         "name": "Black Hood",
@@ -1967,7 +2163,8 @@
             "#50514e",
             "#3c4144"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Hood"
     },
     {
         "name": "Black Witch Domino Mask",
@@ -1977,7 +2174,8 @@
             "#acafc7",
             "#9197ae"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Witch+Domino+Mask"
     },
     {
         "name": "Black Witch Hat",
@@ -1987,7 +2185,8 @@
             "#484749",
             "#484648"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Witch+Hat"
     },
     {
         "name": "Black Witch Veil",
@@ -1997,7 +2196,8 @@
             "#5e615c",
             "#575360"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Witch+Veil"
     },
     {
         "name": "Bone Crown",
@@ -2007,7 +2207,8 @@
             "#6b6858",
             "#70644c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Bone+Crown"
     },
     {
         "name": "Brigand Hood",
@@ -2017,7 +2218,8 @@
             "#9a8a6f",
             "#866d54"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Brigand+Hood"
     },
     {
         "name": "Cale's Helm",
@@ -2027,7 +2229,8 @@
             "#4e5154",
             "#3a4349"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Cale%27s+Helm"
     },
     {
         "name": "Catarina Helm",
@@ -2037,7 +2240,8 @@
             "#c5b89f",
             "#b4a78e"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Catarina+Helm"
     },
     {
         "name": "Chaos Hood",
@@ -2047,7 +2251,8 @@
             "#5a564f",
             "#494637"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Chaos+Hood"
     },
     {
         "name": "Creighton's Steel Mask",
@@ -2057,7 +2262,8 @@
             "#595a52",
             "#565a56"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Creighton%27s+Steel+Mask"
     },
     {
         "name": "Dark Mask",
@@ -2067,7 +2273,8 @@
             "#a1a09f",
             "#5a5b5b"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Dark+Mask"
     },
     {
         "name": "Desert Sorceress Hood",
@@ -2077,7 +2284,8 @@
             "#926253",
             "#8d6355"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Desert+Sorceress+Hood"
     },
     {
         "name": "Dingy Hood",
@@ -2087,7 +2295,8 @@
             "#85837b",
             "#66665f"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Dingy+Hood"
     },
     {
         "name": "Dragon Acolyte Mask",
@@ -2097,7 +2306,8 @@
             "#a3a2a3",
             "#a1a2a3"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragon+Acolyte+Mask"
     },
     {
         "name": "Dragon Sage Hood",
@@ -2107,7 +2317,8 @@
             "#c1c0be",
             "#abaaa8"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragon+Sage+Hood"
     },
     {
         "name": "Dragonrider Helm",
@@ -2117,7 +2328,8 @@
             "#535755",
             "#4f5153"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider+Helm"
     },
     {
         "name": "Drakekeeper Helm",
@@ -2127,7 +2339,8 @@
             "#4b4e52",
             "#4c4b4d"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper+Helm"
     },
     {
         "name": "Drangleic Helm",
@@ -2137,7 +2350,8 @@
             "#4b5658",
             "#3b454b"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Drangleic+Helm"
     },
     {
         "name": "Durgo's Hat",
@@ -2147,7 +2361,8 @@
             "#646117",
             "#4c452c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Durgo%27s+Hat"
     },
     {
         "name": "Elite Knight Helm",
@@ -2157,7 +2372,8 @@
             "#5f645e",
             "#5d6261"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Elite+Knight+Helm"
     },
     {
         "name": "Executioner Helm",
@@ -2167,7 +2383,8 @@
             "#565453",
             "#49443b"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Executioner+Helm"
     },
     {
         "name": "Falconer Helm",
@@ -2177,7 +2394,8 @@
             "#646868",
             "#606367"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Falconer+Helm"
     },
     {
         "name": "Faraam Helm",
@@ -2187,7 +2405,8 @@
             "#909296",
             "#7d8286"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Faraam+Helm"
     },
     {
         "name": "Grave Warden Mask",
@@ -2197,7 +2416,8 @@
             "#85837b",
             "#6a6960"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Grave+Warden+Mask"
     },
     {
         "name": "Gyrm Helm",
@@ -2207,7 +2427,8 @@
             "#a09f97",
             "#9a8d6a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Helm"
     },
     {
         "name": "Gyrm Warrior Greathelm",
@@ -2217,7 +2438,8 @@
             "#87765d",
             "#6c675a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Warrior+Greathelm"
     },
     {
         "name": "Gyrm Warrior Helm",
@@ -2227,7 +2449,8 @@
             "#857761",
             "#6f6857"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Warrior+Helm"
     },
     {
         "name": "Havel's Helm",
@@ -2237,7 +2460,8 @@
             "#586462",
             "#5a645c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Havel%27s+Helm"
     },
     {
         "name": "Heide Knight Greathelm",
@@ -2247,7 +2471,8 @@
             "#cec4b2",
             "#c5b79e"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Knight+Greathelm"
     },
     {
         "name": "Heide Knight Iron Mask",
@@ -2257,7 +2482,8 @@
             "#656563",
             "#645958"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Knight+Iron+Mask"
     },
     {
         "name": "Helm of Aurous (Invisible)",
@@ -2267,7 +2493,8 @@
             "#8d8faa",
             "#7982a0"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Helm+of+Aurous+(Invisible)"
     },
     {
         "name": "Helm of Aurous",
@@ -2277,7 +2504,8 @@
             "#6e554a",
             "#6e5349"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Helm+of+Aurous"
     },
     {
         "name": "Hexer's Hood",
@@ -2287,7 +2515,8 @@
             "#5d5c5b",
             "#555656"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Hexer%27s+Hood"
     },
     {
         "name": "Hollow Infantry Helm",
@@ -2297,7 +2526,8 @@
             "#5b5d57",
             "#4c5b56"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Infantry+Helm"
     },
     {
         "name": "Hollow Soldier Helmet",
@@ -2307,7 +2537,8 @@
             "#98886e",
             "#8a705a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Soldier+Helmet"
     },
     {
         "name": "Hunter's Hat",
@@ -2317,7 +2548,8 @@
             "#64554f",
             "#5d4336"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Hunter%27s+Hat"
     },
     {
         "name": "Imperious Helm",
@@ -2327,7 +2559,8 @@
             "#959698",
             "#787c82"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Imperious+Helm"
     },
     {
         "name": "Imported Hood",
@@ -2337,7 +2570,8 @@
             "#877159",
             "#6e5948"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Imported+Hood"
     },
     {
         "name": "Infantry Helm",
@@ -2347,7 +2581,8 @@
             "#999b98",
             "#5b6555"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Infantry+Helm"
     },
     {
         "name": "Insolent Helm",
@@ -2357,7 +2592,8 @@
             "#939598",
             "#5f6668"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Insolent+Helm"
     },
     {
         "name": "Ironclad Helm",
@@ -2367,7 +2603,8 @@
             "#636561",
             "#616560"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Ironclad+Helm"
     },
     {
         "name": "Jester's Cap",
@@ -2377,7 +2614,8 @@
             "#a48e62",
             "#8b744c"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Jester%27s+Cap"
     },
     {
         "name": "King's Crown",
@@ -2387,7 +2625,8 @@
             "#5b6157",
             "#5b605a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/King%27s+Crown"
     },
     {
         "name": "Knight Helm",
@@ -2397,7 +2636,8 @@
             "#5d645d",
             "#585e58"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Knight+Helm"
     },
     {
         "name": "Leydia Black Hood",
@@ -2407,7 +2647,8 @@
             "#5f6267",
             "#58555a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Leydia+Black+Hood"
     },
     {
         "name": "Leydia White Hood",
@@ -2417,7 +2658,8 @@
             "#bcc2d1",
             "#b0b6c6"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Leydia+White+Hood"
     },
     {
         "name": "Lion Warrior Helm",
@@ -2427,7 +2669,8 @@
             "#596260",
             "#536267"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Warrior+Helm"
     },
     {
         "name": "Looking Glass Helm",
@@ -2437,7 +2680,8 @@
             "#9d9fa1",
             "#969b9b"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Looking+Glass+Helm"
     },
     {
         "name": "Lucatiel's Mask",
@@ -2447,7 +2691,8 @@
             "#89704f",
             "#6d6151"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Lucatiel%27s+Mask"
     },
     {
         "name": "Mad Warrior Mask",
@@ -2457,7 +2702,8 @@
             "#505558",
             "#3b4347"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Mad+Warrior+Mask"
     },
     {
         "name": "Manikin Mask",
@@ -2467,7 +2713,8 @@
             "#c5b8b2",
             "#a79d98"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Mask"
     },
     {
         "name": "Mask of Judgment",
@@ -2477,7 +2724,8 @@
             "#5c5a51",
             "#494737"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Mask+of+Judgment"
     },
     {
         "name": "Mastodon Helm",
@@ -2487,7 +2735,8 @@
             "#6b5e4b",
             "#574a35"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Mastodon+Helm"
     },
     {
         "name": "Monastery Headcloth",
@@ -2497,7 +2746,8 @@
             "#cfc5b7",
             "#c3b9ab"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Monastery+Headcloth"
     },
     {
         "name": "Moon Butterfly Hat",
@@ -2507,7 +2757,8 @@
             "#cec4b6",
             "#c7b8a6"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Moon+Butterfly+Hat"
     },
     {
         "name": "Moon Hat",
@@ -2517,7 +2768,8 @@
             "#9c9b95",
             "#a2976b"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Moon+Hat"
     },
     {
         "name": "Nahr Alma Hood",
@@ -2527,7 +2779,8 @@
             "#4a443b",
             "#3c3d40"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Nahr+Alma+Hood"
     },
     {
         "name": "Old Ironclad Helm",
@@ -2537,7 +2790,8 @@
             "#88837a",
             "#645e53"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Ironclad+Helm"
     },
     {
         "name": "Old Knight Helm",
@@ -2547,7 +2801,8 @@
             "#394846",
             "#374645"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Helm"
     },
     {
         "name": "Pate's Helm",
@@ -2557,7 +2812,8 @@
             "#a39f9c",
             "#8a8577"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Pate%27s+Helm"
     },
     {
         "name": "Peasant Hat",
@@ -2567,7 +2823,8 @@
             "#5a4b29",
             "#47371a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Peasant+Hat"
     },
     {
         "name": "Penal Mask",
@@ -2577,7 +2834,8 @@
             "#3c4246",
             "#423d3a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Penal+Mask"
     },
     {
         "name": "Priestess Headpiece",
@@ -2587,7 +2845,8 @@
             "#cac7b7",
             "#aaa899"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Priestess+Headpiece"
     },
     {
         "name": "Prisoner's Hood 2",
@@ -2597,7 +2856,8 @@
             "#5f5c4e",
             "#5c4b34"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Prisoner%27s+Hood+2"
     },
     {
         "name": "Prisoner's Hood",
@@ -2607,7 +2867,8 @@
             "#6a604f",
             "#6c5c47"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Prisoner%27s+Hood"
     },
     {
         "name": "Rogue Hood",
@@ -2617,7 +2878,8 @@
             "#8b837b",
             "#867a71"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Rogue+Hood"
     },
     {
         "name": "Royal Soldier Helmet",
@@ -2627,7 +2889,8 @@
             "#86745e",
             "#5f5d57"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Soldier+Helmet"
     },
     {
         "name": "Royal Swordman Helm",
@@ -2637,7 +2900,8 @@
             "#5b5f5f",
             "#585857"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Swordman+Helm"
     },
     {
         "name": "Ruin Helm",
@@ -2647,7 +2911,8 @@
             "#837b6f",
             "#615e4e"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Ruin+Helm"
     },
     {
         "name": "Rusted Mastodon Helm",
@@ -2657,7 +2922,8 @@
             "#64594e",
             "#504639"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Rusted+Mastodon+Helm"
     },
     {
         "name": "Saint's Hood",
@@ -2667,7 +2933,8 @@
             "#705c51",
             "#6f5c50"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Saint%27s+Hood"
     },
     {
         "name": "Shadow Mask",
@@ -2677,7 +2944,8 @@
             "#576266",
             "#525b5f"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Shadow+Mask"
     },
     {
         "name": "Smelter Demon Helm",
@@ -2687,7 +2955,8 @@
             "#565c5e",
             "#555658"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Smelter+Demon+Helm"
     },
     {
         "name": "Spiked Bandit Helm",
@@ -2697,7 +2966,8 @@
             "#89857a",
             "#66655a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Spiked+Bandit+Helm"
     },
     {
         "name": "Standard Helm",
@@ -2707,7 +2977,8 @@
             "#626664",
             "#606562"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Standard+Helm"
     },
     {
         "name": "Steel Helm",
@@ -2717,7 +2988,8 @@
             "#535d62",
             "#535d5e"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Steel+Helm"
     },
     {
         "name": "Syan's Helm",
@@ -2727,7 +2999,8 @@
             "#928675",
             "#857867"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Syan%27s+Helm"
     },
     {
         "name": "Targray's Helm",
@@ -2737,7 +3010,8 @@
             "#585e5f",
             "#565956"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Targray%27s+Helm"
     },
     {
         "name": "Tattered Cloth Hood",
@@ -2747,7 +3021,8 @@
             "#8b764b",
             "#6c6148"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Tattered+Cloth+Hood"
     },
     {
         "name": "Thief Mask",
@@ -2757,7 +3032,8 @@
             "#89776e",
             "#646161"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Thief+Mask"
     },
     {
         "name": "Throne Defender Helm",
@@ -2767,7 +3043,8 @@
             "#5d5e5d",
             "#5d5c57"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Defender+Helm"
     },
     {
         "name": "Throne Watcher Helm",
@@ -2777,7 +3054,8 @@
             "#bbc3c3",
             "#a5a7a7"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Watcher+Helm"
     },
     {
         "name": "Traveling Merchant Hat",
@@ -2787,7 +3065,8 @@
             "#4f433a",
             "#453a32"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Traveling+Merchant+Hat"
     },
     {
         "name": "Tseldora Cap",
@@ -2797,7 +3076,8 @@
             "#8d7449",
             "#88642a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Tseldora+Cap"
     },
     {
         "name": "Varangian Helm",
@@ -2807,7 +3087,8 @@
             "#98999b",
             "#5f6160"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Varangian+Helm"
     },
     {
         "name": "Velstadt's Helm",
@@ -2817,7 +3098,8 @@
             "#5e5230",
             "#514538"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Velstadt%27s+Helm"
     },
     {
         "name": "Vengarl's Helm",
@@ -2827,7 +3109,8 @@
             "#574f58",
             "#4b3b43"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Vengarl%27s+Helm"
     },
     {
         "name": "Wanderer Hood",
@@ -2837,7 +3120,8 @@
             "#8c8578",
             "#837a6b"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Wanderer+Hood"
     },
     {
         "name": "Warlock Mask",
@@ -2847,7 +3131,8 @@
             "#5d635d",
             "#595e5a"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Warlock+Mask"
     },
     {
         "name": "White Hollow Mage Hood",
@@ -2857,7 +3142,8 @@
             "#98998f",
             "#908f73"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/White+Hollow+Mage+Hood"
     },
     {
         "name": "White Priest Headpiece",
@@ -2867,7 +3153,8 @@
             "#9f9063",
             "#af8a34"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/White+Priest+Headpiece"
     },
     {
         "name": "Xanthous Crown",
@@ -2877,7 +3164,8 @@
             "#ebd75e",
             "#e9cc26"
         ],
-        "type": "head"
+        "type": "head",
+        "link": "https://darksouls2.wiki.fextralife.com/Xanthous+Crown"
     },
     {
         "name": "Agdayne's Kilt",
@@ -2887,7 +3175,8 @@
             "#606466",
             "#636363"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Agdayne%27s+Kilt"
     },
     {
         "name": "Alonne Knight Leggings",
@@ -2897,7 +3186,8 @@
             "#52535f",
             "#3c4250"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Alonne+Knight+Leggings"
     },
     {
         "name": "Alva Leggings",
@@ -2907,7 +3197,8 @@
             "#5c534e",
             "#49423c"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Alva+Leggings"
     },
     {
         "name": "Archdrake Boots",
@@ -2917,7 +3208,8 @@
             "#5e6462",
             "#5b6160"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Boots"
     },
     {
         "name": "Astrologist's Bottoms",
@@ -2927,7 +3219,8 @@
             "#5d5854",
             "#5d5231"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Astrologist%27s+Bottoms"
     },
     {
         "name": "Bandit Boots",
@@ -2937,7 +3230,8 @@
             "#565248",
             "#4b4538"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Bandit+Boots"
     },
     {
         "name": "Bell Keeper Trousers",
@@ -2947,7 +3241,8 @@
             "#605853",
             "#4c423a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Bell+Keeper+Trousers"
     },
     {
         "name": "Benhart's Boots",
@@ -2957,7 +3252,8 @@
             "#4e4b45",
             "#4b4338"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Benhart%27s+Boots"
     },
     {
         "name": "Black Boots",
@@ -2967,7 +3263,8 @@
             "#4c4d4c",
             "#514b47"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Boots"
     },
     {
         "name": "Black Dragon Leggings",
@@ -2977,7 +3274,8 @@
             "#5e594b",
             "#524b36"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Leggings"
     },
     {
         "name": "Black Leather Boots",
@@ -2987,7 +3285,8 @@
             "#5a524a",
             "#54463a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Leather+Boots"
     },
     {
         "name": "Black Witch Trousers",
@@ -2997,7 +3296,8 @@
             "#9b9cab",
             "#524c5f"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Witch+Trousers"
     },
     {
         "name": "Blood Stained Skirt",
@@ -3007,7 +3307,8 @@
             "#9a8c72",
             "#675b4f"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Blood+Stained+Skirt"
     },
     {
         "name": "Bone King Skirt",
@@ -3017,7 +3318,8 @@
             "#5b574f",
             "#47443b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Bone+King+Skirt"
     },
     {
         "name": "Brigand Trousers",
@@ -3027,7 +3329,8 @@
             "#857557",
             "#6d5f4a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Brigand+Trousers"
     },
     {
         "name": "Cale's Shoes",
@@ -3037,7 +3340,8 @@
             "#524f47",
             "#4e4f4a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Cale%27s+Shoes"
     },
     {
         "name": "Catarina Leggings",
@@ -3047,7 +3351,8 @@
             "#8f8a73",
             "#877361"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Catarina+Leggings"
     },
     {
         "name": "Chaos Boots",
@@ -3057,7 +3362,8 @@
             "#4f535f",
             "#484239"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Chaos+Boots"
     },
     {
         "name": "Creighton's Chain Leggings",
@@ -3067,7 +3373,8 @@
             "#505655",
             "#515456"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Creighton%27s+Chain+Leggings"
     },
     {
         "name": "Dark Leggings",
@@ -3077,7 +3384,8 @@
             "#5d6161",
             "#5c5e5d"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Dark+Leggings"
     },
     {
         "name": "Desert Sorceress Skirt",
@@ -3087,7 +3395,8 @@
             "#94685e",
             "#6f4f48"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Desert+Sorceress+Skirt"
     },
     {
         "name": "Dragon Acolyte Boots",
@@ -3097,7 +3406,8 @@
             "#5f5f56",
             "#4e4a38"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragon+Acolyte+Boots"
     },
     {
         "name": "Dragonrider Leggings",
@@ -3107,7 +3417,8 @@
             "#354c4f",
             "#3d4044"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider+Leggings"
     },
     {
         "name": "Drakekeeper Boots",
@@ -3117,7 +3428,8 @@
             "#494a4f",
             "#4a494c"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper+Boots"
     },
     {
         "name": "Drangleic Leggings",
@@ -3127,7 +3439,8 @@
             "#4c4a48",
             "#524739"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Drangleic+Leggings"
     },
     {
         "name": "Elite Knight Leggings",
@@ -3137,7 +3450,8 @@
             "#5f5d59",
             "#575e61"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Elite+Knight+Leggings"
     },
     {
         "name": "Executioner Leggings",
@@ -3147,7 +3461,8 @@
             "#595e62",
             "#595856"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Executioner+Leggings"
     },
     {
         "name": "Falconer Boots",
@@ -3157,7 +3472,8 @@
             "#595758",
             "#504536"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Falconer+Boots"
     },
     {
         "name": "Faraam Boots",
@@ -3167,7 +3483,8 @@
             "#57514f",
             "#53443a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Faraam+Boots"
     },
     {
         "name": "Flying Feline Boots",
@@ -3177,7 +3494,8 @@
             "#957053",
             "#8d5a34"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Flying+Feline+Boots"
     },
     {
         "name": "Grave Warden Bottoms",
@@ -3187,7 +3505,8 @@
             "#5d6163",
             "#545553"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Grave+Warden+Bottoms"
     },
     {
         "name": "Gyrm Boots",
@@ -3197,7 +3516,8 @@
             "#676851",
             "#4e4e38"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Boots"
     },
     {
         "name": "Gyrm Warrior Boots",
@@ -3207,7 +3527,8 @@
             "#86785f",
             "#6f634d"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Warrior+Boots"
     },
     {
         "name": "Hard Leather Boots",
@@ -3217,7 +3538,8 @@
             "#565b57",
             "#4f504d"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Hard+Leather+Boots"
     },
     {
         "name": "Havel's Leggings",
@@ -3227,7 +3549,8 @@
             "#61645f",
             "#5a605d"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Havel%27s+Leggings"
     },
     {
         "name": "Heavy Boots",
@@ -3237,7 +3560,8 @@
             "#89765f",
             "#6b5f4e"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Heavy+Boots"
     },
     {
         "name": "Heide Knight Leggings",
@@ -3247,7 +3571,8 @@
             "#9a9999",
             "#8d847a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Knight+Leggings"
     },
     {
         "name": "Hexer's Boots",
@@ -3257,7 +3582,8 @@
             "#504c46",
             "#4d4439"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Hexer%27s+Boots"
     },
     {
         "name": "Hollow Infantry Boots",
@@ -3267,7 +3593,8 @@
             "#696762",
             "#555553"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Infantry+Boots"
     },
     {
         "name": "Hollow Soldier Leggings",
@@ -3277,7 +3604,8 @@
             "#6e5e4e",
             "#5b4935"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Soldier+Leggings"
     },
     {
         "name": "Imperious Leggings",
@@ -3287,7 +3615,8 @@
             "#575b5b",
             "#575a57"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Imperious+Leggings"
     },
     {
         "name": "Imported Trousers",
@@ -3297,7 +3626,8 @@
             "#585349",
             "#4d453b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Imported+Trousers"
     },
     {
         "name": "Infantry Boots",
@@ -3307,7 +3637,8 @@
             "#6a6960",
             "#525553"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Infantry+Boots"
     },
     {
         "name": "Insolent Boots",
@@ -3317,7 +3648,8 @@
             "#484848",
             "#45403e"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Insolent+Boots"
     },
     {
         "name": "Ironclad Leggings",
@@ -3327,7 +3659,8 @@
             "#616566",
             "#5d5d5a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Ironclad+Leggings"
     },
     {
         "name": "Jester's Tights",
@@ -3337,7 +3670,8 @@
             "#8b754d",
             "#654e31"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Jester%27s+Tights"
     },
     {
         "name": "King's Leggings",
@@ -3347,7 +3681,8 @@
             "#555350",
             "#494d4e"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/King%27s+Leggings"
     },
     {
         "name": "Knight Leggings",
@@ -3357,7 +3692,8 @@
             "#948777",
             "#87786a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Knight+Leggings"
     },
     {
         "name": "Leather Boots",
@@ -3367,7 +3703,8 @@
             "#725c4b",
             "#654632"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Leather+Boots"
     },
     {
         "name": "Leggings of Aurous (Invisible)",
@@ -3377,7 +3714,8 @@
             "#6e8ea4",
             "#7585a3"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Leggings+of+Aurous+(Invisible)"
     },
     {
         "name": "Leggings of Aurous",
@@ -3387,7 +3725,8 @@
             "#674c49",
             "#554539"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Leggings+of+Aurous"
     },
     {
         "name": "Lion Mage Skirt",
@@ -3397,7 +3736,8 @@
             "#706346",
             "#5d5033"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Mage+Skirt"
     },
     {
         "name": "Lion Warrior Skirt",
@@ -3407,7 +3747,8 @@
             "#5a522d",
             "#4a4538"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Warrior+Skirt"
     },
     {
         "name": "Llwellyn Shoes",
@@ -3417,7 +3758,8 @@
             "#2d5e5e",
             "#3c4449"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Llwellyn+Shoes"
     },
     {
         "name": "Looking Glass Leggings",
@@ -3427,7 +3769,8 @@
             "#8e9290",
             "#5e6664"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Looking+Glass+Leggings"
     },
     {
         "name": "Lucatiel's Trousers",
@@ -3437,7 +3780,8 @@
             "#4f493b",
             "#514439"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Lucatiel%27s+Trousers"
     },
     {
         "name": "Mad Warrior Leggings",
@@ -3447,7 +3791,8 @@
             "#4c4d4e",
             "#3b4249"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Mad+Warrior+Leggings"
     },
     {
         "name": "Manikin Boots",
@@ -3457,7 +3802,8 @@
             "#574d4c",
             "#463938"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Boots"
     },
     {
         "name": "Mastodon Leggings",
@@ -3467,7 +3813,8 @@
             "#86745c",
             "#70604b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Mastodon+Leggings"
     },
     {
         "name": "Monastery Skirt",
@@ -3477,7 +3824,8 @@
             "#ddd8d0",
             "#cdc5ba"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Monastery+Skirt"
     },
     {
         "name": "Moon Butterfly Skirt",
@@ -3487,7 +3835,8 @@
             "#9d6b4b",
             "#9f5627"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Moon+Butterfly+Skirt"
     },
     {
         "name": "Old Ironclad Leggings",
@@ -3497,7 +3846,8 @@
             "#62615c",
             "#655f51"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Ironclad+Leggings"
     },
     {
         "name": "Old Knight Leggings",
@@ -3507,7 +3857,8 @@
             "#42423d",
             "#3a413b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Leggings"
     },
     {
         "name": "Pate's Trousers",
@@ -3517,7 +3868,8 @@
             "#a78a6c",
             "#937153"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Pate%27s+Trousers"
     },
     {
         "name": "Peasant Trousers",
@@ -3527,7 +3879,8 @@
             "#4d462e",
             "#3a4334"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Peasant+Trousers"
     },
     {
         "name": "Penal Skirt",
@@ -3537,7 +3890,8 @@
             "#5a514a",
             "#4c423a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Penal+Skirt"
     },
     {
         "name": "Priestess Skirt",
@@ -3547,7 +3901,8 @@
             "#837c83",
             "#827875"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Priestess+Skirt"
     },
     {
         "name": "Prisoner's Waistcloth",
@@ -3557,7 +3912,8 @@
             "#59462d",
             "#4b3320"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Prisoner%27s+Waistcloth"
     },
     {
         "name": "Rogue Leggings",
@@ -3567,7 +3923,8 @@
             "#585852",
             "#4b4537"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Rogue+Leggings"
     },
     {
         "name": "Royal Soldier Leggings",
@@ -3577,7 +3934,8 @@
             "#575550",
             "#48443a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Soldier+Leggings"
     },
     {
         "name": "Royal Swordsman Leggings",
@@ -3587,7 +3945,8 @@
             "#53504e",
             "#49423c"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Swordsman+Leggings"
     },
     {
         "name": "Ruin Leggings",
@@ -3597,7 +3956,8 @@
             "#5b574d",
             "#4d4738"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Ruin+Leggings"
     },
     {
         "name": "Rusted Mastodon Leggings",
@@ -3607,7 +3967,8 @@
             "#887664",
             "#685b50"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Rusted+Mastodon+Leggings"
     },
     {
         "name": "Saint's Trousers",
@@ -3617,7 +3978,8 @@
             "#4b4b4b",
             "#46413c"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Saint%27s+Trousers"
     },
     {
         "name": "Shadow Leggings",
@@ -3627,7 +3989,8 @@
             "#4c5453",
             "#424d44"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Shadow+Leggings"
     },
     {
         "name": "Smelter Demon Leggings",
@@ -3637,7 +4000,8 @@
             "#545b5d",
             "#53595a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Smelter+Demon+Leggings"
     },
     {
         "name": "Steel Leggings",
@@ -3647,7 +4011,8 @@
             "#545d5c",
             "#535857"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Steel+Leggings"
     },
     {
         "name": "Syan's Leggings",
@@ -3657,7 +4022,8 @@
             "#867565",
             "#6a5f52"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Syan%27s+Leggings"
     },
     {
         "name": "Targray's Leggings",
@@ -3667,7 +4033,8 @@
             "#827b74",
             "#68635b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Targray%27s+Leggings"
     },
     {
         "name": "Throne Defender Leggings",
@@ -3677,7 +4044,8 @@
             "#565753",
             "#51514b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Defender+Leggings"
     },
     {
         "name": "Throne Watcher Leggings",
@@ -3687,7 +4055,8 @@
             "#656464",
             "#626362"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Throne+Watcher+Leggings"
     },
     {
         "name": "Tights of Judgment",
@@ -3697,7 +4066,8 @@
             "#535555",
             "#535553"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Tights+of+Judgment"
     },
     {
         "name": "Traveling Merchan Boots",
@@ -3707,7 +4077,8 @@
             "#6c5e47",
             "#655232"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Traveling+Merchan+Boots"
     },
     {
         "name": "Tseldora Trousers",
@@ -3717,7 +4088,8 @@
             "#5a4c2e",
             "#463921"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Tseldora+Trousers"
     },
     {
         "name": "Varangian Leggings",
@@ -3727,7 +4099,8 @@
             "#584f4c",
             "#51433b"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Varangian+Leggings"
     },
     {
         "name": "Velstadt's Leggings",
@@ -3737,7 +4110,8 @@
             "#56514b",
             "#4c4538"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Velstadt%27s+Leggings"
     },
     {
         "name": "Vengarl's Boots",
@@ -3747,7 +4121,8 @@
             "#595253",
             "#383c41"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Vengarl%27s+Boots"
     },
     {
         "name": "Wanderer Boots",
@@ -3757,7 +4132,8 @@
             "#675f54",
             "#5c4937"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Wanderer+Boots"
     },
     {
         "name": "White Priest Skirt",
@@ -3767,7 +4143,8 @@
             "#898577",
             "#827b6a"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/White+Priest+Skirt"
     },
     {
         "name": "Xanthous Waistcloth",
@@ -3777,7 +4154,8 @@
             "#e8c928",
             "#d3ab13"
         ],
-        "type": "legs"
+        "type": "legs",
+        "link": "https://darksouls2.wiki.fextralife.com/Xanthous+Waistcloth"
     },
     {
         "name": "Dragonrider Greatshield",
@@ -3787,7 +4165,8 @@
             "#51555b",
             "#4b4539"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider+Greatshield"
     },
     {
         "name": "Drakekeeper's Greatshield",
@@ -3797,7 +4176,8 @@
             "#51585a",
             "#505555"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper%27s+Greatshield"
     },
     {
         "name": "Greatshield of Glory",
@@ -3807,7 +4187,8 @@
             "#47484a",
             "#3d4144"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Greatshield+of+Glory"
     },
     {
         "name": "Gyrm Greatshield",
@@ -3817,7 +4198,8 @@
             "#9ba09c",
             "#606257"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Greatshield"
     },
     {
         "name": "Havel's Greatshield",
@@ -3827,7 +4209,8 @@
             "#817c78",
             "#5f5e5f"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Havel%27s+Greatshield"
     },
     {
         "name": "King's Mirror",
@@ -3837,7 +4220,8 @@
             "#bec1c1",
             "#bbbec0"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/King%27s+Mirror"
     },
     {
         "name": "Mastodon Greatshield",
@@ -3847,7 +4231,8 @@
             "#887454",
             "#766448"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Mastodon+Greatshield"
     },
     {
         "name": "Old Knight Greatshield",
@@ -3857,7 +4242,8 @@
             "#7a8483",
             "#57605f"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Greatshield"
     },
     {
         "name": "Orma's Greatshield",
@@ -3867,7 +4253,8 @@
             "#616261",
             "#535656"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Orma%27s+Greatshield"
     },
     {
         "name": "Pate's Shield",
@@ -3877,7 +4264,8 @@
             "#5c6165",
             "#575555"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Pate%27s+Shield"
     },
     {
         "name": "Pursuer's Greatshield",
@@ -3887,7 +4275,8 @@
             "#737987",
             "#565a5c"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Pursuer%27s+Greatshield"
     },
     {
         "name": "Rebel's Greatshield",
@@ -3897,7 +4286,8 @@
             "#979593",
             "#89847a"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Rebel%27s+Greatshield"
     },
     {
         "name": "Reeve's Greatshield",
@@ -3907,7 +4297,8 @@
             "#616363",
             "#616361"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Reeve%27s+Greatshield"
     },
     {
         "name": "Tower Shield",
@@ -3917,7 +4308,8 @@
             "#575957",
             "#464439"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Tower+Shield"
     },
     {
         "name": "Twin Dragon Shield",
@@ -3927,7 +4319,8 @@
             "#958776",
             "#877767"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Twin+Dragon+Shield"
     },
     {
         "name": "Wicked Eye Greatshield",
@@ -3937,7 +4330,8 @@
             "#cdc3ba",
             "#c5b7af"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Wicked+Eye+Greatshield"
     },
     {
         "name": "Archdrake Shield",
@@ -3947,7 +4341,8 @@
             "#9b9d9c",
             "#5c6467"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Shield"
     },
     {
         "name": "Bell Keeper Shield",
@@ -3957,7 +4352,8 @@
             "#8e817d",
             "#857873"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Bell+Keeper+Shield"
     },
     {
         "name": "Black Dragon Shield",
@@ -3967,7 +4363,8 @@
             "#605c53",
             "#5a5c5b"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Shield"
     },
     {
         "name": "Black Flamestone Parma",
@@ -3977,7 +4374,8 @@
             "#798487",
             "#585f5d"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Flamestone+Parma"
     },
     {
         "name": "Blossom Kite Shield",
@@ -3987,7 +4385,8 @@
             "#a79c94",
             "#976a5c"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Blossom+Kite+Shield"
     },
     {
         "name": "Blue Wooden Shield",
@@ -3997,7 +4396,8 @@
             "#a6a8a8",
             "#567386"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Blue+Wooden+Shield"
     },
     {
         "name": "Bone Shield",
@@ -4007,7 +4407,8 @@
             "#9a9b9e",
             "#999899"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Bone+Shield"
     },
     {
         "name": "Bound Wooden Shield",
@@ -4017,7 +4418,8 @@
             "#847a75",
             "#625b58"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Bound+Wooden+Shield"
     },
     {
         "name": "Chaos Shield",
@@ -4027,7 +4429,8 @@
             "#605957",
             "#545a63"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Chaos+Shield"
     },
     {
         "name": "Defender's Shield",
@@ -4037,7 +4440,8 @@
             "#5e6869",
             "#595b57"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Defender%27s+Shield"
     },
     {
         "name": "Drakekeeper's Shield",
@@ -4047,7 +4451,8 @@
             "#7c8187",
             "#555a5c"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper%27s+Shield"
     },
     {
         "name": "Drangleic Shield",
@@ -4057,7 +4462,8 @@
             "#9d9d9a",
             "#878379"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Drangleic+Shield"
     },
     {
         "name": "Golden Wing Shield",
@@ -4067,7 +4473,8 @@
             "#897259",
             "#636156"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Golden+Wing+Shield"
     },
     {
         "name": "Grand Spirit Tree Shield",
@@ -4077,7 +4484,8 @@
             "#898b8d",
             "#57616c"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Grand+Spirit+Tree+Shield"
     },
     {
         "name": "Hollow Soldier Shield",
@@ -4087,7 +4495,8 @@
             "#978774",
             "#88745d"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Hollow+Soldier+Shield"
     },
     {
         "name": "Homunculus Wooden Shield",
@@ -4097,7 +4506,8 @@
             "#a08b70",
             "#8b755a"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Homunculus+Wooden+Shield"
     },
     {
         "name": "King's Shield",
@@ -4107,7 +4517,8 @@
             "#5f5f5c",
             "#4b4439"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/King%27s+Shield"
     },
     {
         "name": "Large Leather Shield",
@@ -4117,7 +4528,8 @@
             "#e7e4d6",
             "#e0dbc8"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Large+Leather+Shield"
     },
     {
         "name": "Lion Clan Shield",
@@ -4127,7 +4539,8 @@
             "#5f584d",
             "#534535"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Clan+Shield"
     },
     {
         "name": "Mirrah Shield",
@@ -4137,7 +4550,8 @@
             "#a09e9b",
             "#8a837a"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Mirrah+Shield"
     },
     {
         "name": "Moon Butterfly Shield",
@@ -4147,7 +4561,8 @@
             "#da9b27",
             "#a15d1d"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Moon+Butterfly+Shield"
     },
     {
         "name": "Old Knight's Shield",
@@ -4157,7 +4572,8 @@
             "#7a8584",
             "#586563"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight%27s+Shield"
     },
     {
         "name": "Porcine Shield",
@@ -4167,7 +4583,8 @@
             "#9e8d68",
             "#88765d"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Porcine+Shield"
     },
     {
         "name": "Red Rust Shield",
@@ -4177,7 +4594,8 @@
             "#585659",
             "#463d40"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Red+Rust+Shield"
     },
     {
         "name": "Royal Kite Shield",
@@ -4187,7 +4605,8 @@
             "#847b75",
             "#605f5d"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Kite+Shield"
     },
     {
         "name": "Shield of the Insolent",
@@ -4197,7 +4616,8 @@
             "#9a9c9d",
             "#7b838a"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Shield+of+the+Insolent"
     },
     {
         "name": "Silver Eagle Kite Shield",
@@ -4207,7 +4627,8 @@
             "#9ca1aa",
             "#93969b"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Silver+Eagle+Kite+Shield"
     },
     {
         "name": "Silverblack Shield",
@@ -4217,7 +4638,8 @@
             "#949da0",
             "#798488"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Silverblack+Shield"
     },
     {
         "name": "Slumbering Dragon Shield",
@@ -4227,7 +4649,8 @@
             "#717a85",
             "#575d62"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Slumbering+Dragon+Shield"
     },
     {
         "name": "Spirit Tree Shield",
@@ -4237,7 +4660,8 @@
             "#5a5d61",
             "#53595e"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Spirit+Tree+Shield"
     },
     {
         "name": "Stone Parma",
@@ -4247,7 +4671,8 @@
             "#535556",
             "#3e4143"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Stone+Parma"
     },
     {
         "name": "Watchdragon Parma",
@@ -4257,7 +4682,8 @@
             "#bac6c8",
             "#9ea7a5"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Watchdragon+Parma"
     },
     {
         "name": "Wooden Shield",
@@ -4267,7 +4693,8 @@
             "#8f8679",
             "#85796d"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Wooden+Shield"
     },
     {
         "name": "Yellow Quartz Shield",
@@ -4277,7 +4704,8 @@
             "#a99557",
             "#aa912b"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Yellow+Quartz+Shield"
     },
     {
         "name": "Benhart's Parma",
@@ -4287,7 +4715,8 @@
             "#8c8577",
             "#5e5d56"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Benhart%27s+Parma"
     },
     {
         "name": "Buckler",
@@ -4297,7 +4726,8 @@
             "#9a9998",
             "#5d5a58"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Buckler"
     },
     {
         "name": "Cleric's Parma",
@@ -4307,7 +4737,8 @@
             "#a08f6f",
             "#88785a"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Cleric%27s+Parma"
     },
     {
         "name": "Cleric's Small Shield",
@@ -4317,7 +4748,8 @@
             "#9f8e6c",
             "#897857"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Cleric%27s+Small+Shield"
     },
     {
         "name": "Crimson Parma",
@@ -4327,7 +4759,8 @@
             "#93979b",
             "#625d5c"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Crimson+Parma"
     },
     {
         "name": "Cursed Bone Shield",
@@ -4337,7 +4770,8 @@
             "#d4d7d8",
             "#989fa0"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Cursed+Bone+Shield"
     },
     {
         "name": "Foot Soldier Shield",
@@ -4347,7 +4781,8 @@
             "#a4a39b",
             "#886f56"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Foot+Soldier+Shield"
     },
     {
         "name": "Golden Falcon Shield",
@@ -4357,7 +4792,8 @@
             "#a08d70",
             "#8b7355"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Golden+Falcon+Shield"
     },
     {
         "name": "Iron Parma",
@@ -4367,7 +4803,8 @@
             "#969897",
             "#646869"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Iron+Parma"
     },
     {
         "name": "Llewelyn Shield",
@@ -4377,7 +4814,8 @@
             "#979a9b",
             "#595c5b"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Llewelyn+Shield"
     },
     {
         "name": "Magic Shield",
@@ -4387,7 +4825,8 @@
             "#b6bac3",
             "#a5a8a9"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Magic+Shield"
     },
     {
         "name": "Manikin Shield",
@@ -4397,7 +4836,8 @@
             "#8a8876",
             "#5e5f54"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Shield"
     },
     {
         "name": "Phoenix Parma",
@@ -4407,7 +4847,8 @@
             "#a1a09b",
             "#8a8676"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Phoenix+Parma"
     },
     {
         "name": "Small Leather Shield",
@@ -4417,7 +4858,8 @@
             "#a9a393",
             "#9a8f6f"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Small+Leather+Shield"
     },
     {
         "name": "Sunlight Parma",
@@ -4427,7 +4869,8 @@
             "#a7952e",
             "#8a7327"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Sunlight+Parma"
     },
     {
         "name": "Target Shield",
@@ -4437,7 +4880,8 @@
             "#968777",
             "#8b725f"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Target+Shield"
     },
     {
         "name": "Transgressor's Leather Shield",
@@ -4447,7 +4891,8 @@
             "#9a8e71",
             "#5c5e59"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Transgressor%27s+Leather+Shield"
     },
     {
         "name": "Varangian Shield",
@@ -4457,7 +4902,8 @@
             "#9e9c9c",
             "#847872"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Varangian+Shield"
     },
     {
         "name": "Watcher's Shield",
@@ -4467,7 +4913,8 @@
             "#85847b",
             "#5d5f5b"
         ],
-        "type": "shields"
+        "type": "shields",
+        "link": "https://darksouls2.wiki.fextralife.com/Watcher%27s+Shield"
     },
     {
         "name": "Aldia Hammer",
@@ -4477,7 +4924,8 @@
             "#949291",
             "#686463"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Aldia+Hammer"
     },
     {
         "name": "Alonne Greatbow",
@@ -4487,7 +4935,8 @@
             "#9b9fa2",
             "#969b9f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Alonne+Greatbow"
     },
     {
         "name": "Arced Sword",
@@ -4497,7 +4946,8 @@
             "#a2a09a",
             "#9c9c95"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Arced+Sword"
     },
     {
         "name": "Archdrake Chime",
@@ -4507,7 +4957,8 @@
             "#a8a49a",
             "#8c8578"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Chime"
     },
     {
         "name": "Archdrake Mace",
@@ -4517,7 +4968,8 @@
             "#5c6163",
             "#555958"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Mace"
     },
     {
         "name": "Archdrake Staff",
@@ -4527,7 +4979,8 @@
             "#a19f92",
             "#716e64"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Archdrake+Staff"
     },
     {
         "name": "Avelyn",
@@ -4537,7 +4990,8 @@
             "#656159",
             "#645f55"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Avelyn"
     },
     {
         "name": "Bandit Axe",
@@ -4547,7 +5001,8 @@
             "#606a6a",
             "#61615c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bandit+Axe"
     },
     {
         "name": "Bandit Greataxe",
@@ -4557,7 +5012,8 @@
             "#85786e",
             "#665b4f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bandit+Greataxe"
     },
     {
         "name": "Bandit's Knife",
@@ -4567,7 +5023,8 @@
             "#c4b9ab",
             "#b0a493"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bandit%27s+Knife"
     },
     {
         "name": "Barbed Club",
@@ -4577,7 +5034,8 @@
             "#585a58",
             "#545a5b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Barbed+Club"
     },
     {
         "name": "Bastard Sword",
@@ -4587,7 +5045,8 @@
             "#9c9e9f",
             "#626561"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bastard+Sword"
     },
     {
         "name": "Bat Staff",
@@ -4597,7 +5056,8 @@
             "#6b6256",
             "#6c5e50"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bat+Staff"
     },
     {
         "name": "Battle Axe",
@@ -4607,7 +5067,8 @@
             "#9b9e9b",
             "#626763"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Battle+Axe"
     },
     {
         "name": "Bell Keeper Bow",
@@ -4617,7 +5078,8 @@
             "#63655c",
             "#5e5d51"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bell+Keeper+Bow"
     },
     {
         "name": "Berserker Blade",
@@ -4627,7 +5089,8 @@
             "#8e9ba7",
             "#5e6466"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Berserker+Blade"
     },
     {
         "name": "Binoculars",
@@ -4637,7 +5100,8 @@
             "#a7a592",
             "#9f9760"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Binoculars"
     },
     {
         "name": "Black Dragon Greataxe",
@@ -4647,7 +5111,8 @@
             "#565d5d",
             "#5d5b52"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Greataxe"
     },
     {
         "name": "Black Dragon Greatsword",
@@ -4657,7 +5122,8 @@
             "#554e38",
             "#4b4e4c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Greatsword"
     },
     {
         "name": "Black Dragon Sword",
@@ -4667,7 +5133,8 @@
             "#867856",
             "#696351"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Sword"
     },
     {
         "name": "Black Dragon Warpick",
@@ -4677,7 +5144,8 @@
             "#605c4e",
             "#55564b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Dragon+Warpick"
     },
     {
         "name": "Black Flamestone Dagger",
@@ -4687,7 +5155,8 @@
             "#536361",
             "#526064"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Flamestone+Dagger"
     },
     {
         "name": "Black Knight Greataxe",
@@ -4697,7 +5166,8 @@
             "#847b76",
             "#68605b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Knight+Greataxe"
     },
     {
         "name": "Black Knight Greatsword",
@@ -4707,7 +5177,8 @@
             "#a19b8f",
             "#8e8578"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Knight+Greatsword"
     },
     {
         "name": "Black Knight Hablerd",
@@ -4717,7 +5188,8 @@
             "#6a6a66",
             "#6c6354"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Knight+Hablerd"
     },
     {
         "name": "Black Knight Ultra Greatsword",
@@ -4727,7 +5199,8 @@
             "#655d57",
             "#564b34"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Knight+Ultra+Greatsword"
     },
     {
         "name": "Black Scorpion Stinger",
@@ -4737,7 +5210,8 @@
             "#585f58",
             "#50554f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Scorpion+Stinger"
     },
     {
         "name": "Black Witch's Staff",
@@ -4747,7 +5221,8 @@
             "#4e5259",
             "#373d44"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Black+Witch%27s+Staff"
     },
     {
         "name": "Blacksmith's Hammer",
@@ -4757,7 +5232,8 @@
             "#555654",
             "#504735"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Blacksmith%27s+Hammer"
     },
     {
         "name": "Blacksteel Katana",
@@ -4767,7 +5243,8 @@
             "#585b5c",
             "#565a5e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Blacksteel+Katana"
     },
     {
         "name": "Bloodied Whip",
@@ -4777,7 +5254,8 @@
             "#8e7250",
             "#756347"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bloodied+Whip"
     },
     {
         "name": "Blue Flame",
@@ -4787,7 +5265,8 @@
             "#d3d4d2",
             "#d0d1d0"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Blue+Flame"
     },
     {
         "name": "Blue Knight's Halberd",
@@ -4797,7 +5276,8 @@
             "#989c97",
             "#636461"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Blue+Knight%27s+Halberd"
     },
     {
         "name": "Bluemoon Greatsword",
@@ -4807,7 +5287,8 @@
             "#76adb0",
             "#699796"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bluemoon+Greatsword"
     },
     {
         "name": "Bone Scythe",
@@ -4817,7 +5298,8 @@
             "#61605e",
             "#615f58"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bone+Scythe"
     },
     {
         "name": "Bone Staff",
@@ -4827,7 +5309,8 @@
             "#6d5d4b",
             "#6a5c56"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bone+Staff"
     },
     {
         "name": "Bound Hand Axe",
@@ -4837,7 +5320,8 @@
             "#575a5c",
             "#565152"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bound+Hand+Axe"
     },
     {
         "name": "Bow of Want",
@@ -4847,7 +5331,8 @@
             "#6e5f4a",
             "#53544b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Bow+of+Want"
     },
     {
         "name": "Broadsword",
@@ -4857,7 +5342,8 @@
             "#9a9c93",
             "#97988f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Broadsword"
     },
     {
         "name": "Broken Straight Sword",
@@ -4867,7 +5353,8 @@
             "#5f5958",
             "#575554"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Broken+Straight+Sword"
     },
     {
         "name": "Broken Thief Sword",
@@ -4877,7 +5364,8 @@
             "#868579",
             "#5e625b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Broken+Thief+Sword"
     },
     {
         "name": "Butcher's Knife",
@@ -4887,7 +5375,8 @@
             "#87817d",
             "#847a75"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Butcher%27s+Knife"
     },
     {
         "name": "Caestus",
@@ -4897,7 +5386,8 @@
             "#958c71",
             "#86725e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Caestus"
     },
     {
         "name": "Caitha's Chime",
@@ -4907,7 +5397,8 @@
             "#675b54",
             "#69534d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Caitha%27s+Chime"
     },
     {
         "name": "Channeler's Trident",
@@ -4917,7 +5408,8 @@
             "#a29669",
             "#6d634c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Channeler%27s+Trident"
     },
     {
         "name": "Chaos Blade",
@@ -4927,7 +5419,8 @@
             "#a6a5a0",
             "#a4a5a1"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Chaos+Blade"
     },
     {
         "name": "Chaos Rapier",
@@ -4937,7 +5430,8 @@
             "#9c9c97",
             "#6c6862"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Chaos+Rapier"
     },
     {
         "name": "Chariot Lance",
@@ -4947,7 +5441,8 @@
             "#68635f",
             "#66625b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Chariot+Lance"
     },
     {
         "name": "Chime of Want",
@@ -4957,7 +5452,8 @@
             "#55524e",
             "#504e4b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Chime+of+Want"
     },
     {
         "name": "Claws",
@@ -4967,7 +5463,8 @@
             "#8c9795",
             "#73898a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Claws"
     },
     {
         "name": "Claymore",
@@ -4977,7 +5474,8 @@
             "#cecdc9",
             "#aeada4"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Claymore"
     },
     {
         "name": "Cleric's Sacred Chime",
@@ -4987,7 +5485,8 @@
             "#988870",
             "#87775e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Cleric%27s+Sacred+Chime"
     },
     {
         "name": "Club",
@@ -4997,7 +5496,8 @@
             "#6e5b48",
             "#614a33"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Club"
     },
     {
         "name": "Composite Bow",
@@ -5007,7 +5507,8 @@
             "#6c614d",
             "#67605a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Composite+Bow"
     },
     {
         "name": "Craftsman's Hammer",
@@ -5017,7 +5518,8 @@
             "#625e56",
             "#504538"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Craftsman%27s+Hammer"
     },
     {
         "name": "Crescent Axe",
@@ -5027,7 +5529,8 @@
             "#9a8873",
             "#89745d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Crescent+Axe"
     },
     {
         "name": "Crescent Sickle",
@@ -5037,7 +5540,8 @@
             "#61625f",
             "#5e5f5f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Crescent+Sickle"
     },
     {
         "name": "Crypt Blacksword",
@@ -5047,7 +5551,8 @@
             "#4e524f",
             "#48453a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Crypt+Blacksword"
     },
     {
         "name": "Curved Dragon Greatsword",
@@ -5057,7 +5562,8 @@
             "#5b5e61",
             "#575859"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Curved+Dragon+Greatsword"
     },
     {
         "name": "Curved Twinblade",
@@ -5067,7 +5573,8 @@
             "#a7a89d",
             "#646358"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Curved+Twinblade"
     },
     {
         "name": "Dagger",
@@ -5077,7 +5584,8 @@
             "#9c9b9b",
             "#9d745f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dagger"
     },
     {
         "name": "Dark Pyromancy Flame",
@@ -5087,7 +5595,8 @@
             "#ef5708",
             "#d62706"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dark+Pyromancy+Flame"
     },
     {
         "name": "Darkdrift",
@@ -5097,7 +5606,8 @@
             "#738db4",
             "#575454"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Darkdrift"
     },
     {
         "name": "Defender Greatsword",
@@ -5107,7 +5617,8 @@
             "#5a5e57",
             "#595d55"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Defender+Greatsword"
     },
     {
         "name": "Demon's Great Hammer",
@@ -5117,7 +5628,8 @@
             "#63594b",
             "#4e4539"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Demon%27s+Great+Hammer"
     },
     {
         "name": "Disc Chime",
@@ -5127,7 +5639,8 @@
             "#988a70",
             "#867960"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Disc+Chime"
     },
     {
         "name": "Dragon Chime",
@@ -5137,7 +5650,8 @@
             "#a4a291",
             "#a89c6f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragon+Chime"
     },
     {
         "name": "Dragon Tooth",
@@ -5147,7 +5661,8 @@
             "#656a64",
             "#5a5e5b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragon+Tooth"
     },
     {
         "name": "Dragonrider Bow",
@@ -5157,7 +5672,8 @@
             "#5c5751",
             "#574b39"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider+Bow"
     },
     {
         "name": "Dragonrider Twinblade",
@@ -5167,7 +5683,8 @@
             "#626660",
             "#5c615d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider+Twinblade"
     },
     {
         "name": "Dragonrider's Halberd",
@@ -5177,7 +5694,8 @@
             "#63655f",
             "#62635f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonrider%27s+Halberd"
     },
     {
         "name": "Dragonslayer Greatbow",
@@ -5187,7 +5705,8 @@
             "#9c9072",
             "#968976"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonslayer+Greatbow"
     },
     {
         "name": "Dragonslayer Spear",
@@ -5197,7 +5716,8 @@
             "#8d8a66",
             "#636353"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonslayer+Spear"
     },
     {
         "name": "Dragonslayer's Crescent Axe",
@@ -5207,7 +5727,8 @@
             "#555250",
             "#4e433b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Dragonslayer%27s+Crescent+Axe"
     },
     {
         "name": "Drakekeeper's Great Hammer",
@@ -5217,7 +5738,8 @@
             "#565755",
             "#3c4347"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper%27s+Great+Hammer"
     },
     {
         "name": "Drakekeeper's Greataxe",
@@ -5227,7 +5749,8 @@
             "#4c4e4d",
             "#4a4c4a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper%27s+Greataxe"
     },
     {
         "name": "Drakekeeper's Sword",
@@ -5237,7 +5760,8 @@
             "#616261",
             "#5c5c5c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper%27s+Sword"
     },
     {
         "name": "Drakekeeper's Ultra Greatsword",
@@ -5247,7 +5771,8 @@
             "#515250",
             "#4c4c47"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper%27s+Ultra+Greatsword"
     },
     {
         "name": "Drakekeeper's Warpick",
@@ -5257,7 +5782,8 @@
             "#535555",
             "#515152"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakekeeper%27s+Warpick"
     },
     {
         "name": "Drakewing Ultra Greatsword",
@@ -5267,7 +5793,8 @@
             "#8d95a7",
             "#8b92a5"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Drakewing+Ultra+Greatsword"
     },
     {
         "name": "Drangleic Sword",
@@ -5277,7 +5804,8 @@
             "#5f625a",
             "#605f5a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Drangleic+Sword"
     },
     {
         "name": "Espada Ropera",
@@ -5287,7 +5815,8 @@
             "#6b685f",
             "#686865"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Espada+Ropera"
     },
     {
         "name": "Estoc",
@@ -5297,7 +5826,8 @@
             "#989b97",
             "#969992"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Estoc"
     },
     {
         "name": "Falchion",
@@ -5307,7 +5837,8 @@
             "#656960",
             "#636159"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Falchion"
     },
     {
         "name": "Flamberge",
@@ -5317,7 +5848,8 @@
             "#959595",
             "#949594"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Flamberge"
     },
     {
         "name": "Foot Soldier Sword",
@@ -5327,7 +5859,8 @@
             "#a2a6a3",
             "#a1a3a0"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Foot+Soldier+Sword"
     },
     {
         "name": "Full Moon Sickle",
@@ -5337,7 +5870,8 @@
             "#606662",
             "#596062"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Full+Moon+Sickle"
     },
     {
         "name": "Gargoyle Bident",
@@ -5347,7 +5881,8 @@
             "#4d6058",
             "#49544c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Gargoyle+Bident"
     },
     {
         "name": "Giant Stone Axe",
@@ -5357,7 +5892,8 @@
             "#606263",
             "#616254"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Giant+Stone+Axe"
     },
     {
         "name": "Giant Warrior Club",
@@ -5367,7 +5903,8 @@
             "#8b8c73",
             "#626355"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Giant+Warrior+Club"
     },
     {
         "name": "Grand Lance",
@@ -5377,7 +5914,8 @@
             "#66625a",
             "#635b51"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Grand+Lance"
     },
     {
         "name": "Great Club",
@@ -5387,7 +5925,8 @@
             "#6a5d47",
             "#554834"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Great+Club"
     },
     {
         "name": "Great Machete",
@@ -5397,7 +5936,8 @@
             "#5e6360",
             "#585c59"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Great+Machete"
     },
     {
         "name": "Great Scythe",
@@ -5407,7 +5947,8 @@
             "#626462",
             "#68615a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Great+Scythe"
     },
     {
         "name": "Greataxe",
@@ -5417,7 +5958,8 @@
             "#5c514a",
             "#53453b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Greataxe"
     },
     {
         "name": "Greatsword",
@@ -5427,7 +5969,8 @@
             "#646866",
             "#5f6461"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Greatsword"
     },
     {
         "name": "Gyrm Axe",
@@ -5437,7 +5980,8 @@
             "#847971",
             "#6a6668"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Axe"
     },
     {
         "name": "Gyrm Great Hammer",
@@ -5447,7 +5991,8 @@
             "#606068",
             "#606060"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Great+Hammer"
     },
     {
         "name": "Gyrm Greataxe",
@@ -5457,7 +6002,8 @@
             "#9d9b91",
             "#888679"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Gyrm+Greataxe"
     },
     {
         "name": "Halberd",
@@ -5467,7 +6013,8 @@
             "#9b9f9b",
             "#9c9e9b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Halberd"
     },
     {
         "name": "Hand Axe",
@@ -5477,7 +6024,8 @@
             "#84776c",
             "#6d5f58"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Hand+Axe"
     },
     {
         "name": "Handmaid's Ladle",
@@ -5487,7 +6035,8 @@
             "#625349",
             "#534638"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Handmaid%27s+Ladle"
     },
     {
         "name": "Heavy Crossbow",
@@ -5497,7 +6046,8 @@
             "#907450",
             "#6a604e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Heavy+Crossbow"
     },
     {
         "name": "Heide Greatlance",
@@ -5507,7 +6057,8 @@
             "#a8a69d",
             "#a2a39c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Greatlance"
     },
     {
         "name": "Heide Knight Sword",
@@ -5517,7 +6068,8 @@
             "#a6a59b",
             "#a1a098"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Knight+Sword"
     },
     {
         "name": "Heide Lance",
@@ -5527,7 +6079,8 @@
             "#9c9e99",
             "#a29076"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Lance"
     },
     {
         "name": "Heide Spear",
@@ -5537,7 +6090,8 @@
             "#a9a79d",
             "#a2a39d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Heide+Spear"
     },
     {
         "name": "Helix Halberd",
@@ -5547,7 +6101,8 @@
             "#5d6767",
             "#5c6767"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Helix+Halberd"
     },
     {
         "name": "Homunculus Mace",
@@ -5557,7 +6112,8 @@
             "#897459",
             "#675c4d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Homunculus+Mace"
     },
     {
         "name": "Hunter's Blackbow",
@@ -5567,7 +6123,8 @@
             "#b0b0af",
             "#646363"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Hunter%27s+Blackbow"
     },
     {
         "name": "Idol's Chime",
@@ -5577,7 +6134,8 @@
             "#5a5b58",
             "#39454e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Idol%27s+Chime"
     },
     {
         "name": "Infantry Axe",
@@ -5587,7 +6145,8 @@
             "#9f9e95",
             "#8f8675"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Infantry+Axe"
     },
     {
         "name": "Iron King Hammer",
@@ -5597,7 +6156,8 @@
             "#79898e",
             "#566362"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Iron+King+Hammer"
     },
     {
         "name": "Key to the Embedded",
@@ -5607,7 +6167,8 @@
             "#696759",
             "#636355"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Key+to+the+Embedded"
     },
     {
         "name": "King's Ultra Greatsword",
@@ -5617,7 +6178,8 @@
             "#55544c",
             "#45433b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/King%27s+Ultra+Greatsword"
     },
     {
         "name": "Large CLub",
@@ -5627,7 +6189,8 @@
             "#908b75",
             "#6b695a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Large+CLub"
     },
     {
         "name": "Light Crossbow",
@@ -5637,7 +6200,8 @@
             "#a88c69",
             "#8f7153"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Light+Crossbow"
     },
     {
         "name": "Lion Greataxe",
@@ -5647,7 +6211,8 @@
             "#565553",
             "#4a433b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Lion+Greataxe"
     },
     {
         "name": "Lizard Staff",
@@ -5657,7 +6222,8 @@
             "#6c6c5d",
             "#67634f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Lizard+Staff"
     },
     {
         "name": "Long Bow",
@@ -5667,7 +6233,8 @@
             "#9d8f6d",
             "#a18c62"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Long+Bow"
     },
     {
         "name": "Longsword",
@@ -5677,7 +6244,8 @@
             "#6e6d65",
             "#6b6d67"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Longsword"
     },
     {
         "name": "Lost Sinner's Sword",
@@ -5687,7 +6255,8 @@
             "#685c5a",
             "#645c5b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Lost+Sinner%27s+Sword"
     },
     {
         "name": "Lucerne",
@@ -5697,7 +6266,8 @@
             "#919491",
             "#65656a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Lucerne"
     },
     {
         "name": "Mace of the Insolent",
@@ -5707,7 +6277,8 @@
             "#616860",
             "#62665e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Mace+of+the+Insolent"
     },
     {
         "name": "Mace",
@@ -5717,7 +6288,8 @@
             "#5d5d51",
             "#5b5c56"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Mace"
     },
     {
         "name": "Magic Staff of Wisdom",
@@ -5727,7 +6299,8 @@
             "#5a5a57",
             "#5a5a57"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Magic+Staff+of+Wisdom"
     },
     {
         "name": "Mail Breaker",
@@ -5737,7 +6310,8 @@
             "#6e6b5f",
             "#6c675d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Mail+Breaker"
     },
     {
         "name": "Malformed Claws",
@@ -5747,7 +6321,8 @@
             "#787083",
             "#5a545f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Malformed+Claws"
     },
     {
         "name": "Malformed Shell",
@@ -5757,7 +6332,8 @@
             "#6b615d",
             "#615252"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Malformed+Shell"
     },
     {
         "name": "Malformed Skull",
@@ -5767,7 +6343,8 @@
             "#584e46",
             "#4f4338"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Malformed+Skull"
     },
     {
         "name": "Manikin Claws",
@@ -5777,7 +6354,8 @@
             "#9a9ba0",
             "#999b9c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Claws"
     },
     {
         "name": "Manikin Knife",
@@ -5787,7 +6365,8 @@
             "#a1a1a2",
             "#97969c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Knife"
     },
     {
         "name": "Manikin Sabre",
@@ -5797,7 +6376,8 @@
             "#a4999b",
             "#91725c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Manikin+Sabre"
     },
     {
         "name": "Manslayer",
@@ -5807,7 +6387,8 @@
             "#717061",
             "#656353"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Manslayer"
     },
     {
         "name": "Mastodon Greatsword",
@@ -5817,7 +6398,8 @@
             "#9b9995",
             "#686865"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Mastodon+Greatsword"
     },
     {
         "name": "Mastodon Halberd",
@@ -5827,7 +6409,8 @@
             "#ad9367",
             "#8d7149"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Mastodon+Halberd"
     },
     {
         "name": "Melu Scimitar",
@@ -5837,7 +6420,8 @@
             "#938b70",
             "#6a6a60"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Melu+Scimitar"
     },
     {
         "name": "Mirrah Greatsword",
@@ -5847,7 +6431,8 @@
             "#676460",
             "#66605a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Mirrah+Greatsword"
     },
     {
         "name": "Monastery Scimitar",
@@ -5857,7 +6442,8 @@
             "#8b8975",
             "#60635e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Monastery+Scimitar"
     },
     {
         "name": "Moonlight Greatsword",
@@ -5867,7 +6453,8 @@
             "#4eb1a4",
             "#38998d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Moonlight+Greatsword"
     },
     {
         "name": "Morning Star",
@@ -5877,7 +6464,8 @@
             "#616161",
             "#625f63"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Morning+Star"
     },
     {
         "name": "Murakumo",
@@ -5887,7 +6475,8 @@
             "#9ea39c",
             "#878975"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Murakumo"
     },
     {
         "name": "Mytha's Bent Blade",
@@ -5897,7 +6486,8 @@
             "#525a5e",
             "#53595f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Mytha%27s+Bent+Blade"
     },
     {
         "name": "Notched Whip",
@@ -5907,7 +6497,8 @@
             "#545954",
             "#545753"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Notched+Whip"
     },
     {
         "name": "Old Knight Greatsword",
@@ -5917,7 +6508,8 @@
             "#4a5655",
             "#3b4742"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Greatsword"
     },
     {
         "name": "Old Knight Halberd",
@@ -5927,7 +6519,8 @@
             "#515c58",
             "#384643"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Halberd"
     },
     {
         "name": "Old Knight Hammer",
@@ -5937,7 +6530,8 @@
             "#4a5855",
             "#384745"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Hammer"
     },
     {
         "name": "Old Knight Pike",
@@ -5947,7 +6541,8 @@
             "#4a5955",
             "#485752"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Pike"
     },
     {
         "name": "Old Knight Ultra Greatsword",
@@ -5957,7 +6552,8 @@
             "#4f5f5d",
             "#4f5f5c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Knight+Ultra+Greatsword"
     },
     {
         "name": "Old Mirrah Greatsword",
@@ -5967,7 +6563,8 @@
             "#676460",
             "#66605a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Mirrah+Greatsword"
     },
     {
         "name": "Old Whip",
@@ -5977,7 +6574,8 @@
             "#4a3a27",
             "#483626"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Old+Whip"
     },
     {
         "name": "Olenford's Staff",
@@ -5987,7 +6585,8 @@
             "#367387",
             "#256a97"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Olenford%27s+Staff"
     },
     {
         "name": "Parrying Dagger",
@@ -5997,7 +6596,8 @@
             "#9d8f6c",
             "#6b6b5d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Parrying+Dagger"
     },
     {
         "name": "Partizan",
@@ -6007,7 +6607,8 @@
             "#8a6c5b",
             "#61635d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Partizan"
     },
     {
         "name": "Pate's Spear",
@@ -6017,7 +6618,8 @@
             "#595651",
             "#50443c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Pate%27s+Spear"
     },
     {
         "name": "Pickaxe",
@@ -6027,7 +6629,8 @@
             "#a28969",
             "#8d755c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Pickaxe"
     },
     {
         "name": "Pike",
@@ -6037,7 +6640,8 @@
             "#5f656a",
             "#5c5f65"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Pike"
     },
     {
         "name": "Priest's Chime",
@@ -6047,7 +6651,8 @@
             "#897552",
             "#756549"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Priest%27s+Chime"
     },
     {
         "name": "Protective Chime",
@@ -6057,7 +6662,8 @@
             "#606057",
             "#585c56"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Protective+Chime"
     },
     {
         "name": "Pursuer's Ultra Greatsword",
@@ -6067,7 +6673,8 @@
             "#9b9e9b",
             "#5d645e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Pursuer%27s+Ultra+Greatsword"
     },
     {
         "name": "Pyromancy Flame",
@@ -6077,7 +6684,8 @@
             "#d82307",
             "#a42509"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Pyromancy+Flame"
     },
     {
         "name": "Rapier",
@@ -6087,7 +6695,8 @@
             "#a6a596",
             "#a3a193"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Rapier"
     },
     {
         "name": "Red Iron Twinblade",
@@ -6097,7 +6706,8 @@
             "#a99c98",
             "#89726c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Red+Iron+Twinblade"
     },
     {
         "name": "Red Rust Scimitar",
@@ -6107,7 +6717,8 @@
             "#666567",
             "#645c5c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Red+Rust+Scimitar"
     },
     {
         "name": "Red Rust Sword",
@@ -6117,7 +6728,8 @@
             "#908b8b",
             "#6b6565"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Red+Rust+Sword"
     },
     {
         "name": "Reinforced Club",
@@ -6127,7 +6739,8 @@
             "#978676",
             "#887767"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Reinforced+Club"
     },
     {
         "name": "Ricard's Rapier",
@@ -6137,7 +6750,8 @@
             "#a2a5a5",
             "#989a9a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Ricard%27s+Rapier"
     },
     {
         "name": "Roaring Halberd",
@@ -6147,7 +6761,8 @@
             "#606261",
             "#615f57"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Roaring+Halberd"
     },
     {
         "name": "Royal Dirk",
@@ -6157,7 +6772,8 @@
             "#999b95",
             "#979a93"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Dirk"
     },
     {
         "name": "Royal Greatsword",
@@ -6167,7 +6783,8 @@
             "#5d605f",
             "#5a5d5d"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Royal+Greatsword"
     },
     {
         "name": "Ruler's Sword",
@@ -6177,7 +6794,8 @@
             "#a8aaa9",
             "#a5a7a3"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Ruler%27s+Sword"
     },
     {
         "name": "Sacred Chime Hammer",
@@ -6187,7 +6805,8 @@
             "#5e5b4e",
             "#5b594e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Sacred+Chime+Hammer"
     },
     {
         "name": "Santier's Spear (Broken)",
@@ -6197,7 +6816,8 @@
             "#5b5c57",
             "#56544c"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Santier%27s+Spear+(Broken)"
     },
     {
         "name": "Santier's Spear",
@@ -6207,7 +6827,8 @@
             "#5c564e",
             "#4b433b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Santier%27s+Spear"
     },
     {
         "name": "Scimitar",
@@ -6217,7 +6838,8 @@
             "#9a9e94",
             "#898b7a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Scimitar"
     },
     {
         "name": "Scythe of Want",
@@ -6227,7 +6849,8 @@
             "#5c5a57",
             "#585855"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Scythe+of+Want"
     },
     {
         "name": "Scythe",
@@ -6237,7 +6860,8 @@
             "#69635e",
             "#626367"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Scythe"
     },
     {
         "name": "Scyther of Nahr Alma",
@@ -6247,7 +6871,8 @@
             "#605e59",
             "#5c5c56"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Scyther+of+Nahr+Alma"
     },
     {
         "name": "Sea Bow",
@@ -6257,7 +6882,8 @@
             "#6a6462",
             "#605a54"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Sea+Bow"
     },
     {
         "name": "Shadow Dagger",
@@ -6267,7 +6893,8 @@
             "#5b615d",
             "#565d58"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Shadow+Dagger"
     },
     {
         "name": "Shield Crossbow",
@@ -6277,7 +6904,8 @@
             "#9b9e9f",
             "#5d635f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Shield+Crossbow"
     },
     {
         "name": "Short Bow",
@@ -6287,7 +6915,8 @@
             "#696756",
             "#6a6651"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Short+Bow"
     },
     {
         "name": "Shortsword",
@@ -6297,7 +6926,8 @@
             "#cc9b68",
             "#898b76"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Shortsword"
     },
     {
         "name": "Shotel",
@@ -6307,7 +6937,8 @@
             "#6d6f68",
             "#686c63"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Shotel"
     },
     {
         "name": "Silverblack Sickle",
@@ -6317,7 +6948,8 @@
             "#4c585a",
             "#344a4f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Silverblack+Sickle"
     },
     {
         "name": "Silverblack Spear",
@@ -6327,7 +6959,8 @@
             "#5f6262",
             "#575f5e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Silverblack+Spear"
     },
     {
         "name": "Smelter Sword",
@@ -6337,7 +6970,8 @@
             "#595c63",
             "#575458"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Smelter+Sword"
     },
     {
         "name": "Sorcerer's Staff",
@@ -6347,7 +6981,8 @@
             "#9b956e",
             "#9b9471"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Sorcerer%27s+Staff"
     },
     {
         "name": "Spear",
@@ -6357,7 +6992,8 @@
             "#6d686d",
             "#705b54"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Spear"
     },
     {
         "name": "Spider Fang",
@@ -6367,7 +7003,8 @@
             "#58595c",
             "#53565a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Spider+Fang"
     },
     {
         "name": "Spider's Silk",
@@ -6377,7 +7014,8 @@
             "#9c9e9a",
             "#5b7488"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Spider%27s+Silk"
     },
     {
         "name": "Spitfire Spear",
@@ -6387,7 +7025,8 @@
             "#656158",
             "#5f574e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Spitfire+Spear"
     },
     {
         "name": "Spotted Whip",
@@ -6397,7 +7036,8 @@
             "#625650",
             "#5f4938"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Spotted+Whip"
     },
     {
         "name": "Staff of Amana",
@@ -6407,7 +7047,8 @@
             "#a7a8a0",
             "#a6a69b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Staff+of+Amana"
     },
     {
         "name": "Stone Soldier Spear",
@@ -6417,7 +7058,8 @@
             "#4d4d49",
             "#484949"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Stone+Soldier+Spear"
     },
     {
         "name": "Stone Twinblade",
@@ -6427,7 +7069,8 @@
             "#494b4b",
             "#454647"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Stone+Twinblade"
     },
     {
         "name": "Sun Sword",
@@ -6437,7 +7080,8 @@
             "#9ea09c",
             "#a09d9b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Sun+Sword"
     },
     {
         "name": "Sunset Staff",
@@ -6447,7 +7091,8 @@
             "#5a5a59",
             "#585a56"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Sunset+Staff"
     },
     {
         "name": "Syan's Halberd",
@@ -6457,7 +7102,8 @@
             "#9fa19a",
             "#676a5e"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Syan%27s+Halberd"
     },
     {
         "name": "Thief Dagger",
@@ -6467,7 +7113,8 @@
             "#868977",
             "#868876"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Thief+Dagger"
     },
     {
         "name": "Thorned Greatsword",
@@ -6477,7 +7124,8 @@
             "#949896",
             "#919694"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Thorned+Greatsword"
     },
     {
         "name": "Transgressor's Staff",
@@ -6487,7 +7135,8 @@
             "#63635c",
             "#626258"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Transgressor%27s+Staff"
     },
     {
         "name": "Twinblade",
@@ -6497,7 +7146,8 @@
             "#9d9fa0",
             "#9b9c9f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Twinblade"
     },
     {
         "name": "Uchigatana",
@@ -6507,7 +7157,8 @@
             "#9b9d96",
             "#949691"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Uchigatana"
     },
     {
         "name": "Varangian Sword",
@@ -6517,7 +7168,8 @@
             "#6b6a67",
             "#655d57"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Varangian+Sword"
     },
     {
         "name": "Warped Sword",
@@ -6527,7 +7179,8 @@
             "#69655b",
             "#65615a"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Warped+Sword"
     },
     {
         "name": "Washing Pole",
@@ -6537,7 +7190,8 @@
             "#cdcdce",
             "#a9aba6"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Washing+Pole"
     },
     {
         "name": "Watcher Greatsword",
@@ -6547,7 +7201,8 @@
             "#a19c91",
             "#696862"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Watcher+Greatsword"
     },
     {
         "name": "Whip",
@@ -6557,7 +7212,8 @@
             "#6b5851",
             "#604738"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Whip"
     },
     {
         "name": "Winged Spear",
@@ -6567,7 +7223,8 @@
             "#9c978c",
             "#8a8479"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Winged+Spear"
     },
     {
         "name": "Witchtree Bellvine",
@@ -6577,7 +7234,8 @@
             "#8c8379",
             "#69665b"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Witchtree+Bellvine"
     },
     {
         "name": "Withctree Branch",
@@ -6587,7 +7245,8 @@
             "#9c9a97",
             "#686967"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Withctree+Branch"
     },
     {
         "name": "Work Hook",
@@ -6597,7 +7256,8 @@
             "#9d9a96",
             "#878479"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Work+Hook"
     },
     {
         "name": "Yellow Quartz Longsword",
@@ -6607,7 +7267,8 @@
             "#ccb653",
             "#caa927"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Yellow+Quartz+Longsword"
     },
     {
         "name": "Zweihander",
@@ -6617,6 +7278,7 @@
             "#a4a29c",
             "#65675f"
         ],
-        "type": "weapons"
+        "type": "weapons",
+        "link": "https://darksouls2.wiki.fextralife.com/Zweihander"
     }
 ]

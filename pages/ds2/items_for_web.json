@@ -1,7 +1,7 @@
 [
     {
         "name": "Agdayne's Cuffs",
-        "image": "Arms/Agdayne's Cuffs.png",
+        "image": "Hands/Agdayne's Cuffs.png",
         "primaryColor": "#9c989a",
         "secondaryColors": [
             "#645d5b",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Alonne Knight Gauntlets",
-        "image": "Arms/Alonne Knight Gauntlets.png",
+        "image": "Hands/Alonne Knight Gauntlets.png",
         "primaryColor": "#d0cfd3",
         "secondaryColors": [
             "#9d9aa2",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Alva Gauntlets",
-        "image": "Arms/Alva Gauntlets.png",
+        "image": "Hands/Alva Gauntlets.png",
         "primaryColor": "#979695",
         "secondaryColors": [
             "#605c5a",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Archdrake Gloves",
-        "image": "Arms/Archdrake Gloves.png",
+        "image": "Hands/Archdrake Gloves.png",
         "primaryColor": "#959a98",
         "secondaryColors": [
             "#575a52",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Astrologist's Gauntlets",
-        "image": "Arms/Astrologist's Gauntlets.png",
+        "image": "Hands/Astrologist's Gauntlets.png",
         "primaryColor": "#a28d69",
         "secondaryColors": [
             "#544f4a",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Bandit Gauntlets",
-        "image": "Arms/Bandit Gauntlets.png",
+        "image": "Hands/Bandit Gauntlets.png",
         "primaryColor": "#9c9b99",
         "secondaryColors": [
             "#666256",
@@ -55,7 +55,7 @@
     },
     {
         "name": "Bell Keeper Cuffs",
-        "image": "Arms/Bell Keeper Cuffs.png",
+        "image": "Hands/Bell Keeper Cuffs.png",
         "primaryColor": "#635b4e",
         "secondaryColors": [
             "#5f5850",
@@ -64,7 +64,7 @@
     },
     {
         "name": "Benhart's Gauntlets",
-        "image": "Arms/Benhart's Gauntlets.png",
+        "image": "Hands/Benhart's Gauntlets.png",
         "primaryColor": "#5a5149",
         "secondaryColors": [
             "#535034",
@@ -73,7 +73,7 @@
     },
     {
         "name": "Black Dragon Gauntlets",
-        "image": "Arms/Black Dragon Gauntlets.png",
+        "image": "Hands/Black Dragon Gauntlets.png",
         "primaryColor": "#9d9b99",
         "secondaryColors": [
             "#5e6153",
@@ -82,7 +82,7 @@
     },
     {
         "name": "Black Gloves",
-        "image": "Arms/Black Gloves.png",
+        "image": "Hands/Black Gloves.png",
         "primaryColor": "#8e9696",
         "secondaryColors": [
             "#5c6362",
@@ -91,7 +91,7 @@
     },
     {
         "name": "Black Leather Gloves",
-        "image": "Arms/Black Leather Gloves.png",
+        "image": "Hands/Black Leather Gloves.png",
         "primaryColor": "#8e8c8c",
         "secondaryColors": [
             "#656a65",
@@ -100,7 +100,7 @@
     },
     {
         "name": "Black Witch Gloves",
-        "image": "Arms/Black Witch Gloves.png",
+        "image": "Hands/Black Witch Gloves.png",
         "primaryColor": "#918e92",
         "secondaryColors": [
             "#5d5663",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Bone King Cuffs",
-        "image": "Arms/Bone King Cuffs.png",
+        "image": "Hands/Bone King Cuffs.png",
         "primaryColor": "#6c685b",
         "secondaryColors": [
             "#565249",
@@ -118,7 +118,7 @@
     },
     {
         "name": "Brigand Gauntlets",
-        "image": "Arms/Brigand Gauntlets.png",
+        "image": "Hands/Brigand Gauntlets.png",
         "primaryColor": "#c7b190",
         "secondaryColors": [
             "#b5a48a",
@@ -127,7 +127,7 @@
     },
     {
         "name": "Catarina Gauntlets",
-        "image": "Arms/Catarina Gauntlets.png",
+        "image": "Hands/Catarina Gauntlets.png",
         "primaryColor": "#d0c6b2",
         "secondaryColors": [
             "#c4b9a2",
@@ -136,7 +136,7 @@
     },
     {
         "name": "Chaos Gloves",
-        "image": "Arms/Chaos Gloves.png",
+        "image": "Hands/Chaos Gloves.png",
         "primaryColor": "#585550",
         "secondaryColors": [
             "#4e552e",
@@ -145,7 +145,7 @@
     },
     {
         "name": "Creighton's Chain Gloves",
-        "image": "Arms/Creighton's Chain Gloves.png",
+        "image": "Hands/Creighton's Chain Gloves.png",
         "primaryColor": "#5f6359",
         "secondaryColors": [
             "#605f56",
@@ -154,7 +154,7 @@
     },
     {
         "name": "Dark Gauntlets",
-        "image": "Arms/Dark Gauntlets.png",
+        "image": "Hands/Dark Gauntlets.png",
         "primaryColor": "#cfd0d2",
         "secondaryColors": [
             "#959799",
@@ -163,7 +163,7 @@
     },
     {
         "name": "Desert Sorceress Gloves",
-        "image": "Arms/Desert Sorceress Gloves.png",
+        "image": "Hands/Desert Sorceress Gloves.png",
         "primaryColor": "#525132",
         "secondaryColors": [
             "#514744",
@@ -172,7 +172,7 @@
     },
     {
         "name": "Dingy Cuffs",
-        "image": "Arms/Dingy Cuffs.png",
+        "image": "Hands/Dingy Cuffs.png",
         "primaryColor": "#9c938c",
         "secondaryColors": [
             "#867466",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Dragon Acolyte Gloves",
-        "image": "Arms/Dragon Acolyte Gloves.png",
+        "image": "Hands/Dragon Acolyte Gloves.png",
         "primaryColor": "#949394",
         "secondaryColors": [
             "#67676b",
@@ -190,7 +190,7 @@
     },
     {
         "name": "Dragonrider Gauntlets",
-        "image": "Arms/Dragonrider Gauntlets.png",
+        "image": "Hands/Dragonrider Gauntlets.png",
         "primaryColor": "#d6d7d8",
         "secondaryColors": [
             "#97989a",
@@ -199,7 +199,7 @@
     },
     {
         "name": "Drakekeeper Gauntlets",
-        "image": "Arms/Drakekeeper Gauntlets.png",
+        "image": "Hands/Drakekeeper Gauntlets.png",
         "primaryColor": "#5b5b5b",
         "secondaryColors": [
             "#535355",
@@ -208,7 +208,7 @@
     },
     {
         "name": "Drangleic Gauntlets",
-        "image": "Arms/Drangleic Gauntlets.png",
+        "image": "Hands/Drangleic Gauntlets.png",
         "primaryColor": "#8a6f61",
         "secondaryColors": [
             "#585450",
@@ -217,7 +217,7 @@
     },
     {
         "name": "Elite Knight Gloves",
-        "image": "Arms/Elite Knight Gloves.png",
+        "image": "Hands/Elite Knight Gloves.png",
         "primaryColor": "#ad8a6d",
         "secondaryColors": [
             "#916d52",
@@ -226,7 +226,7 @@
     },
     {
         "name": "Engraved Gauntlets",
-        "image": "Arms/Engraved Gauntlets.png",
+        "image": "Hands/Engraved Gauntlets.png",
         "primaryColor": "#a2a090",
         "secondaryColors": [
             "#8a8876",
@@ -235,7 +235,7 @@
     },
     {
         "name": "Executioner Gauntlets",
-        "image": "Arms/Executioner Gauntlets.png",
+        "image": "Hands/Executioner Gauntlets.png",
         "primaryColor": "#8c8f90",
         "secondaryColors": [
             "#5a5d56",
@@ -244,7 +244,7 @@
     },
     {
         "name": "Falconer Gloves",
-        "image": "Arms/Falconer Gloves.png",
+        "image": "Hands/Falconer Gloves.png",
         "primaryColor": "#87735b",
         "secondaryColors": [
             "#6f5d49",
@@ -253,7 +253,7 @@
     },
     {
         "name": "Faraam Gauntlets",
-        "image": "Arms/Faraam Gauntlets.png",
+        "image": "Hands/Faraam Gauntlets.png",
         "primaryColor": "#dbdbdc",
         "secondaryColors": [
             "#919294",
@@ -262,7 +262,7 @@
     },
     {
         "name": "Gauntlets of Aurous (Invisible)",
-        "image": "Arms/Gauntlets of Aurous (Invisible).png",
+        "image": "Hands/Gauntlets of Aurous (Invisible).png",
         "primaryColor": "#9097a9",
         "secondaryColors": [
             "#8690a9",
@@ -271,7 +271,7 @@
     },
     {
         "name": "Gauntlets of Aurous",
-        "image": "Arms/Gauntlets of Aurous.png",
+        "image": "Hands/Gauntlets of Aurous.png",
         "primaryColor": "#696655",
         "secondaryColors": [
             "#5d514e",
@@ -280,7 +280,7 @@
     },
     {
         "name": "Grave Warden Cuffs",
-        "image": "Arms/Grave Warden Cuffs.png",
+        "image": "Hands/Grave Warden Cuffs.png",
         "primaryColor": "#616457",
         "secondaryColors": [
             "#5e5f50",
@@ -289,7 +289,7 @@
     },
     {
         "name": "Gyrm Gloves",
-        "image": "Arms/Gyrm Gloves.png",
+        "image": "Hands/Gyrm Gloves.png",
         "primaryColor": "#867353",
         "secondaryColors": [
             "#766748",
@@ -298,7 +298,7 @@
     },
     {
         "name": "Gyrm Warrior Gloves",
-        "image": "Arms/Gyrm Warrior Gloves.png",
+        "image": "Hands/Gyrm Warrior Gloves.png",
         "primaryColor": "#87694f",
         "secondaryColors": [
             "#775d46",
@@ -307,7 +307,7 @@
     },
     {
         "name": "Hard Leather Gauntlets",
-        "image": "Arms/Hard Leather Gauntlets.png",
+        "image": "Hands/Hard Leather Gauntlets.png",
         "primaryColor": "#67564b",
         "secondaryColors": [
             "#5c5733",
@@ -316,7 +316,7 @@
     },
     {
         "name": "Havel's Gauntlets",
-        "image": "Arms/Havel's Gauntlets.png",
+        "image": "Hands/Havel's Gauntlets.png",
         "primaryColor": "#999a9b",
         "secondaryColors": [
             "#5c5e5c",
@@ -325,7 +325,7 @@
     },
     {
         "name": "Heide Knight Gauntlets",
-        "image": "Arms/Heide Knight Gauntlets.png",
+        "image": "Hands/Heide Knight Gauntlets.png",
         "primaryColor": "#d8d8d9",
         "secondaryColors": [
             "#9d9c9d",
@@ -334,7 +334,7 @@
     },
     {
         "name": "Hexer's Gloves",
-        "image": "Arms/Hexer's Gloves.png",
+        "image": "Hands/Hexer's Gloves.png",
         "primaryColor": "#a99e8e",
         "secondaryColors": [
             "#948676",
@@ -343,7 +343,7 @@
     },
     {
         "name": "Hollow Infantry Gloves",
-        "image": "Arms/Hollow Infantry Gloves.png",
+        "image": "Hands/Hollow Infantry Gloves.png",
         "primaryColor": "#6a6a6a",
         "secondaryColors": [
             "#524e1b",
@@ -352,7 +352,7 @@
     },
     {
         "name": "Hollow Soldier Gauntlets",
-        "image": "Arms/Hollow Soldier Gauntlets.png",
+        "image": "Hands/Hollow Soldier Gauntlets.png",
         "primaryColor": "#867563",
         "secondaryColors": [
             "#6d5f4f",
@@ -361,7 +361,7 @@
     },
     {
         "name": "Imperious Gloves",
-        "image": "Arms/Imperious Gloves.png",
+        "image": "Hands/Imperious Gloves.png",
         "primaryColor": "#a09997",
         "secondaryColors": [
             "#8a7268",
@@ -370,7 +370,7 @@
     },
     {
         "name": "Imported Manchettes",
-        "image": "Arms/Imported Manchettes.png",
+        "image": "Hands/Imported Manchettes.png",
         "primaryColor": "#646255",
         "secondaryColors": [
             "#5e6130",
@@ -379,7 +379,7 @@
     },
     {
         "name": "Infantry Gloves",
-        "image": "Arms/Infantry Gloves.png",
+        "image": "Hands/Infantry Gloves.png",
         "primaryColor": "#524f13",
         "secondaryColors": [
             "#484848",
@@ -388,7 +388,7 @@
     },
     {
         "name": "Insolent Gloves",
-        "image": "Arms/Insolent Gloves.png",
+        "image": "Hands/Insolent Gloves.png",
         "primaryColor": "#9f928d",
         "secondaryColors": [
             "#887269",
@@ -397,7 +397,7 @@
     },
     {
         "name": "Ironclad Gauntlets",
-        "image": "Arms/Ironclad Gauntlets.png",
+        "image": "Hands/Ironclad Gauntlets.png",
         "primaryColor": "#cdcdcd",
         "secondaryColors": [
             "#9c9d9c",
@@ -406,7 +406,7 @@
     },
     {
         "name": "Jester's Gloves",
-        "image": "Arms/Jester's Gloves.png",
+        "image": "Hands/Jester's Gloves.png",
         "primaryColor": "#6f5743",
         "secondaryColors": [
             "#5b5029",
@@ -415,7 +415,7 @@
     },
     {
         "name": "King's Gauntlets",
-        "image": "Arms/King's Gauntlets.png",
+        "image": "Hands/King's Gauntlets.png",
         "primaryColor": "#9a9999",
         "secondaryColors": [
             "#595755",
@@ -424,7 +424,7 @@
     },
     {
         "name": "Knight Gauntlets",
-        "image": "Arms/Knight Gauntlets.png",
+        "image": "Hands/Knight Gauntlets.png",
         "primaryColor": "#ab9b92",
         "secondaryColors": [
             "#a18974",
@@ -433,7 +433,7 @@
     },
     {
         "name": "Leather Gloves",
-        "image": "Arms/Leather Gloves.png",
+        "image": "Hands/Leather Gloves.png",
         "primaryColor": "#857063",
         "secondaryColors": [
             "#6e5c50",
@@ -442,7 +442,7 @@
     },
     {
         "name": "Leydia Gauntlets",
-        "image": "Arms/Leydia Gauntlets.png",
+        "image": "Hands/Leydia Gauntlets.png",
         "primaryColor": "#a99d90",
         "secondaryColors": [
             "#998a74",
@@ -451,7 +451,7 @@
     },
     {
         "name": "Lion Mage Cuffs",
-        "image": "Arms/Lion Mage Cuffs.png",
+        "image": "Hands/Lion Mage Cuffs.png",
         "primaryColor": "#aa915e",
         "secondaryColors": [
             "#937647",
@@ -460,7 +460,7 @@
     },
     {
         "name": "Lion Warrior Cuffs",
-        "image": "Arms/Lion Warrior Cuffs.png",
+        "image": "Hands/Lion Warrior Cuffs.png",
         "primaryColor": "#897351",
         "secondaryColors": [
             "#615032",
@@ -469,7 +469,7 @@
     },
     {
         "name": "Llewellyn Gloves",
-        "image": "Arms/Llewellyn Gloves.png",
+        "image": "Hands/Llewellyn Gloves.png",
         "primaryColor": "#646752",
         "secondaryColors": [
             "#4b4a49",
@@ -478,7 +478,7 @@
     },
     {
         "name": "Looking Glass Gauntlets",
-        "image": "Arms/Looking Glass Gauntlets.png",
+        "image": "Hands/Looking Glass Gauntlets.png",
         "primaryColor": "#9ea0a0",
         "secondaryColors": [
             "#9da19a",
@@ -487,7 +487,7 @@
     },
     {
         "name": "Lucatiel's Gloves",
-        "image": "Arms/Lucatiel's Gloves.png",
+        "image": "Hands/Lucatiel's Gloves.png",
         "primaryColor": "#5c5125",
         "secondaryColors": [
             "#5f4734",
@@ -496,7 +496,7 @@
     },
     {
         "name": "Mad Warrior Gauntlets",
-        "image": "Arms/Mad Warrior Gauntlets.png",
+        "image": "Hands/Mad Warrior Gauntlets.png",
         "primaryColor": "#98999a",
         "secondaryColors": [
             "#5c6657",
@@ -505,7 +505,7 @@
     },
     {
         "name": "Manchettes of Judgment",
-        "image": "Arms/Manchettes of Judgment.png",
+        "image": "Hands/Manchettes of Judgment.png",
         "primaryColor": "#898d8e",
         "secondaryColors": [
             "#646a65",
@@ -514,7 +514,7 @@
     },
     {
         "name": "Manikin Gloves",
-        "image": "Arms/Manikin Gloves.png",
+        "image": "Hands/Manikin Gloves.png",
         "primaryColor": "#6c5d58",
         "secondaryColors": [
             "#5a4339",
@@ -523,7 +523,7 @@
     },
     {
         "name": "Mastodon Gauntlets",
-        "image": "Arms/Mastodon Gauntlets.png",
+        "image": "Hands/Mastodon Gauntlets.png",
         "primaryColor": "#aca08d",
         "secondaryColors": [
             "#998969",
@@ -532,7 +532,7 @@
     },
     {
         "name": "Monastery Long Gloves",
-        "image": "Arms/Monastery Long Gloves.png",
+        "image": "Hands/Monastery Long Gloves.png",
         "primaryColor": "#c3b6a6",
         "secondaryColors": [
             "#b2a28f",
@@ -541,7 +541,7 @@
     },
     {
         "name": "Moon Butterfly Cuffs",
-        "image": "Arms/Moon Butterfly Cuffs.png",
+        "image": "Hands/Moon Butterfly Cuffs.png",
         "primaryColor": "#dad4ce",
         "secondaryColors": [
             "#c3bab1",
@@ -550,7 +550,7 @@
     },
     {
         "name": "Old Ironclad Gauntlets",
-        "image": "Arms/Old Ironclad Gauntlets.png",
+        "image": "Hands/Old Ironclad Gauntlets.png",
         "primaryColor": "#686760",
         "secondaryColors": [
             "#635f56",
@@ -559,7 +559,7 @@
     },
     {
         "name": "Old Knight Gauntlets",
-        "image": "Arms/Old Knight Gauntlets.png",
+        "image": "Hands/Old Knight Gauntlets.png",
         "primaryColor": "#4e5653",
         "secondaryColors": [
             "#3a4544",
@@ -568,7 +568,7 @@
     },
     {
         "name": "Pate's Gloves",
-        "image": "Arms/Pate's Gloves.png",
+        "image": "Hands/Pate's Gloves.png",
         "primaryColor": "#cbad91",
         "secondaryColors": [
             "#b99d89",
@@ -577,7 +577,7 @@
     },
     {
         "name": "Peasant Long Gloves",
-        "image": "Arms/Peasant Long Gloves.png",
+        "image": "Hands/Peasant Long Gloves.png",
         "primaryColor": "#555555",
         "secondaryColors": [
             "#494139",
@@ -586,7 +586,7 @@
     },
     {
         "name": "Penal Handcuffs",
-        "image": "Arms/Penal Handcuffs.png",
+        "image": "Hands/Penal Handcuffs.png",
         "primaryColor": "#5f5c53",
         "secondaryColors": [
             "#4f4943",
@@ -595,7 +595,7 @@
     },
     {
         "name": "Priestess Gloves",
-        "image": "Arms/Priestess Gloves.png",
+        "image": "Hands/Priestess Gloves.png",
         "primaryColor": "#968d96",
         "secondaryColors": [
             "#847b84",
@@ -604,7 +604,7 @@
     },
     {
         "name": "Prisoner's Gloves",
-        "image": "Arms/Prisoner's Gloves.png",
+        "image": "Hands/Prisoner's Gloves.png",
         "primaryColor": "#876b58",
         "secondaryColors": [
             "#6b5749",
@@ -613,7 +613,7 @@
     },
     {
         "name": "Rogue Gauntlets",
-        "image": "Arms/Rogue Gauntlets.png",
+        "image": "Hands/Rogue Gauntlets.png",
         "primaryColor": "#dddddc",
         "secondaryColors": [
             "#999895",
@@ -622,7 +622,7 @@
     },
     {
         "name": "Royal Soldier Gauntlets",
-        "image": "Arms/Royal Soldier Gauntlets.png",
+        "image": "Hands/Royal Soldier Gauntlets.png",
         "primaryColor": "#99978f",
         "secondaryColors": [
             "#898478",
@@ -631,7 +631,7 @@
     },
     {
         "name": "Royal Swordsman Gloves",
-        "image": "Arms/Royal Swordsman Gloves.png",
+        "image": "Hands/Royal Swordsman Gloves.png",
         "primaryColor": "#959695",
         "secondaryColors": [
             "#575a57",
@@ -640,7 +640,7 @@
     },
     {
         "name": "Ruin Gauntlets",
-        "image": "Arms/Ruin Gauntlets.png",
+        "image": "Hands/Ruin Gauntlets.png",
         "primaryColor": "#9a9995",
         "secondaryColors": [
             "#626756",
@@ -649,7 +649,7 @@
     },
     {
         "name": "Rusted Mastodon Gauntlets",
-        "image": "Arms/Rusted Mastodon Gauntlets.png",
+        "image": "Hands/Rusted Mastodon Gauntlets.png",
         "primaryColor": "#a79e8e",
         "secondaryColors": [
             "#948874",
@@ -658,7 +658,7 @@
     },
     {
         "name": "Saint's Long Gloves",
-        "image": "Arms/Saint's Long Gloves.png",
+        "image": "Hands/Saint's Long Gloves.png",
         "primaryColor": "#968987",
         "secondaryColors": [
             "#86736d",
@@ -667,7 +667,7 @@
     },
     {
         "name": "Shadow Gauntlets",
-        "image": "Arms/Shadow Gauntlets.png",
+        "image": "Hands/Shadow Gauntlets.png",
         "primaryColor": "#959799",
         "secondaryColors": [
             "#55595a",
@@ -676,7 +676,7 @@
     },
     {
         "name": "Smelter Demon Gauntlets",
-        "image": "Arms/Smelter Demon Gauntlets.png",
+        "image": "Hands/Smelter Demon Gauntlets.png",
         "primaryColor": "#909296",
         "secondaryColors": [
             "#666a63",
@@ -685,7 +685,7 @@
     },
     {
         "name": "Steel Gauntlets",
-        "image": "Arms/Steel Gauntlets.png",
+        "image": "Hands/Steel Gauntlets.png",
         "primaryColor": "#939896",
         "secondaryColors": [
             "#5c6460",
@@ -694,7 +694,7 @@
     },
     {
         "name": "Syan's Gauntlets",
-        "image": "Arms/Syan's Gauntlets.png",
+        "image": "Hands/Syan's Gauntlets.png",
         "primaryColor": "#a7a096",
         "secondaryColors": [
             "#928771",
@@ -703,7 +703,7 @@
     },
     {
         "name": "Targray's Manifers",
-        "image": "Arms/Targray's Manifers.png",
+        "image": "Hands/Targray's Manifers.png",
         "primaryColor": "#9da19b",
         "secondaryColors": [
             "#8c8874",
@@ -712,7 +712,7 @@
     },
     {
         "name": "Tattered Cloth Manchettes",
-        "image": "Arms/Tattered Cloth Manchettes.png",
+        "image": "Hands/Tattered Cloth Manchettes.png",
         "primaryColor": "#9c896d",
         "secondaryColors": [
             "#8b765d",
@@ -721,7 +721,7 @@
     },
     {
         "name": "Throne Defender Gauntlets",
-        "image": "Arms/Throne Defender Gauntlets.png",
+        "image": "Hands/Throne Defender Gauntlets.png",
         "primaryColor": "#959493",
         "secondaryColors": [
             "#5b5f56",
@@ -730,7 +730,7 @@
     },
     {
         "name": "Throne Watcher Gauntlets",
-        "image": "Arms/Throne Watcher Gauntlets.png",
+        "image": "Hands/Throne Watcher Gauntlets.png",
         "primaryColor": "#949793",
         "secondaryColors": [
             "#8f938d",
@@ -739,7 +739,7 @@
     },
     {
         "name": "Traveling Merchant Gloves",
-        "image": "Arms/Traveling Merchant Gloves.png",
+        "image": "Hands/Traveling Merchant Gloves.png",
         "primaryColor": "#85766e",
         "secondaryColors": [
             "#675852",
@@ -748,7 +748,7 @@
     },
     {
         "name": "Tseldora Manchettes",
-        "image": "Arms/Tseldora Manchettes.png",
+        "image": "Hands/Tseldora Manchettes.png",
         "primaryColor": "#9f8b68",
         "secondaryColors": [
             "#887451",
@@ -757,7 +757,7 @@
     },
     {
         "name": "Varangian Cuffs",
-        "image": "Arms/Varangian Cuffs.png",
+        "image": "Hands/Varangian Cuffs.png",
         "primaryColor": "#e0dfe0",
         "secondaryColors": [
             "#9f9d9f",
@@ -766,7 +766,7 @@
     },
     {
         "name": "Velstadt's Gauntlets",
-        "image": "Arms/Velstadt's Gauntlets.png",
+        "image": "Hands/Velstadt's Gauntlets.png",
         "primaryColor": "#dfdddb",
         "secondaryColors": [
             "#a9a196",
@@ -775,7 +775,7 @@
     },
     {
         "name": "Vengarl's Gloves",
-        "image": "Arms/Vengarl's Gloves.png",
+        "image": "Hands/Vengarl's Gloves.png",
         "primaryColor": "#897672",
         "secondaryColors": [
             "#695e59",
@@ -784,7 +784,7 @@
     },
     {
         "name": "Wanderer Manchettes",
-        "image": "Arms/Wanderer Manchettes.png",
+        "image": "Hands/Wanderer Manchettes.png",
         "primaryColor": "#a1a38d",
         "secondaryColors": [
             "#64584f",
@@ -793,7 +793,7 @@
     },
     {
         "name": "White Priest Gloves",
-        "image": "Arms/White Priest Gloves.png",
+        "image": "Hands/White Priest Gloves.png",
         "primaryColor": "#a7a090",
         "secondaryColors": [
             "#938976",
@@ -802,7 +802,7 @@
     },
     {
         "name": "Xanthous Gloves",
-        "image": "Arms/Xanthous Gloves.png",
+        "image": "Hands/Xanthous Gloves.png",
         "primaryColor": "#dfce99",
         "secondaryColors": [
             "#e0ca5f",
