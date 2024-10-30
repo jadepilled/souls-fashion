@@ -85,7 +85,9 @@
           <a href="feedback.html">Feedback</a>
           <button class="mode-switch" id="modeToggle">Light Mode</button>
         </div>
-        <button class="show-menu">Menu</button>
+        <button class="show-menu">
+          <img class="menu-icon" src="resources/icons/menu.svg" />
+        </button>
       </div>
       <div class="filters-group">
         <button id="headFilter">Head</button>
@@ -296,54 +298,78 @@
       //   nav.classList.remove('hidden-on-scroll');
       // });
 
-      let scrollActive = false;
+      let sidebarActive = false;
       let navActive = true;
       let lastTouchY = 0; // Variable to track the last Y position on touch devices
 
       function showOutfitSidebar() {
         document.querySelector(".pinned").style.opacity = "1";
         document.querySelector(".pinned").style.display = "block";
-        document.querySelector(".item-grid").style.marginTop = "20px";
+        
+        if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+        } else {
+          document.querySelector(".item-grid").style.marginTop = "20px";
+        }
+        
         document.querySelector(".item-grid").style.marginLeft = "70px";
-        scrollActive = true;
-        navActive = false
+        sidebarActive = true;
+        navActive = false;
       }
 
       function hideOutfitSidebar() {
         document.querySelector(".pinned").style.opacity = "0";
         document.querySelector(".pinned").style.display = "none";
-        document.querySelector(".item-grid").style.marginTop = "180px";
-        document.querySelector(".item-grid").style.marginLeft = "0px";
-        scrollActive = false;
+
+        if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+        } else {
+          document.querySelector(".item-grid").style.marginTop = "180px";
+        }
+
+        document.querySelector(".item-grid").style.marginLeft = "0";
+        sidebarActive = false;
         navActive = true;
       }
 
       function showNav() {
-        if (scrollActive === false) {
+        if (sidebarActive === false) {
           nav.classList.remove('hidden-on-scroll');
-          document.querySelector(".item-grid").style.marginTop = "180px";
+
+          if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+          } else {
+            document.querySelector(".item-grid").style.marginTop = "180px";
+          }
+
           document.querySelector(".item-grid").style.marginLeft = "0px";
-          scrollActive = false;
+          sidebarActive = false;
           navActive = true;
         }
       }
 
       function hideNav() {
-        if (scrollActive === true) {
+        if (sidebarActive === true) {
           nav.classList.add('hidden-on-scroll');
-          document.querySelector(".item-grid").style.marginTop = "20px";
+
+          if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+          } else {
+            document.querySelector(".item-grid").style.marginTop = "20px";
+          }
+
           document.querySelector(".item-grid").style.marginLeft = "70px";
-          scrollActive = true;
+          sidebarActive = true;
           navActive = false;
         }
       }
 
       // Activate effect on scroll attempt (downward or upward for wheel)
       window.addEventListener("wheel", (event) => {
-        if (event.deltaY > 0 && !scrollActive) {
+        if (event.deltaY > 0 && !sidebarActive) {
           showOutfitSidebar(); // Scrolling down
           hideNav();
-        } else if (event.deltaY < 0 && scrollActive) {
+        } else if (event.deltaY < 0 && sidebarActive) {
           hideOutfitSidebar(); // Scrolling up
           showNav();
         }
@@ -356,9 +382,9 @@
 
       window.addEventListener("touchmove", (event) => {
         const currentTouchY = event.touches[0].clientY;
-        if (currentTouchY < lastTouchY && !scrollActive) {
+        if (currentTouchY < lastTouchY && !sidebarActive) {
           showOutfitSidebar(); // Scrolling down
-        } else if (currentTouchY > lastTouchY && scrollActive) {
+        } else if (currentTouchY > lastTouchY && sidebarActive) {
           hideOutfitSidebar(); // Scrolling up
         }
         lastTouchY = currentTouchY; // Update last touch position
@@ -398,6 +424,8 @@
         .querySelector(".back-to-top-button")
         .addEventListener("click", () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
+          showNav();
+          hideOutfitSidebar();
         });
 
       // Add click event listener to all anchor links for fade effect

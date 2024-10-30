@@ -1131,6 +1131,8 @@ caret-color: transparent;
   vertical-align: middle;
 }
 
+
+
 @media (min-width: 1200px) {
 }
 
@@ -1217,12 +1219,10 @@ caret-color: transparent;
   }
 
   .show-menu {
+    all: unset;
     display: block;
     margin: 15px;
     padding: 5px;
-    border: 1px solid #555;
-    border-radius: 10px;
-    font-size: 10px;
     height: 40px;
     text-align: center;
     color: #555;
@@ -1230,17 +1230,17 @@ caret-color: transparent;
     background-color: #121212;
   }
 
-  .show-menu:hover {
-    border: 1px solid white;
+  .menu-icon {
+    vertical-align: middle;
+    width: 1.5rem;
+    height: auto;
+    filter: invert(20%) sepia(10%) saturate(10%) hue-rotate(0deg) brightness(1.75); 
   }
+  
 
   body.light-mode .show-menu {
     background-color: white;
     border: 1px solid #444;
-  }
-
-  body.light-mode .show-menu:hover {
-    border: 1px solid black;
   }
 
   .mode-switch {
@@ -1287,6 +1287,11 @@ caret-color: transparent;
     width: 40%;
     height: auto;
   }
+
+  .title-container {
+    font-size: 0.6rem;
+  }
+    
 
   .color-picker-group {
     flex-direction: row;
