@@ -457,15 +457,14 @@ body.light-mode .dropdown .dropbtn {
 }
 
 .item-grid {
-  text-align: center;
-  margin-top: 80px;
-  /* margin-left: 80px; */
   margin-top: 180px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center; /* centers items horizontally */
-  align-items: center; /* centers items vertically */
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
 }
 .item-card {
   display: flex;
@@ -1279,7 +1278,6 @@ caret-color: transparent;
   }
 
   .item-grid {
-    display: inline-flex;
     margin-top: 0;
   }
 
