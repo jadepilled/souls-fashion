@@ -82,44 +82,42 @@
 <script>
     // Function to load images dynamically from the grid-images folder
     function loadImages() {
-        const itemGrid = document.getElementById('itemGrid');
-        const items = [
-            { img: 'elden-ring-grid.webp', link: 'eldenring' },
-            { img: 'bloodborne-grid.webp', link: 'bloodborne' },
-            { img: 'dark-souls-grid.webp', link: 'ds1' },
-            { img: 'dark-souls-2-grid.webp', link: 'ds2' },
-            { img: 'dark-souls-3-grid.webp', link: 'ds3' },
-            { img: 'demons-souls-grid.webp', link: 'demonssouls' }
-        ];
+    const itemGrid = document.getElementById('itemGrid');
+    const items = [
+        { img: 'https://i.ibb.co/Zz6L6c6/elden-ring-grid.webp', link: 'eldenring' },
+        { img: 'https://i.ibb.co/0Zk0dbB/bloodborne-grid.webp', link: 'bloodborne' },
+        { img: 'https://i.ibb.co/1rLcBQG/dark-souls-grid.webp', link: 'ds1' },
+        { img: 'https://i.ibb.co/gFfpdmD/dark-souls-2-grid.webp', link: 'ds2' },
+        { img: 'https://i.ibb.co/NT663zC/dark-souls-3-grid.webp', link: 'ds3' },
+        { img: 'https://i.ibb.co/zRmBHft/demons-souls-grid.webp', link: 'demonssouls' }
+    ];
 
-        // Clear existing content before loading new images
-        itemGrid.innerHTML = '';
+    itemGrid.innerHTML = ''; // Clear existing content
 
-        items.forEach(item => {
-            const itemCard = document.createElement('div');
-            itemCard.className = 'item-card';
-            const linkElement = document.createElement('a'); // Create a link element
+    items.forEach(item => {
+        const itemCard = document.createElement('div');
+        itemCard.className = 'item-card';
+        const linkElement = document.createElement('a');
 
-            // Add click event listener to the link
-            linkElement.addEventListener('click', function(e) {
-                e.preventDefault(); // Prevent default link behavior
-                document.body.classList.add('fade-out'); // Add fade-out class
+        linkElement.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
 
-                // Delay the navigation to the new page to allow the fade-out effect to play
-                setTimeout(() => {
-                    window.location.href = item.link; // Navigate to the new page
-                }, 500); // Match this duration with the CSS transition duration
-            });
-
-            const imgElement = document.createElement('img');
-            imgElement.src = `resources/grid-images/${item.img}`; // Path to grid-images folder
-            imgElement.alt = item.img;
-
-            linkElement.appendChild(imgElement); // Add the image to the link
-            itemCard.appendChild(linkElement); // Add the link to the item card
-            itemGrid.appendChild(itemCard); // Add the item card to the grid
+            setTimeout(() => {
+                window.location.href = item.link;
+            }, 500);
         });
-    }
+
+        const imgElement = document.createElement('img');
+        imgElement.src = item.img; // Use external link
+        imgElement.alt = item.link;
+
+        linkElement.appendChild(imgElement);
+        itemCard.appendChild(linkElement);
+        itemGrid.appendChild(itemCard);
+    });
+}
+
 
     // Call the function to load images on page load
     window.onload = function() {
