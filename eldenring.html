@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Spectral"
     />
-    <link rel="stylesheet" href="resources/styles.css?v1.0.5" />
+    <link rel="stylesheet" href="resources/styles.css" />
     <link rel="icon" type="image/x-icon" href="icon.ico" />
     <link
       rel="apple-touch-icon"
@@ -36,12 +36,13 @@
       sizes="48x48"
       href="favicons/icon_48x48.png"
     />
-<link rel="icon" href="favicon.ico">
-	<link
+    <link
       rel="icon"
-      href="favicon.ico"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/icon_96x96.png"
     />
-    <title>Elden Ring - Fashion Souls v1.0.5</title>
+    <title>Elden Ring - Fashion Souls v1.0.3</title>
   </head>
   <body>
     <nav class="navigation">
@@ -172,7 +173,7 @@
             <!-- <a href="simulator_eldenring.html" class="link">
               View Presets
             </a> -->
-            <button onclick="window.location.href='simulator_eldenring.html'">Export</button>
+            <button id="export" onclick="window.location.href='simulator_eldenring.html'">Export</button>
           </div>
         <div class="slots" id="outfitSlots">
           <div class="slot">
@@ -215,7 +216,7 @@
       <button class="back-to-top-button">Back to Top</button>
     </footer>
 
-    <script src="search_items_eldenring.js?v1.0.5"></script>
+    <script src="search_items_eldenring.js"></script>
     <script>
       const modeToggle = document.getElementById("modeToggle");
       const body = document.body;
@@ -275,7 +276,7 @@
         sidebar.classList.toggle('show');
       });
 
-      document.querySelector("button").addEventListener("click", () => {
+      document.getElementById("export").addEventListener("click", () => {
         window.location.href = "simulator_eldenring.html";
       });
 
