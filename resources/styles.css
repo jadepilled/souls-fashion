@@ -457,15 +457,16 @@ body.light-mode .dropdown .dropbtn {
 }
 
 .item-grid {
-  text-align: center;
-  margin-top: 80px;
-  /* margin-left: 80px; */
   margin-top: 180px;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center; /* centers items horizontally */
-  align-items: center; /* centers items vertically */
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
 }
 .item-card {
   display: flex;
@@ -654,7 +655,7 @@ body.light-mode .sidebar {
 .pinned {
   top: 2%;
   position: fixed;
-  display: block;
+  display: none;
   opacity: 0;
   flex-direction: column;
   align-items: center;
@@ -689,6 +690,7 @@ body.light-mode .sidebar {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 
 .pinned-buttons button:hover {
@@ -1130,6 +1132,8 @@ caret-color: transparent;
   vertical-align: middle;
 }
 
+
+
 @media (min-width: 1200px) {
 }
 
@@ -1216,12 +1220,10 @@ caret-color: transparent;
   }
 
   .show-menu {
+    all: unset;
     display: block;
     margin: 15px;
     padding: 5px;
-    border: 1px solid #555;
-    border-radius: 10px;
-    font-size: 10px;
     height: 40px;
     text-align: center;
     color: #555;
@@ -1229,17 +1231,17 @@ caret-color: transparent;
     background-color: #121212;
   }
 
-  .show-menu:hover {
-    border: 1px solid white;
+  .menu-icon {
+    vertical-align: middle;
+    width: 1.5rem;
+    height: auto;
+    filter: invert(20%) sepia(10%) saturate(10%) hue-rotate(0deg) brightness(1.75); 
   }
+  
 
   body.light-mode .show-menu {
     background-color: white;
     border: 1px solid #444;
-  }
-
-  body.light-mode .show-menu:hover {
-    border: 1px solid black;
   }
 
   .mode-switch {
@@ -1278,7 +1280,6 @@ caret-color: transparent;
   }
 
   .item-grid {
-    display: inline-flex;
     margin-top: 0;
   }
 
@@ -1286,6 +1287,11 @@ caret-color: transparent;
     width: 40%;
     height: auto;
   }
+
+  .title-container {
+    font-size: 0.6rem;
+  }
+    
 
   .color-picker-group {
     flex-direction: row;

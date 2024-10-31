@@ -87,7 +87,9 @@
           <a href="feedback.html">Feedback</a>
           <button class="mode-switch" id="modeToggle">Light Mode</button>
         </div>
-        <button class="show-menu">Menu</button>
+        <button class="show-menu">
+          <img class="menu-icon" src="resources/icons/menu.svg" />
+        </button>
       </div>
       <div class="filters-group">
         <button id="headFilter">Head</button>
@@ -161,17 +163,17 @@
 
     <div class="hover-trigger">
       <div class="pinned">
-        <div class="tooltip">
-          <!-- <span class="tooltip-text">
-            To commit an item to the outfit simulator, right click and select 'send to outfit simulator'.
-          </span> -->
+        <!-- <div class="tooltip">
+          <span class="tooltip-text">
+            To commit an item to the outfit simulator, right click an item card and select 'send to outfit simulator'.
+          </span>
+        </div> -->
           <div class="pinned-buttons">
             <!-- <a href="simulator_eldenring.html" class="link">
               View Presets
             </a> -->
             <button onclick="window.location.href='simulator_eldenring.html'">Export</button>
           </div>
-        </div>
         <div class="slots" id="outfitSlots">
           <div class="slot">
             <p>Head</p>
@@ -277,36 +279,118 @@
         window.location.href = "simulator_eldenring.html";
       });
 
-      const triggerElement = document.querySelector('.hover-trigger'); // Replace with your actual trigger element
-      const pinned = document.querySelector('.pinned');
+      // const triggerElement = document.querySelector('.hover-trigger'); // Replace with your actual trigger element
+      // const pinned = document.querySelector('.pinned');
 
-      // Show pinned and adjust margin on hover
-      triggerElement.addEventListener('mouseover', () => {
-        pinned.style.opacity = "1";
-        pinned.style.display = "block";
-        itemGrid.style.marginTop = "20px";
-        itemGrid.style.marginLeft = "70px"; // Change to desired value
-        nav.classList.add('hidden-on-scroll');
-      });
-
-      // Hide the pinned element and reset margin when not hovering
-      triggerElement.addEventListener('mouseout', () => {
-        pinned.style.opacity = "0";
-        pinned.style.display = "none";
-        itemGrid.style.marginTop = "180px";
-        itemGrid.style.marginLeft = "0px"; 
-        nav.classList.remove('hidden-on-scroll');
-      });
-
-      // window.addEventListener("scroll", () => {
-      //   if (window.scrollY > 100) {
-      //     document.querySelector(".pinned").style.opacity = "1";
-      //     document.querySelector(".item-grid").style.marginLeft = "70px"; // Change margin-left to 40px
-      //   } else {
-      //     document.querySelector(".pinned").style.opacity = "0";
-      //     document.querySelector(".item-grid").style.marginLeft = "0px"; // Reset margin-left if needed
-      //   }
+      // // Show pinned and adjust margin on hover
+      // triggerElement.addEventListener('mouseover', () => {
+      //   pinned.style.opacity = "1";
+      //   pinned.style.display = "block";
+      //   itemGrid.style.marginTop = "20px";
+      //   itemGrid.style.marginLeft = "70px"; // Change to desired value
+      //   nav.classList.add('hidden-on-scroll');
       // });
+
+      // // Hide the pinned element and reset margin when not hovering
+      // triggerElement.addEventListener('mouseout', () => {
+      //   pinned.style.opacity = "0";
+      //   pinned.style.display = "none";
+      //   itemGrid.style.marginTop = "180px";
+      //   itemGrid.style.marginLeft = "0px"; 
+      //   nav.classList.remove('hidden-on-scroll');
+      // });
+
+      let sidebarActive = false;
+      let navActive = true;
+      let lastTouchY = 0; // Variable to track the last Y position on touch devices
+
+      function showOutfitSidebar() {
+        document.querySelector(".pinned").style.opacity = "1";
+        document.querySelector(".pinned").style.display = "block";
+        
+        if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+        } else {
+          document.querySelector(".item-grid").style.marginTop = "20px";
+        }
+        
+        document.querySelector(".item-grid").style.marginLeft = "70px";
+        sidebarActive = true;
+        navActive = false;
+      }
+
+      function hideOutfitSidebar() {
+        document.querySelector(".pinned").style.opacity = "0";
+        document.querySelector(".pinned").style.display = "none";
+
+        if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+        } else {
+          document.querySelector(".item-grid").style.marginTop = "180px";
+        }
+
+        document.querySelector(".item-grid").style.marginLeft = "0";
+        sidebarActive = false;
+        navActive = true;
+      }
+
+      function showNav() {
+        if (sidebarActive === false) {
+          nav.classList.remove('hidden-on-scroll');
+
+          if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+          } else {
+            document.querySelector(".item-grid").style.marginTop = "180px";
+          }
+
+          document.querySelector(".item-grid").style.marginLeft = "0px";
+          sidebarActive = false;
+          navActive = true;
+        }
+      }
+
+      function hideNav() {
+        if (sidebarActive === true) {
+          nav.classList.add('hidden-on-scroll');
+
+          if (window.innerWidth <= 768) { // Mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+          } else {
+            document.querySelector(".item-grid").style.marginTop = "20px";
+          }
+
+          document.querySelector(".item-grid").style.marginLeft = "70px";
+          sidebarActive = true;
+          navActive = false;
+        }
+      }
+
+      // Activate effect on scroll attempt (downward or upward for wheel)
+      window.addEventListener("wheel", (event) => {
+        if (event.deltaY > 0 && !sidebarActive) {
+          showOutfitSidebar(); // Scrolling down
+          hideNav();
+        } else if (event.deltaY < 0 && sidebarActive) {
+          hideOutfitSidebar(); // Scrolling up
+          showNav();
+        }
+      });
+
+      // Activate effect on touch devices
+      window.addEventListener("touchstart", (event) => {
+        lastTouchY = event.touches[0].clientY; // Track initial touch position
+      });
+
+      window.addEventListener("touchmove", (event) => {
+        const currentTouchY = event.touches[0].clientY;
+        if (currentTouchY < lastTouchY && !sidebarActive) {
+          showOutfitSidebar(); // Scrolling down
+        } else if (currentTouchY > lastTouchY && sidebarActive) {
+          hideOutfitSidebar(); // Scrolling up
+        }
+        lastTouchY = currentTouchY; // Update last touch position
+      });
 
       window.addEventListener("scroll", () => {
         if (window.scrollY > 400) {
@@ -327,15 +411,13 @@
 
       window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
+        if (scrollTop > lastScrollTop && !navActive) {
           // User is scrolling down
-          nav.classList.add('hidden-on-scroll');
+          hideNav();
         }
         else {
           // User is scrolling up
-          nav.classList.remove('hidden-on-scroll');
-          document.querySelector(".pinned").style.opacity = "0";
-          document.querySelector(".item-grid").style.marginLeft = "0px"; // Reset margin-left if needed
+          showNav();
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure scrollTop doesn't go negative
       });
@@ -344,6 +426,8 @@
         .querySelector(".back-to-top-button")
         .addEventListener("click", () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
+          showNav();
+          hideOutfitSidebar();
         });
 
       // Add click event listener to all anchor links for fade effect
@@ -477,21 +561,11 @@
           // Hide the context menu after sending the item
           document.getElementById('contextMenu').style.display = 'none';
 
-          // Show the elements and apply the styles
-          pinned.style.opacity = "1";
-          pinned.style.display = "block";
-          itemGrid.style.marginTop = "20px";
-          itemGrid.style.marginLeft = "70px"; // Change to desired value
-          nav.classList.add('hidden-on-scroll');
+          const pinned = document.querySelector('.pinned');
 
-          // Set a timer to hide the elements and revert styles after 5 seconds
-          setTimeout(() => {
-              pinned.style.opacity = "0";
-              pinned.style.display = "none";
-              itemGrid.style.marginTop = ""; // Reset to original or desired default
-              itemGrid.style.marginLeft = ""; // Reset to original or desired default
-              nav.classList.remove('hidden-on-scroll');
-          }, 700);
+          // Show the elements and apply the styles
+          showOutfitSidebar();
+          hideNav();
       }
   
       // Add event listeners to item cards in itemGrid for sending items to the outfit simulator

@@ -202,13 +202,15 @@
       });
 
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 400) {
           // Adjust this value based on when you want it to appear
+          document.querySelector(".back-to-top-button").style.opacity = "1";
           document.querySelector(".back-to-top-button").style.display = "block";
-          document.querySelector(".footer").style.display = "block";
+          document.querySelector(".footer").style.opacity = "1";
         } else {
+          document.querySelector(".back-to-top-button").style.opacity = "0";
           document.querySelector(".back-to-top-button").style.display = "none";
-          document.querySelector(".footer").style.display = "none";
+          document.querySelector(".footer").style.opacity = "0";
         }
       });
 

@@ -134,6 +134,31 @@ function displayItems(filteredItems) {
   });
 }
 
+function hideOutfitSidebar() {
+  document.querySelector(".pinned").style.opacity = "0";
+  document.querySelector(".pinned").style.display = "none";
+
+  if (window.innerWidth <= 768) { // Mobile screen
+    document.querySelector(".item-grid").style.marginTop = "0";
+  } else {
+    document.querySelector(".item-grid").style.marginTop = "180px";
+  }
+
+  document.querySelector(".item-grid").style.marginLeft = "0";
+}
+
+function showNav() {
+  const nav = document.querySelector('.navigation');
+  nav.classList.remove('hidden-on-scroll');
+
+  if (window.innerWidth <= 768) { // Mobile screen
+  document.querySelector(".item-grid").style.marginTop = "0";
+  } else {
+    document.querySelector(".item-grid").style.marginTop = "180px";
+  }
+  document.querySelector(".item-grid").style.marginLeft = "0px";
+}
+
 // Function to create item cards with click event for search
 function createItemCard(item) {
   const card = document.createElement("div");
@@ -141,7 +166,6 @@ function createItemCard(item) {
 
   const toggleSearch = document.getElementById("toggleSearch");
   const searchInput = document.getElementById("searchInput");
-  const nav = document.querySelector('.navigation');
 
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("image-container");
@@ -171,6 +195,7 @@ function createItemCard(item) {
   secondaryColorDiv1.style.backgroundColor = item.secondaryColors[0];
   const secondaryColorDiv2 = document.createElement("div");
   secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
+
   secondaryColorDiv2.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevents triggering the tile's click event
     document.getElementById('favcolor').value = item.secondaryColors[1];
@@ -190,6 +215,7 @@ function createItemCard(item) {
   card.appendChild(itemInfo);
   card.appendChild(colorBar);
 
+  
   // Add click event to set the item's primary color for the search
   itemInfo.addEventListener("click", () => {
     searchInput.value = item.name;
@@ -199,7 +225,8 @@ function createItemCard(item) {
     toggleSearch.textContent = "Item"; // Set button text to "Item"
     searchInput.placeholder = "Search by item"; // Update placeholder
 
-    nav.classList.remove('hidden-on-scroll');
+    hideOutfitSidebar();
+    showNav();
     window.scrollTo({ top: 0, behavior: "smooth" });
     updateMatchingItems();
   });
@@ -214,9 +241,10 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
-    nav.classList.remove('hidden-on-scroll');
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    hideOutfitSidebar();
+    showNav();
     updateMatchingItems();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   secondaryColorDiv1.addEventListener("click", () => {
@@ -229,9 +257,10 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
-    nav.classList.remove('hidden-on-scroll');
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    hideOutfitSidebar();
+    showNav();
     updateMatchingItems();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   secondaryColorDiv2.addEventListener("click", () => {
@@ -244,11 +273,12 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
-    nav.classList.remove('hidden-on-scroll');
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    hideOutfitSidebar();
+    showNav()
     updateMatchingItems();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
-
+  
   return card;
 }
 
