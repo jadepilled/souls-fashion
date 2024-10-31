@@ -36,10 +36,11 @@
       sizes="48x48"
       href="favicons/icon_48x48.png"
     />
-<link rel="icon" href="favicon.ico">
-	<link
+    <link
       rel="icon"
-      href="favicon.ico"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/icon_96x96.png"
     />
     <title>Elden Ring - Fashion Souls v1.0.5</title>
   </head>
@@ -172,7 +173,7 @@
             <!-- <a href="simulator_eldenring.html" class="link">
               View Presets
             </a> -->
-            <button onclick="window.location.href='simulator_eldenring.html'">Export</button>
+            <button id="export" onclick="window.location.href='simulator_eldenring.html'">Export</button>
           </div>
         <div class="slots" id="outfitSlots">
           <div class="slot">
@@ -275,7 +276,7 @@
         sidebar.classList.toggle('show');
       });
 
-      document.querySelector("button").addEventListener("click", () => {
+      document.getElementById("export").addEventListener("click", () => {
         window.location.href = "simulator_eldenring.html";
       });
 
