@@ -84,7 +84,8 @@
 
             if (item) {
                 const img = document.createElement("img");
-                img.src = `pages/eldenring/icons/${item.image}`;
+                img.src = `pages/eldenring/icons/${slotId.charAt(0).toUpperCase() + slotId.slice(1)}/${item.image.replace(/_/g, ' ').replace(/\\/g, '/')}`;
+
                 img.alt = item.name;
 
                 const name = document.createElement("p");
@@ -188,7 +189,8 @@
 
             if (item) {
                 const img = document.createElement("img");
-                img.src = `pages/eldenring/icons/${item.image}`;
+                img.src = `pages/eldenring/icons/${slotId.charAt(0).toUpperCase() + slotId.slice(1)}/${item.image.replace(/_/g, ' ').replace(/\\/g, '/')}`;
+
                 img.alt = item.name;
 
                 const name = document.createElement("p");
@@ -257,7 +259,7 @@
 
             if (item) {
                 const img = document.createElement("img");
-                img.src = `pages/eldenring/icons/${item.image}`;
+                img.src = `pages/eldenring/icons/${type}/${item.image}`;
                 img.alt = item.name;
 
                 const name = document.createElement("p");

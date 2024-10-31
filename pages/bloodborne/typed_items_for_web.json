@@ -1498,7 +1498,7 @@
     {
         "name": "Yahar'Hul Black Trousers",
         "type": "legs",
-        "image": "Legs/Yahar'hul Black Trousers.png",
+        "image": "Legs/Yahar'hul Black Trousers.webp",
         "primaryColor": "#948775",
         "secondaryColors": [
             "#3b3128",
@@ -1509,7 +1509,7 @@
     {
         "name": "Yharnam Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Yharnam Hunter Trousers.png",
+        "image": "Legs/Yharnam Hunter Trousers.webp",
         "primaryColor": "#2d2a26",
         "secondaryColors": [
             "#87755d",
@@ -1520,7 +1520,7 @@
     {
         "name": "Cannon",
         "type": "shields",
-        "image": "Shields/Cannon.png",
+        "image": "Shields/Cannon.webp",
         "primaryColor": "#5b5856",
         "secondaryColors": [
             "#9e9c97",
@@ -1531,7 +1531,7 @@
     {
         "name": "Church Cannon",
         "type": "shields",
-        "image": "Shields/Church Cannon.png",
+        "image": "Shields/Church Cannon.webp",
         "primaryColor": "#9b9891",
         "secondaryColors": [
             "#898578",
@@ -1542,7 +1542,7 @@
     {
         "name": "Evelyn",
         "type": "shields",
-        "image": "Shields/Evelyn.png",
+        "image": "Shields/Evelyn.webp",
         "primaryColor": "#645c5c",
         "secondaryColors": [
             "#635852",
@@ -1553,7 +1553,7 @@
     {
         "name": "Fist Of Gratia",
         "type": "shields",
-        "image": "Shields/Fist of Gratia.png",
+        "image": "Shields/Fist of Gratia.webp",
         "primaryColor": "#595755",
         "secondaryColors": [
             "#847972",
@@ -1564,7 +1564,7 @@
     {
         "name": "Flamesprayer",
         "type": "shields",
-        "image": "Shields/Flamesprayer.png",
+        "image": "Shields/Flamesprayer.webp",
         "primaryColor": "#90735e",
         "secondaryColors": [
             "#655b51",
@@ -1575,7 +1575,7 @@
     {
         "name": "Gatling Gun",
         "type": "shields",
-        "image": "Shields/Gatling Gun.png",
+        "image": "Shields/Gatling Gun.webp",
         "primaryColor": "#5b5b56",
         "secondaryColors": [
             "#6c4c3f",
@@ -1586,7 +1586,7 @@
     {
         "name": "Hunter Blunderbuss",
         "type": "shields",
-        "image": "Shields/Hunter Blunderbuss.png",
+        "image": "Shields/Hunter Blunderbuss.webp",
         "primaryColor": "#565758",
         "secondaryColors": [
             "#565758",
@@ -1597,7 +1597,7 @@
     {
         "name": "Hunter Pistol",
         "type": "shields",
-        "image": "Shields/Hunter Pistol.png",
+        "image": "Shields/Hunter Pistol.webp",
         "primaryColor": "#5d5e5a",
         "secondaryColors": [
             "#5e5a55",
@@ -1608,7 +1608,7 @@
     {
         "name": "Hunter's Torch",
         "type": "shields",
-        "image": "Shields/Hunter's Torch.png",
+        "image": "Shields/Hunter's Torch.webp",
         "primaryColor": "#949392",
         "secondaryColors": [
             "#a18772",
@@ -1619,7 +1619,7 @@
     {
         "name": "Loch Shield",
         "type": "shields",
-        "image": "Shields/Loch Shield.png",
+        "image": "Shields/Loch Shield.webp",
         "primaryColor": "#657289",
         "secondaryColors": [
             "#9a9b9e",
@@ -1630,7 +1630,7 @@
     {
         "name": "Ludwig's Rifle",
         "type": "shields",
-        "image": "Shields/Ludwig's Rifle.png",
+        "image": "Shields/Ludwig's Rifle.webp",
         "primaryColor": "#9f9a90",
         "secondaryColors": [
             "#908776",
@@ -1641,7 +1641,7 @@
     {
         "name": "Piercing Rifle",
         "type": "shields",
-        "image": "Shields/Piercing Rifle.png",
+        "image": "Shields/Piercing Rifle.webp",
         "primaryColor": "#413e3e",
         "secondaryColors": [
             "#6a5241",
@@ -1652,7 +1652,7 @@
     {
         "name": "Repeating Pistol",
         "type": "shields",
-        "image": "Shields/Repeating Pistol.png",
+        "image": "Shields/Repeating Pistol.webp",
         "primaryColor": "#9a8a70",
         "secondaryColors": [
             "#a6a399",
@@ -1663,7 +1663,7 @@
     {
         "name": "Rosmarinus",
         "type": "shields",
-        "image": "Shields/Rosmarinus.png",
+        "image": "Shields/Rosmarinus.webp",
         "primaryColor": "#636364",
         "secondaryColors": [
             "#99999b",
@@ -1674,7 +1674,7 @@
     {
         "name": "Torch",
         "type": "shields",
-        "image": "Shields/Torch.png",
+        "image": "Shields/Torch.webp",
         "primaryColor": "#949392",
         "secondaryColors": [
             "#a18772",
@@ -1685,7 +1685,7 @@
     {
         "name": "Wooden Shield",
         "type": "shields",
-        "image": "Shields/Wooden Shield.png",
+        "image": "Shields/Wooden Shield.webp",
         "primaryColor": "#857165",
         "secondaryColors": [
             "#63544b",
@@ -1696,7 +1696,7 @@
     {
         "name": "Amygdalan Arm",
         "type": "weapons",
-        "image": "Weapons/Amygdalan Arm.png",
+        "image": "Weapons/Amygdalan Arm.webp",
         "primaryColor": "#a4988d",
         "secondaryColors": [
             "#86796d",
@@ -1707,7 +1707,7 @@
     {
         "name": "Beast Claw",
         "type": "weapons",
-        "image": "Weapons/Beast Claw.png",
+        "image": "Weapons/Beast Claw.webp",
         "primaryColor": "#958672",
         "secondaryColors": [
             "#b6ac9b",
@@ -1718,7 +1718,7 @@
     {
         "name": "Beast Cutter",
         "type": "weapons",
-        "image": "Weapons/Beast Cutter.png",
+        "image": "Weapons/Beast Cutter.webp",
         "primaryColor": "#a09992",
         "secondaryColors": [
             "#908578",
@@ -1729,7 +1729,7 @@
     {
         "name": "Beasthunter Saif",
         "type": "weapons",
-        "image": "Weapons/Beasthunter Saif.png",
+        "image": "Weapons/Beasthunter Saif.webp",
         "primaryColor": "#4d4d4b",
         "secondaryColors": [
             "#bbb1ab",
@@ -1740,7 +1740,7 @@
     {
         "name": "Blade Of Mercy",
         "type": "weapons",
-        "image": "Weapons/Blade of Mercy.png",
+        "image": "Weapons/Blade of Mercy.webp",
         "primaryColor": "#5b5955",
         "secondaryColors": [
             "#999a98",
@@ -1751,7 +1751,7 @@
     {
         "name": "Bloodletter",
         "type": "weapons",
-        "image": "Weapons/Bloodletter.png",
+        "image": "Weapons/Bloodletter.webp",
         "primaryColor": "#8e6e5d",
         "secondaryColors": [
             "#92413e",
@@ -1762,7 +1762,7 @@
     {
         "name": "Boom Hammer",
         "type": "weapons",
-        "image": "Weapons/Boom Hammer.png",
+        "image": "Weapons/Boom Hammer.webp",
         "primaryColor": "#5e5c5b",
         "secondaryColors": [
             "#9c9a99",
@@ -1773,7 +1773,7 @@
     {
         "name": "Burial Blade",
         "type": "weapons",
-        "image": "Weapons/Burial Blade.png",
+        "image": "Weapons/Burial Blade.webp",
         "primaryColor": "#a69f94",
         "secondaryColors": [
             "#665b50",
@@ -1784,7 +1784,7 @@
     {
         "name": "Chikage",
         "type": "weapons",
-        "image": "Weapons/Chikage.png",
+        "image": "Weapons/Chikage.webp",
         "primaryColor": "#a43733",
         "secondaryColors": [
             "#524849",
@@ -1795,7 +1795,7 @@
     {
         "name": "Church Pick",
         "type": "weapons",
-        "image": "Weapons/Church Pick.png",
+        "image": "Weapons/Church Pick.webp",
         "primaryColor": "#605d5e",
         "secondaryColors": [
             "#959493",
@@ -1806,7 +1806,7 @@
     {
         "name": "Holy Moonlight Sword",
         "type": "weapons",
-        "image": "Weapons/Holy Moonlight Sword.png",
+        "image": "Weapons/Holy Moonlight Sword.webp",
         "primaryColor": "#5f5e5b",
         "secondaryColors": [
             "#dad9d8",
@@ -1817,7 +1817,7 @@
     {
         "name": "Hunter Axe",
         "type": "weapons",
-        "image": "Weapons/Hunter Axe.png",
+        "image": "Weapons/Hunter Axe.webp",
         "primaryColor": "#746958",
         "secondaryColors": [
             "#8c857e",
@@ -1828,7 +1828,7 @@
     {
         "name": "Kirkhammer",
         "type": "weapons",
-        "image": "Weapons/Kirkhammer.png",
+        "image": "Weapons/Kirkhammer.webp",
         "primaryColor": "#5f5e5f",
         "secondaryColors": [
             "#969697",
@@ -1839,7 +1839,7 @@
     {
         "name": "Kos Parasite",
         "type": "weapons",
-        "image": "Weapons/Kos Parasite.png",
+        "image": "Weapons/Kos Parasite.webp",
         "primaryColor": "#919796",
         "secondaryColors": [
             "#7c8383",
@@ -1850,7 +1850,7 @@
     {
         "name": "Logarius' Wheel",
         "type": "weapons",
-        "image": "Weapons/Logarius' Wheel.png",
+        "image": "Weapons/Logarius' Wheel.webp",
         "primaryColor": "#87735d",
         "secondaryColors": [
             "#a29f96",
@@ -1861,7 +1861,7 @@
     {
         "name": "Ludwig's Holy Blade",
         "type": "weapons",
-        "image": "Weapons/Ludwig's Holy Blade.png",
+        "image": "Weapons/Ludwig's Holy Blade.webp",
         "primaryColor": "#999998",
         "secondaryColors": [
             "#5e5b59",
@@ -1872,7 +1872,7 @@
     {
         "name": "Rakuyo",
         "type": "weapons",
-        "image": "Weapons/Rakuyo.png",
+        "image": "Weapons/Rakuyo.webp",
         "primaryColor": "#9f9d99",
         "secondaryColors": [
             "#625e57",
@@ -1883,7 +1883,7 @@
     {
         "name": "Reiterpallasch",
         "type": "weapons",
-        "image": "Weapons/Reiterpallasch.png",
+        "image": "Weapons/Reiterpallasch.webp",
         "primaryColor": "#534f4b",
         "secondaryColors": [
             "#9d9793",
@@ -1894,7 +1894,7 @@
     {
         "name": "Rifle Spear",
         "type": "weapons",
-        "image": "Weapons/Rifle Spear.png",
+        "image": "Weapons/Rifle Spear.webp",
         "primaryColor": "#606366",
         "secondaryColors": [
             "#9b8872",
@@ -1905,7 +1905,7 @@
     {
         "name": "Saw Cleaver",
         "type": "weapons",
-        "image": "Weapons/Saw Cleaver.png",
+        "image": "Weapons/Saw Cleaver.webp",
         "primaryColor": "#413b38",
         "secondaryColors": [
             "#aca08d",
@@ -1916,7 +1916,7 @@
     {
         "name": "Saw Spear",
         "type": "weapons",
-        "image": "Weapons/Saw Spear.png",
+        "image": "Weapons/Saw Spear.webp",
         "primaryColor": "#9d9993",
         "secondaryColors": [
             "#59423e",
@@ -1927,7 +1927,7 @@
     {
         "name": "Simon's Bowblade",
         "type": "weapons",
-        "image": "Weapons/Simon's Bowblade.png",
+        "image": "Weapons/Simon's Bowblade.webp",
         "primaryColor": "#5f5b56",
         "secondaryColors": [
             "#9d9a94",
@@ -1938,7 +1938,7 @@
     {
         "name": "Stake Driver",
         "type": "weapons",
-        "image": "Weapons/Stake Driver.png",
+        "image": "Weapons/Stake Driver.webp",
         "primaryColor": "#5b5754",
         "secondaryColors": [
             "#36363b",
@@ -1949,7 +1949,7 @@
     {
         "name": "Threaded Cane",
         "type": "weapons",
-        "image": "Weapons/Threaded Cane.png",
+        "image": "Weapons/Threaded Cane.webp",
         "primaryColor": "#a29990",
         "secondaryColors": [
             "#71443a",
@@ -1960,7 +1960,7 @@
     {
         "name": "Tonitrus",
         "type": "weapons",
-        "image": "Weapons/Tonitrus.png",
+        "image": "Weapons/Tonitrus.webp",
         "primaryColor": "#5f5856",
         "secondaryColors": [
             "#5a423b",
@@ -1971,7 +1971,7 @@
     {
         "name": "Whirligig Saw",
         "type": "weapons",
-        "image": "Weapons/Whirligig Saw.png",
+        "image": "Weapons/Whirligig Saw.webp",
         "primaryColor": "#424546",
         "secondaryColors": [
             "#8b8873",

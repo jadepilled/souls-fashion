@@ -42,7 +42,7 @@
       sizes="96x96"
       href="favicons/icon_96x96.png"
     />
-    <title>Elden Ring - Fashion Souls v1.0.5</title>
+    <title>Elden Ring - Fashion Souls v.0.6</title>
   </head>
   <body>
     <nav class="navigation">
@@ -474,16 +474,16 @@
               slot.dataset.slotId = slotId;
   
               if (item) {
-                  // Display the selected item
-                  const img = document.createElement("img");
-                  img.src = `pages/eldenring/icons/${item.image}`;
-                  img.alt = item.name;
-  
-                  const name = document.createElement("p");
-                  name.textContent = item.name;
-  
-                  slot.appendChild(img);
-                  // slot.appendChild(name);
+            // Ensure the image path is normalized to use forward slashes
+            const img = document.createElement("img");
+            img.src = `pages/eldenring/icons/${type.charAt(0).toUpperCase() + type.slice(1)}/${item.image.replace(/_/g, ' ').replace(/\\/g, '/')}`;
+            img.alt = item.name;
+
+            const name = document.createElement("p");
+            name.textContent = item.name;
+
+            slot.appendChild(img);
+            slot.appendChild(name);
               } else {
                   // Display placeholder
                   const placeholder = document.createElement("p");
@@ -589,13 +589,92 @@
           });
       }
   
-      // Run when the items are loaded into the grid
-      window.onload = function() {
-          fetchItems().then(() => {
-              loadOutfitFromStorage();
-              initializeItemGrid();
-          });
-      };
   </script>
+  
+  <script>
+// Set up the outfitSlots container as a drop target
+function initializeDragAndDrop() {
+    const itemGrid = document.getElementById('itemGrid');
+    const outfitSlotsContainer = document.getElementById('outfitSlots');
+
+    // Make each item card draggable
+    itemGrid.querySelectorAll('.item-card').forEach(card => {
+        card.setAttribute('draggable', 'true');
+
+        // Store item name without file extension when dragging starts
+        card.addEventListener('dragstart', (event) => {
+            const itemInfo = card.querySelector('.item-info .title-container a').textContent;
+            event.dataTransfer.setData('text/plain', itemInfo);  // Set item name as drag data
+            console.log("Dragging item:", itemInfo);  // Debug: Check dragstart event
+        });
+    });
+
+    // Enable outfitSlots as the drop target
+    outfitSlotsContainer.addEventListener('dragover', (event) => {
+        event.preventDefault();  // Allow item to be dropped
+    });
+
+    outfitSlotsContainer.addEventListener('drop', (event) => {
+        event.preventDefault();
+        const itemName = event.dataTransfer.getData('text/plain');  // Get item name
+        
+        // Verify that itemName data was successfully retrieved
+        if (!itemName) {
+            console.error("Drop event: No item name received");
+            return;
+        }
+        console.log("Dropped item:", itemName);  // Debug: Check drop event
+        
+        // Find item type from the JSON data
+        fetch('pages/eldenring/typed_items_for_web.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                const item = jsonData.find(i => i.name === itemName);
+                
+                if (!item) {
+                    console.error("Item not found in JSON data:", itemName);
+                    return;
+                }
+                
+                const itemType = item.type;  // E.g., "head", "chest", etc.
+                const slotType = `${itemType}Slot`;
+                console.log("Item type:", itemType, "| Slot type:", slotType);  // Debug: Check item type and slot type
+                
+                // Update the specified slot with the dropped item
+                addItemToSlot(slotType, itemName);
+            })
+            .catch(error => console.error("Error loading JSON data:", error));
+    });
+}
+
+// Add item to the specified slot and update localStorage
+function addItemToSlot(slotType, itemName) {
+    // Get current outfit from local storage
+    const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {};
+
+    // Update the slot in outfitSlots with the new item name (image name can be derived or set as needed)
+    outfitSlots[slotType] = { name: itemName, image: `${itemName}.webp` };
+    console.log("Updated outfitSlots:", outfitSlots);  // Debug: Check updated outfitSlots object
+
+    // Save updated outfit to local storage
+    localStorage.setItem('outfitSlots', JSON.stringify(outfitSlots));
+
+    // Refresh the displayed outfit
+    loadOutfitFromStorage();
+}
+
+// Initialize drag-and-drop functionality when items are loaded
+window.onload = function() {
+    fetchItems().then(() => {
+        loadOutfitFromStorage();
+        initializeItemGrid();
+        initializeDragAndDrop();  // Enable drag-and-drop on items
+    });
+
+};
+
+
+  </script>
+  
   </body>
 </html>

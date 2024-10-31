@@ -5,7 +5,7 @@ import re
 root_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Prompt for the new version number
-version = input("Enter the new version number (e.g., v1.0.4): ")
+version = input("Enter the new version number: ")
 
 # Regex patterns for finding CSS, JS links, and the title tag
 css_pattern = re.compile(r'(href=".*?\.css)(\?v=.*?)?"')
