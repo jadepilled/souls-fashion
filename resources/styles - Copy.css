@@ -917,18 +917,19 @@ body.light-mode .custom-context-menu ul li:hover {
   border: 0.0625rem solid #1358a9; /* 1px */
 }
 
-#presetContainer {
+.preset-container {
   position: fixed;
-  top: 50%; /* Center vertically */
-  right: 2rem; /* Align to the right */
-  transform: translateY(-50%); /* Center fully vertically */
+  bottom: 0; /* Position at the bottom of the viewport */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  background-color: rgba(34, 34, 34, 1); /* Dark background*/
+  padding: 0.625rem; /* 10px */
   display: flex;
-  flex-direction: column; /* Stack cards vertically */
-  gap: 1rem; /* Adjust spacing between cards */
-  padding: 1rem;
-  background-color: rgba(34, 34, 34, 0); /* Slightly transparent background */
-  border-radius: 0.5rem 0 0 0.5rem; /* Rounded corner on the left */
+  justify-content: center; /* Center the presets horizontally */
+  gap: 1.25rem; /* 20px */
   z-index: 1000; /* Ensure it appears above other elements */
+  color: #fff;
+  box-shadow: 0 -0.125rem 0.625rem rgba(0, 0, 0, 0.5); /* 0 -2px 10px */
 }
 
 .simulator-grid {
@@ -936,7 +937,7 @@ body.light-mode .custom-context-menu ul li:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   gap: 1.25rem; /* 20px */
-  margin: 0rem;
+  margin: 2rem;
 }
 
 #outfitSlotsSimulator .item-card {
@@ -952,24 +953,15 @@ body.light-mode .custom-context-menu ul li:hover {
 }
 
 .preset {
-  background-color: #222222;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  width: 150px; /* Adjust width as needed */
+  background-color: #222;
+  padding: 0.625rem; /* 10px */
+  border-radius: 0.3125rem; /* 5px */
+  width: 12.5rem; /* 200px */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-#h1 .simulator {
-	margin-top:-3rem;
-}
-
-.preset:hover {
-  background-color: #3b3b3b;
-  transform: translateX(-5px); /* Slight move on hover */
+  justify-content: center;
 }
 
 .preset input[type="text"] {
@@ -986,7 +978,7 @@ body.light-mode .custom-context-menu ul li:hover {
 }
 
 .preset-actions span {
-  color: #inherit;
+  color: #007bff;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
@@ -996,7 +988,6 @@ body.light-mode .custom-context-menu ul li:hover {
 
 .preset-actions span:hover {
   color: #0056b3;
-  scale: 1.1;
 }
 
 .preset h3 {
@@ -1027,7 +1018,6 @@ body.light-mode .custom-context-menu ul li:hover {
 
 #backToMain {
   position: fixed;
-  width: 11rem;
   top: 0.625rem; /* 10px */
   left: 0.625rem; /* 10px */
   font-size: 1rem; /* 16px */
@@ -1050,12 +1040,11 @@ body.light-mode .custom-context-menu ul li:hover {
 }
 
 .outfit-sim-header {
-  margin-top: 0rem;
+  margin-top: 3rem;
 }
 
 .download-image {
   margin: 1rem;
-  margin-top: -1.5rem;
 }
 
 .outfit-sim {
@@ -1301,15 +1290,8 @@ body.light-mode .custom-context-menu ul li:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 15px;
+    gap: 20px;
     justify-items: center;
-}
-.item-card-simple:hover {
-	background-color: #4b4b4b;
-  color: white;
-  border-color: white;
-  border: 0.125rem solid white; /* 2px */
-  transform: scale(1.05);
 }
 /* simulator positioning to display outfit */
 #headCard {
@@ -1321,7 +1303,7 @@ body.light-mode .custom-context-menu ul li:hover {
   border: 0.0625rem solid #555; /* 1px */
   padding: 0.625rem; /* 10px */
   width: 12.5rem; /* 200px */
-  height: 16.25rem; /* 266px */
+  height: 18.75rem; /* 300px */
   text-align: center;
   color: #fff;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -1337,7 +1319,7 @@ body.light-mode .custom-context-menu ul li:hover {
   border: 0.0625rem solid #555; /* 1px */
   padding: 0.625rem; /* 10px */
   width: 12.5rem; /* 200px */
-  height: 16.25rem; /* 266px */
+  height: 18.75rem; /* 300px */
   text-align: center;
   color: #fff;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -1353,7 +1335,7 @@ body.light-mode .custom-context-menu ul li:hover {
   border: 0.0625rem solid #555; /* 1px */
   padding: 0.625rem; /* 10px */
   width: 12.5rem; /* 200px */
-  height: 16.25rem; /* 266px */
+  height: 18.75rem; /* 300px */
   text-align: center;
   color: #fff;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -1369,7 +1351,7 @@ body.light-mode .custom-context-menu ul li:hover {
   border: 0.0625rem solid #555; /* 1px */
   padding: 0.625rem; /* 10px */
   width: 12.5rem; /* 200px */
-  height: 16.25rem; /* 266px */
+  height: 18.75rem; /* 300px */
   text-align: center;
   color: #fff;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -1385,7 +1367,7 @@ body.light-mode .custom-context-menu ul li:hover {
   border: 0.0625rem solid #555; /* 1px */
   padding: 0.625rem; /* 10px */
   width: 12.5rem; /* 200px */
-  height: 16.25rem; /* 266px */
+  height: 18.75rem; /* 300px */
   text-align: center;
   color: #fff;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -1399,9 +1381,9 @@ body.light-mode .custom-context-menu ul li:hover {
   flex-direction: column;
   background-color: none;
   border: 0.0625rem solid #555; /* 1px */
-  padding: 0.65rem; /* 10px */
+  padding: 0.625rem; /* 10px */
   width: 12.5rem; /* 200px */
-  height: 16.25rem; /* 266px */
+  height: 18.75rem; /* 300px */
   text-align: center;
   color: #fff;
   transition: transform 0.3s ease, border-color 0.3s ease;
