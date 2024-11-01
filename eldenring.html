@@ -176,30 +176,7 @@
             <button id="export" onclick="window.location.href='simulator_eldenring.html'">Export</button>
           </div>
         <div class="slots" id="outfitSlots">
-          <div class="slot">
-            <p>Head</p>
-            <img href="" />
-          </div>
-          <div class="slot">
-            <p>Body</p>
-            <img href="" />
-          </div>
-          <div class="slot">
-            <p>Hands</p>
-            <img href="" />
-          </div>
-          <div class="slot">
-            <p>Legs</p>
-            <img href="" />
-          </div>
-          <div class="slot">
-            <p>Weapon</p>
-            <img href="" />
-          </div>
-          <div class="slot">
-            <p>Shield</p>
-            <img href="" />
-          </div>
+          <!-- Slots will be dynamically loaded here -->
         </div>
       </div>
     </div>
@@ -223,6 +200,85 @@
       const toggleSearch = document.getElementById("toggleSearch");
       const colorPicker = document.getElementById("favcolor");
       const searchInput = document.getElementById("searchInput");
+      
+      let navActive = true;
+      let lastTouchY = 0;
+      let sidebarActive = false;
+
+      function showOutfitSidebar() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          document.querySelector(".pinned").style.opacity = "1";
+          document.querySelector(".pinned").style.display = "block";
+
+          // Set margin based on mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+          document.querySelector(".item-grid").style.marginLeft = "8rem";
+          
+          sidebarActive = true;
+          navActive = false;
+        }
+      }
+
+      function hideOutfitSidebar() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          document.querySelector(".pinned").style.opacity = "0";
+          document.querySelector(".pinned").style.display = "none";
+
+          // Set margin based on mobile screen
+          document.querySelector(".item-grid").style.marginTop = "180px";
+          document.querySelector(".item-grid").style.marginLeft = "0";
+          
+          
+          sidebarActive = false;
+          navActive = true;
+        }
+      }
+
+      function showNav() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          if (sidebarActive === false) {
+            nav.classList.remove('hidden-on-scroll');
+
+            document.querySelector(".item-grid").style.marginTop = "0";
+            document.querySelector(".item-grid").style.marginLeft = "0px";
+            sidebarActive = false;
+            navActive = true;
+          }
+        }
+      }
+
+      function hideNav() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          if (sidebarActive === true) {
+            nav.classList.add('hidden-on-scroll');
+
+            document.querySelector(".item-grid").style.marginTop = "0";
+            document.querySelector(".item-grid").style.marginLeft = "70px";
+            sidebarActive = true;
+            navActive = false;
+          }
+        }
+      }
+
+
+      function adjustPinnedStyles() {
+        if (!window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          const pinnedElement = document.querySelector('.pinned');
+          const itemGrid = document.querySelector('.item-grid');
+          
+          if (pinnedElement) {
+            const scale = window.devicePixelRatio; // Get the current pixel ratio
+            
+            // Adjust styles based on the scaling factor
+            if (scale >= 1.25) {
+              // 125% scaling or higher
+              itemGrid.style.marginLeft = '4rem';
+            } else {
+              itemGrid.style.marginLeft = '6rem';
+            }
+          }
+        }
+      }
 
       // Check local storage to persist theme choice
       if (localStorage.getItem("theme") === "light") {
@@ -280,92 +336,6 @@
         window.location.href = "simulator_eldenring.html";
       });
 
-      // const triggerElement = document.querySelector('.hover-trigger'); // Replace with your actual trigger element
-      // const pinned = document.querySelector('.pinned');
-
-      // // Show pinned and adjust margin on hover
-      // triggerElement.addEventListener('mouseover', () => {
-      //   pinned.style.opacity = "1";
-      //   pinned.style.display = "block";
-      //   itemGrid.style.marginTop = "20px";
-      //   itemGrid.style.marginLeft = "70px"; // Change to desired value
-      //   nav.classList.add('hidden-on-scroll');
-      // });
-
-      // // Hide the pinned element and reset margin when not hovering
-      // triggerElement.addEventListener('mouseout', () => {
-      //   pinned.style.opacity = "0";
-      //   pinned.style.display = "none";
-      //   itemGrid.style.marginTop = "180px";
-      //   itemGrid.style.marginLeft = "0px"; 
-      //   nav.classList.remove('hidden-on-scroll');
-      // });
-
-      let sidebarActive = false;
-      let navActive = true;
-      let lastTouchY = 0; // Variable to track the last Y position on touch devices
-
-      function showOutfitSidebar() {
-        document.querySelector(".pinned").style.opacity = "1";
-        document.querySelector(".pinned").style.display = "block";
-        
-        if (window.innerWidth <= 768) { // Mobile screen
-          document.querySelector(".item-grid").style.marginTop = "0";
-        } else {
-          document.querySelector(".item-grid").style.marginTop = "20px";
-        }
-        
-        document.querySelector(".item-grid").style.marginLeft = "70px";
-        sidebarActive = true;
-        navActive = false;
-      }
-
-      function hideOutfitSidebar() {
-        document.querySelector(".pinned").style.opacity = "0";
-        document.querySelector(".pinned").style.display = "none";
-
-        if (window.innerWidth <= 768) { // Mobile screen
-          document.querySelector(".item-grid").style.marginTop = "0";
-        } else {
-          document.querySelector(".item-grid").style.marginTop = "180px";
-        }
-
-        document.querySelector(".item-grid").style.marginLeft = "0";
-        sidebarActive = false;
-        navActive = true;
-      }
-
-      function showNav() {
-        if (sidebarActive === false) {
-          nav.classList.remove('hidden-on-scroll');
-
-          if (window.innerWidth <= 768) { // Mobile screen
-          document.querySelector(".item-grid").style.marginTop = "0";
-          } else {
-            document.querySelector(".item-grid").style.marginTop = "180px";
-          }
-
-          document.querySelector(".item-grid").style.marginLeft = "0px";
-          sidebarActive = false;
-          navActive = true;
-        }
-      }
-
-      function hideNav() {
-        if (sidebarActive === true) {
-          nav.classList.add('hidden-on-scroll');
-
-          if (window.innerWidth <= 768) { // Mobile screen
-          document.querySelector(".item-grid").style.marginTop = "0";
-          } else {
-            document.querySelector(".item-grid").style.marginTop = "20px";
-          }
-
-          document.querySelector(".item-grid").style.marginLeft = "70px";
-          sidebarActive = true;
-          navActive = false;
-        }
-      }
 
       // Activate effect on scroll attempt (downward or upward for wheel)
       window.addEventListener("wheel", (event) => {
@@ -382,7 +352,7 @@
       window.addEventListener("touchstart", (event) => {
         lastTouchY = event.touches[0].clientY; // Track initial touch position
       });
-
+      
       window.addEventListener("touchmove", (event) => {
         const currentTouchY = event.touches[0].clientY;
         if (currentTouchY < lastTouchY && !sidebarActive) {
@@ -405,7 +375,7 @@
           document.querySelector(".footer").style.opacity = "0";
         }
       });
-
+      
       // JavaScript to toggle the class on scroll
       let lastScrollTop = 0;
       const nav = document.querySelector('.navigation');
@@ -474,21 +444,24 @@
               slot.dataset.slotId = slotId;
   
               if (item) {
-            // Ensure the image path is normalized to use forward slashes
-            const img = document.createElement("img");
-            img.src = `pages/eldenring/icons/${type.charAt(0).toUpperCase() + type.slice(1)}/${item.image.replace(/_/g, ' ').replace(/\\/g, '/')}`;
-            img.alt = item.name;
+                // Ensure the image path is normalized to use forward slashes
+                const img = document.createElement("img");
+                img.src = `pages/eldenring/icons/${item.image}`;
+                // img.src = `pages/eldenring/icons/${type.charAt(0).toUpperCase() + type.slice(1)}/${item.image.replace(/_/g, ' ').replace(/\\/g, '/')}`;
+                img.alt = item.name;
 
-            const name = document.createElement("p");
-            name.textContent = item.name;
+                const name = document.createElement("p");
+                name.textContent = item.name;
 
-            slot.appendChild(img);
-            slot.appendChild(name);
+                slot.appendChild(img);
+                // slot.appendChild(name);
               } else {
                   // Display placeholder
-                  const placeholder = document.createElement("p");
+                  const placeholder = document.createElement("div");
                   placeholder.classList.add("placeholder-tile");
-                  placeholder.textContent = `No ${type} selected`;
+                  const placeholdertext = document.createElement("p");
+                  placeholdertext.textContent = `No ${type} selected`;
+                  placeholder.appendChild(placeholdertext);
                   slot.appendChild(placeholder);
               }
   
@@ -669,9 +642,12 @@ window.onload = function() {
         loadOutfitFromStorage();
         initializeItemGrid();
         initializeDragAndDrop();  // Enable drag-and-drop on items
+        adjustPinnedStyles();
     });
 
 };
+
+window.onresize = adjustPinnedStyles;
 
 
   </script>
