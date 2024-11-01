@@ -600,7 +600,7 @@ function initializeDragAndDrop() {
             .then(response => response.json())
             .then(jsonData => {
                 const item = jsonData.find(i => i.name === itemName);
-                                
+
                 if (!item) {
                     console.error("Item not found in JSON data:", itemName);
                     return;
@@ -619,7 +619,7 @@ function initializeDragAndDrop() {
 // Add item to the specified slot and update localStorage
 function addItemToSlot(slotType, item) {
     // Get current outfit from local storage
-    const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots'));
+    const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {};
 
     // Update the slot in outfitSlots with the new item name (image name can be derived or set as needed)
     outfitSlots[slotType] = { name: item.name, image: `${item.type}/${item.name}.webp` };
