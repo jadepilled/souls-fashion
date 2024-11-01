@@ -301,6 +301,7 @@ function updateMatchingItems() {
   );
   displayItems(matchingItems);
   initializeItemGrid();
+  initializeDragAndDrop();
 }
 
 // Function to toggle filters
