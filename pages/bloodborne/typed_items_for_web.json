@@ -2,7 +2,7 @@
     {
         "name": "Ashen Hunter Garb",
         "type": "chest",
-        "image": "Chest/Ashen Hunter Garb.png",
+        "image": "Chest/Ashen Hunter Garb.webp",
         "primaryColor": "#9c9996",
         "secondaryColors": [
             "#827b77",
@@ -13,7 +13,7 @@
     {
         "name": "Beast Hide Garb",
         "type": "chest",
-        "image": "Chest/Beast Hide Garb.png",
+        "image": "Chest/Beast Hide Garb.webp",
         "primaryColor": "#9b9390",
         "secondaryColors": [
             "#3e1e21",
@@ -24,7 +24,7 @@
     {
         "name": "Black Church Garb (Female)",
         "type": "chest",
-        "image": "Chest/Black Church Garb (Female).png",
+        "image": "Chest/Black Church Garb (Female).webp",
         "primaryColor": "#3a3b3b",
         "secondaryColors": [
             "#bebfb7",
@@ -35,7 +35,7 @@
     {
         "name": "Black Church Garb",
         "type": "chest",
-        "image": "Chest/Black Church Garb.png",
+        "image": "Chest/Black Church Garb.webp",
         "primaryColor": "#3a3b3b",
         "secondaryColors": [
             "#d0cbb6",
@@ -46,7 +46,7 @@
     {
         "name": "Bone Ash Armor",
         "type": "chest",
-        "image": "Chest/Bone Ash Armor.png",
+        "image": "Chest/Bone Ash Armor.webp",
         "primaryColor": "#9b9592",
         "secondaryColors": [
             "#8c7261",
@@ -57,7 +57,7 @@
     {
         "name": "Butcher Garb",
         "type": "chest",
-        "image": "Chest/Butcher Garb.png",
+        "image": "Chest/Butcher Garb.webp",
         "primaryColor": "#8d6f5c",
         "secondaryColors": [
             "#68584b",
@@ -68,7 +68,7 @@
     {
         "name": "Cainhurst Armor",
         "type": "chest",
-        "image": "Chest/Cainhurst Armor.png",
+        "image": "Chest/Cainhurst Armor.webp",
         "primaryColor": "#5b5652",
         "secondaryColors": [
             "#903433",
@@ -79,7 +79,7 @@
     {
         "name": "Charred Hunter Garb",
         "type": "chest",
-        "image": "Chest/Charred Hunter Garb.png",
+        "image": "Chest/Charred Hunter Garb.webp",
         "primaryColor": "#906d5a",
         "secondaryColors": [
             "#67564b",
@@ -90,7 +90,7 @@
     {
         "name": "Choir Garb",
         "type": "chest",
-        "image": "Chest/Choir Garb.png",
+        "image": "Chest/Choir Garb.webp",
         "primaryColor": "#d1d0cd",
         "secondaryColors": [
             "#c3c1bd",
@@ -101,7 +101,7 @@
     {
         "name": "Constable's Garb",
         "type": "chest",
-        "image": "Chest/Constable's Garb.png",
+        "image": "Chest/Constable's Garb.webp",
         "primaryColor": "#3a3842",
         "secondaryColors": [
             "#87765f",
@@ -112,7 +112,7 @@
     {
         "name": "Crowfeather Garb",
         "type": "chest",
-        "image": "Chest/Crowfeather Garb.png",
+        "image": "Chest/Crowfeather Garb.webp",
         "primaryColor": "#5d5663",
         "secondaryColors": [
             "#5d5558",
@@ -123,7 +123,7 @@
     {
         "name": "Decorative Old Hunter Garb",
         "type": "chest",
-        "image": "Chest/Decorative Old Hunter Garb.png",
+        "image": "Chest/Decorative Old Hunter Garb.webp",
         "primaryColor": "#44423d",
         "secondaryColors": [
             "#797662",
@@ -134,7 +134,7 @@
     {
         "name": "Doll Clothes",
         "type": "chest",
-        "image": "Chest/Doll Clothes.png",
+        "image": "Chest/Doll Clothes.webp",
         "primaryColor": "#282323",
         "secondaryColors": [
             "#524539",
@@ -145,7 +145,7 @@
     {
         "name": "Executioner Garb",
         "type": "chest",
-        "image": "Chest/Executioner Garb.png",
+        "image": "Chest/Executioner Garb.webp",
         "primaryColor": "#999795",
         "secondaryColors": [
             "#85827c",
@@ -156,7 +156,7 @@
     {
         "name": "Foreign Garb (Female)",
         "type": "chest",
-        "image": "Chest/Foreign Garb (Female).png",
+        "image": "Chest/Foreign Garb (Female).webp",
         "primaryColor": "#5f4542",
         "secondaryColors": [
             "#171715",
@@ -167,7 +167,7 @@
     {
         "name": "Foreign Garb",
         "type": "chest",
-        "image": "Chest/Foreign Garb.png",
+        "image": "Chest/Foreign Garb.webp",
         "primaryColor": "#5f4542",
         "secondaryColors": [
             "#171715",
@@ -178,7 +178,7 @@
     {
         "name": "Gascoigne's Garb",
         "type": "chest",
-        "image": "Chest/Gascoigne's Garb.png",
+        "image": "Chest/Gascoigne's Garb.webp",
         "primaryColor": "#292829",
         "secondaryColors": [
             "#cdbba0",
@@ -189,7 +189,7 @@
     {
         "name": "Gehrman's Hunter Garb",
         "type": "chest",
-        "image": "Chest/Gehrman's Hunter Garb.png",
+        "image": "Chest/Gehrman's Hunter Garb.webp",
         "primaryColor": "#635754",
         "secondaryColors": [
             "#aca08f",
@@ -200,7 +200,7 @@
     {
         "name": "Graveguard Robe",
         "type": "chest",
-        "image": "Chest/Graveguard Robe.png",
+        "image": "Chest/Graveguard Robe.webp",
         "primaryColor": "#cca58c",
         "secondaryColors": [
             "#774936",
@@ -211,7 +211,7 @@
     {
         "name": "Harrowed Garb",
         "type": "chest",
-        "image": "Chest/Harrowed Garb.png",
+        "image": "Chest/Harrowed Garb.webp",
         "primaryColor": "#a0968c",
         "secondaryColors": [
             "#797c7b",
@@ -222,7 +222,7 @@
     {
         "name": "Henryk's Hunter Garb",
         "type": "chest",
-        "image": "Chest/Henryk's Hunter Garb.png",
+        "image": "Chest/Henryk's Hunter Garb.webp",
         "primaryColor": "#a68d68",
         "secondaryColors": [
             "#221e1a",
@@ -233,7 +233,7 @@
     {
         "name": "Hunter Garb (Female)",
         "type": "chest",
-        "image": "Chest/Hunter Garb (Female).png",
+        "image": "Chest/Hunter Garb (Female).webp",
         "primaryColor": "#65615a",
         "secondaryColors": [
             "#483f37",
@@ -244,7 +244,7 @@
     {
         "name": "Hunter Garb",
         "type": "chest",
-        "image": "Chest/Hunter Garb.png",
+        "image": "Chest/Hunter Garb.webp",
         "primaryColor": "#6f6d69",
         "secondaryColors": [
             "#2c2d2a",
@@ -255,7 +255,7 @@
     {
         "name": "Khaki Haori",
         "type": "chest",
-        "image": "Chest/Khaki Haori.png",
+        "image": "Chest/Khaki Haori.webp",
         "primaryColor": "#9d8d67",
         "secondaryColors": [
             "#887555",
@@ -266,7 +266,7 @@
     {
         "name": "Knight's Garb (Female)",
         "type": "chest",
-        "image": "Chest/Knight's Garb (Female).png",
+        "image": "Chest/Knight's Garb (Female).webp",
         "primaryColor": "#2d2c2d",
         "secondaryColors": [
             "#7b303b",
@@ -277,7 +277,7 @@
     {
         "name": "Knight's Garb",
         "type": "chest",
-        "image": "Chest/Knight's Garb.png",
+        "image": "Chest/Knight's Garb.webp",
         "primaryColor": "#2d2c2d",
         "secondaryColors": [
             "#7b303b",
@@ -288,7 +288,7 @@
     {
         "name": "Madman Garb",
         "type": "chest",
-        "image": "Chest/Madman Garb.png",
+        "image": "Chest/Madman Garb.webp",
         "primaryColor": "#383433",
         "secondaryColors": [
             "#a4b3b5",
@@ -299,7 +299,7 @@
     {
         "name": "Maria Hunter Garb",
         "type": "chest",
-        "image": "Chest/Maria Hunter Garb.png",
+        "image": "Chest/Maria Hunter Garb.webp",
         "primaryColor": "#212121",
         "secondaryColors": [
             "#7e766b",
@@ -310,7 +310,7 @@
     {
         "name": "Noble Dress",
         "type": "chest",
-        "image": "Chest/Noble Dress.png",
+        "image": "Chest/Noble Dress.webp",
         "primaryColor": "#3e161b",
         "secondaryColors": [
             "#b06e3b",
@@ -321,7 +321,7 @@
     {
         "name": "Old Hunter Garb",
         "type": "chest",
-        "image": "Chest/Old Hunter Garb.png",
+        "image": "Chest/Old Hunter Garb.webp",
         "primaryColor": "#333130",
         "secondaryColors": [
             "#6e6655",
@@ -332,7 +332,7 @@
     {
         "name": "Student Uniform Variant",
         "type": "chest",
-        "image": "Chest/Student Uniform Variant.png",
+        "image": "Chest/Student Uniform Variant.webp",
         "primaryColor": "#5f5242",
         "secondaryColors": [
             "#bfbba1",
@@ -343,7 +343,7 @@
     {
         "name": "Student Uniform",
         "type": "chest",
-        "image": "Chest/Student Uniform.png",
+        "image": "Chest/Student Uniform.webp",
         "primaryColor": "#393938",
         "secondaryColors": [
             "#633b34",
@@ -354,7 +354,7 @@
     {
         "name": "Sweaty Clothes",
         "type": "chest",
-        "image": "Chest/Sweaty Clothes.png",
+        "image": "Chest/Sweaty Clothes.webp",
         "primaryColor": "#645242",
         "secondaryColors": [
             "#dad6bf",
@@ -365,7 +365,7 @@
     {
         "name": "Tomb Prospector Garb",
         "type": "chest",
-        "image": "Chest/Tomb Prospector Garb.png",
+        "image": "Chest/Tomb Prospector Garb.webp",
         "primaryColor": "#9c9c89",
         "secondaryColors": [
             "#453b31",
@@ -376,7 +376,7 @@
     {
         "name": "White Church Garb (Female)",
         "type": "chest",
-        "image": "Chest/White Church Garb (Female).png",
+        "image": "Chest/White Church Garb (Female).webp",
         "primaryColor": "#cac8c6",
         "secondaryColors": [
             "#c2bbb1",
@@ -387,7 +387,7 @@
     {
         "name": "White Church Garb",
         "type": "chest",
-        "image": "Chest/White Church Garb.png",
+        "image": "Chest/White Church Garb.webp",
         "primaryColor": "#d1d2d1",
         "secondaryColors": [
             "#281818",
@@ -398,7 +398,7 @@
     {
         "name": "Yahar'Gul Black Garb",
         "type": "chest",
-        "image": "Chest/Yahar'Gul Black Garb.png",
+        "image": "Chest/Yahar'Gul Black Garb.webp",
         "primaryColor": "#191815",
         "secondaryColors": [
             "#928774",
@@ -409,7 +409,7 @@
     {
         "name": "Yharnam Hunter Garb (Female)",
         "type": "chest",
-        "image": "Chest/Yharnam Hunter Garb (Female).png",
+        "image": "Chest/Yharnam Hunter Garb (Female).webp",
         "primaryColor": "#393533",
         "secondaryColors": [
             "#b29e8a",
@@ -420,7 +420,7 @@
     {
         "name": "Yharnam Hunter Garb",
         "type": "chest",
-        "image": "Chest/Yharnam Hunter Garb.png",
+        "image": "Chest/Yharnam Hunter Garb.webp",
         "primaryColor": "#4b4945",
         "secondaryColors": [
             "#6f5a44",
@@ -431,7 +431,7 @@
     {
         "name": "Ashen Hunter Gloves",
         "type": "hands",
-        "image": "Hands/Ashen Hunter Gloves.png",
+        "image": "Hands/Ashen Hunter Gloves.webp",
         "primaryColor": "#35363b",
         "secondaryColors": [
             "#535151",
@@ -442,7 +442,7 @@
     {
         "name": "Bloodied Arm Bands",
         "type": "hands",
-        "image": "Hands/Bloodied Arm Bands.png",
+        "image": "Hands/Bloodied Arm Bands.webp",
         "primaryColor": "#60656f",
         "secondaryColors": [
             "#582f31",
@@ -453,7 +453,7 @@
     {
         "name": "Bone Ash Gauntlets",
         "type": "hands",
-        "image": "Hands/Bone Ash Gauntlets.png",
+        "image": "Hands/Bone Ash Gauntlets.webp",
         "primaryColor": "#3b3b42",
         "secondaryColors": [
             "#9c9c9b",
@@ -464,7 +464,7 @@
     {
         "name": "Butcher Gloves",
         "type": "hands",
-        "image": "Hands/Butcher Gloves.png",
+        "image": "Hands/Butcher Gloves.webp",
         "primaryColor": "#897562",
         "secondaryColors": [
             "#5f564b",
@@ -475,7 +475,7 @@
     {
         "name": "Cainhurst Gauntlets",
         "type": "hands",
-        "image": "Hands/Cainhurst Gauntlets.png",
+        "image": "Hands/Cainhurst Gauntlets.webp",
         "primaryColor": "#5d584c",
         "secondaryColors": [
             "#5c5851",
@@ -486,7 +486,7 @@
     {
         "name": "Charred Hunter Gloves",
         "type": "hands",
-        "image": "Hands/Charred Hunter Gloves.png",
+        "image": "Hands/Charred Hunter Gloves.webp",
         "primaryColor": "#989893",
         "secondaryColors": [
             "#5d5a53",
@@ -497,7 +497,7 @@
     {
         "name": "Choir Gloves",
         "type": "hands",
-        "image": "Hands/Choir Gloves.png",
+        "image": "Hands/Choir Gloves.webp",
         "primaryColor": "#312e2c",
         "secondaryColors": [
             "#54524c",
@@ -508,7 +508,7 @@
     {
         "name": "Constable's Gloves",
         "type": "hands",
-        "image": "Hands/Constable's Gloves.png",
+        "image": "Hands/Constable's Gloves.webp",
         "primaryColor": "#d1cec7",
         "secondaryColors": [
             "#c8c3ba",
@@ -519,7 +519,7 @@
     {
         "name": "Crowfeather Manchettes",
         "type": "hands",
-        "image": "Hands/Crowfeather Manchettes.png",
+        "image": "Hands/Crowfeather Manchettes.webp",
         "primaryColor": "#857769",
         "secondaryColors": [
             "#675a52",
@@ -530,7 +530,7 @@
     {
         "name": "Doll Gloves",
         "type": "hands",
-        "image": "Hands/Doll Gloves.png",
+        "image": "Hands/Doll Gloves.webp",
         "primaryColor": "#5d3630",
         "secondaryColors": [
             "#be9a89",
@@ -541,7 +541,7 @@
     {
         "name": "Executioner Gauntlets",
         "type": "hands",
-        "image": "Hands/Executioner Gauntlets.png",
+        "image": "Hands/Executioner Gauntlets.webp",
         "primaryColor": "#796652",
         "secondaryColors": [
             "#3c3e46",
@@ -552,7 +552,7 @@
     {
         "name": "Gascoigne's Gloves",
         "type": "hands",
-        "image": "Hands/Gascoigne's Gloves.png",
+        "image": "Hands/Gascoigne's Gloves.webp",
         "primaryColor": "#2b2e33",
         "secondaryColors": [
             "#c7c1b5",
@@ -563,7 +563,7 @@
     {
         "name": "Graveguard Manchettes",
         "type": "hands",
-        "image": "Hands/Graveguard Manchettes.png",
+        "image": "Hands/Graveguard Manchettes.webp",
         "primaryColor": "#a64d3f",
         "secondaryColors": [
             "#c0b19a",
@@ -574,7 +574,7 @@
     {
         "name": "Harrowed Gloves",
         "type": "hands",
-        "image": "Hands/Harrowed Gloves.png",
+        "image": "Hands/Harrowed Gloves.webp",
         "primaryColor": "#a8a191",
         "secondaryColors": [
             "#978770",
@@ -585,7 +585,7 @@
     {
         "name": "Henryk's Hunter Gloves",
         "type": "hands",
-        "image": "Hands/Henryk's Hunter Gloves.png",
+        "image": "Hands/Henryk's Hunter Gloves.webp",
         "primaryColor": "#3f3b37",
         "secondaryColors": [
             "#8c7056",
@@ -596,7 +596,7 @@
     {
         "name": "Hunter Gloves",
         "type": "hands",
-        "image": "Hands/Hunter Gloves.png",
+        "image": "Hands/Hunter Gloves.webp",
         "primaryColor": "#272627",
         "secondaryColors": [
             "#8d7e57",
@@ -607,7 +607,7 @@
     {
         "name": "Knight's Gloves (Female)",
         "type": "hands",
-        "image": "Hands/Knight's Gloves (Female).png",
+        "image": "Hands/Knight's Gloves (Female).webp",
         "primaryColor": "#96534e",
         "secondaryColors": [
             "#988b6e",
@@ -618,7 +618,7 @@
     {
         "name": "Knight's Gloves",
         "type": "hands",
-        "image": "Hands/Knight's Gloves.png",
+        "image": "Hands/Knight's Gloves.webp",
         "primaryColor": "#3d2020",
         "secondaryColors": [
             "#846b5e",
@@ -629,7 +629,7 @@
     {
         "name": "Madman Manchettes",
         "type": "hands",
-        "image": "Hands/Madman Manchettes.png",
+        "image": "Hands/Madman Manchettes.webp",
         "primaryColor": "#aea38b",
         "secondaryColors": [
             "#998b70",
@@ -640,7 +640,7 @@
     {
         "name": "Maria Hunter Gloves",
         "type": "hands",
-        "image": "Hands/Maria Hunter Gloves.png",
+        "image": "Hands/Maria Hunter Gloves.webp",
         "primaryColor": "#6f706c",
         "secondaryColors": [
             "#908477",
@@ -651,7 +651,7 @@
     {
         "name": "Old Hunter Arm Bands",
         "type": "hands",
-        "image": "Hands/Old Hunter Arm Bands.png",
+        "image": "Hands/Old Hunter Arm Bands.webp",
         "primaryColor": "#6f665f",
         "secondaryColors": [
             "#837a75",
@@ -662,7 +662,7 @@
     {
         "name": "Old Hunter Gloves",
         "type": "hands",
-        "image": "Hands/Old Hunter Gloves.png",
+        "image": "Hands/Old Hunter Gloves.webp",
         "primaryColor": "#9d958c",
         "secondaryColors": [
             "#8c8774",
@@ -673,7 +673,7 @@
     {
         "name": "Sullied Bandage",
         "type": "hands",
-        "image": "Hands/Sullied Bandage.png",
+        "image": "Hands/Sullied Bandage.webp",
         "primaryColor": "#a49a90",
         "secondaryColors": [
             "#928579",
@@ -684,7 +684,7 @@
     {
         "name": "Surgical Long Gloves",
         "type": "hands",
-        "image": "Hands/Surgical Long Gloves.png",
+        "image": "Hands/Surgical Long Gloves.webp",
         "primaryColor": "#d2d0c8",
         "secondaryColors": [
             "#c8c4b9",
@@ -695,7 +695,7 @@
     {
         "name": "Tomb Prospector Gloves",
         "type": "hands",
-        "image": "Hands/Tomb Prospector Gloves.png",
+        "image": "Hands/Tomb Prospector Gloves.webp",
         "primaryColor": "#352d2a",
         "secondaryColors": [
             "#60564e",
@@ -706,7 +706,7 @@
     {
         "name": "Yahar'Gul Black Gloves",
         "type": "hands",
-        "image": "Hands/Yahar'Gul Black Gloves.png",
+        "image": "Hands/Yahar'Gul Black Gloves.webp",
         "primaryColor": "#483e38",
         "secondaryColors": [
             "#3a3232",
@@ -717,7 +717,7 @@
     {
         "name": "Yharnam Hunter Gloves",
         "type": "hands",
-        "image": "Hands/Yharnam Hunter Gloves.png",
+        "image": "Hands/Yharnam Hunter Gloves.webp",
         "primaryColor": "#5f4a34",
         "secondaryColors": [
             "#635847",
@@ -728,7 +728,7 @@
     {
         "name": "Beak Mask",
         "type": "head",
-        "image": "Head/Beak Mask.png",
+        "image": "Head/Beak Mask.webp",
         "primaryColor": "#302f2f",
         "secondaryColors": [
             "#b19f90",
@@ -739,7 +739,7 @@
     {
         "name": "Black Church Hat (Female)",
         "type": "head",
-        "image": "Head/Black Church Hat (Female).png",
+        "image": "Head/Black Church Hat (Female).webp",
         "primaryColor": "#202020",
         "secondaryColors": [
             "#42413d",
@@ -750,7 +750,7 @@
     {
         "name": "Black Church Hat",
         "type": "head",
-        "image": "Head/Black Church Hat.png",
+        "image": "Head/Black Church Hat.webp",
         "primaryColor": "#202020",
         "secondaryColors": [
             "#44413d",
@@ -761,7 +761,7 @@
     {
         "name": "Black Hood",
         "type": "head",
-        "image": "Head/Black Hood.png",
+        "image": "Head/Black Hood.webp",
         "primaryColor": "#333030",
         "secondaryColors": [
             "#4e4946",
@@ -772,7 +772,7 @@
     {
         "name": "Black Hooded Iron Helm",
         "type": "head",
-        "image": "Head/Black Hooded Iron Helm.png",
+        "image": "Head/Black Hooded Iron Helm.webp",
         "primaryColor": "#302823",
         "secondaryColors": [
             "#5e5857",
@@ -783,7 +783,7 @@
     {
         "name": "Blindfold Cap",
         "type": "head",
-        "image": "Head/Blindfold Cap.png",
+        "image": "Head/Blindfold Cap.webp",
         "primaryColor": "#9f9a94",
         "secondaryColors": [
             "#8b837a",
@@ -794,7 +794,7 @@
     {
         "name": "Bone Ash Mask",
         "type": "head",
-        "image": "Head/Bone Ash Mask.png",
+        "image": "Head/Bone Ash Mask.webp",
         "primaryColor": "#372e2d",
         "secondaryColors": [
             "#87766d",
@@ -805,7 +805,7 @@
     {
         "name": "Brador's Testimony",
         "type": "head",
-        "image": "Head/Brador's Testimony.png",
+        "image": "Head/Brador's Testimony.webp",
         "primaryColor": "#938f8c",
         "secondaryColors": [
             "#61605b",
@@ -816,7 +816,7 @@
     {
         "name": "Butcher Mask",
         "type": "head",
-        "image": "Head/Butcher Mask.png",
+        "image": "Head/Butcher Mask.webp",
         "primaryColor": "#928872",
         "secondaryColors": [
             "#887761",
@@ -827,7 +827,7 @@
     {
         "name": "Cainhurst Helmet",
         "type": "head",
-        "image": "Head/Cainhurst Helmet.png",
+        "image": "Head/Cainhurst Helmet.webp",
         "primaryColor": "#999794",
         "secondaryColors": [
             "#5c5956",
@@ -838,7 +838,7 @@
     {
         "name": "Crown Of Illusions",
         "type": "head",
-        "image": "Head/Crown of Illusions.png",
+        "image": "Head/Crown of Illusions.webp",
         "primaryColor": "#8b744c",
         "secondaryColors": [
             "#9d199b",
@@ -849,7 +849,7 @@
     {
         "name": "Doll Hat",
         "type": "head",
-        "image": "Head/Doll Hat.png",
+        "image": "Head/Doll Hat.webp",
         "primaryColor": "#4f3335",
         "secondaryColors": [
             "#675149",
@@ -860,7 +860,7 @@
     {
         "name": "Enlarged Head",
         "type": "head",
-        "image": "Head/Enlarged Head.png",
+        "image": "Head/Enlarged Head.webp",
         "primaryColor": "#b49296",
         "secondaryColors": [
             "#521e1e",
@@ -871,7 +871,7 @@
     {
         "name": "Gascoigne's Cap",
         "type": "head",
-        "image": "Head/Gascoigne's Cap.png",
+        "image": "Head/Gascoigne's Cap.webp",
         "primaryColor": "#1a1a1a",
         "secondaryColors": [
             "#434346",
@@ -882,7 +882,7 @@
     {
         "name": "Gehrman's Hunter Cap",
         "type": "head",
-        "image": "Head/Gehrman's Hunter Cap.png",
+        "image": "Head/Gehrman's Hunter Cap.webp",
         "primaryColor": "#222222",
         "secondaryColors": [
             "#524e4e",
@@ -893,7 +893,7 @@
     {
         "name": "Gold Ardeo",
         "type": "head",
-        "image": "Head/Gold Ardeo.png",
+        "image": "Head/Gold Ardeo.webp",
         "primaryColor": "#9e9065",
         "secondaryColors": [
             "#88724e",
@@ -904,7 +904,7 @@
     {
         "name": "Graveguard Mask",
         "type": "head",
-        "image": "Head/Graveguard Mask.png",
+        "image": "Head/Graveguard Mask.webp",
         "primaryColor": "#92624e",
         "secondaryColors": [
             "#675b54",
@@ -915,7 +915,7 @@
     {
         "name": "Gray Wolf Cap",
         "type": "head",
-        "image": "Head/Gray Wolf Cap.png",
+        "image": "Head/Gray Wolf Cap.webp",
         "primaryColor": "#35302e",
         "secondaryColors": [
             "#d5d5d1",
@@ -926,7 +926,7 @@
     {
         "name": "Harrowed Hood",
         "type": "head",
-        "image": "Head/Harrowed Hood.png",
+        "image": "Head/Harrowed Hood.webp",
         "primaryColor": "#cac5b8",
         "secondaryColors": [
             "#a59f94",
@@ -937,7 +937,7 @@
     {
         "name": "Henryk's Hunter Cap",
         "type": "head",
-        "image": "Head/Henryk's Hunter Cap.png",
+        "image": "Head/Henryk's Hunter Cap.webp",
         "primaryColor": "#a9886a",
         "secondaryColors": [
             "#917057",
@@ -948,7 +948,7 @@
     {
         "name": "Hunter Hat",
         "type": "head",
-        "image": "Head/Hunter Hat.png",
+        "image": "Head/Hunter Hat.webp",
         "primaryColor": "#2c2c2b",
         "secondaryColors": [
             "#887565",
@@ -959,7 +959,7 @@
     {
         "name": "Iron Yahar'Gul Helm",
         "type": "head",
-        "image": "Head/Iron Yahar'Gul Helm.png",
+        "image": "Head/Iron Yahar'Gul Helm.webp",
         "primaryColor": "#958a6f",
         "secondaryColors": [
             "#87765e",
@@ -970,7 +970,7 @@
     {
         "name": "Knight's Wig (Female)",
         "type": "head",
-        "image": "Head/Knight's Wig (Female).png",
+        "image": "Head/Knight's Wig (Female).webp",
         "primaryColor": "#353535",
         "secondaryColors": [
             "#a4a9aa",
@@ -981,7 +981,7 @@
     {
         "name": "Knight's Wig",
         "type": "head",
-        "image": "Head/Knight's Wig.png",
+        "image": "Head/Knight's Wig.webp",
         "primaryColor": "#37363a",
         "secondaryColors": [
             "#ece7e2",
@@ -992,7 +992,7 @@
     {
         "name": "Madman Hood",
         "type": "head",
-        "image": "Head/Madman Hood.png",
+        "image": "Head/Madman Hood.webp",
         "primaryColor": "#857561",
         "secondaryColors": [
             "#60554b",
@@ -1003,7 +1003,7 @@
     {
         "name": "Maria Hunter Cap",
         "type": "head",
-        "image": "Head/Maria Hunter Cap.png",
+        "image": "Head/Maria Hunter Cap.webp",
         "primaryColor": "#464649",
         "secondaryColors": [
             "#928972",
@@ -1014,7 +1014,7 @@
     {
         "name": "Master's Iron Helm",
         "type": "head",
-        "image": "Head/Master's Iron Helm.png",
+        "image": "Head/Master's Iron Helm.webp",
         "primaryColor": "#979491",
         "secondaryColors": [
             "#827c78",
@@ -1025,7 +1025,7 @@
     {
         "name": "Mensis Cage",
         "type": "head",
-        "image": "Head/Mensis Cage.png",
+        "image": "Head/Mensis Cage.webp",
         "primaryColor": "#625752",
         "secondaryColors": [
             "#867169",
@@ -1036,7 +1036,7 @@
     {
         "name": "Old Hunter Cap",
         "type": "head",
-        "image": "Head/Old Hunter Cap.png",
+        "image": "Head/Old Hunter Cap.webp",
         "primaryColor": "#383839",
         "secondaryColors": [
             "#847865",
@@ -1047,7 +1047,7 @@
     {
         "name": "Old Hunter Top Hat",
         "type": "head",
-        "image": "Head/Old Hunter Top Hat.png",
+        "image": "Head/Old Hunter Top Hat.webp",
         "primaryColor": "#464342",
         "secondaryColors": [
             "#d6d9d7",
@@ -1058,7 +1058,7 @@
     {
         "name": "Rumpled Yharnam Hat",
         "type": "head",
-        "image": "Head/Rumpled Yharnam Hat.png",
+        "image": "Head/Rumpled Yharnam Hat.webp",
         "primaryColor": "#877161",
         "secondaryColors": [
             "#383c41",
@@ -1069,7 +1069,7 @@
     {
         "name": "Tomb Prospector Hood",
         "type": "head",
-        "image": "Head/Tomb Prospector Hood.png",
+        "image": "Head/Tomb Prospector Hood.webp",
         "primaryColor": "#302c2c",
         "secondaryColors": [
             "#59504d",
@@ -1080,7 +1080,7 @@
     {
         "name": "Top Hat",
         "type": "head",
-        "image": "Head/Top Hat.png",
+        "image": "Head/Top Hat.webp",
         "primaryColor": "#2e2c28",
         "secondaryColors": [
             "#897f76",
@@ -1091,7 +1091,7 @@
     {
         "name": "White Church Hat (Female)",
         "type": "head",
-        "image": "Head/White Church Hat (Female).png",
+        "image": "Head/White Church Hat (Female).webp",
         "primaryColor": "#c9c9c9",
         "secondaryColors": [
             "#a7a8a8",
@@ -1102,7 +1102,7 @@
     {
         "name": "White Church Hat",
         "type": "head",
-        "image": "Head/White Church Hat.png",
+        "image": "Head/White Church Hat.webp",
         "primaryColor": "#9c9c9b",
         "secondaryColors": [
             "#82817e",
@@ -1113,7 +1113,7 @@
     {
         "name": "Yamamura Hunter Hat",
         "type": "head",
-        "image": "Head/Yamamura Hunter Hat.png",
+        "image": "Head/Yamamura Hunter Hat.webp",
         "primaryColor": "#4b413a",
         "secondaryColors": [
             "#837867",
@@ -1124,7 +1124,7 @@
     {
         "name": "Yharnam Hunter Cap (Female)",
         "type": "head",
-        "image": "Head/Yharnam Hunter Cap (Female).png",
+        "image": "Head/Yharnam Hunter Cap (Female).webp",
         "primaryColor": "#2c2d2c",
         "secondaryColors": [
             "#a1917a",
@@ -1135,7 +1135,7 @@
     {
         "name": "Yharnam Hunter Cap",
         "type": "head",
-        "image": "Head/Yharnam Hunter Cap.png",
+        "image": "Head/Yharnam Hunter Cap.webp",
         "primaryColor": "#2c2d2c",
         "secondaryColors": [
             "#a1917a",
@@ -1146,7 +1146,7 @@
     {
         "name": "Arianna's Shoes",
         "type": "legs",
-        "image": "Legs/Arianna's Shoes.png",
+        "image": "Legs/Arianna's Shoes.webp",
         "primaryColor": "#cab493",
         "secondaryColors": [
             "#c5aa75",
@@ -1157,7 +1157,7 @@
     {
         "name": "Ashen Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Ashen Hunter Trousers.png",
+        "image": "Legs/Ashen Hunter Trousers.webp",
         "primaryColor": "#494a49",
         "secondaryColors": [
             "#8f8c8a",
@@ -1168,7 +1168,7 @@
     {
         "name": "Black Church Dress",
         "type": "legs",
-        "image": "Legs/Black Church Dress.png",
+        "image": "Legs/Black Church Dress.webp",
         "primaryColor": "#343331",
         "secondaryColors": [
             "#dfddd6",
@@ -1179,7 +1179,7 @@
     {
         "name": "Black Church Trousers",
         "type": "legs",
-        "image": "Legs/Black Church Trousers.png",
+        "image": "Legs/Black Church Trousers.webp",
         "primaryColor": "#3e3a35",
         "secondaryColors": [
             "#796962",
@@ -1190,7 +1190,7 @@
     {
         "name": "Bloodied Trousers",
         "type": "legs",
-        "image": "Legs/Bloodied Trousers.png",
+        "image": "Legs/Bloodied Trousers.webp",
         "primaryColor": "#847a71",
         "secondaryColors": [
             "#494f4f",
@@ -1201,7 +1201,7 @@
     {
         "name": "Bone Ash Leggings",
         "type": "legs",
-        "image": "Legs/Bone Ash Leggings.png",
+        "image": "Legs/Bone Ash Leggings.webp",
         "primaryColor": "#4f5357",
         "secondaryColors": [
             "#725946",
@@ -1212,7 +1212,7 @@
     {
         "name": "Butcher Trousers",
         "type": "legs",
-        "image": "Legs/Butcher Trousers.png",
+        "image": "Legs/Butcher Trousers.webp",
         "primaryColor": "#8d8576",
         "secondaryColors": [
             "#5c5750",
@@ -1223,7 +1223,7 @@
     {
         "name": "Cainhurst Leggings",
         "type": "legs",
-        "image": "Legs/Cainhurst Leggings.png",
+        "image": "Legs/Cainhurst Leggings.webp",
         "primaryColor": "#595958",
         "secondaryColors": [
             "#9b9c9c",
@@ -1234,7 +1234,7 @@
     {
         "name": "Charred Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Charred Hunter Trousers.png",
+        "image": "Legs/Charred Hunter Trousers.webp",
         "primaryColor": "#887563",
         "secondaryColors": [
             "#51473f",
@@ -1245,7 +1245,7 @@
     {
         "name": "Choir Trousers",
         "type": "legs",
-        "image": "Legs/Choir Trousers.png",
+        "image": "Legs/Choir Trousers.webp",
         "primaryColor": "#252524",
         "secondaryColors": [
             "#565353",
@@ -1256,7 +1256,7 @@
     {
         "name": "Constable's Trousers",
         "type": "legs",
-        "image": "Legs/Constable's Trousers.png",
+        "image": "Legs/Constable's Trousers.webp",
         "primaryColor": "#3e4148",
         "secondaryColors": [
             "#41423f",
@@ -1267,7 +1267,7 @@
     {
         "name": "Crowfeather Trousers",
         "type": "legs",
-        "image": "Legs/Crowfeather Trousers.png",
+        "image": "Legs/Crowfeather Trousers.webp",
         "primaryColor": "#8a8777",
         "secondaryColors": [
             "#343336",
@@ -1278,7 +1278,7 @@
     {
         "name": "Decorative Old Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Decorative Old Hunter Trousers.png",
+        "image": "Legs/Decorative Old Hunter Trousers.webp",
         "primaryColor": "#a09b8d",
         "secondaryColors": [
             "#42403b",
@@ -1289,7 +1289,7 @@
     {
         "name": "Doll Skirt",
         "type": "legs",
-        "image": "Legs/Doll Skirt.png",
+        "image": "Legs/Doll Skirt.webp",
         "primaryColor": "#2c2c2a",
         "secondaryColors": [
             "#a89e95",
@@ -1300,7 +1300,7 @@
     {
         "name": "Executioner Trousers",
         "type": "legs",
-        "image": "Legs/Executioner Trousers.png",
+        "image": "Legs/Executioner Trousers.webp",
         "primaryColor": "#99948d",
         "secondaryColors": [
             "#8c847a",
@@ -1311,7 +1311,7 @@
     {
         "name": "Foreign Trousers",
         "type": "legs",
-        "image": "Legs/Foreign Trousers.png",
+        "image": "Legs/Foreign Trousers.webp",
         "primaryColor": "#413e3b",
         "secondaryColors": [
             "#534e48",
@@ -1322,7 +1322,7 @@
     {
         "name": "Gascoigne's Trousers",
         "type": "legs",
-        "image": "Legs/Gascoigne's Trousers.png",
+        "image": "Legs/Gascoigne's Trousers.webp",
         "primaryColor": "#5f5653",
         "secondaryColors": [
             "#4a423d",
@@ -1333,7 +1333,7 @@
     {
         "name": "Gehrman's Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Gehrman's Hunter Trousers.png",
+        "image": "Legs/Gehrman's Hunter Trousers.webp",
         "primaryColor": "#503e40",
         "secondaryColors": [
             "#4e433c",
@@ -1344,7 +1344,7 @@
     {
         "name": "Graveguard Kilt",
         "type": "legs",
-        "image": "Legs/Graveguard Kilt.png",
+        "image": "Legs/Graveguard Kilt.webp",
         "primaryColor": "#9d674b",
         "secondaryColors": [
             "#945337",
@@ -1355,7 +1355,7 @@
     {
         "name": "Harrowed Trousers",
         "type": "legs",
-        "image": "Legs/Harrowed Trousers.png",
+        "image": "Legs/Harrowed Trousers.webp",
         "primaryColor": "#a19c94",
         "secondaryColors": [
             "#85776a",
@@ -1366,7 +1366,7 @@
     {
         "name": "Henryk's Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Henryk's Hunter Trousers.png",
+        "image": "Legs/Henryk's Hunter Trousers.webp",
         "primaryColor": "#9b896f",
         "secondaryColors": [
             "#88765e",
@@ -1377,7 +1377,7 @@
     {
         "name": "Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Hunter Trousers.png",
+        "image": "Legs/Hunter Trousers.webp",
         "primaryColor": "#44413e",
         "secondaryColors": [
             "#48423c",
@@ -1388,7 +1388,7 @@
     {
         "name": "Knight Dress",
         "type": "legs",
-        "image": "Legs/Knight Dress.png",
+        "image": "Legs/Knight Dress.webp",
         "primaryColor": "#383939",
         "secondaryColors": [
             "#943c43",
@@ -1399,7 +1399,7 @@
     {
         "name": "Knight's Trousers",
         "type": "legs",
-        "image": "Legs/Knight's Trousers.png",
+        "image": "Legs/Knight's Trousers.webp",
         "primaryColor": "#876d59",
         "secondaryColors": [
             "#2f2a26",
@@ -1410,7 +1410,7 @@
     {
         "name": "Madman Leggings",
         "type": "legs",
-        "image": "Legs/Madman Leggings.png",
+        "image": "Legs/Madman Leggings.webp",
         "primaryColor": "#aaa08c",
         "secondaryColors": [
             "#968973",
@@ -1421,7 +1421,7 @@
     {
         "name": "Maria Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Maria Hunter Trousers.png",
+        "image": "Legs/Maria Hunter Trousers.webp",
         "primaryColor": "#86705c",
         "secondaryColors": [
             "#67574a",
@@ -1432,7 +1432,7 @@
     {
         "name": "Old Hunter Trousers",
         "type": "legs",
-        "image": "Legs/Old Hunter Trousers.png",
+        "image": "Legs/Old Hunter Trousers.webp",
         "primaryColor": "#8e8671",
         "secondaryColors": [
             "#3b3f3b",
@@ -1443,7 +1443,7 @@
     {
         "name": "Student Trousers",
         "type": "legs",
-        "image": "Legs/Student Trousers.png",
+        "image": "Legs/Student Trousers.webp",
         "primaryColor": "#494745",
         "secondaryColors": [
             "#46423c",
@@ -1454,7 +1454,7 @@
     {
         "name": "Tomb Prospector Trousers",
         "type": "legs",
-        "image": "Legs/Tomb Prospector Trousers.png",
+        "image": "Legs/Tomb Prospector Trousers.webp",
         "primaryColor": "#594f4a",
         "secondaryColors": [
             "#4c423c",
@@ -1465,7 +1465,7 @@
     {
         "name": "White Church Dress",
         "type": "legs",
-        "image": "Legs/White Church Dress.png",
+        "image": "Legs/White Church Dress.webp",
         "primaryColor": "#c8c8c4",
         "secondaryColors": [
             "#c4c2bb",
@@ -1476,7 +1476,7 @@
     {
         "name": "White Church Trousers",
         "type": "legs",
-        "image": "Legs/White Church Trousers.png",
+        "image": "Legs/White Church Trousers.webp",
         "primaryColor": "#aaaaa9",
         "secondaryColors": [
             "#28282a",
@@ -1487,7 +1487,7 @@
     {
         "name": "Wine Hakama",
         "type": "legs",
-        "image": "Legs/Wine Hakama.png",
+        "image": "Legs/Wine Hakama.webp",
         "primaryColor": "#665f57",
         "secondaryColors": [
             "#85796c",
