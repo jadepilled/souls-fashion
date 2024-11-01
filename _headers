@@ -9,3 +9,6 @@
   
 /*.webp
   Cache-Control: public, max-age=31536000
+  
+ /*.json
+  Cache-Control: public, max-age=0
