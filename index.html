@@ -14,7 +14,7 @@
 		<link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicons/icon_167x167.png"> 
 		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
 		<link rel="icon" href="favicon.ico">
-    <title>Fashion Souls v.0.6</title>
+    <title>Fashion Souls v1.0.6</title>
     <style>
         h2 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 70px;margin-top:-10px;}
         h3 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 20px;margin-top:-70px;}
@@ -80,44 +80,73 @@
 </div>
 
 <script>
-    // Function to load images dynamically from the grid-images folder
+    // Function to load images dynamically with placeholders
     function loadImages() {
-    const itemGrid = document.getElementById('itemGrid');
-    const items = [
-        { img: 'https://i.ibb.co/Zz6L6c6/elden-ring-grid.webp', link: 'eldenring' },
-        { img: 'https://i.ibb.co/0Zk0dbB/bloodborne-grid.webp', link: 'bloodborne' },
-        { img: 'https://i.ibb.co/1rLcBQG/dark-souls-grid.webp', link: 'ds1' },
-        { img: 'https://i.ibb.co/gFfpdmD/dark-souls-2-grid.webp', link: 'ds2' },
-        { img: 'https://i.ibb.co/NT663zC/dark-souls-3-grid.webp', link: 'ds3' },
-        { img: 'https://i.ibb.co/zRmBHft/demons-souls-grid.webp', link: 'demonssouls' }
-    ];
+        const itemGrid = document.getElementById('itemGrid');
+        const items = [
+            {
+                img: 'https://i.ibb.co/Zz6L6c6/elden-ring-grid.webp',
+                placeholder: 'resources/grid-images/elden-ring-grid_placeholder.webp',
+                link: 'eldenring'
+            },
+            {
+                img: 'https://i.ibb.co/0Zk0dbB/bloodborne-grid.webp',
+                placeholder: 'resources/grid-images/bloodborne-grid_placeholder.webp',
+                link: 'bloodborne'
+            },
+            {
+                img: 'https://i.ibb.co/1rLcBQG/dark-souls-grid.webp',
+                placeholder: 'resources/grid-images/dark-souls-grid_placeholder.webp',
+                link: 'ds1'
+            },
+            {
+                img: 'https://i.ibb.co/gFfpdmD/dark-souls-2-grid.webp',
+                placeholder: 'resources/grid-images/dark-souls-2-grid_placeholder.webp',
+                link: 'ds2'
+            },
+            {
+                img: 'https://i.ibb.co/NT663zC/dark-souls-3-grid.webp',
+                placeholder: 'resources/grid-images/dark-souls-3-grid_placeholder.webp',
+                link: 'ds3'
+            },
+            {
+                img: 'https://i.ibb.co/zRmBHft/demons-souls-grid.webp',
+                placeholder: 'resources/grid-images/demons-souls-grid_placeholder.webp',
+                link: 'demonssouls'
+            }
+        ];
 
-    itemGrid.innerHTML = ''; // Clear existing content
+        itemGrid.innerHTML = ''; // Clear existing content
 
-    items.forEach(item => {
-        const itemCard = document.createElement('div');
-        itemCard.className = 'item-card';
-        const linkElement = document.createElement('a');
+        items.forEach(item => {
+            const itemCard = document.createElement('div');
+            itemCard.className = 'item-card';
+            const linkElement = document.createElement('a');
 
-        linkElement.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.body.classList.add('fade-out');
+            linkElement.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+                setTimeout(() => {
+                    window.location.href = item.link;
+                }, 500);
+            });
 
-            setTimeout(() => {
-                window.location.href = item.link;
-            }, 500);
+            const imgElement = document.createElement('img');
+            imgElement.src = item.placeholder; // Load the placeholder initially
+            imgElement.alt = item.link;
+
+            // Load the animated image after placeholder is loaded
+            const animatedImg = new Image();
+            animatedImg.src = item.img;
+            animatedImg.onload = function() {
+                imgElement.src = animatedImg.src; // Replace with animated image
+            };
+
+            linkElement.appendChild(imgElement);
+            itemCard.appendChild(linkElement);
+            itemGrid.appendChild(itemCard);
         });
-
-        const imgElement = document.createElement('img');
-        imgElement.src = item.img; // Use external link
-        imgElement.alt = item.link;
-
-        linkElement.appendChild(imgElement);
-        itemCard.appendChild(linkElement);
-        itemGrid.appendChild(itemCard);
-    });
-}
-
+    }
 
     // Call the function to load images on page load
     window.onload = function() {
@@ -134,6 +163,7 @@
         }
     });
 </script>
+
 
 </body>
 </html>
