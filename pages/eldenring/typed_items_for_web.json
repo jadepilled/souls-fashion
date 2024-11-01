@@ -1343,7 +1343,7 @@
     },
     {
         "name": "Marais Robe",
-        "image": "Chest/Marai's Robe.webp",
+        "image": "Chest/Marais Robe.webp",
         "primaryColor": "#646569",
         "secondaryColors": [
             "#312e2a",
@@ -1420,7 +1420,7 @@
     },
     {
         "name": "Night's Cavalry Armor (Altered)",
-        "image": "Chest/Nights Cavalry Armor (Altered).webp",
+        "image": "Chest/Night's Cavalry Armor (Altered).webp",
         "primaryColor": "#212021",
         "secondaryColors": [
             "#56534f",
@@ -1431,7 +1431,7 @@
     },
     {
         "name": "Night's Cavalry Armor",
-        "image": "Chest/Nights Cavalry Armor.webp",
+        "image": "Chest/Night's Cavalry Armor.webp",
         "primaryColor": "#212021",
         "secondaryColors": [
             "#535150",
@@ -1497,7 +1497,7 @@
     },
     {
         "name": "Nox Swordstress Armor (Altered)",
-        "image": "Chest/Nox Swordstres's Armor (Altered).webp",
+        "image": "Chest/Nox Swordstress Armor (Altered).webp",
         "primaryColor": "#85796e",
         "secondaryColors": [
             "#65594e",
@@ -1508,7 +1508,7 @@
     },
     {
         "name": "Nox Swordstress Armor",
-        "image": "Chest/Nox Swordstres's Armor.webp",
+        "image": "Chest/Nox Swordstress Armor.webp",
         "primaryColor": "#d5d3cd",
         "secondaryColors": [
             "#aaa79d",
@@ -2881,7 +2881,7 @@
         "type": "hands",
         "link": "https://eldenring.wiki.fextralife.com/Gauntlets"
     },
-        {
+    {
         "name": "Champion Bracers",
         "image": "Hands/Champion Bracers.webp",
         "primaryColor": "#8c8f93",
@@ -3345,7 +3345,7 @@
     },
     {
         "name": "Night's Cavalry Gauntlets",
-        "image": "Hands/Nights Cavalry Gauntlets.webp",
+        "image": "Hands/Night's Cavalry Gauntlets.webp",
         "primaryColor": "#212021",
         "secondaryColors": [
             "#585553",
@@ -5171,7 +5171,7 @@
     },
     {
         "name": "Marais Mask",
-        "image": "Head/Marai's Mask.webp",
+        "image": "Head/Marais Mask.webp",
         "primaryColor": "#a59e98",
         "secondaryColors": [
             "#978872",
@@ -5259,7 +5259,7 @@
     },
     {
         "name": "Night's Cavalry Helm (Altered)",
-        "image": "Head/Nights Cavalry Helm (Altered).webp",
+        "image": "Head/Night's Cavalry Helm (Altered).webp",
         "primaryColor": "#212021",
         "secondaryColors": [
             "#87837b",
@@ -5270,7 +5270,7 @@
     },
     {
         "name": "Night's Cavalry Helm",
-        "image": "Head/Nights Cavalry Helm.webp",
+        "image": "Head/Night's Cavalry Helm.webp",
         "primaryColor": "#212021",
         "secondaryColors": [
             "#53514e",
@@ -6986,7 +6986,7 @@
     },
     {
         "name": "Night's Cavalry Greaves",
-        "image": "Legs/Nights Cavalry Greaves.webp",
+        "image": "Legs/Night's Cavalry Greaves.webp",
         "primaryColor": "#212021",
         "secondaryColors": [
             "#585350",
@@ -7701,7 +7701,7 @@
     },
     {
         "name": "Rakshasa Greaves",
-        "image": "Legs/Rahshasa Greaves.webp",
+        "image": "Legs/Rakshasa Greaves.webp",
         "primaryColor": "#432925",
         "secondaryColors": [
             "#1b1815",
@@ -9648,7 +9648,7 @@
     },
     {
         "name": "Family Heads",
-        "image": "Weapons/Family Heads.webp",
+        "image": "Head/Family Heads.webp",
         "primaryColor": "#969491",
         "secondaryColors": [
             "#636055",
@@ -9901,7 +9901,7 @@
     },
     {
         "name": "Giant-Crusher",
-        "image": "Weapons/Giant-Crusher - MENU_Knowledge_10891.webp",
+        "image": "Weapons/Giant-Crusher.webp",
         "primaryColor": "#97918e",
         "secondaryColors": [
             "#5b5452",
