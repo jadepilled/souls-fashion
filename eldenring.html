@@ -443,26 +443,48 @@
               slot.classList.add("slot");
               slot.dataset.slotId = slotId;
   
-              if (item) {
-                // Ensure the image path is normalized to use forward slashes
-                const img = document.createElement("img");
-                img.src = `pages/eldenring/icons/${item.image}`;
-                img.alt = item.name;
+             if (item) {
+    const img = document.createElement("img");
+    img.src = `pages/eldenring/icons/${item.image}`;
+    img.alt = item.name;
 
-                const name = document.createElement("p");
-                name.textContent = item.name;
+    const name = document.createElement("p");
+    name.textContent = item.name;
 
-                slot.appendChild(img);
-                // slot.appendChild(name);
-              } else {
-                  // Display placeholder
-                  const placeholder = document.createElement("div");
-                  placeholder.classList.add("placeholder-tile");
-                  const placeholdertext = document.createElement("p");
-                  placeholdertext.textContent = `No ${type} selected`;
-                  placeholder.appendChild(placeholdertext);
-                  slot.appendChild(placeholder);
-              }
+    slot.appendChild(img);
+} else {
+    const placeholder = document.createElement("div");
+    placeholder.classList.add("placeholder-tile");
+    const placeholdertext = document.createElement("p");
+
+    // Set specific placeholder text for each type
+    switch(type) {
+        case 'head':
+            placeholdertext.textContent = "No helm equipped.";
+            break;
+        case 'chest':
+            placeholdertext.textContent = "No chest armor equipped.";
+            break;
+        case 'hands':
+            placeholdertext.textContent = "No gauntlets equipped.";
+            break;
+        case 'legs':
+            placeholdertext.textContent = "No leg armor equipped.";
+            break;
+        case 'weapons':
+            placeholdertext.textContent = "No main-hand item equipped.";
+            break;
+        case 'shields':
+            placeholdertext.textContent = "No off-hand item equipped.";
+            break;
+        default:
+            placeholdertext.textContent = `No ${type} selected`;
+    }
+
+    placeholder.appendChild(placeholdertext);
+    slot.appendChild(placeholder);
+}
+
   
               // Add right-click (contextmenu) event listener to show the remove item context menu
               slot.addEventListener('contextmenu', (event) => {
@@ -606,8 +628,17 @@ function initializeDragAndDrop() {
                     return;
                 }
 
-                const itemType = item.type;  // E.g., "head", "chest", etc.
-                const slotType = `${itemType}Slot`;
+                let slotType = `${item.type}Slot`; // Default slot type based on item type
+
+				// If the item is of type 'weapons' or 'shields', allow it to go in either slot if available
+				if (item.type === 'weapons' || item.type === 'shields') {
+					const outfitSlots = JSON.parse(localStorage.getItem('outfitSlots')) || {};
+					const alternateSlot = slotType === 'weaponsSlot' ? 'shieldsSlot' : 'weaponsSlot';
+
+					// Assign to the specified slot if empty, otherwise use the alternate slot
+					slotType = outfitSlots[slotType] ? alternateSlot : slotType;
+				}
+
                 
                 // Update the specified slot with the dropped item
                 addItemToSlot(slotType, item);

@@ -63,54 +63,6 @@
     </div>
 </div> 
 
-  <script>
-    function loadOutfitFromStorage() {
-        // Fetch the outfit data from localStorage using the 'outfitSlots' key
-        const outfit = JSON.parse(localStorage.getItem('outfitSlots')) || {};
-        
-        // Get the outfitSlotsSimulator div by its ID
-        const outfitSlots = document.getElementById("outfitSlotsSimulator");
-        outfitSlots.innerHTML = ''; // Clear existing items
-
-        // Define the layout order with corrected item types
-        const layoutOrder = ["head", "weapons", "chest", "shields", "hands", "legs"];
-
-        // Iterate through the defined layout order to add the corresponding item card
-        layoutOrder.forEach(slotId => {
-            const item = outfit[`${slotId}Slot`];
-
-            const card = document.createElement("div");
-            card.classList.add("item-card-simple");
-
-            if (item) {
-                const img = document.createElement("img");
-                img.src = `pages/eldenring/icons/${item.image.replace(/_/g, ' ').replace(/\\/g, '/')}`;
-
-                img.alt = item.name;
-
-                const name = document.createElement("p");
-                name.textContent = item.name;
-
-                card.appendChild(img);
-                card.appendChild(name);
-            } else {
-                // Display placeholder if no item is selected
-                const placeholder = document.createElement("p");
-                placeholder.classList.add("placeholder-tile");
-                placeholder.textContent = `No ${slotId} item selected`;
-                card.appendChild(placeholder);
-            }
-
-            // Assign an ID to each card based on its slot type for specific styling
-            card.id = `${slotId}Card`;
-
-            outfitSlots.appendChild(card);
-        });
-    }
-
-    // Call loadOutfitFromStorage to load the outfit items initially
-    document.addEventListener("DOMContentLoaded", loadOutfitFromStorage);
-</script>
 
 <script>
     // Function to edit a preset name
@@ -270,7 +222,29 @@
             } else {
                 const placeholder = document.createElement("p");
                 placeholder.classList.add("placeholder-tile");
-                placeholder.textContent = `No ${slotId} item selected`;
+                switch (slotId) {
+    case 'head':
+        placeholder.textContent = "No helm equipped.";
+        break;
+    case 'chest':
+        placeholder.textContent = "No chest armor equipped.";
+        break;
+    case 'hands':
+        placeholder.textContent = "No gauntlets equipped.";
+        break;
+    case 'legs':
+        placeholder.textContent = "No leg armor equipped.";
+        break;
+    case 'weapons':
+        placeholder.textContent = "No main-hand item equipped.";
+        break;
+    case 'shields':
+        placeholder.textContent = "No off-hand item equipped.";
+        break;
+    default:
+        placeholder.textContent = `No ${slotId} item selected`;
+}
+
                 card.appendChild(placeholder);
             }
 

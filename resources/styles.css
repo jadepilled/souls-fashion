@@ -690,8 +690,12 @@ body.light-mode .pinned {
 }
 
 .placeholder-tile {
-  background-color: transparent;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  background-color: transparent;
   width: 100%;
   height: 5rem;
 }
