@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
 	<link rel="stylesheet" href="resources/styles.css?v1.0.7">
-    <title>Elden Ring Outfit Simulator</title>
-	<title>Elden Ring outfit simulator - Fashion Souls v1.0.7</title>
+    <title>Dark Souls Outfit Simulator</title>
+	<title>Dark Souls outfit simulator - Fashion Souls v1.0.7</title>
 </head>
 <body>
-    <a href="eldenring" id="backToMain" class="back-link">← Back to Elden Ring Outfit Selection</a>
+    <a href="ds1" id="backToMain" class="back-link">← Back to Dark Souls Outfit Selection</a>
     <div class="outfit-sim">
         <header class="outfit-sim-header">
-            <h1>Elden Ring Outfit Simulator - Fashion Souls</h1>
+            <h1>Dark Souls Outfit Simulator - Fashion Souls</h1>
         </header>
         <div id="downloadImageLink" class="download-image" onclick="downloadSimulatorImage()">Download Outfit Image</div>
         <div id="outfitSlotsSimulator" class="simulator-grid">
@@ -65,7 +65,7 @@
 
 
 <script>
-	const gamePrefix = "eldenring_"; // Unique prefix for LocalStorage handling
+	const gamePrefix = "ds1_"; // Unique prefix for LocalStorage handling
     // Function to edit a preset name
     function editPresetName(presetNumber) {
         const presetNameElement = document.getElementById(`presetName${presetNumber}`);
@@ -161,7 +161,7 @@
 
             if (item) {
                 const img = document.createElement("img");
-                img.src = `pages/eldenring/icons/${item.image}`;
+                img.src = `pages/ds1/icons/${item.image}`;
                 img.alt = item.name;
 
                 const name = document.createElement("p");

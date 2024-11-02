@@ -1,12 +1,16 @@
-let items = []; // To store items loaded from JSON
-let colorDistanceThreshold = 100; // Default threshold value
+let items = [];  // To store items loaded from JSON
+let colorDistanceThreshold = 100;  // Default threshold value
 let activeFilters = new Set(); // To track active filters
+
+// Store page name as var
+var url = window.location.href;
+var page = url.substring(url.lastIndexOf('/') + 1);
 
 // Fisher-Yates Shuffle algorithm to randomize the order of items
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    [array[i], array[j]] = [array[j], array[i]];  // Swap elements
   }
   return array;
 }
@@ -14,18 +18,18 @@ function shuffle(array) {
 // Fetch the typed_items_for_web.json file and store its data
 async function fetchItems() {
   try {
-    const response = await fetch("pages/eldenring/typed_items_for_web.json");
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    items = await response.json();
-
-    // Shuffle items before displaying
-    items = shuffle(items);
-
-    displayItems(items); // Display all items initially
+      const response = await fetch(`pages/${page}/typed_items_for_web.json`);
+      if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      items = await response.json();
+      
+      // Shuffle items before displaying
+      items = shuffle(items);
+      
+      displayItems(items);  // Display all items initially
   } catch (error) {
-    console.error("Error loading items:", error);
+      console.error('Error loading items:', error);
   }
 }
 
@@ -47,31 +51,23 @@ function calculateDistance(color1, color2) {
 }
 
 // Function to calculate weighted color distance
-function calculateWeightedDistance(
-  inputColor,
-  primaryColor,
-  secondaryColors,
-  secondaryWeight
-) {
+function calculateWeightedDistance(inputColor, primaryColor, secondaryColors, secondaryWeight) {
   let primaryRgb = hexToRgb(primaryColor);
   let inputRgb = hexToRgb(inputColor);
-
+  
   // Calculate Euclidean distance for primary color
   let primaryDistance = calculateDistance(inputRgb, primaryRgb);
-
+  
   // Calculate average distance for secondary colors
   let secondaryDistances = secondaryColors.map(secondaryColor => {
-    let secondaryRgb = hexToRgb(secondaryColor);
-    return calculateDistance(inputRgb, secondaryRgb);
+      let secondaryRgb = hexToRgb(secondaryColor);
+      return calculateDistance(inputRgb, secondaryRgb);
   });
 
-  let avgSecondaryDistance =
-    secondaryDistances.reduce((a, b) => a + b, 0) / secondaryDistances.length;
+  let avgSecondaryDistance = secondaryDistances.reduce((a, b) => a + b, 0) / secondaryDistances.length;
 
   // Combine primary and secondary distances with weighting
-  let combinedDistance =
-    (1 - secondaryWeight) * primaryDistance +
-    secondaryWeight * avgSecondaryDistance;
+  let combinedDistance = (1 - secondaryWeight) * primaryDistance + secondaryWeight * avgSecondaryDistance;
 
   return combinedDistance;
 }
@@ -133,8 +129,8 @@ function findMatchingItems(inputColor, secondaryWeight, query) {
 
 // Display items in the grid
 function displayItems(filteredItems) {
-  const itemGrid = document.getElementById("itemGrid");
-  itemGrid.innerHTML = ""; // Clear the current grid
+  const itemGrid = document.getElementById('itemGrid');
+  itemGrid.innerHTML = ''; // Clear the current grid
 
   filteredItems.forEach(item => {
     const itemCard = createItemCard(item);
@@ -149,11 +145,12 @@ function createItemCard(item) {
 
   const toggleSearch = document.getElementById("toggleSearch");
   const searchInput = document.getElementById("searchInput");
+  const nav = document.querySelector('.navigation');
 
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("image-container");
   const img = document.createElement("img");
-  img.src = `pages/eldenring/icons/${item.image}`;
+  img.src = `pages/${page}/icons/${item.image}`;
   img.alt = item.name;
   imageContainer.appendChild(img);
 
@@ -162,12 +159,13 @@ function createItemCard(item) {
   const title = document.createElement("a");
   title.textContent = item.name;
   title.href = item.link;
-  title.target = "_blank";
+  title.target = '_blank';
   titleContainer.appendChild(title);
 
-  title.addEventListener("click", event => {
-    event.stopPropagation();
+  title.addEventListener('click', (event) => {
+    event.stopPropagation(); 
   });
+
 
   const colorBar = document.createElement("div");
   colorBar.classList.add("color-bar");
@@ -177,10 +175,9 @@ function createItemCard(item) {
   secondaryColorDiv1.style.backgroundColor = item.secondaryColors[0];
   const secondaryColorDiv2 = document.createElement("div");
   secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
-
-  secondaryColorDiv2.addEventListener("click", event => {
+  secondaryColorDiv2.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevents triggering the tile's click event
-    document.getElementById("favcolor").value = item.secondaryColors[1];
+    document.getElementById('favcolor').value = item.secondaryColors[1];
     updateMatchingItems(); // Trigger search with second secondary color
   });
 
@@ -206,8 +203,7 @@ function createItemCard(item) {
     toggleSearch.textContent = "Item"; // Set button text to "Item"
     searchInput.placeholder = "Search by item"; // Update placeholder
 
-    hideOutfitSidebar();
-    showNav();
+    nav.classList.remove('hidden-on-scroll');
     window.scrollTo({ top: 0, behavior: "smooth" });
     updateMatchingItems();
   });
@@ -222,10 +218,9 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
-    hideOutfitSidebar();
-    showNav();
-    updateMatchingItems();
+    nav.classList.remove('hidden-on-scroll');
     window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
   });
 
   secondaryColorDiv1.addEventListener("click", () => {
@@ -238,8 +233,9 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
-    updateMatchingItems();
+    nav.classList.remove('hidden-on-scroll');
     window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
   });
 
   secondaryColorDiv2.addEventListener("click", () => {
@@ -252,56 +248,45 @@ function createItemCard(item) {
     searchInput.value = "";
     searchInput.disabled = true;
 
-    hideOutfitSidebar();
-    showNav()
-    updateMatchingItems();
+    nav.classList.remove('hidden-on-scroll');
     window.scrollTo({ top: 0, behavior: "smooth" });
+    updateMatchingItems();
   });
 
   return card;
 }
 
+
+
 // Add event listener for color picker, name input, slider, and color distance threshold slider
-document.getElementById("favcolor").addEventListener("change", function () {
+document.getElementById('favcolor').addEventListener('change', function() {
   updateMatchingItems();
 });
 
-document.getElementById("searchInput").addEventListener("input", function () {
+document.getElementById('searchInput').addEventListener('input', function() {
   updateMatchingItems();
 });
 
-document
-  .getElementById("secondaryWeightSlider")
-  .addEventListener("input", function () {
-    document.getElementById("sliderValue").textContent = this.value;
-    updateMatchingItems();
-  });
+document.getElementById('secondaryWeightSlider').addEventListener('input', function() {
+  document.getElementById('sliderValue').textContent = this.value;
+  updateMatchingItems();
+});
 
-document
-  .getElementById("colorThresholdSlider")
-  .addEventListener("input", function () {
-    colorDistanceThreshold = parseFloat(this.value);
-    document.getElementById("colorThresholdValue").textContent = this.value;
-    updateMatchingItems();
-  });
+document.getElementById('colorThresholdSlider').addEventListener('input', function() {
+  colorDistanceThreshold = parseFloat(this.value);
+  document.getElementById('colorThresholdValue').textContent = this.value;
+  updateMatchingItems();
+});
 
 // Function to update matching items based on the current color, slider value, and query
 function updateMatchingItems() {
-  const selectedColor = document.getElementById("favcolor").value;
-  const secondaryWeight = parseFloat(
-    document.getElementById("secondaryWeightSlider").value
-  );
-  const query = document.getElementById("searchInput").value; // Get the search query
+  const selectedColor = document.getElementById('favcolor').value;
+  const secondaryWeight = parseFloat(document.getElementById('secondaryWeightSlider').value);
+  const query = document.getElementById('searchInput').value;  // Get the search query
 
-  // Find items that match both color and name and have color distance below the threshold
-  const matchingItems = findMatchingItems(
-    selectedColor,
-    secondaryWeight,
-    query
-  );
-  displayItems(matchingItems);
-  initializeItemGrid();
-  initializeDragAndDrop();
+    // Find items that match both color and name and have color distance below the threshold
+    const matchingItems = findMatchingItems(selectedColor, secondaryWeight, query);
+    displayItems(matchingItems);
 }
 
 // Function to toggle filters
@@ -349,53 +334,5 @@ document.getElementById("clearFilter").addEventListener("click", () => {
   updateMatchingItems();
 });
 
-
-
 // Fetch items on page load
 window.onload = fetchItems;
-
-
-
-// Function to add item to simulator and replace placeholder with selected item
-function addItemToSimulator(item) {
-  const slotId = `${item.type}Slot`;
-
-  const outfitSlots = JSON.parse(localStorage.getItem("outfitSlots")) || {
-    headSlot: null,
-    chestSlot: null,
-    handsSlot: null,
-    legsSlot: null,
-    weaponsSlot: null,
-    shieldsSlot: null,
-  };
-
-  outfitSlots[slotId] = { name: item.name, image: item.image };
-  localStorage.setItem("outfitSlots", JSON.stringify(outfitSlots));
-
-  loadOutfitFromStorage(); // Refresh simulator view
-}
-
-// Add event listeners to item cards in itemGrid for sending items to the outfit simulator
-function initializeItemGrid() {
-  const itemGrid = document.getElementById("itemGrid");
-
-  itemGrid.querySelectorAll(".item-card").forEach(card => {
-    card.addEventListener("contextmenu", event => {
-      event.preventDefault();
-
-      // Find the item in the `items` array
-      const itemInfo = card.querySelector(".item-info");
-      const titleContainer = itemInfo.querySelector(".title-container");
-      const title = titleContainer.querySelector("a").textContent;
-      const item = items.find(i => i.name === title);
-      if (item) {
-        showContextMenu(event, "send", item);
-      }
-    });
-  });
-}
-
-// Initialize outfit display on load
-document.addEventListener("DOMContentLoaded", () => {
-  loadOutfitFromStorage();
-});

@@ -27,7 +27,7 @@ for subdir, _, files in os.walk(root_directory):
             updated_content = re.sub(js_pattern, r'\1?' + version + '"', updated_content)
 
             # Update the version number in the title tag
-            updated_content = re.sub(title_pattern, r'\g<1>' + version[1:] + r'\g<3>', updated_content)
+            updated_content = re.sub(title_pattern, r'\g<1>' + version + r'\g<3>', updated_content)
 
             # Write the updated content back to the file with UTF-8 encoding
             with open(file_path, 'w', encoding='utf-8') as file:

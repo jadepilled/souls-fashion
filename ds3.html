@@ -16,10 +16,10 @@
 		<link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicons/icon_167x167.png"> 
 		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
 		<link rel="icon" href="favicon.ico">
-    <title>Dark Souls III - Fashion Souls v1.0.6</title>
+    <title>Dark Souls III - Fashion Souls v1.0.7</title>
     
 </head>
-<body>
+  <body>
     <nav class="navigation">
       <div class="topnav">
         <a class="FashionSouls-nav" href="index">
@@ -63,7 +63,9 @@
           <a href="feedback.html">Feedback</a>
           <button class="mode-switch" id="modeToggle">Light Mode</button>
         </div>
-        <button class="show-menu">Menu</button>
+        <button class="show-menu">
+          <img class="menu-icon" src="resources/icons/menu.svg" />
+        </button>
       </div>
       <div class="filters-group">
         <button id="headFilter">Head</button>
@@ -128,6 +130,31 @@
       <h3 style="color: #bfbfbf">SoulsBorne fashion tool by Psyopgirl</h3>
     </div>
 
+
+    <div id="contextMenu" class="custom-context-menu">
+      <ul id="contextMenuList">
+          <li id="removeItemOption">Remove Item</li>
+      </ul>
+    </div>
+
+    <div class="hover-trigger">
+      <div class="pinned">
+        <!-- <div class="tooltip">
+          <span class="tooltip-text">
+            To commit an item to the outfit simulator, right click an item card and select 'send to outfit simulator'.
+          </span>
+        </div> -->
+          <div class="pinned-buttons">
+            <!-- <a href="simulator_eldenring.html" class="link">
+              View Presets
+            </a> -->
+            <button id="export" onclick=`window.location.href='simulator_${page}.html'`>Export</button>
+          </div>
+        <div class="slots" id="outfitSlots">
+          <!-- Slots will be dynamically loaded here -->
+        </div>
+      </div>
+    </div>
     <main class="item-grid" id="itemGrid">
       <p>Loading...</p>
       <!-- Items will be dynamically loaded here -->
@@ -143,11 +170,91 @@
 
     <script src="search_items.js?v1.0.5"></script>
     <script>
+	const gamePrefix = "ds3_"; // Unique prefix for LocalStorage handling
       const modeToggle = document.getElementById("modeToggle");
       const body = document.body;
       const toggleSearch = document.getElementById("toggleSearch");
       const colorPicker = document.getElementById("favcolor");
       const searchInput = document.getElementById("searchInput");
+      
+      let navActive = true;
+      let lastTouchY = 0;
+      let sidebarActive = false;
+
+      function showOutfitSidebar() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          document.querySelector(".pinned").style.opacity = "1";
+          document.querySelector(".pinned").style.display = "block";
+
+          // Set margin based on mobile screen
+          document.querySelector(".item-grid").style.marginTop = "0";
+          document.querySelector(".item-grid").style.marginLeft = "8rem";
+          
+          sidebarActive = true;
+          navActive = false;
+        }
+      }
+
+      function hideOutfitSidebar() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          document.querySelector(".pinned").style.opacity = "0";
+          document.querySelector(".pinned").style.display = "none";
+
+          // Set margin based on mobile screen
+          document.querySelector(".item-grid").style.marginTop = "180px";
+          document.querySelector(".item-grid").style.marginLeft = "0";
+          
+          
+          sidebarActive = false;
+          navActive = true;
+        }
+      }
+
+      function showNav() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          if (sidebarActive === false) {
+            nav.classList.remove('hidden-on-scroll');
+
+            document.querySelector(".item-grid").style.marginTop = "0";
+            document.querySelector(".item-grid").style.marginLeft = "0px";
+            sidebarActive = false;
+            navActive = true;
+          }
+        }
+      }
+
+      function hideNav() {
+        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          if (sidebarActive === true) {
+            nav.classList.add('hidden-on-scroll');
+
+            document.querySelector(".item-grid").style.marginTop = "0";
+            document.querySelector(".item-grid").style.marginLeft = "70px";
+            sidebarActive = true;
+            navActive = false;
+          }
+        }
+      }
+
+
+      function adjustPinnedStyles() {
+        if (!window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
+          const pinnedElement = document.querySelector('.pinned');
+          const itemGrid = document.querySelector('.item-grid');
+          
+          if (pinnedElement) {
+            const scale = window.devicePixelRatio; // Get the current pixel ratio
+            
+            // Adjust styles based on the scaling factor
+            if (scale >= 1.25) {
+              // 125% scaling or higher
+              itemGrid.style.marginLeft = '4rem';
+            } else {
+              itemGrid.style.marginLeft = '6rem';
+            }
+          }
+        }
+      }
 
       // Check local storage to persist theme choice
       if (localStorage.getItem("theme") === "light") {
@@ -201,6 +308,37 @@
         sidebar.classList.toggle('show');
       });
 
+      document.getElementById("export").addEventListener("click", () => {
+        window.location.href = `simulator_${page}.html`;
+      });
+
+
+      // Activate effect on scroll attempt (downward or upward for wheel)
+      window.addEventListener("wheel", (event) => {
+        if (event.deltaY > 0 && !sidebarActive) {
+          showOutfitSidebar(); // Scrolling down
+          hideNav();
+        } else if (event.deltaY < 0 && sidebarActive) {
+          hideOutfitSidebar(); // Scrolling up
+          showNav();
+        }
+      });
+
+      // Activate effect on touch devices
+      window.addEventListener("touchstart", (event) => {
+        lastTouchY = event.touches[0].clientY; // Track initial touch position
+      });
+      
+      window.addEventListener("touchmove", (event) => {
+        const currentTouchY = event.touches[0].clientY;
+        if (currentTouchY < lastTouchY && !sidebarActive) {
+          showOutfitSidebar(); // Scrolling down
+        } else if (currentTouchY > lastTouchY && sidebarActive) {
+          hideOutfitSidebar(); // Scrolling up
+        }
+        lastTouchY = currentTouchY; // Update last touch position
+      });
+
       window.addEventListener("scroll", () => {
         if (window.scrollY > 400) {
           // Adjust this value based on when you want it to appear
@@ -213,19 +351,20 @@
           document.querySelector(".footer").style.opacity = "0";
         }
       });
-
+      
       // JavaScript to toggle the class on scroll
       let lastScrollTop = 0;
       const nav = document.querySelector('.navigation');
 
       window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
+        if (scrollTop > lastScrollTop && !navActive) {
           // User is scrolling down
-          nav.classList.add('hidden-on-scroll');
-        } else {
+          hideNav();
+        }
+        else {
           // User is scrolling up
-          nav.classList.remove('hidden-on-scroll');
+          showNav();
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure scrollTop doesn't go negative
       });
@@ -234,6 +373,8 @@
         .querySelector(".back-to-top-button")
         .addEventListener("click", () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
+          showNav();
+          hideOutfitSidebar();
         });
 
       // Add click event listener to all anchor links for fade effect
@@ -257,5 +398,262 @@
         );
       });
     </script>
+    <script>
+      // Variables to track the right-clicked slot ID or item
+      let rightClickedSlotId = null;
+      let rightClickedItem = null;
+  
+      // Load outfit slots from localStorage
+      function loadOutfitFromStorage() {
+          const types = ["head", "chest", "hands", "legs", "weapons", "shields"];
+          const outfitSlots = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
+  
+          const outfitContainer = document.getElementById("outfitSlots");
+          outfitContainer.innerHTML = ''; // Clear existing items
+  
+          types.forEach(type => {
+              const slotId = `${type}Slot`;
+              const item = outfitSlots[slotId];
+  
+              const slot = document.createElement("div");
+              slot.classList.add("slot");
+              slot.dataset.slotId = slotId;
+  
+             if (item) {
+    const img = document.createElement("img");
+    img.src = `pages/${page}/icons/${item.image}`;
+    img.alt = item.name;
+
+    const name = document.createElement("p");
+    name.textContent = item.name;
+
+    slot.appendChild(img);
+} else {
+    const placeholder = document.createElement("div");
+    placeholder.classList.add("placeholder-tile");
+    const placeholdertext = document.createElement("p");
+
+    // Set specific placeholder text for each type
+    switch(type) {
+        case 'head':
+            placeholdertext.textContent = "No helm equipped.";
+            break;
+        case 'chest':
+            placeholdertext.textContent = "No chest armor equipped.";
+            break;
+        case 'hands':
+            placeholdertext.textContent = "No gauntlets equipped.";
+            break;
+        case 'legs':
+            placeholdertext.textContent = "No leg armor equipped.";
+            break;
+        case 'weapons':
+            placeholdertext.textContent = "No main-hand item equipped.";
+            break;
+        case 'shields':
+            placeholdertext.textContent = "No off-hand item equipped.";
+            break;
+        default:
+            placeholdertext.textContent = `No ${type} selected`;
+    }
+
+    placeholder.appendChild(placeholdertext);
+    slot.appendChild(placeholder);
+}
+
+  
+              // Add right-click (contextmenu) event listener to show the remove item context menu
+              slot.addEventListener('contextmenu', (event) => {
+                  event.preventDefault();
+                  showContextMenu(event, 'remove', slotId);
+              });
+  
+              outfitContainer.appendChild(slot);
+          });
+  
+          // Close the context menu when clicking outside
+          document.addEventListener('click', (event) => {
+              const contextMenu = document.getElementById('contextMenu');
+              if (contextMenu.style.display === 'flex') {
+                  contextMenu.style.display = 'none';
+              }
+          });
+      }
+  
+      // Function to show the custom context menu for either removing or sending items
+      function showContextMenu(event, action, identifier) {
+          const contextMenu = document.getElementById('contextMenu');
+          const contextMenuList = document.getElementById('contextMenuList');
+          contextMenuList.innerHTML = ''; // Clear previous menu items
+  
+          const menuOption = document.createElement('li');
+          if (action === 'remove') {
+              rightClickedSlotId = identifier; // Store the slotId for later use
+              menuOption.textContent = 'Remove Item';
+              menuOption.addEventListener('click', removeItemFromOutfit);
+          } else if (action === 'send') {
+              rightClickedItem = identifier; // Store the item for later use
+              menuOption.textContent = 'Send to Outfit Simulator';
+              menuOption.addEventListener('click', sendItemToOutfitSimulator);
+          }
+  
+          contextMenuList.appendChild(menuOption);
+          contextMenu.style.top = `${event.pageY}px`;
+          contextMenu.style.left = `${event.pageX}px`;
+          contextMenu.style.display = 'flex';
+      }
+  
+      // Function to remove an item from the current outfit
+      function removeItemFromOutfit() {
+          if (rightClickedSlotId) {
+              // Fetch the current outfit from localStorage
+              const outfit = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
+  
+              // Remove the item from the current outfit
+              delete outfit[rightClickedSlotId];
+  
+              // Update the outfit in localStorage
+              localStorage.setItem(gamePrefix + 'outfitSlots', JSON.stringify(outfit));
+  
+              // Reload the outfitSlots to reflect the removal
+              loadOutfitFromStorage();
+          }
+  
+          // Hide the context menu after removing the item
+          document.getElementById('contextMenu').style.display = 'none';
+      }
+  
+      // Function to send an item to the outfit simulator
+      function sendItemToOutfitSimulator() {
+          if (rightClickedItem) {
+              addItemToSimulator(rightClickedItem);
+          }
+  
+          // Hide the context menu after sending the item
+          document.getElementById('contextMenu').style.display = 'none';
+
+          const pinned = document.querySelector('.pinned');
+
+          // Show the elements and apply the styles
+          showOutfitSidebar();
+          hideNav();
+      }
+  
+      // Add event listeners to item cards in itemGrid for sending items to the outfit simulator
+      function initializeItemGrid() {
+          const itemGrid = document.getElementById('itemGrid');
+  
+          itemGrid.querySelectorAll('.item-card').forEach(card => {
+              card.addEventListener('contextmenu', (event) => {
+                  event.preventDefault();
+  
+                  // Find the item in the `items` array
+                  const itemInfo = card.querySelector('.item-info');
+                  const titleContainer  = itemInfo.querySelector('.title-container');
+                  const title = titleContainer.querySelector('a').textContent;
+                  const item = items.find(i => i.name === title);
+                  if (item) {
+                      showContextMenu(event, 'send', item);
+                  }
+              });
+          });
+      }
+  
+  </script>
+  
+  <script>
+  
+// Set up the outfitSlots container as a drop target
+function initializeDragAndDrop() {
+    const itemGrid = document.getElementById('itemGrid');
+    const outfitSlotsContainer = document.getElementById('outfitSlots');
+
+    // Make each item card draggable
+    itemGrid.querySelectorAll('.item-card').forEach(card => {
+        card.setAttribute('draggable', 'true');
+
+        // Store item name without file extension when dragging starts
+        card.addEventListener('dragstart', (event) => {
+            const itemInfo = card.querySelector('.item-info .title-container a').textContent;
+            event.dataTransfer.setData('text/plain', itemInfo);  // Set item name as drag data
+        });
+    });
+
+    // Enable outfitSlots as the drop target
+    outfitSlotsContainer.addEventListener('dragover', (event) => {
+        event.preventDefault();  // Allow item to be dropped
+    });
+
+    outfitSlotsContainer.addEventListener('drop', (event) => {
+        event.preventDefault();
+        const itemName = event.dataTransfer.getData('text/plain');  // Get item name
+
+        // Verify that itemName data was successfully retrieved
+        if (!itemName) {
+            console.error("Drop event: No item name received");
+            return;
+        }
+        
+        // Find item type from the JSON data
+        fetch(`pages/${page}/typed_items_for_web.json`)
+            .then(response => response.json())
+            .then(jsonData => {
+                const item = jsonData.find(i => i.name === itemName);
+
+                if (!item) {
+                    console.error("Item not found in JSON data:", itemName);
+                    return;
+                }
+
+                let slotType = `${item.type}Slot`; // Default slot type based on item type
+
+				// If the item is of type 'weapons' or 'shields', allow it to go in either slot if available
+				if (item.type === 'weapons' || item.type === 'shields') {
+					const outfitSlots = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
+					const alternateSlot = slotType === 'weaponsSlot' ? 'shieldsSlot' : 'weaponsSlot';
+
+					// Assign to the specified slot if empty, otherwise use the alternate slot
+					slotType = outfitSlots[slotType] ? alternateSlot : slotType;
+				}
+
+                
+                // Update the specified slot with the dropped item
+                addItemToSlot(slotType, item);
+            })
+            .catch(error => console.error("Error loading JSON data:", error));
+    });
+}
+
+// Add item to the specified slot and update localStorage
+function addItemToSlot(slotType, item) {
+    // Get current outfit from local storage
+    const outfitSlots = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
+
+    // Update the slot in outfitSlots with the new item name (image name can be derived or set as needed)
+    outfitSlots[slotType] = { name: item.name, image: `${item.type}/${item.name}.webp` };
+
+    // Save updated outfit to local storage
+    localStorage.setItem(gamePrefix + 'outfitSlots', JSON.stringify(outfitSlots));
+
+    // Refresh the displayed outfit
+    loadOutfitFromStorage();
+}
+
+// Initialize drag-and-drop functionality when items are loaded
+window.onload = function() {
+    fetchItems().then(() => {
+        loadOutfitFromStorage();
+        initializeItemGrid();
+        initializeDragAndDrop();  // Enable drag-and-drop on items
+        adjustPinnedStyles();
+    });
+
+};
+
+window.onresize = adjustPinnedStyles;
+
+
+  </script>
+  
   </body>
 </html>

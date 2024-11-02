@@ -16,7 +16,7 @@
 
 <p align="center">souls.fashion is hosted as a webapp at https://souls.fashion and therefore does not require customisation or installation to use by default. If you would like to create your own build using other files, the steps are as follows:</p>
 
-<p align="center">There are two 7zip archives [images](images.url) and [legacy scripts](LegacyScripts.url), within which you will find several scripts that can be used to generate item colors, as well as icons, provided that the source images are placed within the appropriate /images/ folder. Their uses require previous scripts to be run in order, and are as follows:</p>
+<p align="center">There are two 7zip archives linked in the root directory, images and LegacyScripts, within which you will find several scripts that can be used to generate item colors, as well as icons, provided that the source images are placed within the appropriate /images/ folder. Their uses require previous scripts to be run in order, and are as follows:</p>
 
 * *getcolor3.py*  - 3rd iteration of my color generation script, revised to eliminate detection of pure black and white, and to target secondary colors based on contrast. Pulls dominant and secondary colors from images located in the /images/ folder and returns their primary and secondary colors to colors_extracted.JSON. Note that this script is not perfect for the Souls series as the item icons are pre-rendered and have a tendency to show more black and white than they actually utilise in-game.
 * *generate_items.py*  - generates the items shown in the search grid, using a combination of data from typed_items_for_web.JSON (dependent on items_for_web.JSON and colors_extracted.JSON) and image names + subtypes as defined within the /icons/ folder. Once colors have been generated the /images/ folders are redundant, but contain high-resolution base images labelled by item name from each game which you may use as you please.
@@ -36,6 +36,8 @@ You may alter, adapt, or build upon the source material, as long as attribution 
 <p align="center">
 <img src="https://i.imgur.com/fAYVJlW.png" width="680" height="100"/>
 </p>
+
+> [ver 1.0.7] - Added outfit simulator to all games. Made weapons equippable in mainhand and offhand. Updated localstorage to use game-specific files so that presets and preset names, as well as outfit simulator content, do not carry over between games. 
 
 > [ver 1.0.6] - Outfit simulator is live! Fixed an issue causing drag and drop function to break. Updated item icon names to match corrected names. 
 
