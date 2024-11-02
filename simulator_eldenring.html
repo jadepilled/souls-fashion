@@ -302,9 +302,9 @@
         container.style.left = '-9999px';
         document.body.appendChild(container);
 
-        // Use html2canvas to take a snapshot
+        // Use html2canvas to take a snapshot (resolution increased)
         try {
-            const canvas = await html2canvas(container, { backgroundColor: null });
+            const canvas = await html2canvas(container, { backgroundColor: null, scale: 3 });
             const link = document.createElement('a');
             link.href = canvas.toDataURL('image/png');
             link.download = `${currentOutfitName}_Outfit.png`;
