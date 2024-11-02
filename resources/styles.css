@@ -1411,3 +1411,50 @@ body.light-mode .custom-context-menu ul li:hover {
   transition: transform 0.3s ease, border-color 0.3s ease;
   border-radius: 0.625rem; /* 10px */
 }
+
+.full-screen-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.full-screen-notice.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.full-screen-notice.hidden {
+    opacity: 0;
+    visibility: hidden;
+	pointer-events: none;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #181818; /* Background color for the loading screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.preloader-logo {
+    max-width: 200px; /* Adjust logo size as needed */
+    opacity: 0.8;
+}

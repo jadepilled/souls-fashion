@@ -136,9 +136,9 @@
 
     // Function to load a preset into the simulator
     function loadPreset(presetNumber) {
-        const preset = JSON.parse(localStorage.getItem(`preset${presetNumber}`));
+        const preset = JSON.parse(localStorage.getItem(gamePrefix + `preset${presetNumber}`));
         if (preset) {
-            localStorage.setItem('outfitSlots', JSON.stringify(preset));
+            localStorage.setItem(gamePrefix + 'outfitSlots', JSON.stringify(preset));
             loadOutfitFromStorage();
 
             // Update the current outfit name with the loaded preset name
@@ -204,7 +204,7 @@
 
         // Check if the loaded outfit matches any saved presets and update currentOutfitName if a match is found
         for (let i = 1; i <= 5; i++) {
-            const savedPreset = JSON.parse(localStorage.getItem(`preset${i}`));
+            const savedPreset = JSON.parse(localStorage.getItem(gamePrefix + `preset${i}`));
             if (savedPreset && JSON.stringify(savedPreset) === JSON.stringify(outfit)) {
                 currentOutfitName = document.getElementById(`presetName${i}`).textContent.trim();
                 break;

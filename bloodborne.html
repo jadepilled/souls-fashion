@@ -20,6 +20,18 @@
     
 </head>
   <body>
+  <div id="preloader" class="preloader">
+    <img src="favicons/android-chrome-192x192.png" alt="souls.fashion" class="preloader-logo">
+</div>
+
+  <div id="fullScreenNotice" class="full-screen-notice">
+    <div class="notice-content">
+        <p>
+            NOTICE: If the site layout looks strange or images are not loading, please press <strong>ctrl+F5</strong> to re-cache your browser. Alternatively, delete your browser's cache manually and the site should work as expected.
+        </p>
+        <p><span id="dismissNotice" style="color: #ffeb3b; cursor: pointer; text-decoration: underline;">Click here to dismiss this message</span></p>
+    </div>
+</div>
     <nav class="navigation">
       <div class="topnav">
         <a class="FashionSouls-nav" href="index">
@@ -650,10 +662,37 @@ window.onload = function() {
 
 };
 
+//dismiss full-screen notice 
+document.addEventListener("DOMContentLoaded", () => {
+    const fullScreenNotice = document.getElementById('fullScreenNotice');
+    const dismissNotice = document.getElementById('dismissNotice');
+
+    // Check if the notice has already been dismissed
+    if (!localStorage.getItem('noticeDismissed')) {
+        fullScreenNotice.classList.add('show'); // Show the notice if it hasn't been dismissed
+    }
+
+    // Add click event to dismiss the notice
+    dismissNotice.addEventListener('click', () => {
+        fullScreenNotice.classList.remove('show'); // Hide the notice with transition
+        localStorage.setItem('noticeDismissed', 'true'); // Save dismissal to localStorage
+    });
+});
+
 window.onresize = adjustPinnedStyles;
 
 
   </script>
+  
+    <script>
+    window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        preloader.style.opacity = "0"; // Fade out effect
+        setTimeout(() => {
+            preloader.style.display = "none"; // Completely hide after fading
+        }, 1000); // Duration of fade effect in milliseconds
+    });
+</script>
   
   </body>
 </html>

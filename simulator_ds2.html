@@ -122,6 +122,62 @@
 
 
 <script>
+    // Function to edit a preset name
+    function editPresetName(presetNumber) {
+        const presetNameElement = document.getElementById(`presetName${presetNumber}`);
+        
+        // Save the original name in case the user doesn't enter a new one
+        const originalName = presetNameElement.textContent.trim();
+
+        // Clear the text when clicked to edit
+        presetNameElement.textContent = "";
+
+        // Save the updated name when focus is lost
+        presetNameElement.addEventListener("blur", () => {
+            const name = presetNameElement.textContent.trim();
+
+            if (name === "") {
+                // If no new name is provided, revert to the original name
+                presetNameElement.textContent = originalName;
+            } else {
+                // Otherwise, save the new name
+                localStorage.setItem(gamePrefix + `presetName${presetNumber}`, name);
+            }
+        }, { once: true });
+
+        // Save the updated name when the Enter key is pressed
+        presetNameElement.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent newline
+                presetNameElement.blur(); // Trigger blur event to save
+            }
+        });
+    }
+
+    // Function to load preset names from localStorage
+    function loadPresetNames() {
+        for (let i = 1; i <= 5; i++) {
+            const name = localStorage.getItem(gamePrefix + `presetName${i}`) || `Preset ${i}`;
+            document.getElementById(`presetName${i}`).textContent = name;
+        }
+    }
+
+    // Function to clear a preset
+    function clearPreset(presetNumber) {
+        localStorage.removeItem(gamePrefix + `preset${presetNumber}`);
+    }
+
+ 
+    // Load preset names and outfit on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        loadPresetNames();
+        loadOutfitFromStorage();
+    });
+</script>
+
+
+
+<script>
     // Variable to store the most recently loaded preset name
     let currentOutfitName = "Current Outfit";
 
@@ -136,9 +192,9 @@
 
     // Function to load a preset into the simulator
     function loadPreset(presetNumber) {
-        const preset = JSON.parse(localStorage.getItem(`preset${presetNumber}`));
+        const preset = JSON.parse(localStorage.getItem(gamePrefix + `preset${presetNumber}`));
         if (preset) {
-            localStorage.setItem('outfitSlots', JSON.stringify(preset));
+            localStorage.setItem(gamePrefix + 'outfitSlots', JSON.stringify(preset));
             loadOutfitFromStorage();
 
             // Update the current outfit name with the loaded preset name
@@ -204,7 +260,7 @@
 
         // Check if the loaded outfit matches any saved presets and update currentOutfitName if a match is found
         for (let i = 1; i <= 5; i++) {
-            const savedPreset = JSON.parse(localStorage.getItem(`preset${i}`));
+            const savedPreset = JSON.parse(localStorage.getItem(gamePrefix + `preset${i}`));
             if (savedPreset && JSON.stringify(savedPreset) === JSON.stringify(outfit)) {
                 currentOutfitName = document.getElementById(`presetName${i}`).textContent.trim();
                 break;
@@ -272,6 +328,27 @@
         loadPresetNames();
         loadOutfitFromStorage();
     });
+	
+	//dismiss full-screen notice
+	document.addEventListener("DOMContentLoaded", () => {
+    const fullScreenNotice = document.getElementById('fullScreenNotice');
+    const dismissNotice = document.getElementById('dismissNotice');
+
+    // Check if the notice has already been dismissed
+    if (!localStorage.getItem('noticeDismissed')) {
+        fullScreenNotice.style.display = 'flex'; // Show the notice overlay
+    } else {
+        fullScreenNotice.style.display = 'none'; // Hide it if already dismissed
+    }
+
+    // Add click event to dismiss the notice
+    dismissNotice.addEventListener('click', (event) => {
+        event.preventDefault();
+        fullScreenNotice.style.display = 'none'; // Hide the notice
+        localStorage.setItem('noticeDismissed', 'true'); // Save dismissal to localStorage
+    });
+});
+
 </script>
 
 
