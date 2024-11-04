@@ -364,17 +364,11 @@ window.onload = fetchItems;
 function addItemToSimulator(item) {
   const slotId = `${item.type}Slot`;
 
-  const outfitSlots = JSON.parse(localStorage.getItem("outfitSlots")) || {
-    headSlot: null,
-    chestSlot: null,
-    handsSlot: null,
-    legsSlot: null,
-    weaponsSlot: null,
-    shieldsSlot: null,
-  };
+  const outfitSlots =
+    JSON.parse(localStorage.getItem(gamePrefix + "outfitSlots")) || {};
 
   outfitSlots[slotId] = { name: item.name, image: item.image };
-  localStorage.setItem("outfitSlots", JSON.stringify(outfitSlots));
+  localStorage.setItem(gamePrefix + "outfitSlots", JSON.stringify(outfitSlots));
 
   loadOutfitFromStorage(); // Refresh simulator view
 }
