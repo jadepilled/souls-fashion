@@ -1,1674 +1,2112 @@
 [
     {
         "name": "Ancient King's Breastplate",
-        "image": "Chest/Ancient King's Breastplate.webp",
-        "primaryColor": "#d8efe5",
-        "secondaryColors": [
-            "#95a59a",
-            "#77938a"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Breastplate"
+        "image": "Chest/Ancient King's Breastplate.png",
+        "primaryColor": "#5e5a44",
+        "secondaryColors": [
+            "#564934",
+            "#3b4534"
+        ]
+    },
+    {
+        "name": "Barbarian Clothes",
+        "type": "chest",
+        "image": "Chest/Barbarian Clothes.png",
+        "primaryColor": "#5e5243",
+        "secondaryColors": [
+            "#5c4531",
+            "#483425"
+        ]
     },
     {
         "name": "Binded Cross",
-        "image": "Chest/Binded Cross.webp",
-        "primaryColor": "#ece4dd",
-        "secondaryColors": [
-            "#a88b6f",
-            "#8d725a"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Binded_Cross"
+        "image": "Chest/Binded Cross.png",
+        "primaryColor": "#927555",
+        "secondaryColors": [
+            "#6e5642",
+            "#594535"
+        ]
     },
     {
-        "name": "Black Leather",
-        "image": "Chest/Black Leather.webp",
-        "primaryColor": "#a49b8e",
-        "secondaryColors": [
-            "#8f8778",
-            "#847a6d"
-        ],
+        "name": "Blue-Eye Knight Cuirass",
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Black_Leather"
+        "image": "Chest/Blue-Eye Knight Cuirass.png",
+        "primaryColor": "#a49d96",
+        "secondaryColors": [
+            "#615a51",
+            "#594a35"
+        ]
+    },
+    {
+        "name": "Boletarian Royalty Clothes",
+        "type": "chest",
+        "image": "Chest/Boletarian Royalty Clothes.png",
+        "primaryColor": "#aba18e",
+        "secondaryColors": [
+            "#988a6f",
+            "#86785e"
+        ]
+    },
+    {
+        "name": "Breastplate Of The Piercer",
+        "type": "chest",
+        "image": "Chest/Breastplate of the Piercer.png",
+        "primaryColor": "#5c5650",
+        "secondaryColors": [
+            "#595248",
+            "#4a433a"
+        ]
     },
     {
         "name": "Brushwood Armor",
-        "image": "Chest/Brushwood Armor.webp",
-        "primaryColor": "#ad9e8c",
-        "secondaryColors": [
-            "#9c8973",
-            "#877562"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Armor"
+        "image": "Chest/Brushwood Armor.png",
+        "primaryColor": "#966d49",
+        "secondaryColors": [
+            "#4f5d57",
+            "#654a32"
+        ]
+    },
+    {
+        "name": "Burrower Armor",
+        "type": "chest",
+        "image": "Chest/Burrower Armor.png",
+        "primaryColor": "#9a8a75",
+        "secondaryColors": [
+            "#685e50",
+            "#4f4539"
+        ]
     },
     {
         "name": "Chain Mail",
-        "image": "Chest/Chain Mail.webp",
-        "primaryColor": "#a99a90",
-        "secondaryColors": [
-            "#877367",
-            "#67584f"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Chain_Mail"
+        "image": "Chest/Chain Mail.png",
+        "primaryColor": "#5d544d",
+        "secondaryColors": [
+            "#4c413c",
+            "#443935"
+        ]
     },
     {
-        "name": "Coat Of Plate",
-        "image": "Chest/Coat of Plate.webp",
-        "primaryColor": "#e7e4e0",
-        "secondaryColors": [
-            "#a39d96",
-            "#84786f"
-        ],
+        "name": "Coat Of Plates",
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Coat_Of_Plate"
+        "image": "Chest/Coat of Plates.png",
+        "primaryColor": "#99958c",
+        "secondaryColors": [
+            "#5e5a54",
+            "#484336"
+        ]
     },
     {
         "name": "Dark Silver Armor",
-        "image": "Chest/Dark Silver Armor.webp",
-        "primaryColor": "#a19e9b",
-        "secondaryColors": [
-            "#5d5b58",
-            "#44423d"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Armor"
+        "image": "Chest/Dark Silver Armor.png",
+        "primaryColor": "#a79f93",
+        "secondaryColors": [
+            "#655d51",
+            "#5b4a2f"
+        ]
     },
     {
         "name": "Dull Gold Armor",
-        "image": "Chest/Dull Gold Armor.webp",
-        "primaryColor": "#ecd9a3",
-        "secondaryColors": [
-            "#a68c62",
-            "#8b7451"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Armor"
+        "image": "Chest/Dull Gold Armor.png",
+        "primaryColor": "#a78a67",
+        "secondaryColors": [
+            "#8c6f4e",
+            "#654a2f"
+        ]
     },
     {
         "name": "Fluted Armor",
-        "image": "Chest/Fluted Armor.webp",
-        "primaryColor": "#e5e1dc",
-        "secondaryColors": [
-            "#a29c96",
-            "#837a74"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Fluted_Armor"
+        "image": "Chest/Fluted Armor.png",
+        "primaryColor": "#5d534a",
+        "secondaryColors": [
+            "#5b4536",
+            "#334242"
+        ]
     },
     {
         "name": "Gloom Armor",
-        "image": "Chest/Gloom Armor.webp",
-        "primaryColor": "#f5efdf",
-        "secondaryColors": [
-            "#9f8a6f",
-            "#89745a"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Gloom_Armor"
+        "image": "Chest/Gloom Armor.png",
+        "primaryColor": "#a39791",
+        "secondaryColors": [
+            "#625851",
+            "#4d433b"
+        ]
+    },
+    {
+        "name": "Imperial Spy Clothes",
+        "type": "chest",
+        "image": "Chest/Imperial Spy Clothes.png",
+        "primaryColor": "#958b6e",
+        "secondaryColors": [
+            "#675f49",
+            "#534935"
+        ]
     },
     {
         "name": "Leather Armor",
-        "image": "Chest/Leather Armor.webp",
-        "primaryColor": "#b09f8a",
-        "secondaryColors": [
-            "#9f8975",
-            "#8a7361"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Leather_Armor"
+        "image": "Chest/Leather Armor.png",
+        "primaryColor": "#605447",
+        "secondaryColors": [
+            "#504439",
+            "#53322f"
+        ]
     },
     {
-        "name": "Mirdan Scale Mail",
-        "image": "Chest/Mirdan Scale Mail.webp",
-        "primaryColor": "#f1ebe0",
-        "secondaryColors": [
-            "#a9a093",
-            "#8f867a"
-        ],
+        "name": "Mirdan Scale Armor",
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Scale_Mail"
+        "image": "Chest/Mirdan Scale Armor.png",
+        "primaryColor": "#a49792",
+        "secondaryColors": [
+            "#615350",
+            "#57423c"
+        ]
+    },
+    {
+        "name": "Official's Clothes",
+        "type": "chest",
+        "image": "Chest/Official's Clothes.png",
+        "primaryColor": "#5e4730",
+        "secondaryColors": [
+            "#49374b",
+            "#493524"
+        ]
     },
     {
         "name": "Old Raggedy Robes",
-        "image": "Chest/Old Raggedy Robes.webp",
-        "primaryColor": "#9d9992",
-        "secondaryColors": [
-            "#86837b",
-            "#635e59"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Old_Raggedy_Robes"
+        "image": "Chest/Old Raggedy Robes.png",
+        "primaryColor": "#8e6c4a",
+        "secondaryColors": [
+            "#654e45",
+            "#654937"
+        ]
+    },
+    {
+        "name": "Red-Eye Knight Cuirass",
+        "type": "chest",
+        "image": "Chest/Red-Eye Knight Cuirass.png",
+        "primaryColor": "#a49d96",
+        "secondaryColors": [
+            "#615a51",
+            "#594a35"
+        ]
     },
     {
         "name": "Rogue's Clothes",
-        "image": "Chest/Rogue's Clothes.webp",
-        "primaryColor": "#e7d6a1",
-        "secondaryColors": [
-            "#a4906a",
-            "#8a7655"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Rogue%27s_Clothes"
+        "image": "Chest/Rogue's Clothes.png",
+        "primaryColor": "#8f7148",
+        "secondaryColors": [
+            "#5f564e",
+            "#5e4b32"
+        ]
     },
     {
         "name": "Saint's Robes",
-        "image": "Chest/Saint's Robes.webp",
-        "primaryColor": "#ddd9d1",
-        "secondaryColors": [
-            "#c7c4ba",
-            "#a3a199"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Saint%27s_Robes"
+        "image": "Chest/Saint's Robes.png",
+        "primaryColor": "#c5b59f",
+        "secondaryColors": [
+            "#b2a28c",
+            "#9e8c70"
+        ]
     },
     {
         "name": "Shaman's Clothes",
-        "image": "Chest/Shaman's Clothes.webp",
-        "primaryColor": "#a89f92",
-        "secondaryColors": [
-            "#928778",
-            "#86786c"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Shaman%27s_Clothes"
+        "image": "Chest/Shaman's Clothes.png",
+        "primaryColor": "#62574a",
+        "secondaryColors": [
+            "#61462e",
+            "#4c3723"
+        ]
     },
     {
         "name": "Venerable Sage's Robe",
-        "image": "Chest/Venerable Sage's Robe.webp",
-        "primaryColor": "#ae9d8c",
-        "secondaryColors": [
-            "#9d8875",
-            "#897463"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Robe"
+        "image": "Chest/Venerable Sage's Robe.png",
+        "primaryColor": "#615445",
+        "secondaryColors": [
+            "#514438",
+            "#45392f"
+        ]
     },
     {
         "name": "Wizard's Clothes",
-        "image": "Chest/Wizard's Clothes.webp",
-        "primaryColor": "#e7e3d9",
-        "secondaryColors": [
-            "#a2a093",
-            "#898678"
-        ],
         "type": "chest",
-        "link": "https://demonssouls.fandom.com/wiki/Wizard%27s_Clothes"
+        "image": "Chest/Wizard's Clothes.png",
+        "primaryColor": "#60584c",
+        "secondaryColors": [
+            "#524334",
+            "#493023"
+        ]
     },
     {
-        "name": "Ancient King's Gauntlet",
-        "image": "Hands/Ancient King's Gauntlet.webp",
-        "primaryColor": "#addece",
-        "secondaryColors": [
-            "#8ab1a2",
-            "#6f9c8f"
-        ],
+        "name": "Ancient King's Gauntlets",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Gauntlet"
+        "image": "Hands/Ancient King's Gauntlets.png",
+        "primaryColor": "#9b8a64",
+        "secondaryColors": [
+            "#8a734f",
+            "#6c6548"
+        ]
+    },
+    {
+        "name": "Barbarian Armbands (Male)",
+        "type": "hands",
+        "image": "Hands/Barbarian Armbands (Male).png",
+        "primaryColor": "#89725b",
+        "secondaryColors": [
+            "#685446",
+            "#594538"
+        ]
+    },
+    {
+        "name": "Barbarian Armbands",
+        "type": "hands",
+        "image": "Hands/Barbarian Armbands.png",
+        "primaryColor": "#876a54",
+        "secondaryColors": [
+            "#6c5a49",
+            "#624934"
+        ]
+    },
+    {
+        "name": "Binded Gloves (Male)",
+        "type": "hands",
+        "image": "Hands/Binded Gloves (Male).png",
+        "primaryColor": "#645647",
+        "secondaryColors": [
+            "#584737",
+            "#4a3927"
+        ]
     },
     {
         "name": "Binded Gloves",
-        "image": "Hands/Binded Gloves.webp",
-        "primaryColor": "#ac8966",
-        "secondaryColors": [
-            "#907154",
-            "#8d6235"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Binded_Gloves"
+        "image": "Hands/Binded Gloves.png",
+        "primaryColor": "#886f58",
+        "secondaryColors": [
+            "#6a5748",
+            "#5b4738"
+        ]
     },
     {
-        "name": "Black Gloves",
-        "image": "Hands/Black Gloves.webp",
-        "primaryColor": "#a79a8c",
-        "secondaryColors": [
-            "#948677",
-            "#85786c"
-        ],
+        "name": "Blue-Eye Knight Gauntlets",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Black_Gloves"
+        "image": "Hands/Blue-Eye Knight Gauntlets.png",
+        "primaryColor": "#a69c95",
+        "secondaryColors": [
+            "#a28d6d",
+            "#89745a"
+        ]
+    },
+    {
+        "name": "Boletarian Royalty Armbands",
+        "type": "hands",
+        "image": "Hands/Boletarian Royalty Armbands.png",
+        "primaryColor": "#b1a48c",
+        "secondaryColors": [
+            "#a08d6a",
+            "#897552"
+        ]
+    },
+    {
+        "name": "Brushwood Gauntlets (Male)",
+        "type": "hands",
+        "image": "Hands/Brushwood Gauntlets (Male).png",
+        "primaryColor": "#ab8d61",
+        "secondaryColors": [
+            "#93724a",
+            "#85613b"
+        ]
     },
     {
         "name": "Brushwood Gauntlets",
-        "image": "Hands/Brushwood Gauntlets.webp",
-        "primaryColor": "#b29f8a",
-        "secondaryColors": [
-            "#a28a72",
-            "#8a7460"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Gauntlets"
+        "image": "Hands/Brushwood Gauntlets.png",
+        "primaryColor": "#aa8e62",
+        "secondaryColors": [
+            "#917149",
+            "#86623b"
+        ]
+    },
+    {
+        "name": "Burrower Armbands",
+        "type": "hands",
+        "image": "Hands/Burrower Armbands.png",
+        "primaryColor": "#837368",
+        "secondaryColors": [
+            "#66584f",
+            "#54443a"
+        ]
     },
     {
         "name": "Chain Gloves",
-        "image": "Hands/Chain Gloves.webp",
-        "primaryColor": "#c5b7b0",
-        "secondaryColors": [
-            "#a49791",
-            "#857973"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Chain_Gloves"
+        "image": "Hands/Chain Gloves.png",
+        "primaryColor": "#847871",
+        "secondaryColors": [
+            "#635853",
+            "#4f423c"
+        ]
     },
     {
-        "name": "Dark Silver Manifer",
-        "image": "Hands/Dark Silver Manifer.webp",
-        "primaryColor": "#e2dfdc",
-        "secondaryColors": [
-            "#a19e9a",
-            "#84817d"
-        ],
+        "name": "Dark Silver Gauntlets",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Manifer"
+        "image": "Hands/Dark Silver Gauntlets.png",
+        "primaryColor": "#a79f94",
+        "secondaryColors": [
+            "#8e8577",
+            "#655f56"
+        ]
     },
     {
-        "name": "Dull Gold Manifer",
-        "image": "Hands/Dull Gold Manifer.webp",
-        "primaryColor": "#f3d95e",
-        "secondaryColors": [
-            "#aca693",
-            "#635e52"
-        ],
+        "name": "Dull Gold Gauntlets",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Manifer"
+        "image": "Hands/Dull Gold Gauntlets.png",
+        "primaryColor": "#a68f62",
+        "secondaryColors": [
+            "#665b4d",
+            "#624c2e"
+        ]
     },
     {
-        "name": "Fluted Gauntlet",
-        "image": "Hands/Fluted Gauntlet.webp",
-        "primaryColor": "#e4e0da",
-        "secondaryColors": [
-            "#a39d98",
-            "#837b73"
-        ],
+        "name": "Fluted Gauntlets (Male)",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Fluted_Gauntlet"
+        "image": "Hands/Fluted Gauntlets (Male).png",
+        "primaryColor": "#d8dadd",
+        "secondaryColors": [
+            "#999ca1",
+            "#57585e"
+        ]
     },
     {
-        "name": "Gloom Gauntlet",
-        "image": "Hands/Gloom Gauntlet.webp",
-        "primaryColor": "#f6f2e0",
-        "secondaryColors": [
-            "#ab8e67",
-            "#8d7353"
-        ],
+        "name": "Fluted Gauntlets",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Gloom_Gauntlet"
+        "image": "Hands/Fluted Gauntlets.png",
+        "primaryColor": "#999591",
+        "secondaryColors": [
+            "#5e5a55",
+            "#48423b"
+        ]
+    },
+    {
+        "name": "Gloom Gauntlets",
+        "type": "hands",
+        "image": "Hands/Gloom Gauntlets.png",
+        "primaryColor": "#a59f98",
+        "secondaryColors": [
+            "#635c54",
+            "#4c443a"
+        ]
+    },
+    {
+        "name": "Imperial Spy Gloves",
+        "type": "hands",
+        "image": "Hands/Imperial Spy Gloves.png",
+        "primaryColor": "#887553",
+        "secondaryColors": [
+            "#67604f",
+            "#544c36"
+        ]
+    },
+    {
+        "name": "Leather Gloves (Male)",
+        "type": "hands",
+        "image": "Hands/Leather Gloves (Male).png",
+        "primaryColor": "#99948f",
+        "secondaryColors": [
+            "#5f5652",
+            "#55433a"
+        ]
     },
     {
         "name": "Leather Gloves",
-        "image": "Hands/Leather Gloves.webp",
-        "primaryColor": "#cfac8e",
-        "secondaryColors": [
-            "#aa8c71",
-            "#8d745e"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Leather_Gloves"
+        "image": "Hands/Leather Gloves.png",
+        "primaryColor": "#87684d",
+        "secondaryColors": [
+            "#695648",
+            "#5b4738"
+        ]
     },
     {
-        "name": "Mirdan Manifer",
-        "image": "Hands/Mirdan Manifer.webp",
-        "primaryColor": "#efe9dd",
-        "secondaryColors": [
-            "#cfc6b8",
-            "#a79c90"
-        ],
+        "name": "Mirdan Gauntlets (Male)",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Manifer"
+        "image": "Hands/Mirdan Gauntlets (Male).png",
+        "primaryColor": "#9b9892",
+        "secondaryColors": [
+            "#635f59",
+            "#49423b"
+        ]
+    },
+    {
+        "name": "Mirdan Gauntlets",
+        "type": "hands",
+        "image": "Hands/Mirdan Gauntlets.png",
+        "primaryColor": "#a19d96",
+        "secondaryColors": [
+            "#625d55",
+            "#4b433c"
+        ]
+    },
+    {
+        "name": "Official's Gloves (Male)",
+        "type": "hands",
+        "image": "Hands/Official's Gloves (Male).png",
+        "primaryColor": "#896c4f",
+        "secondaryColors": [
+            "#725c47",
+            "#634b35"
+        ]
+    },
+    {
+        "name": "Official's Gloves",
+        "type": "hands",
+        "image": "Hands/Official's Gloves.png",
+        "primaryColor": "#847369",
+        "secondaryColors": [
+            "#6c5a50",
+            "#5e4539"
+        ]
     },
     {
         "name": "Old Raggedy Gloves",
-        "image": "Hands/Old Raggedy Gloves.webp",
-        "primaryColor": "#aa9989",
-        "secondaryColors": [
-            "#a08875",
-            "#8c7666"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Old_Raggedy_Gloves"
+        "image": "Hands/Old Raggedy Gloves.png",
+        "primaryColor": "#5f4942",
+        "secondaryColors": [
+            "#59423b",
+            "#4c3530"
+        ]
     },
     {
-        "name": "Plate Gauntlet",
-        "image": "Hands/Plate Gauntlet.webp",
-        "primaryColor": "#f0e7de",
-        "secondaryColors": [
-            "#dec8b3",
-            "#ccb39e"
-        ],
+        "name": "Penetrator's Gauntlets",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Plate_Gauntlet"
+        "image": "Hands/Penetrator's Gauntlets.png",
+        "primaryColor": "#a29a91",
+        "secondaryColors": [
+            "#635b4e",
+            "#4e4638"
+        ]
+    },
+    {
+        "name": "Plate Gauntlets",
+        "type": "hands",
+        "image": "Hands/Plate Gauntlets.png",
+        "primaryColor": "#d4d4d2",
+        "secondaryColors": [
+            "#9c9c9a",
+            "#625f5b"
+        ]
+    },
+    {
+        "name": "Red-Eye Knight Gauntlets",
+        "type": "hands",
+        "image": "Hands/Red-Eye Knight Gauntlets.png",
+        "primaryColor": "#a79d95",
+        "secondaryColors": [
+            "#a18c6c",
+            "#89755a"
+        ]
     },
     {
         "name": "Rogue's Gloves",
-        "image": "Hands/Rogue's Gloves.webp",
-        "primaryColor": "#edead3",
-        "secondaryColors": [
-            "#9f9b94",
-            "#575452"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Rogue%27s_Gloves"
+        "image": "Hands/Rogue's Gloves.png",
+        "primaryColor": "#9f9993",
+        "secondaryColors": [
+            "#675c53",
+            "#564637"
+        ]
+    },
+    {
+        "name": "Saint's Gloves (Male)",
+        "type": "hands",
+        "image": "Hands/Saint's Gloves (Male).png",
+        "primaryColor": "#d1cfc6",
+        "secondaryColors": [
+            "#c6c4b9",
+            "#aaa79a"
+        ]
     },
     {
         "name": "Saint's Gloves",
-        "image": "Hands/Saint's Gloves.webp",
-        "primaryColor": "#eae5df",
-        "secondaryColors": [
-            "#a89c92",
-            "#958578"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Saint%27s_Gloves"
+        "image": "Hands/Saint's Gloves.png",
+        "primaryColor": "#c4b999",
+        "secondaryColors": [
+            "#aba79a",
+            "#a1926f"
+        ]
     },
     {
         "name": "Shaman's Armband",
-        "image": "Hands/Shaman's Armband.webp",
-        "primaryColor": "#a79f95",
-        "secondaryColors": [
-            "#8b847a",
-            "#837a70"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Shaman%27s_Armband"
+        "image": "Hands/Shaman's Armband.png",
+        "primaryColor": "#738587",
+        "secondaryColors": [
+            "#555d5a",
+            "#46433b"
+        ]
     },
     {
-        "name": "Silver Bracelet",
-        "image": "Hands/Silver Bracelet.webp",
-        "primaryColor": "#e0dbd8",
-        "secondaryColors": [
-            "#c7c2bc",
-            "#c2bcb7"
-        ],
+        "name": "Venerable Sage Gloves",
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Silver_Bracelet"
-    },
-    {
-        "name": "Venerable Sage's Gloves",
-        "image": "Hands/Venerable Sage's Gloves.webp",
-        "primaryColor": "#ae998b",
+        "image": "Hands/Venerable Sage Gloves.png",
+        "primaryColor": "#908b84",
         "secondaryColors": [
-            "#9e8776",
-            "#897466"
-        ],
-        "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Gloves"
+            "#5b544c",
+            "#4e433a"
+        ]
     },
     {
         "name": "Wizard's Gloves",
-        "image": "Hands/Wizard's Gloves.webp",
-        "primaryColor": "#d4c6b8",
-        "secondaryColors": [
-            "#c5b8aa",
-            "#a89d92"
-        ],
         "type": "hands",
-        "link": "https://demonssouls.fandom.com/wiki/Wizard%27s_Gloves"
-    },
-    {
-        "name": "Ancient King's Mask",
-        "image": "Head/Ancient King's Mask.webp",
-        "primaryColor": "#dbeae3",
+        "image": "Hands/Wizard's Gloves.png",
+        "primaryColor": "#a19c93",
         "secondaryColors": [
-            "#92a99e",
-            "#789187"
-        ],
-        "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Mask"
+            "#62584f",
+            "#57453a"
+        ]
     },
     {
         "name": "Assassin's Mask",
-        "image": "Head/Assassin's Mask.webp",
-        "primaryColor": "#d0c8b6",
-        "secondaryColors": [
-            "#a39c90",
-            "#8b8479"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Assassin%27s_Mask"
+        "image": "Head/Assassin's Mask.png",
+        "primaryColor": "#5d575d",
+        "secondaryColors": [
+            "#4c4138",
+            "#453e41"
+        ]
     },
     {
         "name": "Binded Hood",
-        "image": "Head/Binded Hood.webp",
-        "primaryColor": "#d0ae8d",
-        "secondaryColors": [
-            "#ab8b6b",
-            "#8f7052"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Binded_Hood"
+        "image": "Head/Binded Hood.png",
+        "primaryColor": "#857360",
+        "secondaryColors": [
+            "#6b594a",
+            "#5a4737"
+        ]
     },
     {
-        "name": "Brushwood Helmet",
-        "image": "Head/Brushwood Helmet.webp",
-        "primaryColor": "#f5eddd",
-        "secondaryColors": [
-            "#c9b59f",
-            "#b2a18d"
-        ],
+        "name": "Blue-Eye Knight Helm",
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Helmet"
+        "image": "Head/Blue-Eye Knight Helm.png",
+        "primaryColor": "#ae9e8f",
+        "secondaryColors": [
+            "#a38d6d",
+            "#8a7357"
+        ]
     },
     {
-        "name": "Chain Helmet",
-        "image": "Head/Chain Helmet.webp",
-        "primaryColor": "#a49891",
-        "secondaryColors": [
-            "#8f837b",
-            "#857a73"
-        ],
+        "name": "Brushwood Helm",
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Chain_Helmet"
+        "image": "Head/Brushwood Helm.png",
+        "primaryColor": "#8c6d4b",
+        "secondaryColors": [
+            "#775d43",
+            "#644b32"
+        ]
     },
     {
         "name": "Dark Silver Helmet",
-        "image": "Head/Dark Silver Helmet.webp",
-        "primaryColor": "#d9d7d5",
-        "secondaryColors": [
-            "#a4a19e",
-            "#a3a09c"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Helmet"
+        "image": "Head/Dark Silver Helmet.png",
+        "primaryColor": "#e2e0db",
+        "secondaryColors": [
+            "#999590",
+            "#605d5a"
+        ]
     },
     {
         "name": "Dull Gold Helmet",
-        "image": "Head/Dull Gold Helmet.webp",
-        "primaryColor": "#f3e89b",
-        "secondaryColors": [
-            "#cfa95a",
-            "#ab8f51"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Helmet"
+        "image": "Head/Dull Gold Helmet.png",
+        "primaryColor": "#ae8d65",
+        "secondaryColors": [
+            "#966f4c",
+            "#684a2e"
+        ]
     },
     {
-        "name": "Fluted Helmet",
-        "image": "Head/Fluted Helmet.webp",
-        "primaryColor": "#a39e9a",
-        "secondaryColors": [
-            "#837d7a",
-            "#5d5955"
-        ],
+        "name": "Fluted Helm",
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Fluted_Helmet"
+        "image": "Head/Fluted Helm.png",
+        "primaryColor": "#9a9792",
+        "secondaryColors": [
+            "#605c56",
+            "#48423c"
+        ]
     },
     {
-        "name": "Gloom Helmet",
-        "image": "Head/Gloom Helmet.webp",
-        "primaryColor": "#eae5db",
-        "secondaryColors": [
-            "#aba295",
-            "#87755f"
-        ],
+        "name": "Gloom Helm",
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Gloom_Helmet"
+        "image": "Head/Gloom Helm.png",
+        "primaryColor": "#a79e95",
+        "secondaryColors": [
+            "#625a54",
+            "#49423d"
+        ]
     },
     {
         "name": "Gold Mask",
-        "image": "Head/Gold Mask.webp",
-        "primaryColor": "#f3e29d",
-        "secondaryColors": [
-            "#d0ab64",
-            "#ad8f58"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Gold_Mask"
+        "image": "Head/Gold Mask.png",
+        "primaryColor": "#a59167",
+        "secondaryColors": [
+            "#887757",
+            "#635a52"
+        ]
+    },
+    {
+        "name": "Imperial Spy Hood",
+        "type": "head",
+        "image": "Head/Imperial Spy Hood.png",
+        "primaryColor": "#4a4e43",
+        "secondaryColors": [
+            "#4d4835",
+            "#3c4239"
+        ]
+    },
+    {
+        "name": "Iron Helm",
+        "type": "head",
+        "image": "Head/Iron Helm.png",
+        "primaryColor": "#d3d5d8",
+        "secondaryColors": [
+            "#9b9ca2",
+            "#7a7b83"
+        ]
     },
     {
         "name": "Leather Cap",
-        "image": "Head/Leather Cap.webp",
-        "primaryColor": "#aa9488",
-        "secondaryColors": [
-            "#9a8578",
-            "#89756a"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Leather_Cap"
+        "image": "Head/Leather Cap.png",
+        "primaryColor": "#857350",
+        "secondaryColors": [
+            "#6f6048",
+            "#5a4c35"
+        ]
+    },
+    {
+        "name": "Mail Coif (Male)",
+        "type": "head",
+        "image": "Head/Mail Coif (Male).png",
+        "primaryColor": "#5c5556",
+        "secondaryColors": [
+            "#5b443a",
+            "#443d41"
+        ]
+    },
+    {
+        "name": "Mail Coif",
+        "type": "head",
+        "image": "Head/Mail Coif.png",
+        "primaryColor": "#847a74",
+        "secondaryColors": [
+            "#5c534f",
+            "#4c423d"
+        ]
     },
     {
         "name": "Mirdan Helmet",
-        "image": "Head/Mirdan Helmet.webp",
-        "primaryColor": "#ece8e0",
-        "secondaryColors": [
-            "#a49d93",
-            "#8a837a"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Helmet"
+        "image": "Head/Mirdan Helmet.png",
+        "primaryColor": "#a09d95",
+        "secondaryColors": [
+            "#5e5a52",
+            "#46433b"
+        ]
     },
     {
         "name": "Monk's Head Collar",
-        "image": "Head/Monk's Head Collar.webp",
-        "primaryColor": "#f9d550",
-        "secondaryColors": [
-            "#e4ac48",
-            "#e19b2c"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Monk%27s_Head_Collar"
+        "image": "Head/Monk's Head Collar.png",
+        "primaryColor": "#8c6626",
+        "secondaryColors": [
+            "#6d4c1a",
+            "#674c1c"
+        ]
     },
     {
         "name": "Official's Cap",
-        "image": "Head/Official's Cap.webp",
-        "primaryColor": "#897266",
-        "secondaryColors": [
-            "#655249",
-            "#57433a"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Official%27s_Cap"
+        "image": "Head/Official's Cap.png",
+        "primaryColor": "#8f6f4a",
+        "secondaryColors": [
+            "#5c5344",
+            "#584936"
+        ]
+    },
+    {
+        "name": "Penetrator's Helmet",
+        "type": "head",
+        "image": "Head/Penetrator's Helmet.png",
+        "primaryColor": "#877b6c",
+        "secondaryColors": [
+            "#60574c",
+            "#4b443a"
+        ]
     },
     {
         "name": "Plate Helmet",
-        "image": "Head/Plate Helmet.webp",
-        "primaryColor": "#e7e3df",
-        "secondaryColors": [
-            "#a39e9a",
-            "#8b827c"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Plate_Helmet"
+        "image": "Head/Plate Helmet.png",
+        "primaryColor": "#d8d7d6",
+        "secondaryColors": [
+            "#9e9b99",
+            "#5d5a58"
+        ]
+    },
+    {
+        "name": "Red-Eye Knight Helm",
+        "type": "head",
+        "image": "Head/Red-Eye Knight Helm.png",
+        "primaryColor": "#ae9f91",
+        "secondaryColors": [
+            "#a58e6e",
+            "#8a7257"
+        ]
     },
     {
         "name": "Silver Coronet",
-        "image": "Head/Silver Coronet.webp",
-        "primaryColor": "#a3a09e",
-        "secondaryColors": [
-            "#a09b99",
-            "#656160"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Silver_Coronet"
+        "image": "Head/Silver Coronet.png",
+        "primaryColor": "#a6a195",
+        "secondaryColors": [
+            "#8d8879",
+            "#666153"
+        ]
     },
     {
         "name": "Three-Cornered Hat",
-        "image": "Head/Three-cornered Hat.webp",
-        "primaryColor": "#a0988d",
-        "secondaryColors": [
-            "#5c5952",
-            "#45433b"
-        ],
         "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Three-Cornered_Hat"
+        "image": "Head/Three-Cornered Hat.png",
+        "primaryColor": "#4f413a",
+        "secondaryColors": [
+            "#43352f",
+            "#48322e"
+        ]
     },
     {
-        "name": "Venerable Sage's Hood",
-        "image": "Head/Venerable Sage's Hood.webp",
-        "primaryColor": "#ad9f8d",
-        "secondaryColors": [
-            "#948775",
-            "#867868"
-        ],
-        "type": "head",
-        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Hood"
-    },
-    {
-        "name": "Ancient King's Leggings",
-        "image": "Legs/Ancient King's Leggings.webp",
-        "primaryColor": "#99a49b",
-        "secondaryColors": [
-            "#58625a",
-            "#38423a"
-        ],
+        "name": "Ancient King's Greaves",
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Ancient_King%27s_Leggings"
+        "image": "Legs/Ancient King's Greaves.png",
+        "primaryColor": "#686248",
+        "secondaryColors": [
+            "#594b33",
+            "#3b442e"
+        ]
+    },
+    {
+        "name": "Barbarian Leggings (Male)",
+        "type": "legs",
+        "image": "Legs/Barbarian Leggings (Male).png",
+        "primaryColor": "#65544c",
+        "secondaryColors": [
+            "#564b44",
+            "#59433b"
+        ]
+    },
+    {
+        "name": "Barbarian Leggings",
+        "type": "legs",
+        "image": "Legs/Barbarian Leggings.png",
+        "primaryColor": "#8b6547",
+        "secondaryColors": [
+            "#6a4931",
+            "#4e311e"
+        ]
+    },
+    {
+        "name": "Binded Boots (Male)",
+        "type": "legs",
+        "image": "Legs/Binded Boots (Male).png",
+        "primaryColor": "#695848",
+        "secondaryColors": [
+            "#5b4735",
+            "#473c33"
+        ]
     },
     {
         "name": "Binded Boots",
-        "image": "Legs/Binded Boots.webp",
-        "primaryColor": "#8c735c",
-        "secondaryColors": [
-            "#6d5c4c",
-            "#5b4836"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Binded_Boots"
+        "image": "Legs/Binded Boots.png",
+        "primaryColor": "#5d5146",
+        "secondaryColors": [
+            "#4b4a45",
+            "#584636"
+        ]
+    },
+    {
+        "name": "Black Boots (Male)",
+        "type": "legs",
+        "image": "Legs/Black Boots (Male).png",
+        "primaryColor": "#655346",
+        "secondaryColors": [
+            "#524237",
+            "#4b382d"
+        ]
     },
     {
         "name": "Black Boots",
-        "image": "Legs/Black Boots.webp",
-        "primaryColor": "#a2988f",
-        "secondaryColors": [
-            "#8d857a",
-            "#635c55"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Black_Boots"
+        "image": "Legs/Black Boots.png",
+        "primaryColor": "#5e5043",
+        "secondaryColors": [
+            "#564436",
+            "#42382d"
+        ]
+    },
+    {
+        "name": "Blue-Eye Knight Greaves",
+        "type": "legs",
+        "image": "Legs/Blue-Eye Knight Greaves.png",
+        "primaryColor": "#8d6651",
+        "secondaryColors": [
+            "#6a594c",
+            "#634835"
+        ]
+    },
+    {
+        "name": "Boletarian Royalty Leggings",
+        "type": "legs",
+        "image": "Legs/Boletarian Royalty Leggings.png",
+        "primaryColor": "#ada493",
+        "secondaryColors": [
+            "#978b70",
+            "#857961"
+        ]
+    },
+    {
+        "name": "Brushwood Leggings (Male)",
+        "type": "legs",
+        "image": "Legs/Brushwood Leggings (Male).png",
+        "primaryColor": "#8e6d48",
+        "secondaryColors": [
+            "#685949",
+            "#614b33"
+        ]
     },
     {
         "name": "Brushwood Leggings",
-        "image": "Legs/Brushwood Leggings.webp",
-        "primaryColor": "#b09e8c",
-        "secondaryColors": [
-            "#887563",
-            "#6b5c4d"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Brushwood_Leggings"
+        "image": "Legs/Brushwood Leggings.png",
+        "primaryColor": "#9c7149",
+        "secondaryColors": [
+            "#8d5a30",
+            "#704929"
+        ]
     },
     {
-        "name": "Dark Silver Leggings",
-        "image": "Legs/Dark Silver Leggings.webp",
-        "primaryColor": "#a3a09a",
-        "secondaryColors": [
-            "#5b5a58",
-            "#5a5854"
-        ],
+        "name": "Burrower Boots",
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Leggings"
+        "image": "Legs/Burrower Boots.png",
+        "primaryColor": "#a09a92",
+        "secondaryColors": [
+            "#5f5851",
+            "#4f433b"
+        ]
+    },
+    {
+        "name": "Dark Silver Greaves",
+        "type": "legs",
+        "image": "Legs/Dark Silver Greaves.png",
+        "primaryColor": "#999797",
+        "secondaryColors": [
+            "#5e5650",
+            "#504439"
+        ]
     },
     {
         "name": "Dull Gold Leggings",
-        "image": "Legs/Dull Gold Leggings.webp",
-        "primaryColor": "#a48e6f",
-        "secondaryColors": [
-            "#8b7558",
-            "#6e604a"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Dull_Gold_Leggings"
+        "image": "Legs/Dull Gold Leggings.png",
+        "primaryColor": "#8d642f",
+        "secondaryColors": [
+            "#5d5346",
+            "#554732"
+        ]
     },
     {
-        "name": "Fluted Leggings",
-        "image": "Legs/Fluted Leggings.webp",
-        "primaryColor": "#c9b6a9",
-        "secondaryColors": [
-            "#a69d96",
-            "#85766c"
-        ],
+        "name": "Fluted Greaves",
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Fluted_Leggings"
+        "image": "Legs/Fluted Greaves.png",
+        "primaryColor": "#827b75",
+        "secondaryColors": [
+            "#5b544d",
+            "#4a423a"
+        ]
     },
     {
-        "name": "Gloom Leggings",
-        "image": "Legs/Gloom Leggings.webp",
-        "primaryColor": "#f2ede0",
-        "secondaryColors": [
-            "#9a8973",
-            "#6a5c4c"
-        ],
+        "name": "Gloom Greaves",
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Gloom_Leggings"
+        "image": "Legs/Gloom Greaves.png",
+        "primaryColor": "#5f564d",
+        "secondaryColors": [
+            "#534537",
+            "#3c3d40"
+        ]
+    },
+    {
+        "name": "Hard Leather Boots (Male)",
+        "type": "legs",
+        "image": "Legs/Hard Leather Boots (Male).png",
+        "primaryColor": "#897662",
+        "secondaryColors": [
+            "#574f4c",
+            "#554539"
+        ]
     },
     {
         "name": "Hard Leather Boots",
-        "image": "Legs/Hard Leather Boots.webp",
-        "primaryColor": "#ceb6ac",
-        "secondaryColors": [
-            "#a8978e",
-            "#867870"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Hard_Leather_Boots"
+        "image": "Legs/Hard Leather Boots.png",
+        "primaryColor": "#544947",
+        "secondaryColors": [
+            "#52443a",
+            "#433b41"
+        ]
+    },
+    {
+        "name": "Imperial Spy Leggings",
+        "type": "legs",
+        "image": "Legs/Imperial Spy Leggings.png",
+        "primaryColor": "#877246",
+        "secondaryColors": [
+            "#685c42",
+            "#534a31"
+        ]
     },
     {
         "name": "Leather Boots",
-        "image": "Legs/Leather Boots.webp",
-        "primaryColor": "#cab3a3",
-        "secondaryColors": [
-            "#af9b8e",
-            "#998778"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Leather_Boots"
+        "image": "Legs/Leather Boots.png",
+        "primaryColor": "#625347",
+        "secondaryColors": [
+            "#544437",
+            "#45362a"
+        ]
     },
     {
-        "name": "Old Raggedy Boots",
-        "image": "Legs/Old Raggedy Boots.webp",
-        "primaryColor": "#9b958c",
-        "secondaryColors": [
-            "#5e5b52",
-            "#47433b"
-        ],
+        "name": "Mirdan Leggings (Female)",
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Old_Raggedy_Boots"
+        "image": "Legs/Mirdan Leggings (Female).png",
+        "primaryColor": "#847868",
+        "secondaryColors": [
+            "#675d4a",
+            "#534a39"
+        ]
     },
     {
-        "name": "Plate Leggings",
-        "image": "Legs/Plate Leggings.webp",
-        "primaryColor": "#ebe6df",
-        "secondaryColors": [
-            "#d0c8b4",
-            "#a8a195"
-        ],
+        "name": "Mirdan Leggings",
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Plate_Leggings"
+        "image": "Legs/Mirdan Leggings.png",
+        "primaryColor": "#847863",
+        "secondaryColors": [
+            "#6a604e",
+            "#534837"
+        ]
+    },
+    {
+        "name": "Official's Leggings",
+        "type": "legs",
+        "image": "Legs/Official's Leggings.png",
+        "primaryColor": "#5c4d49",
+        "secondaryColors": [
+            "#544636",
+            "#4b3a43"
+        ]
+    },
+    {
+        "name": "Old Ragged Boots",
+        "type": "legs",
+        "image": "Legs/Old Ragged Boots.png",
+        "primaryColor": "#9c8c65",
+        "secondaryColors": [
+            "#87754f",
+            "#776644"
+        ]
+    },
+    {
+        "name": "Penetrator's Greaves",
+        "type": "legs",
+        "image": "Legs/Penetrator's Greaves.png",
+        "primaryColor": "#5a534a",
+        "secondaryColors": [
+            "#4e473a",
+            "#453c42"
+        ]
+    },
+    {
+        "name": "Plate Greaves (Male)",
+        "type": "legs",
+        "image": "Legs/Plate Greaves (Male).png",
+        "primaryColor": "#898887",
+        "secondaryColors": [
+            "#5a5548",
+            "#4b4538"
+        ]
+    },
+    {
+        "name": "Plate Greaves",
+        "type": "legs",
+        "image": "Legs/Plate Greaves.png",
+        "primaryColor": "#5c584a",
+        "secondaryColors": [
+            "#514e35",
+            "#4f4c37"
+        ]
+    },
+    {
+        "name": "Red-Eye Knight Greaves",
+        "type": "legs",
+        "image": "Legs/Red-Eye Knight Greaves.png",
+        "primaryColor": "#8d6751",
+        "secondaryColors": [
+            "#69594b",
+            "#634835"
+        ]
     },
     {
         "name": "Rogue's Boots",
-        "image": "Legs/Rogue's Boots.webp",
-        "primaryColor": "#54504b",
-        "secondaryColors": [
-            "#4f4b47",
-            "#47433c"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Rogue%27s_Boots"
+        "image": "Legs/Rogue's Boots.png",
+        "primaryColor": "#8c786b",
+        "secondaryColors": [
+            "#5d544d",
+            "#554538"
+        ]
+    },
+    {
+        "name": "Saint's Boots (Male)",
+        "type": "legs",
+        "image": "Legs/Saint's Boots (Male).png",
+        "primaryColor": "#979188",
+        "secondaryColors": [
+            "#685d50",
+            "#5a472f"
+        ]
     },
     {
         "name": "Saint's Boots",
-        "image": "Legs/Saint's Boots.webp",
-        "primaryColor": "#a6a199",
-        "secondaryColors": [
-            "#948679",
-            "#605a54"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Saint%27s_Boots"
+        "image": "Legs/Saint's Boots.png",
+        "primaryColor": "#63584a",
+        "secondaryColors": [
+            "#5c4932",
+            "#544638"
+        ]
     },
     {
-        "name": "Shaman's Tabi Socks",
-        "image": "Legs/Shaman's Tabi Socks.webp",
-        "primaryColor": "#a99a8e",
-        "secondaryColors": [
-            "#85796f",
-            "#635c55"
-        ],
+        "name": "Shaman's Tabi (Male)",
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Shaman%27s_Tabi_Socks"
+        "image": "Legs/Shaman's Tabi (Male).png",
+        "primaryColor": "#866d38",
+        "secondaryColors": [
+            "#644f2a",
+            "#483927"
+        ]
+    },
+    {
+        "name": "Shaman's Tabi",
+        "type": "legs",
+        "image": "Legs/Shaman's Tabi.png",
+        "primaryColor": "#5d4f34",
+        "secondaryColors": [
+            "#5e4a2d",
+            "#483922"
+        ]
     },
     {
         "name": "Venerable Sage's Boots",
-        "image": "Legs/Venerable Sage's Boots.webp",
-        "primaryColor": "#ab998b",
-        "secondaryColors": [
-            "#9f8a76",
-            "#88776a"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Venerable_Sage%27s_Boots"
+        "image": "Legs/Venerable Sage's Boots.png",
+        "primaryColor": "#845c43",
+        "secondaryColors": [
+            "#715240",
+            "#624633"
+        ]
     },
     {
         "name": "Wizard's Shoes",
-        "image": "Legs/Wizard's Shoes.webp",
-        "primaryColor": "#e5dfdb",
-        "secondaryColors": [
-            "#9d9690",
-            "#615e5b"
-        ],
         "type": "legs",
-        "link": "https://demonssouls.fandom.com/wiki/Wizard%27s_Shoes"
+        "image": "Legs/Wizard's Shoes.png",
+        "primaryColor": "#6e6760",
+        "secondaryColors": [
+            "#514a44",
+            "#4b423c"
+        ]
     },
     {
-        "name": "Adjudicators Shield ",
-        "image": "Shields/Adjudicators Shield .webp",
-        "primaryColor": "#a08c5e",
-        "secondaryColors": [
-            "#8d7250",
-            "#8f6632"
-        ],
+        "name": "Adjudicator's Shield",
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Adjudicators_Shield_"
+        "image": "Shields/Adjudicator's Shield.png",
+        "primaryColor": "#a1a08f",
+        "secondaryColors": [
+            "#9d8e69",
+            "#8c7258"
+        ]
     },
     {
         "name": "Buckler",
-        "image": "Shields/Buckler.webp",
-        "primaryColor": "#a99c92",
-        "secondaryColors": [
-            "#92847a",
-            "#867970"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Buckler"
+        "image": "Shields/Buckler.png",
+        "primaryColor": "#9b938f",
+        "secondaryColors": [
+            "#5e5854",
+            "#49423c"
+        ]
     },
     {
         "name": "Dark Silver Shield",
-        "image": "Shields/Dark Silver Shield.webp",
-        "primaryColor": "#9f9991",
-        "secondaryColors": [
-            "#5a5652",
-            "#44403e"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Dark_Silver_Shield"
-    },
-    {
-        "name": "Dregling Shield Small",
-        "image": "Shields/Dregling Shield Small.webp",
-        "primaryColor": "#5e5147",
+        "image": "Shields/Dark Silver Shield.png",
+        "primaryColor": "#dadad8",
         "secondaryColors": [
-            "#584434",
-            "#493625"
-        ],
-        "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Dregling_Shield_Small"
+            "#9c9d99",
+            "#585854"
+        ]
     },
     {
         "name": "Heater Shield",
-        "image": "Shields/Heater Shield.webp",
-        "primaryColor": "#8f8485",
-        "secondaryColors": [
-            "#847879",
-            "#605757"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Heater_Shield"
+        "image": "Shields/Heater Shield.png",
+        "primaryColor": "#9c968f",
+        "secondaryColors": [
+            "#8a837b",
+            "#837b73"
+        ]
     },
     {
         "name": "Hoplite Shield",
-        "image": "Shields/Hoplite Shield.webp",
-        "primaryColor": "#a88b63",
-        "secondaryColors": [
-            "#8d724f",
-            "#6b5e49"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Hoplite_Shield"
+        "image": "Shields/Hoplite Shield.png",
+        "primaryColor": "#a99f8e",
+        "secondaryColors": [
+            "#a0896d",
+            "#8b7257"
+        ]
     },
     {
         "name": "Kite Shield",
-        "image": "Shields/Kite Shield.webp",
-        "primaryColor": "#846631",
-        "secondaryColors": [
-            "#6a4e1d",
-            "#544f4c"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Kite_Shield"
+        "image": "Shields/Kite Shield.png",
+        "primaryColor": "#8a6822",
+        "secondaryColors": [
+            "#59534c",
+            "#664e23"
+        ]
     },
     {
-        "name": "Knights Shield Standar Shield ",
-        "image": "Shields/Knights Shield Standar Shield .webp",
-        "primaryColor": "#a88a61",
-        "secondaryColors": [
-            "#8e714d",
-            "#5a534d"
-        ],
+        "name": "Knight's Shield",
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Knights_Shield_Standar_Shield_"
+        "image": "Shields/Knight's Shield.png",
+        "primaryColor": "#a38d6c",
+        "secondaryColors": [
+            "#8c7353",
+            "#5e564e"
+        ]
     },
     {
         "name": "Large Brushwood Shield",
-        "image": "Shields/Large Brushwood Shield.webp",
-        "primaryColor": "#906f4f",
-        "secondaryColors": [
-            "#61584f",
-            "#5f4935"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Large_Brushwood_Shield"
+        "image": "Shields/Large Brushwood Shield.png",
+        "primaryColor": "#8a735a",
+        "secondaryColors": [
+            "#665e55",
+            "#604933"
+        ]
     },
     {
-        "name": "Leather Shield ",
-        "image": "Shields/Leather Shield .webp",
-        "primaryColor": "#897152",
-        "secondaryColors": [
-            "#6c5f58",
-            "#6c5d54"
-        ],
+        "name": "Leather Shield",
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Leather_Shield_"
+        "image": "Shields/Leather Shield.png",
+        "primaryColor": "#a28b6c",
+        "secondaryColors": [
+            "#886d5b",
+            "#705a4c"
+        ]
     },
     {
         "name": "Purple Flame Shield",
-        "image": "Shields/Purple Flame Shield.webp",
-        "primaryColor": "#cdac93",
-        "secondaryColors": [
-            "#b18d89",
-            "#b08a71"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Purple_Flame_Shield"
+        "image": "Shields/Purple Flame Shield.png",
+        "primaryColor": "#c7b29f",
+        "secondaryColors": [
+            "#b09392",
+            "#ac8d72"
+        ]
     },
     {
-        "name": "Rune Shield ",
-        "image": "Shields/Rune Shield .webp",
-        "primaryColor": "#8c6530",
-        "secondaryColors": [
-            "#6b4e25",
-            "#684e27"
-        ],
+        "name": "Rune Shield",
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Rune_Shield_"
+        "image": "Shields/Rune Shield.png",
+        "primaryColor": "#aa8b53",
+        "secondaryColors": [
+            "#8c662b",
+            "#6c4e21"
+        ]
+    },
+    {
+        "name": "Slave's Shield",
+        "type": "shields",
+        "image": "Shields/Slave's Shield.png",
+        "primaryColor": "#896e4f",
+        "secondaryColors": [
+            "#69594a",
+            "#5b4834"
+        ]
     },
     {
         "name": "Soldier's Shield",
-        "image": "Shields/Soldier's Shield.webp",
-        "primaryColor": "#9e988f",
-        "secondaryColors": [
-            "#5c5751",
-            "#47423b"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Soldier%27s_Shield"
+        "image": "Shields/Soldier's Shield.png",
+        "primaryColor": "#aba39b",
+        "secondaryColors": [
+            "#5a534e",
+            "#48423c"
+        ]
     },
     {
         "name": "Spiked Shield",
-        "image": "Shields/Spiked Shield.webp",
-        "primaryColor": "#a8a397",
-        "secondaryColors": [
-            "#585650",
-            "#47423a"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Spiked_Shield"
+        "image": "Shields/Spiked Shield.png",
+        "primaryColor": "#a09f97",
+        "secondaryColors": [
+            "#5b5b55",
+            "#4c4538"
+        ]
     },
     {
         "name": "Steel Shield",
-        "image": "Shields/Steel Shield.webp",
-        "primaryColor": "#a39a90",
-        "secondaryColors": [
-            "#5f574f",
-            "#4c423b"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Steel_Shield"
+        "image": "Shields/Steel Shield.png",
+        "primaryColor": "#9c9892",
+        "secondaryColors": [
+            "#5e5852",
+            "#4a423b"
+        ]
     },
     {
         "name": "Tower Shield",
-        "image": "Shields/Tower Shield.webp",
-        "primaryColor": "#a29a91",
-        "secondaryColors": [
-            "#877658",
-            "#5a554e"
-        ],
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Tower_Shield"
+        "image": "Shields/Tower Shield.png",
+        "primaryColor": "#9f9a94",
+        "secondaryColors": [
+            "#918772",
+            "#847966"
+        ]
     },
     {
-        "name": "Wooden Shield Small",
-        "image": "Shields/Wooden Shield Small.webp",
-        "primaryColor": "#867164",
-        "secondaryColors": [
-            "#615750",
-            "#534338"
-        ],
+        "name": "Wooden Small Shield",
         "type": "shields",
-        "link": "https://demonssouls.fandom.com/wiki/Wooden_Shield_Small"
+        "image": "Shields/Wooden Small Shield.png",
+        "primaryColor": "#9f958d",
+        "secondaryColors": [
+            "#877569",
+            "#65584f"
+        ]
     },
     {
-        "name": "Babys Nail",
-        "image": "Weapons/Babys Nail.webp",
-        "primaryColor": "#655041",
-        "secondaryColors": [
-            "#624634",
-            "#4c3222"
-        ],
+        "name": "Baby's Nail",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Babys_Nail"
+        "image": "Weapons/Baby's Nail.png",
+        "primaryColor": "#5f5747",
+        "secondaryColors": [
+            "#56493a",
+            "#3c4738"
+        ]
     },
     {
         "name": "Bastard Sword",
-        "image": "Weapons/Bastard Sword.webp",
-        "primaryColor": "#91888c",
-        "secondaryColors": [
-            "#564f51",
-            "#433e40"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Bastard_Sword"
+        "image": "Weapons/Bastard Sword.png",
+        "primaryColor": "#95938d",
+        "secondaryColors": [
+            "#575350",
+            "#4a423c"
+        ]
     },
     {
         "name": "Battle Axe",
-        "image": "Weapons/Battle Axe.webp",
-        "primaryColor": "#645e5c",
-        "secondaryColors": [
-            "#615a57",
-            "#674633"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Battle_Axe"
+        "image": "Weapons/Battle Axe.png",
+        "primaryColor": "#8c5f36",
+        "secondaryColors": [
+            "#5d584f",
+            "#584534"
+        ]
     },
     {
         "name": "Blind",
-        "image": "Weapons/Blind.webp",
-        "primaryColor": "#4e524f",
-        "secondaryColors": [
-            "#42423d",
-            "#3e4241"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Blind"
+        "image": "Weapons/Blind.png",
+        "primaryColor": "#9a9a97",
+        "secondaryColors": [
+            "#595a59",
+            "#525352"
+        ]
     },
     {
         "name": "Blueblood Sword",
-        "image": "Weapons/Blueblood Sword.webp",
-        "primaryColor": "#504b46",
-        "secondaryColors": [
-            "#4c4a47",
-            "#47423d"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Blueblood_Sword"
+        "image": "Weapons/Blueblood Sword.png",
+        "primaryColor": "#aea295",
+        "secondaryColors": [
+            "#635b52",
+            "#504539"
+        ]
     },
     {
         "name": "Bramd",
-        "image": "Weapons/Bramd.webp",
-        "primaryColor": "#625d52",
-        "secondaryColors": [
-            "#615747",
-            "#5a4b35"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Bramd"
+        "image": "Weapons/Bramd.png",
+        "primaryColor": "#88744f",
+        "secondaryColors": [
+            "#655d4c",
+            "#5f4e30"
+        ]
     },
     {
-        "name": "Broadsword",
-        "image": "Weapons/Broadsword.webp",
-        "primaryColor": "#575455",
-        "secondaryColors": [
-            "#504e4c",
-            "#3c3c41"
-        ],
+        "name": "Broad Sword",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Broadsword"
+        "image": "Weapons/Broad Sword.png",
+        "primaryColor": "#95928f",
+        "secondaryColors": [
+            "#5c575b",
+            "#433a36"
+        ]
     },
     {
         "name": "Broken Sword",
-        "image": "Weapons/Broken Sword.webp",
-        "primaryColor": "#5c5048",
-        "secondaryColors": [
-            "#52443b",
-            "#463730"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Broken_Sword"
+        "image": "Weapons/Broken Sword.png",
+        "primaryColor": "#847460",
+        "secondaryColors": [
+            "#62564a",
+            "#544638"
+        ]
     },
     {
         "name": "Claws",
-        "image": "Weapons/Claws.webp",
-        "primaryColor": "#a39b8f",
-        "secondaryColors": [
-            "#5f5850",
-            "#49433b"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Claws"
+        "image": "Weapons/Claws.png",
+        "primaryColor": "#a19d97",
+        "secondaryColors": [
+            "#615b53",
+            "#4b4339"
+        ]
     },
     {
         "name": "Claymore",
-        "image": "Weapons/Claymore.webp",
-        "primaryColor": "#a39e9b",
-        "secondaryColors": [
-            "#565454",
-            "#5f4b2f"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Claymore"
+        "image": "Weapons/Claymore.png",
+        "primaryColor": "#595557",
+        "secondaryColors": [
+            "#614b32",
+            "#3c3b42"
+        ]
     },
     {
         "name": "Club",
-        "image": "Weapons/Club.webp",
-        "primaryColor": "#5e482d",
-        "secondaryColors": [
-            "#483621",
-            "#312616"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Club"
+        "image": "Weapons/Club.png",
+        "primaryColor": "#876d4e",
+        "secondaryColors": [
+            "#6c5c47",
+            "#5f4a34"
+        ]
     },
     {
         "name": "Compound Long Bow",
-        "image": "Weapons/Compound Long Bow.webp",
-        "primaryColor": "#694324",
-        "secondaryColors": [
-            "#503018",
-            "#4d3019"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Compound_Long_Bow"
+        "image": "Weapons/Compound Long Bow.png",
+        "primaryColor": "#885830",
+        "secondaryColors": [
+            "#724727",
+            "#553119"
+        ]
     },
     {
         "name": "Compound Short Bow",
-        "image": "Weapons/Compound Short Bow.webp",
-        "primaryColor": "#63472e",
-        "secondaryColors": [
-            "#4a321d",
-            "#433024"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Compound_Short_Bow"
+        "image": "Weapons/Compound Short Bow.png",
+        "primaryColor": "#6a482d",
+        "secondaryColors": [
+            "#52321c",
+            "#4e311b"
+        ]
     },
     {
         "name": "Crescent Axe",
-        "image": "Weapons/Crescent Axe.webp",
-        "primaryColor": "#98928a",
-        "secondaryColors": [
-            "#65625d",
-            "#635b54"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Crescent_Axe"
+        "image": "Weapons/Crescent Axe.png",
+        "primaryColor": "#97928d",
+        "secondaryColors": [
+            "#59544d",
+            "#554538"
+        ]
     },
     {
         "name": "Dagger",
-        "image": "Weapons/Dagger.webp",
-        "primaryColor": "#9b9693",
-        "secondaryColors": [
-            "#595351",
-            "#684632"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Dagger"
+        "image": "Weapons/Dagger.png",
+        "primaryColor": "#5a534f",
+        "secondaryColors": [
+            "#544f4a",
+            "#644533"
+        ]
     },
     {
         "name": "Demonbrandt",
-        "image": "Weapons/Demonbrandt.webp",
-        "primaryColor": "#c4b7a7",
-        "secondaryColors": [
-            "#b1a28f",
-            "#988771"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Demonbrandt"
+        "image": "Weapons/Demonbrandt.png",
+        "primaryColor": "#d1c7b3",
+        "secondaryColors": [
+            "#b2a48c",
+            "#9f8c6f"
+        ]
     },
     {
         "name": "Dozer Axe",
-        "image": "Weapons/Dozer Axe.webp",
+        "type": "weapons",
+        "image": "Weapons/Dozer Axe.png",
         "primaryColor": "#4f4948",
         "secondaryColors": [
             "#49403e",
             "#413f40"
-        ],
+        ]
+    },
+    {
+        "name": "Dragon Bone Smasher",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Dozer_Axe"
+        "image": "Weapons/Dragon Bone Smasher.png",
+        "primaryColor": "#594e44",
+        "secondaryColors": [
+            "#4d4339",
+            "#43382f"
+        ]
     },
     {
         "name": "Epee Rapier",
-        "image": "Weapons/Epee Rapier.webp",
-        "primaryColor": "#927749",
-        "secondaryColors": [
-            "#634b2a",
-            "#49331c"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Epee_Rapier"
+        "image": "Weapons/Epee Rapier.png",
+        "primaryColor": "#88734f",
+        "secondaryColors": [
+            "#6b5c4b",
+            "#614d2e"
+        ]
     },
     {
         "name": "Estoc",
-        "image": "Weapons/Estoc.webp",
-        "primaryColor": "#60605c",
-        "secondaryColors": [
-            "#5e5e5a",
-            "#5c5c58"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Estoc"
+        "image": "Weapons/Estoc.png",
+        "primaryColor": "#999997",
+        "secondaryColors": [
+            "#555554",
+            "#47423c"
+        ]
+    },
+    {
+        "name": "Falchion",
+        "type": "weapons",
+        "image": "Weapons/Falchion.png",
+        "primaryColor": "#96938d",
+        "secondaryColors": [
+            "#5b5a58",
+            "#534431"
+        ]
     },
     {
         "name": "Flamberge",
-        "image": "Weapons/Flamberge.webp",
-        "primaryColor": "#555351",
-        "secondaryColors": [
-            "#504e4c",
-            "#4d4137"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Flamberge"
+        "image": "Weapons/Flamberge.png",
+        "primaryColor": "#9e9d9b",
+        "secondaryColors": [
+            "#5b5651",
+            "#5f4735"
+        ]
     },
     {
         "name": "Gargoyle Crossbow",
-        "image": "Weapons/Gargoyle Crossbow.webp",
+        "type": "weapons",
+        "image": "Weapons/Gargoyle Crossbow.png",
         "primaryColor": "#59524c",
         "secondaryColors": [
             "#57524e",
             "#584336"
-        ],
+        ]
+    },
+    {
+        "name": "Geri's Stiletto",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Gargoyle_Crossbow"
+        "image": "Weapons/Geri's Stiletto.png",
+        "primaryColor": "#8d6430",
+        "secondaryColors": [
+            "#6c4a23",
+            "#4f3015"
+        ]
     },
     {
         "name": "Great Axe",
-        "image": "Weapons/Great Axe.webp",
-        "primaryColor": "#625e59",
-        "secondaryColors": [
-            "#5d5850",
-            "#4d4338"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Great_Axe"
+        "image": "Weapons/Great Axe.png",
+        "primaryColor": "#97928b",
+        "secondaryColors": [
+            "#555149",
+            "#4f4539"
+        ]
     },
     {
         "name": "Great Club",
-        "image": "Weapons/Great Club.webp",
-        "primaryColor": "#8f6449",
-        "secondaryColors": [
-            "#635043",
-            "#684935"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Great_Club"
+        "image": "Weapons/Great Club.png",
+        "primaryColor": "#926a48",
+        "secondaryColors": [
+            "#62544b",
+            "#6b4a32"
+        ]
     },
     {
-        "name": "Guillotine Axe",
-        "image": "Weapons/Guillotine Axe.webp",
-        "primaryColor": "#5b5650",
-        "secondaryColors": [
-            "#585652",
-            "#49423b"
-        ],
+        "name": "Great Sword",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Guillotine_Axe"
+        "image": "Weapons/Great Sword.png",
+        "primaryColor": "#595856",
+        "secondaryColors": [
+            "#585756",
+            "#47423c"
+        ]
+    },
+    {
+        "name": "Halberd",
+        "type": "weapons",
+        "image": "Weapons/Halberd.png",
+        "primaryColor": "#59544f",
+        "secondaryColors": [
+            "#55524d",
+            "#48423c"
+        ]
+    },
+    {
+        "name": "Hands Of God",
+        "type": "hands",
+        "image": "Weapons/Hands of God.png",
+        "primaryColor": "#a39e99",
+        "secondaryColors": [
+            "#5e5954",
+            "#58462e"
+        ]
     },
     {
         "name": "Heavy Crossbow",
-        "image": "Weapons/Heavy Crossbow.webp",
+        "type": "weapons",
+        "image": "Weapons/Heavy Crossbow.png",
         "primaryColor": "#625a4f",
         "secondaryColors": [
             "#554735",
             "#463729"
-        ],
-        "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Heavy_Crossbow"
+        ]
     },
     {
         "name": "Hiltless",
-        "image": "Weapons/Hiltless.webp",
-        "primaryColor": "#655e5c",
-        "secondaryColors": [
-            "#5c5956",
-            "#644a37"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Hiltless"
+        "image": "Weapons/Hiltless.png",
+        "primaryColor": "#896a4e",
+        "secondaryColors": [
+            "#725a45",
+            "#674c37"
+        ]
     },
     {
         "name": "Insanity Catalyst",
-        "image": "Weapons/Insanity Catalyst.webp",
-        "primaryColor": "#94642b",
-        "secondaryColors": [
-            "#6c614e",
-            "#644a29"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Insanity_Catalyst"
+        "image": "Weapons/Insanity Catalyst.png",
+        "primaryColor": "#a48c5c",
+        "secondaryColors": [
+            "#946828",
+            "#6d644d"
+        ]
     },
     {
         "name": "Iron Knuckles",
-        "image": "Weapons/Iron Knuckles.webp",
-        "primaryColor": "#58524f",
-        "secondaryColors": [
-            "#554337",
-            "#48352a"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Iron_Knuckles"
+        "image": "Weapons/Iron Knuckles.png",
+        "primaryColor": "#896e5c",
+        "secondaryColors": [
+            "#64564c",
+            "#5c4638"
+        ]
     },
     {
         "name": "Istarelle",
-        "image": "Weapons/Istarelle.webp",
-        "primaryColor": "#e8e5dd",
-        "secondaryColors": [
-            "#5f5b55",
-            "#504231"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Istarelle"
+        "image": "Weapons/Istarelle.png",
+        "primaryColor": "#d7d2cc",
+        "secondaryColors": [
+            "#a39e97",
+            "#5b5652"
+        ]
     },
     {
         "name": "Kilij",
-        "image": "Weapons/Kilij.webp",
-        "primaryColor": "#73634c",
-        "secondaryColors": [
-            "#6a5b46",
-            "#564738"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Kilij"
+        "image": "Weapons/Kilij.png",
+        "primaryColor": "#6a4b2f",
+        "secondaryColors": [
+            "#504e4f",
+            "#3d3d41"
+        ]
+    },
+    {
+        "name": "Knight Sword",
+        "type": "weapons",
+        "image": "Weapons/Knight Sword.png",
+        "primaryColor": "#867466",
+        "secondaryColors": [
+            "#685f5e",
+            "#5d4a33"
+        ]
     },
     {
         "name": "Kris Blade",
-        "image": "Weapons/Kris Blade.webp",
-        "primaryColor": "#585957",
-        "secondaryColors": [
-            "#494a49",
-            "#534137"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Kris_Blade"
+        "image": "Weapons/Kris Blade.png",
+        "primaryColor": "#959b9b",
+        "secondaryColors": [
+            "#565956",
+            "#6e4734"
+        ]
+    },
+    {
+        "name": "Large Sword Of Moonlight",
+        "type": "weapons",
+        "image": "Weapons/Large Sword of Moonlight.png",
+        "primaryColor": "#5e9488",
+        "secondaryColors": [
+            "#59847b",
+            "#8b6e59"
+        ]
+    },
+    {
+        "name": "Large Sword Of Searching",
+        "type": "weapons",
+        "image": "Weapons/Large Sword of Searching.png",
+        "primaryColor": "#887765",
+        "secondaryColors": [
+            "#6a5a4e",
+            "#5c4638"
+        ]
     },
     {
         "name": "Lava Bow",
-        "image": "Weapons/Lava Bow.webp",
-        "primaryColor": "#585049",
-        "secondaryColors": [
-            "#413831",
-            "#0000ff"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Lava_Bow"
+        "image": "Weapons/Lava Bow.png",
+        "primaryColor": "#514842",
+        "secondaryColors": [
+            "#4d433c",
+            "#443931"
+        ]
     },
     {
         "name": "Light Crossbow",
-        "image": "Weapons/Light Crossbow.webp",
+        "type": "weapons",
+        "image": "Weapons/Light Crossbow.png",
         "primaryColor": "#886d4f",
         "secondaryColors": [
             "#6c5c4a",
             "#5d4933"
-        ],
-        "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Light_Crossbow"
+        ]
     },
     {
         "name": "Long Bow",
-        "image": "Weapons/Long Bow.webp",
-        "primaryColor": "#86532f",
-        "secondaryColors": [
-            "#744c2f",
-            "#744829"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Long_Bow"
+        "image": "Weapons/Long Bow.png",
+        "primaryColor": "#8b5830",
+        "secondaryColors": [
+            "#704828",
+            "#513420"
+        ]
     },
     {
         "name": "Long Sword",
-        "image": "Weapons/Long Sword.webp",
-        "primaryColor": "#979695",
-        "secondaryColors": [
-            "#5b5753",
-            "#4c4339"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Long_Sword"
+        "image": "Weapons/Long Sword.png",
+        "primaryColor": "#5f5f5a",
+        "secondaryColors": [
+            "#565652",
+            "#4a433a"
+        ]
     },
     {
         "name": "Mace",
-        "image": "Weapons/Mace.webp",
-        "primaryColor": "#5b504b",
-        "secondaryColors": [
-            "#4d413c",
-            "#49413d"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Mace"
+        "image": "Weapons/Mace.png",
+        "primaryColor": "#615d58",
+        "secondaryColors": [
+            "#5a534f",
+            "#4a423c"
+        ]
     },
     {
-        "name": "Magic Sword Makoto",
-        "image": "Weapons/Magic Sword Makoto.webp",
-        "primaryColor": "#8a7865",
-        "secondaryColors": [
-            "#61574d",
-            "#5d544b"
-        ],
+        "name": "Magic Sword 'Makato'",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Magic_Sword_Makoto"
+        "image": "Weapons/Magic Sword 'Makato'.png",
+        "primaryColor": "#9b8971",
+        "secondaryColors": [
+            "#88755f",
+            "#6b5c4d"
+        ]
     },
     {
         "name": "Mail Breaker",
-        "image": "Weapons/Mail Breaker.webp",
-        "primaryColor": "#9b9494",
-        "secondaryColors": [
-            "#5d5657",
-            "#5a5556"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Mail_Breaker"
+        "image": "Weapons/Mail Breaker.png",
+        "primaryColor": "#9b9896",
+        "secondaryColors": [
+            "#55534f",
+            "#43413c"
+        ]
     },
     {
         "name": "Meat Cleaver",
-        "image": "Weapons/Meat Cleaver.webp",
+        "type": "weapons",
+        "image": "Weapons/Meat Cleaver.png",
         "primaryColor": "#514b47",
         "secondaryColors": [
             "#49413d",
             "#433732"
-        ],
-        "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Meat_Cleaver"
+        ]
     },
     {
-        "name": "Mirdan Hammer3",
-        "image": "Weapons/Mirdan Hammer3.webp",
-        "primaryColor": "#55524e",
-        "secondaryColors": [
-            "#52504c",
-            "#42413b"
-        ],
+        "name": "Mirdan Hammer",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Mirdan_Hammer3"
+        "image": "Weapons/Mirdan Hammer.png",
+        "primaryColor": "#9f9992",
+        "secondaryColors": [
+            "#565350",
+            "#46423d"
+        ]
+    },
+    {
+        "name": "Morion Blade",
+        "type": "weapons",
+        "image": "Weapons/Morion Blade.png",
+        "primaryColor": "#999594",
+        "secondaryColors": [
+            "#565351",
+            "#43403e"
+        ]
     },
     {
         "name": "Morning Star",
-        "image": "Weapons/Morning Star.webp",
-        "primaryColor": "#55524e",
-        "secondaryColors": [
-            "#55514c",
-            "#4d423b"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Morning_Star"
+        "image": "Weapons/Morning Star.png",
+        "primaryColor": "#938c85",
+        "secondaryColors": [
+            "#5e5853",
+            "#49423c"
+        ]
+    },
+    {
+        "name": "Needle Of Eternal Agony",
+        "type": "weapons",
+        "image": "Weapons/Needle of Eternal Agony.png",
+        "primaryColor": "#a49b95",
+        "secondaryColors": [
+            "#625750",
+            "#56443a"
+        ]
     },
     {
         "name": "Northern Regalia",
-        "image": "Weapons/Northern Regalia.webp",
-        "primaryColor": "#c8b299",
-        "secondaryColors": [
-            "#b09d88",
-            "#9c8b77"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Northern_Regalia"
+        "image": "Weapons/Northern Regalia.png",
+        "primaryColor": "#d1c7b2",
+        "secondaryColors": [
+            "#c5b9a2",
+            "#afa48f"
+        ]
     },
     {
-        "name": "Penetrating Word",
-        "image": "Weapons/Penetrating Word.webp",
-        "primaryColor": "#989696",
-        "secondaryColors": [
-            "#535050",
-            "#515050"
-        ],
+        "name": "Parrying Dagger",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Penetrating_Word"
+        "image": "Weapons/Parrying Dagger.png",
+        "primaryColor": "#645f58",
+        "secondaryColors": [
+            "#504d48",
+            "#52453b"
+        ]
     },
     {
-        "name": "Phosporescent Pole",
-        "image": "Weapons/Phosporescent Pole.webp",
-        "primaryColor": "#5a5b4f",
-        "secondaryColors": [
-            "#584a33",
-            "#45392a"
-        ],
+        "name": "Penetrating Sword",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Phosporescent_Pole"
+        "image": "Weapons/Penetrating Sword.png",
+        "primaryColor": "#9d9e9d",
+        "secondaryColors": [
+            "#555452",
+            "#42413d"
+        ]
+    },
+    {
+        "name": "Phosphorescent Pole",
+        "type": "weapons",
+        "image": "Weapons/Phosphorescent Pole.png",
+        "primaryColor": "#5b4b2f",
+        "secondaryColors": [
+            "#274c67",
+            "#45361c"
+        ]
     },
     {
         "name": "Pickaxe",
-        "image": "Weapons/Pickaxe.webp",
-        "primaryColor": "#006a6a",
-        "secondaryColors": [
-            "#4c4643",
-            "#4e4239"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Pickaxe"
+        "image": "Weapons/Pickaxe.png",
+        "primaryColor": "#5d524a",
+        "secondaryColors": [
+            "#574637",
+            "#48392c"
+        ]
     },
     {
         "name": "Rapier",
-        "image": "Weapons/Rapier.webp",
-        "primaryColor": "#625a54",
-        "secondaryColors": [
-            "#615a55",
-            "#514439"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Rapier"
+        "image": "Weapons/Rapier.png",
+        "primaryColor": "#867769",
+        "secondaryColors": [
+            "#696058",
+            "#584738"
+        ]
     },
     {
         "name": "Reaper's Scythe",
-        "image": "Weapons/Reaper's Scythe.webp",
-        "primaryColor": "#a3895e",
-        "secondaryColors": [
-            "#8d744d",
-            "#6b4e31"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Reaper%27s_Scythe"
+        "image": "Weapons/Reaper's Scythe.png",
+        "primaryColor": "#a68e64",
+        "secondaryColors": [
+            "#8c724e",
+            "#6c4d33"
+        ]
     },
     {
         "name": "Ritual Blade",
-        "image": "Weapons/Ritual Blade.webp",
-        "primaryColor": "#5f5b52",
-        "secondaryColors": [
-            "#58554c",
-            "#59482f"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Ritual_Blade"
+        "image": "Weapons/Ritual Blade.png",
+        "primaryColor": "#9c9891",
+        "secondaryColors": [
+            "#605a52",
+            "#554532"
+        ]
     },
     {
         "name": "Rune Sword",
-        "image": "Weapons/Rune Sword.webp",
-        "primaryColor": "#684a1e",
-        "secondaryColors": [
-            "#4a3314",
-            "#4d3211"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Rune_Sword"
+        "image": "Weapons/Rune Sword.png",
+        "primaryColor": "#a88c53",
+        "secondaryColors": [
+            "#8d6a31",
+            "#6f5024"
+        ]
     },
     {
-        "name": "Scimitar 1",
-        "image": "Weapons/Scimitar 1.webp",
-        "primaryColor": "#938d8e",
-        "secondaryColors": [
-            "#635f61",
-            "#645d5f"
-        ],
+        "name": "Scimitar",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Scimitar_1"
+        "image": "Weapons/Scimitar.png",
+        "primaryColor": "#938f8c",
+        "secondaryColors": [
+            "#827c78",
+            "#635f5e"
+        ]
     },
     {
-        "name": "Scrapping Spear",
-        "image": "Weapons/Scrapping Spear.webp",
-        "primaryColor": "#565655",
-        "secondaryColors": [
-            "#5c544e",
-            "#514438"
-        ],
+        "name": "Scraping Spear",
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Scrapping_Spear"
+        "image": "Weapons/Scraping Spear.png",
+        "primaryColor": "#a19b95",
+        "secondaryColors": [
+            "#5f5953",
+            "#5c4a34"
+        ]
+    },
+    {
+        "name": "Secret Dagger",
+        "type": "weapons",
+        "image": "Weapons/Secret Dagger.png",
+        "primaryColor": "#998770",
+        "secondaryColors": [
+            "#6a5c4b",
+            "#514639"
+        ]
     },
     {
         "name": "Short Bow",
-        "image": "Weapons/Short Bow.webp",
-        "primaryColor": "#684b30",
-        "secondaryColors": [
-            "#493723",
-            "#4e341e"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Short_Bow"
+        "image": "Weapons/Short Bow.png",
+        "primaryColor": "#9c6c45",
+        "secondaryColors": [
+            "#6c4931",
+            "#4f3523"
+        ]
     },
     {
         "name": "Short Spear",
-        "image": "Weapons/Short Spear.webp",
-        "primaryColor": "#58574e",
-        "secondaryColors": [
-            "#53524b",
-            "#44433c"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Short_Spear"
+        "image": "Weapons/Short Spear.png",
+        "primaryColor": "#989288",
+        "secondaryColors": [
+            "#5b5750",
+            "#47433b"
+        ]
     },
     {
         "name": "Short Sword",
-        "image": "Weapons/Short Sword.webp",
-        "primaryColor": "#565554",
-        "secondaryColors": [
-            "#524e4d",
-            "#5e443b"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Short_Sword"
+        "image": "Weapons/Short Sword.png",
+        "primaryColor": "#9f9d9a",
+        "secondaryColors": [
+            "#56514f",
+            "#55433b"
+        ]
     },
     {
         "name": "Shotel",
-        "image": "Weapons/Shotel.webp",
+        "type": "weapons",
+        "image": "Weapons/Shotel.png",
         "primaryColor": "#615955",
         "secondaryColors": [
             "#5d5956",
             "#564436"
-        ],
-        "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Shotel"
+        ]
     },
     {
         "name": "Silver Catalyst",
-        "image": "Weapons/Silver Catalyst.webp",
-        "primaryColor": "#86786d",
-        "secondaryColors": [
-            "#62564f",
-            "#4e433d"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Silver_Catalyst"
+        "image": "Weapons/Silver Catalyst.png",
+        "primaryColor": "#9d958e",
+        "secondaryColors": [
+            "#615a54",
+            "#4a423c"
+        ]
+    },
+    {
+        "name": "Soulbrandt",
+        "type": "weapons",
+        "image": "Weapons/Soulbrandt.png",
+        "primaryColor": "#989896",
+        "secondaryColors": [
+            "#555854",
+            "#404d3d"
+        ]
     },
     {
         "name": "Spiral Rapier",
-        "image": "Weapons/Spiral Rapier.webp",
-        "primaryColor": "#504f4d",
-        "secondaryColors": [
-            "#4c4b4b",
-            "#45413b"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Spiral_Rapier"
+        "image": "Weapons/Spiral Rapier.png",
+        "primaryColor": "#9a9994",
+        "secondaryColors": [
+            "#625f5a",
+            "#584736"
+        ]
     },
     {
         "name": "Storm Ruler",
-        "image": "Weapons/Storm Ruler.webp",
-        "primaryColor": "#867261",
-        "secondaryColors": [
-            "#59534b",
-            "#4d443a"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Storm_Ruler"
+        "image": "Weapons/Storm Ruler.png",
+        "primaryColor": "#a29892",
+        "secondaryColors": [
+            "#5b5550",
+            "#51443b"
+        ]
+    },
+    {
+        "name": "Talisman Of Beasts",
+        "type": "weapons",
+        "image": "Weapons/Talisman of Beasts.png",
+        "primaryColor": "#625e56",
+        "secondaryColors": [
+            "#524537",
+            "#473726"
+        ]
+    },
+    {
+        "name": "Talisman Of God",
+        "type": "weapons",
+        "image": "Weapons/Talisman of God.png",
+        "primaryColor": "#a09b93",
+        "secondaryColors": [
+            "#655f56",
+            "#4d443b"
+        ]
     },
     {
         "name": "Uchigatana",
-        "image": "Weapons/Uchigatana.webp",
-        "primaryColor": "#d1cfcf",
-        "secondaryColors": [
-            "#9b9998",
-            "#5a5754"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Uchigatana"
+        "image": "Weapons/Uchigatana.png",
+        "primaryColor": "#57504d",
+        "secondaryColors": [
+            "#47423c",
+            "#443b45"
+        ]
     },
     {
         "name": "War Pick",
-        "image": "Weapons/War Pick.webp",
-        "primaryColor": "#5a5753",
-        "secondaryColors": [
-            "#504c49",
-            "#46413e"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/War_Pick"
+        "image": "Weapons/War Pick.png",
+        "primaryColor": "#5b5553",
+        "secondaryColors": [
+            "#524e49",
+            "#534338"
+        ]
     },
     {
         "name": "War Scythe",
-        "image": "Weapons/War Scythe.webp",
-        "primaryColor": "#494646",
-        "secondaryColors": [
-            "#474744",
-            "#464544"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/War_Scythe"
+        "image": "Weapons/War Scythe.png",
+        "primaryColor": "#4c4846",
+        "secondaryColors": [
+            "#47413d",
+            "#433e40"
+        ]
+    },
+    {
+        "name": "White Bow",
+        "type": "weapons",
+        "image": "Weapons/White Bow.png",
+        "primaryColor": "#ada28e",
+        "secondaryColors": [
+            "#968975",
+            "#706250"
+        ]
     },
     {
         "name": "Winged Spear",
-        "image": "Weapons/Winged Spear.webp",
-        "primaryColor": "#5b5652",
-        "secondaryColors": [
-            "#56442c",
-            "#46321b"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Winged_Spear"
+        "image": "Weapons/Winged Spear.png",
+        "primaryColor": "#524f4b",
+        "secondaryColors": [
+            "#514d4a",
+            "#5e482f"
+        ]
     },
     {
         "name": "Wooden Catalyst",
-        "image": "Weapons/Wooden Catalyst.webp",
-        "primaryColor": "#69442b",
-        "secondaryColors": [
-            "#51311b",
-            "#4f301b"
-        ],
         "type": "weapons",
-        "link": "https://demonssouls.fandom.com/wiki/Wooden_Catalyst"
+        "image": "Weapons/Wooden Catalyst.png",
+        "primaryColor": "#8d6b49",
+        "secondaryColors": [
+            "#875832",
+            "#684930"
+        ]
     }
 ]

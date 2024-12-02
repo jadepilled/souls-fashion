@@ -37,6 +37,8 @@ You may alter, adapt, or build upon the source material, as long as attribution 
 <img src="https://i.imgur.com/fAYVJlW.png" width="680" height="100"/>
 </p>
 
+> [ver 1.0.8] - Updated images from Dark Souls 1 and Demon's Souls to used higher-quality, remastered images. Added items from Demon's Souls remake. Working on adding all missing items from Dark Souls 2 & 3. 
+
 > [ver 1.0.7] - Added outfit simulator to all games. Made weapons equippable in mainhand and offhand. Updated localstorage to use game-specific files so that presets and preset names, as well as outfit simulator content, do not carry over between games. 
 
 > [ver 1.0.6] - Outfit simulator is live! Fixed an issue causing drag and drop function to break. Updated item icon names to match corrected names. 
