@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 	<link rel="manifest" href="resources/site.webmanifest">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Elevate your Slayer’s style in Demon’s Souls with souls.fashion. Use this tool to find color-matching armor and weapons, creating a unique look for your character as you conquer Boletaria in style.">
-		<meta property="og:site_name" content="Demon's Souls - Fashion Souls" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
-	<link rel="stylesheet" href="resources/styles.css?v1.0.5">
-		<link rel="icon" type="image/x-icon" href="icon.ico">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicons/icon_16x16.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicons/icon_32x32.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="favicons/icon_48x48.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="favicons/icon_96x96.png">
-		<link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicons/icon_167x167.png"> 
-		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
-		<link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Design perfect color-matching outfits in Elden Ring with souls.fashion. Explore coordinated armor sets, weapons, and accessories for a unique style that suits your Tarnished – the ultimate Elden Ring fashion tool!">
+		<meta property="og:site_name" content="Elden Ring - Fashion Souls" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Spectral"
+    />
+    <link rel="stylesheet" href="resources/styles.css?v1.0.5" />
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="favicons/icon_180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/icon_16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/icon_32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="favicons/icon_48x48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/icon_96x96.png"
+    />
     <title>Demon's Souls - Fashion Souls v1.0.8</title>
-    
-</head>
+  </head>
   <body>
+  <div id="preloader" class="preloader">
+    <img src="favicons/android-chrome-192x192.png" alt="souls.fashion" class="preloader-logo">
+</div>
+
+  <div id="fullScreenNotice" class="full-screen-notice">
+    <div class="notice-content">
+        <p>
+            NOTICE: If the site layout looks strange or images are not loading, please press <strong>ctrl+F5</strong> to re-cache your browser. Alternatively, delete your browser's cache manually and the site should work as expected.
+        </p>
+        <p><span id="dismissNotice" style="color: #ffeb3b; cursor: pointer; text-decoration: underline;">Click here to dismiss this message</span></p>
+    </div>
+</div>
+
     <nav class="navigation">
       <div class="topnav">
         <a class="FashionSouls-nav" href="index">
@@ -155,6 +193,7 @@
         </div>
       </div>
     </div>
+	
     <main class="item-grid" id="itemGrid">
       <p>Loading...</p>
       <!-- Items will be dynamically loaded here -->
@@ -170,7 +209,7 @@
 
     <script src="search_items.js?v1.0.5"></script>
     <script>
-	const gamePrefix = "demonssouls_"; // Unique prefix for LocalStorage handling
+	const gamePrefix = "eldenring_"; // Unique prefix for LocalStorage handling
       const modeToggle = document.getElementById("modeToggle");
       const body = document.body;
       const toggleSearch = document.getElementById("toggleSearch");
@@ -561,6 +600,8 @@
   
   </script>
   
+  
+  
   <script>
   
 // Set up the outfitSlots container as a drop target
@@ -650,10 +691,38 @@ window.onload = function() {
 
 };
 
+//dismiss full-screen notice 
+document.addEventListener("DOMContentLoaded", () => {
+    const fullScreenNotice = document.getElementById('fullScreenNotice');
+    const dismissNotice = document.getElementById('dismissNotice');
+
+    // Check if the notice has already been dismissed
+    if (!localStorage.getItem('noticeDismissed')) {
+        fullScreenNotice.classList.add('show'); // Show the notice if it hasn't been dismissed
+    }
+
+    // Add click event to dismiss the notice
+    dismissNotice.addEventListener('click', () => {
+        fullScreenNotice.classList.remove('show'); // Hide the notice with transition
+        localStorage.setItem('noticeDismissed', 'true'); // Save dismissal to localStorage
+    });
+});
+
+
 window.onresize = adjustPinnedStyles;
 
 
   </script>
+  
+  <script>
+    window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        preloader.style.opacity = "0"; // Fade out effect
+        setTimeout(() => {
+            preloader.style.display = "none"; // Completely hide after fading
+        }, 3000); // Duration of fade effect in milliseconds
+    });
+</script>
   
   </body>
 </html>

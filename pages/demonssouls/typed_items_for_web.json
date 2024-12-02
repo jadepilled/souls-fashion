@@ -1,8 +1,8 @@
 [
     {
         "name": "Ancient King's Breastplate",
-        "type": "chest",
-        "image": "Chest/Ancient King's Breastplate.png",
+        "type": "Chest",
+        "image": "Chest/Ancient King's Breastplate.webp",
         "primaryColor": "#5e5a44",
         "secondaryColors": [
             "#564934",
@@ -11,8 +11,8 @@
     },
     {
         "name": "Barbarian Clothes",
-        "type": "chest",
-        "image": "Chest/Barbarian Clothes.png",
+        "type": "Chest",
+        "image": "Chest/Barbarian Clothes.webp",
         "primaryColor": "#5e5243",
         "secondaryColors": [
             "#5c4531",
@@ -21,8 +21,8 @@
     },
     {
         "name": "Binded Cross",
-        "type": "chest",
-        "image": "Chest/Binded Cross.png",
+        "type": "Chest",
+        "image": "Chest/Binded Cross.webp",
         "primaryColor": "#927555",
         "secondaryColors": [
             "#6e5642",
@@ -31,8 +31,8 @@
     },
     {
         "name": "Blue-Eye Knight Cuirass",
-        "type": "chest",
-        "image": "Chest/Blue-Eye Knight Cuirass.png",
+        "type": "Chest",
+        "image": "Chest/Blue-Eye Knight Cuirass.webp",
         "primaryColor": "#a49d96",
         "secondaryColors": [
             "#615a51",
@@ -41,8 +41,8 @@
     },
     {
         "name": "Boletarian Royalty Clothes",
-        "type": "chest",
-        "image": "Chest/Boletarian Royalty Clothes.png",
+        "type": "Chest",
+        "image": "Chest/Boletarian Royalty Clothes.webp",
         "primaryColor": "#aba18e",
         "secondaryColors": [
             "#988a6f",
@@ -51,8 +51,8 @@
     },
     {
         "name": "Breastplate Of The Piercer",
-        "type": "chest",
-        "image": "Chest/Breastplate of the Piercer.png",
+        "type": "Chest",
+        "image": "Chest/Breastplate of the Piercer.webp",
         "primaryColor": "#5c5650",
         "secondaryColors": [
             "#595248",
@@ -61,8 +61,8 @@
     },
     {
         "name": "Brushwood Armor",
-        "type": "chest",
-        "image": "Chest/Brushwood Armor.png",
+        "type": "Chest",
+        "image": "Chest/Brushwood Armor.webp",
         "primaryColor": "#966d49",
         "secondaryColors": [
             "#4f5d57",
@@ -71,8 +71,8 @@
     },
     {
         "name": "Burrower Armor",
-        "type": "chest",
-        "image": "Chest/Burrower Armor.png",
+        "type": "Chest",
+        "image": "Chest/Burrower Armor.webp",
         "primaryColor": "#9a8a75",
         "secondaryColors": [
             "#685e50",
@@ -81,8 +81,8 @@
     },
     {
         "name": "Chain Mail",
-        "type": "chest",
-        "image": "Chest/Chain Mail.png",
+        "type": "Chest",
+        "image": "Chest/Chain Mail.webp",
         "primaryColor": "#5d544d",
         "secondaryColors": [
             "#4c413c",
@@ -91,8 +91,8 @@
     },
     {
         "name": "Coat Of Plates",
-        "type": "chest",
-        "image": "Chest/Coat of Plates.png",
+        "type": "Chest",
+        "image": "Chest/Coat of Plates.webp",
         "primaryColor": "#99958c",
         "secondaryColors": [
             "#5e5a54",
@@ -101,8 +101,8 @@
     },
     {
         "name": "Dark Silver Armor",
-        "type": "chest",
-        "image": "Chest/Dark Silver Armor.png",
+        "type": "Chest",
+        "image": "Chest/Dark Silver Armor.webp",
         "primaryColor": "#a79f93",
         "secondaryColors": [
             "#655d51",
@@ -111,8 +111,8 @@
     },
     {
         "name": "Dull Gold Armor",
-        "type": "chest",
-        "image": "Chest/Dull Gold Armor.png",
+        "type": "Chest",
+        "image": "Chest/Dull Gold Armor.webp",
         "primaryColor": "#a78a67",
         "secondaryColors": [
             "#8c6f4e",
@@ -121,8 +121,8 @@
     },
     {
         "name": "Fluted Armor",
-        "type": "chest",
-        "image": "Chest/Fluted Armor.png",
+        "type": "Chest",
+        "image": "Chest/Fluted Armor.webp",
         "primaryColor": "#5d534a",
         "secondaryColors": [
             "#5b4536",
@@ -131,8 +131,8 @@
     },
     {
         "name": "Gloom Armor",
-        "type": "chest",
-        "image": "Chest/Gloom Armor.png",
+        "type": "Chest",
+        "image": "Chest/Gloom Armor.webp",
         "primaryColor": "#a39791",
         "secondaryColors": [
             "#625851",
@@ -141,8 +141,8 @@
     },
     {
         "name": "Imperial Spy Clothes",
-        "type": "chest",
-        "image": "Chest/Imperial Spy Clothes.png",
+        "type": "Chest",
+        "image": "Chest/Imperial Spy Clothes.webp",
         "primaryColor": "#958b6e",
         "secondaryColors": [
             "#675f49",
@@ -151,8 +151,8 @@
     },
     {
         "name": "Leather Armor",
-        "type": "chest",
-        "image": "Chest/Leather Armor.png",
+        "type": "Chest",
+        "image": "Chest/Leather Armor.webp",
         "primaryColor": "#605447",
         "secondaryColors": [
             "#504439",
@@ -161,8 +161,8 @@
     },
     {
         "name": "Mirdan Scale Armor",
-        "type": "chest",
-        "image": "Chest/Mirdan Scale Armor.png",
+        "type": "Chest",
+        "image": "Chest/Mirdan Scale Armor.webp",
         "primaryColor": "#a49792",
         "secondaryColors": [
             "#615350",
@@ -171,8 +171,8 @@
     },
     {
         "name": "Official's Clothes",
-        "type": "chest",
-        "image": "Chest/Official's Clothes.png",
+        "type": "Chest",
+        "image": "Chest/Official's Clothes.webp",
         "primaryColor": "#5e4730",
         "secondaryColors": [
             "#49374b",
@@ -181,8 +181,8 @@
     },
     {
         "name": "Old Raggedy Robes",
-        "type": "chest",
-        "image": "Chest/Old Raggedy Robes.png",
+        "type": "Chest",
+        "image": "Chest/Old Raggedy Robes.webp",
         "primaryColor": "#8e6c4a",
         "secondaryColors": [
             "#654e45",
@@ -191,8 +191,8 @@
     },
     {
         "name": "Red-Eye Knight Cuirass",
-        "type": "chest",
-        "image": "Chest/Red-Eye Knight Cuirass.png",
+        "type": "Chest",
+        "image": "Chest/Red-Eye Knight Cuirass.webp",
         "primaryColor": "#a49d96",
         "secondaryColors": [
             "#615a51",
@@ -201,8 +201,8 @@
     },
     {
         "name": "Rogue's Clothes",
-        "type": "chest",
-        "image": "Chest/Rogue's Clothes.png",
+        "type": "Chest",
+        "image": "Chest/Rogue's Clothes.webp",
         "primaryColor": "#8f7148",
         "secondaryColors": [
             "#5f564e",
@@ -211,8 +211,8 @@
     },
     {
         "name": "Saint's Robes",
-        "type": "chest",
-        "image": "Chest/Saint's Robes.png",
+        "type": "Chest",
+        "image": "Chest/Saint's Robes.webp",
         "primaryColor": "#c5b59f",
         "secondaryColors": [
             "#b2a28c",
@@ -221,8 +221,8 @@
     },
     {
         "name": "Shaman's Clothes",
-        "type": "chest",
-        "image": "Chest/Shaman's Clothes.png",
+        "type": "Chest",
+        "image": "Chest/Shaman's Clothes.webp",
         "primaryColor": "#62574a",
         "secondaryColors": [
             "#61462e",
@@ -231,8 +231,8 @@
     },
     {
         "name": "Venerable Sage's Robe",
-        "type": "chest",
-        "image": "Chest/Venerable Sage's Robe.png",
+        "type": "Chest",
+        "image": "Chest/Venerable Sage's Robe.webp",
         "primaryColor": "#615445",
         "secondaryColors": [
             "#514438",
@@ -241,8 +241,8 @@
     },
     {
         "name": "Wizard's Clothes",
-        "type": "chest",
-        "image": "Chest/Wizard's Clothes.png",
+        "type": "Chest",
+        "image": "Chest/Wizard's Clothes.webp",
         "primaryColor": "#60584c",
         "secondaryColors": [
             "#524334",
@@ -251,8 +251,8 @@
     },
     {
         "name": "Ancient King's Gauntlets",
-        "type": "hands",
-        "image": "Hands/Ancient King's Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Ancient King's Gauntlets.webp",
         "primaryColor": "#9b8a64",
         "secondaryColors": [
             "#8a734f",
@@ -261,8 +261,8 @@
     },
     {
         "name": "Barbarian Armbands (Male)",
-        "type": "hands",
-        "image": "Hands/Barbarian Armbands (Male).png",
+        "type": "Hands",
+        "image": "Hands/Barbarian Armbands (Male).webp",
         "primaryColor": "#89725b",
         "secondaryColors": [
             "#685446",
@@ -271,8 +271,8 @@
     },
     {
         "name": "Barbarian Armbands",
-        "type": "hands",
-        "image": "Hands/Barbarian Armbands.png",
+        "type": "Hands",
+        "image": "Hands/Barbarian Armbands.webp",
         "primaryColor": "#876a54",
         "secondaryColors": [
             "#6c5a49",
@@ -281,8 +281,8 @@
     },
     {
         "name": "Binded Gloves (Male)",
-        "type": "hands",
-        "image": "Hands/Binded Gloves (Male).png",
+        "type": "Hands",
+        "image": "Hands/Binded Gloves (Male).webp",
         "primaryColor": "#645647",
         "secondaryColors": [
             "#584737",
@@ -291,8 +291,8 @@
     },
     {
         "name": "Binded Gloves",
-        "type": "hands",
-        "image": "Hands/Binded Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Binded Gloves.webp",
         "primaryColor": "#886f58",
         "secondaryColors": [
             "#6a5748",
@@ -301,8 +301,8 @@
     },
     {
         "name": "Blue-Eye Knight Gauntlets",
-        "type": "hands",
-        "image": "Hands/Blue-Eye Knight Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Blue-Eye Knight Gauntlets.webp",
         "primaryColor": "#a69c95",
         "secondaryColors": [
             "#a28d6d",
@@ -311,8 +311,8 @@
     },
     {
         "name": "Boletarian Royalty Armbands",
-        "type": "hands",
-        "image": "Hands/Boletarian Royalty Armbands.png",
+        "type": "Hands",
+        "image": "Hands/Boletarian Royalty Armbands.webp",
         "primaryColor": "#b1a48c",
         "secondaryColors": [
             "#a08d6a",
@@ -321,8 +321,8 @@
     },
     {
         "name": "Brushwood Gauntlets (Male)",
-        "type": "hands",
-        "image": "Hands/Brushwood Gauntlets (Male).png",
+        "type": "Hands",
+        "image": "Hands/Brushwood Gauntlets (Male).webp",
         "primaryColor": "#ab8d61",
         "secondaryColors": [
             "#93724a",
@@ -331,8 +331,8 @@
     },
     {
         "name": "Brushwood Gauntlets",
-        "type": "hands",
-        "image": "Hands/Brushwood Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Brushwood Gauntlets.webp",
         "primaryColor": "#aa8e62",
         "secondaryColors": [
             "#917149",
@@ -341,8 +341,8 @@
     },
     {
         "name": "Burrower Armbands",
-        "type": "hands",
-        "image": "Hands/Burrower Armbands.png",
+        "type": "Hands",
+        "image": "Hands/Burrower Armbands.webp",
         "primaryColor": "#837368",
         "secondaryColors": [
             "#66584f",
@@ -351,8 +351,8 @@
     },
     {
         "name": "Chain Gloves",
-        "type": "hands",
-        "image": "Hands/Chain Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Chain Gloves.webp",
         "primaryColor": "#847871",
         "secondaryColors": [
             "#635853",
@@ -361,8 +361,8 @@
     },
     {
         "name": "Dark Silver Gauntlets",
-        "type": "hands",
-        "image": "Hands/Dark Silver Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Dark Silver Gauntlets.webp",
         "primaryColor": "#a79f94",
         "secondaryColors": [
             "#8e8577",
@@ -371,8 +371,8 @@
     },
     {
         "name": "Dull Gold Gauntlets",
-        "type": "hands",
-        "image": "Hands/Dull Gold Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Dull Gold Gauntlets.webp",
         "primaryColor": "#a68f62",
         "secondaryColors": [
             "#665b4d",
@@ -381,8 +381,8 @@
     },
     {
         "name": "Fluted Gauntlets (Male)",
-        "type": "hands",
-        "image": "Hands/Fluted Gauntlets (Male).png",
+        "type": "Hands",
+        "image": "Hands/Fluted Gauntlets (Male).webp",
         "primaryColor": "#d8dadd",
         "secondaryColors": [
             "#999ca1",
@@ -391,8 +391,8 @@
     },
     {
         "name": "Fluted Gauntlets",
-        "type": "hands",
-        "image": "Hands/Fluted Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Fluted Gauntlets.webp",
         "primaryColor": "#999591",
         "secondaryColors": [
             "#5e5a55",
@@ -401,8 +401,8 @@
     },
     {
         "name": "Gloom Gauntlets",
-        "type": "hands",
-        "image": "Hands/Gloom Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Gloom Gauntlets.webp",
         "primaryColor": "#a59f98",
         "secondaryColors": [
             "#635c54",
@@ -411,8 +411,8 @@
     },
     {
         "name": "Imperial Spy Gloves",
-        "type": "hands",
-        "image": "Hands/Imperial Spy Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Imperial Spy Gloves.webp",
         "primaryColor": "#887553",
         "secondaryColors": [
             "#67604f",
@@ -421,8 +421,8 @@
     },
     {
         "name": "Leather Gloves (Male)",
-        "type": "hands",
-        "image": "Hands/Leather Gloves (Male).png",
+        "type": "Hands",
+        "image": "Hands/Leather Gloves (Male).webp",
         "primaryColor": "#99948f",
         "secondaryColors": [
             "#5f5652",
@@ -431,8 +431,8 @@
     },
     {
         "name": "Leather Gloves",
-        "type": "hands",
-        "image": "Hands/Leather Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Leather Gloves.webp",
         "primaryColor": "#87684d",
         "secondaryColors": [
             "#695648",
@@ -441,8 +441,8 @@
     },
     {
         "name": "Mirdan Gauntlets (Male)",
-        "type": "hands",
-        "image": "Hands/Mirdan Gauntlets (Male).png",
+        "type": "Hands",
+        "image": "Hands/Mirdan Gauntlets (Male).webp",
         "primaryColor": "#9b9892",
         "secondaryColors": [
             "#635f59",
@@ -451,8 +451,8 @@
     },
     {
         "name": "Mirdan Gauntlets",
-        "type": "hands",
-        "image": "Hands/Mirdan Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Mirdan Gauntlets.webp",
         "primaryColor": "#a19d96",
         "secondaryColors": [
             "#625d55",
@@ -461,8 +461,8 @@
     },
     {
         "name": "Official's Gloves (Male)",
-        "type": "hands",
-        "image": "Hands/Official's Gloves (Male).png",
+        "type": "Hands",
+        "image": "Hands/Official's Gloves (Male).webp",
         "primaryColor": "#896c4f",
         "secondaryColors": [
             "#725c47",
@@ -471,8 +471,8 @@
     },
     {
         "name": "Official's Gloves",
-        "type": "hands",
-        "image": "Hands/Official's Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Official's Gloves.webp",
         "primaryColor": "#847369",
         "secondaryColors": [
             "#6c5a50",
@@ -481,8 +481,8 @@
     },
     {
         "name": "Old Raggedy Gloves",
-        "type": "hands",
-        "image": "Hands/Old Raggedy Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Old Raggedy Gloves.webp",
         "primaryColor": "#5f4942",
         "secondaryColors": [
             "#59423b",
@@ -491,8 +491,8 @@
     },
     {
         "name": "Penetrator's Gauntlets",
-        "type": "hands",
-        "image": "Hands/Penetrator's Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Penetrator's Gauntlets.webp",
         "primaryColor": "#a29a91",
         "secondaryColors": [
             "#635b4e",
@@ -501,8 +501,8 @@
     },
     {
         "name": "Plate Gauntlets",
-        "type": "hands",
-        "image": "Hands/Plate Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Plate Gauntlets.webp",
         "primaryColor": "#d4d4d2",
         "secondaryColors": [
             "#9c9c9a",
@@ -511,8 +511,8 @@
     },
     {
         "name": "Red-Eye Knight Gauntlets",
-        "type": "hands",
-        "image": "Hands/Red-Eye Knight Gauntlets.png",
+        "type": "Hands",
+        "image": "Hands/Red-Eye Knight Gauntlets.webp",
         "primaryColor": "#a79d95",
         "secondaryColors": [
             "#a18c6c",
@@ -521,8 +521,8 @@
     },
     {
         "name": "Rogue's Gloves",
-        "type": "hands",
-        "image": "Hands/Rogue's Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Rogue's Gloves.webp",
         "primaryColor": "#9f9993",
         "secondaryColors": [
             "#675c53",
@@ -531,8 +531,8 @@
     },
     {
         "name": "Saint's Gloves (Male)",
-        "type": "hands",
-        "image": "Hands/Saint's Gloves (Male).png",
+        "type": "Hands",
+        "image": "Hands/Saint's Gloves (Male).webp",
         "primaryColor": "#d1cfc6",
         "secondaryColors": [
             "#c6c4b9",
@@ -541,8 +541,8 @@
     },
     {
         "name": "Saint's Gloves",
-        "type": "hands",
-        "image": "Hands/Saint's Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Saint's Gloves.webp",
         "primaryColor": "#c4b999",
         "secondaryColors": [
             "#aba79a",
@@ -551,8 +551,8 @@
     },
     {
         "name": "Shaman's Armband",
-        "type": "hands",
-        "image": "Hands/Shaman's Armband.png",
+        "type": "Hands",
+        "image": "Hands/Shaman's Armband.webp",
         "primaryColor": "#738587",
         "secondaryColors": [
             "#555d5a",
@@ -561,8 +561,8 @@
     },
     {
         "name": "Venerable Sage Gloves",
-        "type": "hands",
-        "image": "Hands/Venerable Sage Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Venerable Sage Gloves.webp",
         "primaryColor": "#908b84",
         "secondaryColors": [
             "#5b544c",
@@ -571,8 +571,8 @@
     },
     {
         "name": "Wizard's Gloves",
-        "type": "hands",
-        "image": "Hands/Wizard's Gloves.png",
+        "type": "Hands",
+        "image": "Hands/Wizard's Gloves.webp",
         "primaryColor": "#a19c93",
         "secondaryColors": [
             "#62584f",
@@ -581,8 +581,8 @@
     },
     {
         "name": "Assassin's Mask",
-        "type": "head",
-        "image": "Head/Assassin's Mask.png",
+        "type": "Head",
+        "image": "Head/Assassin's Mask.webp",
         "primaryColor": "#5d575d",
         "secondaryColors": [
             "#4c4138",
@@ -591,8 +591,8 @@
     },
     {
         "name": "Binded Hood",
-        "type": "head",
-        "image": "Head/Binded Hood.png",
+        "type": "Head",
+        "image": "Head/Binded Hood.webp",
         "primaryColor": "#857360",
         "secondaryColors": [
             "#6b594a",
@@ -601,8 +601,8 @@
     },
     {
         "name": "Blue-Eye Knight Helm",
-        "type": "head",
-        "image": "Head/Blue-Eye Knight Helm.png",
+        "type": "Head",
+        "image": "Head/Blue-Eye Knight Helm.webp",
         "primaryColor": "#ae9e8f",
         "secondaryColors": [
             "#a38d6d",
@@ -611,8 +611,8 @@
     },
     {
         "name": "Brushwood Helm",
-        "type": "head",
-        "image": "Head/Brushwood Helm.png",
+        "type": "Head",
+        "image": "Head/Brushwood Helm.webp",
         "primaryColor": "#8c6d4b",
         "secondaryColors": [
             "#775d43",
@@ -621,8 +621,8 @@
     },
     {
         "name": "Dark Silver Helmet",
-        "type": "head",
-        "image": "Head/Dark Silver Helmet.png",
+        "type": "Head",
+        "image": "Head/Dark Silver Helmet.webp",
         "primaryColor": "#e2e0db",
         "secondaryColors": [
             "#999590",
@@ -631,8 +631,8 @@
     },
     {
         "name": "Dull Gold Helmet",
-        "type": "head",
-        "image": "Head/Dull Gold Helmet.png",
+        "type": "Head",
+        "image": "Head/Dull Gold Helmet.webp",
         "primaryColor": "#ae8d65",
         "secondaryColors": [
             "#966f4c",
@@ -641,8 +641,8 @@
     },
     {
         "name": "Fluted Helm",
-        "type": "head",
-        "image": "Head/Fluted Helm.png",
+        "type": "Head",
+        "image": "Head/Fluted Helm.webp",
         "primaryColor": "#9a9792",
         "secondaryColors": [
             "#605c56",
@@ -651,8 +651,8 @@
     },
     {
         "name": "Gloom Helm",
-        "type": "head",
-        "image": "Head/Gloom Helm.png",
+        "type": "Head",
+        "image": "Head/Gloom Helm.webp",
         "primaryColor": "#a79e95",
         "secondaryColors": [
             "#625a54",
@@ -661,8 +661,8 @@
     },
     {
         "name": "Gold Mask",
-        "type": "head",
-        "image": "Head/Gold Mask.png",
+        "type": "Head",
+        "image": "Head/Gold Mask.webp",
         "primaryColor": "#a59167",
         "secondaryColors": [
             "#887757",
@@ -671,8 +671,8 @@
     },
     {
         "name": "Imperial Spy Hood",
-        "type": "head",
-        "image": "Head/Imperial Spy Hood.png",
+        "type": "Head",
+        "image": "Head/Imperial Spy Hood.webp",
         "primaryColor": "#4a4e43",
         "secondaryColors": [
             "#4d4835",
@@ -681,8 +681,8 @@
     },
     {
         "name": "Iron Helm",
-        "type": "head",
-        "image": "Head/Iron Helm.png",
+        "type": "Head",
+        "image": "Head/Iron Helm.webp",
         "primaryColor": "#d3d5d8",
         "secondaryColors": [
             "#9b9ca2",
@@ -691,8 +691,8 @@
     },
     {
         "name": "Leather Cap",
-        "type": "head",
-        "image": "Head/Leather Cap.png",
+        "type": "Head",
+        "image": "Head/Leather Cap.webp",
         "primaryColor": "#857350",
         "secondaryColors": [
             "#6f6048",
@@ -701,8 +701,8 @@
     },
     {
         "name": "Mail Coif (Male)",
-        "type": "head",
-        "image": "Head/Mail Coif (Male).png",
+        "type": "Head",
+        "image": "Head/Mail Coif (Male).webp",
         "primaryColor": "#5c5556",
         "secondaryColors": [
             "#5b443a",
@@ -711,8 +711,8 @@
     },
     {
         "name": "Mail Coif",
-        "type": "head",
-        "image": "Head/Mail Coif.png",
+        "type": "Head",
+        "image": "Head/Mail Coif.webp",
         "primaryColor": "#847a74",
         "secondaryColors": [
             "#5c534f",
@@ -721,8 +721,8 @@
     },
     {
         "name": "Mirdan Helmet",
-        "type": "head",
-        "image": "Head/Mirdan Helmet.png",
+        "type": "Head",
+        "image": "Head/Mirdan Helmet.webp",
         "primaryColor": "#a09d95",
         "secondaryColors": [
             "#5e5a52",
@@ -731,8 +731,8 @@
     },
     {
         "name": "Monk's Head Collar",
-        "type": "head",
-        "image": "Head/Monk's Head Collar.png",
+        "type": "Head",
+        "image": "Head/Monk's Head Collar.webp",
         "primaryColor": "#8c6626",
         "secondaryColors": [
             "#6d4c1a",
@@ -741,8 +741,8 @@
     },
     {
         "name": "Official's Cap",
-        "type": "head",
-        "image": "Head/Official's Cap.png",
+        "type": "Head",
+        "image": "Head/Official's Cap.webp",
         "primaryColor": "#8f6f4a",
         "secondaryColors": [
             "#5c5344",
@@ -751,8 +751,8 @@
     },
     {
         "name": "Penetrator's Helmet",
-        "type": "head",
-        "image": "Head/Penetrator's Helmet.png",
+        "type": "Head",
+        "image": "Head/Penetrator's Helmet.webp",
         "primaryColor": "#877b6c",
         "secondaryColors": [
             "#60574c",
@@ -761,8 +761,8 @@
     },
     {
         "name": "Plate Helmet",
-        "type": "head",
-        "image": "Head/Plate Helmet.png",
+        "type": "Head",
+        "image": "Head/Plate Helmet.webp",
         "primaryColor": "#d8d7d6",
         "secondaryColors": [
             "#9e9b99",
@@ -771,8 +771,8 @@
     },
     {
         "name": "Red-Eye Knight Helm",
-        "type": "head",
-        "image": "Head/Red-Eye Knight Helm.png",
+        "type": "Head",
+        "image": "Head/Red-Eye Knight Helm.webp",
         "primaryColor": "#ae9f91",
         "secondaryColors": [
             "#a58e6e",
@@ -781,8 +781,8 @@
     },
     {
         "name": "Silver Coronet",
-        "type": "head",
-        "image": "Head/Silver Coronet.png",
+        "type": "Head",
+        "image": "Head/Silver Coronet.webp",
         "primaryColor": "#a6a195",
         "secondaryColors": [
             "#8d8879",
@@ -791,8 +791,8 @@
     },
     {
         "name": "Three-Cornered Hat",
-        "type": "head",
-        "image": "Head/Three-Cornered Hat.png",
+        "type": "Head",
+        "image": "Head/Three-Cornered Hat.webp",
         "primaryColor": "#4f413a",
         "secondaryColors": [
             "#43352f",
@@ -801,8 +801,8 @@
     },
     {
         "name": "Ancient King's Greaves",
-        "type": "legs",
-        "image": "Legs/Ancient King's Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Ancient King's Greaves.webp",
         "primaryColor": "#686248",
         "secondaryColors": [
             "#594b33",
@@ -811,8 +811,8 @@
     },
     {
         "name": "Barbarian Leggings (Male)",
-        "type": "legs",
-        "image": "Legs/Barbarian Leggings (Male).png",
+        "type": "Legs",
+        "image": "Legs/Barbarian Leggings (Male).webp",
         "primaryColor": "#65544c",
         "secondaryColors": [
             "#564b44",
@@ -821,8 +821,8 @@
     },
     {
         "name": "Barbarian Leggings",
-        "type": "legs",
-        "image": "Legs/Barbarian Leggings.png",
+        "type": "Legs",
+        "image": "Legs/Barbarian Leggings.webp",
         "primaryColor": "#8b6547",
         "secondaryColors": [
             "#6a4931",
@@ -831,8 +831,8 @@
     },
     {
         "name": "Binded Boots (Male)",
-        "type": "legs",
-        "image": "Legs/Binded Boots (Male).png",
+        "type": "Legs",
+        "image": "Legs/Binded Boots (Male).webp",
         "primaryColor": "#695848",
         "secondaryColors": [
             "#5b4735",
@@ -841,8 +841,8 @@
     },
     {
         "name": "Binded Boots",
-        "type": "legs",
-        "image": "Legs/Binded Boots.png",
+        "type": "Legs",
+        "image": "Legs/Binded Boots.webp",
         "primaryColor": "#5d5146",
         "secondaryColors": [
             "#4b4a45",
@@ -851,8 +851,8 @@
     },
     {
         "name": "Black Boots (Male)",
-        "type": "legs",
-        "image": "Legs/Black Boots (Male).png",
+        "type": "Legs",
+        "image": "Legs/Black Boots (Male).webp",
         "primaryColor": "#655346",
         "secondaryColors": [
             "#524237",
@@ -861,8 +861,8 @@
     },
     {
         "name": "Black Boots",
-        "type": "legs",
-        "image": "Legs/Black Boots.png",
+        "type": "Legs",
+        "image": "Legs/Black Boots.webp",
         "primaryColor": "#5e5043",
         "secondaryColors": [
             "#564436",
@@ -871,8 +871,8 @@
     },
     {
         "name": "Blue-Eye Knight Greaves",
-        "type": "legs",
-        "image": "Legs/Blue-Eye Knight Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Blue-Eye Knight Greaves.webp",
         "primaryColor": "#8d6651",
         "secondaryColors": [
             "#6a594c",
@@ -881,8 +881,8 @@
     },
     {
         "name": "Boletarian Royalty Leggings",
-        "type": "legs",
-        "image": "Legs/Boletarian Royalty Leggings.png",
+        "type": "Legs",
+        "image": "Legs/Boletarian Royalty Leggings.webp",
         "primaryColor": "#ada493",
         "secondaryColors": [
             "#978b70",
@@ -891,8 +891,8 @@
     },
     {
         "name": "Brushwood Leggings (Male)",
-        "type": "legs",
-        "image": "Legs/Brushwood Leggings (Male).png",
+        "type": "Legs",
+        "image": "Legs/Brushwood Leggings (Male).webp",
         "primaryColor": "#8e6d48",
         "secondaryColors": [
             "#685949",
@@ -901,8 +901,8 @@
     },
     {
         "name": "Brushwood Leggings",
-        "type": "legs",
-        "image": "Legs/Brushwood Leggings.png",
+        "type": "Legs",
+        "image": "Legs/Brushwood Leggings.webp",
         "primaryColor": "#9c7149",
         "secondaryColors": [
             "#8d5a30",
@@ -911,8 +911,8 @@
     },
     {
         "name": "Burrower Boots",
-        "type": "legs",
-        "image": "Legs/Burrower Boots.png",
+        "type": "Legs",
+        "image": "Legs/Burrower Boots.webp",
         "primaryColor": "#a09a92",
         "secondaryColors": [
             "#5f5851",
@@ -921,8 +921,8 @@
     },
     {
         "name": "Dark Silver Greaves",
-        "type": "legs",
-        "image": "Legs/Dark Silver Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Dark Silver Greaves.webp",
         "primaryColor": "#999797",
         "secondaryColors": [
             "#5e5650",
@@ -931,8 +931,8 @@
     },
     {
         "name": "Dull Gold Leggings",
-        "type": "legs",
-        "image": "Legs/Dull Gold Leggings.png",
+        "type": "Legs",
+        "image": "Legs/Dull Gold Leggings.webp",
         "primaryColor": "#8d642f",
         "secondaryColors": [
             "#5d5346",
@@ -941,8 +941,8 @@
     },
     {
         "name": "Fluted Greaves",
-        "type": "legs",
-        "image": "Legs/Fluted Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Fluted Greaves.webp",
         "primaryColor": "#827b75",
         "secondaryColors": [
             "#5b544d",
@@ -951,8 +951,8 @@
     },
     {
         "name": "Gloom Greaves",
-        "type": "legs",
-        "image": "Legs/Gloom Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Gloom Greaves.webp",
         "primaryColor": "#5f564d",
         "secondaryColors": [
             "#534537",
@@ -961,8 +961,8 @@
     },
     {
         "name": "Hard Leather Boots (Male)",
-        "type": "legs",
-        "image": "Legs/Hard Leather Boots (Male).png",
+        "type": "Legs",
+        "image": "Legs/Hard Leather Boots (Male).webp",
         "primaryColor": "#897662",
         "secondaryColors": [
             "#574f4c",
@@ -971,8 +971,8 @@
     },
     {
         "name": "Hard Leather Boots",
-        "type": "legs",
-        "image": "Legs/Hard Leather Boots.png",
+        "type": "Legs",
+        "image": "Legs/Hard Leather Boots.webp",
         "primaryColor": "#544947",
         "secondaryColors": [
             "#52443a",
@@ -981,8 +981,8 @@
     },
     {
         "name": "Imperial Spy Leggings",
-        "type": "legs",
-        "image": "Legs/Imperial Spy Leggings.png",
+        "type": "Legs",
+        "image": "Legs/Imperial Spy Leggings.webp",
         "primaryColor": "#877246",
         "secondaryColors": [
             "#685c42",
@@ -991,8 +991,8 @@
     },
     {
         "name": "Leather Boots",
-        "type": "legs",
-        "image": "Legs/Leather Boots.png",
+        "type": "Legs",
+        "image": "Legs/Leather Boots.webp",
         "primaryColor": "#625347",
         "secondaryColors": [
             "#544437",
@@ -1001,8 +1001,8 @@
     },
     {
         "name": "Mirdan Leggings (Female)",
-        "type": "legs",
-        "image": "Legs/Mirdan Leggings (Female).png",
+        "type": "Legs",
+        "image": "Legs/Mirdan Leggings (Female).webp",
         "primaryColor": "#847868",
         "secondaryColors": [
             "#675d4a",
@@ -1011,8 +1011,8 @@
     },
     {
         "name": "Mirdan Leggings",
-        "type": "legs",
-        "image": "Legs/Mirdan Leggings.png",
+        "type": "Legs",
+        "image": "Legs/Mirdan Leggings.webp",
         "primaryColor": "#847863",
         "secondaryColors": [
             "#6a604e",
@@ -1021,8 +1021,8 @@
     },
     {
         "name": "Official's Leggings",
-        "type": "legs",
-        "image": "Legs/Official's Leggings.png",
+        "type": "Legs",
+        "image": "Legs/Official's Leggings.webp",
         "primaryColor": "#5c4d49",
         "secondaryColors": [
             "#544636",
@@ -1031,8 +1031,8 @@
     },
     {
         "name": "Old Ragged Boots",
-        "type": "legs",
-        "image": "Legs/Old Ragged Boots.png",
+        "type": "Legs",
+        "image": "Legs/Old Ragged Boots.webp",
         "primaryColor": "#9c8c65",
         "secondaryColors": [
             "#87754f",
@@ -1041,8 +1041,8 @@
     },
     {
         "name": "Penetrator's Greaves",
-        "type": "legs",
-        "image": "Legs/Penetrator's Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Penetrator's Greaves.webp",
         "primaryColor": "#5a534a",
         "secondaryColors": [
             "#4e473a",
@@ -1051,8 +1051,8 @@
     },
     {
         "name": "Plate Greaves (Male)",
-        "type": "legs",
-        "image": "Legs/Plate Greaves (Male).png",
+        "type": "Legs",
+        "image": "Legs/Plate Greaves (Male).webp",
         "primaryColor": "#898887",
         "secondaryColors": [
             "#5a5548",
@@ -1061,8 +1061,8 @@
     },
     {
         "name": "Plate Greaves",
-        "type": "legs",
-        "image": "Legs/Plate Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Plate Greaves.webp",
         "primaryColor": "#5c584a",
         "secondaryColors": [
             "#514e35",
@@ -1071,8 +1071,8 @@
     },
     {
         "name": "Red-Eye Knight Greaves",
-        "type": "legs",
-        "image": "Legs/Red-Eye Knight Greaves.png",
+        "type": "Legs",
+        "image": "Legs/Red-Eye Knight Greaves.webp",
         "primaryColor": "#8d6751",
         "secondaryColors": [
             "#69594b",
@@ -1081,8 +1081,8 @@
     },
     {
         "name": "Rogue's Boots",
-        "type": "legs",
-        "image": "Legs/Rogue's Boots.png",
+        "type": "Legs",
+        "image": "Legs/Rogue's Boots.webp",
         "primaryColor": "#8c786b",
         "secondaryColors": [
             "#5d544d",
@@ -1091,8 +1091,8 @@
     },
     {
         "name": "Saint's Boots (Male)",
-        "type": "legs",
-        "image": "Legs/Saint's Boots (Male).png",
+        "type": "Legs",
+        "image": "Legs/Saint's Boots (Male).webp",
         "primaryColor": "#979188",
         "secondaryColors": [
             "#685d50",
@@ -1101,8 +1101,8 @@
     },
     {
         "name": "Saint's Boots",
-        "type": "legs",
-        "image": "Legs/Saint's Boots.png",
+        "type": "Legs",
+        "image": "Legs/Saint's Boots.webp",
         "primaryColor": "#63584a",
         "secondaryColors": [
             "#5c4932",
@@ -1111,8 +1111,8 @@
     },
     {
         "name": "Shaman's Tabi (Male)",
-        "type": "legs",
-        "image": "Legs/Shaman's Tabi (Male).png",
+        "type": "Legs",
+        "image": "Legs/Shaman's Tabi (Male).webp",
         "primaryColor": "#866d38",
         "secondaryColors": [
             "#644f2a",
@@ -1121,8 +1121,8 @@
     },
     {
         "name": "Shaman's Tabi",
-        "type": "legs",
-        "image": "Legs/Shaman's Tabi.png",
+        "type": "Legs",
+        "image": "Legs/Shaman's Tabi.webp",
         "primaryColor": "#5d4f34",
         "secondaryColors": [
             "#5e4a2d",
@@ -1131,8 +1131,8 @@
     },
     {
         "name": "Venerable Sage's Boots",
-        "type": "legs",
-        "image": "Legs/Venerable Sage's Boots.png",
+        "type": "Legs",
+        "image": "Legs/Venerable Sage's Boots.webp",
         "primaryColor": "#845c43",
         "secondaryColors": [
             "#715240",
@@ -1141,8 +1141,8 @@
     },
     {
         "name": "Wizard's Shoes",
-        "type": "legs",
-        "image": "Legs/Wizard's Shoes.png",
+        "type": "Legs",
+        "image": "Legs/Wizard's Shoes.webp",
         "primaryColor": "#6e6760",
         "secondaryColors": [
             "#514a44",
@@ -1151,8 +1151,8 @@
     },
     {
         "name": "Adjudicator's Shield",
-        "type": "shields",
-        "image": "Shields/Adjudicator's Shield.png",
+        "type": "Shields",
+        "image": "Shields/Adjudicator's Shield.webp",
         "primaryColor": "#a1a08f",
         "secondaryColors": [
             "#9d8e69",
@@ -1161,8 +1161,8 @@
     },
     {
         "name": "Buckler",
-        "type": "shields",
-        "image": "Shields/Buckler.png",
+        "type": "Shields",
+        "image": "Shields/Buckler.webp",
         "primaryColor": "#9b938f",
         "secondaryColors": [
             "#5e5854",
@@ -1171,8 +1171,8 @@
     },
     {
         "name": "Dark Silver Shield",
-        "type": "shields",
-        "image": "Shields/Dark Silver Shield.png",
+        "type": "Shields",
+        "image": "Shields/Dark Silver Shield.webp",
         "primaryColor": "#dadad8",
         "secondaryColors": [
             "#9c9d99",
@@ -1181,8 +1181,8 @@
     },
     {
         "name": "Heater Shield",
-        "type": "shields",
-        "image": "Shields/Heater Shield.png",
+        "type": "Shields",
+        "image": "Shields/Heater Shield.webp",
         "primaryColor": "#9c968f",
         "secondaryColors": [
             "#8a837b",
@@ -1191,8 +1191,8 @@
     },
     {
         "name": "Hoplite Shield",
-        "type": "shields",
-        "image": "Shields/Hoplite Shield.png",
+        "type": "Shields",
+        "image": "Shields/Hoplite Shield.webp",
         "primaryColor": "#a99f8e",
         "secondaryColors": [
             "#a0896d",
@@ -1201,8 +1201,8 @@
     },
     {
         "name": "Kite Shield",
-        "type": "shields",
-        "image": "Shields/Kite Shield.png",
+        "type": "Shields",
+        "image": "Shields/Kite Shield.webp",
         "primaryColor": "#8a6822",
         "secondaryColors": [
             "#59534c",
@@ -1211,8 +1211,8 @@
     },
     {
         "name": "Knight's Shield",
-        "type": "shields",
-        "image": "Shields/Knight's Shield.png",
+        "type": "Shields",
+        "image": "Shields/Knight's Shield.webp",
         "primaryColor": "#a38d6c",
         "secondaryColors": [
             "#8c7353",
@@ -1221,8 +1221,8 @@
     },
     {
         "name": "Large Brushwood Shield",
-        "type": "shields",
-        "image": "Shields/Large Brushwood Shield.png",
+        "type": "Shields",
+        "image": "Shields/Large Brushwood Shield.webp",
         "primaryColor": "#8a735a",
         "secondaryColors": [
             "#665e55",
@@ -1231,8 +1231,8 @@
     },
     {
         "name": "Leather Shield",
-        "type": "shields",
-        "image": "Shields/Leather Shield.png",
+        "type": "Shields",
+        "image": "Shields/Leather Shield.webp",
         "primaryColor": "#a28b6c",
         "secondaryColors": [
             "#886d5b",
@@ -1241,8 +1241,8 @@
     },
     {
         "name": "Purple Flame Shield",
-        "type": "shields",
-        "image": "Shields/Purple Flame Shield.png",
+        "type": "Shields",
+        "image": "Shields/Purple Flame Shield.webp",
         "primaryColor": "#c7b29f",
         "secondaryColors": [
             "#b09392",
@@ -1251,8 +1251,8 @@
     },
     {
         "name": "Rune Shield",
-        "type": "shields",
-        "image": "Shields/Rune Shield.png",
+        "type": "Shields",
+        "image": "Shields/Rune Shield.webp",
         "primaryColor": "#aa8b53",
         "secondaryColors": [
             "#8c662b",
@@ -1261,8 +1261,8 @@
     },
     {
         "name": "Slave's Shield",
-        "type": "shields",
-        "image": "Shields/Slave's Shield.png",
+        "type": "Shields",
+        "image": "Shields/Slave's Shield.webp",
         "primaryColor": "#896e4f",
         "secondaryColors": [
             "#69594a",
@@ -1271,8 +1271,8 @@
     },
     {
         "name": "Soldier's Shield",
-        "type": "shields",
-        "image": "Shields/Soldier's Shield.png",
+        "type": "Shields",
+        "image": "Shields/Soldier's Shield.webp",
         "primaryColor": "#aba39b",
         "secondaryColors": [
             "#5a534e",
@@ -1281,8 +1281,8 @@
     },
     {
         "name": "Spiked Shield",
-        "type": "shields",
-        "image": "Shields/Spiked Shield.png",
+        "type": "Shields",
+        "image": "Shields/Spiked Shield.webp",
         "primaryColor": "#a09f97",
         "secondaryColors": [
             "#5b5b55",
@@ -1291,8 +1291,8 @@
     },
     {
         "name": "Steel Shield",
-        "type": "shields",
-        "image": "Shields/Steel Shield.png",
+        "type": "Shields",
+        "image": "Shields/Steel Shield.webp",
         "primaryColor": "#9c9892",
         "secondaryColors": [
             "#5e5852",
@@ -1301,8 +1301,8 @@
     },
     {
         "name": "Tower Shield",
-        "type": "shields",
-        "image": "Shields/Tower Shield.png",
+        "type": "Shields",
+        "image": "Shields/Tower Shield.webp",
         "primaryColor": "#9f9a94",
         "secondaryColors": [
             "#918772",
@@ -1311,8 +1311,8 @@
     },
     {
         "name": "Wooden Small Shield",
-        "type": "shields",
-        "image": "Shields/Wooden Small Shield.png",
+        "type": "Shields",
+        "image": "Shields/Wooden Small Shield.webp",
         "primaryColor": "#9f958d",
         "secondaryColors": [
             "#877569",
@@ -1321,8 +1321,8 @@
     },
     {
         "name": "Baby's Nail",
-        "type": "weapons",
-        "image": "Weapons/Baby's Nail.png",
+        "type": "Weapons",
+        "image": "Weapons/Baby's Nail.webp",
         "primaryColor": "#5f5747",
         "secondaryColors": [
             "#56493a",
@@ -1331,8 +1331,8 @@
     },
     {
         "name": "Bastard Sword",
-        "type": "weapons",
-        "image": "Weapons/Bastard Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Bastard Sword.webp",
         "primaryColor": "#95938d",
         "secondaryColors": [
             "#575350",
@@ -1341,8 +1341,8 @@
     },
     {
         "name": "Battle Axe",
-        "type": "weapons",
-        "image": "Weapons/Battle Axe.png",
+        "type": "Weapons",
+        "image": "Weapons/Battle Axe.webp",
         "primaryColor": "#8c5f36",
         "secondaryColors": [
             "#5d584f",
@@ -1351,8 +1351,8 @@
     },
     {
         "name": "Blind",
-        "type": "weapons",
-        "image": "Weapons/Blind.png",
+        "type": "Weapons",
+        "image": "Weapons/Blind.webp",
         "primaryColor": "#9a9a97",
         "secondaryColors": [
             "#595a59",
@@ -1361,8 +1361,8 @@
     },
     {
         "name": "Blueblood Sword",
-        "type": "weapons",
-        "image": "Weapons/Blueblood Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Blueblood Sword.webp",
         "primaryColor": "#aea295",
         "secondaryColors": [
             "#635b52",
@@ -1371,8 +1371,8 @@
     },
     {
         "name": "Bramd",
-        "type": "weapons",
-        "image": "Weapons/Bramd.png",
+        "type": "Weapons",
+        "image": "Weapons/Bramd.webp",
         "primaryColor": "#88744f",
         "secondaryColors": [
             "#655d4c",
@@ -1381,8 +1381,8 @@
     },
     {
         "name": "Broad Sword",
-        "type": "weapons",
-        "image": "Weapons/Broad Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Broad Sword.webp",
         "primaryColor": "#95928f",
         "secondaryColors": [
             "#5c575b",
@@ -1391,8 +1391,8 @@
     },
     {
         "name": "Broken Sword",
-        "type": "weapons",
-        "image": "Weapons/Broken Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Broken Sword.webp",
         "primaryColor": "#847460",
         "secondaryColors": [
             "#62564a",
@@ -1401,8 +1401,8 @@
     },
     {
         "name": "Claws",
-        "type": "weapons",
-        "image": "Weapons/Claws.png",
+        "type": "Weapons",
+        "image": "Weapons/Claws.webp",
         "primaryColor": "#a19d97",
         "secondaryColors": [
             "#615b53",
@@ -1411,8 +1411,8 @@
     },
     {
         "name": "Claymore",
-        "type": "weapons",
-        "image": "Weapons/Claymore.png",
+        "type": "Weapons",
+        "image": "Weapons/Claymore.webp",
         "primaryColor": "#595557",
         "secondaryColors": [
             "#614b32",
@@ -1421,8 +1421,8 @@
     },
     {
         "name": "Club",
-        "type": "weapons",
-        "image": "Weapons/Club.png",
+        "type": "Weapons",
+        "image": "Weapons/Club.webp",
         "primaryColor": "#876d4e",
         "secondaryColors": [
             "#6c5c47",
@@ -1431,8 +1431,8 @@
     },
     {
         "name": "Compound Long Bow",
-        "type": "weapons",
-        "image": "Weapons/Compound Long Bow.png",
+        "type": "Weapons",
+        "image": "Weapons/Compound Long Bow.webp",
         "primaryColor": "#885830",
         "secondaryColors": [
             "#724727",
@@ -1441,8 +1441,8 @@
     },
     {
         "name": "Compound Short Bow",
-        "type": "weapons",
-        "image": "Weapons/Compound Short Bow.png",
+        "type": "Weapons",
+        "image": "Weapons/Compound Short Bow.webp",
         "primaryColor": "#6a482d",
         "secondaryColors": [
             "#52321c",
@@ -1451,8 +1451,8 @@
     },
     {
         "name": "Crescent Axe",
-        "type": "weapons",
-        "image": "Weapons/Crescent Axe.png",
+        "type": "Weapons",
+        "image": "Weapons/Crescent Axe.webp",
         "primaryColor": "#97928d",
         "secondaryColors": [
             "#59544d",
@@ -1461,8 +1461,8 @@
     },
     {
         "name": "Dagger",
-        "type": "weapons",
-        "image": "Weapons/Dagger.png",
+        "type": "Weapons",
+        "image": "Weapons/Dagger.webp",
         "primaryColor": "#5a534f",
         "secondaryColors": [
             "#544f4a",
@@ -1471,8 +1471,8 @@
     },
     {
         "name": "Demonbrandt",
-        "type": "weapons",
-        "image": "Weapons/Demonbrandt.png",
+        "type": "Weapons",
+        "image": "Weapons/Demonbrandt.webp",
         "primaryColor": "#d1c7b3",
         "secondaryColors": [
             "#b2a48c",
@@ -1481,8 +1481,8 @@
     },
     {
         "name": "Dozer Axe",
-        "type": "weapons",
-        "image": "Weapons/Dozer Axe.png",
+        "type": "Weapons",
+        "image": "Weapons/Dozer Axe.webp",
         "primaryColor": "#4f4948",
         "secondaryColors": [
             "#49403e",
@@ -1491,8 +1491,8 @@
     },
     {
         "name": "Dragon Bone Smasher",
-        "type": "weapons",
-        "image": "Weapons/Dragon Bone Smasher.png",
+        "type": "Weapons",
+        "image": "Weapons/Dragon Bone Smasher.webp",
         "primaryColor": "#594e44",
         "secondaryColors": [
             "#4d4339",
@@ -1501,8 +1501,8 @@
     },
     {
         "name": "Epee Rapier",
-        "type": "weapons",
-        "image": "Weapons/Epee Rapier.png",
+        "type": "Weapons",
+        "image": "Weapons/Epee Rapier.webp",
         "primaryColor": "#88734f",
         "secondaryColors": [
             "#6b5c4b",
@@ -1511,8 +1511,8 @@
     },
     {
         "name": "Estoc",
-        "type": "weapons",
-        "image": "Weapons/Estoc.png",
+        "type": "Weapons",
+        "image": "Weapons/Estoc.webp",
         "primaryColor": "#999997",
         "secondaryColors": [
             "#555554",
@@ -1521,8 +1521,8 @@
     },
     {
         "name": "Falchion",
-        "type": "weapons",
-        "image": "Weapons/Falchion.png",
+        "type": "Weapons",
+        "image": "Weapons/Falchion.webp",
         "primaryColor": "#96938d",
         "secondaryColors": [
             "#5b5a58",
@@ -1531,8 +1531,8 @@
     },
     {
         "name": "Flamberge",
-        "type": "weapons",
-        "image": "Weapons/Flamberge.png",
+        "type": "Weapons",
+        "image": "Weapons/Flamberge.webp",
         "primaryColor": "#9e9d9b",
         "secondaryColors": [
             "#5b5651",
@@ -1541,8 +1541,8 @@
     },
     {
         "name": "Gargoyle Crossbow",
-        "type": "weapons",
-        "image": "Weapons/Gargoyle Crossbow.png",
+        "type": "Weapons",
+        "image": "Weapons/Gargoyle Crossbow.webp",
         "primaryColor": "#59524c",
         "secondaryColors": [
             "#57524e",
@@ -1551,8 +1551,8 @@
     },
     {
         "name": "Geri's Stiletto",
-        "type": "weapons",
-        "image": "Weapons/Geri's Stiletto.png",
+        "type": "Weapons",
+        "image": "Weapons/Geri's Stiletto.webp",
         "primaryColor": "#8d6430",
         "secondaryColors": [
             "#6c4a23",
@@ -1561,8 +1561,8 @@
     },
     {
         "name": "Great Axe",
-        "type": "weapons",
-        "image": "Weapons/Great Axe.png",
+        "type": "Weapons",
+        "image": "Weapons/Great Axe.webp",
         "primaryColor": "#97928b",
         "secondaryColors": [
             "#555149",
@@ -1571,8 +1571,8 @@
     },
     {
         "name": "Great Club",
-        "type": "weapons",
-        "image": "Weapons/Great Club.png",
+        "type": "Weapons",
+        "image": "Weapons/Great Club.webp",
         "primaryColor": "#926a48",
         "secondaryColors": [
             "#62544b",
@@ -1581,8 +1581,8 @@
     },
     {
         "name": "Great Sword",
-        "type": "weapons",
-        "image": "Weapons/Great Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Great Sword.webp",
         "primaryColor": "#595856",
         "secondaryColors": [
             "#585756",
@@ -1591,8 +1591,8 @@
     },
     {
         "name": "Halberd",
-        "type": "weapons",
-        "image": "Weapons/Halberd.png",
+        "type": "Weapons",
+        "image": "Weapons/Halberd.webp",
         "primaryColor": "#59544f",
         "secondaryColors": [
             "#55524d",
@@ -1601,8 +1601,8 @@
     },
     {
         "name": "Hands Of God",
-        "type": "hands",
-        "image": "Weapons/Hands of God.png",
+        "type": "Hands",
+        "image": "Weapons/Hands of God.webp",
         "primaryColor": "#a39e99",
         "secondaryColors": [
             "#5e5954",
@@ -1611,8 +1611,8 @@
     },
     {
         "name": "Heavy Crossbow",
-        "type": "weapons",
-        "image": "Weapons/Heavy Crossbow.png",
+        "type": "Weapons",
+        "image": "Weapons/Heavy Crossbow.webp",
         "primaryColor": "#625a4f",
         "secondaryColors": [
             "#554735",
@@ -1621,8 +1621,8 @@
     },
     {
         "name": "Hiltless",
-        "type": "weapons",
-        "image": "Weapons/Hiltless.png",
+        "type": "Weapons",
+        "image": "Weapons/Hiltless.webp",
         "primaryColor": "#896a4e",
         "secondaryColors": [
             "#725a45",
@@ -1631,8 +1631,8 @@
     },
     {
         "name": "Insanity Catalyst",
-        "type": "weapons",
-        "image": "Weapons/Insanity Catalyst.png",
+        "type": "Weapons",
+        "image": "Weapons/Insanity Catalyst.webp",
         "primaryColor": "#a48c5c",
         "secondaryColors": [
             "#946828",
@@ -1641,8 +1641,8 @@
     },
     {
         "name": "Iron Knuckles",
-        "type": "weapons",
-        "image": "Weapons/Iron Knuckles.png",
+        "type": "Weapons",
+        "image": "Weapons/Iron Knuckles.webp",
         "primaryColor": "#896e5c",
         "secondaryColors": [
             "#64564c",
@@ -1651,8 +1651,8 @@
     },
     {
         "name": "Istarelle",
-        "type": "weapons",
-        "image": "Weapons/Istarelle.png",
+        "type": "Weapons",
+        "image": "Weapons/Istarelle.webp",
         "primaryColor": "#d7d2cc",
         "secondaryColors": [
             "#a39e97",
@@ -1661,8 +1661,8 @@
     },
     {
         "name": "Kilij",
-        "type": "weapons",
-        "image": "Weapons/Kilij.png",
+        "type": "Weapons",
+        "image": "Weapons/Kilij.webp",
         "primaryColor": "#6a4b2f",
         "secondaryColors": [
             "#504e4f",
@@ -1671,8 +1671,8 @@
     },
     {
         "name": "Knight Sword",
-        "type": "weapons",
-        "image": "Weapons/Knight Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Knight Sword.webp",
         "primaryColor": "#867466",
         "secondaryColors": [
             "#685f5e",
@@ -1681,8 +1681,8 @@
     },
     {
         "name": "Kris Blade",
-        "type": "weapons",
-        "image": "Weapons/Kris Blade.png",
+        "type": "Weapons",
+        "image": "Weapons/Kris Blade.webp",
         "primaryColor": "#959b9b",
         "secondaryColors": [
             "#565956",
@@ -1691,8 +1691,8 @@
     },
     {
         "name": "Large Sword Of Moonlight",
-        "type": "weapons",
-        "image": "Weapons/Large Sword of Moonlight.png",
+        "type": "Weapons",
+        "image": "Weapons/Large Sword of Moonlight.webp",
         "primaryColor": "#5e9488",
         "secondaryColors": [
             "#59847b",
@@ -1701,8 +1701,8 @@
     },
     {
         "name": "Large Sword Of Searching",
-        "type": "weapons",
-        "image": "Weapons/Large Sword of Searching.png",
+        "type": "Weapons",
+        "image": "Weapons/Large Sword of Searching.webp",
         "primaryColor": "#887765",
         "secondaryColors": [
             "#6a5a4e",
@@ -1711,8 +1711,8 @@
     },
     {
         "name": "Lava Bow",
-        "type": "weapons",
-        "image": "Weapons/Lava Bow.png",
+        "type": "Weapons",
+        "image": "Weapons/Lava Bow.webp",
         "primaryColor": "#514842",
         "secondaryColors": [
             "#4d433c",
@@ -1721,8 +1721,8 @@
     },
     {
         "name": "Light Crossbow",
-        "type": "weapons",
-        "image": "Weapons/Light Crossbow.png",
+        "type": "Weapons",
+        "image": "Weapons/Light Crossbow.webp",
         "primaryColor": "#886d4f",
         "secondaryColors": [
             "#6c5c4a",
@@ -1731,8 +1731,8 @@
     },
     {
         "name": "Long Bow",
-        "type": "weapons",
-        "image": "Weapons/Long Bow.png",
+        "type": "Weapons",
+        "image": "Weapons/Long Bow.webp",
         "primaryColor": "#8b5830",
         "secondaryColors": [
             "#704828",
@@ -1741,8 +1741,8 @@
     },
     {
         "name": "Long Sword",
-        "type": "weapons",
-        "image": "Weapons/Long Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Long Sword.webp",
         "primaryColor": "#5f5f5a",
         "secondaryColors": [
             "#565652",
@@ -1751,8 +1751,8 @@
     },
     {
         "name": "Mace",
-        "type": "weapons",
-        "image": "Weapons/Mace.png",
+        "type": "Weapons",
+        "image": "Weapons/Mace.webp",
         "primaryColor": "#615d58",
         "secondaryColors": [
             "#5a534f",
@@ -1761,8 +1761,8 @@
     },
     {
         "name": "Magic Sword 'Makato'",
-        "type": "weapons",
-        "image": "Weapons/Magic Sword 'Makato'.png",
+        "type": "Weapons",
+        "image": "Weapons/Magic Sword 'Makato'.webp",
         "primaryColor": "#9b8971",
         "secondaryColors": [
             "#88755f",
@@ -1771,8 +1771,8 @@
     },
     {
         "name": "Mail Breaker",
-        "type": "weapons",
-        "image": "Weapons/Mail Breaker.png",
+        "type": "Weapons",
+        "image": "Weapons/Mail Breaker.webp",
         "primaryColor": "#9b9896",
         "secondaryColors": [
             "#55534f",
@@ -1781,8 +1781,8 @@
     },
     {
         "name": "Meat Cleaver",
-        "type": "weapons",
-        "image": "Weapons/Meat Cleaver.png",
+        "type": "Weapons",
+        "image": "Weapons/Meat Cleaver.webp",
         "primaryColor": "#514b47",
         "secondaryColors": [
             "#49413d",
@@ -1791,8 +1791,8 @@
     },
     {
         "name": "Mirdan Hammer",
-        "type": "weapons",
-        "image": "Weapons/Mirdan Hammer.png",
+        "type": "Weapons",
+        "image": "Weapons/Mirdan Hammer.webp",
         "primaryColor": "#9f9992",
         "secondaryColors": [
             "#565350",
@@ -1801,8 +1801,8 @@
     },
     {
         "name": "Morion Blade",
-        "type": "weapons",
-        "image": "Weapons/Morion Blade.png",
+        "type": "Weapons",
+        "image": "Weapons/Morion Blade.webp",
         "primaryColor": "#999594",
         "secondaryColors": [
             "#565351",
@@ -1811,8 +1811,8 @@
     },
     {
         "name": "Morning Star",
-        "type": "weapons",
-        "image": "Weapons/Morning Star.png",
+        "type": "Weapons",
+        "image": "Weapons/Morning Star.webp",
         "primaryColor": "#938c85",
         "secondaryColors": [
             "#5e5853",
@@ -1821,8 +1821,8 @@
     },
     {
         "name": "Needle Of Eternal Agony",
-        "type": "weapons",
-        "image": "Weapons/Needle of Eternal Agony.png",
+        "type": "Weapons",
+        "image": "Weapons/Needle of Eternal Agony.webp",
         "primaryColor": "#a49b95",
         "secondaryColors": [
             "#625750",
@@ -1831,8 +1831,8 @@
     },
     {
         "name": "Northern Regalia",
-        "type": "weapons",
-        "image": "Weapons/Northern Regalia.png",
+        "type": "Weapons",
+        "image": "Weapons/Northern Regalia.webp",
         "primaryColor": "#d1c7b2",
         "secondaryColors": [
             "#c5b9a2",
@@ -1841,8 +1841,8 @@
     },
     {
         "name": "Parrying Dagger",
-        "type": "weapons",
-        "image": "Weapons/Parrying Dagger.png",
+        "type": "Weapons",
+        "image": "Weapons/Parrying Dagger.webp",
         "primaryColor": "#645f58",
         "secondaryColors": [
             "#504d48",
@@ -1851,8 +1851,8 @@
     },
     {
         "name": "Penetrating Sword",
-        "type": "weapons",
-        "image": "Weapons/Penetrating Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Penetrating Sword.webp",
         "primaryColor": "#9d9e9d",
         "secondaryColors": [
             "#555452",
@@ -1861,8 +1861,8 @@
     },
     {
         "name": "Phosphorescent Pole",
-        "type": "weapons",
-        "image": "Weapons/Phosphorescent Pole.png",
+        "type": "Weapons",
+        "image": "Weapons/Phosphorescent Pole.webp",
         "primaryColor": "#5b4b2f",
         "secondaryColors": [
             "#274c67",
@@ -1871,8 +1871,8 @@
     },
     {
         "name": "Pickaxe",
-        "type": "weapons",
-        "image": "Weapons/Pickaxe.png",
+        "type": "Weapons",
+        "image": "Weapons/Pickaxe.webp",
         "primaryColor": "#5d524a",
         "secondaryColors": [
             "#574637",
@@ -1881,8 +1881,8 @@
     },
     {
         "name": "Rapier",
-        "type": "weapons",
-        "image": "Weapons/Rapier.png",
+        "type": "Weapons",
+        "image": "Weapons/Rapier.webp",
         "primaryColor": "#867769",
         "secondaryColors": [
             "#696058",
@@ -1891,8 +1891,8 @@
     },
     {
         "name": "Reaper's Scythe",
-        "type": "weapons",
-        "image": "Weapons/Reaper's Scythe.png",
+        "type": "Weapons",
+        "image": "Weapons/Reaper's Scythe.webp",
         "primaryColor": "#a68e64",
         "secondaryColors": [
             "#8c724e",
@@ -1901,8 +1901,8 @@
     },
     {
         "name": "Ritual Blade",
-        "type": "weapons",
-        "image": "Weapons/Ritual Blade.png",
+        "type": "Weapons",
+        "image": "Weapons/Ritual Blade.webp",
         "primaryColor": "#9c9891",
         "secondaryColors": [
             "#605a52",
@@ -1911,8 +1911,8 @@
     },
     {
         "name": "Rune Sword",
-        "type": "weapons",
-        "image": "Weapons/Rune Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Rune Sword.webp",
         "primaryColor": "#a88c53",
         "secondaryColors": [
             "#8d6a31",
@@ -1921,8 +1921,8 @@
     },
     {
         "name": "Scimitar",
-        "type": "weapons",
-        "image": "Weapons/Scimitar.png",
+        "type": "Weapons",
+        "image": "Weapons/Scimitar.webp",
         "primaryColor": "#938f8c",
         "secondaryColors": [
             "#827c78",
@@ -1931,8 +1931,8 @@
     },
     {
         "name": "Scraping Spear",
-        "type": "weapons",
-        "image": "Weapons/Scraping Spear.png",
+        "type": "Weapons",
+        "image": "Weapons/Scraping Spear.webp",
         "primaryColor": "#a19b95",
         "secondaryColors": [
             "#5f5953",
@@ -1941,8 +1941,8 @@
     },
     {
         "name": "Secret Dagger",
-        "type": "weapons",
-        "image": "Weapons/Secret Dagger.png",
+        "type": "Weapons",
+        "image": "Weapons/Secret Dagger.webp",
         "primaryColor": "#998770",
         "secondaryColors": [
             "#6a5c4b",
@@ -1951,8 +1951,8 @@
     },
     {
         "name": "Short Bow",
-        "type": "weapons",
-        "image": "Weapons/Short Bow.png",
+        "type": "Weapons",
+        "image": "Weapons/Short Bow.webp",
         "primaryColor": "#9c6c45",
         "secondaryColors": [
             "#6c4931",
@@ -1961,8 +1961,8 @@
     },
     {
         "name": "Short Spear",
-        "type": "weapons",
-        "image": "Weapons/Short Spear.png",
+        "type": "Weapons",
+        "image": "Weapons/Short Spear.webp",
         "primaryColor": "#989288",
         "secondaryColors": [
             "#5b5750",
@@ -1971,8 +1971,8 @@
     },
     {
         "name": "Short Sword",
-        "type": "weapons",
-        "image": "Weapons/Short Sword.png",
+        "type": "Weapons",
+        "image": "Weapons/Short Sword.webp",
         "primaryColor": "#9f9d9a",
         "secondaryColors": [
             "#56514f",
@@ -1981,8 +1981,8 @@
     },
     {
         "name": "Shotel",
-        "type": "weapons",
-        "image": "Weapons/Shotel.png",
+        "type": "Weapons",
+        "image": "Weapons/Shotel.webp",
         "primaryColor": "#615955",
         "secondaryColors": [
             "#5d5956",
@@ -1991,8 +1991,8 @@
     },
     {
         "name": "Silver Catalyst",
-        "type": "weapons",
-        "image": "Weapons/Silver Catalyst.png",
+        "type": "Weapons",
+        "image": "Weapons/Silver Catalyst.webp",
         "primaryColor": "#9d958e",
         "secondaryColors": [
             "#615a54",
@@ -2001,8 +2001,8 @@
     },
     {
         "name": "Soulbrandt",
-        "type": "weapons",
-        "image": "Weapons/Soulbrandt.png",
+        "type": "Weapons",
+        "image": "Weapons/Soulbrandt.webp",
         "primaryColor": "#989896",
         "secondaryColors": [
             "#555854",
@@ -2011,8 +2011,8 @@
     },
     {
         "name": "Spiral Rapier",
-        "type": "weapons",
-        "image": "Weapons/Spiral Rapier.png",
+        "type": "Weapons",
+        "image": "Weapons/Spiral Rapier.webp",
         "primaryColor": "#9a9994",
         "secondaryColors": [
             "#625f5a",
@@ -2021,8 +2021,8 @@
     },
     {
         "name": "Storm Ruler",
-        "type": "weapons",
-        "image": "Weapons/Storm Ruler.png",
+        "type": "Weapons",
+        "image": "Weapons/Storm Ruler.webp",
         "primaryColor": "#a29892",
         "secondaryColors": [
             "#5b5550",
@@ -2031,8 +2031,8 @@
     },
     {
         "name": "Talisman Of Beasts",
-        "type": "weapons",
-        "image": "Weapons/Talisman of Beasts.png",
+        "type": "Weapons",
+        "image": "Weapons/Talisman of Beasts.webp",
         "primaryColor": "#625e56",
         "secondaryColors": [
             "#524537",
@@ -2041,8 +2041,8 @@
     },
     {
         "name": "Talisman Of God",
-        "type": "weapons",
-        "image": "Weapons/Talisman of God.png",
+        "type": "Weapons",
+        "image": "Weapons/Talisman of God.webp",
         "primaryColor": "#a09b93",
         "secondaryColors": [
             "#655f56",
@@ -2051,8 +2051,8 @@
     },
     {
         "name": "Uchigatana",
-        "type": "weapons",
-        "image": "Weapons/Uchigatana.png",
+        "type": "Weapons",
+        "image": "Weapons/Uchigatana.webp",
         "primaryColor": "#57504d",
         "secondaryColors": [
             "#47423c",
@@ -2061,8 +2061,8 @@
     },
     {
         "name": "War Pick",
-        "type": "weapons",
-        "image": "Weapons/War Pick.png",
+        "type": "Weapons",
+        "image": "Weapons/War Pick.webp",
         "primaryColor": "#5b5553",
         "secondaryColors": [
             "#524e49",
@@ -2071,8 +2071,8 @@
     },
     {
         "name": "War Scythe",
-        "type": "weapons",
-        "image": "Weapons/War Scythe.png",
+        "type": "Weapons",
+        "image": "Weapons/War Scythe.webp",
         "primaryColor": "#4c4846",
         "secondaryColors": [
             "#47413d",
@@ -2081,8 +2081,8 @@
     },
     {
         "name": "White Bow",
-        "type": "weapons",
-        "image": "Weapons/White Bow.png",
+        "type": "Weapons",
+        "image": "Weapons/White Bow.webp",
         "primaryColor": "#ada28e",
         "secondaryColors": [
             "#968975",
@@ -2091,8 +2091,8 @@
     },
     {
         "name": "Winged Spear",
-        "type": "weapons",
-        "image": "Weapons/Winged Spear.png",
+        "type": "Weapons",
+        "image": "Weapons/Winged Spear.webp",
         "primaryColor": "#524f4b",
         "secondaryColors": [
             "#514d4a",
@@ -2101,8 +2101,8 @@
     },
     {
         "name": "Wooden Catalyst",
-        "type": "weapons",
-        "image": "Weapons/Wooden Catalyst.png",
+        "type": "Weapons",
+        "image": "Weapons/Wooden Catalyst.webp",
         "primaryColor": "#8d6b49",
         "secondaryColors": [
             "#875832",
