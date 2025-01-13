@@ -97,14 +97,12 @@ function calculateWeightedDistance(
     return calculateDistance(inputLAB, secondaryLAB);
   });
 
-  let avgSecondaryDistance =
-    secondaryDistances.reduce((a, b) => a + b, 0) / secondaryDistances.length;
-
-  // Combine primary and secondary distances with weighting
+  
+  let minSecondaryDistance = Math.min(secondaryDistances[0], secondaryDistances[1]);
+  // // Combine primary and secondary distances with weighting
   let combinedDistance =
     (1 - secondaryWeight) * primaryDistance +
-    secondaryWeight * avgSecondaryDistance;
-
+    secondaryWeight * minSecondaryDistance;
   return combinedDistance;
 }
 
