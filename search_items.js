@@ -64,8 +64,8 @@ function hexToLAB(hex) {
 // Function to calculate Euclidean distance between two LAB colors
 function calculateDistance(labA, labB) {
   var Kl = 5.0; // lightness inverse weight. Maybe make this a slider?
-  var K1 = .045;
-  var K2 = .015;
+  var K1 = .048;
+  var K2 = .014;
 
   var deltaL = (labA[0] - labB[0]);
   var deltaA = labA[1] - labB[1];
