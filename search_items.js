@@ -33,38 +33,68 @@ async function fetchItems() {
   }
 }
 
-// Function to convert hex to RGB
-function hexToRgb(hex) {
+// Function to convert hex to LAB
+function hexToLAB(hex) {
   let bigint = parseInt(hex.slice(1), 16);
-  let r = (bigint >> 16) & 255;
-  let g = (bigint >> 8) & 255;
-  let b = bigint & 255;
-  return [r, g, b];
+  let sR = (bigint >> 16) & 255;
+  let sG = (bigint >> 8) & 255;
+  let sB = bigint & 255;
+
+  var r = sR / 255,
+      g = sG / 255,
+      b = sB / 255,
+      x, y, z;
+
+  r = (r > 0.04045) ? Math.pow((r + 0.055) / 1.055, 2.4) : r / 12.92;
+  g = (g > 0.04045) ? Math.pow((g + 0.055) / 1.055, 2.4) : g / 12.92;
+  b = (b > 0.04045) ? Math.pow((b + 0.055) / 1.055, 2.4) : b / 12.92;
+
+  x = (r * 0.4124 + g * 0.3576 + b * 0.1805) / 0.95047;
+  y = (r * 0.2126 + g * 0.7152 + b * 0.0722) / 1.00000;
+  z = (r * 0.0193 + g * 0.1192 + b * 0.9505) / 1.08883;
+
+  x = (x > 0.008856) ? Math.pow(x, 1/3) : (7.787 * x) + 16/116;
+  y = (y > 0.008856) ? Math.pow(y, 1/3) : (7.787 * y) + 16/116;
+  z = (z > 0.008856) ? Math.pow(z, 1/3) : (7.787 * z) + 16/116;
+
+  return [(116 * y) - 16, 500 * (x - y), 200 * (y - z)]
+
 }
 
-// Function to calculate Euclidean distance between two RGB colors
-function calculateDistance(color1, color2) {
-  let rDiff = color1[0] - color2[0];
-  let gDiff = color1[1] - color2[1];
-  let bDiff = color1[2] - color2[2];
-  return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff);
+// Function to calculate Euclidean distance between two LAB colors
+function calculateDistance(labA, labB) {
+  var deltaL = labA[0] - labB[0];
+  var deltaA = labA[1] - labB[1];
+  var deltaB = labA[2] - labB[2];
+  var c1 = Math.sqrt(labA[1] * labA[1] + labA[2] * labA[2]);
+  var c2 = Math.sqrt(labB[1] * labB[1] + labB[2] * labB[2]);
+  var deltaC = c1 - c2;
+  var deltaH = deltaA * deltaA + deltaB * deltaB - deltaC * deltaC;
+  deltaH = deltaH < 0 ? 0 : Math.sqrt(deltaH);
+  var sc = 1.0 + 0.045 * c1;
+  var sh = 1.0 + 0.015 * c1;
+  var deltaLKlsl = deltaL / (1.0);
+  var deltaCkcsc = deltaC / (sc);
+  var deltaHkhsh = deltaH / (sh);
+  var i = deltaLKlsl * deltaLKlsl + deltaCkcsc * deltaCkcsc + deltaHkhsh * deltaHkhsh;
+  return i < 0 ? 0 : Math.sqrt(i);
 }
 
 // Function to calculate weighted color distance
 function calculateWeightedDistance(
-  inputRgb,
+  inputLAB,
   primaryColor,
   secondaryColors,
   secondaryWeight
 ) {
-  let primaryRgb = hexToRgb(primaryColor);
+  let primaryLAB = hexToLAB(primaryColor);
   // Calculate Euclidean distance for primary color
-  let primaryDistance = calculateDistance(inputRgb, primaryRgb);
+  let primaryDistance = calculateDistance(inputLAB, primaryLAB);
 
   // Calculate average distance for secondary colors
   let secondaryDistances = secondaryColors.map(secondaryColor => {
-    let secondaryRgb = hexToRgb(secondaryColor);
-    return calculateDistance(inputRgb, secondaryRgb);
+    let secondaryLAB = hexToLAB(secondaryColor);
+    return calculateDistance(inputLAB, secondaryLAB);
   });
 
   let avgSecondaryDistance =
@@ -81,14 +111,14 @@ function calculateWeightedDistance(
 // Function to find the closest items based on input color, secondary weight, and search query
 function findMatchingItems(inputColor, secondaryWeight, query) {
   const lowerQuery = query.toLowerCase();
-  let inputRgb = hexToRgb(inputColor);
-  console.dir(inputRgb);
+  let inputLAB = hexToLAB(inputColor);
+  console.dir(inputLAB);
 
   let withinThresholdItems = items
     .map(item => {
       // Calculate color distance
       let distance = calculateWeightedDistance(
-        inputRgb,
+        inputLAB,
         item.primaryColor,
         item.secondaryColors,
         secondaryWeight
