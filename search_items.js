@@ -114,7 +114,6 @@ function calculateWeightedDistance(
 function findMatchingItems(inputColor, secondaryWeight, query) {
   const lowerQuery = query.toLowerCase();
   let inputLAB = hexToLAB(inputColor);
-  console.dir(inputLAB);
 
   let withinThresholdItems = items
     .map(item => {
