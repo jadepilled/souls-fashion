@@ -52,14 +52,12 @@ function calculateDistance(color1, color2) {
 
 // Function to calculate weighted color distance
 function calculateWeightedDistance(
-  inputColor,
+  inputRgb,
   primaryColor,
   secondaryColors,
   secondaryWeight
 ) {
   let primaryRgb = hexToRgb(primaryColor);
-  let inputRgb = hexToRgb(inputColor);
-
   // Calculate Euclidean distance for primary color
   let primaryDistance = calculateDistance(inputRgb, primaryRgb);
 
@@ -83,12 +81,14 @@ function calculateWeightedDistance(
 // Function to find the closest items based on input color, secondary weight, and search query
 function findMatchingItems(inputColor, secondaryWeight, query) {
   const lowerQuery = query.toLowerCase();
+  let inputRgb = hexToRgb(inputColor);
+  console.dir(inputRgb);
 
   let withinThresholdItems = items
     .map(item => {
       // Calculate color distance
       let distance = calculateWeightedDistance(
-        inputColor,
+        inputRgb,
         item.primaryColor,
         item.secondaryColors,
         secondaryWeight
