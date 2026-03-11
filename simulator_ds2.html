@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
-	<link rel="stylesheet" href="resources/styles.css?v1.0.7">
-    <title>Dark Souls 2 Outfit Simulator</title>
-	<title>Dark Souls 2 outfit simulator - Fashion Souls v1.0.8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap">
+	<link rel="stylesheet" href="resources/styles.css?v1.0.8">
+    <title>Dark Souls 2 outfit simulator - Fashion Souls v1.0.8</title>
 </head>
 <body>
     <a href="ds2" id="backToMain" class="back-link">← Back to Dark Souls 2 Outfit Selection</a>
@@ -66,62 +67,6 @@
 
 <script>
 	const gamePrefix = "ds2_"; // Unique prefix for LocalStorage handling
-    // Function to edit a preset name
-    function editPresetName(presetNumber) {
-        const presetNameElement = document.getElementById(`presetName${presetNumber}`);
-        
-        // Save the original name in case the user doesn't enter a new one
-        const originalName = presetNameElement.textContent.trim();
-
-        // Clear the text when clicked to edit
-        presetNameElement.textContent = "";
-
-        // Save the updated name when focus is lost
-        presetNameElement.addEventListener("blur", () => {
-            const name = presetNameElement.textContent.trim();
-
-            if (name === "") {
-                // If no new name is provided, revert to the original name
-                presetNameElement.textContent = originalName;
-            } else {
-                // Otherwise, save the new name
-                localStorage.setItem(gamePrefix + `presetName${presetNumber}`, name);
-            }
-        }, { once: true });
-
-        // Save the updated name when the Enter key is pressed
-        presetNameElement.addEventListener("keydown", (event) => {
-            if (event.key === "Enter") {
-                event.preventDefault(); // Prevent newline
-                presetNameElement.blur(); // Trigger blur event to save
-            }
-        });
-    }
-
-    // Function to load preset names from localStorage
-    function loadPresetNames() {
-        for (let i = 1; i <= 5; i++) {
-            const name = localStorage.getItem(gamePrefix + `presetName${i}`) || `Preset ${i}`;
-            document.getElementById(`presetName${i}`).textContent = name;
-        }
-    }
-
-    // Function to clear a preset
-    function clearPreset(presetNumber) {
-        localStorage.removeItem(gamePrefix + `preset${presetNumber}`);
-    }
-
- 
-    // Load preset names and outfit on page load
-    document.addEventListener("DOMContentLoaded", () => {
-        loadPresetNames();
-        loadOutfitFromStorage();
-    });
-</script>
-
-
-
-<script>
     // Function to edit a preset name
     function editPresetName(presetNumber) {
         const presetNameElement = document.getElementById(`presetName${presetNumber}`);
@@ -329,25 +274,6 @@
         loadOutfitFromStorage();
     });
 	
-	//dismiss full-screen notice
-	document.addEventListener("DOMContentLoaded", () => {
-    const fullScreenNotice = document.getElementById('fullScreenNotice');
-    const dismissNotice = document.getElementById('dismissNotice');
-
-    // Check if the notice has already been dismissed
-    if (!localStorage.getItem('noticeDismissed')) {
-        fullScreenNotice.style.display = 'flex'; // Show the notice overlay
-    } else {
-        fullScreenNotice.style.display = 'none'; // Hide it if already dismissed
-    }
-
-    // Add click event to dismiss the notice
-    dismissNotice.addEventListener('click', (event) => {
-        event.preventDefault();
-        fullScreenNotice.style.display = 'none'; // Hide the notice
-        localStorage.setItem('noticeDismissed', 'true'); // Save dismissal to localStorage
-    });
-});
 
 </script>
 

@@ -188,6 +188,8 @@ function createItemCard(item) {
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("image-container");
   const img = document.createElement("img");
+  img.loading = "lazy";
+  img.decoding = "async";
   img.src = `pages/${page}/icons/${item.image}`;
   img.alt = item.name;
   imageContainer.appendChild(img);

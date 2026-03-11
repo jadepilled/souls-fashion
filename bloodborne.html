@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Up your Hunter's style with souls.fashion, the tool for finding color-matching attire and weapons in Bloodborne. Create a striking look as you explore Yharnam and face the nightmarish beasts in fashion.">
 		<meta property="og:site_name" content="Bloodborne - Fashion Souls" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
-	<link rel="stylesheet" href="resources/styles.css?v1.0.5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap">
+	<link rel="stylesheet" href="resources/styles.css?v1.0.8">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicons/icon_16x16.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicons/icon_32x32.png">
@@ -27,7 +29,10 @@
   <div id="fullScreenNotice" class="full-screen-notice">
     <div class="notice-content">
         <p>
-            NOTICE: If the site layout looks strange or images are not loading, please press <strong>ctrl+F5</strong> to re-cache your browser. Alternatively, delete your browser's cache manually and the site should work as expected.
+            Fashion Souls is an open-source community project - if you'd like to encourage its ongoing existence, please consider <a href="https://ko-fi.com/psyopgirl" target="_blank" rel="noopener noreferrer">supporting us</a>!
+        </p>
+        <p>
+            If the site looks strange or doesn't load, press <strong>ctrl + F5</strong> to re-cache your browser. Alternatively, delete your cache manually.
         </p>
         <p><span id="dismissNotice" style="color: #ffeb3b; cursor: pointer; text-decoration: underline;">Click here to dismiss this message</span></p>
     </div>
@@ -180,7 +185,7 @@
       <button class="back-to-top-button">Back to Top</button>
     </footer>
 
-    <script src="search_items.js?v1.0.5"></script>
+    <script src="search_items.js?v1.0.8"></script>
     <script>
 	const gamePrefix = "bloodborne_"; // Unique prefix for LocalStorage handling
       const modeToggle = document.getElementById("modeToggle");
@@ -188,64 +193,51 @@
       const toggleSearch = document.getElementById("toggleSearch");
       const colorPicker = document.getElementById("favcolor");
       const searchInput = document.getElementById("searchInput");
+      const nav = document.querySelector('.navigation');
       
       let navActive = true;
-      let lastTouchY = 0;
       let sidebarActive = false;
+      let scrollRafId = null;
+
+      function isMobileViewport() {
+        return window.matchMedia("(max-width: 1199px)").matches;
+      }
+
+      function setMobileSidebarVisible(visible) {
+        if (!isMobileViewport()) {
+          body.classList.remove("mobile-sidebar-visible");
+          sidebarActive = false;
+          navActive = true;
+          return;
+        }
+
+        body.classList.toggle("mobile-sidebar-visible", visible);
+        sidebarActive = visible;
+        navActive = !visible;
+      }
 
       function showOutfitSidebar() {
-        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
-          document.querySelector(".pinned").style.opacity = "1";
-          document.querySelector(".pinned").style.display = "block";
-
-          // Set margin based on mobile screen
-          document.querySelector(".item-grid").style.marginTop = "0";
-          document.querySelector(".item-grid").style.marginLeft = "8rem";
-          
-          sidebarActive = true;
-          navActive = false;
-        }
+        setMobileSidebarVisible(true);
       }
 
       function hideOutfitSidebar() {
-        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
-          document.querySelector(".pinned").style.opacity = "0";
-          document.querySelector(".pinned").style.display = "none";
-
-          // Set margin based on mobile screen
-          document.querySelector(".item-grid").style.marginTop = "180px";
-          document.querySelector(".item-grid").style.marginLeft = "0";
-          
-          
-          sidebarActive = false;
-          navActive = true;
-        }
+        setMobileSidebarVisible(false);
       }
 
       function showNav() {
-        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
-          if (sidebarActive === false) {
-            nav.classList.remove('hidden-on-scroll');
-
-            document.querySelector(".item-grid").style.marginTop = "0";
-            document.querySelector(".item-grid").style.marginLeft = "0px";
-            sidebarActive = false;
-            navActive = true;
-          }
+        if (isMobileViewport()) {
+          return;
         }
+
+        nav.classList.remove('hidden-on-scroll');
       }
 
       function hideNav() {
-        if (window.matchMedia("(min-width: 0px) and (max-width: 1199px)").matches) {
-          if (sidebarActive === true) {
-            nav.classList.add('hidden-on-scroll');
-
-            document.querySelector(".item-grid").style.marginTop = "0";
-            document.querySelector(".item-grid").style.marginLeft = "70px";
-            sidebarActive = true;
-            navActive = false;
-          }
+        if (isMobileViewport()) {
+          return;
         }
+
+        nav.classList.add('hidden-on-scroll');
       }
 
 
@@ -325,35 +317,10 @@
       });
 
 
-      // Activate effect on scroll attempt (downward or upward for wheel)
-      window.addEventListener("wheel", (event) => {
-        if (event.deltaY > 0 && !sidebarActive) {
-          showOutfitSidebar(); // Scrolling down
-          hideNav();
-        } else if (event.deltaY < 0 && sidebarActive) {
-          hideOutfitSidebar(); // Scrolling up
-          showNav();
-        }
-      });
+      function updateScrollUI() {
+        const scrollY = window.scrollY || window.pageYOffset || 0;
 
-      // Activate effect on touch devices
-      window.addEventListener("touchstart", (event) => {
-        lastTouchY = event.touches[0].clientY; // Track initial touch position
-      });
-      
-      window.addEventListener("touchmove", (event) => {
-        const currentTouchY = event.touches[0].clientY;
-        if (currentTouchY < lastTouchY && !sidebarActive) {
-          showOutfitSidebar(); // Scrolling down
-        } else if (currentTouchY > lastTouchY && sidebarActive) {
-          hideOutfitSidebar(); // Scrolling up
-        }
-        lastTouchY = currentTouchY; // Update last touch position
-      });
-
-      window.addEventListener("scroll", () => {
         if (window.scrollY > 400) {
-          // Adjust this value based on when you want it to appear
           document.querySelector(".back-to-top-button").style.opacity = "1";
           document.querySelector(".back-to-top-button").style.display = "block";
           document.querySelector(".footer").style.opacity = "1";
@@ -362,24 +329,35 @@
           document.querySelector(".back-to-top-button").style.display = "none";
           document.querySelector(".footer").style.opacity = "0";
         }
-      });
-      
-      // JavaScript to toggle the class on scroll
-      let lastScrollTop = 0;
-      const nav = document.querySelector('.navigation');
 
-      window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop && !navActive) {
-          // User is scrolling down
-          hideNav();
-        }
-        else {
-          // User is scrolling up
+        if (isMobileViewport()) {
+          const controlsHeight = nav.offsetHeight || 0;
+          const shouldShowSidebar = scrollY > controlsHeight + 24;
+          setMobileSidebarVisible(shouldShowSidebar);
+        } else {
+          body.classList.remove("mobile-sidebar-visible");
+          sidebarActive = false;
+          navActive = true;
           showNav();
         }
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure scrollTop doesn't go negative
-      });
+      }
+
+      function onScroll() {
+        if (scrollRafId !== null) {
+          return;
+        }
+
+        scrollRafId = requestAnimationFrame(() => {
+          updateScrollUI();
+          scrollRafId = null;
+        });
+      }
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", () => {
+        adjustPinnedStyles();
+        updateScrollUI();
+      }, { passive: true });
 
       document
         .querySelector(".back-to-top-button")
@@ -579,6 +557,11 @@
 function initializeDragAndDrop() {
     const itemGrid = document.getElementById('itemGrid');
     const outfitSlotsContainer = document.getElementById('outfitSlots');
+    const slotElements = outfitSlotsContainer.querySelectorAll('.slot');
+
+    const clearDropTargets = () => {
+        slotElements.forEach(slot => slot.classList.remove('drop-target'));
+    };
 
     // Make each item card draggable
     itemGrid.querySelectorAll('.item-card').forEach(card => {
@@ -588,16 +571,33 @@ function initializeDragAndDrop() {
         card.addEventListener('dragstart', (event) => {
             const itemInfo = card.querySelector('.item-info .title-container a').textContent;
             event.dataTransfer.setData('text/plain', itemInfo);  // Set item name as drag data
+            event.dataTransfer.effectAllowed = 'move';
+            card.classList.add('dragging');
+            document.body.classList.add('is-dragging-item');
+        });
+
+        card.addEventListener('dragend', () => {
+            card.classList.remove('dragging');
+            document.body.classList.remove('is-dragging-item');
+            clearDropTargets();
         });
     });
 
-    // Enable outfitSlots as the drop target
-    outfitSlotsContainer.addEventListener('dragover', (event) => {
-        event.preventDefault();  // Allow item to be dropped
+    slotElements.forEach(slot => {
+        slot.addEventListener('dragover', (event) => {
+            event.preventDefault();  // Allow item to be dropped
+            slot.classList.add('drop-target');
+        });
+
+        slot.addEventListener('dragleave', () => {
+            slot.classList.remove('drop-target');
+        });
     });
 
     outfitSlotsContainer.addEventListener('drop', (event) => {
         event.preventDefault();
+        clearDropTargets();
+        document.body.classList.remove('is-dragging-item');
         const itemName = event.dataTransfer.getData('text/plain');  // Get item name
 
         // Verify that itemName data was successfully retrieved
@@ -606,33 +606,26 @@ function initializeDragAndDrop() {
             return;
         }
         
-        // Find item type from the JSON data
-        fetch(`pages/${page}/typed_items_for_web.json`)
-            .then(response => response.json())
-            .then(jsonData => {
-                const item = jsonData.find(i => i.name === itemName);
+        const item = items.find(i => i.name === itemName);
 
-                if (!item) {
-                    console.error("Item not found in JSON data:", itemName);
-                    return;
-                }
+        if (!item) {
+            console.error("Item not found in loaded item data:", itemName);
+            return;
+        }
 
-                let slotType = `${item.type}Slot`; // Default slot type based on item type
+        let slotType = `${item.type}Slot`; // Default slot type based on item type
 
-				// If the item is of type 'weapons' or 'shields', allow it to go in either slot if available
-				if (item.type === 'weapons' || item.type === 'shields') {
-					const outfitSlots = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
-					const alternateSlot = slotType === 'weaponsSlot' ? 'shieldsSlot' : 'weaponsSlot';
+		// If the item is of type 'weapons' or 'shields', allow it to go in either slot if available
+		if (item.type === 'weapons' || item.type === 'shields') {
+			const outfitSlots = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
+			const alternateSlot = slotType === 'weaponsSlot' ? 'shieldsSlot' : 'weaponsSlot';
 
-					// Assign to the specified slot if empty, otherwise use the alternate slot
-					slotType = outfitSlots[slotType] ? alternateSlot : slotType;
-				}
+			// Assign to the specified slot if empty, otherwise use the alternate slot
+			slotType = outfitSlots[slotType] ? alternateSlot : slotType;
+		}
 
-                
-                // Update the specified slot with the dropped item
-                addItemToSlot(slotType, item);
-            })
-            .catch(error => console.error("Error loading JSON data:", error));
+        // Update the specified slot with the dropped item
+        addItemToSlot(slotType, item);
     });
 }
 
@@ -658,6 +651,7 @@ window.onload = function() {
         initializeItemGrid();
         initializeDragAndDrop();  // Enable drag-and-drop on items
         adjustPinnedStyles();
+        updateScrollUI();
     });
 
 };
@@ -678,8 +672,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem('noticeDismissed', 'true'); // Save dismissal to localStorage
     });
 });
-
-window.onresize = adjustPinnedStyles;
 
 
   </script>

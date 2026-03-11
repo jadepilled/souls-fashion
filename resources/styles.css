@@ -3,6 +3,11 @@
   user-select: none;
 }
 
+img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
 h2 {
   letter-spacing: -0.25rem; /* -4px */
   line-height: 0.5;
@@ -459,6 +464,7 @@ body.light-mode .dropdown .dropbtn {
   vertical-align: middle;
   text-align: center;
   margin-left: 6.5rem;
+  transition: margin-left 0.3s ease;
 }
 
 .item-card {
@@ -473,6 +479,13 @@ body.light-mode .dropdown .dropbtn {
   color: #fff;
   transition: transform 0.3s ease, border-color 0.3s ease;
   border-radius: 0.625rem; /* 10px */
+  touch-action: pan-y;
+}
+
+.item-card.dragging {
+  opacity: 0.75;
+  transform: scale(1.02);
+  border-color: #8c8c8c;
 }
 
 .item-card-simple {
@@ -515,8 +528,15 @@ body.light-mode .item-card-simple {
 }
 
 .item-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+}
+
+.image-container {
+  aspect-ratio: 1 / 1;
 }
 
 .image-container,
@@ -640,6 +660,10 @@ body.light-mode .color-bar div:hover {
   transform: translateY(-50%);
 }
 
+body.is-dragging-item .pinned {
+  box-shadow: 0 0 0.5rem rgba(255, 235, 59, 0.6);
+}
+
 body.light-mode .pinned {
   border: 0.0625rem solid #999; /* 1px */
   background-color: white;
@@ -718,6 +742,12 @@ body.light-mode .pinned {
   z-index: 1001;
   border: 0.0625rem solid #555; /* 1px */
   border-radius: 0.625rem; /* 10px */
+}
+
+.slot.drop-target img,
+.slot.drop-target .placeholder-tile {
+  outline: 0.125rem dashed #ffeb3b;
+  outline-offset: 0.125rem;
 }
 
 .back-to-top-button {
@@ -1109,6 +1139,9 @@ body.light-mode .custom-context-menu ul li:hover {
   .navigation {
     padding-right: 5%;
     padding-left: 5%;
+    position: sticky;
+    max-height: 100dvh;
+    overflow-y: auto;
   }
 
   .topnav-simple {
@@ -1215,6 +1248,10 @@ body.light-mode .custom-context-menu ul li:hover {
     margin-left: 0;
   }
 
+  body.mobile-sidebar-visible .item-grid {
+    margin-left: 4.8rem;
+  }
+
   .item-card {
     width: 40%;
     height: auto;
@@ -1240,10 +1277,18 @@ body.light-mode .custom-context-menu ul li:hover {
   .pinned {
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translate(-120%, -50%);
     opacity: 0;
-    display: none;
-    width: 3.75rem; /* 60px */
+    display: block;
+    width: 4.5rem;
+    max-height: calc(100dvh - 1rem);
+    overflow-y: auto;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  body.mobile-sidebar-visible .pinned {
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 
   .pinned-buttons button {
@@ -1296,7 +1341,12 @@ body.light-mode .custom-context-menu ul li:hover {
   }
 
   .hover-trigger {
-    width: 2rem;
+    width: 4.5rem;
+    pointer-events: none;
+  }
+
+  .hover-trigger .pinned {
+    pointer-events: auto;
   }
 }
 
@@ -1423,11 +1473,21 @@ body.light-mode .custom-context-menu ul li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 3000;
     text-align: center;
+    padding: 1rem;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
+}
+
+.notice-content {
+    max-width: 40rem;
+    line-height: 1.5;
+}
+
+.notice-content a {
+    color: #ffeb3b;
 }
 
 .full-screen-notice.show {
