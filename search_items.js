@@ -1,6 +1,7 @@
 let items = []; // To store items loaded from JSON
 let colorDistanceThreshold = 100; // Default threshold value
 let activeFilters = new Set(); // To track active filters
+let hasNotifiedInitialGridLoad = false;
 
 // Store page name as var
 var url = window.location.href;
@@ -175,6 +176,35 @@ function displayItems(filteredItems) {
     const itemCard = createItemCard(item);
     itemGrid.appendChild(itemCard);
   });
+
+  if (!hasNotifiedInitialGridLoad) {
+    const imageNodes = Array.from(itemGrid.querySelectorAll(".item-card img")).slice(0, 24);
+    if (imageNodes.length === 0) {
+      window.dispatchEvent(new CustomEvent("initial-grid-images-loaded"));
+      hasNotifiedInitialGridLoad = true;
+      return;
+    }
+
+    const imageLoadPromises = imageNodes.map(img => {
+      if (img.complete && img.naturalWidth > 0) {
+        return Promise.resolve();
+      }
+      return new Promise(resolve => {
+        img.addEventListener("load", resolve, { once: true });
+        img.addEventListener("error", resolve, { once: true });
+      });
+    });
+
+    Promise.race([
+      Promise.all(imageLoadPromises),
+      new Promise(resolve => setTimeout(resolve, 2500)),
+    ]).then(() => {
+      if (!hasNotifiedInitialGridLoad) {
+        hasNotifiedInitialGridLoad = true;
+        window.dispatchEvent(new CustomEvent("initial-grid-images-loaded"));
+      }
+    });
+  }
 }
 
 // Function to create item cards with click event for search
@@ -188,6 +218,9 @@ function createItemCard(item) {
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("image-container");
   const img = document.createElement("img");
+  img.loading = "lazy";
+  img.decoding = "async";
+  img.draggable = false;
   img.src = `pages/${page}/icons/${item.image}`;
   img.alt = item.name;
   imageContainer.appendChild(img);
