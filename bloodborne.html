@@ -154,14 +154,17 @@
       </ul>
     </div>
 
+    <div class="grid-zoom-panel" aria-label="Tile zoom control">
+      <div class="grid-zoom-control">
+        <span class="zoom-symbol" aria-hidden="true">−</span>
+        <input type="range" id="gridZoomSlider" min="0" max="3" step="1" value="1" />
+        <span class="zoom-symbol" aria-hidden="true">+</span>
+      </div>
+      <p id="gridZoomValue" class="grid-zoom-value">103.3%</p>
+    </div>
+
     <div class="hover-trigger">
       <div class="pinned">
-          <div class="grid-zoom-control" aria-label="Tile zoom control">
-            <span class="zoom-symbol" aria-hidden="true">−</span>
-            <input type="range" id="gridZoomSlider" min="33.3" max="200" step="0.1" value="100" />
-            <span class="zoom-symbol" aria-hidden="true">+</span>
-          </div>
-          <p id="gridZoomValue" class="grid-zoom-value">100%</p>
         <!-- <div class="tooltip">
           <span class="tooltip-text">
             To commit an item to the outfit simulator, right click an item card and select 'send to outfit simulator'.
@@ -322,10 +325,30 @@
         window.location.href = `simulator_${page}.html`;
       });
 
-      let currentGridScale = 100;
+      const GRID_ZOOM_LEVELS = [80, 103.3, 126.7, 150];
+      let currentGridScale = GRID_ZOOM_LEVELS[1];
+
+      function findClosestGridZoomIndex(value) {
+        const numericValue = Number(value);
+        if (!Number.isFinite(numericValue)) {
+          return 1;
+        }
+
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+        GRID_ZOOM_LEVELS.forEach((zoomLevel, index) => {
+          const distance = Math.abs(zoomLevel - numericValue);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+        return closestIndex;
+      }
 
       function applyGridScale(value, persist = true) {
-        const clampedValue = Math.min(200, Math.max(33.3, Number(value) || 100));
+        const numericValue = Number(value);
+        const clampedValue = Math.min(150, Math.max(80, Number.isFinite(numericValue) ? numericValue : GRID_ZOOM_LEVELS[1]));
         currentGridScale = clampedValue;
         const scaleFactor = clampedValue / 100;
         document.documentElement.style.setProperty("--item-card-scale", scaleFactor.toString());
@@ -333,14 +356,14 @@
         const gridZoomSlider = document.getElementById("gridZoomSlider");
         const gridZoomValue = document.getElementById("gridZoomValue");
         if (gridZoomSlider) {
-          gridZoomSlider.value = clampedValue.toFixed(1);
+          gridZoomSlider.value = String(findClosestGridZoomIndex(clampedValue));
         }
         if (gridZoomValue) {
-          gridZoomValue.textContent = `${Math.round(clampedValue)}%`;
+          gridZoomValue.textContent = `${clampedValue.toFixed(1)}%`;
         }
 
         if (persist) {
-          localStorage.setItem(`${gamePrefix}tileSizeScale`, clampedValue.toString());
+          localStorage.setItem(`${gamePrefix}tileSizeScale`, clampedValue.toFixed(1));
         }
       }
 
@@ -350,11 +373,14 @@
           return;
         }
 
-        const savedValue = Number(localStorage.getItem(`${gamePrefix}tileSizeScale`)) || 100;
-        applyGridScale(savedValue, false);
+        const savedValue = Number(localStorage.getItem(`${gamePrefix}tileSizeScale`));
+        const initialValue = Number.isFinite(savedValue) ? Math.min(150, Math.max(80, savedValue)) : GRID_ZOOM_LEVELS[1];
+        applyGridScale(initialValue, false);
 
         gridZoomSlider.addEventListener("input", (event) => {
-          applyGridScale(event.target.value);
+          const zoomIndex = Number(event.target.value);
+          const zoomValue = GRID_ZOOM_LEVELS[zoomIndex] ?? GRID_ZOOM_LEVELS[1];
+          applyGridScale(zoomValue);
         });
       }
 
@@ -668,11 +694,33 @@ function initializeDragAndDrop() {
             const itemInfo = card.querySelector('.item-info .title-container a').textContent;
             event.dataTransfer.setData('text/plain', itemInfo);  // Set item name as drag data
             event.dataTransfer.effectAllowed = 'move';
+
+            let dragPreview = null;
+            if (!isMobileViewport()) {
+                dragPreview = card.cloneNode(true);
+                dragPreview.classList.add('drag-preview');
+                dragPreview.style.position = 'fixed';
+                dragPreview.style.top = '-9999px';
+                dragPreview.style.left = '-9999px';
+                dragPreview.style.width = `${card.offsetWidth}px`;
+                dragPreview.style.pointerEvents = 'none';
+                dragPreview.style.transform = 'scale(0.6)';
+                dragPreview.style.transformOrigin = 'top left';
+                dragPreview.style.zIndex = '9999';
+                document.body.appendChild(dragPreview);
+                event.dataTransfer.setDragImage(dragPreview, 20, 20);
+            }
+
+            card._dragPreview = dragPreview;
             card.classList.add('dragging');
             document.body.classList.add('is-dragging-item');
         });
 
         card.addEventListener('dragend', () => {
+            if (card._dragPreview) {
+                card._dragPreview.remove();
+                card._dragPreview = null;
+            }
             card.classList.remove('dragging');
             document.body.classList.remove('is-dragging-item');
             clearDropTargets();

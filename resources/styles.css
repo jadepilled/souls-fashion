@@ -420,6 +420,16 @@ body.light-mode .filters-group button.active {
   border-color: #007bff;
 }
 
+.grid-zoom-panel {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(calc(-50% - 15.4rem));
+  width: 6rem;
+  margin: 0.625rem;
+  z-index: 25;
+}
+
 .grid-zoom-control {
   display: flex;
   align-items: center;
@@ -491,6 +501,10 @@ body.light-mode .grid-zoom-control input[type="range"] {
 body.light-mode .grid-zoom-control {
   background-color: rgba(245, 245, 245, 0.95);
   border-color: #bbbbbb;
+}
+
+body.light-mode .grid-zoom-panel {
+  color: #222;
 }
 
 body.light-mode .grid-zoom-control .zoom-symbol,
@@ -1438,6 +1452,7 @@ body.light-mode .custom-context-menu ul li:hover {
     font-size: 0.75rem; /* 12px */
   }
 
+  .grid-zoom-panel,
   .grid-zoom-control,
   .grid-zoom-value {
     display: none;
