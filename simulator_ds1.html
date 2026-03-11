@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
-	<link rel="stylesheet" href="resources/styles.css?v1.0.7">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap">
+	<link rel="stylesheet" href="resources/styles.css?v1.0.9">
     <title>Dark Souls Outfit Simulator</title>
-	<title>Dark Souls outfit simulator - Fashion Souls v1.0.8</title>
+	<title>Dark Souls outfit simulator - Fashion Souls v1.0.9</title>
 </head>
 <body>
     <a href="ds1" id="backToMain" class="back-link">← Back to Dark Souls Outfit Selection</a>
@@ -158,8 +160,10 @@
             const item = outfit[`${slotId}Slot`];
             const card = document.createElement("div");
             card.classList.add("item-card-simple");
+            card.dataset.slotId = `${slotId}Slot`;
 
             if (item) {
+                card.classList.add('equipped-simulator-item');
                 const img = document.createElement("img");
                 img.src = `pages/ds1/icons/${item.image}`;
                 img.alt = item.name;
@@ -210,6 +214,83 @@
                 break;
             }
         }
+
+        initializeSimulatorDragRemoval();
+    }
+
+    function removeSimulatorSlotItem(slotKey) {
+        const outfit = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
+        if (!outfit[slotKey]) {
+            return;
+        }
+
+        delete outfit[slotKey];
+        localStorage.setItem(gamePrefix + 'outfitSlots', JSON.stringify(outfit));
+        loadOutfitFromStorage();
+    }
+
+    function initializeSimulatorDragRemoval() {
+        const simulatorGrid = document.getElementById('outfitSlotsSimulator');
+        if (!simulatorGrid) {
+            return;
+        }
+
+        simulatorGrid.querySelectorAll('.item-card-simple.equipped-simulator-item').forEach((card) => {
+            const slotKey = card.dataset.slotId;
+            if (!slotKey) return;
+
+            card.setAttribute('draggable', 'true');
+
+            if (card.dataset.dragRemoveBound === 'true') {
+                return;
+            }
+            card.dataset.dragRemoveBound = 'true';
+
+            card.addEventListener('dragstart', () => {
+                card.dataset.dragRemoveHandled = 'false';
+            });
+
+            card.addEventListener('drop', () => {
+                card.dataset.dragRemoveHandled = 'true';
+            });
+
+            card.addEventListener('dragend', () => {
+                if (card.dataset.dragRemoveHandled !== 'true') {
+                    removeSimulatorSlotItem(slotKey);
+                }
+            });
+
+            card.addEventListener('touchstart', (event) => {
+                const touch = event.touches[0];
+                if (!touch) return;
+                card.dataset.touchStartX = String(touch.clientX);
+                card.dataset.touchStartY = String(touch.clientY);
+            }, { passive: true });
+
+            card.addEventListener('touchend', (event) => {
+                const touch = event.changedTouches[0];
+                if (!touch) return;
+
+                const startX = Number(card.dataset.touchStartX || touch.clientX);
+                const startY = Number(card.dataset.touchStartY || touch.clientY);
+                const movedDistance = Math.hypot(touch.clientX - startX, touch.clientY - startY);
+                if (movedDistance < 18) {
+                    return;
+                }
+
+                const gridBounds = simulatorGrid.getBoundingClientRect();
+                const endedInsideGrid = (
+                    touch.clientX >= gridBounds.left &&
+                    touch.clientX <= gridBounds.right &&
+                    touch.clientY >= gridBounds.top &&
+                    touch.clientY <= gridBounds.bottom
+                );
+
+                if (!endedInsideGrid) {
+                    removeSimulatorSlotItem(slotKey);
+                }
+            }, { passive: true });
+        });
     }
 
     async function downloadSimulatorImage() {
