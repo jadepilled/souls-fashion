@@ -18,6 +18,8 @@
 	<link rel="icon" href="favicon.ico">
     <title>Fashion Souls v1.0.9</title>
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
         :root {
             --tile-width: 250px;
         }
@@ -69,6 +71,7 @@
             background-color: #333;
             border: 1px solid #555;
             padding: 14px;
+            flex: 0 1 var(--tile-width);
             width: var(--tile-width);
             text-align: center;
             color: #fff;
@@ -109,7 +112,9 @@
             h3 {font-size: 14px;}
             .item-grid {padding: 14px; gap: 14px;}
             .item-card {
+                flex: 0 1 calc((100% - 14px) / 2);
                 width: calc((100% - 14px) / 2);
+                max-width: calc((100% - 14px) / 2);
                 min-width: 0;
                 padding: 10px;
             }
