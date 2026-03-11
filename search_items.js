@@ -190,6 +190,7 @@ function createItemCard(item) {
   const img = document.createElement("img");
   img.loading = "lazy";
   img.decoding = "async";
+  img.draggable = false;
   img.src = `pages/${page}/icons/${item.image}`;
   img.alt = item.name;
   imageContainer.appendChild(img);

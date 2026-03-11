@@ -91,7 +91,12 @@
         <button id="legsFilter">Legs</button>
         <button id="weaponsFilter">Weapons</button>
         <button id="shieldsFilter">Shields</button>
-        <button id="clearFilter">Clear Filters</button>
+                <button id="clearFilter">Clear Filters</button>
+        <div class="tile-size-control">
+          <label for="tileSizeSlider">Tile Size</label>
+          <input type="range" id="tileSizeSlider" min="80" max="130" step="5" value="100" />
+          <p id="tileSizeValue">100%</p>
+        </div>
         <div class="sliders">
           <div class="slider-container">
             <label for="secondaryWeightSlider">
@@ -316,9 +321,35 @@
         window.location.href = `simulator_${page}.html`;
       });
 
+      function initTileSizeControl() {
+        const tileSizeSlider = document.getElementById("tileSizeSlider");
+        const tileSizeValue = document.getElementById("tileSizeValue");
+        if (!tileSizeSlider || !tileSizeValue) {
+          return;
+        }
+
+        const key = `${gamePrefix}tileSizeScale`;
+        const savedValue = Number(localStorage.getItem(key)) || 100;
+        const clampedValue = Math.min(130, Math.max(80, savedValue));
+
+        const applyScale = (value) => {
+          const scale = value / 100;
+          document.documentElement.style.setProperty("--item-card-scale", String(scale));
+          tileSizeValue.textContent = `${value}%`;
+          localStorage.setItem(key, String(value));
+        };
+
+        tileSizeSlider.value = String(clampedValue);
+        applyScale(clampedValue);
+
+        tileSizeSlider.addEventListener("input", (event) => {
+          applyScale(Number(event.target.value));
+        });
+      }
+
 
       function updateScrollUI() {
-        const scrollY = window.scrollY || window.pageYOffset || 0;
+        const scrollY = Math.max(window.scrollY || window.pageYOffset || 0, 0);
 
         if (window.scrollY > 400) {
           document.querySelector(".back-to-top-button").style.opacity = "1";
@@ -332,7 +363,8 @@
 
         if (isMobileViewport()) {
           const controlsHeight = nav.offsetHeight || 0;
-          const shouldShowSidebar = scrollY > controlsHeight + 24;
+          const atTop = scrollY <= 4;
+          const shouldShowSidebar = !atTop && scrollY > controlsHeight + 24;
           setMobileSidebarVisible(shouldShowSidebar);
         } else {
           body.classList.remove("mobile-sidebar-visible");
@@ -413,6 +445,7 @@
     const img = document.createElement("img");
     img.src = `pages/${page}/icons/${item.image}`;
     img.alt = item.name;
+    img.draggable = false;
 
     const name = document.createElement("p");
     name.textContent = item.name;
@@ -652,6 +685,7 @@ window.onload = function() {
         initializeDragAndDrop();  // Enable drag-and-drop on items
         adjustPinnedStyles();
         updateScrollUI();
+        initTileSizeControl();
     });
 
 };
