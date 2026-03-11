@@ -419,30 +419,84 @@ body.light-mode .filters-group button.active {
   border-color: #007bff;
 }
 
-.tile-size-control {
+.grid-zoom-control {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  border: 0.0625rem solid #555;
-  border-radius: 0.375rem;
-  padding: 0.25rem 0.5rem;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-bottom: 0.35rem;
+  padding: 0.35rem 0.3rem;
+  border: 0.0625rem solid #3f3f3f;
+  border-radius: 0.5rem;
+  background-color: rgba(20, 20, 20, 0.92);
 }
 
-.tile-size-control label {
-  font-size: 0.75rem;
+.grid-zoom-control .zoom-symbol {
+  color: #d6d6d6;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
 }
 
-.tile-size-control input[type="range"] {
-  width: 6rem;
-  accent-color: #d6d6d6;
+.grid-zoom-control input[type="range"] {
+  width: 3.2rem;
 }
 
-.tile-size-control p {
-  margin: 0;
-  min-width: 2.25rem;
-  font-size: 0.7rem;
-  text-align: right;
+.grid-zoom-value {
+  margin: 0 0 0.45rem 0;
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 0.68rem;
 }
+
+.slider-container input[type="range"],
+.grid-zoom-control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.275rem;
+  border-radius: 999px;
+  background: #2d2d2d;
+  outline: none;
+  border: 0.0625rem solid #4a4a4a;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb,
+.grid-zoom-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  background: #d9d9d9;
+  border: 0.125rem solid #2f2f2f;
+  cursor: pointer;
+}
+
+.slider-container input[type="range"]::-moz-range-thumb,
+.grid-zoom-control input[type="range"]::-moz-range-thumb {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  background: #d9d9d9;
+  border: 0.125rem solid #2f2f2f;
+  cursor: pointer;
+}
+
+body.light-mode .slider-container input[type="range"],
+body.light-mode .grid-zoom-control input[type="range"] {
+  background: #d8d8d8;
+  border-color: #b8b8b8;
+}
+
+body.light-mode .grid-zoom-control {
+  background-color: rgba(245, 245, 245, 0.95);
+  border-color: #bbbbbb;
+}
+
+body.light-mode .grid-zoom-control .zoom-symbol,
+body.light-mode .grid-zoom-value {
+  color: #222;
+}
+
 
 .dropdown .dropbtn {
   all: unset;
@@ -1353,6 +1407,11 @@ body.light-mode .custom-context-menu ul li:hover {
     font-size: 0.75rem; /* 12px */
   }
 
+  .grid-zoom-control,
+  .grid-zoom-value {
+    display: none;
+  }
+
   .placeholder-tile {
     font-size: 0.45rem;
   }
@@ -1401,15 +1460,6 @@ body.light-mode .custom-context-menu ul li:hover {
     pointer-events: none;
   }
 
-  .tile-size-control {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .tile-size-control input[type="range"] {
-    width: 100%;
-    max-width: 7rem;
-  }
 
   .hover-trigger .pinned {
     pointer-events: auto;

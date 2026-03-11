@@ -3,7 +3,7 @@
   <head>
 	<link rel="manifest" href="resources/site.webmanifest">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="description" content="Design perfect color-matching outfits in Elden Ring with souls.fashion. Explore coordinated armor sets, weapons, and accessories for a unique style that suits your Tarnished – the ultimate Elden Ring fashion tool!">
 		<meta property="og:site_name" content="Elden Ring - Fashion Souls" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,11 +115,6 @@
         <button id="weaponsFilter">Weapons</button>
         <button id="shieldsFilter">Shields</button>
                 <button id="clearFilter">Clear Filters</button>
-        <div class="tile-size-control">
-          <label for="tileSizeSlider">Tile Size</label>
-          <input type="range" id="tileSizeSlider" min="80" max="130" step="5" value="100" />
-          <p id="tileSizeValue">100%</p>
-        </div>
         <div class="sliders">
           <div class="slider-container">
             <label for="secondaryWeightSlider">
@@ -184,6 +179,12 @@
 
     <div class="hover-trigger">
       <div class="pinned">
+          <div class="grid-zoom-control" aria-label="Tile zoom control">
+            <span class="zoom-symbol" aria-hidden="true">−</span>
+            <input type="range" id="gridZoomSlider" min="33.3" max="200" step="0.1" value="100" />
+            <span class="zoom-symbol" aria-hidden="true">+</span>
+          </div>
+          <p id="gridZoomValue" class="grid-zoom-value">100%</p>
         <!-- <div class="tooltip">
           <span class="tooltip-text">
             To commit an item to the outfit simulator, right click an item card and select 'send to outfit simulator'.
@@ -345,30 +346,88 @@
         window.location.href = `simulator_${page}.html`;
       });
 
-      function initTileSizeControl() {
-        const tileSizeSlider = document.getElementById("tileSizeSlider");
-        const tileSizeValue = document.getElementById("tileSizeValue");
-        if (!tileSizeSlider || !tileSizeValue) {
+      let currentGridScale = 100;
+
+      function applyGridScale(value, persist = true) {
+        const clampedValue = Math.min(200, Math.max(33.3, Number(value) || 100));
+        currentGridScale = clampedValue;
+        const scaleFactor = clampedValue / 100;
+        document.documentElement.style.setProperty("--item-card-scale", scaleFactor.toString());
+
+        const gridZoomSlider = document.getElementById("gridZoomSlider");
+        const gridZoomValue = document.getElementById("gridZoomValue");
+        if (gridZoomSlider) {
+          gridZoomSlider.value = clampedValue.toFixed(1);
+        }
+        if (gridZoomValue) {
+          gridZoomValue.textContent = `${Math.round(clampedValue)}%`;
+        }
+
+        if (persist) {
+          localStorage.setItem(`${gamePrefix}tileSizeScale`, clampedValue.toString());
+        }
+      }
+
+      function initGridZoomControl() {
+        const gridZoomSlider = document.getElementById("gridZoomSlider");
+        if (!gridZoomSlider) {
           return;
         }
 
-        const key = `${gamePrefix}tileSizeScale`;
-        const savedValue = Number(localStorage.getItem(key)) || 100;
-        const clampedValue = Math.min(130, Math.max(80, savedValue));
+        const savedValue = Number(localStorage.getItem(`${gamePrefix}tileSizeScale`)) || 100;
+        applyGridScale(savedValue, false);
 
-        const applyScale = (value) => {
-          const scale = value / 100;
-          document.documentElement.style.setProperty("--item-card-scale", String(scale));
-          tileSizeValue.textContent = `${value}%`;
-          localStorage.setItem(key, String(value));
+        gridZoomSlider.addEventListener("input", (event) => {
+          applyGridScale(event.target.value);
+        });
+      }
+
+      function setupPinchZoom() {
+        const itemGridElement = document.getElementById("itemGrid");
+        if (!itemGridElement) {
+          return;
+        }
+
+        let pinchStartDistance = null;
+        let pinchStartScale = currentGridScale;
+
+        const getDistance = (touchA, touchB) => {
+          const dx = touchA.clientX - touchB.clientX;
+          const dy = touchA.clientY - touchB.clientY;
+          return Math.hypot(dx, dy);
         };
 
-        tileSizeSlider.value = String(clampedValue);
-        applyScale(clampedValue);
+        const onTouchStart = (event) => {
+          if (!isMobileViewport() || event.touches.length !== 2) {
+            return;
+          }
 
-        tileSizeSlider.addEventListener("input", (event) => {
-          applyScale(Number(event.target.value));
-        });
+          pinchStartDistance = getDistance(event.touches[0], event.touches[1]);
+          pinchStartScale = currentGridScale;
+          event.preventDefault();
+        };
+
+        const onTouchMove = (event) => {
+          if (!isMobileViewport() || pinchStartDistance === null || event.touches.length !== 2) {
+            return;
+          }
+
+          const currentDistance = getDistance(event.touches[0], event.touches[1]);
+          const zoomRatio = currentDistance / pinchStartDistance;
+          applyGridScale(pinchStartScale * zoomRatio);
+          event.preventDefault();
+        };
+
+        const onTouchEnd = (event) => {
+          if (event.touches.length < 2) {
+            pinchStartDistance = null;
+          }
+        };
+
+        itemGridElement.addEventListener("touchstart", onTouchStart, { passive: false });
+        itemGridElement.addEventListener("touchmove", onTouchMove, { passive: false });
+        itemGridElement.addEventListener("touchend", onTouchEnd, { passive: true });
+        itemGridElement.addEventListener("touchcancel", onTouchEnd, { passive: true });
       }
 
 
@@ -715,7 +774,8 @@ window.onload = function() {
         initializeDragAndDrop();  // Enable drag-and-drop on items
         adjustPinnedStyles();
         updateScrollUI();
-        initTileSizeControl();
+        initGridZoomControl();
+        setupPinchZoom();
     });
 
 };
