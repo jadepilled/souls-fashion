@@ -364,10 +364,14 @@
         if (isMobileViewport()) {
           const controlsHeight = nav.offsetHeight || 0;
           const atTop = scrollY <= 4;
-          const shouldShowSidebar = !atTop && scrollY > controlsHeight + 24;
+          const controlsVisible = atTop || scrollY <= controlsHeight + 24;
+          body.classList.toggle("mobile-controls-visible", controlsVisible);
+          document.documentElement.style.setProperty("--mobile-controls-offset", `${controlsHeight}px`);
+          const shouldShowSidebar = !controlsVisible && scrollY > controlsHeight + 24;
           setMobileSidebarVisible(shouldShowSidebar);
         } else {
           body.classList.remove("mobile-sidebar-visible");
+          body.classList.remove("mobile-controls-visible");
           sidebarActive = false;
           navActive = true;
           showNav();
