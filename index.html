@@ -56,11 +56,6 @@
             margin-bottom: 12px;
         }
 
-        .hero-title-version {
-            font-size: 22px;
-            color: #d8d8d8;
-            text-align: center;
-        }
 
         .item-grid {
             display: flex;
@@ -111,8 +106,13 @@
 
         @media (max-width: 900px) {
             h2 {font-size: 50px;}
-            .hero-title-version {font-size: 18px;}
+            h3 {font-size: 14px;}
             .item-grid {padding: 14px; gap: 14px;}
+            .item-card {
+                width: calc((100% - 14px) / 2);
+                min-width: 0;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -120,7 +120,7 @@
 <div class="hero">
     <div class="hero-text">
         <h2>Fashion Souls</h2>
-        <h3 style="color: #bfbfbf">Curate by colour for the perfect SoulsBourne drip with souls.fashion. Discover outfits for Elden Ring, Dark Souls 1-3, Bloodborne and Demons' Souls with the premier web-hosted fashion tool!</h3>
+        <h3 style="color: #bfbfbf">SoulsBorne Fashion Tool by Psyopgirl</h3>
 
     </div>
 </div>
