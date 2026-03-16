@@ -1726,6 +1726,10 @@ body.light-mode .preset h3:focus {
     touch-action: pan-y pinch-zoom;
   }
 
+  body.game-page .item-grid {
+    grid-template-columns: repeat(var(--mobile-grid-columns), minmax(0, 1fr));
+  }
+
   body.mobile-sidebar-visible .item-grid {
     margin-left: 4.8rem;
     width: calc(100% - 4.8rem);
@@ -1746,7 +1750,7 @@ body.light-mode .preset h3:focus {
   }
 
   body.game-page .item-card .item-info {
-    grid-template-rows: minmax(0, 1fr) minmax(1.85rem, 24%);
+    grid-template-rows: minmax(0, 1fr) minmax(2.15rem, auto);
     gap: clamp(0.16rem, 0.85vw, 0.28rem);
   }
 
@@ -1755,7 +1759,7 @@ body.light-mode .preset h3:focus {
   }
 
   body.game-page .item-card .title-container a {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
   }
 
   body.game-page .item-card .color-bar {
@@ -2386,7 +2390,10 @@ body.light-mode {
 }
 
 body.game-page .item-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--desktop-grid-columns), minmax(0, 1fr));
   align-items: stretch;
+  justify-content: stretch;
 }
 
 body.game-page .item-card {
@@ -2394,13 +2401,17 @@ body.game-page .item-card {
   justify-content: stretch;
   overflow: hidden;
   aspect-ratio: 2 / 3;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  flex: initial;
   padding: clamp(0.42rem, 0.32rem + 0.3vw, 0.66rem);
   gap: clamp(0.26rem, 0.16rem + 0.24vw, 0.48rem);
 }
 
 body.game-page .item-card .item-info {
   display: grid;
-  grid-template-rows: minmax(0, 1fr) minmax(2.05rem, 22%);
+  grid-template-rows: minmax(0, 1fr) minmax(2.35rem, auto);
   gap: clamp(0.24rem, 0.14rem + 0.2vw, 0.42rem);
   align-items: stretch;
 }
@@ -2408,6 +2419,12 @@ body.game-page .item-card .item-info {
 body.game-page .item-card .image-container {
   min-height: 0;
   height: 100%;
+  align-items: flex-end;
+  padding: clamp(0.08rem, 0.08rem + 0.12vw, 0.18rem) clamp(0.06rem, 0.04rem + 0.12vw, 0.16rem) 0;
+}
+
+body.game-page .item-card .image-container img {
+  object-position: center bottom;
 }
 
 body.game-page .item-card .title-container {
@@ -2415,12 +2432,14 @@ body.game-page .item-card .title-container {
   min-height: 0;
   height: auto;
   padding: 0 0.08rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 body.game-page .item-card .title-container a {
   font-size: var(--item-card-title-size, clamp(0.56rem, 0.48rem + 0.22vw, 0.86rem));
   line-height: var(--item-card-title-line-height, 1.08);
+  -webkit-line-clamp: 2;
 }
 
 body.game-page .item-card .color-bar {

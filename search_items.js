@@ -47,11 +47,12 @@ function fitCardTitleText(titleElement, referenceWidth = 200) {
 
   const titleLength = (titleElement.textContent || "").trim().length;
   const normalizedWidth = Math.max(92, Number.isFinite(referenceWidth) ? referenceWidth : 200);
-  const widthFactor = Math.max(0.58, Math.min(1.08, normalizedWidth / 180));
-  const lengthPenalty = Math.max(0, titleLength - 12) * 0.02;
-  const nextSize = Math.max(0.42, Math.min(0.9, 0.84 * widthFactor - lengthPenalty));
+  const widthFactor = Math.max(0.72, Math.min(1.08, normalizedWidth / 182));
+  const twoLineBudget = Math.round(normalizedWidth / 6.1) + 4;
+  const lengthPenalty = Math.max(0, titleLength - twoLineBudget) * 0.016;
+  const nextSize = Math.max(0.5, Math.min(0.92, 0.86 * widthFactor - lengthPenalty));
   titleElement.style.fontSize = `${nextSize.toFixed(3)}rem`;
-  titleElement.style.lineHeight = nextSize < 0.5 ? "1.02" : nextSize < 0.62 ? "1.06" : "1.1";
+  titleElement.style.lineHeight = nextSize < 0.58 ? "1.04" : "1.08";
 }
 
 function fitVisibleCardTitles(scope = document) {

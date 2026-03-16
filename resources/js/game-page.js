@@ -95,6 +95,23 @@
     "Help me learn 🧪",
     "Bills don't pay themselves 💼",
     "Hosting ain't free 💻",
+    "Cut me some slack ✂️",
+    "A penny for my.. work? 🏆",
+    "Let's break the ice 🧊",
+    "The ball's in your court 🎾",
+    "Your move, Maestro! ♟️",
+    "Goth girls need money too 🖤",
+    "Gotta get tattoos somehow 🖋️",
+    "Pretty please? 🥺👉👈",
+    "A gal's gotta eat 🍒",
+    "Luck of the Irish 🍀",
+    "You're a star 🌟",
+    "Budgeting is hard 🥀",
+    "Surrender ye booty 💀",
+    "I vvaaanntt youur moonneyy 🩸🧛‍",
+    "Lets make magic 🔮",
+    "Weed's expensive man 🌱",
+    "Powered by rainbows 🌈",
   ];
 
   function getRandomSupportMessage() {
