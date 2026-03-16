@@ -2370,7 +2370,7 @@
         ]
     },
     {
-        "name": "Icon11 R3 C9",
+        "name": "Icon11_r3_c9",
         "type": "legs",
         "image": "Legs/Icon11_r3_c9.webp",
         "primaryColor": "#907058",
@@ -2920,7 +2920,7 @@
         ]
     },
     {
-        "name": "Red And White Round Shield",
+        "name": "Red and White Round Shield",
         "type": "shields",
         "image": "Shields/Red and White Round Shield.webp",
         "primaryColor": "#ad9b90",
@@ -3560,7 +3560,7 @@
         ]
     },
     {
-        "name": "Four-Pronged Plow",
+        "name": "Four-pronged Plow",
         "type": "weapons",
         "image": "Weapons/Four-pronged Plow.webp",
         "primaryColor": "#9b9792",

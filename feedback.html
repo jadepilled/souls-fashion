@@ -1,132 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="resources/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
-	<link rel="stylesheet" href="resources/styles.css?v1.0.5">
-		<link rel="icon" type="image/x-icon" href="icon.ico">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicons/icon_16x16.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicons/icon_32x32.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="favicons/icon_48x48.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="favicons/icon_96x96.png">
-		<link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicons/icon_167x167.png"> 
-		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
-		<link rel="icon" href="favicon.ico">
-    <title>Feedback - Fashion Souls v1.0.8</title>
-    
+    <meta name="description" content="Submit feedback for souls.fashion, the SoulsBorne fashion tool by psyopgirl.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="resources/styles.css?v1.0.9">
+    <link rel="stylesheet" href="resources/content-pages.css?v1.0.9">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/icon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/icon_48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/icon_96x96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicons/icon_167x167.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
+    <link rel="icon" href="favicon.ico">
+    <title>Feedback - Fashion Souls v1.0.9</title>
 </head>
-<body>
+<body class="content-page feedback-page">
+<div id="preloader" class="preloader">
+    <img src="icons/FS_icon_white.png" alt="souls.fashion" class="preloader-logo">
+</div>
 
-<div class="topnav-simple">
-    <div class="links-group">
-        <a href="index">Home</a>
-        <!-- <a href="eldenring">Elden Ring</a>
-        <a href="bloodborne">Bloodborne</a>
-        <a href="demonssouls">Demon's Souls</a>
-        <div class="dropdown">
-            <button class="dropbtn">Dark Souls
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="ds1">Dark Souls Remastered</a>
-                <a href="ds2">Dark Souls II: SotFS</a>
-                <a href="ds3">Dark Souls III</a>
+<div class="content-shell">
+    <header class="content-hero">
+        <div class="content-hero-bar">
+            <div class="content-hero-left">
+                <button class="show-menu" aria-label="Toggle navigation menu"></button>
+                <a class="content-brand-link" href="index" aria-label="Fashion Souls home">
+                    <img src="icons/FS_icon_white.png" alt="Fashion Souls" class="content-brand-icon">
+                </a>
+                <div class="content-site-copy">
+                    <h3 class="content-site-title">Fashion Souls</h3>
+                    <p class="site-tagline">SoulsBorne Fashion Tool by psyopgirl</p>
+                </div>
             </div>
-        </div> -->
-        <a href="https://ko-fi.com/psyopgirl">Donate</a>
-        <a href="https://discord.gg/j8HHh8ffEn">Discord</a>
-        <a href="https://github.com/jadepilled/souls-fashion">Source Code</a>
-        <a class="active" href="feedback.html">Feedback</a>
-    
-        <button class="mode-switch" id="modeToggle">Light Mode</button>
-    </div>
-    <button class="show-menu">Menu</button>
+            <button class="mode-switch" id="modeToggle" aria-label="Toggle display mode" title="Toggle display mode">&#9680;</button>
+        </div>
+    </header>
+
+    <main class="content-main">
+        <section class="content-card feedback-panel">
+            <div class="feedback-copy">
+                <p class="content-eyebrow">Feedback</p>
+                <h3>Tell us what's not working, what feels off, or what you'd like to see.</h3>
+                <p>The more detailed your report the better. Replicable bug reports, UI/UX feedback, feature ideas, and other issues are all helpful. Please provide your email if you'd like to hear back from us.</p>
+            </div>
+
+            <div class="feedback">
+                <form class="form-container" name="feedback_form" id="feedback_form" method="post">
+                    <label class="form-label" for="feedback_comments">Feedback or suggestions</label>
+                    <textarea class="round-text-area" required rows="6" name="comments" id="feedback_comments"></textarea>
+
+                    <label class="form-label" for="feedback_name">Your name (optional)</label>
+                    <input type="text" name="name" class="round-input" id="feedback_name">
+
+                    <label class="form-label" for="feedback_email">Email (optional)</label>
+                    <input type="email" name="email" class="round-input" id="feedback_email">
+
+                    <button type="submit" class="round-button">Post</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Copyright &copy; psyopgirl 2024.<br>
+        Dark Souls, Elden Ring, Bloodborne &amp; Demon's Souls are property of Sony &amp; FromSoftware respectively.
+    </footer>
 </div>
 
-<div class='feedback'>
-	<form class="form-container" name="feedback_form" id="feedback_form" method="post">
-        <div class="FashionSouls-simple">
-            <h2 >Fashion Souls</h2>
-            <h3 style="color: #bfbfbf">SoulsBorne fashion tool by Psyopgirl</h3>
-          </div>
-        <h3>Feedback</h3>
-        <p>
-            Please provide your feedback & suggestions in the form below
-        </p>
-        <label class="form-label"  for="feedback_comments"></label>
-        <textarea class="round-text-area" required rows="6" name="comments" id="feedback_comments" ></textarea>
-            <label class="form-label" for="feedback_name">Your Name (optional):</label>
-            <input type="text" required name="name" class="round-input" id="feedback_name"/>
-            <label class="form-label" for="feedback_email">Email (optional):</label>
-            <input type="email" name="email" required class="round-input" id="feedback_email"/>
-        <button type="submit" class="round-button" >Post</button>
-	</form>
-
-</div>
-		
-<script>
-    const modeToggle = document.getElementById("modeToggle");
-    const body = document.body;
-
-    // Check local storage to persist theme choice
-    if (localStorage.getItem("theme") === "light") {
-        body.classList.add("light-mode");
-        modeToggle.textContent = "Dark Mode"; 
-    } else {
-      modeToggle.textContent = "Light Mode";
-    }
-
-    modeToggle.addEventListener("click", () => {
-      if (body.classList.contains("light-mode")) {
-          body.classList.remove("light-mode");
-          localStorage.setItem("theme", "dark");
-          modeToggle.textContent = "Light Mode"; 
-      } else {
-          body.classList.add("light-mode");
-          localStorage.setItem("theme", "light");
-          modeToggle.textContent = "Dark Mode";
-      }
-    });
-
-    const toggleButton = document.querySelector('.show-menu');
-    const sidebar = document.querySelector('.links-group');
-
-    toggleButton.addEventListener('click', () => {
-      sidebar.classList.toggle('show');
-    });
-
-    // Add click event listener to all anchor links for fade effect
-    document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default link behavior
-            document.body.classList.add('fade-out'); // Add fade-out class
-
-            // Delay the navigation to the new page to allow the fade-out effect to play
-            setTimeout(() => {
-                window.location.href = this.href; // Navigate to the new page
-            }, 500); // Match this duration with the CSS transition duration
-        });
-    });
-</script>
-<div class="footer">
-    Copyright © Psyopgirl 2024.	<br></br>Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.
-</div>
-<script>
-                // Delay the navigation to the new page to allow the fade-out effect to play
-                setTimeout(() => {
-                    window.location.href = item.link; // Navigate to the new page
-                }, 500); // Match this duration with the CSS transition duration
-            
-    // Listen for visibility change to manage the fade-in effect
-    document.addEventListener('visibilitychange', function() {
-        if (document.visibilityState === 'visible') {
-            document.body.classList.remove('fade-out'); // Remove fade-out when coming back
-        } else {
-            document.body.classList.add('fade-out'); // Add fade-out when leaving
-        }
-    });
-</script>
+<script src="resources/js/page-transition.js?v1.0.9"></script>
+<script src="resources/js/site-pages.js?v1.0.9"></script>
 <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=xd3iaoph&n=n1.ratufa.io"></script>
 </body>
 </html>

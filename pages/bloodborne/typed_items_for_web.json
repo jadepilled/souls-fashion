@@ -836,7 +836,7 @@
         "link": "https://bloodborne.fandom.com/wiki/Cainhurst_Helmet"
     },
     {
-        "name": "Crown Of Illusions",
+        "name": "Crown of Illusions",
         "type": "head",
         "image": "Head/Crown of Illusions.webp",
         "primaryColor": "#8b744c",
@@ -1496,7 +1496,7 @@
         "link": "https://bloodborne.fandom.com/wiki/Wine_Hakama"
     },
     {
-        "name": "Yahar'Hul Black Trousers",
+        "name": "Yahar'hul Black Trousers",
         "type": "legs",
         "image": "Legs/Yahar'hul Black Trousers.webp",
         "primaryColor": "#948775",
@@ -1551,7 +1551,7 @@
         "link": "https://bloodborne.fandom.com/wiki/Evelyn"
     },
     {
-        "name": "Fist Of Gratia",
+        "name": "Fist of Gratia",
         "type": "shields",
         "image": "Shields/Fist of Gratia.webp",
         "primaryColor": "#595755",
@@ -1738,7 +1738,7 @@
         "link": "https://bloodborne.fandom.com/wiki/Beasthunter_Saif"
     },
     {
-        "name": "Blade Of Mercy",
+        "name": "Blade of Mercy",
         "type": "weapons",
         "image": "Weapons/Blade of Mercy.webp",
         "primaryColor": "#5b5955",

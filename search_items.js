@@ -1,10 +1,132 @@
 let items = []; // To store items loaded from JSON
-let colorDistanceThreshold = 100; // Default threshold value
+const COLOR_THRESHOLD_MIN = 0;
+const COLOR_THRESHOLD_MAX = 40;
+const COLOR_THRESHOLD_DEFAULT = 18;
+const COLOR_PICKER_DEFAULT_DARK = "#ffffff";
+const COLOR_PICKER_DEFAULT_LIGHT = "#000000";
+let colorDistanceThreshold = COLOR_THRESHOLD_DEFAULT;
 let activeFilters = new Set(); // To track active filters
+let hasNotifiedInitialGridLoad = false;
+let selectedHexColor = "";
 
 // Store page name as var
 var url = window.location.href;
 var page = url.substring(url.lastIndexOf('/') + 1).replace(/\.html$/, '');
+
+function setColorPickerVisibility(visible) {
+  const colorPicker = document.getElementById("favcolor");
+  const colorPickerGroup = colorPicker?.closest(".color-picker-group");
+  const shouldShow = Boolean(visible);
+
+  if (colorPickerGroup) {
+    colorPickerGroup.classList.toggle("is-visible", shouldShow);
+  }
+
+  if (colorPicker) {
+    colorPicker.disabled = !shouldShow;
+  }
+}
+
+function setSliderLabelValue(controlId, valueText) {
+  const label = document.querySelector(`label[for="${controlId}"]`);
+  if (!label) {
+    return;
+  }
+
+  const baseLabel = label.dataset.baseLabel || label.textContent.split(":")[0].trim();
+  label.dataset.baseLabel = baseLabel;
+  label.textContent = `${baseLabel}: ${valueText}`;
+}
+
+function getColorPickerElement() {
+  return document.getElementById("favcolor");
+}
+
+function getThemeDefaultColor() {
+  return document.body.classList.contains("light-mode")
+    ? COLOR_PICKER_DEFAULT_LIGHT
+    : COLOR_PICKER_DEFAULT_DARK;
+}
+
+function hasSelectedHexColor() {
+  return /^#[0-9a-f]{6}$/i.test(selectedHexColor);
+}
+
+function isHexSearchMode() {
+  return document.getElementById("toggleSearch")?.textContent.trim() === "Hex";
+}
+
+function syncThemeAwareColorPicker(force = false) {
+  const colorPicker = getColorPickerElement();
+  if (!colorPicker) {
+    return;
+  }
+
+  if (hasSelectedHexColor()) {
+    colorPicker.value = selectedHexColor;
+    window.syncGamePageColorPickerUI?.(colorPicker.value);
+    return;
+  }
+
+  if (force) {
+    colorPicker.value = getThemeDefaultColor();
+  }
+
+  window.syncGamePageColorPickerUI?.(colorPicker.value);
+}
+
+function setColorFilterState(active, options = {}) {
+  const { resetToThemeDefault = false } = options;
+  const colorPicker = getColorPickerElement();
+
+  if (active) {
+    if (colorPicker && /^#[0-9a-f]{6}$/i.test(colorPicker.value || "")) {
+      selectedHexColor = colorPicker.value.toLowerCase();
+    }
+    return;
+  }
+
+  if (resetToThemeDefault) {
+    selectedHexColor = "";
+    syncThemeAwareColorPicker(true);
+    return;
+  }
+
+  syncThemeAwareColorPicker();
+}
+
+function applySelectedColor(color) {
+  if (!/^#[0-9a-f]{6}$/i.test(color || "")) {
+    return;
+  }
+
+  selectedHexColor = color.toLowerCase();
+  syncThemeAwareColorPicker(true);
+}
+
+function activateHexSearch(color) {
+  const toggleSearch = document.getElementById("toggleSearch");
+  const searchInput = document.getElementById("searchInput");
+
+  setColorPickerVisibility(true);
+
+  if (toggleSearch) {
+    toggleSearch.textContent = "Hex";
+  }
+
+  if (searchInput) {
+    searchInput.placeholder = "Search by hex";
+    searchInput.value = "";
+    searchInput.readOnly = true;
+    searchInput.setAttribute("aria-readonly", "true");
+  }
+
+  if (color) {
+    applySelectedColor(color);
+  } else {
+    syncThemeAwareColorPicker(true);
+  }
+}
 
 // Fisher-Yates Shuffle algorithm to randomize the order of items
 function shuffle(array) {
@@ -113,6 +235,18 @@ function calculateWeightedDistance(
 // Function to find the closest items based on input color, secondary weight, and search query
 function findMatchingItems(inputColor, secondaryWeight, query) {
   const lowerQuery = query.toLowerCase();
+  const hasColorFilter = /^#[0-9a-f]{6}$/i.test(inputColor || "");
+
+  if (!hasColorFilter) {
+    return items.filter(item => {
+      const nameMatch = item.name.toLowerCase().includes(lowerQuery);
+      const typeMatch =
+        activeFilters.size === 0 || activeFilters.has(item.type);
+
+      return typeMatch && (query.length === 0 || nameMatch);
+    });
+  }
+
   let inputLAB = hexToLAB(inputColor);
 
   let withinThresholdItems = items
@@ -175,6 +309,35 @@ function displayItems(filteredItems) {
     const itemCard = createItemCard(item);
     itemGrid.appendChild(itemCard);
   });
+
+  if (!hasNotifiedInitialGridLoad) {
+    const imageNodes = Array.from(itemGrid.querySelectorAll(".item-card img")).slice(0, 24);
+    if (imageNodes.length === 0) {
+      window.dispatchEvent(new CustomEvent("initial-grid-images-loaded"));
+      hasNotifiedInitialGridLoad = true;
+      return;
+    }
+
+    const imageLoadPromises = imageNodes.map(img => {
+      if (img.complete && img.naturalWidth > 0) {
+        return Promise.resolve();
+      }
+      return new Promise(resolve => {
+        img.addEventListener("load", resolve, { once: true });
+        img.addEventListener("error", resolve, { once: true });
+      });
+    });
+
+    Promise.race([
+      Promise.all(imageLoadPromises),
+      new Promise(resolve => setTimeout(resolve, 2500)),
+    ]).then(() => {
+      if (!hasNotifiedInitialGridLoad) {
+        hasNotifiedInitialGridLoad = true;
+        window.dispatchEvent(new CustomEvent("initial-grid-images-loaded"));
+      }
+    });
+  }
 }
 
 // Function to create item cards with click event for search
@@ -188,6 +351,9 @@ function createItemCard(item) {
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("image-container");
   const img = document.createElement("img");
+  img.loading = "lazy";
+  img.decoding = "async";
+  img.draggable = false;
   img.src = `pages/${page}/icons/${item.image}`;
   img.alt = item.name;
   imageContainer.appendChild(img);
@@ -198,6 +364,7 @@ function createItemCard(item) {
   title.textContent = item.name;
   title.href = item.link;
   title.target = "_blank";
+  title.rel = "noopener noreferrer";
   titleContainer.appendChild(title);
 
   title.addEventListener("click", event => {
@@ -214,9 +381,7 @@ function createItemCard(item) {
   secondaryColorDiv2.style.backgroundColor = item.secondaryColors[1];
 
   secondaryColorDiv2.addEventListener("click", event => {
-    event.stopPropagation(); // Prevents triggering the tile's click event
-    document.getElementById("favcolor").value = item.secondaryColors[1];
-    updateMatchingItems(); // Trigger search with second secondary color
+    event.stopPropagation();
   });
 
   // Append the color divs to the color bar
@@ -235,69 +400,70 @@ function createItemCard(item) {
   // Add click event to set the item's primary color for the search
   itemInfo.addEventListener("click", () => {
     searchInput.value = item.name;
-    document.getElementById("favcolor").value = item.primaryColor;
-    searchInput.disabled = false;
-    colorPicker.style.display = "none"; // Hide the color picker
+    searchInput.readOnly = false;
+    searchInput.setAttribute("aria-readonly", "false");
+    setColorPickerVisibility(false);
     toggleSearch.textContent = "Item"; // Set button text to "Item"
     searchInput.placeholder = "Search by item"; // Update placeholder
 
     hideOutfitSidebar();
     showNav();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.scrollPageToTop) {
+      window.scrollPageToTop();
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
     updateMatchingItems();
   });
 
   primaryColorDiv.addEventListener("click", () => {
-    colorPicker.style.display = "inline-block";
-    toggleSearch.textContent = "Hex";
-    colorPicker.value = item.primaryColor;
-
-    document.getElementById("favcolor").value = item.primaryColor;
-    searchInput.placeholder = item.primaryColor;
-    searchInput.value = "";
-    searchInput.disabled = true;
+    activateHexSearch(item.primaryColor);
 
     hideOutfitSidebar();
     showNav();
     updateMatchingItems();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.scrollPageToTop) {
+      window.scrollPageToTop();
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   });
 
   secondaryColorDiv1.addEventListener("click", () => {
-    colorPicker.style.display = "inline-block";
-    toggleSearch.textContent = "Hex";
-    colorPicker.value = item.secondaryColors[0];
-
-    document.getElementById("favcolor").value = item.secondaryColors[0];
-    searchInput.placeholder = item.secondaryColors[0];
-    searchInput.value = "";
-    searchInput.disabled = true;
+    activateHexSearch(item.secondaryColors[0]);
 
     updateMatchingItems();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.scrollPageToTop) {
+      window.scrollPageToTop();
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   });
 
   secondaryColorDiv2.addEventListener("click", () => {
-    colorPicker.style.display = "inline-block";
-    toggleSearch.textContent = "Hex";
-    colorPicker.value = item.secondaryColors[1];
-
-    document.getElementById("favcolor").value = item.secondaryColors[1];
-    searchInput.placeholder = item.secondaryColors[1];
-    searchInput.value = "";
-    searchInput.disabled = true;
+    activateHexSearch(item.secondaryColors[1]);
 
     hideOutfitSidebar();
     showNav()
     updateMatchingItems();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.scrollPageToTop) {
+      window.scrollPageToTop();
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   });
 
   return card;
 }
 
 // Add event listener for color picker, name input, slider, and color distance threshold slider
+document.getElementById("favcolor").addEventListener("input", function () {
+  applySelectedColor(this.value);
+  updateMatchingItems();
+});
+
 document.getElementById("favcolor").addEventListener("change", function () {
+  applySelectedColor(this.value);
   updateMatchingItems();
 });
 
@@ -305,24 +471,54 @@ document.getElementById("searchInput").addEventListener("input", function () {
   updateMatchingItems();
 });
 
-document
-  .getElementById("secondaryWeightSlider")
-  .addEventListener("input", function () {
-    document.getElementById("sliderValue").textContent = this.value;
-    updateMatchingItems();
-  });
+const secondaryWeightSlider = document.getElementById("secondaryWeightSlider");
+const handleSecondaryWeightChange = function () {
+  setSliderLabelValue("secondaryWeightSlider", Number(this.value).toFixed(1));
+  updateMatchingItems();
+};
+secondaryWeightSlider.addEventListener("input", handleSecondaryWeightChange);
+secondaryWeightSlider.addEventListener("change", handleSecondaryWeightChange);
+setSliderLabelValue("secondaryWeightSlider", Number(secondaryWeightSlider.value).toFixed(1));
 
-document
-  .getElementById("colorThresholdSlider")
-  .addEventListener("input", function () {
-    colorDistanceThreshold = parseFloat(this.value);
-    document.getElementById("colorThresholdValue").textContent = this.value;
-    updateMatchingItems();
-  });
+const colorThresholdSlider = document.getElementById("colorThresholdSlider");
+const handleColorThresholdChange = function () {
+  syncColorThreshold(this.value);
+  updateMatchingItems();
+};
+colorThresholdSlider.addEventListener("input", handleColorThresholdChange);
+colorThresholdSlider.addEventListener("change", handleColorThresholdChange);
+
+function syncColorThreshold(value) {
+  const slider = document.getElementById("colorThresholdSlider");
+  const display = document.getElementById("colorThresholdValue");
+  const numericValue = Number(value);
+  const clampedValue = Math.min(
+    COLOR_THRESHOLD_MAX,
+    Math.max(
+      COLOR_THRESHOLD_MIN,
+      Number.isFinite(numericValue) ? numericValue : COLOR_THRESHOLD_DEFAULT
+    )
+  );
+
+  colorDistanceThreshold = clampedValue;
+
+  if (slider) {
+    slider.min = COLOR_THRESHOLD_MIN.toString();
+    slider.max = COLOR_THRESHOLD_MAX.toString();
+    slider.step = "1";
+    slider.value = clampedValue.toString();
+  }
+
+  if (display) {
+    display.textContent = clampedValue.toString();
+  }
+
+  setSliderLabelValue("colorThresholdSlider", clampedValue.toString());
+}
 
 // Function to update matching items based on the current color, slider value, and query
 function updateMatchingItems() {
-  const selectedColor = document.getElementById("favcolor").value;
+  const selectedColor = isHexSearchMode() && hasSelectedHexColor() ? selectedHexColor : "";
   const secondaryWeight = parseFloat(
     document.getElementById("secondaryWeightSlider").value
   );
@@ -381,6 +577,8 @@ document.getElementById("clearFilter").addEventListener("click", () => {
     .querySelectorAll(".filters-group button")
     .forEach(button => button.classList.remove("active"));
 
+  document.getElementById("searchInput").value = "";
+  setColorFilterState(false, { resetToThemeDefault: true });
   updateMatchingItems();
 });
 
@@ -388,6 +586,12 @@ document.getElementById("clearFilter").addEventListener("click", () => {
 
 // Fetch items on page load
 window.onload = fetchItems;
+
+syncColorThreshold(document.getElementById("colorThresholdSlider")?.value);
+syncThemeAwareColorPicker(true);
+
+window.syncThemeAwareColorPicker = syncThemeAwareColorPicker;
+window.setColorFilterState = setColorFilterState;
 
 
 
