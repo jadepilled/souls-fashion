@@ -22,6 +22,49 @@
     { label: "Github", href: "https://github.com/jadepilled/souls-fashion" },
     { label: "Feedback", href: "feedback" },
   ];
+  const siteMenuSupportMessages = [
+    "Make a girl smile ✨",
+    "Satisfy a woman today 💦",
+    "Make my day ☀️",
+    "Caffeinate me ☕",
+    "Support small devs 🛠️",
+    "Hook me up 💸",
+    "Show your love ❤️",
+    "Is it Christmas? 🎅🏻",
+    "Help me learn 🧪",
+    "Bills don't pay themselves 💼",
+    "Hosting ain't free 💻",
+  ];
+
+  function getRandomSupportMessage() {
+    const storageKey = "siteMenuSupportMessageIndex";
+    let lastIndex = -1;
+
+    try {
+      lastIndex = Number(localStorage.getItem(storageKey));
+    } catch (error) {
+      lastIndex = -1;
+    }
+
+    if (siteMenuSupportMessages.length === 1) {
+      return siteMenuSupportMessages[0];
+    }
+
+    let nextIndex = Math.floor(Math.random() * siteMenuSupportMessages.length);
+    if (siteMenuSupportMessages.length > 1) {
+      while (nextIndex === lastIndex) {
+        nextIndex = Math.floor(Math.random() * siteMenuSupportMessages.length);
+      }
+    }
+
+    try {
+      localStorage.setItem(storageKey, String(nextIndex));
+    } catch (error) {
+      // Ignore storage failures and continue with the current message.
+    }
+
+    return siteMenuSupportMessages[nextIndex];
+  }
 
   function normalizePage(value) {
     return (value || "index").replace(/\.html$/, "");
@@ -99,7 +142,7 @@
       <div class="site-menu-shell">
         <section class="site-menu-panel site-menu-panel--support">
           <div class="site-menu-support-copy">
-		    <p>Make a girl smile!</p><p>Please consider supporting this project's ongoing existence if it has been useful to you.</p>
+		    <p>${getRandomSupportMessage()}</p><p>Please consider supporting this project's ongoing existence if it has been useful to you.</p>
             <a href="https://ko-fi.com/psyopgirl" class="site-menu-donate">Donate</a>
           </div>
         </section>

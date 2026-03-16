@@ -6,6 +6,7 @@
 
   const simulatorPage = window.location.pathname.split("/").pop().replace(/\.html$/, "");
   const gameKey = body.dataset.gameKey || simulatorPage.replace(/^simulator_/, "");
+  const gameTitle = body.dataset.gameTitle || gameKey;
   const gamePrefix = `${gameKey}_`;
   const layoutOrder = ["head", "weapons", "chest", "shields", "hands", "legs"];
   const slotGridPositions = {
@@ -42,6 +43,7 @@
   let simulatorContextBody = null;
   let simulatorContextTitle = null;
   let simulatorContextSubtitle = null;
+  let simulatorContextActions = null;
   let activeContextMode = "replace";
   let activeContextSlotId = "";
   let activeContextItem = null;
@@ -51,6 +53,42 @@
 
   function isMobileViewport() {
     return window.matchMedia("(max-width: 1199px)").matches;
+  }
+
+  function isLightModeActive() {
+    return body.classList.contains("light-mode") || localStorage.getItem("theme") === "light";
+  }
+
+  function getThemeIconPath() {
+    return isLightModeActive() ? "icons/FS_icon_black.png" : "icons/FS_icon_white.png";
+  }
+
+  function getExportTheme() {
+    if (isLightModeActive()) {
+      return {
+        background: "#f5f5f5",
+        text: "#141414",
+        mutedText: "#5b564d",
+        cardSurface: "#ebebeb",
+        cardBorder: "#cfc7ba",
+      };
+    }
+
+    return {
+      background: "#121212",
+      text: "#ffffff",
+      mutedText: "#a3a3a3",
+      cardSurface: "#0f0f0f",
+      cardBorder: "#555555",
+    };
+  }
+
+  function getExportHeading() {
+    return `${currentOutfitName} - ${gameTitle}`;
+  }
+
+  function getExportFilename() {
+    return `${getExportHeading().replace(/[<>:"/\\|?*]+/g, "").replace(/\s+/g, " ").trim()}_Outfit.png`;
   }
 
   function getSlotKey(slotType) {
@@ -199,7 +237,7 @@
   }
 
   function createSimulatorCard(slotId, savedItem, options = {}) {
-    const { exportMode = false } = options;
+    const { exportMode = false, exportTheme = null } = options;
     const item = normalizeItem(savedItem);
     const card = document.createElement("div");
     card.classList.add("item-card-simple");
@@ -217,10 +255,10 @@
       card.style.width = `${exportCardWidth}px`;
       card.style.height = `${exportCardHeight}px`;
       card.style.padding = "10px";
-      card.style.border = "1px solid #555";
+      card.style.border = `1px solid ${(exportTheme?.cardBorder || "#555555")}`;
       card.style.borderRadius = "10px";
-      card.style.backgroundColor = "#0f0f0f";
-      card.style.color = "#ffffff";
+      card.style.backgroundColor = exportTheme?.cardSurface || "#0f0f0f";
+      card.style.color = exportTheme?.text || "#ffffff";
       card.style.textAlign = "center";
       card.style.fontFamily = "'Spectral', Helvetica, Arial, sans-serif";
     }
@@ -269,6 +307,7 @@
         placeholder.style.border = "none";
         placeholder.style.fontSize = "0.85rem";
         placeholder.style.lineHeight = "1.35";
+        placeholder.style.color = exportTheme?.mutedText || "#a3a3a3";
       }
 
       card.appendChild(placeholder);
@@ -446,6 +485,7 @@
     simulatorContextBody = simulatorContextMenu.querySelector(".simulator-context-body");
     simulatorContextTitle = simulatorContextMenu.querySelector(".simulator-context-title");
     simulatorContextSubtitle = simulatorContextMenu.querySelector(".simulator-context-subtitle");
+    simulatorContextActions = simulatorContextMenu.querySelector(".simulator-context-actions");
 
     simulatorContextMenu
       .querySelector(".simulator-context-close")
@@ -472,7 +512,7 @@
     activeContextSearch = "";
 
     if (simulatorContextTitle) {
-      simulatorContextTitle.textContent = activeContextItem?.name || "Item options";
+      simulatorContextTitle.textContent = activeContextItem?.name || "Select Item";
     }
 
     if (simulatorContextSubtitle) {
@@ -624,7 +664,7 @@
   function renderReplaceItemBody() {
     const slotType = activeContextSlotId.replace(/Slot$/, "");
     const matchingItems = getItemsForSlot(slotType)
-      .filter((item) => item.name !== activeContextItem?.name)
+      .filter((item) => !activeContextItem || item.name !== activeContextItem.name)
       .filter((item) =>
         item.name.toLowerCase().includes(activeContextSearch.trim().toLowerCase())
       )
@@ -633,7 +673,9 @@
     const searchField = document.createElement("input");
     searchField.type = "search";
     searchField.className = "simulator-context-search";
-    searchField.placeholder = `Replace ${slotLabels[slotType]?.toLowerCase() || "item"}...`;
+    searchField.placeholder = activeContextItem
+      ? `Replace ${slotLabels[slotType]?.toLowerCase() || "item"}...`
+      : `Select ${slotLabels[slotType]?.toLowerCase() || "item"}...`;
     searchField.value = activeContextSearch;
     searchField.addEventListener("input", () => {
       activeContextSearch = searchField.value;
@@ -699,9 +741,19 @@
     }
 
     simulatorContextBody.innerHTML = "";
+    const hasActiveItem = Boolean(activeContextItem);
+    if (simulatorContextActions) {
+      simulatorContextActions.hidden = !hasActiveItem;
+    }
+
     simulatorContextMenu.querySelectorAll(".simulator-context-action").forEach((button) => {
       button.classList.toggle("is-active", button.dataset.mode === activeContextMode);
     });
+
+    if (!hasActiveItem || activeContextMode === "select") {
+      renderReplaceItemBody();
+      return;
+    }
 
     if (activeContextMode === "colour") {
       renderReplaceByColorBody();
@@ -713,7 +765,7 @@
 
   function openContextMenu(clientX, clientY, slotId, item) {
     ensureContextMenu();
-    activeContextMode = "replace";
+    activeContextMode = item ? "replace" : "select";
     setActiveContextMetadata(slotId, item);
     renderContextBody();
     positionContextMenu(clientX, clientY);
@@ -792,9 +844,7 @@
       const savedItem = outfit[getSlotKey(slotId)];
       const card = createSimulatorCard(slotId, savedItem);
 
-      if (savedItem) {
-        bindCardContextMenu(card, getSlotKey(slotId), savedItem);
-      }
+      bindCardContextMenu(card, getSlotKey(slotId), savedItem || null);
 
       outfitSlots.appendChild(card);
     });
@@ -856,22 +906,23 @@
   }
 
   function createExportContainer() {
+    const exportTheme = getExportTheme();
     const container = document.createElement("div");
     container.style.position = "absolute";
     container.style.left = "-9999px";
     container.style.top = "0";
     container.style.width = "742px";
     container.style.padding = "28px 32px 24px";
-    container.style.backgroundColor = "#121212";
+    container.style.backgroundColor = exportTheme.background;
     container.style.display = "flex";
     container.style.flexDirection = "column";
     container.style.alignItems = "center";
     container.style.gap = "18px";
-    container.style.color = "#ffffff";
+    container.style.color = exportTheme.text;
     container.style.fontFamily = "'Spectral', Helvetica, Arial, sans-serif";
 
     const header = document.createElement("h3");
-    header.textContent = currentOutfitName;
+    header.textContent = getExportHeading();
     header.style.margin = "0";
     header.style.fontSize = "1.85rem";
     header.style.lineHeight = "1.15";
@@ -890,7 +941,10 @@
     const outfit = getOutfitData();
     layoutOrder.forEach((slotId) => {
       simulatorDiv.appendChild(
-        createSimulatorCard(slotId, outfit[getSlotKey(slotId)], { exportMode: true })
+        createSimulatorCard(slotId, outfit[getSlotKey(slotId)], {
+          exportMode: true,
+          exportTheme,
+        })
       );
     });
     container.appendChild(simulatorDiv);
@@ -903,7 +957,7 @@
     footerWrap.style.marginTop = "4px";
 
     const logo = document.createElement("img");
-    logo.src = "favicons/icon_96x96.png";
+    logo.src = getThemeIconPath();
     logo.alt = "souls.fashion logo";
     logo.width = 28;
     logo.height = 28;
@@ -919,6 +973,7 @@
     footer.style.fontSize = "0.95rem";
     footer.style.lineHeight = "1.2";
     footer.style.textAlign = "center";
+    footer.style.color = exportTheme.mutedText;
     footerWrap.appendChild(footer);
 
     container.appendChild(footerWrap);
@@ -932,12 +987,13 @@
     }
 
     const container = createExportContainer();
+    const exportTheme = getExportTheme();
     document.body.appendChild(container);
 
     try {
       await waitForImages(container);
       const canvas = await html2canvas(container, {
-        backgroundColor: "#121212",
+        backgroundColor: exportTheme.background,
         scale: 3,
         width: container.offsetWidth,
         height: container.offsetHeight,
@@ -945,7 +1001,7 @@
 
       const link = document.createElement("a");
       link.href = canvas.toDataURL("image/png");
-      link.download = `${currentOutfitName}_Outfit.png`;
+      link.download = getExportFilename();
       link.click();
     } catch (error) {
       console.error("Error generating outfit export:", error);

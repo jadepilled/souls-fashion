@@ -1,8 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
-    Expires = "Wed, 21 Oct 2030 07:28:00 GMT"
+    Cache-Control = "public, max-age=0, must-revalidate"
     Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' https://cdnjs.cloudflare.com https://www.ratufa.io https://n1.ratufa.io; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://www.ratufa.io https://n1.ratufa.io; frame-src https://www.ratufa.io https://n1.ratufa.io; form-action 'self' https://www.ratufa.io https://n1.ratufa.io; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests"
     Cross-Origin-Opener-Policy = "same-origin-allow-popups"
     Cross-Origin-Resource-Policy = "same-origin"

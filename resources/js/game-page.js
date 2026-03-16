@@ -30,10 +30,33 @@
   let siteMenuOverlay = null;
   let rightClickedSlotId = null;
   let rightClickedItem = null;
+  let mobileActionSheet = null;
+  let mobileActionSheetTitle = null;
+  let mobileActionSheetSubtitle = null;
+  let mobileActionSheetActions = null;
+  let mobileActionSheetBackdrop = null;
   let colorPickerTrigger = null;
   let colorPickerPopover = null;
   let colorPickerHexInput = null;
-  const desktopGridLevels = Array.from({ length: 21 }, (_, index) => index + 4);
+  let desktopSlotContextMenu = null;
+  let desktopSlotContextBody = null;
+  let desktopSlotContextTitle = null;
+  let desktopSlotContextSubtitle = null;
+  let desktopSlotContextActions = null;
+  let activeDesktopSlotMode = "replace";
+  let activeDesktopSlotId = "";
+  let activeDesktopSlotItem = null;
+  let activeDesktopSlotSearch = "";
+  const desktopGridLevels = Array.from({ length: 13 }, (_, index) => index + 4);
+  const desktopContextColorMatchWeight = 0.35;
+  const slotLabels = {
+    head: "Head",
+    chest: "Chest",
+    hands: "Hands",
+    legs: "Legs",
+    weapons: "Weapons",
+    shields: "Shields",
+  };
   const desktopColorPresets = [
     "#ffffff",
     "#000000",
@@ -55,6 +78,49 @@
     { label: "Github", href: "https://github.com/jadepilled/souls-fashion" },
     { label: "Feedback", href: "feedback" },
   ];
+  const siteMenuSupportMessages = [
+    "Make a girl smile ✨",
+    "Satisfy a woman today 💦",
+    "Make my day ☀️",
+    "Caffeinate me ☕",
+    "Support small devs 🛠️",
+    "Hook me up 💸",
+    "Show your love ❤️",
+    "Is it Christmas? 🎅🏻",
+    "Help me learn 🧪",
+    "Bills don't pay themselves 💼",
+    "Hosting ain't free 💻",
+  ];
+
+  function getRandomSupportMessage() {
+    const storageKey = "siteMenuSupportMessageIndex";
+    let lastIndex = -1;
+
+    try {
+      lastIndex = Number(localStorage.getItem(storageKey));
+    } catch (error) {
+      lastIndex = -1;
+    }
+
+    if (siteMenuSupportMessages.length === 1) {
+      return siteMenuSupportMessages[0];
+    }
+
+    let nextIndex = Math.floor(Math.random() * siteMenuSupportMessages.length);
+    if (siteMenuSupportMessages.length > 1) {
+      while (nextIndex === lastIndex) {
+        nextIndex = Math.floor(Math.random() * siteMenuSupportMessages.length);
+      }
+    }
+
+    try {
+      localStorage.setItem(storageKey, String(nextIndex));
+    } catch (error) {
+      // Ignore storage failures and continue with the current message.
+    }
+
+    return siteMenuSupportMessages[nextIndex];
+  }
 
   function isMobileViewport() {
     return window.matchMedia("(max-width: 1199px)").matches;
@@ -457,7 +523,7 @@
       <div class="site-menu-shell">
         <section class="site-menu-panel site-menu-panel--support">
           <div class="site-menu-support-copy">
-             <p>Make a girl smile!</p><p>Please consider supporting this project's ongoing existence if it has been useful to you.</p>
+             <p>${getRandomSupportMessage()}</p><p>Please consider supporting this project's ongoing existence if it has been useful to you.</p>
             <a href="https://ko-fi.com/psyopgirl" class="site-menu-donate">Donate</a>
           </div>
         </section>
@@ -635,6 +701,46 @@
     itemGridElement.addEventListener("touchcancel", onTouchEnd, { passive: true });
   }
 
+  function preventMobileViewportZoom() {
+    let lastTouchEnd = 0;
+
+    const preventGesture = (event) => {
+      if (!isMobileViewport()) {
+        return;
+      }
+
+      event.preventDefault();
+    };
+
+    document.addEventListener("gesturestart", preventGesture, { passive: false });
+    document.addEventListener("gesturechange", preventGesture, { passive: false });
+    document.addEventListener("gestureend", preventGesture, { passive: false });
+
+    document.addEventListener(
+      "touchend",
+      (event) => {
+        if (!isMobileViewport()) {
+          return;
+        }
+
+        const interactiveTarget = event.target.closest(
+          'input, textarea, select, [contenteditable="true"]'
+        );
+        if (interactiveTarget) {
+          lastTouchEnd = Date.now();
+          return;
+        }
+
+        const now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      },
+      { passive: false }
+    );
+  }
+
   function updateScrollUI() {
     const scrollY = getScrollTop();
     const backToTopButton = document.querySelector(".back-to-top-button");
@@ -685,11 +791,202 @@
     searchInput.placeholder = "Search by item";
     searchInput.readOnly = false;
     searchInput.setAttribute("aria-readonly", "false");
+    window.recordSearchHistoryItem?.(item.name, 2);
+    window.hideSearchSuggestions?.();
 
     hideOutfitSidebar();
     showNav();
     scrollPageToTop();
     updateMatchingItems();
+  }
+
+  function findItemByName(itemName) {
+    if (!itemName) {
+      return null;
+    }
+
+    return items.find((entry) => entry.name === itemName) || null;
+  }
+
+  function resolveEquipSlotType(item) {
+    if (!item?.type) {
+      return "";
+    }
+
+    let slotType = `${item.type}Slot`;
+    if (item.type === "weapons" || item.type === "shields") {
+      const outfitSlots =
+        JSON.parse(localStorage.getItem(`${window.gamePrefix}outfitSlots`)) || {};
+      const alternateSlot = slotType === "weaponsSlot" ? "shieldsSlot" : "weaponsSlot";
+      slotType = outfitSlots[slotType] ? alternateSlot : slotType;
+    }
+
+    return slotType;
+  }
+
+  function equipItemToOutfit(item, options = {}) {
+    const { revealSidebar = true } = options;
+    if (!item) {
+      return;
+    }
+
+    const slotType = resolveEquipSlotType(item);
+    if (!slotType) {
+      return;
+    }
+
+    addItemToSlot(slotType, item);
+
+    if (revealSidebar) {
+      showOutfitSidebar();
+      hideNav();
+    }
+  }
+
+  function equipItemByName(itemName, options = {}) {
+    const item = findItemByName(itemName);
+    if (!item) {
+      console.error("Item not found in loaded item data:", itemName);
+      return;
+    }
+
+    equipItemToOutfit(item, options);
+  }
+
+  function ensureMobileActionSheet() {
+    if (mobileActionSheet) {
+      return mobileActionSheet;
+    }
+
+    mobileActionSheetBackdrop = document.createElement("button");
+    mobileActionSheetBackdrop.type = "button";
+    mobileActionSheetBackdrop.className = "mobile-action-sheet-backdrop";
+    mobileActionSheetBackdrop.setAttribute("aria-label", "Close action menu");
+
+    mobileActionSheet = document.createElement("div");
+    mobileActionSheet.className = "mobile-action-sheet";
+    mobileActionSheet.setAttribute("role", "dialog");
+    mobileActionSheet.setAttribute("aria-modal", "true");
+    mobileActionSheet.setAttribute("aria-hidden", "true");
+    mobileActionSheet.innerHTML = `
+      <div class="mobile-action-sheet-header">
+        <div class="mobile-action-sheet-copy">
+          <p class="mobile-action-sheet-title"></p>
+          <p class="mobile-action-sheet-subtitle"></p>
+        </div>
+        <button type="button" class="mobile-action-sheet-close" aria-label="Close action menu">Close</button>
+      </div>
+      <div class="mobile-action-sheet-actions"></div>
+    `;
+
+    document.body.appendChild(mobileActionSheetBackdrop);
+    document.body.appendChild(mobileActionSheet);
+
+    mobileActionSheetTitle = mobileActionSheet.querySelector(".mobile-action-sheet-title");
+    mobileActionSheetSubtitle = mobileActionSheet.querySelector(".mobile-action-sheet-subtitle");
+    mobileActionSheetActions = mobileActionSheet.querySelector(".mobile-action-sheet-actions");
+
+    const closeButton = mobileActionSheet.querySelector(".mobile-action-sheet-close");
+    closeButton?.addEventListener("click", closeMobileActionSheet);
+    mobileActionSheetBackdrop.addEventListener("click", closeMobileActionSheet);
+
+    return mobileActionSheet;
+  }
+
+  function closeMobileActionSheet() {
+    if (!mobileActionSheet) {
+      return;
+    }
+
+    mobileActionSheet.classList.remove("is-open");
+    mobileActionSheet.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("mobile-action-sheet-open");
+  }
+
+  function openMobileActionSheet(config) {
+    if (!isMobileViewport()) {
+      return;
+    }
+
+    ensureMobileActionSheet();
+
+    const { title = "", subtitle = "", actions = [] } = config || {};
+    mobileActionSheetTitle.textContent = title;
+    mobileActionSheetSubtitle.textContent = subtitle;
+    mobileActionSheetSubtitle.hidden = !subtitle;
+    mobileActionSheetActions.innerHTML = "";
+
+    actions.forEach((action) => {
+      const actionButton = document.createElement("button");
+      actionButton.type = "button";
+      actionButton.className = "mobile-action-sheet-button";
+
+      if (action.tone) {
+        actionButton.dataset.tone = action.tone;
+      }
+
+      actionButton.textContent = action.label;
+      actionButton.addEventListener("click", () => {
+        closeMobileActionSheet();
+        action.onSelect?.();
+      });
+      mobileActionSheetActions.appendChild(actionButton);
+    });
+
+    const cancelButton = document.createElement("button");
+    cancelButton.type = "button";
+    cancelButton.className = "mobile-action-sheet-button";
+    cancelButton.dataset.tone = "secondary";
+    cancelButton.textContent = "Cancel";
+    cancelButton.addEventListener("click", closeMobileActionSheet);
+    mobileActionSheetActions.appendChild(cancelButton);
+
+    mobileActionSheet.classList.add("is-open");
+    mobileActionSheet.setAttribute("aria-hidden", "false");
+    document.body.classList.add("mobile-action-sheet-open");
+  }
+
+  function openMobileItemActionSheet(item) {
+    if (!item) {
+      return;
+    }
+
+    openMobileActionSheet({
+      title: item.name,
+      subtitle: "Choose what to do with this item.",
+      actions: [
+        {
+          label: "Search Using Item",
+          onSelect: () => updateSearchFromItem(item),
+        },
+        {
+          label: "Equip in Outfit",
+          onSelect: () => equipItemToOutfit(item),
+        },
+      ],
+    });
+  }
+
+  function openMobileSlotActionSheet(slotId, item) {
+    if (!slotId || !item) {
+      return;
+    }
+
+    openMobileActionSheet({
+      title: item.name,
+      subtitle: "Choose what to do with this equipped item.",
+      actions: [
+        {
+          label: "Search Using Item",
+          onSelect: () => updateSearchFromItem(item),
+        },
+        {
+          label: "Unequip Item",
+          tone: "danger",
+          onSelect: () => removeItemFromSlot(slotId),
+        },
+      ],
+    });
   }
 
   function removeItemFromSlot(slotId) {
@@ -701,6 +998,286 @@
     delete outfit[slotId];
     localStorage.setItem(`${window.gamePrefix}outfitSlots`, JSON.stringify(outfit));
     loadOutfitFromStorage();
+  }
+
+  function getSlotTypeFromId(slotId) {
+    return (slotId || "").replace(/Slot$/, "");
+  }
+
+  function getSlotLabel(slotId) {
+    const slotType = getSlotTypeFromId(slotId);
+    return slotLabels[slotType] || slotType;
+  }
+
+  function getItemsForSlot(slotId) {
+    const slotType = getSlotTypeFromId(slotId);
+    return Array.isArray(items) ? items.filter((item) => item.type === slotType) : [];
+  }
+
+  function getContextSecondaryColors(item) {
+    if (Array.isArray(item?.secondaryColors) && item.secondaryColors.length > 0) {
+      return item.secondaryColors;
+    }
+
+    return item?.primaryColor ? [item.primaryColor, item.primaryColor] : [];
+  }
+
+  function getContextColorMatches(slotId, item) {
+    if (
+      !item?.primaryColor ||
+      typeof hexToLAB !== "function" ||
+      typeof calculateWeightedDistance !== "function"
+    ) {
+      return [];
+    }
+
+    const inputLab = hexToLAB(item.primaryColor);
+    return getItemsForSlot(slotId)
+      .filter((candidate) => candidate.name !== item.name && candidate.primaryColor)
+      .map((candidate) => ({
+        ...candidate,
+        distance: calculateWeightedDistance(
+          inputLab,
+          candidate.primaryColor,
+          getContextSecondaryColors(candidate),
+          desktopContextColorMatchWeight
+        ),
+      }))
+      .sort((left, right) => left.distance - right.distance)
+      .slice(0, 8);
+  }
+
+  function createDesktopContextOption(item, onClick) {
+    const option = document.createElement("button");
+    option.type = "button";
+    option.className = "simulator-replacement-option";
+
+    const image = document.createElement("img");
+    image.src = `pages/${currentPage}/icons/${item.image}`;
+    image.alt = item.name;
+
+    const title = document.createElement("div");
+    title.className = "simulator-replacement-option-title";
+    title.textContent = item.name;
+
+    option.appendChild(image);
+    option.appendChild(title);
+    option.addEventListener("click", () => {
+      onClick(item);
+    });
+
+    return option;
+  }
+
+  function ensureDesktopSlotContextMenu() {
+    if (desktopSlotContextMenu) {
+      return desktopSlotContextMenu;
+    }
+
+    desktopSlotContextMenu = document.createElement("div");
+    desktopSlotContextMenu.id = "desktopSlotContextMenu";
+    desktopSlotContextMenu.className = "simulator-context-menu";
+    desktopSlotContextMenu.setAttribute("aria-hidden", "true");
+    desktopSlotContextMenu.innerHTML = `
+      <div class="simulator-context-header">
+        <div>
+          <p class="simulator-context-title"></p>
+          <p class="simulator-context-subtitle"></p>
+        </div>
+        <button type="button" class="simulator-context-close" aria-label="Close">x</button>
+      </div>
+      <div class="simulator-context-actions">
+        <button type="button" class="simulator-context-action" data-mode="replace">Replace Item</button>
+        <button type="button" class="simulator-context-action" data-mode="colour">Replace By Colour</button>
+        <button type="button" class="simulator-context-action" data-mode="unequip">Unequip Item</button>
+      </div>
+      <div class="simulator-context-body"></div>
+    `;
+
+    document.body.appendChild(desktopSlotContextMenu);
+    desktopSlotContextBody = desktopSlotContextMenu.querySelector(".simulator-context-body");
+    desktopSlotContextTitle = desktopSlotContextMenu.querySelector(".simulator-context-title");
+    desktopSlotContextSubtitle = desktopSlotContextMenu.querySelector(".simulator-context-subtitle");
+    desktopSlotContextActions = desktopSlotContextMenu.querySelector(".simulator-context-actions");
+
+    desktopSlotContextMenu
+      .querySelector(".simulator-context-close")
+      .addEventListener("click", closeDesktopSlotContextMenu);
+
+    desktopSlotContextMenu.querySelectorAll(".simulator-context-action").forEach((button) => {
+      button.addEventListener("click", () => {
+        const mode = button.dataset.mode;
+        if (mode === "unequip") {
+          removeItemFromSlot(activeDesktopSlotId);
+          closeDesktopSlotContextMenu();
+          return;
+        }
+
+        activeDesktopSlotMode = mode;
+        renderDesktopSlotContextBody();
+      });
+    });
+
+    return desktopSlotContextMenu;
+  }
+
+  function setDesktopSlotContextMetadata(slotId, item) {
+    activeDesktopSlotId = slotId;
+    activeDesktopSlotItem = item || null;
+    activeDesktopSlotSearch = "";
+
+    if (desktopSlotContextTitle) {
+      desktopSlotContextTitle.textContent = item?.name || "Select Item";
+    }
+
+    if (desktopSlotContextSubtitle) {
+      desktopSlotContextSubtitle.textContent = getSlotLabel(slotId);
+    }
+  }
+
+  function positionDesktopSlotContextMenu(clientX, clientY) {
+    if (!desktopSlotContextMenu) {
+      return;
+    }
+
+    desktopSlotContextMenu.classList.add("is-open");
+    desktopSlotContextMenu.style.visibility = "hidden";
+    desktopSlotContextMenu.style.left = "0px";
+    desktopSlotContextMenu.style.top = "0px";
+
+    const maxLeft = Math.max(8, window.innerWidth - desktopSlotContextMenu.offsetWidth - 8);
+    const maxTop = Math.max(8, window.innerHeight - desktopSlotContextMenu.offsetHeight - 8);
+    const left = Math.min(Math.max(8, clientX), maxLeft);
+    const top = Math.min(Math.max(8, clientY), maxTop);
+
+    desktopSlotContextMenu.style.left = `${left}px`;
+    desktopSlotContextMenu.style.top = `${top}px`;
+    desktopSlotContextMenu.style.visibility = "visible";
+    desktopSlotContextMenu.setAttribute("aria-hidden", "false");
+  }
+
+  function closeDesktopSlotContextMenu() {
+    if (!desktopSlotContextMenu) {
+      return;
+    }
+
+    desktopSlotContextMenu.classList.remove("is-open");
+    desktopSlotContextMenu.style.visibility = "";
+    desktopSlotContextMenu.setAttribute("aria-hidden", "true");
+  }
+
+  function replaceDesktopSlotItem(slotId, item) {
+    addItemToSlot(slotId, item);
+  }
+
+  function renderDesktopSlotReplaceBody() {
+    const slotLabel = getSlotLabel(activeDesktopSlotId).toLowerCase();
+    const matchingItems = getItemsForSlot(activeDesktopSlotId)
+      .filter((item) => !activeDesktopSlotItem || item.name !== activeDesktopSlotItem.name)
+      .filter((item) =>
+        item.name.toLowerCase().includes(activeDesktopSlotSearch.trim().toLowerCase())
+      )
+      .slice(0, 14);
+
+    const searchField = document.createElement("input");
+    searchField.type = "search";
+    searchField.className = "simulator-context-search";
+    searchField.placeholder = activeDesktopSlotItem
+      ? `Replace ${slotLabel}...`
+      : `Select ${slotLabel}...`;
+    searchField.value = activeDesktopSlotSearch;
+    searchField.addEventListener("input", () => {
+      activeDesktopSlotSearch = searchField.value;
+      renderDesktopSlotContextBody();
+    });
+    desktopSlotContextBody.appendChild(searchField);
+
+    if (matchingItems.length === 0) {
+      const emptyState = document.createElement("p");
+      emptyState.className = "simulator-context-empty";
+      emptyState.textContent = "No matching items were found for that search.";
+      desktopSlotContextBody.appendChild(emptyState);
+      searchField.focus();
+      return;
+    }
+
+    const list = document.createElement("div");
+    list.className = "simulator-replacement-list";
+
+    matchingItems.forEach((item) => {
+      list.appendChild(
+        createDesktopContextOption(item, (selectedItem) => {
+          replaceDesktopSlotItem(activeDesktopSlotId, selectedItem);
+          closeDesktopSlotContextMenu();
+        })
+      );
+    });
+
+    desktopSlotContextBody.appendChild(list);
+    searchField.focus();
+  }
+
+  function renderDesktopSlotColourBody() {
+    const matches = getContextColorMatches(activeDesktopSlotId, activeDesktopSlotItem);
+
+    if (matches.length === 0) {
+      const emptyState = document.createElement("p");
+      emptyState.className = "simulator-context-empty";
+      emptyState.textContent = "No similarly coloured replacements were available for this slot.";
+      desktopSlotContextBody.appendChild(emptyState);
+      return;
+    }
+
+    const grid = document.createElement("div");
+    grid.className = "simulator-replacement-grid";
+
+    matches.forEach((item) => {
+      grid.appendChild(
+        createDesktopContextOption(item, (selectedItem) => {
+          replaceDesktopSlotItem(activeDesktopSlotId, selectedItem);
+          closeDesktopSlotContextMenu();
+        })
+      );
+    });
+
+    desktopSlotContextBody.appendChild(grid);
+  }
+
+  function renderDesktopSlotContextBody() {
+    if (!desktopSlotContextBody || !desktopSlotContextMenu) {
+      return;
+    }
+
+    const hasActiveItem = Boolean(activeDesktopSlotItem);
+    desktopSlotContextBody.innerHTML = "";
+
+    if (desktopSlotContextActions) {
+      desktopSlotContextActions.hidden = !hasActiveItem;
+    }
+
+    desktopSlotContextMenu.querySelectorAll(".simulator-context-action").forEach((button) => {
+      button.classList.toggle("is-active", button.dataset.mode === activeDesktopSlotMode);
+    });
+
+    if (!hasActiveItem || activeDesktopSlotMode === "select") {
+      renderDesktopSlotReplaceBody();
+      return;
+    }
+
+    if (activeDesktopSlotMode === "colour") {
+      renderDesktopSlotColourBody();
+      return;
+    }
+
+    renderDesktopSlotReplaceBody();
+  }
+
+  function openDesktopSlotContextMenu(clientX, clientY, slotId, item) {
+    ensureDesktopSlotContextMenu();
+    activeDesktopSlotMode = item ? "replace" : "select";
+    setDesktopSlotContextMetadata(slotId, item);
+    renderDesktopSlotContextBody();
+    positionDesktopSlotContextMenu(clientX, clientY);
   }
 
   function loadOutfitFromStorage() {
@@ -719,6 +1296,8 @@
       if (item) {
         slot.classList.add("equipped-slot");
         slot.dataset.itemName = item.name;
+        slot.setAttribute("role", "button");
+        slot.setAttribute("tabindex", "0");
 
         const img = document.createElement("img");
         img.src = `pages/${currentPage}/icons/${item.image}`;
@@ -729,11 +1308,36 @@
         hoverLabel.classList.add("slot-hover-name");
         hoverLabel.textContent = item.name;
 
-        slot.addEventListener("click", () => {
-          const fullItem = items.find((entry) => entry.name === item.name);
+        slot.addEventListener("click", (event) => {
+          event.preventDefault();
+          const fullItem = findItemByName(item.name);
           if (fullItem) {
+            if (isMobileViewport()) {
+              openMobileSlotActionSheet(slotId, fullItem);
+              return;
+            }
+
             updateSearchFromItem(fullItem);
           }
+        });
+
+        slot.addEventListener("keydown", (event) => {
+          if (event.key !== "Enter" && event.key !== " ") {
+            return;
+          }
+
+          event.preventDefault();
+          const fullItem = findItemByName(item.name);
+          if (!fullItem) {
+            return;
+          }
+
+          if (isMobileViewport()) {
+            openMobileSlotActionSheet(slotId, fullItem);
+            return;
+          }
+
+          updateSearchFromItem(fullItem);
         });
 
         slot.appendChild(img);
@@ -786,15 +1390,60 @@
           contextMenu.style.display = "none";
         }
       });
+
+      document.addEventListener("pointerdown", (event) => {
+        if (!desktopSlotContextMenu?.classList.contains("is-open")) {
+          return;
+        }
+
+        if (
+          desktopSlotContextMenu.contains(event.target) ||
+          event.target.closest("#outfitSlots .slot")
+        ) {
+          return;
+        }
+
+        closeDesktopSlotContextMenu();
+      });
     }
 
     initializeDragAndDrop();
   }
 
   function showContextMenu(event, action, identifier) {
+    if (isMobileViewport()) {
+      if (action === "send") {
+        openMobileItemActionSheet(identifier);
+        return;
+      }
+
+      if (action === "remove") {
+        const slotElement = document.querySelector(`#outfitSlots .slot[data-slot-id="${identifier}"]`);
+        const item = findItemByName(slotElement?.dataset.itemName || "");
+        if (item) {
+          openMobileSlotActionSheet(identifier, item);
+          return;
+        }
+
+        return;
+      }
+    }
+
+    if (action === "remove") {
+      const slotElement = document.querySelector(`#outfitSlots .slot[data-slot-id="${identifier}"]`);
+      const item = findItemByName(slotElement?.dataset.itemName || "");
+      const legacyMenu = document.getElementById("contextMenu");
+      if (legacyMenu) {
+        legacyMenu.style.display = "none";
+      }
+      openDesktopSlotContextMenu(event.clientX, event.clientY, identifier, item);
+      return;
+    }
+
     const contextMenu = document.getElementById("contextMenu");
     const contextMenuList = document.getElementById("contextMenuList");
     contextMenuList.innerHTML = "";
+    closeDesktopSlotContextMenu();
 
     const menuOption = document.createElement("li");
     if (action === "remove") {
@@ -826,7 +1475,7 @@
 
   function sendItemToOutfitSimulator() {
     if (rightClickedItem) {
-      addItemToSimulator(rightClickedItem);
+      equipItemToOutfit(rightClickedItem);
     }
 
     document.getElementById("contextMenu").style.display = "none";
@@ -854,6 +1503,7 @@
   function initializeDragAndDrop() {
     const itemGridElement = document.getElementById("itemGrid");
     const outfitSlotsContainer = document.getElementById("outfitSlots");
+    const mobileMode = isMobileViewport();
 
     if (!itemGridElement || !outfitSlotsContainer) {
       return;
@@ -865,38 +1515,21 @@
       });
     };
 
-    const equipItemByName = (itemName) => {
-      if (!itemName) {
-        return;
-      }
-
-      const item = items.find((entry) => entry.name === itemName);
-      if (!item) {
-        console.error("Item not found in loaded item data:", itemName);
-        return;
-      }
-
-      let slotType = `${item.type}Slot`;
-      if (item.type === "weapons" || item.type === "shields") {
-        const outfitSlots =
-          JSON.parse(localStorage.getItem(`${window.gamePrefix}outfitSlots`)) || {};
-        const alternateSlot = slotType === "weaponsSlot" ? "shieldsSlot" : "weaponsSlot";
-        slotType = outfitSlots[slotType] ? alternateSlot : slotType;
-      }
-
-      addItemToSlot(slotType, item);
-    };
-
     let activeDraggedSlotId = null;
     let slotDragDropHandled = false;
 
     itemGridElement.querySelectorAll(".item-card").forEach((card) => {
+      card.setAttribute("draggable", mobileMode ? "false" : "true");
+
       if (card.dataset.dragBound === "true") {
         return;
       }
 
       card.dataset.dragBound = "true";
-      card.setAttribute("draggable", "true");
+
+      if (mobileMode) {
+        return;
+      }
 
       card.addEventListener("dragstart", (event) => {
         const itemName = card.querySelector(".item-info .title-container a").textContent;
@@ -933,70 +1566,19 @@
         document.body.classList.remove("is-dragging-item");
         clearDropTargets();
       });
-
-      card.addEventListener(
-        "touchstart",
-        (event) => {
-          const touch = event.touches[0];
-          if (!touch) return;
-          card.dataset.touchDragStartX = String(touch.clientX);
-          card.dataset.touchDragStartY = String(touch.clientY);
-          card.dataset.touchDragging = "false";
-        },
-        { passive: true }
-      );
-
-      card.addEventListener(
-        "touchmove",
-        (event) => {
-          const touch = event.touches[0];
-          if (!touch) return;
-          const startX = Number(card.dataset.touchDragStartX || touch.clientX);
-          const startY = Number(card.dataset.touchDragStartY || touch.clientY);
-          const movedDistance = Math.hypot(touch.clientX - startX, touch.clientY - startY);
-          if (movedDistance >= 14) {
-            card.dataset.touchDragging = "true";
-            event.preventDefault();
-          }
-        },
-        { passive: false }
-      );
-
-      card.addEventListener(
-        "touchend",
-        (event) => {
-          const changed = event.changedTouches[0];
-          if (!changed) return;
-
-          const startX = Number(card.dataset.touchDragStartX || changed.clientX);
-          const startY = Number(card.dataset.touchDragStartY || changed.clientY);
-          const movedDistance = Math.hypot(changed.clientX - startX, changed.clientY - startY);
-          if (movedDistance < 18 || card.dataset.touchDragging !== "true") {
-            return;
-          }
-
-          const target = document.elementFromPoint(changed.clientX, changed.clientY);
-          const slotTarget = target ? target.closest("#outfitSlots .slot") : null;
-          if (!slotTarget) {
-            clearDropTargets();
-            return;
-          }
-
-          const itemName = card.querySelector(".item-info .title-container a")?.textContent || "";
-          equipItemByName(itemName);
-          clearDropTargets();
-        },
-        { passive: true }
-      );
     });
 
     outfitSlotsContainer.querySelectorAll(".slot.equipped-slot").forEach((slot) => {
-      slot.setAttribute("draggable", "true");
+      slot.setAttribute("draggable", mobileMode ? "false" : "true");
 
       if (slot.dataset.slotDragBound === "true") {
         return;
       }
       slot.dataset.slotDragBound = "true";
+
+      if (mobileMode) {
+        return;
+      }
 
       slot.addEventListener("dragstart", (event) => {
         const slotId = slot.dataset.slotId;
@@ -1018,43 +1600,6 @@
         document.body.classList.remove("is-dragging-item");
         clearDropTargets();
       });
-
-      slot.addEventListener(
-        "touchstart",
-        (event) => {
-          const touch = event.touches[0];
-          slot.dataset.touchStartX = String(touch.clientX);
-          slot.dataset.touchStartY = String(touch.clientY);
-        },
-        { passive: true }
-      );
-
-      slot.addEventListener(
-        "touchend",
-        (event) => {
-          const changed = event.changedTouches[0];
-          if (!changed) return;
-
-          const startX = Number(slot.dataset.touchStartX || changed.clientX);
-          const startY = Number(slot.dataset.touchStartY || changed.clientY);
-          const movedDistance = Math.hypot(changed.clientX - startX, changed.clientY - startY);
-          if (movedDistance < 18) {
-            return;
-          }
-
-          const slotsBounds = outfitSlotsContainer.getBoundingClientRect();
-          const droppedInsideSlots =
-            changed.clientX >= slotsBounds.left &&
-            changed.clientX <= slotsBounds.right &&
-            changed.clientY >= slotsBounds.top &&
-            changed.clientY <= slotsBounds.bottom;
-
-          if (!droppedInsideSlots) {
-            removeItemFromSlot(slot.dataset.slotId);
-          }
-        },
-        { passive: true }
-      );
     });
 
     if (outfitSlotsContainer.dataset.dropBound === "true") {
@@ -1154,6 +1699,11 @@
     searchInput.setAttribute("aria-readonly", isColorPickerVisible ? "false" : "true");
     searchInput.value = "";
     window.syncThemeAwareColorPicker?.(true);
+    if (isColorPickerVisible) {
+      window.showSearchSuggestions?.("");
+    } else {
+      window.hideSearchSuggestions?.();
+    }
     updateMatchingItems();
   });
 
@@ -1171,10 +1721,20 @@
       updatePageScrollOffset();
       bindScrollHost();
       adjustPinnedStyles();
+      initializeDragAndDrop();
       updateScrollUI();
+      closeMobileActionSheet();
+      closeDesktopSlotContextMenu();
     },
     { passive: true }
   );
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMobileActionSheet();
+      closeDesktopSlotContextMenu();
+    }
+  });
 
   document.querySelector(".back-to-top-button").addEventListener("click", () => {
     scrollPageToTop();
@@ -1208,6 +1768,9 @@
   window.initializeDragAndDrop = initializeDragAndDrop;
   window.removeItemFromSlot = removeItemFromSlot;
   window.addItemToSlot = addItemToSlot;
+  window.equipItemToOutfit = equipItemToOutfit;
+  window.openMobileItemActionSheet = openMobileItemActionSheet;
+  window.openMobileSlotActionSheet = openMobileSlotActionSheet;
   window.scrollPageToTop = scrollPageToTop;
 
   window.onload = function () {
@@ -1217,6 +1780,7 @@
     ensurePageScrollRegion();
     updatePageScrollOffset();
     bindScrollHost();
+    preventMobileViewportZoom();
 
     fetchItems().then(() => {
       loadOutfitFromStorage();

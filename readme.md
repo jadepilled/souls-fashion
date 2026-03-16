@@ -215,11 +215,20 @@ Upcoming changes:
 - [x] Optimise images for file size
 - [x] Pull data from weapons as array to use in outfit simulator
 - [x] Pull talisman data to use in outfit simulator
-- [ ] Integrate API to serve images and item data
-- [ ] Pull textures from games to get better color values
-- [ ] Implement an outfit simulator
-- [ ] Highlight an item above the grid when an item is selected
-- [ ] Add a reset button for color, similarity threshold and secondary color weight
+- [x] Integrate API to serve images and item data
+- [x] Pull textures from games to get better color values
+- [x] Implement an outfit simulator
+- [x] Highlight an item above the grid when an item is selected
+- [x] Add a reset button for color, similarity threshold and secondary color weight
+- [x] Fix CLS issues in project for better search rankings
+- [x] Offload CSS and JavaScript to external files
+- [x] Fully implement recommended security standards
+- [x] Fix all missing image references and misconfigured names 
+- [x] Modernise UI
+- [x] Fully integrate tap and mobile gesture support for Android and iOS
+- [] Add import/export function for cross-platform compatibility and save file creation
+- [] Add stat tracking, item levels, and talismans
+- [] Launch version 1.1.0 alongside other tandem project
 
 
 <p align="center">

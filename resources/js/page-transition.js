@@ -1,10 +1,13 @@
 (function initPageTransitions() {
-  function getThemeIconSrc(isLightMode = null) {
-    const resolvedLightMode =
-      typeof isLightMode === "boolean"
-        ? isLightMode
-        : document.body?.classList.contains("light-mode") ||
+  function resolveLightMode(isLightMode = null) {
+    return typeof isLightMode === "boolean"
+      ? isLightMode
+      : document.body?.classList.contains("light-mode") ||
           localStorage.getItem("theme") === "light";
+  }
+
+  function getThemeIconSrc(isLightMode = null) {
+    const resolvedLightMode = resolveLightMode(isLightMode);
 
     return resolvedLightMode ? "icons/FS_icon_black.png" : "icons/FS_icon_white.png";
   }
@@ -91,9 +94,11 @@
 
   function setPreloaderIcon(isLightMode = null) {
     const overlay = getPreloader();
+    const resolvedLightMode = resolveLightMode(isLightMode);
+    overlay.classList.toggle("light-mode", resolvedLightMode);
     const logo = overlay.querySelector(".preloader-logo");
     if (logo) {
-      logo.src = getThemeIconSrc(isLightMode);
+      logo.src = getThemeIconSrc(resolvedLightMode);
     }
   }
 

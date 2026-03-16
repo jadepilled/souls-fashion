@@ -421,12 +421,41 @@ body.light-mode.content-page .footer {
 }
 
 @media (max-width: 1199px) {
+  .content-hero-left {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
   .content-brand-link {
     display: none;
   }
 
   .content-site-copy {
-    display: none;
+    display: flex;
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    align-items: flex-start;
+    text-align: left;
+    pointer-events: none;
+    max-width: min(13rem, calc(100vw - 6.75rem));
+  }
+
+  .content-site-copy .content-site-title,
+  .content-site-copy .site-tagline {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .content-site-copy .content-site-title {
+    font-size: clamp(0.78rem, 2.4vw, 0.95rem);
+  }
+
+  .content-site-copy .site-tagline {
+    font-size: clamp(0.5rem, 1.65vw, 0.62rem);
   }
 }
 
