@@ -70,6 +70,12 @@ body.site-menu-open.content-page .mode-switch {
   pointer-events: none;
 }
 
+body.site-menu-open.content-page .content-main,
+body.site-menu-open.content-page .footer {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .content-hero-bar {
   width: min(calc(100vw - 2rem), 68rem);
   margin: 0 auto;

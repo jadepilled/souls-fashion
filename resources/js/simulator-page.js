@@ -33,6 +33,8 @@
   const exportFooterText = "Created using souls.fashion v1.0.9";
   const defaultOutfitName = "Current Outfit";
   const colorMatchWeight = 0.35;
+  const presetStorageKey = `${gamePrefix}presets`;
+  const legacyPresetCount = 5;
 
   let currentOutfitName = defaultOutfitName;
   let simulatorStageShell = null;
@@ -50,6 +52,7 @@
   let activeContextSearch = "";
   let itemCatalog = [];
   let itemMap = new Map();
+  let presetCollection = [];
 
   function isMobileViewport() {
     return window.matchMedia("(max-width: 1199px)").matches;
@@ -108,9 +111,129 @@
     localStorage.setItem(`${gamePrefix}outfitSlots`, JSON.stringify(outfit));
   }
 
-  function getPresetName(presetNumber) {
+  function getDefaultPresetName(index) {
+    return `Preset ${index}`;
+  }
+
+  function createPresetId() {
+    return `preset_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
+  }
+
+  function sanitizeStoredOutfit(outfit) {
+    if (!outfit || typeof outfit !== "object" || Array.isArray(outfit)) {
+      return null;
+    }
+
+    const normalized = {};
+    Object.entries(outfit).forEach(([slotId, value]) => {
+      if (
+        /Slot$/.test(slotId) &&
+        value &&
+        typeof value === "object" &&
+        typeof value.name === "string" &&
+        typeof value.image === "string"
+      ) {
+        normalized[slotId] = { name: value.name, image: value.image };
+      }
+    });
+
+    return normalized;
+  }
+
+  function cloneOutfit(outfit) {
+    return JSON.parse(JSON.stringify(outfit || {}));
+  }
+
+  function createPreset(index, data = {}) {
+    return {
+      id: typeof data.id === "string" && data.id ? data.id : createPresetId(),
+      name:
+        typeof data.name === "string" && data.name.trim()
+          ? data.name.replace(/\s+/g, " ").trim()
+          : getDefaultPresetName(index),
+      outfit: sanitizeStoredOutfit(data.outfit),
+    };
+  }
+
+  function savePresetCollection(presets = presetCollection) {
+    presetCollection = presets.map((preset, index) => createPreset(index + 1, preset));
+    localStorage.setItem(presetStorageKey, JSON.stringify(presetCollection));
+    return presetCollection;
+  }
+
+  function migrateLegacyPresets() {
+    return Array.from({ length: legacyPresetCount }, (_, index) => {
+      const presetNumber = index + 1;
+      let outfit = null;
+
+      try {
+        outfit = sanitizeStoredOutfit(
+          JSON.parse(localStorage.getItem(`${gamePrefix}preset${presetNumber}`) || "null")
+        );
+      } catch (error) {
+        outfit = null;
+      }
+
+      return createPreset(presetNumber, {
+        id: `legacy_${presetNumber}`,
+        name:
+          localStorage.getItem(`${gamePrefix}presetName${presetNumber}`) ||
+          getDefaultPresetName(presetNumber),
+        outfit,
+      });
+    });
+  }
+
+  function loadPresetCollection() {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(presetStorageKey) || "null");
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        return parsed.map((preset, index) => createPreset(index + 1, preset));
+      }
+    } catch (error) {
+      console.warn("Unable to read preset collection:", error);
+    }
+
+    const migrated = migrateLegacyPresets();
+    savePresetCollection(migrated);
+    return migrated;
+  }
+
+  function getPresetById(presetId) {
+    return presetCollection.find((preset) => preset.id === presetId) || null;
+  }
+
+  function getNextPresetName() {
+    let nextIndex = presetCollection.length + 1;
+    let candidate = getDefaultPresetName(nextIndex);
+
+    while (presetCollection.some((preset) => preset.name === candidate)) {
+      nextIndex += 1;
+      candidate = getDefaultPresetName(nextIndex);
+    }
+
+    return candidate;
+  }
+
+  function countPresetItems(preset) {
+    return preset?.outfit ? Object.keys(preset.outfit).length : 0;
+  }
+
+  function findMatchingPreset(outfit) {
+    const normalizedOutfit = sanitizeStoredOutfit(outfit);
+    if (!normalizedOutfit) {
+      return null;
+    }
+
+    const outfitString = JSON.stringify(normalizedOutfit);
     return (
-      localStorage.getItem(`${gamePrefix}presetName${presetNumber}`) || `Preset ${presetNumber}`
+      presetCollection.find((preset) => {
+        if (!preset.outfit) {
+          return false;
+        }
+
+        return JSON.stringify(preset.outfit) === outfitString;
+      }) || null
     );
   }
 
@@ -317,64 +440,196 @@
   }
 
   function findMatchingPresetName(outfit) {
-    const outfitString = JSON.stringify(outfit);
-    for (let index = 1; index <= 5; index += 1) {
-      const savedPreset = localStorage.getItem(`${gamePrefix}preset${index}`);
-      if (savedPreset && savedPreset === outfitString) {
-        return getPresetName(index);
-      }
-    }
-    return defaultOutfitName;
+    return findMatchingPreset(outfit)?.name || defaultOutfitName;
   }
 
   function syncCurrentOutfitName() {
     currentOutfitName = findMatchingPresetName(getOutfitData());
   }
 
-  function loadPresetNames() {
-    for (let index = 1; index <= 5; index += 1) {
-      const element = document.getElementById(`presetName${index}`);
-      if (element) {
-        element.textContent = getPresetName(index);
-      }
-    }
-  }
-
-  function clearPreset(presetNumber) {
-    localStorage.removeItem(`${gamePrefix}preset${presetNumber}`);
-    setPresetDrawerOpen(false);
+  function addPreset() {
+    savePresetCollection([
+      ...presetCollection,
+      createPreset(presetCollection.length + 1, { name: getNextPresetName(), outfit: null }),
+    ]);
+    renderPresetList();
     syncCurrentOutfitName();
   }
 
-  function savePreset(presetNumber) {
-    const currentOutfit = getOutfitData();
-    localStorage.setItem(`${gamePrefix}preset${presetNumber}`, JSON.stringify(currentOutfit));
-    currentOutfitName = getPresetName(presetNumber);
+  function clearPreset(presetId) {
+    savePresetCollection(
+      presetCollection.map((preset) =>
+        preset.id === presetId ? { ...preset, outfit: null } : preset
+      )
+    );
     setPresetDrawerOpen(false);
+    syncCurrentOutfitName();
+    renderPresetList();
   }
 
-  function loadPreset(presetNumber) {
-    const preset = JSON.parse(localStorage.getItem(`${gamePrefix}preset${presetNumber}`) || "null");
-    if (!preset) {
+  function savePreset(presetId) {
+    const currentOutfit = cloneOutfit(sanitizeStoredOutfit(getOutfitData()) || {});
+    savePresetCollection(
+      presetCollection.map((preset) =>
+        preset.id === presetId ? { ...preset, outfit: currentOutfit } : preset
+      )
+    );
+    currentOutfitName = getPresetById(presetId)?.name || defaultOutfitName;
+    setPresetDrawerOpen(false);
+    renderPresetList();
+  }
+
+  function loadPreset(presetId) {
+    const preset = getPresetById(presetId);
+    if (!preset?.outfit) {
       return;
     }
 
-    saveOutfitData(preset);
-    currentOutfitName = getPresetName(presetNumber);
+    saveOutfitData(cloneOutfit(preset.outfit));
+    currentOutfitName = preset.name;
     loadOutfitFromStorage();
     setPresetDrawerOpen(false);
   }
 
-  function updatePresetName(presetNumber, value) {
-    const cleanedValue = value.replace(/\s+/g, " ").trim() || `Preset ${presetNumber}`;
-    localStorage.setItem(`${gamePrefix}presetName${presetNumber}`, cleanedValue);
-
-    const element = document.getElementById(`presetName${presetNumber}`);
-    if (element) {
-      element.textContent = cleanedValue;
+  function deletePreset(presetId) {
+    if (presetCollection.length <= 1) {
+      clearPreset(presetId);
+      return;
     }
 
+    savePresetCollection(presetCollection.filter((preset) => preset.id !== presetId));
+    renderPresetList();
     syncCurrentOutfitName();
+  }
+
+  function updatePresetName(presetId, value) {
+    const presetIndex = presetCollection.findIndex((preset) => preset.id === presetId);
+    if (presetIndex === -1) {
+      return;
+    }
+
+    const cleanedValue =
+      value.replace(/\s+/g, " ").trim() || getDefaultPresetName(presetIndex + 1);
+    savePresetCollection(
+      presetCollection.map((preset) =>
+        preset.id === presetId ? { ...preset, name: cleanedValue } : preset
+      )
+    );
+    syncCurrentOutfitName();
+    renderPresetList();
+  }
+
+  function createPresetAction(action, presetId, label, disabled = false) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "preset-action";
+    button.dataset.action = action;
+    button.dataset.presetId = presetId;
+    button.textContent = label;
+    button.disabled = disabled;
+    return button;
+  }
+
+  function createPresetCard(preset, index, activePresetId) {
+    const card = document.createElement("article");
+    card.className = "preset";
+    card.dataset.presetId = preset.id;
+    if (preset.id === activePresetId) {
+      card.classList.add("is-active");
+    }
+
+    const header = document.createElement("div");
+    header.className = "preset-head";
+
+    const badge = document.createElement("span");
+    badge.className = "preset-badge";
+    badge.textContent = `Preset ${index + 1}`;
+    header.appendChild(badge);
+
+    if (presetCollection.length > 1) {
+      const deleteButton = document.createElement("button");
+      deleteButton.type = "button";
+      deleteButton.className = "preset-delete-button";
+      deleteButton.dataset.presetId = preset.id;
+      deleteButton.setAttribute("aria-label", `Delete ${preset.name}`);
+      deleteButton.textContent = "×";
+      header.appendChild(deleteButton);
+    }
+
+    const name = document.createElement("h3");
+    name.className = "editable-preset-name";
+    name.dataset.presetId = preset.id;
+    name.contentEditable = "true";
+    name.spellcheck = false;
+    name.textContent = preset.name;
+
+    const slotCount = countPresetItems(preset);
+    const meta = document.createElement("p");
+    meta.className = "preset-meta";
+    meta.textContent =
+      preset.outfit === null
+        ? "Empty preset"
+        : slotCount === 0
+          ? "Saved empty look"
+          : `${slotCount} equipped slot${slotCount === 1 ? "" : "s"} saved`;
+
+    const actions = document.createElement("div");
+    actions.className = "preset-actions";
+    actions.appendChild(createPresetAction("save", preset.id, "Save"));
+    actions.appendChild(createPresetAction("load", preset.id, "Load", preset.outfit === null));
+    actions.appendChild(createPresetAction("clear", preset.id, "Clear", preset.outfit === null));
+
+    card.appendChild(header);
+    card.appendChild(name);
+    card.appendChild(meta);
+    card.appendChild(actions);
+    return card;
+  }
+
+  function renderPresetList() {
+    const presetContainer = document.getElementById("presetContainer");
+    if (!presetContainer) {
+      return;
+    }
+
+    const matchingPreset = findMatchingPreset(getOutfitData());
+    const activePresetId = matchingPreset?.id || "";
+    presetContainer.innerHTML = "";
+
+    const railHeader = document.createElement("div");
+    railHeader.className = "preset-rail-header";
+
+    const railCopy = document.createElement("div");
+    railCopy.className = "preset-rail-copy";
+
+    const title = document.createElement("p");
+    title.className = "preset-rail-title";
+    title.textContent = "Presets";
+
+    const subtitle = document.createElement("p");
+    subtitle.className = "preset-rail-subtitle";
+    subtitle.textContent = `${presetCollection.length} look${presetCollection.length === 1 ? "" : "s"} ready`;
+
+    railCopy.appendChild(title);
+    railCopy.appendChild(subtitle);
+
+    const addButton = document.createElement("button");
+    addButton.type = "button";
+    addButton.className = "preset-add-button";
+    addButton.textContent = "New Preset";
+
+    railHeader.appendChild(railCopy);
+    railHeader.appendChild(addButton);
+    presetContainer.appendChild(railHeader);
+
+    const presetList = document.createElement("div");
+    presetList.className = "preset-list";
+
+    presetCollection.forEach((preset, index) => {
+      presetList.appendChild(createPresetCard(preset, index, activePresetId));
+    });
+
+    presetContainer.appendChild(presetList);
   }
 
   function setPresetDrawerOpen(open) {
@@ -850,6 +1105,7 @@
     });
 
     currentOutfitName = findMatchingPresetName(outfit);
+    renderPresetList();
     updateSimulatorScale();
   }
 
@@ -1011,50 +1267,82 @@
   }
 
   function bindPresetInteractions() {
-    document.querySelectorAll(".editable-preset-name").forEach((element) => {
-      if (element.dataset.bound === "true") {
-        return;
-      }
+    const presetContainer = document.getElementById("presetContainer");
+    if (presetContainer && presetContainer.dataset.bound !== "true") {
+      presetContainer.dataset.bound = "true";
 
-      element.dataset.bound = "true";
-      element.addEventListener("focus", () => {
-        element.classList.add("is-editing");
-      });
-      element.addEventListener("blur", () => {
-        element.classList.remove("is-editing");
-        updatePresetName(Number(element.dataset.presetNumber), element.textContent);
-      });
-      element.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          element.blur();
+      presetContainer.addEventListener("click", (event) => {
+        const addButton = event.target.closest(".preset-add-button");
+        if (addButton) {
+          addPreset();
+          return;
         }
-      });
-    });
 
-    document.querySelectorAll(".preset-action").forEach((element) => {
-      if (element.dataset.bound === "true") {
-        return;
-      }
+        const deleteButton = event.target.closest(".preset-delete-button");
+        if (deleteButton) {
+          deletePreset(deleteButton.dataset.presetId);
+          return;
+        }
 
-      element.dataset.bound = "true";
-      element.addEventListener("click", () => {
-        const presetNumber = Number(element.dataset.presetNumber);
-        switch (element.dataset.action) {
+        const actionButton = event.target.closest(".preset-action");
+        if (!actionButton) {
+          return;
+        }
+
+        const presetId = actionButton.dataset.presetId;
+        switch (actionButton.dataset.action) {
           case "save":
-            savePreset(presetNumber);
+            savePreset(presetId);
             break;
           case "load":
-            loadPreset(presetNumber);
+            loadPreset(presetId);
             break;
           case "clear":
-            clearPreset(presetNumber);
+            clearPreset(presetId);
             break;
           default:
             break;
         }
       });
-    });
+
+      presetContainer.addEventListener("focusin", (event) => {
+        const nameField = event.target.closest(".editable-preset-name");
+        if (!nameField) {
+          return;
+        }
+
+        nameField.classList.add("is-editing");
+      });
+
+      presetContainer.addEventListener("focusout", (event) => {
+        const nameField = event.target.closest(".editable-preset-name");
+        if (!nameField) {
+          return;
+        }
+
+        nameField.classList.remove("is-editing");
+        updatePresetName(nameField.dataset.presetId, nameField.textContent);
+      });
+
+      presetContainer.addEventListener("keydown", (event) => {
+        const nameField = event.target.closest(".editable-preset-name");
+        if (!nameField) {
+          return;
+        }
+
+        if (event.key === "Enter") {
+          event.preventDefault();
+          nameField.blur();
+          return;
+        }
+
+        if (event.key === "Escape") {
+          event.preventDefault();
+          nameField.textContent = getPresetById(nameField.dataset.presetId)?.name || "";
+          nameField.blur();
+        }
+      });
+    }
 
     if (presetDrawerToggle && presetDrawerToggle.dataset.bound !== "true") {
       presetDrawerToggle.dataset.bound = "true";
@@ -1108,9 +1396,10 @@
   async function init() {
     ensureSimulatorStructure();
     ensureContextMenu();
+    presetCollection = loadPresetCollection();
+    renderPresetList();
     bindGlobalDismissals();
     bindPresetInteractions();
-    loadPresetNames();
     await fetchItemCatalog();
     loadOutfitFromStorage();
     syncPresetDrawerState();

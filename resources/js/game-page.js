@@ -47,7 +47,12 @@
   let activeDesktopSlotId = "";
   let activeDesktopSlotItem = null;
   let activeDesktopSlotSearch = "";
-  const desktopGridLevels = Array.from({ length: 13 }, (_, index) => index + 4);
+  const MOBILE_GRID_MIN = 2;
+  const MOBILE_GRID_MAX = 16;
+  const desktopGridLevels = Array.from(
+    { length: MOBILE_GRID_MAX - MOBILE_GRID_MIN + 1 },
+    (_, index) => index + MOBILE_GRID_MIN
+  );
   const desktopContextColorMatchWeight = 0.35;
   const slotLabels = {
     head: "Head",
@@ -581,8 +586,11 @@
   function applyMobileGridColumns(value, persist = true) {
     const numericValue = Number(value);
     const clampedValue = Math.min(
-      5,
-      Math.max(2, Number.isFinite(numericValue) ? Math.round(numericValue) : 2)
+      MOBILE_GRID_MAX,
+      Math.max(
+        MOBILE_GRID_MIN,
+        Number.isFinite(numericValue) ? Math.round(numericValue) : MOBILE_GRID_MIN
+      )
     );
 
     currentMobileGridColumns = clampedValue;
@@ -621,9 +629,11 @@
     applyDesktopGridColumns(initialDesktopColumns, false);
 
     const savedColumns = Number(localStorage.getItem(`${window.gamePrefix}tileColumns`));
-    const initialColumns = Number.isFinite(savedColumns)
-      ? Math.min(5, Math.max(2, savedColumns))
-      : 2;
+    const initialColumns = isMobileViewport()
+      ? MOBILE_GRID_MIN
+      : Number.isFinite(savedColumns)
+        ? Math.min(MOBILE_GRID_MAX, Math.max(MOBILE_GRID_MIN, savedColumns))
+        : MOBILE_GRID_MIN;
     applyMobileGridColumns(initialColumns, false);
     syncSliderVisibility();
 
@@ -648,14 +658,14 @@
   }
 
   function setupPinchZoom() {
-    const itemGridElement = document.getElementById("itemGrid");
-    if (!itemGridElement) {
+    if (document.body.dataset.mobilePinchBound === "true") {
       return;
     }
 
-    let pinchStartDistance = null;
-    let pinchStartColumns = currentMobileGridColumns;
-    const pinchStepSize = 18;
+    document.body.dataset.mobilePinchBound = "true";
+
+    let pinchActive = false;
+    let pinchLastDistance = 0;
 
     const getDistance = (touchA, touchB) => {
       const dx = touchA.clientX - touchB.clientX;
@@ -663,42 +673,101 @@
       return Math.hypot(dx, dy);
     };
 
+    const getPinchStepSize = () => {
+      const itemGridElement = document.getElementById("itemGrid");
+      const gridWidth = itemGridElement?.clientWidth || window.innerWidth || 320;
+      return Math.max(16, Math.min(34, gridWidth * 0.045));
+    };
+
+    const isTouchInsideGrid = (touch) => {
+      const itemGridElement = document.getElementById("itemGrid");
+      if (!itemGridElement || !touch) {
+        return false;
+      }
+
+      const rect = itemGridElement.getBoundingClientRect();
+      return (
+        touch.clientX >= rect.left &&
+        touch.clientX <= rect.right &&
+        touch.clientY >= rect.top &&
+        touch.clientY <= rect.bottom
+      );
+    };
+
+    const canStartPinch = (event) =>
+      isMobileViewport() &&
+      event.touches.length === 2 &&
+      isTouchInsideGrid(event.touches[0]) &&
+      isTouchInsideGrid(event.touches[1]);
+
     const onTouchStart = (event) => {
-      if (!isMobileViewport() || event.touches.length !== 2) {
+      if (!canStartPinch(event)) {
         return;
       }
 
-      pinchStartDistance = getDistance(event.touches[0], event.touches[1]);
-      pinchStartColumns = currentMobileGridColumns;
+      pinchActive = true;
+      pinchLastDistance = getDistance(event.touches[0], event.touches[1]);
       event.preventDefault();
     };
 
     const onTouchMove = (event) => {
-      if (!isMobileViewport() || pinchStartDistance === null || event.touches.length !== 2) {
+      if (!pinchActive && canStartPinch(event)) {
+        pinchActive = true;
+        pinchLastDistance = getDistance(event.touches[0], event.touches[1]);
+      }
+
+      if (!pinchActive || !isMobileViewport() || event.touches.length !== 2) {
         return;
       }
 
       const currentDistance = getDistance(event.touches[0], event.touches[1]);
-      const delta = currentDistance - pinchStartDistance;
-      const steps = Math.trunc(delta / pinchStepSize);
+      const pinchStepSize = getPinchStepSize();
+      let delta = currentDistance - pinchLastDistance;
+      let updatedColumns = false;
 
-      if (steps !== 0) {
-        applyMobileGridColumns(pinchStartColumns - steps);
+      while (Math.abs(delta) >= pinchStepSize) {
+        const nextColumns =
+          delta > 0 ? currentMobileGridColumns - 1 : currentMobileGridColumns + 1;
+
+        if (nextColumns === currentMobileGridColumns) {
+          pinchLastDistance = currentDistance;
+          break;
+        }
+
+        applyMobileGridColumns(nextColumns);
+        pinchLastDistance += delta > 0 ? pinchStepSize : -pinchStepSize;
+        delta = currentDistance - pinchLastDistance;
+        updatedColumns = true;
       }
 
-      event.preventDefault();
+      if (updatedColumns || pinchActive) {
+        event.preventDefault();
+      }
     };
 
     const onTouchEnd = (event) => {
       if (event.touches.length < 2) {
-        pinchStartDistance = null;
+        pinchActive = false;
+        pinchLastDistance = 0;
       }
     };
 
-    itemGridElement.addEventListener("touchstart", onTouchStart, { passive: false });
-    itemGridElement.addEventListener("touchmove", onTouchMove, { passive: false });
-    itemGridElement.addEventListener("touchend", onTouchEnd, { passive: true });
-    itemGridElement.addEventListener("touchcancel", onTouchEnd, { passive: true });
+    document.addEventListener("touchstart", onTouchStart, {
+      passive: false,
+      capture: true,
+    });
+    document.addEventListener("touchmove", onTouchMove, {
+      passive: false,
+      capture: true,
+    });
+    document.addEventListener("touchend", onTouchEnd, {
+      passive: true,
+      capture: true,
+    });
+    document.addEventListener("touchcancel", onTouchEnd, {
+      passive: true,
+      capture: true,
+    });
   }
 
   function preventMobileViewportZoom() {

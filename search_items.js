@@ -9,6 +9,7 @@ let activeFilters = new Set(); // To track active filters
 let hasNotifiedInitialGridLoad = false;
 let selectedHexColor = "";
 let titleFitFrame = 0;
+let lastRenderedItemSignature = "";
 
 // Store page name as var
 var url = window.location.href;
@@ -39,19 +40,26 @@ function setSliderLabelValue(controlId, valueText) {
   label.textContent = `${baseLabel}: ${valueText}`;
 }
 
-function fitCardTitleText(titleElement) {
+function fitCardTitleText(titleElement, referenceWidth = 200) {
   if (!titleElement) {
     return;
   }
 
   const titleLength = (titleElement.textContent || "").trim().length;
-  const nextSize = Math.max(0.56, 0.86 - Math.max(0, titleLength - 18) * 0.012);
+  const normalizedWidth = Math.max(92, Number.isFinite(referenceWidth) ? referenceWidth : 200);
+  const widthFactor = Math.max(0.58, Math.min(1.08, normalizedWidth / 180));
+  const lengthPenalty = Math.max(0, titleLength - 12) * 0.02;
+  const nextSize = Math.max(0.42, Math.min(0.9, 0.84 * widthFactor - lengthPenalty));
   titleElement.style.fontSize = `${nextSize.toFixed(3)}rem`;
+  titleElement.style.lineHeight = nextSize < 0.5 ? "1.02" : nextSize < 0.62 ? "1.06" : "1.1";
 }
 
 function fitVisibleCardTitles(scope = document) {
+  const sampleCard = scope.querySelector(".item-card");
+  const referenceWidth = sampleCard?.getBoundingClientRect().width || 200;
+
   scope.querySelectorAll(".item-card .title-container a").forEach(title => {
-    fitCardTitleText(title);
+    fitCardTitleText(title, referenceWidth);
   });
 }
 
@@ -324,15 +332,32 @@ function findMatchingItems(inputColor, secondaryWeight, query) {
   return withinThresholdItems;
 }
 
+function getRenderedItemSignature(filteredItems) {
+  return `${filteredItems.length}::${filteredItems
+    .map((item) => item.image || item.name)
+    .join("|")}`;
+}
+
 // Display items in the grid
 function displayItems(filteredItems) {
   const itemGrid = document.getElementById("itemGrid");
+  const renderSignature = getRenderedItemSignature(filteredItems);
+
+  if (renderSignature === lastRenderedItemSignature) {
+    scheduleVisibleCardTitleFit(itemGrid);
+    return false;
+  }
+
+  lastRenderedItemSignature = renderSignature;
   itemGrid.innerHTML = ""; // Clear the current grid
+  const fragment = document.createDocumentFragment();
 
   filteredItems.forEach(item => {
     const itemCard = createItemCard(item);
-    itemGrid.appendChild(itemCard);
+    fragment.appendChild(itemCard);
   });
+
+  itemGrid.appendChild(fragment);
 
   scheduleVisibleCardTitleFit(itemGrid);
 
@@ -364,6 +389,8 @@ function displayItems(filteredItems) {
       }
     });
   }
+
+  return true;
 }
 
 // Function to create item cards with click event for search
@@ -586,9 +613,11 @@ function updateMatchingItems() {
     secondaryWeight,
     query
   );
-  displayItems(matchingItems);
-  initializeItemGrid();
-  initializeDragAndDrop();
+  const didRender = displayItems(matchingItems);
+  if (didRender) {
+    initializeItemGrid();
+    initializeDragAndDrop();
+  }
 }
 
 // Function to toggle filters
@@ -639,9 +668,6 @@ document.getElementById("clearFilter").addEventListener("click", () => {
 });
 
 
-
-// Fetch items on page load
-window.onload = fetchItems;
 
 syncColorThreshold(document.getElementById("colorThresholdSlider")?.value);
 syncThemeAwareColorPicker(true);

@@ -1,4 +1,7 @@
 (function initPageTransitions() {
+  const TRANSITION_STORAGE_KEY = "soulsNavigationPending";
+  const TRANSITION_STORAGE_TTL = 12000;
+
   function resolveLightMode(isLightMode = null) {
     return typeof isLightMode === "boolean"
       ? isLightMode
@@ -84,12 +87,34 @@
   let ready = false;
   let navigating = false;
   let navigationTimer = null;
+  let initialized = false;
 
   function getPreloader() {
     if (!preloader) {
       preloader = ensurePreloader();
     }
     return preloader;
+  }
+
+  function hasPendingTransition() {
+    try {
+      const lastTransition = Number(sessionStorage.getItem(TRANSITION_STORAGE_KEY));
+      return Number.isFinite(lastTransition) && Date.now() - lastTransition < TRANSITION_STORAGE_TTL;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function setPendingTransition(active) {
+    try {
+      if (active) {
+        sessionStorage.setItem(TRANSITION_STORAGE_KEY, String(Date.now()));
+      } else {
+        sessionStorage.removeItem(TRANSITION_STORAGE_KEY);
+      }
+    } catch (error) {
+      // Ignore storage failures and continue with the transition.
+    }
   }
 
   function setPreloaderIcon(isLightMode = null) {
@@ -102,11 +127,16 @@
     }
   }
 
-  function showPreloader() {
+  function showPreloader(options = {}) {
+    const { persistState = false } = options;
     const overlay = getPreloader();
     setPreloaderIcon();
     overlay.classList.remove("hidden");
     document.body.classList.add("preloader-visible");
+
+    if (persistState) {
+      setPendingTransition(true);
+    }
   }
 
   function hidePreloader() {
@@ -115,6 +145,7 @@
     overlay.classList.add("hidden");
     document.body.classList.remove("preloader-visible");
     document.body.classList.remove("page-is-transitioning");
+    setPendingTransition(false);
   }
 
   function markReady() {
@@ -130,15 +161,24 @@
 
   function navigateTo(href) {
     clearTimeout(navigationTimer);
+    setPendingTransition(true);
     navigationTimer = window.setTimeout(() => {
       window.location.href = href;
     }, 180);
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  function initializePreloader() {
+    if (initialized || !document.body) {
+      return;
+    }
+
+    initialized = true;
     setPreloaderIcon();
     showPreloader();
-  });
+  }
+
+  initializePreloader();
+  document.addEventListener("DOMContentLoaded", initializePreloader, { once: true });
 
   document.addEventListener(
     "click",
@@ -151,28 +191,35 @@
       navigating = true;
       event.preventDefault();
       document.body.classList.add("page-is-transitioning");
-      showPreloader();
+      showPreloader({ persistState: true });
       navigateTo(link.href);
     },
     true
   );
 
   document.addEventListener("souls:page-ready", markReady);
-  window.addEventListener("pageshow", () => {
+  window.addEventListener("pageshow", (event) => {
     clearTimeout(navigationTimer);
     navigating = false;
     setPreloaderIcon();
-    if (ready) {
+
+    if (event.persisted && ready) {
       hidePreloader();
-    } else {
-      showPreloader();
+      return;
     }
+
+    if (!ready || hasPendingTransition()) {
+      showPreloader();
+      return;
+    }
+
+    hidePreloader();
   });
 
   window.addEventListener("beforeunload", () => {
     if (!navigating) {
       document.body.classList.add("page-is-transitioning");
-      showPreloader();
+      showPreloader({ persistState: true });
     }
   });
 
