@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="resources/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn what souls.fashion does, how to use every major control, and how to build and export a complete outfit.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="resources/styles.css?v1.0.9">
+    <link rel="stylesheet" href="resources/content-pages.css?v1.0.9">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/icon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/icon_48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/icon_96x96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicons/icon_167x167.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
+    <link rel="icon" href="favicon.ico">
+    <title>About - Fashion Souls v1.0.9</title>
+</head>
+<body class="content-page about-page">
+<div id="preloader" class="preloader">
+    <img src="icons/FS_icon_white.png" alt="souls.fashion" class="preloader-logo">
+</div>
+
+<div class="content-shell">
+    <header class="content-hero">
+        <div class="content-hero-bar">
+            <div class="content-hero-left">
+                <button class="show-menu" aria-label="Toggle navigation menu"></button>
+                <a class="content-brand-link" href="index" aria-label="Fashion Souls home">
+                    <img src="icons/FS_icon_white.png" alt="Fashion Souls" class="content-brand-icon">
+                </a>
+                <div class="content-site-copy">
+                    <h3 class="content-site-title">Fashion Souls</h3>
+                    <p class="site-tagline">SoulsBorne Fashion Tool by psyopgirl</p>
+                </div>
+            </div>
+            <button class="mode-switch" id="modeToggle" aria-label="Toggle display mode" title="Toggle display mode">&#9680;</button>
+        </div>
+    </header>
+
+    <main class="content-main">
+        <section class="content-card">
+            <p class="content-eyebrow">About</p>
+            <h3>Mission</h3>
+            <p><i>souls.fashion</i> is a web-hosted application built by a single developer as a passion project. It exists to make outfit building in FromSoftware games fast, visually exciting, and fun. Instead of manually checking hundreds of armor pieces and weapons in-game, the site allows users to search by item or colour, compare palettes, assemble a look, and export a clean presentation image, immediately ready to share.</p>
+        </section>
+
+        <section class="content-grid">
+            <article class="content-card">
+                <h3>What The Site Does</h3>
+                <ul class="feature-list">
+                    <li>Search armor, weapons, and clothing for all games by name and colour.</li>
+                    <li>Filter by slot so you can find whichever missing piece your outfit needs.</li>
+                    <li>Match items by colour using the picker, the secondary-colour weight control, and the similarity threshold slider.</li>
+                    <li>Drag pieces into the outfit sidebar to assemble a full look before exporting.</li>
+                    <li>Open the outfit simulator to save, load, and edit presets, and export your finished outfit image.</li>
+                </ul>
+            </article>
+            <article class="content-card">
+                <h3>Designed For Desktop And Mobile</h3>
+                <ul class="feature-list">
+                    <li>The main game pages feature logically-grouped controls and a simple, understandable layout.</li>
+                    <li>Smart zoom control and deep search integration for mobile and desktop users.</li>
+                    <li>Professional-quality output images regardless of platform - use souls.fashion on your phone, laptop or tablet.</li>
+                    <li>Optimised to display on a wide variety of devices and monitors with compatibility as a critical driver of design.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="content-card">
+            <h3>Control Guide</h3>
+            <div class="control-grid">
+                <article class="control-card">
+                    <h3>Search by name or colour</h3>
+                    <p>Type part of an item name to narrow the grid instantly. Use the adjacent `Item` button to switch between item-name search and hex-based colour matching.</p>
+                </article>
+                <article class="control-card">
+                    <h3>Colour picker and threshold</h3>
+                    <p>Pick a reference colour or grab one from an existing item, then tune the similarity threshold to decide how strict the match should be. Lower values are tighter; higher values are broader.</p>
+                </article>
+                <article class="control-card">
+                    <h3>Secondary Colour Weight</h3>
+                    <p>Adjust how strongly the item's secondary palette influences ranking. This is useful when an armor piece has trim or other accents you want to emphasize. Higher values consider secondary colours more.</p>
+                </article>
+                <article class="control-card">
+                    <h3>Controlling Grid Size</h3>
+                    <p>On desktop, use the Tiles Per Row slider to alter the number of cards per row. You can adjust grid size on mobile by issuing a zoom in/out command within a game page.</p>
+                </article>
+                <article class="control-card">
+                    <h3>Equipment sidebar</h3>
+                    <p>Drag items from the grid into the equipment slots to build an outfit. You can remove pieces again by dragging them out of the slot area or right clicking `Remove Item`.</p>
+                </article>
+                <article class="control-card">
+                    <h3>Export and presets</h3>
+                    <p>Use `Export` to jump into the simulator. There you will see your currently equipped outfit, which can be renamed, altered, saved or loaded, before exporting the finished image.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h3>Tutorial</h3>
+            <ol class="tutorial-list">
+                <li>Open the page for your game of choice, then search by item or hex colour and use the filter buttons to find a starting piece for your look. You can click an item's card, or any of the colours within its palette, to search using that item or colour.</li>
+                <li>Switch from `Item` search to hex search if you want to match around a specific colour. Fine-tune the `Colour Similarity Threshold` and `Secondary Colour Weight` until the results feel right.</li>
+                <li>Adjust `Cards Per Row` if you want a denser or larger browsing layout while you compare options.</li>
+                <li>Drag or right-click then select `Send to Outfit Simulator` on whichever items you'd like to add into the equipment sidebar until your desired slots are filled. You may remove items by dragging them out of the outfit panel, or right clicking on the item in the panel slot and selecting `Remove Item`.</li>
+                <li>When the outfit is ready, press `Export` to open the simulator with the current look.</li>
+                <li>Click or tap a preset name to rename it. If you set a custom name for your preset, it will be included in the output image.</li>
+                <li>Use the save and load controls in the simulator to store your look in browser storage, revisit older presets, or clear a preset slot when you want to start anew. On mobile, open the preset drawer when you need these controls.</li>
+                <li>Export the finished outfit image. The output uses the same canonical composition across devices so the final render stays consistent and high-quality across desktop and mobile.</li>
+                <li>Enjoy your new god-killing drip, and consider supporting the project on Ko-Fi if it was helpful!</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Copyright &copy; psyopgirl 2024.<br>
+        Dark Souls, Elden Ring, Bloodborne &amp; Demon's Souls are property of Sony &amp; FromSoftware respectively.
+    </footer>
+</div>
+
+<script src="resources/js/page-transition.js?v1.0.9"></script>
+<script src="resources/js/site-pages.js?v1.0.9"></script>
+</body>
+</html>

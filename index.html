@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="resources/styles.css?v1.0.9">
+    <link rel="stylesheet" href="resources/content-pages.css?v1.0.9">
+    <link rel="stylesheet" href="resources/index.css?v1.0.9">
 	<link rel="icon" type="image/x-icon" href="icon.ico">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/icon_16x16.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/icon_32x32.png">
@@ -17,191 +20,41 @@
 	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
 	<link rel="icon" href="favicon.ico">
     <title>Fashion Souls v1.0.9</title>
-    <style>
-        *, *::before, *::after { box-sizing: border-box; }
-
-        :root {
-            --tile-width: 250px;
-        }
-
-        h2 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 70px;margin: 0;}
-        h3 {text-align: center;font-family: "Spectral",'fallback', Helvetica, Arial, sans-serif;font-size: 20px;margin: 0;}
-
-        body {
-            font-family: "Spectral", 'fallback', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #ffffff;
-            transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
-            opacity: 1;
-            visibility: visible;
-            padding-bottom: 55px;
-        }
-
-        .fade-out {opacity: 0;visibility: hidden;}
-
-        .hero {
-            position: sticky;
-            top: 0;
-            z-index: 20;
-            background: rgba(18, 18, 18, 0.95);
-            backdrop-filter: blur(4px);
-            padding: 14px 16px 12px;
-            border-bottom: 1px solid #333;
-        }
-
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-bottom: 12px;
-        }
-
-
-        .item-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .item-card {
-            background-color: #333;
-            border: 1px solid #555;
-            padding: 14px;
-            flex: 0 1 var(--tile-width);
-            width: var(--tile-width);
-            text-align: center;
-            color: #fff;
-            transition: width 0.2s ease, transform 0.2s ease;
-        }
-
-        .item-card:hover {transform: translateY(-2px);}
-
-        .item-media {
-            width: 100%;
-            aspect-ratio: 10 / 16;
-            overflow: hidden;
-            background: #202020;
-        }
-
-        .item-card img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .copyright {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            margin: 0;
-            padding: 10px 0;
-            font-size: 14px;
-            color: #333333;
-            background-color: rgba(18, 18, 18, 0.8);
-        }
-
-        @media (max-width: 900px) {
-            h2 {font-size: 50px;}
-            h3 {font-size: 14px;}
-            .item-grid {padding: 14px; gap: 14px;}
-            .item-card {
-                flex: 0 1 calc((100% - 14px) / 2);
-                width: calc((100% - 14px) / 2);
-                max-width: calc((100% - 14px) / 2);
-                min-width: 0;
-                padding: 10px;
-            }
-        }
-    </style>
 </head>
-<body>
-<div class="hero">
-    <div class="hero-text">
-        <h2>Fashion Souls</h2>
-        <h3 style="color: #bfbfbf">SoulsBorne Fashion Tool by Psyopgirl</h3>
+<body class="content-page index-page">
+<div id="preloader" class="preloader">
+    <img src="icons/FS_icon_white.png" alt="souls.fashion" class="preloader-logo">
+</div>
 
+<div class="content-shell">
+    <header class="content-hero hero">
+        <div class="content-hero-bar">
+            <div class="content-hero-left">
+                <button class="show-menu" aria-label="Toggle navigation menu"></button>
+                <a class="content-brand-link" href="index" aria-label="Fashion Souls home">
+                    <img src="icons/FS_icon_white.png" alt="Fashion Souls" class="content-brand-icon">
+                </a>
+                <div class="content-site-copy">
+                    <h3 class="content-site-title">Fashion Souls</h3>
+                    <p class="site-tagline">SoulsBorne Fashion Tool by psyopgirl</p>
+                </div>
+            </div>
+            <button class="mode-switch" id="modeToggle" aria-label="Toggle display mode" title="Toggle display mode">&#9680;</button>
+        </div>
+    </header>
+
+    <div class="index-grid" id="itemGrid">
+        <!-- Images will be dynamically loaded here -->
+    </div>
+
+    <div class="copyright">
+        Copyright &copy; psyopgirl 2024.<br>
+	    Dark Souls, Elden Ring, Bloodborne &amp; Demon's Souls are property of Sony &amp; FromSoftware respectively.
     </div>
 </div>
 
-<div class="item-grid" id="itemGrid">
-    <!-- Images will be dynamically loaded here -->
-</div>
-
-<div class="copyright">
-    Copyright © Psyopgirl 2024. <p></p>
-	Dark Souls, Elden Ring, Bloodborne & Demon's Souls are property of Sony & FromSoftware respectively.<p></p>
-</div>
-
-<script>
-
-    function loadImages() {
-        const itemGrid = document.getElementById('itemGrid');
-        const items = [
-            {img: 'https://i.ibb.co/Zz6L6c6/elden-ring-grid.webp', placeholder: 'resources/grid-images/elden-ring-grid_placeholder.webp', link: 'eldenring'},
-            {img: 'https://i.ibb.co/0Zk0dbB/bloodborne-grid.webp', placeholder: 'resources/grid-images/bloodborne-grid_placeholder.webp', link: 'bloodborne'},
-            {img: 'https://i.ibb.co/1rLcBQG/dark-souls-grid.webp', placeholder: 'resources/grid-images/dark-souls-grid_placeholder.webp', link: 'ds1'},
-            {img: 'https://i.ibb.co/gFfpdmD/dark-souls-2-grid.webp', placeholder: 'resources/grid-images/dark-souls-2-grid_placeholder.webp', link: 'ds2'},
-            {img: 'https://i.ibb.co/NT663zC/dark-souls-3-grid.webp', placeholder: 'resources/grid-images/dark-souls-3-grid_placeholder.webp', link: 'ds3'},
-            {img: 'https://i.ibb.co/zRmBHft/demons-souls-grid.webp', placeholder: 'resources/grid-images/demons-souls-grid_placeholder.webp', link: 'demonssouls'}
-        ];
-
-        itemGrid.innerHTML = '';
-
-        items.forEach(item => {
-            const itemCard = document.createElement('div');
-            itemCard.className = 'item-card';
-
-            const linkElement = document.createElement('a');
-            linkElement.href = item.link;
-            linkElement.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.body.classList.add('fade-out');
-                setTimeout(() => {
-                    window.location.href = item.link;
-                }, 500);
-            });
-
-            const mediaElement = document.createElement('div');
-            mediaElement.className = 'item-media';
-
-            const imgElement = document.createElement('img');
-            imgElement.loading = 'lazy';
-            imgElement.decoding = 'async';
-            imgElement.src = item.placeholder;
-            imgElement.alt = item.link;
-
-            const animatedImg = new Image();
-            animatedImg.src = item.img;
-            animatedImg.onload = function() {
-                imgElement.src = animatedImg.src;
-            };
-
-            mediaElement.appendChild(imgElement);
-            linkElement.appendChild(mediaElement);
-            itemCard.appendChild(linkElement);
-            itemGrid.appendChild(itemCard);
-        });
-    }
-
-    window.onload = function() {
-        loadImages();
-        document.body.classList.remove('fade-out');
-    };
-
-    document.addEventListener('visibilitychange', function() {
-        if (document.visibilityState === 'visible') {
-            document.body.classList.remove('fade-out');
-        } else {
-            document.body.classList.add('fade-out');
-        }
-    });
-</script>
+<script src="resources/js/page-transition.js?v1.0.9"></script>
+<script src="resources/js/site-pages.js?v1.0.9"></script>
+<script src="resources/js/index.js?v1.0.9"></script>
 </body>
 </html>

@@ -30,18 +30,20 @@
 </p>
 
 <p align="center">souls.fashion is leased under a Creative Commons Attribution-noncommercial license (CC BY-NC). 
-You may alter, adapt, or build upon the source material, as long as attribution is given to the author (Psyopgirl) and the work is not used for profit or commercial purposes.</p>
+You may alter, adapt, or build upon the source material, as long as attribution is given to the author (psyopgirl) and the work is not used for profit or commercial purposes.</p>
 
 
 <p align="center">
 <img src="https://i.imgur.com/fAYVJlW.png" width="680" height="100"/>
 </p>
 
-> [ver 1.0.8] - Updated images from Dark Souls 1 and Demon's Souls to used higher-quality, remastered images. Added items from Demon's Souls remake. Working on adding all missing items from Dark Souls 2 & 3. 
+> [ver 1.0.9] - *Major update pending 1.1.0 release. Complete UI refactor for mobile/desktop. Safeguarded loading and improved CLS times drastically across the board. Additional security and optimisation fixes made to JavaScript and CSS. All JS/CSS resources externalised to pages. Fixed some mismatched items that had incorrect name or image paths. Hardened SEO and allowed content policies.*
 
-> [ver 1.0.7] - Added outfit simulator to all games. Made weapons equippable in mainhand and offhand. Updated localstorage to use game-specific files so that presets and preset names, as well as outfit simulator content, do not carry over between games. 
+> [ver 1.0.8] - *Updated images from Dark Souls 1 and Demon's Souls to use higher-quality, remastered images. Added items from Demon's Souls remake. Working on adding all missing items from Dark Souls 2 & 3.* 
 
-> [ver 1.0.6] - Outfit simulator is live! Fixed an issue causing drag and drop function to break. Updated item icon names to match corrected names. 
+> [ver 1.0.7] - *Added outfit simulator to all games. Made weapons equippable in mainhand and offhand. Updated localstorage to use game-specific files so that presets and preset names, as well as outfit simulator content, do not carry over between games.* 
+
+> [ver 1.0.6] - *Outfit simulator is live! Fixed an issue causing drag and drop function to break. Updated item icon names to match corrected names.* 
 
 > [ver 1.0.5] - *Optimised search function to utilise fewer resources, added versions to HTML and CSS to fix display issues with caching. Moved scripts and redundant files to off-project cloud storage to reduce build size. Merged search_items.js files into a single file to handle all games (pending Elden Ring migration due to ongoing development). Corrected duplicate and misspelt items in Elden Ring. Fixed some minor casing errors in DS1 and DS2.* 
 

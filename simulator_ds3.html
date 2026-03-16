@@ -1,363 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="resources/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Build, save, and export Dark Souls III outfits with the souls.fashion outfit simulator."
+    >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap">
-	<link rel="stylesheet" href="resources/styles.css?v1.0.9">
-    <title>Dark Souls 3 Outfit Simulator</title>
-	<title>Dark Souls 3 outfit simulator - Fashion Souls v1.0.9</title>
+    <link rel="stylesheet" href="resources/styles.css?v1.0.9">
+    <link rel="stylesheet" href="resources/content-pages.css?v1.0.9">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/icon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/icon_48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/icon_96x96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicons/icon_167x167.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/icon_180x180.png">
+    <link rel="icon" href="favicon.ico">
+    <title>Dark Souls III Outfit Simulator - Fashion Souls v1.0.9</title>
 </head>
-<body>
-    <a href="ds3" id="backToMain" class="back-link">← Back to Dark Souls 3 Outfit Selection</a>
-    <div class="outfit-sim">
-        <header class="outfit-sim-header">
-            <h1>Dark Souls 3 Outfit Simulator - Fashion Souls</h1>
-        </header>
-        <div id="downloadImageLink" class="download-image" onclick="downloadSimulatorImage()">Download Outfit Image</div>
-        <div id="outfitSlotsSimulator" class="simulator-grid">
-            <!-- Outfit items will be dynamically loaded here -->
+<body
+    class="content-page simulator-page"
+    data-game-key="ds3"
+    data-game-title="Dark Souls III"
+    data-back-href="ds3"
+>
+<div id="preloader" class="preloader">
+    <img src="icons/FS_icon_white.png" alt="souls.fashion" class="preloader-logo">
+</div>
+
+<div class="content-shell">
+    <header class="content-hero">
+        <div class="content-hero-bar">
+            <div class="content-hero-left">
+                <button class="show-menu" aria-label="Toggle navigation menu"></button>
+                <a class="content-brand-link" href="index" aria-label="Fashion Souls home">
+                    <img src="icons/FS_icon_white.png" alt="Fashion Souls" class="content-brand-icon">
+                </a>
+                <div class="content-site-copy">
+                    <h3 class="content-site-title">Fashion Souls</h3>
+                    <p class="site-tagline">SoulsBorne Fashion Tool by psyopgirl</p>
+                </div>
+            </div>
+            <button class="mode-switch" id="modeToggle" aria-label="Toggle display mode" title="Toggle display mode">&#9680;</button>
         </div>
-    </div>
+    </header>
 
- <div id="presetContainer" class="preset-container">
-    <div class="preset" id="preset1">
-        <h3 id="presetName1" class="editable-preset-name" onclick="editPresetName(1)" contenteditable="true" spellcheck="false">Preset 1</h3>
-        <div class="preset-actions">
-            <span onclick="savePreset(1)">Save</span> | 
-            <span onclick="loadPreset(1)">Load</span> | 
-            <span onclick="clearPreset(1)">Clear</span>
-        </div>
-    </div>
-    <div class="preset" id="preset2">
-        <h3 id="presetName2" class="editable-preset-name" onclick="editPresetName(2)" contenteditable="true" spellcheck="false">Preset 2</h3>
-        <div class="preset-actions">
-            <span onclick="savePreset(2)">Save</span> | 
-            <span onclick="loadPreset(2)">Load</span> | 
-            <span onclick="clearPreset(2)">Clear</span>
-        </div>
-    </div>
-    <div class="preset" id="preset3">
-        <h3 id="presetName3" class="editable-preset-name" onclick="editPresetName(3)" contenteditable="true" spellcheck="false">Preset 3</h3>
-        <div class="preset-actions">
-            <span onclick="savePreset(3)">Save</span> | 
-            <span onclick="loadPreset(3)">Load</span> | 
-            <span onclick="clearPreset(3)">Clear</span>
-        </div>
-    </div>
-    <div class="preset" id="preset4">
-        <h3 id="presetName4" class="editable-preset-name" onclick="editPresetName(4)" contenteditable="true" spellcheck="false">Preset 4</h3>
-        <div class="preset-actions">
-            <span onclick="savePreset(4)">Save</span> | 
-            <span onclick="loadPreset(4)">Load</span> | 
-            <span onclick="clearPreset(4)">Clear</span>
-        </div>
-    </div>
-    <div class="preset" id="preset5">
-        <h3 id="presetName5" class="editable-preset-name" onclick="editPresetName(5)" contenteditable="true" spellcheck="false">Preset 5</h3>
-        <div class="preset-actions">
-            <span onclick="savePreset(5)">Save</span> | 
-            <span onclick="loadPreset(5)">Load</span> | 
-            <span onclick="clearPreset(5)">Clear</span>
-        </div>
-    </div>
-</div> 
+    <main class="content-main simulator-page-main">
+        <section class="content-card simulator-page-card">
+            <div class="simulator-page-topbar">
+                <p class="content-eyebrow">Outfit Simulator - Dark Souls III</p>
+                <a href="ds3" id="backToMain" class="content-action simulator-back-link">Back to Game Page</a>
+            </div>
 
+            <div class="simulator-layout">
+                <div class="outfit-sim">
+                    <div id="outfitSlotsSimulator" class="simulator-grid" aria-live="polite"></div>
+                </div>
 
-<script>
-	const gamePrefix = "ds3_"; // Unique prefix for LocalStorage handling
-    // Function to edit a preset name
-    function editPresetName(presetNumber) {
-        const presetNameElement = document.getElementById(`presetName${presetNumber}`);
-        
-        // Save the original name in case the user doesn't enter a new one
-        const originalName = presetNameElement.textContent.trim();
+                <aside id="presetContainer" class="preset-container" aria-label="Saved presets">
+                    <div class="preset" id="preset1">
+                        <h3 id="presetName1" class="editable-preset-name" data-preset-number="1" contenteditable="true" spellcheck="false">Preset 1</h3>
+                        <div class="preset-actions">
+                            <span class="preset-action" data-action="save" data-preset-number="1">Save</span> |
+                            <span class="preset-action" data-action="load" data-preset-number="1">Load</span> |
+                            <span class="preset-action" data-action="clear" data-preset-number="1">Clear</span>
+                        </div>
+                    </div>
+                    <div class="preset" id="preset2">
+                        <h3 id="presetName2" class="editable-preset-name" data-preset-number="2" contenteditable="true" spellcheck="false">Preset 2</h3>
+                        <div class="preset-actions">
+                            <span class="preset-action" data-action="save" data-preset-number="2">Save</span> |
+                            <span class="preset-action" data-action="load" data-preset-number="2">Load</span> |
+                            <span class="preset-action" data-action="clear" data-preset-number="2">Clear</span>
+                        </div>
+                    </div>
+                    <div class="preset" id="preset3">
+                        <h3 id="presetName3" class="editable-preset-name" data-preset-number="3" contenteditable="true" spellcheck="false">Preset 3</h3>
+                        <div class="preset-actions">
+                            <span class="preset-action" data-action="save" data-preset-number="3">Save</span> |
+                            <span class="preset-action" data-action="load" data-preset-number="3">Load</span> |
+                            <span class="preset-action" data-action="clear" data-preset-number="3">Clear</span>
+                        </div>
+                    </div>
+                    <div class="preset" id="preset4">
+                        <h3 id="presetName4" class="editable-preset-name" data-preset-number="4" contenteditable="true" spellcheck="false">Preset 4</h3>
+                        <div class="preset-actions">
+                            <span class="preset-action" data-action="save" data-preset-number="4">Save</span> |
+                            <span class="preset-action" data-action="load" data-preset-number="4">Load</span> |
+                            <span class="preset-action" data-action="clear" data-preset-number="4">Clear</span>
+                        </div>
+                    </div>
+                    <div class="preset" id="preset5">
+                        <h3 id="presetName5" class="editable-preset-name" data-preset-number="5" contenteditable="true" spellcheck="false">Preset 5</h3>
+                        <div class="preset-actions">
+                            <span class="preset-action" data-action="save" data-preset-number="5">Save</span> |
+                            <span class="preset-action" data-action="load" data-preset-number="5">Load</span> |
+                            <span class="preset-action" data-action="clear" data-preset-number="5">Clear</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
 
-        // Clear the text when clicked to edit
-        presetNameElement.textContent = "";
+    <footer class="footer">
+        Copyright &copy; psyopgirl 2024.<br>
+        Dark Souls, Elden Ring, Bloodborne &amp; Demon's Souls are property of Sony &amp; FromSoftware respectively.
+    </footer>
+</div>
 
-        // Save the updated name when focus is lost
-        presetNameElement.addEventListener("blur", () => {
-            const name = presetNameElement.textContent.trim();
-
-            if (name === "") {
-                // If no new name is provided, revert to the original name
-                presetNameElement.textContent = originalName;
-            } else {
-                // Otherwise, save the new name
-                localStorage.setItem(gamePrefix + `presetName${presetNumber}`, name);
-            }
-        }, { once: true });
-
-        // Save the updated name when the Enter key is pressed
-        presetNameElement.addEventListener("keydown", (event) => {
-            if (event.key === "Enter") {
-                event.preventDefault(); // Prevent newline
-                presetNameElement.blur(); // Trigger blur event to save
-            }
-        });
-    }
-
-    // Function to load preset names from localStorage
-    function loadPresetNames() {
-        for (let i = 1; i <= 5; i++) {
-            const name = localStorage.getItem(gamePrefix + `presetName${i}`) || `Preset ${i}`;
-            document.getElementById(`presetName${i}`).textContent = name;
-        }
-    }
-
-    // Function to clear a preset
-    function clearPreset(presetNumber) {
-        localStorage.removeItem(gamePrefix + `preset${presetNumber}`);
-    }
-
- 
-    // Load preset names and outfit on page load
-    document.addEventListener("DOMContentLoaded", () => {
-        loadPresetNames();
-        loadOutfitFromStorage();
-    });
-</script>
-
-
-
-<script>
-    // Variable to store the most recently loaded preset name
-    let currentOutfitName = "Current Outfit";
-
-    // Function to save the current outfit to a preset
-    function savePreset(presetNumber) {
-        const currentOutfit = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
-        localStorage.setItem(gamePrefix + `preset${presetNumber}`, JSON.stringify(currentOutfit));
-
-        // Update the current outfit name with the preset name
-        currentOutfitName = document.getElementById(`presetName${presetNumber}`).textContent.trim();
-    }
-
-    // Function to load a preset into the simulator
-    function loadPreset(presetNumber) {
-        const preset = JSON.parse(localStorage.getItem(gamePrefix + `preset${presetNumber}`));
-        if (preset) {
-            localStorage.setItem(gamePrefix + 'outfitSlots', JSON.stringify(preset));
-            loadOutfitFromStorage();
-
-            // Update the current outfit name with the loaded preset name
-            currentOutfitName = document.getElementById(`presetName${presetNumber}`).textContent.trim();
-        }
-    }
-
-    // Function to load outfit from localStorage and display it
-    function loadOutfitFromStorage() {
-        const outfit = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
-        const outfitSlots = document.getElementById("outfitSlotsSimulator");
-        outfitSlots.innerHTML = ''; // Clear existing items
-
-        const layoutOrder = ["head", "weapons", "chest", "shields", "hands", "legs"];
-
-        layoutOrder.forEach(slotId => {
-            const item = outfit[`${slotId}Slot`];
-            const card = document.createElement("div");
-            card.classList.add("item-card-simple");
-            card.dataset.slotId = `${slotId}Slot`;
-
-            if (item) {
-                card.classList.add('equipped-simulator-item');
-                const img = document.createElement("img");
-                img.src = `pages/ds3/icons/${item.image}`;
-                img.alt = item.name;
-
-                const name = document.createElement("p");
-                name.textContent = item.name;
-
-                card.appendChild(img);
-                card.appendChild(name);
-            } else {
-                const placeholder = document.createElement("p");
-                placeholder.classList.add("placeholder-tile");
-                switch (slotId) {
-    case 'head':
-        placeholder.textContent = "No helm equipped.";
-        break;
-    case 'chest':
-        placeholder.textContent = "No chest armor equipped.";
-        break;
-    case 'hands':
-        placeholder.textContent = "No gauntlets equipped.";
-        break;
-    case 'legs':
-        placeholder.textContent = "No leg armor equipped.";
-        break;
-    case 'weapons':
-        placeholder.textContent = "No main-hand item equipped.";
-        break;
-    case 'shields':
-        placeholder.textContent = "No off-hand item equipped.";
-        break;
-    default:
-        placeholder.textContent = `No ${slotId} item selected`;
-}
-
-                card.appendChild(placeholder);
-            }
-
-            card.id = `${slotId}Card`;
-            outfitSlots.appendChild(card);
-        });
-
-        // Check if the loaded outfit matches any saved presets and update currentOutfitName if a match is found
-        for (let i = 1; i <= 5; i++) {
-            const savedPreset = JSON.parse(localStorage.getItem(gamePrefix + `preset${i}`));
-            if (savedPreset && JSON.stringify(savedPreset) === JSON.stringify(outfit)) {
-                currentOutfitName = document.getElementById(`presetName${i}`).textContent.trim();
-                break;
-            }
-        }
-
-        initializeSimulatorDragRemoval();
-    }
-
-    function removeSimulatorSlotItem(slotKey) {
-        const outfit = JSON.parse(localStorage.getItem(gamePrefix + 'outfitSlots')) || {};
-        if (!outfit[slotKey]) {
-            return;
-        }
-
-        delete outfit[slotKey];
-        localStorage.setItem(gamePrefix + 'outfitSlots', JSON.stringify(outfit));
-        loadOutfitFromStorage();
-    }
-
-    function initializeSimulatorDragRemoval() {
-        const simulatorGrid = document.getElementById('outfitSlotsSimulator');
-        if (!simulatorGrid) {
-            return;
-        }
-
-        simulatorGrid.querySelectorAll('.item-card-simple.equipped-simulator-item').forEach((card) => {
-            const slotKey = card.dataset.slotId;
-            if (!slotKey) return;
-
-            card.setAttribute('draggable', 'true');
-
-            if (card.dataset.dragRemoveBound === 'true') {
-                return;
-            }
-            card.dataset.dragRemoveBound = 'true';
-
-            card.addEventListener('dragstart', () => {
-                card.dataset.dragRemoveHandled = 'false';
-            });
-
-            card.addEventListener('drop', () => {
-                card.dataset.dragRemoveHandled = 'true';
-            });
-
-            card.addEventListener('dragend', () => {
-                if (card.dataset.dragRemoveHandled !== 'true') {
-                    removeSimulatorSlotItem(slotKey);
-                }
-            });
-
-            card.addEventListener('touchstart', (event) => {
-                const touch = event.touches[0];
-                if (!touch) return;
-                card.dataset.touchStartX = String(touch.clientX);
-                card.dataset.touchStartY = String(touch.clientY);
-            }, { passive: true });
-
-            card.addEventListener('touchend', (event) => {
-                const touch = event.changedTouches[0];
-                if (!touch) return;
-
-                const startX = Number(card.dataset.touchStartX || touch.clientX);
-                const startY = Number(card.dataset.touchStartY || touch.clientY);
-                const movedDistance = Math.hypot(touch.clientX - startX, touch.clientY - startY);
-                if (movedDistance < 18) {
-                    return;
-                }
-
-                const gridBounds = simulatorGrid.getBoundingClientRect();
-                const endedInsideGrid = (
-                    touch.clientX >= gridBounds.left &&
-                    touch.clientX <= gridBounds.right &&
-                    touch.clientY >= gridBounds.top &&
-                    touch.clientY <= gridBounds.bottom
-                );
-
-                if (!endedInsideGrid) {
-                    removeSimulatorSlotItem(slotKey);
-                }
-            }, { passive: true });
-        });
-    }
-
-    async function downloadSimulatorImage() {
-        // Create a container to hold the header, simulator div, and footer
-        const container = document.createElement('div');
-        container.style.backgroundColor = "#121212"; // Match the page background color
-        container.style.padding = "20px";
-        container.style.display = "flex";
-        container.style.flexDirection = "column";
-        container.style.alignItems = "center";
-
-        // Create the header with the current outfit name
-        const header = document.createElement('h3');
-        header.textContent = currentOutfitName; // Use the most recently loaded preset name
-        header.style.color = "#ffffff";
-        header.style.fontFamily = "'Spectral', Helvetica, Arial, sans-serif";
-        header.style.textAlign = "center";
-        header.style.marginTop = "10px"; // Add margin to move the header down
-        container.appendChild(header);
-
-        // Clone the outfitSlotsSimulator div and append to container
-        const simulatorDiv = document.getElementById('outfitSlotsSimulator').cloneNode(true);
-        simulatorDiv.style.margin = "20px auto";
-        simulatorDiv.style.display = "grid"; // Retain the grid layout
-        simulatorDiv.style.gridTemplateColumns = window.getComputedStyle(document.getElementById('outfitSlotsSimulator')).getPropertyValue('grid-template-columns');
-        simulatorDiv.style.gap = window.getComputedStyle(document.getElementById('outfitSlotsSimulator')).getPropertyValue('gap');
-        container.appendChild(simulatorDiv);
-
-        // Create footer text
-        const footer = document.createElement('p');
-        footer.textContent = "Generated by souls.fashion";
-        footer.style.color = "#ffffff";
-        footer.style.fontFamily = "'Spectral', Helvetica, Arial, sans-serif";
-        footer.style.textAlign = "center";
-        footer.style.marginTop = "10px";
-        container.appendChild(footer);
-
-        // Append the container to the body (hidden)
-        container.style.position = 'absolute';
-        container.style.left = '-9999px';
-        document.body.appendChild(container);
-
-        // Use html2canvas to take a snapshot (resolution increased)
-        try {
-            const canvas = await html2canvas(container, { backgroundColor: null, scale: 3 });
-            const link = document.createElement('a');
-            link.href = canvas.toDataURL('image/png');
-            link.download = `${currentOutfitName}_Outfit.png`;
-            link.click();
-        } catch (error) {
-            console.error('Error generating image:', error);
-        }
-
-        // Clean up by removing the container
-        document.body.removeChild(container);
-    }
-
-    // Load preset names and outfit on page load
-    document.addEventListener("DOMContentLoaded", () => {
-        loadPresetNames();
-        loadOutfitFromStorage();
-    });
-</script>
-
-
+<script src="resources/js/page-transition.js?v1.0.9"></script>
+<script src="resources/js/site-pages.js?v1.0.9"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js?v1.0.5"></script>
-
-
+<script src="resources/js/simulator-page.js?v1.0.9"></script>
 </body>
 </html>
