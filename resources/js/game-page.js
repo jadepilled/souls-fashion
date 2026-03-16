@@ -791,8 +791,6 @@
     searchInput.placeholder = "Search by item";
     searchInput.readOnly = false;
     searchInput.setAttribute("aria-readonly", "false");
-    window.recordSearchHistoryItem?.(item.name, 2);
-    window.hideSearchSuggestions?.();
 
     hideOutfitSidebar();
     showNav();
@@ -1699,11 +1697,6 @@
     searchInput.setAttribute("aria-readonly", isColorPickerVisible ? "false" : "true");
     searchInput.value = "";
     window.syncThemeAwareColorPicker?.(true);
-    if (isColorPickerVisible) {
-      window.showSearchSuggestions?.("");
-    } else {
-      window.hideSearchSuggestions?.();
-    }
     updateMatchingItems();
   });
 

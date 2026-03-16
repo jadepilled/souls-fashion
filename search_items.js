@@ -13,255 +13,6 @@ let titleFitFrame = 0;
 // Store page name as var
 var url = window.location.href;
 var page = url.substring(url.lastIndexOf('/') + 1).replace(/\.html$/, '');
-const SEARCH_HISTORY_STORAGE_KEY = `${page}_searchHistory`;
-const MAX_DESKTOP_SEARCH_SUGGESTIONS = 6;
-let searchHistory = loadSearchHistory();
-let searchSuggestionPopover = null;
-let searchSuggestionList = null;
-let searchHistoryCommitTimer = 0;
-let searchSuggestionHideTimer = 0;
-
-function loadSearchHistory() {
-  try {
-    const parsed = JSON.parse(localStorage.getItem(SEARCH_HISTORY_STORAGE_KEY) || "{}");
-    return parsed && typeof parsed === "object" ? parsed : {};
-  } catch (error) {
-    return {};
-  }
-}
-
-function saveSearchHistory() {
-  localStorage.setItem(SEARCH_HISTORY_STORAGE_KEY, JSON.stringify(searchHistory));
-}
-
-function recordSearchHistoryItem(itemName, weight = 1) {
-  const cleanedName = typeof itemName === "string" ? itemName.replace(/\s+/g, " ").trim() : "";
-  if (!cleanedName) {
-    return;
-  }
-
-  searchHistory[cleanedName] = Math.min(999, (Number(searchHistory[cleanedName]) || 0) + weight);
-  saveSearchHistory();
-}
-
-function getSearchHistoryWeight(itemName) {
-  return Number(searchHistory[itemName]) || 0;
-}
-
-function shuffleCopy(values) {
-  const copy = values.slice();
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-function ensureSearchSuggestionsUI() {
-  if (searchSuggestionPopover) {
-    return searchSuggestionPopover;
-  }
-
-  const searchBar = document.querySelector(".topnav-content .search-bar");
-  if (!searchBar) {
-    return null;
-  }
-
-  searchSuggestionPopover = document.createElement("div");
-  searchSuggestionPopover.className = "search-suggestion-popover";
-  searchSuggestionPopover.setAttribute("aria-hidden", "true");
-
-  const label = document.createElement("p");
-  label.className = "search-suggestion-label";
-  label.textContent = "Suggested searches";
-
-  searchSuggestionList = document.createElement("div");
-  searchSuggestionList.className = "search-suggestion-list";
-
-  searchSuggestionPopover.appendChild(label);
-  searchSuggestionPopover.appendChild(searchSuggestionList);
-  searchBar.appendChild(searchSuggestionPopover);
-  return searchSuggestionPopover;
-}
-
-function hideSearchSuggestions() {
-  if (!searchSuggestionPopover) {
-    return;
-  }
-
-  searchSuggestionPopover.classList.remove("is-open");
-  searchSuggestionPopover.setAttribute("aria-hidden", "true");
-}
-
-function getDesktopSuggestionNames(query = "") {
-  if (!Array.isArray(items) || items.length === 0) {
-    return [];
-  }
-
-  const uniqueNames = Array.from(new Set(items.map((item) => item.name).filter(Boolean)));
-  const normalizedQuery = query.trim().toLowerCase();
-
-  if (normalizedQuery) {
-    return uniqueNames
-      .filter((name) => name.toLowerCase().includes(normalizedQuery))
-      .sort((left, right) => {
-        const leftLower = left.toLowerCase();
-        const rightLower = right.toLowerCase();
-        const leftExact = leftLower === normalizedQuery ? 1 : 0;
-        const rightExact = rightLower === normalizedQuery ? 1 : 0;
-        if (leftExact !== rightExact) {
-          return rightExact - leftExact;
-        }
-
-        const leftPrefix = leftLower.startsWith(normalizedQuery) ? 1 : 0;
-        const rightPrefix = rightLower.startsWith(normalizedQuery) ? 1 : 0;
-        if (leftPrefix !== rightPrefix) {
-          return rightPrefix - leftPrefix;
-        }
-
-        const weightDifference = getSearchHistoryWeight(right) - getSearchHistoryWeight(left);
-        if (weightDifference !== 0) {
-          return weightDifference;
-        }
-
-        return left.localeCompare(right);
-      })
-      .slice(0, MAX_DESKTOP_SEARCH_SUGGESTIONS);
-  }
-
-  const popularNames = Object.keys(searchHistory)
-    .filter((name) => uniqueNames.includes(name))
-    .sort((left, right) => getSearchHistoryWeight(right) - getSearchHistoryWeight(left));
-
-  const chosen = [];
-  shuffleCopy(popularNames.slice(0, 8))
-    .slice(0, Math.min(3, popularNames.length))
-    .forEach((name) => {
-      if (!chosen.includes(name)) {
-        chosen.push(name);
-      }
-    });
-
-  shuffleCopy(uniqueNames.filter((name) => !chosen.includes(name)))
-    .slice(0, MAX_DESKTOP_SEARCH_SUGGESTIONS - chosen.length)
-    .forEach((name) => {
-      if (!chosen.includes(name)) {
-        chosen.push(name);
-      }
-    });
-
-  return chosen.slice(0, MAX_DESKTOP_SEARCH_SUGGESTIONS);
-}
-
-function applySearchSuggestion(itemName) {
-  const searchInput = document.getElementById("searchInput");
-  const toggleSearch = document.getElementById("toggleSearch");
-  if (!searchInput) {
-    return;
-  }
-
-  searchInput.value = itemName;
-  searchInput.readOnly = false;
-  searchInput.setAttribute("aria-readonly", "false");
-  searchInput.placeholder = "Search by item";
-  if (toggleSearch) {
-    toggleSearch.textContent = "Item";
-  }
-
-  setColorPickerVisibility(false);
-  recordSearchHistoryItem(itemName, 2);
-  hideSearchSuggestions();
-  updateMatchingItems();
-  searchInput.focus();
-  searchInput.setSelectionRange(itemName.length, itemName.length);
-}
-
-function showSearchSuggestions(query = "") {
-  if (window.isMobileViewport?.() || isHexSearchMode()) {
-    hideSearchSuggestions();
-    return;
-  }
-
-  const searchInput = document.getElementById("searchInput");
-  if (!searchInput || document.activeElement !== searchInput) {
-    hideSearchSuggestions();
-    return;
-  }
-
-  ensureSearchSuggestionsUI();
-  if (!searchSuggestionPopover || !searchSuggestionList) {
-    return;
-  }
-
-  const suggestions = getDesktopSuggestionNames(query);
-  if (suggestions.length === 0) {
-    hideSearchSuggestions();
-    return;
-  }
-
-  searchSuggestionList.innerHTML = "";
-  suggestions.forEach((name) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "search-suggestion-option";
-    button.textContent = name;
-    button.addEventListener("mousedown", (event) => {
-      event.preventDefault();
-    });
-    button.addEventListener("click", () => {
-      applySearchSuggestion(name);
-    });
-    searchSuggestionList.appendChild(button);
-  });
-
-  searchSuggestionPopover.classList.add("is-open");
-  searchSuggestionPopover.setAttribute("aria-hidden", "false");
-}
-
-function commitSearchHistory(query) {
-  window.clearTimeout(searchHistoryCommitTimer);
-
-  if (isHexSearchMode()) {
-    return;
-  }
-
-  const normalizedQuery = query.trim().toLowerCase();
-  if (!normalizedQuery) {
-    return;
-  }
-
-  const exactMatch = items.find((item) => item.name.toLowerCase() === normalizedQuery);
-  if (exactMatch) {
-    recordSearchHistoryItem(exactMatch.name);
-    return;
-  }
-
-  if (normalizedQuery.length < 3) {
-    return;
-  }
-
-  const topSuggestion = getDesktopSuggestionNames(normalizedQuery)[0];
-  if (topSuggestion) {
-    recordSearchHistoryItem(topSuggestion);
-  }
-}
-
-function scheduleSearchHistoryCommit(query) {
-  window.clearTimeout(searchHistoryCommitTimer);
-
-  if (isHexSearchMode()) {
-    return;
-  }
-
-  const normalizedQuery = query.trim().toLowerCase();
-  if (!normalizedQuery) {
-    return;
-  }
-
-  searchHistoryCommitTimer = window.setTimeout(() => {
-    commitSearchHistory(query);
-  }, 700);
-}
 
 function setColorPickerVisibility(visible) {
   const colorPicker = document.getElementById("favcolor");
@@ -293,21 +44,9 @@ function fitCardTitleText(titleElement) {
     return;
   }
 
-  titleElement.style.fontSize = "";
-
-  let currentFontSize = parseFloat(window.getComputedStyle(titleElement).fontSize);
-  let attempts = 0;
-
-  while (
-    attempts < 12 &&
-    currentFontSize > 8 &&
-    (titleElement.scrollHeight > titleElement.clientHeight + 1 ||
-      titleElement.scrollWidth > titleElement.clientWidth + 1)
-  ) {
-    currentFontSize -= 0.5;
-    titleElement.style.fontSize = `${currentFontSize}px`;
-    attempts += 1;
-  }
+  const titleLength = (titleElement.textContent || "").trim().length;
+  const nextSize = Math.max(0.56, 0.86 - Math.max(0, titleLength - 18) * 0.012);
+  titleElement.style.fontSize = `${nextSize.toFixed(3)}rem`;
 }
 
 function fitVisibleCardTitles(scope = document) {
@@ -394,7 +133,6 @@ function activateHexSearch(color) {
   const searchInput = document.getElementById("searchInput");
 
   setColorPickerVisibility(true);
-  hideSearchSuggestions();
 
   if (toggleSearch) {
     toggleSearch.textContent = "Hex";
@@ -436,9 +174,6 @@ async function fetchItems() {
     items = shuffle(items);
 
     displayItems(items); // Display all items initially
-    if (document.activeElement === document.getElementById("searchInput")) {
-      showSearchSuggestions(document.getElementById("searchInput").value);
-    }
   } catch (error) {
     console.error("Error loading items:", error);
   }
@@ -705,14 +440,12 @@ function createItemCard(item) {
       return;
     }
 
-    recordSearchHistoryItem(item.name, 2);
     searchInput.value = item.name;
     searchInput.readOnly = false;
     searchInput.setAttribute("aria-readonly", "false");
     setColorPickerVisibility(false);
     toggleSearch.textContent = "Item"; // Set button text to "Item"
     searchInput.placeholder = "Search by item"; // Update placeholder
-    hideSearchSuggestions();
 
     hideOutfitSidebar();
     showNav();
@@ -792,39 +525,6 @@ document.getElementById("favcolor").addEventListener("change", function () {
 
 document.getElementById("searchInput").addEventListener("input", function () {
   updateMatchingItems();
-  showSearchSuggestions(this.value);
-  scheduleSearchHistoryCommit(this.value);
-});
-
-document.getElementById("searchInput").addEventListener("focus", function () {
-  window.clearTimeout(searchSuggestionHideTimer);
-  showSearchSuggestions(this.value);
-});
-
-document.getElementById("searchInput").addEventListener("blur", function () {
-  commitSearchHistory(this.value);
-  searchSuggestionHideTimer = window.setTimeout(() => {
-    hideSearchSuggestions();
-  }, 120);
-});
-
-document.getElementById("searchInput").addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    hideSearchSuggestions();
-    return;
-  }
-
-  if (event.key === "Enter") {
-    commitSearchHistory(this.value);
-    hideSearchSuggestions();
-  }
-});
-
-document.addEventListener("pointerdown", function (event) {
-  const searchBar = document.querySelector(".topnav-content .search-bar");
-  if (searchBar && !searchBar.contains(event.target)) {
-    hideSearchSuggestions();
-  }
 });
 
 const secondaryWeightSlider = document.getElementById("secondaryWeightSlider");
@@ -935,7 +635,6 @@ document.getElementById("clearFilter").addEventListener("click", () => {
 
   document.getElementById("searchInput").value = "";
   setColorFilterState(false, { resetToThemeDefault: true });
-  hideSearchSuggestions();
   updateMatchingItems();
 });
 
@@ -949,9 +648,6 @@ syncThemeAwareColorPicker(true);
 
 window.syncThemeAwareColorPicker = syncThemeAwareColorPicker;
 window.setColorFilterState = setColorFilterState;
-window.recordSearchHistoryItem = recordSearchHistoryItem;
-window.hideSearchSuggestions = hideSearchSuggestions;
-window.showSearchSuggestions = showSearchSuggestions;
 
 window.addEventListener(
   "resize",
@@ -959,9 +655,6 @@ window.addEventListener(
     const itemGrid = document.getElementById("itemGrid");
     if (itemGrid) {
       scheduleVisibleCardTitleFit(itemGrid);
-    }
-    if (window.isMobileViewport?.()) {
-      hideSearchSuggestions();
     }
   },
   { passive: true }

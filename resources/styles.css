@@ -3427,76 +3427,6 @@ body.game-page .topnav-content .search-bar-buttons button:hover {
   white-space: nowrap;
 }
 
-body.game-page .topnav-content .search-suggestion-popover {
-  position: absolute;
-  top: calc(100% + 0.45rem);
-  left: 0;
-  right: 0;
-  display: none;
-  gap: 0.55rem;
-  padding: 0.75rem;
-  border-radius: 1rem;
-  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-  background: rgba(18, 18, 18, 0.98);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.28);
-  z-index: 3608;
-}
-
-body.game-page .topnav-content .search-suggestion-popover.is-open {
-  display: grid;
-}
-
-body.light-mode.game-page .topnav-content .search-suggestion-popover {
-  border-color: rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.98);
-}
-
-body.game-page .topnav-content .search-suggestion-label {
-  margin: 0;
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.62);
-}
-
-body.light-mode.game-page .topnav-content .search-suggestion-label {
-  color: rgba(0, 0, 0, 0.48);
-}
-
-body.game-page .topnav-content .search-suggestion-list {
-  display: grid;
-  gap: 0.4rem;
-}
-
-body.game-page .topnav-content .search-suggestion-option {
-  all: unset;
-  display: block;
-  padding: 0.58rem 0.7rem;
-  border-radius: 0.85rem;
-  border: 0.0625rem solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  color: inherit;
-  font-size: 0.82rem;
-  line-height: 1.2;
-  cursor: pointer;
-}
-
-body.light-mode.game-page .topnav-content .search-suggestion-option {
-  border-color: rgba(0, 0, 0, 0.08);
-  background: rgba(0, 0, 0, 0.035);
-}
-
-body.game-page .topnav-content .search-suggestion-option:hover,
-body.game-page .topnav-content .search-suggestion-option:focus-visible {
-  border-color: rgba(209, 179, 136, 0.82);
-  background: rgba(255, 255, 255, 0.08);
-}
-
-body.light-mode.game-page .topnav-content .search-suggestion-option:hover,
-body.light-mode.game-page .topnav-content .search-suggestion-option:focus-visible {
-  background: rgba(0, 0, 0, 0.06);
-}
-
 @media (max-width: 1199px) {
   body.game-page .topnav-content .color-picker {
     position: static;
@@ -3505,8 +3435,7 @@ body.light-mode.game-page .topnav-content .search-suggestion-option:focus-visibl
   }
 
   body.game-page .topnav-content .color-picker-trigger,
-  body.game-page .topnav-content .color-picker-popover,
-  body.game-page .topnav-content .search-suggestion-popover {
+  body.game-page .topnav-content .color-picker-popover {
     display: none;
   }
 }
@@ -3617,8 +3546,14 @@ body.game-page .sliders p {
 .site-menu-overlay {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100dvh;
   z-index: 3395;
   pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .site-menu-backdrop {
@@ -3638,6 +3573,8 @@ body.game-page .sliders p {
   grid-template-columns: minmax(18rem, 38%) minmax(0, 1fr);
   width: 100%;
   height: 100dvh;
+  min-height: 100dvh;
+  overflow: hidden;
 }
 
 .site-menu-panel {
@@ -3771,6 +3708,8 @@ body.light-mode .site-menu-link::before {
 
 body.site-menu-open .site-menu-overlay {
   pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
 }
 
 body.site-menu-open .site-menu-backdrop {
@@ -3870,19 +3809,21 @@ body.site-menu-open .page-scroll-region {
 
   .site-menu-shell {
     display: grid;
-    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-rows: minmax(8.25rem, 30dvh) minmax(0, 1fr);
     width: 100%;
     height: 100dvh;
+    min-height: 100dvh;
   }
 
   .site-menu-panel {
     overflow: hidden;
     padding: clamp(4.6rem, 12vw, 5.2rem) clamp(0.95rem, 4vw, 1.15rem) clamp(0.95rem, 3.6vw, 1.35rem);
+    min-height: 0;
   }
 
   .site-menu-panel--support {
-    min-height: clamp(8rem, 25vh, 10rem);
-    transform: translateY(-100%);
+    min-height: 100%;
+    transform: translateY(calc(-100% - 1rem));
     align-items: center;
     padding-bottom: clamp(0.8rem, 3vw, 1.05rem);
   }
@@ -3891,7 +3832,8 @@ body.site-menu-open .page-scroll-region {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(100%);
+    min-height: 100%;
+    transform: translateY(calc(100% + 1rem));
   }
 
   body.site-menu-open .site-menu-panel--links {
